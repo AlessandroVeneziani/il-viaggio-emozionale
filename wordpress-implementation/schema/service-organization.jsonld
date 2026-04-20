@@ -1,0 +1,112 @@
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      "@id": "https://ilviaggioemozionale.it/#organization",
+      "name": "Il Viaggio Emozionale",
+      "url": "https://ilviaggioemozionale.it/",
+      "logo": {
+        "@type": "ImageObject",
+        "url": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.webp"
+      },
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/colline-scaled.webp",
+      "description": "Percorsi di crescita personale, letture simboliche e strumenti evolutivi guidati da Alessandro Veneziani.",
+      "email": "info@ilviaggioemozionale.it"
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ilviaggioemozionale.it/#numerologia-indiana",
+      "name": "Numerologia Indiana",
+      "serviceType": "Percorso introduttivo in PDF",
+      "provider": {
+        "@id": "https://ilviaggioemozionale.it/#organization"
+      },
+      "url": "https://ilviaggioemozionale.it/#numerologia",
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/numerologia-indiana.png",
+      "description": "PDF digitale introduttivo per comprendere numeri, cicli interiori e disegno evolutivo personale.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "15.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://ilviaggioemozionale.it/#numerologia"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima",
+      "name": "Ritratto dell'Anima",
+      "serviceType": "Lettura numerologica personalizzata in PDF",
+      "provider": {
+        "@id": "https://ilviaggioemozionale.it/#organization"
+      },
+      "url": "https://ilviaggioemozionale.it/#numerologia",
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
+      "description": "PDF personalizzato con numeri fondamentali, sigillo del nome, simbologia e guidance evolutiva.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "150.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://ilviaggioemozionale.it/#numerologia"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ilviaggioemozionale.it/#tarocchi-archetipici",
+      "name": "Tarocchi Archetipici",
+      "serviceType": "Sessione individuale",
+      "provider": {
+        "@id": "https://ilviaggioemozionale.it/#organization"
+      },
+      "url": "https://ilviaggioemozionale.it/#tarocchi",
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Matto.png",
+      "description": "Sessione simbolica individuale con i Tarocchi di Marsiglia per fare chiarezza sul presente e sui blocchi interiori.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "80.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://ilviaggioemozionale.it/#tarocchi"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ilviaggioemozionale.it/#soul-design",
+      "name": "Soul Design",
+      "serviceType": "Percorso simbolico personalizzato",
+      "provider": {
+        "@id": "https://ilviaggioemozionale.it/#organization"
+      },
+      "url": "https://ilviaggioemozionale.it/#soul-design",
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/mondo.png",
+      "description": "Percorso esclusivo tra simboli, numeri e intuizione per tradurre la propria interiorita in scelte concrete.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "availability": "https://schema.org/InStock",
+        "url": "https://ilviaggioemozionale.it/#soul-design"
+      }
+    },
+    {
+      "@type": "Service",
+      "@id": "https://ilviaggioemozionale.it/#laboratorio-dell-anima",
+      "name": "Laboratorio dell'Anima",
+      "serviceType": "Libro e PDF evolutivo",
+      "provider": {
+        "@id": "https://ilviaggioemozionale.it/#organization"
+      },
+      "url": "https://ilviaggioemozionale.it/#lab",
+      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/libro.webp",
+      "description": "Libro simbolico e pratico che accompagna il lettore attraverso mito, alchimia e trasformazione interiore.",
+      "offers": {
+        "@type": "Offer",
+        "priceCurrency": "EUR",
+        "price": "10.00",
+        "availability": "https://schema.org/InStock",
+        "url": "https://ilviaggioemozionale.it/#lab"
+      }
+    }
+  ]
+}

@@ -1,0 +1,259 @@
+/*
+ * Home page optimization stylesheet for https://ilviaggioemozionale.it
+ *
+ * Recommended use:
+ * 1. Remove the broken widget-level CSS already present in Home.
+ * 2. Paste this file into Elementor Site Settings -> Custom CSS
+ *    or into a child theme stylesheet.
+ * 3. For the best sticky behavior, move the menu into a dedicated
+ *    Elementor container and assign class `menu-verticale-sticky`.
+ *
+ * Current live menu selector:
+ * - widget: .elementor-element-368bd2b
+ * - nav: .menu-pergamena
+ */
+
+:root {
+  --ive-ink: #083b5b;
+  --ive-ink-soft: #4d392d;
+  --ive-gold: #8b6a2f;
+  --ive-gold-deep: #7a5b2e;
+  --ive-beige: #fdf6ec;
+  --ive-beige-soft: #fffaf2;
+  --ive-sand: #f3e7d3;
+  --ive-border: #d6bf96;
+  --ive-shadow: 0 12px 30px rgba(8, 34, 52, 0.12);
+  --ive-radius: 24px;
+}
+
+.page-id-17 {
+  color: var(--ive-ink-soft);
+}
+
+.page-id-17 h1,
+.page-id-17 h2,
+.page-id-17 h3,
+.page-id-17 .numerologia__title,
+.page-id-17 .section-title,
+.page-id-17 .lab-title {
+  color: var(--ive-ink);
+  letter-spacing: 0.01em;
+}
+
+.page-id-17 p,
+.page-id-17 li,
+.page-id-17 .subtitle,
+.page-id-17 .section-sub,
+.page-id-17 .numerologia__lead,
+.page-id-17 .lab-subtitle {
+  color: var(--ive-ink-soft);
+  line-height: 1.75;
+}
+
+.page-id-17 .chi-text,
+.page-id-17 .numerologia__text,
+.page-id-17 .tarocchi-box,
+.page-id-17 .soul-text,
+.page-id-17 .lab-text-box,
+.page-id-17 .product-card {
+  background: rgba(255, 250, 242, 0.92);
+  border: 1px solid rgba(122, 91, 46, 0.14);
+  border-radius: var(--ive-radius);
+  box-shadow: var(--ive-shadow);
+}
+
+.page-id-17 .chi-text,
+.page-id-17 .numerologia__text,
+.page-id-17 .tarocchi-box,
+.page-id-17 .soul-text,
+.page-id-17 .lab-text-box {
+  padding: clamp(20px, 3vw, 32px);
+}
+
+.page-id-17 .product-card {
+  padding: clamp(18px, 2.2vw, 28px);
+}
+
+.page-id-17 .btn,
+.page-id-17 .btn--solid,
+.page-id-17 .btn--outline,
+.page-id-17 .btn--primary,
+.page-id-17 .btn-solid,
+.page-id-17 .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+}
+
+.page-id-17 .btn--solid,
+.page-id-17 .btn--primary,
+.page-id-17 .btn-solid {
+  background: var(--ive-gold);
+  border-color: var(--ive-gold);
+  color: #ffffff !important;
+  box-shadow: 0 10px 22px rgba(122, 91, 46, 0.22);
+}
+
+.page-id-17 .btn--outline,
+.page-id-17 .btn-outline,
+.page-id-17 .lab-button-outline {
+  background: rgba(255, 250, 242, 0.85);
+  border-color: var(--ive-border);
+  color: var(--ive-ink) !important;
+}
+
+.page-id-17 .btn:hover,
+.page-id-17 .btn--solid:hover,
+.page-id-17 .btn--outline:hover,
+.page-id-17 .btn--primary:hover,
+.page-id-17 .btn-solid:hover,
+.page-id-17 .btn-outline:hover,
+.page-id-17 .lab-button-outline:hover {
+  transform: translateY(-1px);
+}
+
+.page-id-17 .btn--solid:hover,
+.page-id-17 .btn--primary:hover,
+.page-id-17 .btn-solid:hover {
+  background: var(--ive-gold-deep);
+  border-color: var(--ive-gold-deep);
+  color: #ffffff !important;
+}
+
+.page-id-17 .btn--outline:hover,
+.page-id-17 .btn-outline:hover,
+.page-id-17 .lab-button-outline:hover {
+  background: var(--ive-sand);
+  border-color: var(--ive-gold);
+  color: var(--ive-ink) !important;
+}
+
+.page-id-17 a:focus-visible,
+.page-id-17 button:focus-visible,
+.page-id-17 .btn:focus-visible,
+.page-id-17 .btn-solid:focus-visible,
+.page-id-17 .btn-outline:focus-visible,
+.page-id-17 .menu-pergamena a:focus-visible,
+.page-id-17 .menu-verticale-sticky a:focus-visible {
+  outline: 3px solid var(--ive-ink);
+  outline-offset: 3px;
+}
+
+/*
+ * Preferred sticky menu: apply class `menu-verticale-sticky`
+ * to a dedicated Elementor container placed on the right.
+ */
+.page-id-17 .menu-verticale-sticky,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena {
+  background: rgba(253, 246, 236, 0.96);
+  border: 1px solid var(--ive-border);
+  border-radius: 18px;
+  box-shadow: var(--ive-shadow);
+  backdrop-filter: blur(8px);
+}
+
+.page-id-17 .menu-verticale-sticky,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena {
+  padding: 14px 16px;
+}
+
+.page-id-17 .menu-verticale-sticky ul,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.page-id-17 .menu-verticale-sticky li,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena li {
+  margin: 0;
+}
+
+.page-id-17 .menu-verticale-sticky a,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--ive-ink) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+  background: transparent;
+}
+
+.page-id-17 .menu-verticale-sticky a:hover,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena a:hover {
+  background: rgba(122, 91, 46, 0.08);
+  color: var(--ive-gold-deep) !important;
+}
+
+@media (min-width: 922px) {
+  .page-id-17 .menu-verticale-sticky {
+    position: sticky;
+    top: 100px;
+    align-self: flex-start;
+    z-index: 30;
+  }
+
+  /*
+   * Fallback for the current live HTML menu.
+   * Use only if the menu is not moved into a dedicated sticky container yet.
+   */
+  .page-id-17 .elementor-element-368bd2b .menu-pergamena {
+    position: fixed;
+    top: 100px;
+    right: clamp(16px, 4vw, 40px);
+    width: min(280px, calc(100vw - 32px));
+    z-index: 30;
+  }
+}
+
+@media (max-width: 921px) {
+  .page-id-17 .menu-verticale-sticky,
+  .page-id-17 .elementor-element-368bd2b .menu-pergamena {
+    position: static !important;
+    width: 100%;
+    max-width: none;
+    margin: 20px auto 0;
+  }
+
+  .page-id-17 .menu-verticale-sticky ul,
+  .page-id-17 .elementor-element-368bd2b .menu-pergamena ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-id-17 .product-card__btn-row,
+  .page-id-17 .tarocchi-buttons,
+  .page-id-17 .soul-buttons,
+  .page-id-17 .lab-buttons {
+    display: grid;
+    gap: 12px;
+  }
+}
+
+@media (max-width: 544px) {
+  .page-id-17 .menu-verticale-sticky ul,
+  .page-id-17 .elementor-element-368bd2b .menu-pergamena ul {
+    grid-template-columns: 1fr;
+  }
+
+  .page-id-17 .chi-text,
+  .page-id-17 .numerologia__text,
+  .page-id-17 .tarocchi-box,
+  .page-id-17 .soul-text,
+  .page-id-17 .lab-text-box,
+  .page-id-17 .product-card {
+    padding: 18px;
+  }
+}
