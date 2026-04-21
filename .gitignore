@@ -1,0 +1,4 @@
+wordpress-implementation/backups/
+wordpress-implementation/*.zip
+__pycache__/
+*.pyc

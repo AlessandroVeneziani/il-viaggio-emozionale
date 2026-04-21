@@ -1,0 +1,568 @@
+:root {
+  --ive-ink: #083b5b;
+  --ive-ink-soft: #4d392d;
+  --ive-gold: #8b6a2f;
+  --ive-gold-deep: #705121;
+  --ive-beige: #fdf6ec;
+  --ive-beige-soft: #fffaf2;
+  --ive-sand: #f2e6d3;
+  --ive-border: #d5bc8f;
+  --ive-shadow: 0 18px 36px rgba(8, 34, 52, 0.12);
+  --ive-radius: 28px;
+}
+
+.page-id-17 {
+  color: var(--ive-ink-soft);
+  overflow-x: clip;
+}
+
+.page-id-17 .hero,
+.page-id-17 .chi-section,
+.page-id-17 .section-numerologia,
+.page-id-17 .tarocchi-section,
+.page-id-17 .soul-wrapper,
+.page-id-17 .lab-section {
+  position: relative;
+}
+
+.page-id-17 #chi,
+.page-id-17 #numerologia,
+.page-id-17 #tarocchi,
+.page-id-17 #soul-design,
+.page-id-17 #lab {
+  scroll-margin-top: 112px;
+}
+
+.page-id-17 h1,
+.page-id-17 h2,
+.page-id-17 h3,
+.page-id-17 .numerologia__title,
+.page-id-17 .section-title,
+.page-id-17 .lab-title {
+  color: var(--ive-ink);
+  letter-spacing: 0.01em;
+  line-height: 1.15;
+}
+
+.page-id-17 p,
+.page-id-17 li,
+.page-id-17 .subtitle,
+.page-id-17 .section-sub,
+.page-id-17 .numerologia__lead,
+.page-id-17 .lab-subtitle {
+  color: var(--ive-ink-soft);
+  line-height: 1.72;
+}
+
+.page-id-17 .chi-content,
+.page-id-17 .numerologia__header,
+.page-id-17 .numerologia__text-wrapper,
+.page-id-17 .numerologia__products,
+.page-id-17 .tarocchi-wrapper,
+.page-id-17 .section-header,
+.page-id-17 .soul-grid,
+.page-id-17 .lab-header,
+.page-id-17 .lab-container {
+  box-sizing: border-box;
+  max-width: 1240px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.page-id-17 .chi-text,
+.page-id-17 .numerologia__text,
+.page-id-17 .tarocchi-box,
+.page-id-17 .soul-text,
+.page-id-17 .lab-text-box,
+.page-id-17 .product-card {
+  background: rgba(255, 250, 242, 0.94);
+  border: 1px solid rgba(122, 91, 46, 0.16);
+  border-radius: var(--ive-radius);
+  box-shadow: var(--ive-shadow);
+}
+
+.page-id-17 .chi-text,
+.page-id-17 .numerologia__text,
+.page-id-17 .tarocchi-box,
+.page-id-17 .soul-text,
+.page-id-17 .lab-text-box {
+  padding: clamp(24px, 3vw, 40px);
+}
+
+.page-id-17 .product-card {
+  padding: clamp(22px, 2.6vw, 34px);
+  text-align: left;
+}
+
+.page-id-17 .btn,
+.page-id-17 .btn--solid,
+.page-id-17 .btn--outline,
+.page-id-17 .btn--primary,
+.page-id-17 .btn-solid,
+.page-id-17 .btn-outline {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 48px;
+  padding: 14px 24px;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  font-weight: 600;
+  line-height: 1.2;
+  text-align: center;
+  text-decoration: none !important;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, background-color 0.2s ease,
+    border-color 0.2s ease, color 0.2s ease;
+}
+
+.page-id-17 .btn--solid,
+.page-id-17 .btn--primary,
+.page-id-17 .btn-solid {
+  background: var(--ive-gold);
+  border-color: var(--ive-gold);
+  color: #ffffff !important;
+  box-shadow: 0 12px 26px rgba(122, 91, 46, 0.22);
+}
+
+.page-id-17 .btn--outline,
+.page-id-17 .btn-outline {
+  background: rgba(255, 250, 242, 0.88);
+  border-color: var(--ive-border);
+  color: var(--ive-ink) !important;
+}
+
+.page-id-17 .btn:hover,
+.page-id-17 .btn--solid:hover,
+.page-id-17 .btn--outline:hover,
+.page-id-17 .btn--primary:hover,
+.page-id-17 .btn-solid:hover,
+.page-id-17 .btn-outline:hover {
+  transform: translateY(-1px);
+}
+
+.page-id-17 .btn--solid:hover,
+.page-id-17 .btn--primary:hover,
+.page-id-17 .btn-solid:hover {
+  background: var(--ive-gold-deep);
+  border-color: var(--ive-gold-deep);
+}
+
+.page-id-17 .btn--outline:hover,
+.page-id-17 .btn-outline:hover {
+  background: var(--ive-sand);
+  border-color: var(--ive-gold);
+}
+
+.page-id-17 a:focus-visible,
+.page-id-17 button:focus-visible,
+.page-id-17 .btn:focus-visible,
+.page-id-17 .btn-solid:focus-visible,
+.page-id-17 .btn-outline:focus-visible,
+.page-id-17 .menu-pergamena a:focus-visible {
+  outline: 3px solid var(--ive-ink);
+  outline-offset: 3px;
+}
+
+.page-id-17 .section-story,
+.page-id-17 .chi-note {
+  max-width: 760px;
+}
+
+.page-id-17 .section-story {
+  margin: 16px auto 0;
+  font-size: 1.02rem;
+}
+
+.page-id-17 .section-cta-row,
+.page-id-17 .product-card__btn-row,
+.page-id-17 .tarocchi-buttons,
+.page-id-17 .soul-buttons,
+.page-id-17 .lab-buttons,
+.page-id-17 .chi-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+}
+
+.page-id-17 .section-cta-row {
+  justify-content: center;
+  margin-top: 22px;
+}
+
+.page-id-17 .hero {
+  background:
+    linear-gradient(180deg, rgba(253, 246, 236, 0.18) 0%, rgba(8, 59, 91, 0.18) 100%),
+    url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/background-number.webp");
+  background-size: cover;
+  background-position: center;
+  text-align: center;
+  padding: clamp(56px, 8vw, 110px) 20px 48px;
+  overflow: clip;
+}
+
+.page-id-17 .hero::after {
+  content: "";
+  position: absolute;
+  inset: auto 0 0;
+  height: 110px;
+  background: linear-gradient(to bottom, rgba(253, 246, 236, 0) 0%, var(--ive-beige) 100%);
+  pointer-events: none;
+}
+
+.page-id-17 .hero__container {
+  max-width: 920px;
+  margin: 0 auto;
+  position: relative;
+}
+
+.page-id-17 .hero__logo {
+  display: block;
+  width: min(100%, 560px);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 16px 36px rgba(8, 34, 52, 0.12));
+}
+
+.page-id-17 .menu-pergamena {
+  width: min(250px, calc(100vw - 40px));
+  background: rgba(253, 246, 236, 0.95);
+  border: 1px solid var(--ive-border);
+  border-radius: 20px;
+  box-shadow: var(--ive-shadow);
+  padding: 16px;
+  backdrop-filter: blur(8px);
+}
+
+.page-id-17 .menu-pergamena ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: grid;
+  gap: 8px;
+}
+
+.page-id-17 .menu-pergamena li {
+  margin: 0;
+}
+
+.page-id-17 .menu-pergamena a {
+  display: block;
+  padding: 10px 12px;
+  border-radius: 12px;
+  color: var(--ive-ink) !important;
+  font-weight: 600;
+  text-decoration: none !important;
+}
+
+.page-id-17 .menu-pergamena a:hover {
+  background: rgba(122, 91, 46, 0.08);
+  color: var(--ive-gold-deep) !important;
+}
+
+.page-id-17 .chi-section {
+  background: linear-gradient(180deg, var(--ive-beige) 0%, #f8efe2 100%);
+  padding: clamp(48px, 8vw, 86px) 20px;
+}
+
+.page-id-17 .chi-content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.2fr) minmax(240px, 0.8fr);
+  gap: clamp(24px, 4vw, 60px);
+  align-items: center;
+}
+
+.page-id-17 .chi-text h2 {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin: 0 0 8px;
+}
+
+.page-id-17 .chi-text .subtitle {
+  font-weight: 600;
+  color: var(--ive-gold-deep);
+  margin-bottom: 18px;
+}
+
+.page-id-17 .chi-buttons {
+  margin-top: 24px;
+}
+
+.page-id-17 .chi-note {
+  margin-top: 18px;
+  font-style: italic;
+}
+
+.page-id-17 .chi-image img,
+.page-id-17 .tarocchi-card img,
+.page-id-17 .soul-image img,
+.page-id-17 .lab-image-box img {
+  display: block;
+  width: min(100%, 380px);
+  height: auto;
+  margin: 0 auto;
+  filter: drop-shadow(0 20px 30px rgba(8, 34, 52, 0.12));
+}
+
+.page-id-17 .section-numerologia {
+  background:
+    linear-gradient(120deg, rgba(255, 255, 255, 0.24) 0%, rgba(255, 255, 255, 0.08) 100%),
+    url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/backgroung-number.webp");
+  background-size: cover;
+  background-position: center;
+  padding: clamp(56px, 8vw, 88px) 20px;
+  border-top: 4px solid rgba(191, 162, 71, 0.8);
+}
+
+.page-id-17 .numerologia__header {
+  text-align: center;
+  margin-bottom: 30px;
+}
+
+.page-id-17 .numerologia__title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.page-id-17 .numerologia__lead {
+  font-size: 1.12rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 720px;
+}
+
+.page-id-17 .numerologia__image {
+  display: block;
+  width: min(100%, 320px);
+  height: auto;
+  margin: 0 auto 30px;
+  filter: drop-shadow(0 20px 30px rgba(8, 34, 52, 0.14));
+}
+
+.page-id-17 .numerologia__text-wrapper {
+  margin-bottom: 28px;
+}
+
+.page-id-17 .numerologia__subpoints {
+  margin: 14px 0 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.page-id-17 .numerologia__products {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+
+.page-id-17 .product-card img {
+  display: block;
+  width: min(100%, 200px);
+  height: auto;
+  margin-bottom: 18px;
+  border-radius: 18px;
+}
+
+.page-id-17 .product-card__title {
+  margin-bottom: 8px;
+  font-size: 1.45rem;
+}
+
+.page-id-17 .product-card__price,
+.page-id-17 .tarocchi-price,
+.page-id-17 .soul-price {
+  color: var(--ive-ink);
+  font-weight: 700;
+}
+
+.page-id-17 .product-card__desc {
+  margin-top: 10px;
+}
+
+.page-id-17 .product-card__btn-row {
+  margin-top: 18px;
+}
+
+.page-id-17 .tarocchi-section,
+.page-id-17 .soul-wrapper {
+  background: #f9f4ec;
+  padding: clamp(56px, 8vw, 88px) 20px;
+  border-top: 4px solid rgba(191, 162, 71, 0.82);
+  border-bottom: 4px solid rgba(191, 162, 71, 0.82);
+}
+
+.page-id-17 .tarocchi-header,
+.page-id-17 .section-header,
+.page-id-17 .lab-header {
+  text-align: center;
+  margin-bottom: 34px;
+}
+
+.page-id-17 .tarocchi-header h2,
+.page-id-17 .section-title,
+.page-id-17 .lab-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 12px;
+}
+
+.page-id-17 .tarocchi-header .subtitle,
+.page-id-17 .section-sub,
+.page-id-17 .lab-subtitle {
+  font-size: 1.08rem;
+  font-style: italic;
+  margin: 0 auto;
+  max-width: 760px;
+}
+
+.page-id-17 .tarocchi-columns,
+.page-id-17 .soul-grid,
+.page-id-17 .lab-container {
+  display: grid;
+  grid-template-columns: minmax(220px, 0.85fr) minmax(0, 1.15fr);
+  gap: clamp(24px, 4vw, 56px);
+  align-items: center;
+}
+
+.page-id-17 .tarocchi-box p,
+.page-id-17 .soul-text p,
+.page-id-17 .lab-text-box p {
+  margin-top: 0;
+}
+
+.page-id-17 .tarocchi-price,
+.page-id-17 .soul-price {
+  margin-top: 18px;
+  padding: 14px 16px;
+  background: rgba(8, 59, 91, 0.05);
+  border-left: 4px solid var(--ive-gold);
+  border-radius: 14px;
+}
+
+.page-id-17 .tarocchi-buttons,
+.page-id-17 .soul-buttons,
+.page-id-17 .lab-buttons {
+  margin-top: 18px;
+}
+
+.page-id-17 .soul-grid {
+  grid-template-columns: minmax(0, 1.12fr) minmax(220px, 0.88fr);
+}
+
+.page-id-17 .soul-text ul,
+.page-id-17 .lab-text-box ul {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.page-id-17 .lab-section {
+  background: #fdf7ef;
+  padding: clamp(56px, 8vw, 88px) 20px;
+}
+
+.page-id-17 .transparent-divider {
+  width: 120px;
+  height: 4px;
+  border-radius: 999px;
+  margin: 0 auto 28px;
+  background: linear-gradient(90deg, rgba(191, 162, 71, 0.25) 0%, rgba(191, 162, 71, 1) 50%, rgba(191, 162, 71, 0.25) 100%);
+}
+
+.page-id-17 .lab-image-box img {
+  border-radius: 28px;
+}
+
+@media (min-width: 1100px) {
+  .page-id-17 .menu-pergamena {
+    position: fixed;
+    top: 96px;
+    right: 20px;
+    z-index: 40;
+  }
+
+  .page-id-17 .chi-content,
+  .page-id-17 .numerologia__header,
+  .page-id-17 .numerologia__text-wrapper,
+  .page-id-17 .numerologia__products,
+  .page-id-17 .tarocchi-wrapper,
+  .page-id-17 .section-header,
+  .page-id-17 .soul-grid,
+  .page-id-17 .lab-header,
+  .page-id-17 .lab-container {
+    padding-right: 270px;
+  }
+}
+
+@media (max-width: 1099px) {
+  .page-id-17 .menu-pergamena {
+    position: static;
+    margin: 24px auto 0;
+  }
+}
+
+@media (max-width: 921px) {
+  .page-id-17 .chi-content,
+  .page-id-17 .numerologia__products,
+  .page-id-17 .tarocchi-columns,
+  .page-id-17 .soul-grid,
+  .page-id-17 .lab-container {
+    grid-template-columns: 1fr;
+  }
+
+  .page-id-17 .chi-content,
+  .page-id-17 .numerologia__header,
+  .page-id-17 .numerologia__text-wrapper,
+  .page-id-17 .numerologia__products,
+  .page-id-17 .tarocchi-wrapper,
+  .page-id-17 .section-header,
+  .page-id-17 .soul-grid,
+  .page-id-17 .lab-header,
+  .page-id-17 .lab-container {
+    padding-right: 0;
+  }
+
+  .page-id-17 .menu-pergamena {
+    width: 100%;
+    max-width: none;
+  }
+
+  .page-id-17 .menu-pergamena ul {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  .page-id-17 .section-cta-row,
+  .page-id-17 .product-card__btn-row,
+  .page-id-17 .tarocchi-buttons,
+  .page-id-17 .soul-buttons,
+  .page-id-17 .lab-buttons,
+  .page-id-17 .chi-buttons {
+    display: grid;
+  }
+
+  .page-id-17 .btn,
+  .page-id-17 .btn--solid,
+  .page-id-17 .btn--outline,
+  .page-id-17 .btn--primary,
+  .page-id-17 .btn-solid,
+  .page-id-17 .btn-outline {
+    width: 100%;
+  }
+}
+
+@media (max-width: 544px) {
+  .page-id-17 .menu-pergamena ul {
+    grid-template-columns: 1fr;
+  }
+
+  .page-id-17 .hero {
+    padding-top: 42px;
+  }
+
+  .page-id-17 .chi-text,
+  .page-id-17 .numerologia__text,
+  .page-id-17 .tarocchi-box,
+  .page-id-17 .soul-text,
+  .page-id-17 .lab-text-box,
+  .page-id-17 .product-card {
+    padding: 20px;
+  }
+}
