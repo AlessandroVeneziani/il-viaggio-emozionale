@@ -174,17 +174,19 @@ def build_widget_html() -> dict[str, str]:
 
     hero_html = """
 <header class="hero" data-aos="fade-down">
-  <div class="hero__container" data-aos="zoom-in">
-    <img
-      src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
-      alt="Il Viaggio Emozionale"
-      class="hero__logo"
-      data-aos="zoom-in"
-      data-aos-delay="300"
-      loading="eager"
-      decoding="async"
-    >
-    <nav class="menu-pergamena" aria-label="Percorsi e sezioni del sito" data-aos="fade-left" data-aos-delay="500">
+  <div class="hero__container">
+    <div class="hero__brand" data-aos="zoom-in" data-aos-delay="250">
+      <img
+        src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
+        alt="Il Viaggio Emozionale"
+        class="hero__logo"
+        loading="eager"
+        decoding="async"
+      >
+      <p class="hero__tagline">Sei prontə per iniziare il tuo viaggio?</p>
+    </div>
+
+    <nav class="menu-pergamena" aria-label="Percorsi e sezioni del sito" data-aos="fade-up" data-aos-delay="450">
       <ul>
         <li><a href="#chi">Chi sono</a></li>
         <li><a href="#numerologia">Numerologia Indiana</a></li>
@@ -201,7 +203,7 @@ def build_widget_html() -> dict[str, str]:
     <div class="chi-text" data-aos="fade-left" data-aos-delay="200">
       <h2>Un accompagnamento simbolico per quando senti di esserti perso</h2>
       <p class="subtitle">Alessandro Veneziani · Designer dell&apos;Anima e Ricercatore Simbolico</p>
-      <p>Benvenut* nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
+      <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
       <p>Ci sono momenti in cui continui a fare, decidere e andare avanti, ma manca una mappa interiore che ti aiuti a leggere quello che stai vivendo. Il mio lavoro nasce proprio qui: trasformare simboli e intuizioni in passi concreti.</p>
       <div class="chi-buttons">
         <a href="#numerologia" class="btn btn--solid">Scopri il percorso piu adatto</a>
@@ -220,6 +222,57 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 </section>
+
+<script>
+(function() {
+  const breakpoint = 1280;
+
+  function syncStickyRail() {
+    const page = document.querySelector('.page-id-17 .elementor-17');
+    const sourceMenu = document.querySelector('.page-id-17 .hero .menu-pergamena');
+
+    if (!page || !sourceMenu) {
+      return;
+    }
+
+    let rail = page.querySelector('.ive-sticky-menu-rail');
+
+    if (window.innerWidth >= breakpoint) {
+      if (!rail) {
+        rail = document.createElement('aside');
+        rail.className = 'ive-sticky-menu-rail';
+        rail.appendChild(sourceMenu.cloneNode(true));
+        page.appendChild(rail);
+      }
+
+      document.body.classList.add('ive-sticky-menu-active');
+    } else {
+      if (rail) {
+        rail.remove();
+      }
+
+      document.body.classList.remove('ive-sticky-menu-active');
+    }
+  }
+
+  let resizeFrame = null;
+  function handleResize() {
+    if (resizeFrame) {
+      cancelAnimationFrame(resizeFrame);
+    }
+
+    resizeFrame = requestAnimationFrame(syncStickyRail);
+  }
+
+  if (document.readyState === 'loading') {
+    document.addEventListener('DOMContentLoaded', syncStickyRail);
+  } else {
+    syncStickyRail();
+  }
+
+  window.addEventListener('resize', handleResize);
+})();
+</script>
 """.strip()
 
     numerologia_html = """
@@ -285,7 +338,7 @@ def build_widget_html() -> dict[str, str]:
       <p class="section-story">Quando senti che qualcosa non torna, una lettura simbolica puo aiutarti a nominare blocchi, desideri e movimenti profondi, trasformandoli in scelte piu consapevoli.</p>
       <div class="section-cta-row">
         <a href="mailto:info@ilviaggioemozionale.it?subject=Tarocchi%20Archetipici%20-%20Info" class="btn btn--outline">Richiedi disponibilita</a>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota la sessione</a>
+        <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
       </div>
     </div>
 
@@ -301,7 +354,7 @@ def build_widget_html() -> dict[str, str]:
         <p class="tarocchi-price">Sessione individuale - 80 EUR</p>
         <div class="tarocchi-buttons">
           <a href="mailto:info@ilviaggioemozionale.it?subject=Tarocchi%20Archetipici%20-%20Info" class="btn-outline">Richiedi disponibilita</a>
-          <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn-solid" target="_blank" rel="noopener noreferrer">Acquista ora</a>
+          <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn-solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
         </div>
       </div>
     </div>

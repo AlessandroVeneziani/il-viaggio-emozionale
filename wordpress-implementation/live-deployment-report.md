@@ -29,6 +29,24 @@ Intervento eseguito sul sito live `https://ilviaggioemozionale.it` il `2026-04-2
   - pagina protetta mini percorso
 - SpeedyCache purgato e cache Elementor svuotata
 
+## Follow-up layout e hero
+
+Secondo intervento applicato dopo revisione visuale del layout:
+
+- menu pergamena spostato in una rail sticky desktop dell'intera home
+- contenuti principali recentrati su una larghezza coerente con il logo
+- rimozione del vecchio offset che spingeva testi e box troppo a sinistra
+- sezione Numerologia riequilibrata con box prodotto centrati e piu ampi
+- sezione Tarocchi riallineata al centro con CTA uniformate
+- sezione Soul Design riallineata al centro
+- sezione Laboratorio dell'Anima riallineata al centro
+- `Benvenut*` aggiornato a `Benvenutə`
+- payoff hero aggiornato a `Sei prontə per iniziare il tuo viaggio?`
+
+Nota tecnica:
+
+- il payoff con schwa nella hero e stato gestito come overlay testuale sopra il logo esistente, per preservare l'asset grafico del brand senza ricostruirlo da zero
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
