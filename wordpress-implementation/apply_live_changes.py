@@ -183,7 +183,6 @@ def build_widget_html() -> dict[str, str]:
         loading="eager"
         decoding="async"
       >
-      <p class="hero__tagline">Sei prontə per iniziare il tuo viaggio?</p>
     </div>
 
     <nav class="menu-pergamena" aria-label="Percorsi e sezioni del sito" data-aos="fade-up" data-aos-delay="450">
@@ -225,7 +224,7 @@ def build_widget_html() -> dict[str, str]:
 
 <script>
 (function() {
-  const breakpoint = 1280;
+  const breakpoint = 1360;
 
   function syncStickyRail() {
     const page = document.querySelector('.page-id-17 .elementor-17');
@@ -400,8 +399,6 @@ def build_widget_html() -> dict[str, str]:
 
     lab_html = f"""
 <section id="lab" class="lab-section soul-wrapper">
-  <div class="transparent-divider"></div>
-
   <div class="lab-header" data-aos="fade-up">
     <h2 class="lab-title">Inizia il tuo viaggio interiore con il Laboratorio dell&apos;Anima</h2>
     <p class="lab-subtitle">Una guida simbolica e pratica per quando senti che c&apos;e qualcosa di piu, ma non sai ancora da dove partire.</p>

@@ -47,6 +47,22 @@ Nota tecnica:
 
 - il payoff con schwa nella hero e stato gestito come overlay testuale sopra il logo esistente, per preservare l'asset grafico del brand senza ricostruirlo da zero
 
+## Intervento tipografico pronto per deploy
+
+- Plugin locale preparato:
+  - `IVE Brand Typography`
+- Asset pronti in `wordpress-implementation/ive-brand-typography/`
+- Font scelto per i titoli:
+  - `Playfair Display` peso `700`
+- Ottimizzazioni incluse nel plugin:
+  - file `WOFF2` locale per subset `latin` e `latin-ext`
+  - `font-display: swap`
+  - preload del font principale nel `head`
+  - applicazione solo a `h1`, `h2`, `h3`, `h4`
+  - font del corpo invariato
+- Stato deploy:
+  - pacchetto zip generato ma non pubblicato sul sito per blocco temporaneo di raggiungibilita dalla postazione di lavoro durante l'ultimo tentativo di upload/verifica
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
