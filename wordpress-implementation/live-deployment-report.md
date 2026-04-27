@@ -179,21 +179,18 @@ Settimo aggiornamento live pubblicato il `2026-04-27`.
 - copertina spostata leggermente verso destra e valorizzata con ombra piu presente
 - fallback mobile confermato senza overflow laterale, con `margin-top: 20px`
 
-## Transizione prima dei Tarocchi
+## Linea prima dei Tarocchi
 
 Ottavo aggiornamento live pubblicato il `2026-04-27`.
 
-- sostituito il vecchio divisore semplice con una transizione completa a tre blocchi:
-  - fascia avorio superiore
-  - fascia gold con pattern numerico
-  - fascia avorio inferiore
-- transizione costruita con:
-  - stesso asset numerico gold gia usato negli altri separatori del sito
-  - linee gold sopra e sotto la fascia centrale
-  - margine `80px 0 90px` su desktop
-  - margine `50px 0 60px` su mobile
-  - altezze `70px / 70px / 70px` desktop e `45px / 50px / 45px` mobile
-- bordo superiore dei Tarocchi azzerato quando la sezione segue la nuova transizione, per evitare sovrapposizioni visive
+- rimossa la struttura a fasce e lasciata una sola linea gold di divisione
+- markup ridotto a un unico elemento `section-divider-line`
+- linea costruita con:
+  - `height: 2px`
+  - colore gold `#c6a75e`
+  - margine `70px 0 80px` desktop
+  - margine `40px 0 50px` mobile
+- bordo superiore dei Tarocchi azzerato quando la sezione segue la linea, per evitare una doppia divisione visiva
 
 ## Verifiche riuscite
 

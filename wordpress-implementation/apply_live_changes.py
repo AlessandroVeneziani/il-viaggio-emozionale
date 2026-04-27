@@ -505,11 +505,7 @@ def build_widget_html() -> dict[str, str]:
   </div>
 </section>
 
-<div class="section-transition">
-  <div class="section-transition-white"></div>
-  <div class="section-transition-gold"></div>
-  <div class="section-transition-white"></div>
-</div>
+<div class="section-divider-line" aria-hidden="true"></div>
 """.strip()
 
     tarocchi_html = """
