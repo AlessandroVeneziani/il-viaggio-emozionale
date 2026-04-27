@@ -154,6 +154,20 @@ Quinto aggiornamento live pubblicato il `2026-04-27`.
 - immagine del Matto resa piu dominante con classe dedicata `tarocchi-image`
 - schema `Service` dei Tarocchi riallineato con prezzo `100.00`
 
+## Rifinitura Numerologia
+
+Sesto aggiornamento live pubblicato il `2026-04-27`.
+
+- leone della Numerologia ridimensionato in modo piu controllato
+- posizione rialzata a `top: -90px` per evitare interferenze con il testo centrale
+- pergamena con `padding-top: 90px` su desktop per creare una zona di rispetto piu leggibile
+- ombra del leone alleggerita per un effetto piu elegante
+- micro-rotazione lieve applicata per dare presenza senza rigidita
+- comportamento mobile confermato con:
+  - leone riportato in flusso
+  - nessun overflow laterale
+  - `padding-top: 40px` sulla card
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
