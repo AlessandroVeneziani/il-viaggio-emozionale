@@ -504,6 +504,8 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 </section>
+
+<div class="section-divider"></div>
 """.strip()
 
     tarocchi_html = """

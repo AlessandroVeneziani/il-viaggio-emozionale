@@ -528,6 +528,39 @@
   border-top: 2px solid rgba(191, 162, 71, 0.42);
 }
 
+.page-id-17 .section-divider {
+  position: relative;
+  height: 80px;
+  margin: 60px 0;
+  background:
+    linear-gradient(180deg, rgba(255, 248, 235, 0.16) 0%, rgba(201, 171, 101, 0.08) 100%),
+    url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/backgroung-number-1-e1751017644421.webp");
+  background-size: cover;
+  background-position: center;
+}
+
+.page-id-17 .section-divider::before,
+.page-id-17 .section-divider::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  width: 100%;
+  height: 2px;
+  background: #c6a75e;
+}
+
+.page-id-17 .section-divider::before {
+  top: 0;
+}
+
+.page-id-17 .section-divider::after {
+  bottom: 0;
+}
+
+.page-id-17 .section-divider + .tarocchi-section {
+  border-top: 0;
+}
+
 .page-id-17 .ritratto-shell {
   padding-top: clamp(24px, 4vw, 38px);
 }
@@ -1065,6 +1098,11 @@
 }
 
 @media (max-width: 768px) {
+  .page-id-17 .section-divider {
+    height: 50px;
+    margin: 40px 0;
+  }
+
   .page-id-17 .lion-image {
     position: relative;
     width: 100%;

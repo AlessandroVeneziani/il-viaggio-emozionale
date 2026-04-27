@@ -179,6 +179,18 @@ Settimo aggiornamento live pubblicato il `2026-04-27`.
 - copertina spostata leggermente verso destra e valorizzata con ombra piu presente
 - fallback mobile confermato senza overflow laterale, con `margin-top: 20px`
 
+## Separatore prima dei Tarocchi
+
+Ottavo aggiornamento live pubblicato il `2026-04-27`.
+
+- inserito un nuovo `section-divider` subito prima della sezione `Tarocchi Archetipici`
+- separatore costruito con:
+  - pattern numerico gold gia presente nel sito
+  - doppia linea orizzontale gold
+  - altezza `80px` desktop / `50px` mobile
+  - spaziatura `60px` desktop / `40px` mobile
+- bordo superiore dei Tarocchi azzerato quando la sezione segue il divider, per evitare ridondanze visive
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
