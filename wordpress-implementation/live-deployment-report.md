@@ -179,17 +179,21 @@ Settimo aggiornamento live pubblicato il `2026-04-27`.
 - copertina spostata leggermente verso destra e valorizzata con ombra piu presente
 - fallback mobile confermato senza overflow laterale, con `margin-top: 20px`
 
-## Separatore prima dei Tarocchi
+## Transizione prima dei Tarocchi
 
 Ottavo aggiornamento live pubblicato il `2026-04-27`.
 
-- inserito un nuovo `section-divider` subito prima della sezione `Tarocchi Archetipici`
-- separatore costruito con:
-  - pattern numerico gold gia presente nel sito
-  - doppia linea orizzontale gold
-  - altezza `80px` desktop / `50px` mobile
-  - spaziatura `60px` desktop / `40px` mobile
-- bordo superiore dei Tarocchi azzerato quando la sezione segue il divider, per evitare ridondanze visive
+- sostituito il vecchio divisore semplice con una transizione completa a tre blocchi:
+  - fascia avorio superiore
+  - fascia gold con pattern numerico
+  - fascia avorio inferiore
+- transizione costruita con:
+  - stesso asset numerico gold gia usato negli altri separatori del sito
+  - linee gold sopra e sotto la fascia centrale
+  - margine `80px 0 90px` su desktop
+  - margine `50px 0 60px` su mobile
+  - altezze `70px / 70px / 70px` desktop e `45px / 50px / 45px` mobile
+- bordo superiore dei Tarocchi azzerato quando la sezione segue la nuova transizione, per evitare sovrapposizioni visive
 
 ## Verifiche riuscite
 

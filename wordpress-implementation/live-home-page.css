@@ -528,36 +528,26 @@
   border-top: 2px solid rgba(191, 162, 71, 0.42);
 }
 
-.page-id-17 .section-divider {
-  position: relative;
-  height: 80px;
-  margin: 60px 0;
-  background:
-    linear-gradient(180deg, rgba(255, 248, 235, 0.16) 0%, rgba(201, 171, 101, 0.08) 100%),
-    url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/backgroung-number-1-e1751017644421.webp");
+.page-id-17 .section-transition {
+  width: 100%;
+  margin: 80px 0 90px;
+}
+
+.page-id-17 .section-transition-white {
+  height: 70px;
+  background: #f8f3e8;
+}
+
+.page-id-17 .section-transition-gold {
+  height: 70px;
+  background-image: url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/backgroung-number-1-e1751017644421.webp");
   background-size: cover;
   background-position: center;
+  border-top: 2px solid #c6a75e;
+  border-bottom: 2px solid #c6a75e;
 }
 
-.page-id-17 .section-divider::before,
-.page-id-17 .section-divider::after {
-  content: "";
-  position: absolute;
-  left: 0;
-  width: 100%;
-  height: 2px;
-  background: #c6a75e;
-}
-
-.page-id-17 .section-divider::before {
-  top: 0;
-}
-
-.page-id-17 .section-divider::after {
-  bottom: 0;
-}
-
-.page-id-17 .section-divider + .tarocchi-section {
+.page-id-17 .section-transition + .tarocchi-section {
   border-top: 0;
 }
 
@@ -1098,9 +1088,16 @@
 }
 
 @media (max-width: 768px) {
-  .page-id-17 .section-divider {
+  .page-id-17 .section-transition {
+    margin: 50px 0 60px;
+  }
+
+  .page-id-17 .section-transition-white {
+    height: 45px;
+  }
+
+  .page-id-17 .section-transition-gold {
     height: 50px;
-    margin: 40px 0;
   }
 
   .page-id-17 .lion-image {
