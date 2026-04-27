@@ -295,6 +295,14 @@
   color: var(--ive-gold-deep) !important;
 }
 
+.page-id-17 .menu-pergamena a.is-active,
+.page-id-17 .menu-pergamena a[aria-current="page"] {
+  background: rgba(139, 106, 47, 0.14);
+  border: 1px solid rgba(139, 106, 47, 0.22);
+  color: var(--ive-gold-deep) !important;
+  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
+}
+
 .page-id-17 .chi-section {
   background: linear-gradient(180deg, var(--ive-beige) 0%, #f8efe2 100%);
   padding: clamp(48px, 8vw, 84px) 20px;
@@ -386,16 +394,31 @@
   display: block;
   width: min(100%, 320px);
   height: auto;
-  margin: 0 auto 32px;
+  margin: 0 auto;
   filter: drop-shadow(0 20px 30px rgba(8, 34, 52, 0.14));
 }
 
-.page-id-17 .numerologia__text-wrapper {
-  margin-bottom: 34px;
+.page-id-17 .numerologia__summary {
+  width: min(100%, var(--ive-content-max));
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
+  gap: clamp(24px, 4vw, 44px);
+  align-items: center;
+}
+
+.page-id-17 .numerologia__visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .page-id-17 .numerologia__text {
   text-align: center;
+}
+
+.page-id-17 .numerologia__text--compact {
+  text-align: left;
 }
 
 .page-id-17 .numerologia__subpoints {
@@ -408,39 +431,6 @@
   text-align: left;
 }
 
-.page-id-17 .numerologia__products {
-  display: grid;
-  grid-template-columns: repeat(2, minmax(280px, 1fr));
-  gap: 30px;
-  align-items: stretch;
-  justify-content: center;
-}
-
-.page-id-17 .product-card img {
-  display: block;
-  width: min(100%, 220px);
-  height: auto;
-  margin: 0 auto 20px;
-  border-radius: 18px;
-}
-
-.page-id-17 .product-card__title {
-  margin-bottom: 8px;
-  font-size: 1.45rem;
-}
-
-.page-id-17 .product-card__price,
-.page-id-17 .tarocchi-price,
-.page-id-17 .soul-price {
-  color: var(--ive-ink);
-  font-weight: 700;
-}
-
-.page-id-17 .product-card__desc {
-  margin-top: 10px;
-}
-
-.page-id-17 .product-card__eyebrow,
 .page-id-17 .ritratto-kicker,
 .page-id-17 .ritratto-card__label {
   margin: 0 0 10px;
@@ -451,13 +441,13 @@
   text-transform: uppercase;
 }
 
-.page-id-17 .product-card__btn-row {
-  width: 100%;
-  margin-top: 18px;
+.page-id-17 .numerologia__actions {
+  justify-content: flex-start;
 }
 
-.page-id-17 .product-card--ritratto-teaser {
-  border-color: rgba(139, 106, 47, 0.36);
+.page-id-17 .numerologia__shop-note {
+  margin: 14px 0 0;
+  font-size: 0.95rem;
 }
 
 .page-id-17 .ritratto-section {
@@ -499,6 +489,7 @@
 .page-id-17 .ritratto-grid {
   grid-template-columns: repeat(3, minmax(0, 1fr));
   align-items: stretch;
+  margin: -20px;
 }
 
 .page-id-17 .ritratto-card,
@@ -511,6 +502,8 @@
 }
 
 .page-id-17 .ritratto-card {
+  position: relative;
+  margin: 20px;
   padding: clamp(24px, 3vw, 34px);
   display: flex;
   flex-direction: column;
@@ -518,9 +511,86 @@
   text-align: left;
 }
 
+.page-id-17 .ritratto-card--digitale {
+  background: linear-gradient(180deg, rgba(247, 249, 252, 0.98) 0%, rgba(235, 243, 249, 0.94) 100%);
+  border-color: rgba(8, 59, 91, 0.14);
+}
+
+.page-id-17 .ritratto-card--stampato {
+  background: linear-gradient(180deg, rgba(255, 251, 244, 0.98) 0%, rgba(246, 236, 218, 0.94) 100%);
+  border-color: rgba(139, 106, 47, 0.2);
+}
+
 .page-id-17 .ritratto-card--premium {
-  border-color: rgba(139, 106, 47, 0.45);
+  border-width: 2px;
+  border-color: rgba(139, 106, 47, 0.56);
   background: linear-gradient(180deg, rgba(255, 250, 242, 0.98) 0%, rgba(245, 232, 209, 0.94) 100%);
+}
+
+.page-id-17 .ritratto-card__badge {
+  position: absolute;
+  top: 18px;
+  right: 18px;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 34px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: var(--ive-gold);
+  color: #ffffff;
+  font-size: 0.8rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.page-id-17 .ritratto-card__head {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 12px;
+}
+
+.page-id-17 .ritratto-card__icon,
+.page-id-17 .ritratto-quote__badge {
+  display: inline-flex;
+  align-items: center;
+}
+
+.page-id-17 .ritratto-card__icon {
+  justify-content: center;
+  width: 54px;
+  height: 54px;
+  border-radius: 18px;
+  color: var(--ive-ink);
+}
+
+.page-id-17 .ritratto-card__icon svg,
+.page-id-17 .ritratto-quote__badge svg {
+  width: 24px;
+  height: 24px;
+}
+
+.page-id-17 .ritratto-card__icon svg {
+  fill: none;
+  stroke: currentColor;
+  stroke-width: 1.7;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+}
+
+.page-id-17 .ritratto-card__icon--digitale {
+  background: rgba(8, 59, 91, 0.1);
+}
+
+.page-id-17 .ritratto-card__icon--stampato {
+  background: rgba(139, 106, 47, 0.12);
+}
+
+.page-id-17 .ritratto-card__icon--premium {
+  background: rgba(139, 106, 47, 0.18);
+  color: var(--ive-gold-deep);
 }
 
 .page-id-17 .ritratto-card__title {
@@ -582,6 +652,23 @@
   background: rgba(255, 255, 255, 0.58);
   border-left: 4px solid var(--ive-gold);
   border-radius: 20px;
+}
+
+.page-id-17 .ritratto-quote__badge {
+  gap: 8px;
+  margin-bottom: 14px;
+  padding: 6px 12px;
+  border-radius: 999px;
+  background: rgba(139, 106, 47, 0.12);
+  color: var(--ive-gold-deep);
+  font-size: 0.82rem;
+  font-weight: 700;
+  letter-spacing: 0.04em;
+  text-transform: uppercase;
+}
+
+.page-id-17 .ritratto-quote__badge svg {
+  fill: currentColor;
 }
 
 .page-id-17 .ritratto-quote cite {
@@ -741,7 +828,7 @@
 
 @media (max-width: 1024px) {
   .page-id-17 .chi-content,
-  .page-id-17 .numerologia__products,
+  .page-id-17 .numerologia__summary,
   .page-id-17 .ritratto-grid,
   .page-id-17 .ritratto-testimonial-grid,
   .page-id-17 .tarocchi-columns,
@@ -758,6 +845,7 @@
   }
 
   .page-id-17 .chi-text,
+  .page-id-17 .numerologia__text--compact,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,
   .page-id-17 .lab-text-box,
@@ -767,6 +855,10 @@
   }
 
   .page-id-17 .chi-buttons {
+    justify-content: center;
+  }
+
+  .page-id-17 .numerologia__actions {
     justify-content: center;
   }
 
@@ -828,5 +920,13 @@
   .page-id-17 .lab-text-box,
   .page-id-17 .product-card {
     padding: 20px;
+  }
+
+  .page-id-17 .ritratto-grid {
+    margin: -12px;
+  }
+
+  .page-id-17 .ritratto-card {
+    margin: 12px;
   }
 }

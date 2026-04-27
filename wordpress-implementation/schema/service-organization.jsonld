@@ -18,20 +18,13 @@
       "@type": "Service",
       "@id": "https://ilviaggioemozionale.it/#numerologia-indiana",
       "name": "Numerologia Indiana",
-      "serviceType": "Percorso introduttivo in PDF",
+      "serviceType": "Percorso simbolico e numerologico",
       "provider": {
         "@id": "https://ilviaggioemozionale.it/#organization"
       },
       "url": "https://ilviaggioemozionale.it/#numerologia",
       "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/numerologia-indiana.png",
-      "description": "PDF digitale introduttivo per comprendere numeri, cicli interiori e disegno evolutivo personale.",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "15.00",
-        "availability": "https://schema.org/InStock",
-        "url": "https://ilviaggioemozionale.it/#numerologia"
-      }
+      "description": "Percorso di lettura simbolica per comprendere numeri, cicli interiori e disegno evolutivo personale."
     },
     {
       "@type": "ProductGroup",

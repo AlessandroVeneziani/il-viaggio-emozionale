@@ -226,6 +226,9 @@ def build_widget_html() -> dict[str, str]:
 <script>
 (function() {
   const breakpoint = 1360;
+  const sectionIds = ['chi', 'numerologia', 'ritratto', 'tarocchi', 'soul-design', 'lab'];
+  let trackedSections = [];
+  let activeSectionId = '';
 
   function syncStickyRail() {
     const page = document.querySelector('.page-id-17 .elementor-17');
@@ -253,6 +256,50 @@ def build_widget_html() -> dict[str, str]:
 
       document.body.classList.remove('ive-sticky-menu-active');
     }
+
+    updateActiveMenu();
+  }
+
+  function collectSections() {
+    trackedSections = sectionIds
+      .map((id) => document.getElementById(id))
+      .filter(Boolean);
+  }
+
+  function updateActiveMenu() {
+    if (!trackedSections.length) {
+      collectSections();
+    }
+
+    if (!trackedSections.length) {
+      return;
+    }
+
+    const scrollOffset = window.scrollY + 180;
+    let currentId = trackedSections[0].id;
+
+    trackedSections.forEach((section) => {
+      if (scrollOffset >= section.offsetTop) {
+        currentId = section.id;
+      }
+    });
+
+    if (currentId === activeSectionId) {
+      return;
+    }
+
+    activeSectionId = currentId;
+
+    document.querySelectorAll('.page-id-17 .menu-pergamena a').forEach((link) => {
+      const isActive = link.getAttribute('href') === '#' + currentId;
+      link.classList.toggle('is-active', isActive);
+
+      if (isActive) {
+        link.setAttribute('aria-current', 'page');
+      } else {
+        link.removeAttribute('aria-current');
+      }
+    });
   }
 
   let resizeFrame = null;
@@ -261,16 +308,35 @@ def build_widget_html() -> dict[str, str]:
       cancelAnimationFrame(resizeFrame);
     }
 
-    resizeFrame = requestAnimationFrame(syncStickyRail);
+    resizeFrame = requestAnimationFrame(function() {
+      collectSections();
+      syncStickyRail();
+    });
+  }
+
+  let scrollFrame = null;
+  function handleScroll() {
+    if (scrollFrame) {
+      cancelAnimationFrame(scrollFrame);
+    }
+
+    scrollFrame = requestAnimationFrame(updateActiveMenu);
   }
 
   if (document.readyState === 'loading') {
-    document.addEventListener('DOMContentLoaded', syncStickyRail);
+    document.addEventListener('DOMContentLoaded', function() {
+      collectSections();
+      syncStickyRail();
+      updateActiveMenu();
+    });
   } else {
+    collectSections();
     syncStickyRail();
+    updateActiveMenu();
   }
 
   window.addEventListener('resize', handleResize);
+  window.addEventListener('scroll', handleScroll, { passive: true });
 })();
 </script>
 """.strip()
@@ -280,51 +346,26 @@ def build_widget_html() -> dict[str, str]:
   <div class="numerologia__header" data-aos="fade-down">
     <h2 class="numerologia__title">Scopri la tua missione dell&apos;anima con la Numerologia Indiana</h2>
     <p class="numerologia__lead">Quando vivi schemi che si ripetono o blocchi difficili da nominare, i numeri possono offrirti una chiave di lettura nuova e concreta.</p>
-    <p class="section-story">La numerologia indiana ti aiuta a riconoscere cicli, talenti interiori e punti di disequilibrio, cosi da rileggere la tua storia con piu chiarezza e direzione.</p>
-    <div class="section-cta-row">
-      <a href="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Numerologia-Indiana-Estratto.pdf" class="btn btn--outline">Scarica l&apos;estratto</a>
-      <a href="https://www.paypal.com/paypalme/AVeneziani868/15EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Acquista il PDF</a>
-    </div>
+    <p class="section-story">La numerologia indiana ti aiuta a riconoscere cicli, talenti interiori e punti di disequilibrio, cosi da rileggere la tua storia con piu chiarezza e direzione senza perdere il contatto con la tua esperienza concreta.</p>
   </div>
 
-  <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/leone-e1751056944832.webp" class="numerologia__image" alt="Simbolo del leone per la Numerologia Indiana" data-aos="zoom-in" data-aos-delay="300" loading="lazy" decoding="async" />
+  <div class="numerologia__summary">
+    <div class="numerologia__visual" data-aos="zoom-in" data-aos-delay="200">
+      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/leone-e1751056944832.webp" class="numerologia__image" alt="Simbolo del leone per la Numerologia Indiana" loading="lazy" decoding="async" />
+    </div>
 
-  <div class="numerologia__text-wrapper">
-    <div class="numerologia__text" data-aos="fade-up">
+    <div class="numerologia__text numerologia__text--compact" data-aos="fade-up" data-aos-delay="100">
       <p><strong>Cos&apos;e?</strong><br>Una bussola sottile per il tuo viaggio interiore: il linguaggio dei numeri, delle date e dei nomi.</p>
-      <p><strong>Perche la uso?</strong><br>Dietro ogni scelta, relazione e passaggio di vita esiste un ordine simbolico che puo aiutarti a comprendere meglio dove sei e cosa stai imparando.</p>
-      <p><strong>Cosa aspettarti?</strong></p>
+      <p><strong>Quando puo aiutarti?</strong><br>Quando senti che la tua storia ripete schemi, ma non riesci ancora a dare un nome preciso a cio che stai vivendo.</p>
       <ul class="numerologia__subpoints">
-        <li>Chiarezza sui blocchi ricorrenti</li>
-        <li>Riconnessione ai doni interiori</li>
-        <li>Lettura evolutiva dei cicli di vita</li>
-        <li>Uno strumento concreto per orientarti da dentro</li>
+        <li>Ti aiuta a leggere cicli e ricorrenze con maggiore lucidita</li>
+        <li>Rende visibili talenti interiori e punti di disequilibrio</li>
+        <li>Offre una chiave simbolica che puo diventare pratica quotidiana</li>
       </ul>
-    </div>
-  </div>
-
-  <div class="numerologia__products">
-    <div class="product-card" data-aos="fade-right">
-      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/numerologia-indiana.png" alt="Copertina del PDF Numerologia Indiana" loading="lazy" decoding="async">
-      <h3 class="product-card__title">Numerologia Indiana</h3>
-      <p class="product-card__price">PDF digitale - 15 EUR</p>
-      <p class="product-card__desc">Un percorso introduttivo di 63 pagine per comprendere principi fondamentali, calcoli base, significati, strumenti pratici, esercizi e spunti evolutivi.</p>
-      <div class="product-card__btn-row">
-        <a href="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Numerologia-Indiana-Estratto.pdf" class="btn btn--outline">Scarica l&apos;estratto</a>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/15EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Acquista PDF</a>
+      <div class="section-cta-row numerologia__actions">
+        <a href="https://ilviaggioemozionale.it/negozio/" class="btn btn--solid">Approfondisci</a>
       </div>
-    </div>
-
-    <div class="product-card product-card--ritratto-teaser" data-aos="fade-left">
-      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png" alt="Copertina del Ritratto dell&apos;Anima" loading="lazy" decoding="async">
-      <p class="product-card__eyebrow">Percorso personalizzato</p>
-      <h3 class="product-card__title">Ritratto dell&apos;Anima</h3>
-      <p class="product-card__price">Tre versioni disponibili - da 150 EUR</p>
-      <p class="product-card__desc">Se desideri una lettura numerologica cucita sulla tua storia, qui trovi una bussola simbolica che unisce numeri, energie e messaggi guida in un percorso fatto su misura per te.</p>
-      <div class="product-card__btn-row">
-        <a href="#ritratto" class="btn btn--solid">Scopri le versioni</a>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20Ritratto%20dell%27Anima" class="btn btn--outline">Richiedi il tuo ritratto</a>
-      </div>
+      <p class="numerologia__shop-note">Le risorse dedicate alla numerologia e il PDF completo vengono raccolti nello Shop del sito, cosi la home resta piu essenziale e orientata al percorso.</p>
     </div>
   </div>
 </section>
@@ -339,8 +380,18 @@ def build_widget_html() -> dict[str, str]:
     </div>
 
     <div class="ritratto-grid">
-      <article id="ritratto-digitale" class="ritratto-card" data-aos="fade-up">
-        <p class="ritratto-card__label">Livello Digitale</p>
+      <article id="ritratto-digitale" class="ritratto-card ritratto-card--digitale" data-aos="fade-up">
+        <div class="ritratto-card__head">
+          <span class="ritratto-card__icon ritratto-card__icon--digitale" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 7 20V3.5Z"></path>
+              <path d="M14 3.5v4h4"></path>
+              <path d="M9 11h6"></path>
+              <path d="M9 14.5h6"></path>
+            </svg>
+          </span>
+          <p class="ritratto-card__label">Livello Digitale</p>
+        </div>
         <h3 class="ritratto-card__title">Digitale</h3>
         <p class="ritratto-card__text">Il tuo viaggio in formato digitale. Riceverai via mail o WhatsApp un PDF personalizzato di circa 25 pagine con sigillo del nome, numeri fondamentali, diagramma del disequilibrio energetico, simboli guida e una sintesi finale.</p>
         <ul class="ritratto-card__list">
@@ -350,12 +401,22 @@ def build_widget_html() -> dict[str, str]:
           <li>Bonus: breve audio di spiegazione di 15 minuti in MP3</li>
         </ul>
         <p class="ritratto-card__price">150 EUR</p>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/150EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Scarica il tuo ritratto digitale - 150 EUR</a>
+        <a href="https://www.paypal.com/paypalme/AVeneziani868/150EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Acquista PDF</a>
         <p class="ritratto-card__meta">Dopo l&apos;acquisto riceverai una mail per inviare i dati necessari alla personalizzazione.</p>
       </article>
 
-      <article id="ritratto-stampato" class="ritratto-card" data-aos="fade-up" data-aos-delay="120">
-        <p class="ritratto-card__label">Livello Stampato</p>
+      <article id="ritratto-stampato" class="ritratto-card ritratto-card--stampato" data-aos="fade-up" data-aos-delay="120">
+        <div class="ritratto-card__head">
+          <span class="ritratto-card__icon ritratto-card__icon--stampato" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M7.5 6.5h9a2 2 0 0 1 2 2v4h-13v-4a2 2 0 0 1 2-2Z"></path>
+              <path d="M8.5 3.5h7v3h-7z"></path>
+              <path d="M8 12.5h8v7a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-7Z"></path>
+              <path d="M10 15.5h4"></path>
+            </svg>
+          </span>
+          <p class="ritratto-card__label">Livello Stampato</p>
+        </div>
         <h3 class="ritratto-card__title">Stampato</h3>
         <p class="ritratto-card__text">Un manufatto da toccare. Oltre al PDF, ti invio a casa il tuo Ritratto dell&apos;Anima stampato su carta pregiata e rilegato con spirale, accompagnato da una lettera personalizzata che spiega i simboli principali.</p>
         <ul class="ritratto-card__list">
@@ -365,12 +426,20 @@ def build_widget_html() -> dict[str, str]:
           <li>Bonus: sessione Q&amp;A di 30 minuti in videochiamata</li>
         </ul>
         <p class="ritratto-card__price">250 EUR</p>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Ordine%20Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%20vorrei%20ordinare%20il%20Ritratto%20dell%27Anima%20Stampato.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0A" class="btn btn--solid">Ordina il ritratto stampato - 250 EUR</a>
+        <a href="mailto:info@ilviaggioemozionale.it?subject=Ordine%20Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%20vorrei%20ordinare%20il%20Ritratto%20dell%27Anima%20Stampato.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0A" class="btn btn--solid">Richiedi stampato</a>
         <p class="ritratto-card__meta">Nel messaggio trovi gia i campi per lasciarti indirizzo di spedizione e recapiti.</p>
       </article>
 
       <article id="ritratto-premium" class="ritratto-card ritratto-card--premium" data-aos="fade-up" data-aos-delay="240">
-        <p class="ritratto-card__label">Livello Premium su seta</p>
+        <div class="ritratto-card__badge">Consigliato</div>
+        <div class="ritratto-card__head">
+          <span class="ritratto-card__icon ritratto-card__icon--premium" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="m12 3.5 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.7l5-.7L12 3.5Z"></path>
+            </svg>
+          </span>
+          <p class="ritratto-card__label">Livello Premium su seta</p>
+        </div>
         <h3 class="ritratto-card__title">Premium</h3>
         <p class="ritratto-card__text">Un&apos;opera d&apos;arte da custodire. Il tuo Ritratto dell&apos;Anima viene stampato su seta, rilegato in un libro fatto a mano, impreziosito da illustrazioni aggiuntive e custodito in un cofanetto.</p>
         <ul class="ritratto-card__list">
@@ -380,7 +449,7 @@ def build_widget_html() -> dict[str, str]:
           <li>Sessione privata di 60 minuti via video e supporto email per un mese</li>
         </ul>
         <p class="ritratto-card__price">350 EUR</p>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Prenotazione%20Ritratto%20dell%27Anima%20Premium&body=Ciao%20Alessandro,%20vorrei%20prenotare%20la%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0APreferenza%20per%20la%20sessione%20video:%0A" class="btn btn--primary">Prenota la versione Premium - 350 EUR</a>
+        <a href="mailto:info@ilviaggioemozionale.it?subject=Prenotazione%20Ritratto%20dell%27Anima%20Premium&body=Ciao%20Alessandro,%20vorrei%20prenotare%20la%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0APreferenza%20per%20la%20sessione%20video:%0A" class="btn btn--primary">Richiedi premium</a>
         <p class="ritratto-card__meta">Perfetta se desideri un oggetto rituale da custodire e un accompagnamento piu profondo nel tempo.</p>
       </article>
     </div>
@@ -389,14 +458,35 @@ def build_widget_html() -> dict[str, str]:
       <h3 class="ritratto-testimonials__title">Le parole di chi ha gia vissuto questo cammino</h3>
       <div class="ritratto-testimonial-grid">
         <blockquote class="ritratto-quote">
+          <span class="ritratto-quote__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5H9.2Z"></path>
+              <path d="M19.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5h-2.5Z"></path>
+            </svg>
+            <span>Recensione</span>
+          </span>
           <p>&ldquo;E stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla e a caso.&rdquo;</p>
           <cite>Rita Adamo · recensione Google</cite>
         </blockquote>
         <blockquote class="ritratto-quote">
+          <span class="ritratto-quote__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5H9.2Z"></path>
+              <path d="M19.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5h-2.5Z"></path>
+            </svg>
+            <span>Recensione</span>
+          </span>
           <p>&ldquo;Ho avuto proprio la sensazione che non vi fosse alcun timore o vergogna di farsi vedere con le proprie debolezze. Alessandro ci ha accolti con grande presenza.&rdquo;</p>
           <cite>Antonella Scabbia · recensione Google</cite>
         </blockquote>
         <blockquote class="ritratto-quote">
+          <span class="ritratto-quote__badge" aria-hidden="true">
+            <svg viewBox="0 0 24 24" focusable="false">
+              <path d="M9.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5H9.2Z"></path>
+              <path d="M19.2 6.5c-2.9 1.7-4.6 4.1-5.2 7.3h4.1c0 2.2-1.4 3.8-3.8 4.7l.7 1.8c4.2-1.1 6.7-4.1 6.7-8.2V6.5h-2.5Z"></path>
+            </svg>
+            <span>Recensione</span>
+          </span>
           <p>&ldquo;E stato un piacevole e interessante confronto tra anime. Alessandro e stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
           <cite>Marco Ferrari · recensione Google</cite>
         </blockquote>

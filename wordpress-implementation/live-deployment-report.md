@@ -79,6 +79,23 @@ Intervento live pubblicato il `2026-04-27`.
 - schema `ProductGroup` + tre `Product` aggiunti al JSON-LD della home
 - cache Elementor e SpeedyCache svuotate dopo il deploy
 
+## Riorganizzazione Home e Numerologia
+
+Secondo aggiornamento live pubblicato il `2026-04-27`.
+
+- teaser del Ritratto rimosso dalla sezione Numerologia
+- pulsanti home `Scarica estratto` e `Acquista PDF` della numerologia rimossi
+- sezione Numerologia semplificata con testo introduttivo compatto e CTA unica `Approfondisci`
+- link `Approfondisci` puntato allo Shop del sito come destinazione separata per risorse e prodotti
+- card del Ritratto ridisegnate con:
+  - icone dedicate per `Digitale`, `Stampato`, `Premium`
+  - sfondi differenziati
+  - badge `Consigliato` sul livello premium
+  - CTA aggiornate a `Acquista PDF`, `Richiedi stampato`, `Richiedi premium`
+- testimonianze arricchite con badge grafico coerente
+- menu sticky aggiornato con evidenziazione della voce attiva durante lo scroll
+- microdati numerologia allineati al nuovo layout della home, senza offerta prodotto diretta nella sezione
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
