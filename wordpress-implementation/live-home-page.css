@@ -28,6 +28,7 @@
 .page-id-17 .hero,
 .page-id-17 .chi-section,
 .page-id-17 .section-numerologia,
+.page-id-17 .ritratto-section,
 .page-id-17 .tarocchi-section,
 .page-id-17 .soul-wrapper,
 .page-id-17 .lab-section {
@@ -36,6 +37,7 @@
 
 .page-id-17 #chi,
 .page-id-17 #numerologia,
+.page-id-17 #ritratto,
 .page-id-17 #tarocchi,
 .page-id-17 #soul-design,
 .page-id-17 #lab {
@@ -67,6 +69,7 @@
 .page-id-17 .numerologia__header,
 .page-id-17 .numerologia__text-wrapper,
 .page-id-17 .numerologia__products,
+.page-id-17 .ritratto-shell,
 .page-id-17 .tarocchi-wrapper,
 .page-id-17 .section-header,
 .page-id-17 .soul-grid,
@@ -437,9 +440,167 @@
   margin-top: 10px;
 }
 
+.page-id-17 .product-card__eyebrow,
+.page-id-17 .ritratto-kicker,
+.page-id-17 .ritratto-card__label {
+  margin: 0 0 10px;
+  color: var(--ive-gold-deep);
+  font-size: 0.86rem;
+  font-weight: 700;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
 .page-id-17 .product-card__btn-row {
   width: 100%;
   margin-top: 18px;
+}
+
+.page-id-17 .product-card--ritratto-teaser {
+  border-color: rgba(139, 106, 47, 0.36);
+}
+
+.page-id-17 .ritratto-section {
+  background: linear-gradient(180deg, #fffaf2 0%, #f9efdf 100%);
+  padding: 0 20px clamp(56px, 8vw, 88px);
+  border-top: 2px solid rgba(191, 162, 71, 0.42);
+}
+
+.page-id-17 .ritratto-shell {
+  padding-top: clamp(24px, 4vw, 38px);
+}
+
+.page-id-17 .ritratto-header,
+.page-id-17 .ritratto-final {
+  text-align: center;
+}
+
+.page-id-17 .ritratto-header {
+  margin-bottom: 34px;
+}
+
+.page-id-17 .ritratto-title {
+  font-size: clamp(2rem, 4vw, 3rem);
+  margin-bottom: 14px;
+}
+
+.page-id-17 .ritratto-lead {
+  max-width: 760px;
+  margin: 0 auto;
+  font-size: 1.04rem;
+}
+
+.page-id-17 .ritratto-grid,
+.page-id-17 .ritratto-testimonial-grid {
+  display: grid;
+  gap: 24px;
+}
+
+.page-id-17 .ritratto-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  align-items: stretch;
+}
+
+.page-id-17 .ritratto-card,
+.page-id-17 .ritratto-testimonials,
+.page-id-17 .ritratto-final {
+  background: rgba(255, 250, 242, 0.94);
+  border: 1px solid rgba(122, 91, 46, 0.16);
+  border-radius: var(--ive-radius);
+  box-shadow: var(--ive-shadow);
+}
+
+.page-id-17 .ritratto-card {
+  padding: clamp(24px, 3vw, 34px);
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  text-align: left;
+}
+
+.page-id-17 .ritratto-card--premium {
+  border-color: rgba(139, 106, 47, 0.45);
+  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98) 0%, rgba(245, 232, 209, 0.94) 100%);
+}
+
+.page-id-17 .ritratto-card__title {
+  margin: 0 0 12px;
+  font-size: 1.5rem;
+}
+
+.page-id-17 .ritratto-card__text {
+  margin: 0 0 16px;
+}
+
+.page-id-17 .ritratto-card__list,
+.page-id-17 .ritratto-quote p {
+  margin: 0;
+}
+
+.page-id-17 .ritratto-card__list {
+  padding-left: 20px;
+  display: grid;
+  gap: 8px;
+}
+
+.page-id-17 .ritratto-card__price {
+  margin: 20px 0 14px;
+  color: var(--ive-ink);
+  font-size: 1.22rem;
+  font-weight: 700;
+}
+
+.page-id-17 .ritratto-card .btn {
+  width: 100%;
+  margin-top: auto;
+}
+
+.page-id-17 .ritratto-card__meta,
+.page-id-17 .ritratto-note {
+  margin: 14px 0 0;
+  font-size: 0.95rem;
+}
+
+.page-id-17 .ritratto-testimonials {
+  margin-top: 36px;
+  padding: clamp(24px, 3vw, 36px);
+}
+
+.page-id-17 .ritratto-testimonials__title {
+  margin: 0 0 22px;
+  text-align: center;
+  font-size: 1.7rem;
+}
+
+.page-id-17 .ritratto-testimonial-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+}
+
+.page-id-17 .ritratto-quote {
+  margin: 0;
+  padding: 24px;
+  background: rgba(255, 255, 255, 0.58);
+  border-left: 4px solid var(--ive-gold);
+  border-radius: 20px;
+}
+
+.page-id-17 .ritratto-quote cite {
+  display: block;
+  margin-top: 16px;
+  color: var(--ive-gold-deep);
+  font-style: normal;
+  font-weight: 600;
+}
+
+.page-id-17 .ritratto-final {
+  margin-top: 28px;
+  padding: clamp(26px, 3vw, 38px);
+}
+
+.page-id-17 .ritratto-final__text {
+  max-width: 720px;
+  margin: 0 auto 18px;
+  font-size: 1.04rem;
 }
 
 .page-id-17 .tarocchi-section,
@@ -581,6 +742,8 @@
 @media (max-width: 1024px) {
   .page-id-17 .chi-content,
   .page-id-17 .numerologia__products,
+  .page-id-17 .ritratto-grid,
+  .page-id-17 .ritratto-testimonial-grid,
   .page-id-17 .tarocchi-columns,
   .page-id-17 .soul-grid,
   .page-id-17 .lab-container {
@@ -597,12 +760,23 @@
   .page-id-17 .chi-text,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,
-  .page-id-17 .lab-text-box {
+  .page-id-17 .lab-text-box,
+  .page-id-17 .ritratto-card,
+  .page-id-17 .ritratto-final {
     text-align: center;
   }
 
   .page-id-17 .chi-buttons {
     justify-content: center;
+  }
+
+  .page-id-17 .ritratto-card {
+    align-items: center;
+  }
+
+  .page-id-17 .ritratto-card__list {
+    max-width: 620px;
+    text-align: left;
   }
 }
 
@@ -646,6 +820,9 @@
 
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text,
+  .page-id-17 .ritratto-card,
+  .page-id-17 .ritratto-testimonials,
+  .page-id-17 .ritratto-final,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,
   .page-id-17 .lab-text-box,

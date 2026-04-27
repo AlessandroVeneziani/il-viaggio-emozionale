@@ -189,6 +189,7 @@ def build_widget_html() -> dict[str, str]:
       <ul>
         <li><a href="#chi">Chi sono</a></li>
         <li><a href="#numerologia">Numerologia Indiana</a></li>
+        <li><a href="#ritratto">Ritratto dell&apos;Anima</a></li>
         <li><a href="#tarocchi">Tarocchi Archetipici</a></li>
         <li><a href="#soul-design">Soul Design</a></li>
         <li><a href="#lab">Laboratorio dell&apos;Anima</a></li>
@@ -314,15 +315,98 @@ def build_widget_html() -> dict[str, str]:
       </div>
     </div>
 
-    <div class="product-card" data-aos="fade-left">
+    <div class="product-card product-card--ritratto-teaser" data-aos="fade-left">
       <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png" alt="Copertina del Ritratto dell&apos;Anima" loading="lazy" decoding="async">
+      <p class="product-card__eyebrow">Percorso personalizzato</p>
       <h3 class="product-card__title">Ritratto dell&apos;Anima</h3>
-      <p class="product-card__price">PDF personalizzato - 150 EUR</p>
-      <p class="product-card__desc">Una lettura numerologica personalizzata con sigillo del nome, numeri fondamentali, diagramma del disequilibrio energetico, simboli guida e sintesi finale.</p>
+      <p class="product-card__price">Tre versioni disponibili - da 150 EUR</p>
+      <p class="product-card__desc">Se desideri una lettura numerologica cucita sulla tua storia, qui trovi una bussola simbolica che unisce numeri, energie e messaggi guida in un percorso fatto su misura per te.</p>
       <div class="product-card__btn-row">
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20Ritratto%20dell%27Anima" class="btn btn--outline">Richiedi info</a>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/150EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Acquista Ritratto</a>
+        <a href="#ritratto" class="btn btn--solid">Scopri le versioni</a>
+        <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20Ritratto%20dell%27Anima" class="btn btn--outline">Richiedi il tuo ritratto</a>
       </div>
+    </div>
+  </div>
+</section>
+
+<section id="ritratto" class="ritratto-section">
+  <div class="ritratto-shell">
+    <div class="ritratto-header" data-aos="fade-up">
+      <p class="ritratto-kicker">Lettura numerologica personalizzata</p>
+      <h2 class="ritratto-title">Ritratto dell&apos;Anima - scopri chi sei davvero</h2>
+      <p class="ritratto-lead">Ogni anima ha una storia scritta nei numeri, nei simboli e nelle energie che la accompagnano. Con il Ritratto dell&apos;Anima trasformo questi messaggi in un&apos;opera unica: una bussola simbolica che ti aiuta a ritrovare la direzione e a riconnetterti con la tua essenza.</p>
+      <p class="section-story">Scegli il livello che risuona con te e inizia il viaggio con la versione digitale, stampata o premium su seta.</p>
+    </div>
+
+    <div class="ritratto-grid">
+      <article id="ritratto-digitale" class="ritratto-card" data-aos="fade-up">
+        <p class="ritratto-card__label">Livello Digitale</p>
+        <h3 class="ritratto-card__title">Digitale</h3>
+        <p class="ritratto-card__text">Il tuo viaggio in formato digitale. Riceverai via mail o WhatsApp un PDF personalizzato di circa 25 pagine con sigillo del nome, numeri fondamentali, diagramma del disequilibrio energetico, simboli guida e una sintesi finale.</p>
+        <ul class="ritratto-card__list">
+          <li>Sigillo personalizzato e grafico numerologico</li>
+          <li>Analisi delle energie dominanti e punti di armonia o disequilibrio</li>
+          <li>Suggerimenti pratici per integrare i messaggi nella tua vita</li>
+          <li>Bonus: breve audio di spiegazione di 15 minuti in MP3</li>
+        </ul>
+        <p class="ritratto-card__price">150 EUR</p>
+        <a href="https://www.paypal.com/paypalme/AVeneziani868/150EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Scarica il tuo ritratto digitale - 150 EUR</a>
+        <p class="ritratto-card__meta">Dopo l&apos;acquisto riceverai una mail per inviare i dati necessari alla personalizzazione.</p>
+      </article>
+
+      <article id="ritratto-stampato" class="ritratto-card" data-aos="fade-up" data-aos-delay="120">
+        <p class="ritratto-card__label">Livello Stampato</p>
+        <h3 class="ritratto-card__title">Stampato</h3>
+        <p class="ritratto-card__text">Un manufatto da toccare. Oltre al PDF, ti invio a casa il tuo Ritratto dell&apos;Anima stampato su carta pregiata e rilegato con spirale, accompagnato da una lettera personalizzata che spiega i simboli principali.</p>
+        <ul class="ritratto-card__list">
+          <li>Tutto cio che e presente nel livello digitale</li>
+          <li>Stampa su carta di alta qualita con rifinitura professionale</li>
+          <li>Consegna a domicilio in Italia entro 7-10 giorni lavorativi</li>
+          <li>Bonus: sessione Q&amp;A di 30 minuti in videochiamata</li>
+        </ul>
+        <p class="ritratto-card__price">250 EUR</p>
+        <a href="mailto:info@ilviaggioemozionale.it?subject=Ordine%20Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%20vorrei%20ordinare%20il%20Ritratto%20dell%27Anima%20Stampato.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0A" class="btn btn--solid">Ordina il ritratto stampato - 250 EUR</a>
+        <p class="ritratto-card__meta">Nel messaggio trovi gia i campi per lasciarti indirizzo di spedizione e recapiti.</p>
+      </article>
+
+      <article id="ritratto-premium" class="ritratto-card ritratto-card--premium" data-aos="fade-up" data-aos-delay="240">
+        <p class="ritratto-card__label">Livello Premium su seta</p>
+        <h3 class="ritratto-card__title">Premium</h3>
+        <p class="ritratto-card__text">Un&apos;opera d&apos;arte da custodire. Il tuo Ritratto dell&apos;Anima viene stampato su seta, rilegato in un libro fatto a mano, impreziosito da illustrazioni aggiuntive e custodito in un cofanetto.</p>
+        <ul class="ritratto-card__list">
+          <li>Tutto cio che e presente nel livello stampato</li>
+          <li>Stampa su seta e legatoria artigianale</li>
+          <li>Illustrazioni ispirate ai tarocchi archetipici e ai sigilli esoterici</li>
+          <li>Sessione privata di 60 minuti via video e supporto email per un mese</li>
+        </ul>
+        <p class="ritratto-card__price">350 EUR</p>
+        <a href="mailto:info@ilviaggioemozionale.it?subject=Prenotazione%20Ritratto%20dell%27Anima%20Premium&body=Ciao%20Alessandro,%20vorrei%20prenotare%20la%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0APreferenza%20per%20la%20sessione%20video:%0A" class="btn btn--primary">Prenota la versione Premium - 350 EUR</a>
+        <p class="ritratto-card__meta">Perfetta se desideri un oggetto rituale da custodire e un accompagnamento piu profondo nel tempo.</p>
+      </article>
+    </div>
+
+    <div class="ritratto-testimonials" data-aos="fade-up">
+      <h3 class="ritratto-testimonials__title">Le parole di chi ha gia vissuto questo cammino</h3>
+      <div class="ritratto-testimonial-grid">
+        <blockquote class="ritratto-quote">
+          <p>&ldquo;E stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla e a caso.&rdquo;</p>
+          <cite>Rita Adamo · recensione Google</cite>
+        </blockquote>
+        <blockquote class="ritratto-quote">
+          <p>&ldquo;Ho avuto proprio la sensazione che non vi fosse alcun timore o vergogna di farsi vedere con le proprie debolezze. Alessandro ci ha accolti con grande presenza.&rdquo;</p>
+          <cite>Antonella Scabbia · recensione Google</cite>
+        </blockquote>
+        <blockquote class="ritratto-quote">
+          <p>&ldquo;E stato un piacevole e interessante confronto tra anime. Alessandro e stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
+          <cite>Marco Ferrari · recensione Google</cite>
+        </blockquote>
+      </div>
+      <p class="ritratto-note">Se hai gia ricevuto il tuo Ritratto dell&apos;Anima, racconta la tua esperienza con una testimonianza sincera: aiutera chi arriva qui a sentirsi rassicurato e accompagnato nella scelta.</p>
+    </div>
+
+    <div class="ritratto-final" data-aos="fade-up">
+      <p class="ritratto-final__text">Non c&apos;e un momento perfetto per iniziare un viaggio interiore: il momento e adesso. Scegli la versione del Ritratto dell&apos;Anima che parla alla tua essenza e lasciati guidare.</p>
+      <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20Ritratto%20dell%27Anima" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
     </div>
   </div>
 </section>

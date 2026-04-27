@@ -63,6 +63,22 @@ Nota tecnica:
 - Stato deploy:
   - pacchetto zip generato ma non pubblicato sul sito per blocco temporaneo di raggiungibilita dalla postazione di lavoro durante l'ultimo tentativo di upload/verifica
 
+## Estensione Ritratto dell'Anima
+
+Intervento live pubblicato il `2026-04-27`.
+
+- menu hero aggiornato con nuova ancora `Ritratto dell'Anima`
+- card teaser del Ritratto inserita nella sezione Numerologia
+- nuova sezione dedicata `#ritratto` aggiunta in home con:
+  - introduzione orientata al bisogno
+  - tre livelli `Digitale`, `Stampato`, `Premium su seta`
+  - CTA specifiche per acquisto o richiesta
+  - raccolta indirizzo di spedizione precompilata via email per i livelli fisici
+  - testimonianze selezionate dal widget Google gia presente sul sito
+  - CTA finale unica per la richiesta del percorso
+- schema `ProductGroup` + tre `Product` aggiunti al JSON-LD della home
+- cache Elementor e SpeedyCache svuotate dopo il deploy
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
