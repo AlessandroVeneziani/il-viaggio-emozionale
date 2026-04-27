@@ -606,15 +606,10 @@ def build_widget_html() -> dict[str, str]:
         <li>Chiavi simboliche per interpretare la tua vita come un&apos;opera spirituale</li>
         <li>Spazi per scrivere, riflettere e iniziare il tuo processo di trasformazione</li>
       </ul>
-
-      <div class="lab-buttons">
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/10EUR" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Acquista PDF - 10 EUR</a>
-        <a href="https://amzn.eu/d/3tNukjJ" class="btn btn--primary" target="_blank" rel="noopener noreferrer">Acquista su Amazon - 15 EUR</a>
-      </div>
     </div>
 
     <div class="lab-image-box" data-aos="fade-left">
-      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/libro.webp" alt="Copertina del Laboratorio dell&apos;Anima" loading="lazy" decoding="async">
+      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/libro.webp" alt="Copertina del Laboratorio dell&apos;Anima" class="book-image" loading="lazy" decoding="async">
     </div>
   </div>
 </section>

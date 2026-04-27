@@ -811,6 +811,10 @@
   grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
 }
 
+.page-id-17 .lab-container {
+  gap: 60px;
+}
+
 .page-id-17 .tarocchi-card {
   overflow: visible;
 }
@@ -873,6 +877,18 @@
 .page-id-17 .lab-section {
   background: #fdf7ef;
   padding: clamp(56px, 8vw, 88px) 20px;
+}
+
+.page-id-17 .lab-image-box {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.page-id-17 .lab-image-box img.book-image {
+  width: 120%;
+  max-width: none;
+  transform: translateX(20px);
+  filter: drop-shadow(0 15px 25px rgba(198, 167, 94, 0.25));
 }
 
 .page-id-17 .lab-image-box img {
@@ -1000,6 +1016,15 @@
     justify-content: center;
   }
 
+  .page-id-17 .lab-image-box {
+    justify-content: center;
+  }
+
+  .page-id-17 .lab-image-box img.book-image {
+    width: min(100%, 420px);
+    transform: none;
+  }
+
   .page-id-17 .ritratto-card {
     align-items: center;
   }
@@ -1052,6 +1077,12 @@
 
   .page-id-17 .card-pergamena {
     padding-top: 40px;
+  }
+
+  .page-id-17 .lab-image-box img.book-image {
+    width: 100%;
+    transform: none;
+    margin-top: 20px;
   }
 }
 

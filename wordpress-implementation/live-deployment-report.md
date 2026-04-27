@@ -168,6 +168,17 @@ Sesto aggiornamento live pubblicato il `2026-04-27`.
   - nessun overflow laterale
   - `padding-top: 40px` sulla card
 
+## Laboratorio dell'Anima
+
+Settimo aggiornamento live pubblicato il `2026-04-27`.
+
+- rimosse le CTA duplicate dal fondo del box testo
+- mantenute solo le CTA principali nella parte alta della sezione
+- copertina del libro resa piu dominante con classe dedicata `book-image`
+- gap tra testo e immagine aumentato a `60px`
+- copertina spostata leggermente verso destra e valorizzata con ombra piu presente
+- fallback mobile confermato senza overflow laterale, con `margin-top: 20px`
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili
