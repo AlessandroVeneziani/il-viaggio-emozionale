@@ -199,27 +199,31 @@ def build_widget_html() -> dict[str, str]:
 </header>
 
 <section id="chi" class="chi-section" data-aos="fade-up">
-  <div class="chi-content">
-    <div class="chi-text" data-aos="fade-left" data-aos-delay="200">
-      <h2>Un accompagnamento simbolico per quando senti di esserti perso</h2>
-      <p class="subtitle">Alessandro Veneziani · Designer dell&apos;Anima e Ricercatore Simbolico</p>
-      <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
-      <p>Ci sono momenti in cui continui a fare, decidere e andare avanti, ma manca una mappa interiore che ti aiuti a leggere quello che stai vivendo. Il mio lavoro nasce proprio qui: trasformare simboli e intuizioni in passi concreti.</p>
-      <div class="chi-buttons">
-        <a href="#numerologia" class="btn btn--solid">Scopri il percorso piu adatto</a>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20prima%20disponibilita" class="btn btn--outline">Richiedi una prima disponibilita</a>
+  <div class="chi-shell">
+    <div class="chi-content">
+      <div class="chi-text hero-box" data-aos="fade-left" data-aos-delay="200">
+        <h2>Un accompagnamento simbolico per quando senti di esserti perso</h2>
+        <p class="subtitle">Alessandro Veneziani · Designer dell&apos;Anima e Ricercatore Simbolico</p>
+        <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
+        <p>Ci sono momenti in cui continui a fare, decidere e andare avanti, ma manca una mappa interiore che ti aiuti a leggere quello che stai vivendo. Il mio lavoro nasce proprio qui: trasformare simboli e intuizioni in passi concreti.</p>
+        <div class="chi-buttons">
+          <a href="#numerologia" class="btn btn--solid">Scopri il percorso piu adatto</a>
+          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20informazioni&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sul%20percorso%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi una prima disponibilita</a>
+        </div>
       </div>
-      <p class="chi-note"><em>Un viaggio dedicato a chi sente che manca qualcosa e desidera tornare a se con piu presenza, senso e consapevolezza.</em></p>
+
+      <div class="chi-image" data-aos="fade-right" data-aos-delay="300">
+        <img
+          src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/bagatto.webp"
+          alt="Il Bagatto, archetipo simbolico del viaggio interiore"
+          class="image-right"
+          loading="lazy"
+          decoding="async"
+        />
+      </div>
     </div>
 
-    <div class="chi-image" data-aos="fade-right" data-aos-delay="300">
-      <img
-        src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/bagatto.webp"
-        alt="Il Bagatto, archetipo simbolico del viaggio interiore"
-        loading="lazy"
-        decoding="async"
-      />
-    </div>
+    <p class="hero-quote"><em>Un viaggio dedicato a chi sente che manca qualcosa e desidera tornare a se con piu presenza, senso e consapevolezza.</em></p>
   </div>
 </section>
 
@@ -351,10 +355,10 @@ def build_widget_html() -> dict[str, str]:
 
   <div class="numerologia__summary">
     <div class="numerologia__visual" data-aos="zoom-in" data-aos-delay="200">
-      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/leone-e1751056944832.webp" class="numerologia__image" alt="Simbolo del leone per la Numerologia Indiana" loading="lazy" decoding="async" />
+      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/leone-e1751056944832.webp" class="numerologia__image lion-image" alt="Simbolo del leone per la Numerologia Indiana" loading="lazy" decoding="async" />
     </div>
 
-    <div class="numerologia__text numerologia__text--compact" data-aos="fade-up" data-aos-delay="100">
+    <div class="numerologia__text numerologia__text--compact card-pergamena" data-aos="fade-up" data-aos-delay="100">
       <p><strong>Cos&apos;e?</strong><br>Una bussola sottile per il tuo viaggio interiore: il linguaggio dei numeri, delle date e dei nomi.</p>
       <p><strong>Quando puo aiutarti?</strong><br>Quando senti che la tua storia ripete schemi, ma non riesci ancora a dare un nome preciso a cio che stai vivendo.</p>
       <ul class="numerologia__subpoints">
@@ -426,7 +430,7 @@ def build_widget_html() -> dict[str, str]:
           <li>Bonus: sessione Q&amp;A di 30 minuti in videochiamata</li>
         </ul>
         <p class="ritratto-card__price">250 EUR</p>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Ordine%20Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%20vorrei%20ordinare%20il%20Ritratto%20dell%27Anima%20Stampato.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0A" class="btn btn--solid">Richiedi stampato</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sul%20Ritratto%20dell%27Anima%20in%20versione%20Stampata.%0D%0A%0D%0ANome%20e%20cognome:%0D%0AIndirizzo%20di%20spedizione:%0D%0ATelefono:%0D%0AEmail:%0D%0A%0D%0AGrazie" class="btn btn--solid">Richiedi stampato</a>
         <p class="ritratto-card__meta">Nel messaggio trovi gia i campi per lasciarti indirizzo di spedizione e recapiti.</p>
       </article>
 
@@ -449,7 +453,7 @@ def build_widget_html() -> dict[str, str]:
           <li>Sessione privata di 60 minuti via video e supporto email per un mese</li>
         </ul>
         <p class="ritratto-card__price">350 EUR</p>
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Prenotazione%20Ritratto%20dell%27Anima%20Premium&body=Ciao%20Alessandro,%20vorrei%20prenotare%20la%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0A%0ANome%20e%20cognome:%0AIndirizzo%20di%20spedizione:%0ATelefono:%0AEmail:%0APreferenza%20per%20la%20sessione%20video:%0A" class="btn btn--primary">Richiedi premium</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sulla%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0D%0A%0D%0ANome%20e%20cognome:%0D%0AIndirizzo%20di%20spedizione:%0D%0ATelefono:%0D%0AEmail:%0D%0APreferenza%20per%20la%20sessione%20video:%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi premium</a>
         <p class="ritratto-card__meta">Perfetta se desideri un oggetto rituale da custodire e un accompagnamento piu profondo nel tempo.</p>
       </article>
     </div>
@@ -496,7 +500,7 @@ def build_widget_html() -> dict[str, str]:
 
     <div class="ritratto-final" data-aos="fade-up">
       <p class="ritratto-final__text">Non c&apos;e un momento perfetto per iniziare un viaggio interiore: il momento e adesso. Scegli la versione del Ritratto dell&apos;Anima che parla alla tua essenza e lasciati guidare.</p>
-      <a href="mailto:info@ilviaggioemozionale.it?subject=Richiesta%20Ritratto%20dell%27Anima" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
+      <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20riguardo%20il%20Ritratto%20dell%27Anima.%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
     </div>
   </div>
 </section>
@@ -510,7 +514,7 @@ def build_widget_html() -> dict[str, str]:
       <p class="subtitle">Le carte non dicono il futuro: rendono visibile il passaggio interiore che oggi chiede attenzione.</p>
       <p class="section-story">Quando senti che qualcosa non torna, una lettura simbolica puo aiutarti a nominare blocchi, desideri e movimenti profondi, trasformandoli in scelte piu consapevoli.</p>
       <div class="section-cta-row">
-        <a href="mailto:info@ilviaggioemozionale.it?subject=Tarocchi%20Archetipici%20-%20Info" class="btn btn--outline">Richiedi disponibilita</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi disponibilita</a>
         <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
       </div>
     </div>
@@ -526,7 +530,7 @@ def build_widget_html() -> dict[str, str]:
         <p><strong>Cosa puo portarti?</strong><br>Chiarezza sul momento attuale<br>Connessione con i tuoi archetipi<br>Una guida trasformativa, simbolica e concreta</p>
         <p class="tarocchi-price">Sessione individuale - 80 EUR</p>
         <div class="tarocchi-buttons">
-          <a href="mailto:info@ilviaggioemozionale.it?subject=Tarocchi%20Archetipici%20-%20Info" class="btn-outline">Richiedi disponibilita</a>
+          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn-outline">Richiedi disponibilita</a>
           <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn-solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
         </div>
       </div>
@@ -542,7 +546,7 @@ def build_widget_html() -> dict[str, str]:
     <p class="section-sub">Quando senti molto ma fai fatica a tradurre quella sensibilita in direzione, serve un ponte tra intuito e azione.</p>
     <p class="section-story">Soul Design nasce per accompagnarti nelle relazioni, nel lavoro e nella crescita personale con una lettura simbolica che diventa pratica, orientamento e passi possibili.</p>
     <div class="section-cta-row">
-      <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20accesso%20al%20percorso" class="btn btn--outline">Richiedi accesso al percorso</a>
+      <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20per%20accedere%20al%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi accesso al percorso</a>
       <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Prenotazione%20prima%20sessione" class="btn btn--primary">Prenota la prima sessione</a>
     </div>
   </div>
@@ -569,7 +573,7 @@ def build_widget_html() -> dict[str, str]:
       </div>
 
       <div class="soul-buttons">
-        <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20accesso%20al%20percorso" class="btn btn--outline">Richiedi accesso al percorso</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20per%20accedere%20al%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi accesso al percorso</a>
         <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Prenotazione%20prima%20sessione" class="btn btn--primary">Prenota la prima sessione</a>
       </div>
     </div>

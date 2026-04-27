@@ -115,6 +115,30 @@ Terzo aggiornamento live pubblicato il `2026-04-27`.
   - `Prenota la prima sessione`
 - mantenuto il layout visivo esistente del box con stile chiaro e gerarchia coerente con la sezione
 
+## Hero, Numerologia e CTA informative
+
+Quarto aggiornamento live pubblicato il `2026-04-27`.
+
+- hero `#chi` resa piu editoriale con:
+  - box testuale rifinito con bordo gold leggero e filigrana soft via CSS
+  - immagine del Bagatto ingrandita e spostata verso destra con leggero overflow su desktop
+  - frase finale separata dal box e riposizionata sotto il contenuto come `hero-quote`
+  - fallback responsive ordinato su tablet e mobile: testo, immagine, frase
+- sezione Numerologia ridisegnata con:
+  - leone sopra la pergamena come elemento dominante
+  - card `card-pergamena` piu ampia e meno incorniciata
+  - lista interna allargata per una lettura piu aperta
+  - comportamento mobile sicuro con immagine riportata in flusso
+- tutte le CTA informative della home ora puntano a `info@alessandroveneziani.it`
+- oggetti email personalizzati per servizio:
+  - `Richiesta informazioni`
+  - `Richiesta Ritratto dell'Anima`
+  - `Richiesta sessione Tarocchi Archetipici`
+  - `Accesso percorso Soul Design`
+- aggiunti body precompilati alle principali richieste via email
+- nessun pulsante di acquisto o PayPal modificato
+- schema `Organization` riallineato con email `info@alessandroveneziani.it`
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili

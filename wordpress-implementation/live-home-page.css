@@ -305,19 +305,58 @@
 
 .page-id-17 .chi-section {
   background: linear-gradient(180deg, var(--ive-beige) 0%, #f8efe2 100%);
-  padding: clamp(48px, 8vw, 84px) 20px;
+  padding: clamp(48px, 8vw, 84px) max(16px, 4%);
+}
+
+.page-id-17 .chi-shell {
+  width: min(100%, calc(var(--ive-content-max) + 96px));
+  margin: 0 auto;
+  overflow: visible;
 }
 
 .page-id-17 .chi-content {
   display: grid;
-  grid-template-columns: minmax(0, 1fr) minmax(260px, 320px);
-  gap: clamp(28px, 4vw, 56px);
+  width: 100%;
+  grid-template-columns: minmax(0, 1fr) minmax(300px, 360px);
+  gap: clamp(32px, 5vw, 76px);
   align-items: center;
   justify-content: center;
+  overflow: visible;
 }
 
 .page-id-17 .chi-text {
   text-align: left;
+  position: relative;
+  z-index: 1;
+}
+
+.page-id-17 .hero-box {
+  background: #f4f1ea;
+  border: 1px solid rgba(198, 167, 94, 0.4);
+  border-radius: 24px;
+  padding: clamp(30px, 3.4vw, 40px);
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  position: relative;
+  overflow: hidden;
+  isolation: isolate;
+}
+
+.page-id-17 .hero-box::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 16% 18%, rgba(198, 167, 94, 0.14) 0%, rgba(198, 167, 94, 0) 32%),
+    radial-gradient(circle at 82% 24%, rgba(198, 167, 94, 0.1) 0%, rgba(198, 167, 94, 0) 24%),
+    radial-gradient(circle at 32% 82%, rgba(198, 167, 94, 0.08) 0%, rgba(198, 167, 94, 0) 28%),
+    linear-gradient(135deg, rgba(198, 167, 94, 0.08) 0%, rgba(198, 167, 94, 0) 56%);
+  opacity: 0.34;
+  pointer-events: none;
+}
+
+.page-id-17 .hero-box > * {
+  position: relative;
+  z-index: 1;
 }
 
 .page-id-17 .chi-text h2 {
@@ -336,9 +375,14 @@
   justify-content: flex-start;
 }
 
-.page-id-17 .chi-note {
-  margin-top: 18px;
-  font-style: italic;
+.page-id-17 .hero-quote {
+  max-width: 700px;
+  margin: clamp(24px, 3.2vw, 34px) auto 0;
+  padding-inline: 12px;
+  text-align: center;
+  font-size: 1.125rem;
+  line-height: 1.7;
+  color: #6b5e4a;
 }
 
 .page-id-17 .chi-image,
@@ -360,8 +404,15 @@
   filter: drop-shadow(0 20px 30px rgba(8, 34, 52, 0.12));
 }
 
-.page-id-17 .chi-image img {
-  width: min(100%, 310px);
+.page-id-17 .chi-image {
+  justify-content: flex-end;
+  overflow: visible;
+}
+
+.page-id-17 .chi-image img.image-right {
+  width: 115%;
+  max-width: none;
+  transform: translateX(clamp(16px, 3vw, 40px));
 }
 
 .page-id-17 .section-numerologia {
@@ -370,7 +421,7 @@
     url("https://ilviaggioemozionale.it/wp-content/uploads/2025/06/backgroung-number.webp");
   background-size: cover;
   background-position: center;
-  padding: clamp(56px, 8vw, 88px) 20px;
+  padding: clamp(56px, 8vw, 88px) max(16px, 3%);
   border-top: 4px solid rgba(191, 162, 71, 0.8);
 }
 
@@ -392,25 +443,27 @@
 
 .page-id-17 .numerologia__image {
   display: block;
-  width: min(100%, 320px);
+  width: 100%;
   height: auto;
   margin: 0 auto;
   filter: drop-shadow(0 20px 30px rgba(8, 34, 52, 0.14));
 }
 
 .page-id-17 .numerologia__summary {
-  width: min(100%, var(--ive-content-max));
+  width: min(100%, 900px);
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: minmax(240px, 300px) minmax(0, 1fr);
-  gap: clamp(24px, 4vw, 44px);
-  align-items: center;
+  position: relative;
+  padding-top: clamp(132px, 16vw, 176px);
+  overflow: visible;
 }
 
 .page-id-17 .numerologia__visual {
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: absolute;
+  left: clamp(-36px, -3vw, -60px);
+  top: 0;
+  width: min(46vw, 420px);
+  z-index: 2;
+  pointer-events: none;
 }
 
 .page-id-17 .numerologia__text {
@@ -421,10 +474,26 @@
   text-align: left;
 }
 
+.page-id-17 .card-pergamena {
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+  padding: clamp(34px, 4vw, 50px);
+  border-radius: 28px;
+  background: #f4f1ea;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  border: 1px solid rgba(198, 167, 94, 0.35);
+}
+
+.page-id-17 .lion-image {
+  width: 100%;
+  max-width: none;
+}
+
 .page-id-17 .numerologia__subpoints {
-  width: fit-content;
-  max-width: 520px;
-  margin: 16px auto 0;
+  width: 100%;
+  max-width: none;
+  margin: 16px 0 0;
   padding-left: 20px;
   display: grid;
   gap: 8px;
@@ -840,7 +909,6 @@
 
 @media (max-width: 1024px) {
   .page-id-17 .chi-content,
-  .page-id-17 .numerologia__summary,
   .page-id-17 .ritratto-grid,
   .page-id-17 .ritratto-testimonial-grid,
   .page-id-17 .tarocchi-columns,
@@ -854,6 +922,44 @@
   .page-id-17 .soul-grid,
   .page-id-17 .lab-container {
     width: min(100%, 760px);
+  }
+
+  .page-id-17 .chi-shell {
+    width: min(100%, 760px);
+  }
+
+  .page-id-17 .chi-image {
+    justify-content: center;
+  }
+
+  .page-id-17 .chi-image img.image-right {
+    width: min(100%, 400px);
+    transform: none;
+  }
+
+  .page-id-17 .hero-quote {
+    font-size: 1.02rem;
+    padding-inline: 0;
+  }
+
+  .page-id-17 .numerologia__summary {
+    width: min(100%, 760px);
+    padding-top: 0;
+    display: grid;
+    gap: 20px;
+  }
+
+  .page-id-17 .numerologia__visual {
+    position: relative;
+    left: 0;
+    top: 0;
+    width: min(100%, 360px);
+    margin: 0 auto 8px;
+    pointer-events: auto;
+  }
+
+  .page-id-17 .card-pergamena {
+    padding-top: clamp(28px, 5vw, 40px);
   }
 
   .page-id-17 .chi-text,
@@ -916,6 +1022,24 @@
 @media (max-width: 544px) {
   .page-id-17 .hero {
     padding-top: 38px;
+  }
+
+  .page-id-17 .hero-box {
+    padding: 24px;
+  }
+
+  .page-id-17 .hero-quote {
+    margin-top: 20px;
+    font-size: 0.98rem;
+  }
+
+  .page-id-17 .numerologia__visual {
+    width: min(100%, 320px);
+    margin-bottom: 12px;
+  }
+
+  .page-id-17 .card-pergamena {
+    padding: 24px;
   }
 
   .page-id-17 .menu-pergamena ul {
