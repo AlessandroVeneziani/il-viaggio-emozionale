@@ -96,6 +96,25 @@ Secondo aggiornamento live pubblicato il `2026-04-27`.
 - menu sticky aggiornato con evidenziazione della voce attiva durante lo scroll
 - microdati numerologia allineati al nuovo layout della home, senza offerta prodotto diretta nella sezione
 
+## Aggiornamento Soul Design
+
+Terzo aggiornamento live pubblicato il `2026-04-27`.
+
+- box prezzi Soul Design completamente riscritto con nuova struttura:
+  - `Prima sessione Soul Design · 150 EUR`
+  - `Durata: 90 minuti`
+  - `Sessioni successive · 100 EUR`
+  - `Durata: 60 minuti`
+  - nota finale che chiarisce che il `Ritratto dell'Anima` e un libro separato e non incluso automaticamente
+- rimossa dalla home ogni occorrenza di:
+  - `con in omaggio Ritratto dell'Anima`
+  - `Sessioni successive: 80 EUR`
+- lista `Cosa ottieni` aggiornata con focus su continuita, missione dell'anima e accompagnamento concreto
+- CTA Soul Design riallineate a:
+  - `Richiedi accesso al percorso`
+  - `Prenota la prima sessione`
+- mantenuto il layout visivo esistente del box con stile chiaro e gerarchia coerente con la sezione
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili

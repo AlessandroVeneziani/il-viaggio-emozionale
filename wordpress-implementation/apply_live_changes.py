@@ -542,7 +542,7 @@ def build_widget_html() -> dict[str, str]:
     <p class="section-sub">Quando senti molto ma fai fatica a tradurre quella sensibilita in direzione, serve un ponte tra intuito e azione.</p>
     <p class="section-story">Soul Design nasce per accompagnarti nelle relazioni, nel lavoro e nella crescita personale con una lettura simbolica che diventa pratica, orientamento e passi possibili.</p>
     <div class="section-cta-row">
-      <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20Disponibilita" class="btn btn--outline">Richiedi disponibilita</a>
+      <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20accesso%20al%20percorso" class="btn btn--outline">Richiedi accesso al percorso</a>
       <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Prenotazione%20prima%20sessione" class="btn btn--primary">Prenota la prima sessione</a>
     </div>
   </div>
@@ -556,10 +556,20 @@ def build_widget_html() -> dict[str, str]:
         <li>Percorso trasformativo personalizzato</li>
         <li>Connessione con la missione dell&apos;anima</li>
         <li>Guida simbolica e pratica per le tue scelte</li>
+        <li>Continuita nel tempo</li>
+        <li>Lettura dei passaggi interiori mentre accadono</li>
       </ul>
-      <p class="soul-price"><strong>Prima sessione: 150 EUR</strong><br>con in omaggio Ritratto dell&apos;Anima<br><strong>Sessioni successive: 80 EUR</strong></p>
+
+      <div class="soul-price">
+        <p><strong>Prima sessione Soul Design · 150 EUR</strong><br>Durata: 90 minuti</p>
+        <p>Un incontro piu lungo e strutturato per entrare davvero nella tua storia, leggere le dinamiche profonde e costruire una prima direzione chiara.</p>
+        <p><strong>Sessioni successive · 100 EUR</strong><br>Durata: 60 minuti</p>
+        <p>Incontri di continuita per approfondire cio che emerge, integrare le letture e trasformarle in scelte concrete.</p>
+        <p class="soul-price__note"><strong>Nota finale:</strong><br>Il Ritratto dell&apos;Anima puo essere integrato nel percorso come libro personale separato. Non e incluso automaticamente.</p>
+      </div>
+
       <div class="soul-buttons">
-        <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20Disponibilita" class="btn btn--outline">Richiedi info</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Richiesta%20accesso%20al%20percorso" class="btn btn--outline">Richiedi accesso al percorso</a>
         <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Prenotazione%20prima%20sessione" class="btn btn--primary">Prenota la prima sessione</a>
       </div>
     </div>

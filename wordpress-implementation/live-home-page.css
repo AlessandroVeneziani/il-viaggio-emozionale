@@ -762,6 +762,18 @@
   border-radius: 14px;
 }
 
+.page-id-17 .soul-price p {
+  margin: 0 0 14px;
+}
+
+.page-id-17 .soul-price p:last-child {
+  margin-bottom: 0;
+}
+
+.page-id-17 .soul-price__note {
+  font-size: 0.96rem;
+}
+
 .page-id-17 .tarocchi-buttons,
 .page-id-17 .soul-buttons,
 .page-id-17 .lab-buttons {
