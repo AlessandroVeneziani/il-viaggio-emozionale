@@ -139,6 +139,21 @@ Quarto aggiornamento live pubblicato il `2026-04-27`.
 - nessun pulsante di acquisto o PayPal modificato
 - schema `Organization` riallineato con email `info@alessandroveneziani.it`
 
+## Tarocchi Archetipici
+
+Quinto aggiornamento live pubblicato il `2026-04-27`.
+
+- rimossa la doppia CTA dalla card descrittiva dei Tarocchi
+- mantenuta una sola area di conversione nella parte alta della sezione con:
+  - `Richiedi disponibilita`
+  - `Prenota una sessione`
+- prezzo della sessione aggiornato a `Sessione individuale · 100 EUR`
+- link PayPal della CTA principale aggiornato a `100 EUR`
+- CTA informativa confermata su:
+  - `mailto:info@alessandroveneziani.it?subject=Richiesta sessione Tarocchi Archetipici`
+- immagine del Matto resa piu dominante con classe dedicata `tarocchi-image`
+- schema `Service` dei Tarocchi riallineato con prezzo `100.00`
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili

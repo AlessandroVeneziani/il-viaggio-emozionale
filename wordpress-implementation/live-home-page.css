@@ -800,6 +800,7 @@
 
 .page-id-17 .tarocchi-columns {
   grid-template-columns: minmax(250px, 300px) minmax(0, 1fr);
+  overflow: visible;
 }
 
 .page-id-17 .soul-grid,
@@ -807,8 +808,15 @@
   grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
 }
 
-.page-id-17 .tarocchi-card img {
-  width: min(100%, 290px);
+.page-id-17 .tarocchi-card {
+  overflow: visible;
+}
+
+.page-id-17 .tarocchi-card img.tarocchi-image {
+  width: 150%;
+  max-width: none;
+  transform: translateX(-40px);
+  filter: drop-shadow(0 14px 24px rgba(198, 167, 94, 0.2));
 }
 
 .page-id-17 .soul-image img,
@@ -962,6 +970,15 @@
     padding-top: clamp(28px, 5vw, 40px);
   }
 
+  .page-id-17 .tarocchi-card {
+    justify-content: center;
+  }
+
+  .page-id-17 .tarocchi-card img.tarocchi-image {
+    width: min(100%, 460px);
+    transform: none;
+  }
+
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text--compact,
   .page-id-17 .tarocchi-box,
@@ -1031,6 +1048,12 @@
   .page-id-17 .hero-quote {
     margin-top: 20px;
     font-size: 0.98rem;
+  }
+
+  .page-id-17 .tarocchi-card img.tarocchi-image {
+    width: 110%;
+    max-width: 360px;
+    transform: none;
   }
 
   .page-id-17 .numerologia__visual {

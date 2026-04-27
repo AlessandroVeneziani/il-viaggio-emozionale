@@ -514,25 +514,21 @@ def build_widget_html() -> dict[str, str]:
       <p class="subtitle">Le carte non dicono il futuro: rendono visibile il passaggio interiore che oggi chiede attenzione.</p>
       <p class="section-story">Quando senti che qualcosa non torna, una lettura simbolica puo aiutarti a nominare blocchi, desideri e movimenti profondi, trasformandoli in scelte piu consapevoli.</p>
       <div class="section-cta-row">
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi disponibilita</a>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20verificare%20una%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi disponibilita</a>
+        <a href="https://www.paypal.com/paypalme/AVeneziani868/100EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
       </div>
     </div>
 
     <div class="tarocchi-columns">
       <div class="tarocchi-card" data-aos="fade-right">
-        <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Matto.png" alt="Carta del Matto" loading="lazy" decoding="async">
+        <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Matto.png" alt="Carta del Matto" class="tarocchi-image" loading="lazy" decoding="async">
       </div>
 
       <div class="tarocchi-box" data-aos="fade-left" data-aos-delay="200">
         <p><strong>Cos&apos;e?</strong><br>Un percorso intuitivo con i Tarocchi di Marsiglia per esplorare l&apos;adesso e dialogare con il tuo inconscio.</p>
         <p><strong>Perche li uso?</strong><br>Mettono in relazione razionale e irrazionale e aiutano a comprendere bisogni, blocchi e passaggi evolutivi che spesso restano senza nome.</p>
         <p><strong>Cosa puo portarti?</strong><br>Chiarezza sul momento attuale<br>Connessione con i tuoi archetipi<br>Una guida trasformativa, simbolica e concreta</p>
-        <p class="tarocchi-price">Sessione individuale - 80 EUR</p>
-        <div class="tarocchi-buttons">
-          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn-outline">Richiedi disponibilita</a>
-          <a href="https://www.paypal.com/paypalme/AVeneziani868/80EUR" class="btn-solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
-        </div>
+        <p class="tarocchi-price">Sessione individuale &middot; 100 EUR</p>
       </div>
     </div>
   </div>

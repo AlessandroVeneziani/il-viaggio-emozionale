@@ -129,7 +129,7 @@
       "offers": {
         "@type": "Offer",
         "priceCurrency": "EUR",
-        "price": "80.00",
+        "price": "100.00",
         "availability": "https://schema.org/InStock",
         "url": "https://ilviaggioemozionale.it/#tarocchi"
       }
