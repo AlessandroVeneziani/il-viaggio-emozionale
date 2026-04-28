@@ -549,8 +549,8 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 
-  <div class="soul-grid">
-    <div class="soul-text" data-aos="fade-right" data-aos-delay="100">
+  <div class="soul-content-row">
+    <div class="soul-description-card" data-aos="fade-right" data-aos-delay="100">
       <p><strong>Cos&apos;e:</strong> Una tecnica esclusiva creata da Alessandro Veneziani che crea un ponte tra razionale e irrazionale, tra intuito e azione.</p>
       <p><strong>Perche:</strong> Per aiutarti ad agire concretamente nelle relazioni, nel lavoro e nella tua crescita personale e spirituale.</p>
       <p><strong>Cosa ottieni:</strong></p>
@@ -561,24 +561,19 @@ def build_widget_html() -> dict[str, str]:
         <li>Continuita nel tempo</li>
         <li>Lettura dei passaggi interiori mentre accadono</li>
       </ul>
-
-      <div class="soul-price">
-        <p><strong>Prima sessione Soul Design · 150 EUR</strong><br>Durata: 90 minuti</p>
-        <p>Un incontro piu lungo e strutturato per entrare davvero nella tua storia, leggere le dinamiche profonde e costruire una prima direzione chiara.</p>
-        <p><strong>Sessioni successive · 100 EUR</strong><br>Durata: 60 minuti</p>
-        <p>Incontri di continuita per approfondire cio che emerge, integrare le letture e trasformarle in scelte concrete.</p>
-        <p class="soul-price__note"><strong>Nota finale:</strong><br>Il Ritratto dell&apos;Anima puo essere integrato nel percorso come libro personale separato. Non e incluso automaticamente.</p>
-      </div>
-
-      <div class="soul-buttons">
-        <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20per%20accedere%20al%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi accesso al percorso</a>
-        <a href="mailto:info@alessandroveneziani.it?subject=Soul%20Design%20-%20Prenotazione%20prima%20sessione" class="btn btn--primary">Prenota la prima sessione</a>
-      </div>
     </div>
 
-    <div class="soul-image" data-aos="fade-left" data-aos-delay="200">
-      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/mondo.png" alt="Simbolo del mondo per il Soul Design" loading="lazy" decoding="async">
+    <div class="soul-image-wrap" data-aos="fade-left" data-aos-delay="200">
+      <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/mondo.png" alt="Il Mondo - Soul Design" class="soul-world-image" loading="lazy" decoding="async">
     </div>
+  </div>
+
+  <div class="soul-pricing-card" data-aos="fade-up" data-aos-delay="120">
+    <p><strong>Prima sessione Soul Design · 150 EUR</strong><br>Durata: 90 minuti</p>
+    <p>Un incontro piu lungo e strutturato per entrare davvero nella tua storia, leggere le dinamiche profonde e costruire una prima direzione chiara.</p>
+    <p><strong>Sessioni successive · 100 EUR</strong><br>Durata: 60 minuti</p>
+    <p>Incontri di continuita per approfondire cio che emerge, integrare le letture e trasformarle in scelte concrete.</p>
+    <p class="soul-price__note"><strong>Nota finale:</strong><br>Il Ritratto dell&apos;Anima puo essere integrato nel percorso come libro personale separato. Non e incluso automaticamente.</p>
   </div>
 </section>
 """.strip()

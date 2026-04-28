@@ -192,6 +192,21 @@ Ottavo aggiornamento live pubblicato il `2026-04-27`.
   - margine `40px 0 50px` mobile
 - bordo superiore dei Tarocchi azzerato quando la sezione segue la linea, per evitare una doppia divisione visiva
 
+## Soul Design
+
+Nono aggiornamento live pubblicato il `2026-04-28`.
+
+- rimosse le CTA duplicate dal fondo della sezione
+- nuova struttura in due livelli:
+  - `soul-content-row` con card descrittiva a sinistra e figura del Mondo a destra
+  - `soul-pricing-card` largo e centrato sotto la prima riga
+- contenuto descrittivo separato dal blocco prezzi
+- immagine `Il Mondo` resa piu presente con classe dedicata `soul-world-image`
+- layout mobile aggiornato in verticale con ordine:
+  - descrizione
+  - immagine
+  - prezzi
+
 ## Verifiche riuscite
 
 - Home pubblica con nuovo copy e nuove CTA visibili

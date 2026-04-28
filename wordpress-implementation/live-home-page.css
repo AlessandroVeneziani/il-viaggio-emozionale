@@ -822,6 +822,48 @@
   grid-template-columns: minmax(0, 1fr) minmax(250px, 320px);
 }
 
+.page-id-17 .soul-content-row {
+  display: grid;
+  grid-template-columns: 1fr 0.9fr;
+  align-items: center;
+  gap: 70px;
+  width: min(100%, 1100px);
+  margin: 70px auto 40px;
+}
+
+.page-id-17 .soul-description-card {
+  background: #f4f1ea;
+  border-radius: 28px;
+  padding: 44px;
+  border: 1px solid rgba(198, 167, 94, 0.35);
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
+  text-align: left;
+}
+
+.page-id-17 .soul-image-wrap {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: visible;
+}
+
+.page-id-17 .soul-world-image {
+  width: 120%;
+  max-width: none;
+  transform: translateX(20px);
+  filter: drop-shadow(0 16px 28px rgba(198, 167, 94, 0.22));
+}
+
+.page-id-17 .soul-pricing-card {
+  max-width: 960px;
+  margin: 50px auto 0;
+  background: #eeeae2;
+  border-left: 5px solid #9e7728;
+  border-radius: 18px;
+  padding: 36px 44px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+}
+
 .page-id-17 .lab-container {
   gap: 60px;
 }
@@ -844,6 +886,8 @@
 
 .page-id-17 .tarocchi-box p,
 .page-id-17 .soul-text p,
+.page-id-17 .soul-description-card p,
+.page-id-17 .soul-pricing-card p,
 .page-id-17 .lab-text-box p {
   margin-top: 0;
 }
@@ -876,10 +920,11 @@
 }
 
 .page-id-17 .soul-text ul,
+.page-id-17 .soul-description-card ul,
 .page-id-17 .lab-text-box ul {
   max-width: 560px;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 0;
+  margin-right: 0;
   padding-left: 20px;
   display: grid;
   gap: 8px;
@@ -951,6 +996,7 @@
   .page-id-17 .ritratto-testimonial-grid,
   .page-id-17 .tarocchi-columns,
   .page-id-17 .soul-grid,
+  .page-id-17 .soul-content-row,
   .page-id-17 .lab-container {
     grid-template-columns: 1fr;
   }
@@ -958,6 +1004,7 @@
   .page-id-17 .chi-content,
   .page-id-17 .tarocchi-columns,
   .page-id-17 .soul-grid,
+  .page-id-17 .soul-content-row,
   .page-id-17 .lab-container {
     width: min(100%, 760px);
   }
@@ -1007,6 +1054,24 @@
   .page-id-17 .tarocchi-card img.tarocchi-image {
     width: min(100%, 460px);
     transform: none;
+  }
+
+  .page-id-17 .soul-content-row {
+    gap: 34px;
+    margin: 50px auto 34px;
+  }
+
+  .page-id-17 .soul-image-wrap {
+    justify-content: center;
+  }
+
+  .page-id-17 .soul-world-image {
+    width: min(100%, 420px);
+    transform: none;
+  }
+
+  .page-id-17 .soul-pricing-card {
+    max-width: min(100%, 760px);
   }
 
   .page-id-17 .chi-text,
@@ -1078,6 +1143,26 @@
 @media (max-width: 768px) {
   .page-id-17 .section-divider-line {
     margin: 40px 0 50px;
+  }
+
+  .page-id-17 .soul-content-row {
+    grid-template-columns: 1fr;
+    gap: 30px;
+    margin: 40px auto 30px;
+  }
+
+  .page-id-17 .soul-description-card {
+    padding: 32px 28px;
+  }
+
+  .page-id-17 .soul-world-image {
+    width: 100%;
+    transform: none;
+  }
+
+  .page-id-17 .soul-pricing-card {
+    max-width: 100%;
+    padding: 28px;
   }
 
   .page-id-17 .lion-image {
