@@ -670,6 +670,21 @@
   box-shadow: 0 18px 34px rgba(158, 119, 40, 0.28);
 }
 
+.page-id-17 .ritratto-secondary-link {
+  display: inline-block;
+  margin-top: 14px;
+  font-size: 14px;
+  color: #073b57;
+  text-decoration: none;
+  opacity: 0.7;
+  transition: all 0.2s ease;
+}
+
+.page-id-17 .ritratto-secondary-link:hover {
+  opacity: 1;
+  text-decoration: underline;
+}
+
 .page-id-17 .ritratto-premium-visual {
   display: flex;
   justify-content: center;
@@ -824,11 +839,22 @@
   overflow: visible;
 }
 
+.page-id-17 .soul-visual,
+.page-id-17 .soul-image-wrap {
+  position: relative;
+  z-index: 2;
+}
+
 .page-id-17 .soul-world-image {
   width: 120%;
   max-width: none;
   transform: translateX(20px);
   filter: drop-shadow(0 16px 28px rgba(198, 167, 94, 0.22));
+}
+
+.page-id-17 .soul-visual img,
+.page-id-17 .soul-image-wrap img {
+  transform: translateY(80px);
 }
 
 .page-id-17 .soul-pricing-card {
@@ -842,6 +868,13 @@
   border-radius: 18px;
   padding: 36px 44px;
   box-shadow: var(--ive-card-shadow);
+}
+
+.page-id-17 .soul-price-box,
+.page-id-17 .soul-pricing-card {
+  position: relative;
+  z-index: 1;
+  margin-top: -60px;
 }
 
 .page-id-17 .lab-container {
@@ -943,6 +976,27 @@
 
 .page-id-17 .lab-image-box img {
   border-radius: 28px;
+}
+
+.page-id-17 .footer-prelude {
+  width: min(100%, 760px);
+  margin: clamp(16px, 3vw, 28px) auto clamp(28px, 4vw, 42px);
+  padding: 0 20px;
+  text-align: center;
+  color: #6b4f1d;
+  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
+  font-style: italic;
+  font-weight: 600;
+  letter-spacing: 0.03em;
+}
+
+body.page-id-17 .footer-icons i {
+  font-size: 22px;
+}
+
+body.page-id-17 footer {
+  letter-spacing: 0.04em;
+  font-size: 13px;
 }
 
 @media (min-width: 1280px) {
@@ -1069,6 +1123,11 @@
     transform: none;
   }
 
+  .page-id-17 .soul-visual img,
+  .page-id-17 .soul-image-wrap img {
+    transform: translateY(40px);
+  }
+
   .page-id-17 .soul-pricing-card {
     max-width: min(100%, 760px);
   }
@@ -1141,6 +1200,16 @@
   .page-id-17 .ritratto-cta {
     width: 100%;
     text-align: center;
+  }
+
+  .page-id-17 .soul-visual img,
+  .page-id-17 .soul-image-wrap img {
+    transform: none;
+  }
+
+  .page-id-17 .soul-price-box,
+  .page-id-17 .soul-pricing-card {
+    margin-top: 24px;
   }
 }
 

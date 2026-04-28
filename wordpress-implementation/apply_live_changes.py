@@ -557,6 +557,7 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 </section>
+<div class="footer-prelude" data-aos="fade-up">Il tuo viaggio non finisce qui.</div>
 <script type="application/ld+json">{schema_json}</script>
 """.strip()
 

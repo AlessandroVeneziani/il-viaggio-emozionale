@@ -273,3 +273,12 @@ Tredicesimo aggiornamento live pubblicato il `2026-04-28`.
 - ampliata la lista inclusi con struttura a due colonne su desktop e una colonna su mobile
 - aggiunta una chiusura editoriale e mantenuta la CTA mailto verso `info@alessandroveneziani.it`
 - introdotto breakpoint dedicato sotto `900px` per impilare contenuto e visual senza perdere leggibilita
+
+## Chiusura home e rifiniture CSS aggiuntive
+
+Quattordicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- aggiunta la frase `Il tuo viaggio non finisce qui.` subito sopra il footer della home
+- inserite le classi di supporto `ritratto-secondary-link`, `soul-visual`, `soul-price-box` e le relative rifiniture CSS
+- applicato uno spostamento verticale controllato al visual di `Soul Design` con reset responsive sotto i breakpoint mobili
+- aggiustati stile icone footer e micro-tipografia del footer nella vista home
