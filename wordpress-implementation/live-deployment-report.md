@@ -192,6 +192,14 @@ Ottavo aggiornamento live pubblicato il `2026-04-27`.
   - margine `40px 0 50px` mobile
 - bordo superiore dei Tarocchi azzerato quando la sezione segue la linea, per evitare una doppia divisione visiva
 
+## Rimozione divisore prima dei Tarocchi
+
+Decimo aggiornamento live pubblicato il `2026-04-28`.
+
+- rimosso completamente il divisore inserito prima della sezione `Tarocchi Archetipici`
+- eliminati sia il markup `section-divider-line` sia le regole CSS collegate
+- ripristinato il flusso originale della home, con i Tarocchi che iniziano direttamente dopo la sezione precedente
+
 ## Soul Design
 
 Nono aggiornamento live pubblicato il `2026-04-28`.
