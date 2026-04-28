@@ -374,41 +374,40 @@ def build_widget_html() -> dict[str, str]:
   </div>
 </section>
 
-<section id="ritratto" class="ritratto-section">
+<section id="ritratto" class="ritratto-premium-section">
   <div class="ritratto-shell">
-    <div class="ritratto-header" data-aos="fade-up">
-      <p class="ritratto-kicker">Lettura numerologica personalizzata</p>
-      <h2 class="ritratto-title">Ritratto dell&apos;Anima - scopri chi sei davvero</h2>
-      <p class="ritratto-lead">Ogni anima ha una storia scritta nei numeri, nei simboli e nelle energie che la accompagnano. Con il Ritratto dell&apos;Anima trasformo questi messaggi in un&apos;opera unica: una bussola simbolica che ti aiuta a ritrovare la direzione e a riconnetterti con la tua essenza.</p>
-      <p class="section-story">La home presenta una sola versione editoriale e completa del Ritratto, mentre eventuali varianti piu dettagliate verranno raccolte nello Shop del sito.</p>
-    </div>
-
     <article class="ritratto-premium-card pergamena-card" data-aos="fade-up">
-      <div class="ritratto-premium-card__intro">
-        <h3>Ritratto dell&apos;Anima</h3>
-        <p class="ritratto-price">Libro personale stampato &middot; 350 EUR</p>
-      </div>
-      <p>Il Ritratto dell&apos;Anima non e una semplice lettura numerologica. E un libro personale costruito su di te, che traduce numeri, simboli, cicli e vissuti in una mappa profonda della tua identita.</p>
-      <p>Ogni Ritratto viene realizzato su richiesta, stampato e rilegato come un oggetto da conservare nel tempo.</p>
-      <div class="ritratto-premium-card__content">
-        <div>
-          <p><strong>Include:</strong></p>
-          <ul class="ritratto-premium-list">
+      <div class="ritratto-premium-content">
+        <span class="ritratto-kicker">Lettura numerologica personalizzata</span>
+        <h2>Ritratto dell&apos;Anima</h2>
+        <p class="ritratto-subtitle">Libro personale stampato &middot; 350 EUR</p>
+        <p>Il Ritratto dell&apos;Anima non e una semplice lettura numerologica. E un libro personale costruito su di te, che traduce numeri, simboli, cicli e vissuti in una mappa profonda della tua identita.</p>
+        <p>Ogni Ritratto viene realizzato su richiesta, stampato e rilegato come un oggetto da conservare nel tempo.</p>
+
+        <div class="ritratto-includes">
+          <h3>Cosa troverai nel Ritratto dell&apos;Anima Premium</h3>
+          <ul>
             <li>Profilo numerologico completo</li>
-            <li>Missione e direzione dell&apos;anima</li>
-            <li>Analisi dei cicli di vita</li>
-            <li>Nodo karmico e dinamiche ricorrenti</li>
-            <li>Talenti e sfide evolutive</li>
-            <li>Chakra guida</li>
-            <li>Lettura simbolica narrativa</li>
-            <li>Sintesi finale con direzione concreta</li>
+            <li>Lettura astrologica narrativa e identitaria</li>
+            <li>Essenza e percorso karmico</li>
+            <li>Memorie e vite precedenti</li>
+            <li>Archetipi guida e figura mitologica</li>
+            <li>Talenti, blocchi e direzione evolutiva</li>
+            <li>Chakra e qualita energetica</li>
+            <li>Cicli di vita e anno personale</li>
+            <li>Carta oracolare canalizzata</li>
+            <li>Animali totem e simboli guida</li>
+            <li>Domande profonde per attivare il cambiamento</li>
+            <li>Sintesi finale del tuo percorso</li>
           </ul>
         </div>
-        <div class="ritratto-delivery-box">
-          <p><strong>Come lo ricevi:</strong></p>
-          <p>Puoi riceverlo a domicilio tramite spedizione oppure ritirarlo direttamente in studio, su appuntamento.</p>
-          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima.%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
-        </div>
+
+        <p class="ritratto-closing">Non e una lettura. E una mappa per muoverti davvero.</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="btn btn--primary ritratto-cta">Richiedi il tuo Ritratto dell&apos;Anima</a>
+      </div>
+
+      <div class="ritratto-premium-visual" data-aos="fade-left" data-aos-delay="120">
+        <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png" alt="Ritratto dell&apos;Anima Premium - libro personale stampato" loading="lazy" decoding="async">
       </div>
     </article>
 

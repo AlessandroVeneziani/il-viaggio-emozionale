@@ -90,7 +90,6 @@
 .page-id-17 .card-pergamena,
 .page-id-17 .ritratto-premium-card,
 .page-id-17 .ritratto-testimonials,
-.page-id-17 .ritratto-final,
 .page-id-17 .tarocchi-box,
 .page-id-17 .soul-text,
 .page-id-17 .soul-description-card,
@@ -533,34 +532,15 @@
   font-size: 0.95rem;
 }
 
-.page-id-17 .ritratto-section {
+.page-id-17 .ritratto-premium-section {
   background: linear-gradient(180deg, #fffaf2 0%, #f9efdf 100%);
-  padding: 0 20px clamp(56px, 8vw, 88px);
+  padding: clamp(70px, 8vw, 90px) 5%;
   border-top: 2px solid rgba(191, 162, 71, 0.42);
 }
 
 .page-id-17 .ritratto-shell {
-  padding-top: clamp(24px, 4vw, 38px);
-}
-
-.page-id-17 .ritratto-header,
-.page-id-17 .ritratto-final {
-  text-align: center;
-}
-
-.page-id-17 .ritratto-header {
-  margin-bottom: 34px;
-}
-
-.page-id-17 .ritratto-title {
-  font-size: clamp(2rem, 4vw, 3rem);
-  margin-bottom: 14px;
-}
-
-.page-id-17 .ritratto-lead {
-  max-width: 760px;
-  margin: 0 auto;
-  font-size: 1.04rem;
+  width: min(100%, 1180px);
+  padding-top: 0;
 }
 
 .page-id-17 .ritratto-testimonial-grid {
@@ -569,58 +549,138 @@
 }
 
 .page-id-17 .ritratto-premium-card {
-  max-width: 980px;
-  margin: 60px auto 0;
-  padding: clamp(34px, 5vw, 56px);
-}
-
-.page-id-17 .ritratto-premium-card__intro {
-  margin-bottom: 22px;
-}
-
-.page-id-17 .ritratto-premium-card h3 {
-  margin: 0 0 10px;
-  color: var(--ive-ink);
-  font-size: clamp(1.7rem, 3vw, 2.2rem);
-}
-
-.page-id-17 .ritratto-price {
-  margin: 0 0 24px;
-  color: var(--ive-ink);
-  font-weight: 700;
-  font-size: 22px;
-}
-
-.page-id-17 .ritratto-premium-card__content {
   display: grid;
-  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
-  gap: clamp(24px, 4vw, 46px);
-  align-items: start;
-  margin-top: 30px;
+  max-width: 1180px;
+  margin: 0 auto;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 64px;
+  align-items: center;
+  background: #f4f1ea;
+  border: 1px solid rgba(198, 167, 94, 0.48);
+  border-radius: 34px;
+  padding: 64px;
+  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.07);
+  position: relative;
+  overflow: visible;
 }
 
-.page-id-17 .ritratto-premium-list {
+.page-id-17 .ritratto-premium-card::before {
+  content: "";
+  position: absolute;
+  inset: 18px;
+  border: 1px solid rgba(198, 167, 94, 0.22);
+  border-radius: 26px;
+  pointer-events: none;
+}
+
+.page-id-17 .ritratto-premium-content,
+.page-id-17 .ritratto-premium-visual {
+  position: relative;
+  z-index: 1;
+}
+
+.page-id-17 .ritratto-kicker {
+  display: inline-block;
+  margin: 0 0 14px;
+  color: #9e7728;
+  font-size: 13px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.page-id-17 .ritratto-premium-content h2 {
+  color: #073b57;
+  font-size: clamp(34px, 4vw, 54px);
+  line-height: 1.05;
+  margin: 0 0 14px;
+}
+
+.page-id-17 .ritratto-subtitle {
+  color: #073b57;
+  font-size: 22px;
+  font-weight: 700;
+  margin: 0 0 28px;
+}
+
+.page-id-17 .ritratto-premium-content p {
+  color: #4b3d34;
+  font-size: 17px;
+  line-height: 1.75;
+  margin-bottom: 20px;
+}
+
+.page-id-17 .ritratto-includes {
+  margin-top: 34px;
+  padding: 30px;
+  background: rgba(255, 255, 255, 0.45);
+  border-left: 5px solid #9e7728;
+  border-top: 1px solid rgba(198, 167, 94, 0.25);
+  border-right: 1px solid rgba(198, 167, 94, 0.25);
+  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
+  border-radius: 22px;
+}
+
+.page-id-17 .ritratto-includes h3 {
+  color: #073b57;
+  font-size: 22px;
+  margin: 0 0 18px;
+}
+
+.page-id-17 .ritratto-includes ul {
+  columns: 2;
+  column-gap: 36px;
   margin: 0;
   padding-left: 20px;
-  display: grid;
-  gap: 10px;
 }
 
-.page-id-17 .ritratto-delivery-box {
-  background: rgba(255, 255, 255, 0.42);
-  border: 1px solid rgba(198, 167, 94, 0.3);
-  border-radius: 24px;
-  padding: clamp(22px, 3vw, 28px);
-  display: grid;
-  gap: 12px;
+.page-id-17 .ritratto-includes li {
+  color: #4b3d34;
+  font-size: 15px;
+  line-height: 1.65;
+  margin-bottom: 9px;
+  break-inside: avoid;
 }
 
-.page-id-17 .ritratto-delivery-box p {
-  margin: 0;
+.page-id-17 .ritratto-closing {
+  margin-top: 28px;
+  font-size: 20px !important;
+  font-style: italic;
+  color: #6b4f1d !important;
+  font-weight: 600;
 }
 
-.page-id-17 .ritratto-delivery-box .btn {
-  margin-top: 8px;
+.page-id-17 .ritratto-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  margin-top: 18px;
+  padding: 17px 30px;
+  border-radius: 999px;
+  background: #9e7728;
+  color: #ffffff !important;
+  text-decoration: none;
+  font-weight: 700;
+  box-shadow: 0 14px 28px rgba(158, 119, 40, 0.22);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.page-id-17 .ritratto-cta:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 34px rgba(158, 119, 40, 0.28);
+}
+
+.page-id-17 .ritratto-premium-visual {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.page-id-17 .ritratto-premium-visual img {
+  display: block;
+  width: 115%;
+  max-width: none;
+  filter: drop-shadow(0 24px 38px rgba(198, 167, 94, 0.28));
 }
 
 .page-id-17 .ritratto-quote__badge {
@@ -1013,11 +1073,6 @@
     max-width: min(100%, 760px);
   }
 
-  .page-id-17 .ritratto-premium-card__content {
-    grid-template-columns: 1fr;
-    gap: 24px;
-  }
-
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text--compact,
   .page-id-17 .tarocchi-box,
@@ -1042,6 +1097,50 @@
     width: min(100%, 420px);
     height: auto;
     transform: none;
+  }
+}
+
+@media (max-width: 900px) {
+  .page-id-17 .ritratto-premium-section {
+    padding: 60px 20px;
+  }
+
+  .page-id-17 .ritratto-premium-card {
+    grid-template-columns: 1fr;
+    gap: 36px;
+    padding: 36px 26px;
+    border-radius: 28px;
+  }
+
+  .page-id-17 .ritratto-premium-card::before {
+    inset: 12px;
+    border-radius: 22px;
+  }
+
+  .page-id-17 .ritratto-premium-content h2 {
+    font-size: 34px;
+  }
+
+  .page-id-17 .ritratto-subtitle {
+    font-size: 19px;
+  }
+
+  .page-id-17 .ritratto-includes {
+    padding: 24px;
+  }
+
+  .page-id-17 .ritratto-includes ul {
+    columns: 1;
+  }
+
+  .page-id-17 .ritratto-premium-visual img {
+    width: 100%;
+    max-width: 360px;
+  }
+
+  .page-id-17 .ritratto-cta {
+    width: 100%;
+    text-align: center;
   }
 }
 
@@ -1075,15 +1174,6 @@
 }
 
 @media (max-width: 768px) {
-  .page-id-17 .ritratto-premium-card {
-    margin-top: 40px;
-    padding: 32px 28px;
-  }
-
-  .page-id-17 .ritratto-premium-card__content {
-    gap: 20px;
-  }
-
   .page-id-17 .soul-content-row {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1161,7 +1251,6 @@
 
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text,
-  .page-id-17 .ritratto-premium-card,
   .page-id-17 .ritratto-testimonials,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,

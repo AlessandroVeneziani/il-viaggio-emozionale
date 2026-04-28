@@ -263,3 +263,13 @@ Dodicesimo aggiornamento live pubblicato il `2026-04-28`.
 - uniformati bordo gold e ombra delle principali pergamene della home con un sistema visivo piu coerente
 - alleggerito il menu laterale sticky con larghezza ridotta, padding piu compatto e tipografia piu minuta
 - confermata la logica narrativa della home, lasciando allo Shop futuro la gestione di eventuali varianti e listini piu dettagliati
+
+## Ritratto premium - card editoriale con visual dedicato
+
+Tredicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- trasformata la sezione `Ritratto dell'Anima` in una card ampia a due colonne con contenuto a sinistra e copertina a destra
+- spostati titolo, prezzo e CTA dentro la card per rendere il blocco piu autorevole e meno simile a una tabella prezzi
+- ampliata la lista inclusi con struttura a due colonne su desktop e una colonna su mobile
+- aggiunta una chiusura editoriale e mantenuta la CTA mailto verso `info@alessandroveneziani.it`
+- introdotto breakpoint dedicato sotto `900px` per impilare contenuto e visual senza perdere leggibilita
