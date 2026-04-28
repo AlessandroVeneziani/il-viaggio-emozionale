@@ -27,92 +27,23 @@
       "description": "Percorso di lettura simbolica per comprendere numeri, cicli interiori e disegno evolutivo personale."
     },
     {
-      "@type": "ProductGroup",
-      "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima",
+      "@type": "Product",
+      "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima-product",
       "name": "Ritratto dell'Anima",
-      "description": "Lettura numerologica personalizzata disponibile in tre varianti: digitale, stampata e premium su seta.",
-      "url": "https://ilviaggioemozionale.it/#ritratto",
-      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
+      "sku": "RDA-BOOK-350",
+      "category": "Libro personale stampato",
       "brand": {
         "@id": "https://ilviaggioemozionale.it/#organization"
       },
-      "variesBy": [
-        "material",
-        "size",
-        "additionalType"
-      ],
-      "hasVariant": [
-        {
-          "@id": "https://ilviaggioemozionale.it/#ritratto-digitale-product"
-        },
-        {
-          "@id": "https://ilviaggioemozionale.it/#ritratto-stampato-product"
-        },
-        {
-          "@id": "https://ilviaggioemozionale.it/#ritratto-premium-product"
-        }
-      ]
-    },
-    {
-      "@type": "Product",
-      "@id": "https://ilviaggioemozionale.it/#ritratto-digitale-product",
-      "isVariantOf": {
-        "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima"
-      },
-      "name": "Ritratto dell'Anima Digitale",
-      "sku": "RDA-DIG-150",
-      "category": "Lettura numerologica personalizzata",
-      "description": "PDF personalizzato di circa 25 pagine con sigillo del nome, numeri fondamentali, disequilibrio energetico, simboli guida e audio bonus.",
-      "url": "https://ilviaggioemozionale.it/#ritratto-digitale",
-      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "150.00",
-        "availability": "https://schema.org/InStock",
-        "url": "https://ilviaggioemozionale.it/#ritratto-digitale"
-      }
-    },
-    {
-      "@type": "Product",
-      "@id": "https://ilviaggioemozionale.it/#ritratto-stampato-product",
-      "isVariantOf": {
-        "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima"
-      },
-      "name": "Ritratto dell'Anima Stampato",
-      "sku": "RDA-PRINT-250",
-      "category": "Lettura numerologica personalizzata",
-      "material": "Carta pregiata",
-      "description": "Versione stampata e rilegata del Ritratto dell'Anima con lettera personalizzata, consegna in Italia e sessione Q&A di 30 minuti.",
-      "url": "https://ilviaggioemozionale.it/#ritratto-stampato",
-      "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
-      "offers": {
-        "@type": "Offer",
-        "priceCurrency": "EUR",
-        "price": "250.00",
-        "availability": "https://schema.org/InStock",
-        "url": "https://ilviaggioemozionale.it/#ritratto-stampato"
-      }
-    },
-    {
-      "@type": "Product",
-      "@id": "https://ilviaggioemozionale.it/#ritratto-premium-product",
-      "isVariantOf": {
-        "@id": "https://ilviaggioemozionale.it/#ritratto-dell-anima"
-      },
-      "name": "Ritratto dell'Anima Premium su seta",
-      "sku": "RDA-PREM-350",
-      "category": "Lettura numerologica personalizzata",
-      "material": "Seta",
-      "description": "Versione premium stampata su seta, rilegata a mano, con illustrazioni aggiuntive, sessione privata di 60 minuti e supporto email per un mese.",
-      "url": "https://ilviaggioemozionale.it/#ritratto-premium",
+      "description": "Libro personale stampato costruito su numeri, simboli, cicli di vita e lettura narrativa per offrire una mappa profonda dell'identita.",
+      "url": "https://ilviaggioemozionale.it/#ritratto",
       "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "EUR",
         "price": "350.00",
         "availability": "https://schema.org/InStock",
-        "url": "https://ilviaggioemozionale.it/#ritratto-premium"
+        "url": "https://ilviaggioemozionale.it/#ritratto"
       }
     },
     {

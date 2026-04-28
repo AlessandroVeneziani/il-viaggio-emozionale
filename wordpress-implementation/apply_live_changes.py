@@ -380,83 +380,37 @@ def build_widget_html() -> dict[str, str]:
       <p class="ritratto-kicker">Lettura numerologica personalizzata</p>
       <h2 class="ritratto-title">Ritratto dell&apos;Anima - scopri chi sei davvero</h2>
       <p class="ritratto-lead">Ogni anima ha una storia scritta nei numeri, nei simboli e nelle energie che la accompagnano. Con il Ritratto dell&apos;Anima trasformo questi messaggi in un&apos;opera unica: una bussola simbolica che ti aiuta a ritrovare la direzione e a riconnetterti con la tua essenza.</p>
-      <p class="section-story">Scegli il livello che risuona con te e inizia il viaggio con la versione digitale, stampata o premium su seta.</p>
+      <p class="section-story">La home presenta una sola versione editoriale e completa del Ritratto, mentre eventuali varianti piu dettagliate verranno raccolte nello Shop del sito.</p>
     </div>
 
-    <div class="ritratto-grid">
-      <article id="ritratto-digitale" class="ritratto-card ritratto-card--digitale" data-aos="fade-up">
-        <div class="ritratto-card__head">
-          <span class="ritratto-card__icon ritratto-card__icon--digitale" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M7 3.5h7l4 4V20a.5.5 0 0 1-.5.5h-10A.5.5 0 0 1 7 20V3.5Z"></path>
-              <path d="M14 3.5v4h4"></path>
-              <path d="M9 11h6"></path>
-              <path d="M9 14.5h6"></path>
-            </svg>
-          </span>
-          <p class="ritratto-card__label">Livello Digitale</p>
+    <article class="ritratto-premium-card pergamena-card" data-aos="fade-up">
+      <div class="ritratto-premium-card__intro">
+        <h3>Ritratto dell&apos;Anima</h3>
+        <p class="ritratto-price">Libro personale stampato &middot; 350 EUR</p>
+      </div>
+      <p>Il Ritratto dell&apos;Anima non e una semplice lettura numerologica. E un libro personale costruito su di te, che traduce numeri, simboli, cicli e vissuti in una mappa profonda della tua identita.</p>
+      <p>Ogni Ritratto viene realizzato su richiesta, stampato e rilegato come un oggetto da conservare nel tempo.</p>
+      <div class="ritratto-premium-card__content">
+        <div>
+          <p><strong>Include:</strong></p>
+          <ul class="ritratto-premium-list">
+            <li>Profilo numerologico completo</li>
+            <li>Missione e direzione dell&apos;anima</li>
+            <li>Analisi dei cicli di vita</li>
+            <li>Nodo karmico e dinamiche ricorrenti</li>
+            <li>Talenti e sfide evolutive</li>
+            <li>Chakra guida</li>
+            <li>Lettura simbolica narrativa</li>
+            <li>Sintesi finale con direzione concreta</li>
+          </ul>
         </div>
-        <h3 class="ritratto-card__title">Digitale</h3>
-        <p class="ritratto-card__text">Il tuo viaggio in formato digitale. Riceverai via mail o WhatsApp un PDF personalizzato di circa 25 pagine con sigillo del nome, numeri fondamentali, diagramma del disequilibrio energetico, simboli guida e una sintesi finale.</p>
-        <ul class="ritratto-card__list">
-          <li>Sigillo personalizzato e grafico numerologico</li>
-          <li>Analisi delle energie dominanti e punti di armonia o disequilibrio</li>
-          <li>Suggerimenti pratici per integrare i messaggi nella tua vita</li>
-          <li>Bonus: breve audio di spiegazione di 15 minuti in MP3</li>
-        </ul>
-        <p class="ritratto-card__price">150 EUR</p>
-        <a href="https://www.paypal.com/paypalme/AVeneziani868/150EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Acquista PDF</a>
-        <p class="ritratto-card__meta">Dopo l&apos;acquisto riceverai una mail per inviare i dati necessari alla personalizzazione.</p>
-      </article>
-
-      <article id="ritratto-stampato" class="ritratto-card ritratto-card--stampato" data-aos="fade-up" data-aos-delay="120">
-        <div class="ritratto-card__head">
-          <span class="ritratto-card__icon ritratto-card__icon--stampato" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="M7.5 6.5h9a2 2 0 0 1 2 2v4h-13v-4a2 2 0 0 1 2-2Z"></path>
-              <path d="M8.5 3.5h7v3h-7z"></path>
-              <path d="M8 12.5h8v7a1 1 0 0 1-1 1H9a1 1 0 0 1-1-1v-7Z"></path>
-              <path d="M10 15.5h4"></path>
-            </svg>
-          </span>
-          <p class="ritratto-card__label">Livello Stampato</p>
+        <div class="ritratto-delivery-box">
+          <p><strong>Come lo ricevi:</strong></p>
+          <p>Puoi riceverlo a domicilio tramite spedizione oppure ritirarlo direttamente in studio, su appuntamento.</p>
+          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima.%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
         </div>
-        <h3 class="ritratto-card__title">Stampato</h3>
-        <p class="ritratto-card__text">Un manufatto da toccare. Oltre al PDF, ti invio a casa il tuo Ritratto dell&apos;Anima stampato su carta pregiata e rilegato con spirale, accompagnato da una lettera personalizzata che spiega i simboli principali.</p>
-        <ul class="ritratto-card__list">
-          <li>Tutto cio che e presente nel livello digitale</li>
-          <li>Stampa su carta di alta qualita con rifinitura professionale</li>
-          <li>Consegna a domicilio in Italia entro 7-10 giorni lavorativi</li>
-          <li>Bonus: sessione Q&amp;A di 30 minuti in videochiamata</li>
-        </ul>
-        <p class="ritratto-card__price">250 EUR</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sul%20Ritratto%20dell%27Anima%20in%20versione%20Stampata.%0D%0A%0D%0ANome%20e%20cognome:%0D%0AIndirizzo%20di%20spedizione:%0D%0ATelefono:%0D%0AEmail:%0D%0A%0D%0AGrazie" class="btn btn--solid">Richiedi stampato</a>
-        <p class="ritratto-card__meta">Nel messaggio trovi gia i campi per lasciarti indirizzo di spedizione e recapiti.</p>
-      </article>
-
-      <article id="ritratto-premium" class="ritratto-card ritratto-card--premium" data-aos="fade-up" data-aos-delay="240">
-        <div class="ritratto-card__badge">Consigliato</div>
-        <div class="ritratto-card__head">
-          <span class="ritratto-card__icon ritratto-card__icon--premium" aria-hidden="true">
-            <svg viewBox="0 0 24 24" focusable="false">
-              <path d="m12 3.5 2.2 4.5 5 .7-3.6 3.5.9 5-4.5-2.4-4.5 2.4.9-5L4.8 8.7l5-.7L12 3.5Z"></path>
-            </svg>
-          </span>
-          <p class="ritratto-card__label">Livello Premium su seta</p>
-        </div>
-        <h3 class="ritratto-card__title">Premium</h3>
-        <p class="ritratto-card__text">Un&apos;opera d&apos;arte da custodire. Il tuo Ritratto dell&apos;Anima viene stampato su seta, rilegato in un libro fatto a mano, impreziosito da illustrazioni aggiuntive e custodito in un cofanetto.</p>
-        <ul class="ritratto-card__list">
-          <li>Tutto cio che e presente nel livello stampato</li>
-          <li>Stampa su seta e legatoria artigianale</li>
-          <li>Illustrazioni ispirate ai tarocchi archetipici e ai sigilli esoterici</li>
-          <li>Sessione privata di 60 minuti via video e supporto email per un mese</li>
-        </ul>
-        <p class="ritratto-card__price">350 EUR</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sulla%20versione%20Premium%20del%20Ritratto%20dell%27Anima.%0D%0A%0D%0ANome%20e%20cognome:%0D%0AIndirizzo%20di%20spedizione:%0D%0ATelefono:%0D%0AEmail:%0D%0APreferenza%20per%20la%20sessione%20video:%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi premium</a>
-        <p class="ritratto-card__meta">Perfetta se desideri un oggetto rituale da custodire e un accompagnamento piu profondo nel tempo.</p>
-      </article>
-    </div>
+      </div>
+    </article>
 
     <div class="ritratto-testimonials" data-aos="fade-up">
       <h3 class="ritratto-testimonials__title">Le parole di chi ha gia vissuto questo cammino</h3>
@@ -496,11 +450,6 @@ def build_widget_html() -> dict[str, str]:
         </blockquote>
       </div>
       <p class="ritratto-note">Se hai gia ricevuto il tuo Ritratto dell&apos;Anima, racconta la tua esperienza con una testimonianza sincera: aiutera chi arriva qui a sentirsi rassicurato e accompagnato nella scelta.</p>
-    </div>
-
-    <div class="ritratto-final" data-aos="fade-up">
-      <p class="ritratto-final__text">Non c&apos;e un momento perfetto per iniziare un viaggio interiore: il momento e adesso. Scegli la versione del Ritratto dell&apos;Anima che parla alla tua essenza e lasciati guidare.</p>
-      <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20riguardo%20il%20Ritratto%20dell%27Anima.%0D%0A%0D%0AGrazie" class="btn btn--primary">Richiedi il tuo Ritratto dell&apos;Anima</a>
     </div>
   </div>
 </section>

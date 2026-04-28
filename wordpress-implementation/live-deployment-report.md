@@ -252,3 +252,14 @@ Undicesimo aggiornamento live pubblicato il `2026-04-28`.
 - impostato il container desktop con colonne equilibrate e allineamento stretch
 - adattata la copertina `book-image` all'altezza del blocco testo senza alterare il comportamento responsive
 - mantenuto il reset automatico di altezza su tablet e mobile per evitare overflow o deformazioni
+
+## Home premium - ritratto unico, pergamene uniformate e menu alleggerito
+
+Dodicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- rimossa dalla home la tabella a tre livelli del `Ritratto dell'Anima` e sostituita con una sola card premium dedicata al libro personale stampato da `350 EUR`
+- eliminata la CTA finale duplicata del `Ritratto` e mantenuta una sola CTA informativa via mailto nella card principale
+- aggiornato il JSON-LD della home per rimuovere le vecchie varianti `Digitale`, `Stampato` e `Premium su seta`, lasciando un solo prodotto coerente con il contenuto visibile
+- uniformati bordo gold e ombra delle principali pergamene della home con un sistema visivo piu coerente
+- alleggerito il menu laterale sticky con larghezza ridotta, padding piu compatto e tipografia piu minuta
+- confermata la logica narrativa della home, lasciando allo Shop futuro la gestione di eventuali varianti e listini piu dettagliati

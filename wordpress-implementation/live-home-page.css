@@ -8,10 +8,12 @@
   --ive-sand: #f2e6d3;
   --ive-border: #d5bc8f;
   --ive-shadow: 0 18px 36px rgba(8, 34, 52, 0.12);
+  --ive-card-border: rgba(198, 167, 94, 0.42);
+  --ive-card-shadow: 0 18px 42px rgba(0, 0, 0, 0.055);
   --ive-radius: 28px;
   --ive-content-max: 860px;
   --ive-brand-max: 860px;
-  --ive-rail-width: 220px;
+  --ive-rail-width: 150px;
   --ive-rail-gap: 32px;
   --ive-shell-max: calc(var(--ive-content-max) + var(--ive-rail-width) + var(--ive-rail-gap));
 }
@@ -81,16 +83,23 @@
   margin-right: auto;
 }
 
+.page-id-17 .pergamena-card,
 .page-id-17 .chi-text,
+.page-id-17 .hero-box,
 .page-id-17 .numerologia__text,
+.page-id-17 .card-pergamena,
+.page-id-17 .ritratto-premium-card,
+.page-id-17 .ritratto-testimonials,
+.page-id-17 .ritratto-final,
 .page-id-17 .tarocchi-box,
 .page-id-17 .soul-text,
+.page-id-17 .soul-description-card,
 .page-id-17 .lab-text-box,
 .page-id-17 .product-card {
-  background: rgba(255, 250, 242, 0.94);
-  border: 1px solid rgba(122, 91, 46, 0.16);
+  background: #f4f1ea;
+  border: 1px solid var(--ive-card-border);
   border-radius: var(--ive-radius);
-  box-shadow: var(--ive-shadow);
+  box-shadow: var(--ive-card-shadow);
 }
 
 .page-id-17 .chi-text,
@@ -257,10 +266,10 @@
 .page-id-17 .menu-pergamena {
   width: min(100%, var(--ive-rail-width));
   background: rgba(253, 246, 236, 0.96);
-  border: 1px solid var(--ive-border);
-  border-radius: 20px;
-  box-shadow: var(--ive-shadow);
-  padding: 16px;
+  border: 1px solid var(--ive-card-border);
+  border-radius: 18px;
+  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
+  padding: 14px 10px;
   backdrop-filter: blur(8px);
   text-align: center;
 }
@@ -283,10 +292,12 @@
 
 .page-id-17 .menu-pergamena a {
   display: block;
-  padding: 12px 14px;
+  padding: 10px 8px;
   border-radius: 12px;
   color: var(--ive-ink) !important;
   font-weight: 600;
+  font-size: 13px;
+  line-height: 1.25;
   text-decoration: none !important;
 }
 
@@ -300,6 +311,7 @@
   background: rgba(139, 106, 47, 0.14);
   border: 1px solid rgba(139, 106, 47, 0.22);
   color: var(--ive-gold-deep) !important;
+  padding: 12px 8px;
   box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
 }
 
@@ -332,10 +344,10 @@
 
 .page-id-17 .hero-box {
   background: #f4f1ea;
-  border: 1px solid rgba(198, 167, 94, 0.4);
+  border: 1px solid var(--ive-card-border);
   border-radius: 24px;
   padding: clamp(30px, 3.4vw, 40px);
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.05);
+  box-shadow: var(--ive-card-shadow);
   position: relative;
   overflow: hidden;
   isolation: isolate;
@@ -482,8 +494,8 @@
   padding-top: 90px;
   border-radius: 28px;
   background: #f4f1ea;
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
-  border: 1px solid rgba(198, 167, 94, 0.35);
+  box-shadow: var(--ive-card-shadow);
+  border: 1px solid var(--ive-card-border);
 }
 
 .page-id-17 .lion-image {
@@ -503,8 +515,7 @@
   text-align: left;
 }
 
-.page-id-17 .ritratto-kicker,
-.page-id-17 .ritratto-card__label {
+.page-id-17 .ritratto-kicker {
   margin: 0 0 10px;
   color: var(--ive-gold-deep);
   font-size: 0.86rem;
@@ -552,152 +563,79 @@
   font-size: 1.04rem;
 }
 
-.page-id-17 .ritratto-grid,
 .page-id-17 .ritratto-testimonial-grid {
   display: grid;
   gap: 24px;
 }
 
-.page-id-17 .ritratto-grid {
-  grid-template-columns: repeat(3, minmax(0, 1fr));
-  align-items: stretch;
-  margin: -20px;
+.page-id-17 .ritratto-premium-card {
+  max-width: 980px;
+  margin: 60px auto 0;
+  padding: clamp(34px, 5vw, 56px);
 }
 
-.page-id-17 .ritratto-card,
-.page-id-17 .ritratto-testimonials,
-.page-id-17 .ritratto-final {
-  background: rgba(255, 250, 242, 0.94);
-  border: 1px solid rgba(122, 91, 46, 0.16);
-  border-radius: var(--ive-radius);
-  box-shadow: var(--ive-shadow);
+.page-id-17 .ritratto-premium-card__intro {
+  margin-bottom: 22px;
 }
 
-.page-id-17 .ritratto-card {
-  position: relative;
-  margin: 20px;
-  padding: clamp(24px, 3vw, 34px);
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  text-align: left;
+.page-id-17 .ritratto-premium-card h3 {
+  margin: 0 0 10px;
+  color: var(--ive-ink);
+  font-size: clamp(1.7rem, 3vw, 2.2rem);
 }
 
-.page-id-17 .ritratto-card--digitale {
-  background: linear-gradient(180deg, rgba(247, 249, 252, 0.98) 0%, rgba(235, 243, 249, 0.94) 100%);
-  border-color: rgba(8, 59, 91, 0.14);
-}
-
-.page-id-17 .ritratto-card--stampato {
-  background: linear-gradient(180deg, rgba(255, 251, 244, 0.98) 0%, rgba(246, 236, 218, 0.94) 100%);
-  border-color: rgba(139, 106, 47, 0.2);
-}
-
-.page-id-17 .ritratto-card--premium {
-  border-width: 2px;
-  border-color: rgba(139, 106, 47, 0.56);
-  background: linear-gradient(180deg, rgba(255, 250, 242, 0.98) 0%, rgba(245, 232, 209, 0.94) 100%);
-}
-
-.page-id-17 .ritratto-card__badge {
-  position: absolute;
-  top: 18px;
-  right: 18px;
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  min-height: 34px;
-  padding: 6px 12px;
-  border-radius: 999px;
-  background: var(--ive-gold);
-  color: #ffffff;
-  font-size: 0.8rem;
+.page-id-17 .ritratto-price {
+  margin: 0 0 24px;
+  color: var(--ive-ink);
   font-weight: 700;
-  letter-spacing: 0.04em;
-  text-transform: uppercase;
+  font-size: 22px;
 }
 
-.page-id-17 .ritratto-card__head {
-  display: flex;
-  align-items: center;
-  gap: 14px;
-  margin-bottom: 12px;
+.page-id-17 .ritratto-premium-card__content {
+  display: grid;
+  grid-template-columns: minmax(0, 1.12fr) minmax(280px, 0.88fr);
+  gap: clamp(24px, 4vw, 46px);
+  align-items: start;
+  margin-top: 30px;
 }
 
-.page-id-17 .ritratto-card__icon,
+.page-id-17 .ritratto-premium-list {
+  margin: 0;
+  padding-left: 20px;
+  display: grid;
+  gap: 10px;
+}
+
+.page-id-17 .ritratto-delivery-box {
+  background: rgba(255, 255, 255, 0.42);
+  border: 1px solid rgba(198, 167, 94, 0.3);
+  border-radius: 24px;
+  padding: clamp(22px, 3vw, 28px);
+  display: grid;
+  gap: 12px;
+}
+
+.page-id-17 .ritratto-delivery-box p {
+  margin: 0;
+}
+
+.page-id-17 .ritratto-delivery-box .btn {
+  margin-top: 8px;
+}
+
 .page-id-17 .ritratto-quote__badge {
   display: inline-flex;
   align-items: center;
 }
 
-.page-id-17 .ritratto-card__icon {
-  justify-content: center;
-  width: 54px;
-  height: 54px;
-  border-radius: 18px;
-  color: var(--ive-ink);
-}
-
-.page-id-17 .ritratto-card__icon svg,
 .page-id-17 .ritratto-quote__badge svg {
   width: 24px;
   height: 24px;
 }
-
-.page-id-17 .ritratto-card__icon svg {
-  fill: none;
-  stroke: currentColor;
-  stroke-width: 1.7;
-  stroke-linecap: round;
-  stroke-linejoin: round;
-}
-
-.page-id-17 .ritratto-card__icon--digitale {
-  background: rgba(8, 59, 91, 0.1);
-}
-
-.page-id-17 .ritratto-card__icon--stampato {
-  background: rgba(139, 106, 47, 0.12);
-}
-
-.page-id-17 .ritratto-card__icon--premium {
-  background: rgba(139, 106, 47, 0.18);
-  color: var(--ive-gold-deep);
-}
-
-.page-id-17 .ritratto-card__title {
-  margin: 0 0 12px;
-  font-size: 1.5rem;
-}
-
-.page-id-17 .ritratto-card__text {
-  margin: 0 0 16px;
-}
-
-.page-id-17 .ritratto-card__list,
 .page-id-17 .ritratto-quote p {
   margin: 0;
 }
 
-.page-id-17 .ritratto-card__list {
-  padding-left: 20px;
-  display: grid;
-  gap: 8px;
-}
-
-.page-id-17 .ritratto-card__price {
-  margin: 20px 0 14px;
-  color: var(--ive-ink);
-  font-size: 1.22rem;
-  font-weight: 700;
-}
-
-.page-id-17 .ritratto-card .btn {
-  width: 100%;
-  margin-top: auto;
-}
-
-.page-id-17 .ritratto-card__meta,
 .page-id-17 .ritratto-note {
   margin: 14px 0 0;
   font-size: 0.95rem;
@@ -723,7 +661,11 @@
   padding: 24px;
   background: rgba(255, 255, 255, 0.58);
   border-left: 4px solid var(--ive-gold);
+  border-top: 1px solid rgba(198, 167, 94, 0.25);
+  border-right: 1px solid rgba(198, 167, 94, 0.25);
+  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
   border-radius: 20px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.04);
 }
 
 .page-id-17 .ritratto-quote__badge {
@@ -749,17 +691,6 @@
   color: var(--ive-gold-deep);
   font-style: normal;
   font-weight: 600;
-}
-
-.page-id-17 .ritratto-final {
-  margin-top: 28px;
-  padding: clamp(26px, 3vw, 38px);
-}
-
-.page-id-17 .ritratto-final__text {
-  max-width: 720px;
-  margin: 0 auto 18px;
-  font-size: 1.04rem;
 }
 
 .page-id-17 .tarocchi-section,
@@ -821,11 +752,8 @@
 }
 
 .page-id-17 .soul-description-card {
-  background: #f4f1ea;
   border-radius: 28px;
   padding: 44px;
-  border: 1px solid rgba(198, 167, 94, 0.35);
-  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.06);
   text-align: left;
 }
 
@@ -848,9 +776,12 @@
   margin: 50px auto 0;
   background: #eeeae2;
   border-left: 5px solid #9e7728;
+  border-top: 1px solid rgba(198, 167, 94, 0.25);
+  border-right: 1px solid rgba(198, 167, 94, 0.25);
+  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
   border-radius: 18px;
   padding: 36px 44px;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.04);
+  box-shadow: var(--ive-card-shadow);
 }
 
 .page-id-17 .lab-container {
@@ -889,6 +820,9 @@
   padding: 14px 16px;
   background: rgba(8, 59, 91, 0.05);
   border-left: 4px solid var(--ive-gold);
+  border-top: 1px solid rgba(198, 167, 94, 0.25);
+  border-right: 1px solid rgba(198, 167, 94, 0.25);
+  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
   border-radius: 14px;
 }
 
@@ -980,6 +914,12 @@
   }
 }
 
+@media (max-width: 1199px) {
+  body.page-id-17 .ive-sticky-menu-rail {
+    display: none;
+  }
+}
+
 @media (max-width: 1359px) {
   body.page-id-17.ive-sticky-menu-active .hero .menu-pergamena {
     display: block;
@@ -992,7 +932,6 @@
 
 @media (max-width: 1024px) {
   .page-id-17 .chi-content,
-  .page-id-17 .ritratto-grid,
   .page-id-17 .ritratto-testimonial-grid,
   .page-id-17 .tarocchi-columns,
   .page-id-17 .soul-grid,
@@ -1074,13 +1013,16 @@
     max-width: min(100%, 760px);
   }
 
+  .page-id-17 .ritratto-premium-card__content {
+    grid-template-columns: 1fr;
+    gap: 24px;
+  }
+
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text--compact,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,
-  .page-id-17 .lab-text-box,
-  .page-id-17 .ritratto-card,
-  .page-id-17 .ritratto-final {
+  .page-id-17 .lab-text-box {
     text-align: center;
   }
 
@@ -1100,15 +1042,6 @@
     width: min(100%, 420px);
     height: auto;
     transform: none;
-  }
-
-  .page-id-17 .ritratto-card {
-    align-items: center;
-  }
-
-  .page-id-17 .ritratto-card__list {
-    max-width: 620px;
-    text-align: left;
   }
 }
 
@@ -1142,6 +1075,15 @@
 }
 
 @media (max-width: 768px) {
+  .page-id-17 .ritratto-premium-card {
+    margin-top: 40px;
+    padding: 32px 28px;
+  }
+
+  .page-id-17 .ritratto-premium-card__content {
+    gap: 20px;
+  }
+
   .page-id-17 .soul-content-row {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1219,21 +1161,12 @@
 
   .page-id-17 .chi-text,
   .page-id-17 .numerologia__text,
-  .page-id-17 .ritratto-card,
+  .page-id-17 .ritratto-premium-card,
   .page-id-17 .ritratto-testimonials,
-  .page-id-17 .ritratto-final,
   .page-id-17 .tarocchi-box,
   .page-id-17 .soul-text,
   .page-id-17 .lab-text-box,
   .page-id-17 .product-card {
     padding: 20px;
-  }
-
-  .page-id-17 .ritratto-grid {
-    margin: -12px;
-  }
-
-  .page-id-17 .ritratto-card {
-    margin: 12px;
   }
 }
