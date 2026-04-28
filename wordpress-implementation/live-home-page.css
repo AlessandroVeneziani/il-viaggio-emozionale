@@ -855,6 +855,8 @@
 
 .page-id-17 .lab-container {
   gap: 60px;
+  align-items: stretch;
+  grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
 }
 
 .page-id-17 .tarocchi-card {
@@ -925,14 +927,23 @@
 }
 
 .page-id-17 .lab-image-box {
-  justify-content: flex-end;
+  justify-content: center;
+  align-items: stretch;
   overflow: visible;
 }
 
+.page-id-17 .lab-text-box {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
 .page-id-17 .lab-image-box img.book-image {
-  width: 120%;
-  max-width: none;
-  transform: translateX(20px);
+  width: 100%;
+  max-width: 100%;
+  height: 100%;
+  object-fit: contain;
+  transform: none;
   filter: drop-shadow(0 15px 25px rgba(198, 167, 94, 0.25));
 }
 
@@ -1087,6 +1098,7 @@
 
   .page-id-17 .lab-image-box img.book-image {
     width: min(100%, 420px);
+    height: auto;
     transform: none;
   }
 
@@ -1166,6 +1178,7 @@
 
   .page-id-17 .lab-image-box img.book-image {
     width: 100%;
+    height: auto;
     transform: none;
     margin-top: 20px;
   }

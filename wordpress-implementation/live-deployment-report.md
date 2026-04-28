@@ -243,3 +243,12 @@ Nono aggiornamento live pubblicato il `2026-04-28`.
 - La pagina shop WooCommerce ora mostra title corretto e OG corretti, ma la `meta description` standard non viene ancora emessa nel markup pubblico dal template archive
 - Le pagine tecniche non mostrano ancora un `<meta name="robots">` nel markup HTML, ma espongono il direttivo via header `X-Robots-Tag`, che resta valido per i crawler
 - Non sono state aggiunte testimonianze reali o case study per evitare di pubblicare contenuti non verificati
+
+## Laboratorio dell'Anima - allineamento pergamena e libro
+
+Undicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- uniformata la presenza visiva di pergamena testuale e copertina del libro nella sezione `Laboratorio dell'Anima`
+- impostato il container desktop con colonne equilibrate e allineamento stretch
+- adattata la copertina `book-image` all'altezza del blocco testo senza alterare il comportamento responsive
+- mantenuto il reset automatico di altezza su tablet e mobile per evitare overflow o deformazioni
