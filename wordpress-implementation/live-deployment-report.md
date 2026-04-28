@@ -282,3 +282,36 @@ Quattordicesimo aggiornamento live pubblicato il `2026-04-28`.
 - inserite le classi di supporto `ritratto-secondary-link`, `soul-visual`, `soul-price-box` e le relative rifiniture CSS
 - applicato uno spostamento verticale controllato al visual di `Soul Design` con reset responsive sotto i breakpoint mobili
 - aggiustati stile icone footer e micro-tipografia del footer nella vista home
+
+## Nuova pagina Shop narrativa
+
+Quindicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- trasformata la pagina pubblica `/negozio/` in una vera landing shop narrativa, coerente con il tono premium del brand
+- nuova struttura della pagina Shop:
+  - hero `Scegli come iniziare il tuo viaggio`
+  - blocco `Ritratto dell'Anima` con tre ingressi principali
+  - blocco `Ritratto dell'Anima Premium`
+  - sezione guidata `Non sai da dove partire?`
+  - griglia `Altri modi per entrare nel viaggio`
+  - recensioni e CTA finale
+- introdotto il file CSS dedicato `live-shop-page.css` con:
+  - palette oro, avorio e blu profondo
+  - card con bordo gold coerente
+  - griglie responsive per card, premium block, risorse e recensioni
+  - rimozione della percezione da ecommerce classico in favore di un percorso guidato
+- tutte le CTA della nuova pagina puntano per ora a email precompilate, in attesa di collegamento futuro con i prodotti Shop/WooCommerce definitivi
+- `Digitale Guidato` evidenziato con badge `Consigliato`
+- il blocco `Premium` reso il punto visivo piu importante dell'intera pagina
+
+## Shop WooCommerce tecnico interno
+
+Sedicesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- creata una pagina tecnica interna `Archivio Shop Interno` con slug `archivio-shop-interno`
+- la pagina negozio WooCommerce e stata riassegnata internamente a questo archivio tecnico, cosi da liberare `/negozio/` per la nuova pagina narrativa pubblica
+- aggiornato il plugin `IVE SEO Guardrails` alla versione `1.1.0`
+- esteso il guardrail SEO per forzare `noindex, follow` anche sull'archivio shop tecnico WooCommerce tramite `is_shop()`
+- verifica pubblica completata:
+  - `/negozio/` risponde come pagina editoriale indicizzabile
+  - `/archivio-shop-interno/` espone l'header `X-Robots-Tag: noindex, follow`

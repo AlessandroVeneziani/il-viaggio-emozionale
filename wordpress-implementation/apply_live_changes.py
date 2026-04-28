@@ -35,6 +35,8 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.
 
 HOME_PAGE_ID = 17
 SHOP_PAGE_ID = 911
+TECHNICAL_SHOP_SLUG = "archivio-shop-interno"
+TECHNICAL_SHOP_TITLE = "Archivio Shop Interno"
 NOINDEX_PAGE_IDS = {
     912: "Carrello",
     913: "Pagamento",
@@ -45,6 +47,7 @@ NOINDEX_PAGE_IDS = {
 WORKDIR = Path(__file__).resolve().parent
 BACKUP_DIR = WORKDIR / "backups"
 CSS_PATH = WORKDIR / "live-home-page.css"
+SHOP_CSS_PATH = WORKDIR / "live-shop-page.css"
 SCHEMA_PATH = WORKDIR / "schema" / "service-organization.jsonld"
 
 
@@ -131,6 +134,36 @@ def rest_update_page(session: Session, post_id: int, nonce: str, payload: dict[s
     return json.loads(session.opener.open(request).read().decode("utf-8"))
 
 
+def rest_create_page(session: Session, nonce: str, payload: dict[str, Any]) -> dict[str, Any]:
+    request = urllib.request.Request(
+        f"{BASE_URL}/wp-json/wp/v2/pages",
+        data=json.dumps(payload).encode("utf-8"),
+        headers={
+            "User-Agent": USER_AGENT,
+            "X-WP-Nonce": nonce,
+            "Referer": BASE_URL + "/wp-admin/post-new.php?post_type=page",
+            "Content-Type": "application/json; charset=utf-8",
+            "Accept": "application/json",
+        },
+        method="POST",
+    )
+    return json.loads(session.opener.open(request).read().decode("utf-8"))
+
+
+def rest_find_page_by_slug(session: Session, nonce: str, slug: str) -> dict[str, Any] | None:
+    request = urllib.request.Request(
+        f"{BASE_URL}/wp-json/wp/v2/pages?slug={urllib.parse.quote(slug)}&context=edit&per_page=100",
+        headers={
+            "User-Agent": USER_AGENT,
+            "X-WP-Nonce": nonce,
+            "Referer": BASE_URL + "/wp-admin/edit.php?post_type=page",
+            "Accept": "application/json",
+        },
+    )
+    pages = json.loads(session.opener.open(request).read().decode("utf-8"))
+    return pages[0] if pages else None
+
+
 def clear_elementor_cache(session: Session, nonce: str) -> None:
     request = urllib.request.Request(
         f"{BASE_URL}/wp-json/elementor/v1/cache",
@@ -156,6 +189,92 @@ def purge_speedycache(session: Session) -> str | None:
     return purge_url
 
 
+def extract_tag_attrs(tag: str) -> dict[str, str]:
+    attrs = {}
+    for key, _, value in re.findall(r'([:\w-]+)\s*=\s*(["\'])(.*?)\2', tag, re.S):
+        attrs[key] = html.unescape(value)
+    return attrs
+
+
+def parse_selected_settings(form_html: str) -> dict[str, str]:
+    values: dict[str, str] = {}
+
+    for tag_match in re.finditer(r"<input\b[^>]*>", form_html, re.I | re.S):
+        tag = tag_match.group(0)
+        attrs = extract_tag_attrs(tag)
+        name = attrs.get("name")
+        input_type = attrs.get("type", "").lower()
+        if not name:
+            continue
+        if input_type == "checkbox":
+            if re.search(r"\bchecked(?:\s*=\s*['\"]?checked['\"]?)?", tag, re.I):
+                values[name] = attrs.get("value", "1")
+            else:
+                values.pop(name, None)
+        else:
+            values[name] = attrs.get("value", "")
+
+    for name, select_html in re.findall(r"<select\b[^>]*name=['\"]([^'\"]+)['\"][^>]*>(.*?)</select>", form_html, re.I | re.S):
+        selected = re.search(r"<option\b[^>]*value=['\"]([^'\"]*)['\"][^>]*selected=['\"]selected['\"][^>]*>", select_html, re.I | re.S)
+        if not selected:
+            selected = re.search(r"<option\b[^>]*value=['\"]([^'\"]*)['\"][^>]*\bselected\b[^>]*>", select_html, re.I | re.S)
+        if selected:
+            values[name] = html.unescape(selected.group(1))
+
+    return values
+
+
+def ensure_technical_shop_page(session: Session, nonce: str) -> int:
+    existing = rest_find_page_by_slug(session, nonce, TECHNICAL_SHOP_SLUG)
+    if existing:
+        post_id = int(existing["id"])
+        rest_update_page(
+            session,
+            post_id,
+            nonce,
+            {
+                "title": TECHNICAL_SHOP_TITLE,
+                "status": "publish",
+                "content": "<p>Pagina tecnica riservata all&apos;archivio prodotti WooCommerce.</p>",
+            },
+        )
+        return post_id
+
+    created = rest_create_page(
+        session,
+        nonce,
+        {
+            "title": TECHNICAL_SHOP_TITLE,
+            "slug": TECHNICAL_SHOP_SLUG,
+            "status": "publish",
+            "content": "<p>Pagina tecnica riservata all&apos;archivio prodotti WooCommerce.</p>",
+        },
+    )
+    return int(created["id"])
+
+
+def update_woocommerce_shop_page(session: Session, technical_shop_page_id: int) -> None:
+    settings_url = f"{BASE_URL}/wp-admin/admin.php?page=wc-settings&tab=products"
+    settings_html = get_text(settings_url, session, referer=BASE_URL + "/wp-admin/")
+    form_match = re.search(r'(<form method="post" id="mainform".*?</form>)', settings_html, re.S)
+    if not form_match:
+        raise RuntimeError("Could not find WooCommerce products settings form")
+    payload = parse_selected_settings(form_match.group(1))
+    payload["woocommerce_shop_page_id"] = str(technical_shop_page_id)
+    payload["save"] = "Salva le modifiche"
+
+    request = urllib.request.Request(
+        settings_url,
+        data=urllib.parse.urlencode(payload).encode("utf-8"),
+        headers={
+            "User-Agent": USER_AGENT,
+            "Content-Type": "application/x-www-form-urlencoded",
+            "Referer": settings_url,
+        },
+    )
+    session.opener.open(request).read()
+
+
 def save_backup(name: str, payload: dict[str, Any]) -> Path:
     BACKUP_DIR.mkdir(parents=True, exist_ok=True)
     timestamp = datetime.now().strftime("%Y%m%d-%H%M%S")
@@ -167,6 +286,10 @@ def save_backup(name: str, payload: dict[str, Any]) -> Path:
 def read_schema_string() -> str:
     schema = json.loads(SCHEMA_PATH.read_text(encoding="utf-8"))
     return json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
+
+
+def read_shop_css_string() -> str:
+    return SHOP_CSS_PATH.read_text(encoding="utf-8").strip()
 
 
 def build_widget_html() -> dict[str, str]:
@@ -570,6 +693,200 @@ def build_widget_html() -> dict[str, str]:
     }
 
 
+def build_shop_content() -> str:
+    shop_css = read_shop_css_string()
+    return f"""
+<style>{shop_css}</style>
+<div class="shop-page">
+  <section class="shop-hero">
+    <h1>Scegli come iniziare il tuo viaggio</h1>
+    <p>Dal primo passo fino al lavoro profondo: scegli il livello che senti piu vicino al tuo momento.</p>
+    <div class="shop-hero__actions">
+      <a href="#ritratto-shop" class="shop-cta">Scopri le opzioni</a>
+    </div>
+  </section>
+
+  <section id="ritratto-shop" class="shop-section">
+    <h2 class="shop-section-title">Ritratto dell&apos;Anima</h2>
+    <p class="shop-section-subtitle">Tre modi diversi per ricevere la tua mappa simbolica personale.</p>
+
+    <div class="shop-card-grid">
+      <article id="shop-digitale" class="shop-card">
+        <h3>Digitale</h3>
+        <p class="product-name">Ritratto dell&apos;Anima via mail</p>
+        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail. Una lettura personale e completa per iniziare a riconoscerti attraverso numeri, simboli e direzione.</p>
+        <ul>
+          <li>PDF personalizzato</li>
+          <li>Consegna via mail</li>
+          <li>Lettura numerologica e simbolica</li>
+        </ul>
+        <p class="shop-price">150 EUR</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20dell%27Anima%20Digitale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20acquistare%20il%20Ritratto%20dell%27Anima%20Digitale.%0D%0A%0D%0AGrazie" class="shop-cta">Acquista il Digitale</a>
+      </article>
+
+      <article id="shop-digitale-guidato" class="shop-card featured">
+        <span class="shop-badge">Consigliato</span>
+        <h3>Digitale Guidato</h3>
+        <p class="product-name">Ritratto + 30 minuti con Alessandro</p>
+        <p>Ricevi il tuo Ritratto in formato PDF e lo attraversiamo insieme in una guida di 30 minuti, per aiutarti a comprendere i passaggi piu importanti.</p>
+        <ul>
+          <li>PDF personalizzato</li>
+          <li>Consegna via mail</li>
+          <li>30 minuti di guida con Alessandro</li>
+        </ul>
+        <p class="shop-price">200 EUR</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20Digitale%20Guidato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20scegliere%20il%20Ritratto%20Digitale%20Guidato.%0D%0A%0D%0AGrazie" class="shop-cta">Scegli il Digitale Guidato</a>
+      </article>
+
+      <article id="shop-stampato" class="shop-card">
+        <h3>Stampato</h3>
+        <p class="product-name">Ritratto dell&apos;Anima stampato</p>
+        <p>Il tuo Ritratto prende forma. Stampato su carta pergamena, rilegato a spirale, da tenere, rileggere e portare con te.</p>
+        <ul>
+          <li>Ritratto stampato</li>
+          <li>Carta pergamena</li>
+          <li>Rilegatura a spirale</li>
+          <li>Spedizione o ritiro in studio</li>
+        </ul>
+        <p class="shop-price">250 EUR</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20il%20Ritratto%20dell%27Anima%20Stampato.%0D%0A%0D%0AGrazie" class="shop-cta">Ricevi il tuo Ritratto</a>
+      </article>
+    </div>
+
+    <p class="shop-quote">Non e solo una lettura. E un punto di svolta.</p>
+  </section>
+
+  <section id="ritratto-premium-block" class="shop-section">
+    <h2 class="shop-section-title">Ritratto dell&apos;Anima Premium</h2>
+    <p class="shop-section-subtitle">Un libro personale pensato per essere custodito nel tempo.</p>
+
+    <div class="premium-card">
+      <div class="premium-card__content">
+        <h3>Ritratto dell&apos;Anima Premium</h3>
+        <p>Il Ritratto dell&apos;Anima Premium e la versione piu completa e profonda: un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
+
+        <div class="premium-includes">
+          <h4>Cosa include</h4>
+          <ul>
+            <li>Profilo numerologico completo</li>
+            <li>Lettura astrologica narrativa e identitaria</li>
+            <li>Essenza e percorso karmico</li>
+            <li>Memorie e vite precedenti</li>
+            <li>Archetipi guida e figura mitologica</li>
+            <li>Talenti, blocchi e direzione evolutiva</li>
+            <li>Chakra e qualita energetica</li>
+            <li>Cicli di vita e anno personale</li>
+            <li>Carta oracolare canalizzata</li>
+            <li>Animali totem e simboli guida</li>
+            <li>Domande profonde per attivare il cambiamento</li>
+            <li>Sintesi finale del tuo percorso</li>
+          </ul>
+        </div>
+
+        <div class="premium-options">
+          <div class="premium-option">
+            <h4>Premium</h4>
+            <p>Libro personale stampato e curato, senza sessione.</p>
+            <p class="shop-price">350 EUR</p>
+            <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20Premium&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20il%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="shop-cta">Richiedi il Premium</a>
+          </div>
+          <div class="premium-option">
+            <h4>Premium Guidato</h4>
+            <p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>
+            <p class="shop-price">420 EUR</p>
+            <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20Premium%20Guidato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20scoprire%20il%20Ritratto%20dell%27Anima%20Premium%20Guidato.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il Premium Guidato</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="premium-card__visual">
+        <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png" alt="Ritratto dell&apos;Anima Premium">
+      </div>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <h2 class="shop-section-title">Non sai da dove partire?</h2>
+    <p class="shop-section-subtitle">Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>
+
+    <div class="guided-choice-grid">
+      <article class="guided-choice-card">
+        <h3>Se vuoi capire</h3>
+        <p>Inizia dal Ritratto Digitale.</p>
+        <a href="#shop-digitale" class="shop-cta secondary">Vai al Digitale</a>
+      </article>
+      <article class="guided-choice-card">
+        <h3>Se vuoi essere guidato</h3>
+        <p>Scegli il Ritratto con guida da 30 minuti.</p>
+        <a href="#shop-digitale-guidato" class="shop-cta secondary">Vai al Digitale Guidato</a>
+      </article>
+      <article class="guided-choice-card">
+        <h3>Se vuoi custodire</h3>
+        <p>Scegli lo Stampato o il Premium.</p>
+        <a href="#ritratto-premium-block" class="shop-cta secondary">Vai al Premium</a>
+      </article>
+    </div>
+
+    <div class="guided-choice-actions">
+      <a href="mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie" class="shop-cta">Scrivimi e ti aiuto a scegliere</a>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <h2 class="shop-section-title">Altri modi per entrare nel viaggio</h2>
+    <div class="resource-grid">
+      <article class="resource-card">
+        <h3>Corso di Scrittura Automatica</h3>
+        <p>Un percorso per aprire il dialogo interiore e lasciare emergere parole, immagini e intuizioni senza forzatura.</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20corso%20di%20Scrittura%20Automatica&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20corso%20di%20Scrittura%20Automatica.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il corso</a>
+      </article>
+      <article class="resource-card">
+        <h3>Meditazioni Guidate</h3>
+        <p>Tracce audio per accompagnarti nei momenti di ascolto, centratura e trasformazione.</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Meditazioni%20Guidate&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sulle%20Meditazioni%20Guidate.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Ascolta le meditazioni</a>
+      </article>
+      <article class="resource-card">
+        <h3>Tarocchi Archetipici</h3>
+        <p>Una sessione simbolica per leggere il momento che stai attraversando e portare chiarezza nel presente.</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20prenotare%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Prenota una sessione</a>
+      </article>
+      <article class="resource-card">
+        <h3>Soul Design</h3>
+        <p>Un percorso continuativo per trasformare intuizioni, blocchi e passaggi interiori in scelte concrete.</p>
+        <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il percorso</a>
+      </article>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <h2 class="shop-section-title">Le parole di chi ha gia iniziato</h2>
+    <div class="shop-review-grid">
+      <blockquote class="shop-review-card">
+        <p>&ldquo;E stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla e a caso.&rdquo;</p>
+        <cite>Rita Adamo · recensione Google</cite>
+      </blockquote>
+      <blockquote class="shop-review-card">
+        <p>&ldquo;Ho avuto proprio la sensazione che non vi fosse alcun timore o vergogna di farsi vedere con le proprie debolezze. Alessandro ci ha accolti con grande presenza.&rdquo;</p>
+        <cite>Antonella Scabbia · recensione Google</cite>
+      </blockquote>
+      <blockquote class="shop-review-card">
+        <p>&ldquo;E stato un piacevole e interessante confronto tra anime. Alessandro e stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
+        <cite>Marco Ferrari · recensione Google</cite>
+      </blockquote>
+    </div>
+  </section>
+
+  <section class="shop-section">
+    <div class="shop-final-card">
+      <h3>Il momento giusto non arriva. Lo scegli.</h3>
+      <p>Non serve fare tutto subito. Serve iniziare dal punto giusto.</p>
+      <a href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie" class="shop-cta">Inizia il tuo viaggio</a>
+    </div>
+  </section>
+</div>
+""".strip()
+
+
 def walk_nodes(nodes: list[dict[str, Any]], callback) -> None:
     for node in nodes:
         callback(node)
@@ -612,6 +929,11 @@ def update_home_content(page_payload: dict[str, Any]) -> dict[str, Any]:
 
     walk_nodes(elementor_data, mutate)
     page_payload["meta"]["_elementor_data"] = json.dumps(elementor_data, ensure_ascii=False)
+    return page_payload
+
+
+def update_shop_content(page_payload: dict[str, Any]) -> dict[str, Any]:
+    page_payload["content"]["raw"] = build_shop_content()
     return page_payload
 
 
@@ -671,15 +993,26 @@ def main() -> int:
     password = require_env("WP_PASSWORD")
     session = build_session(username, password)
     nonce = get_rest_nonce(session, HOME_PAGE_ID)
+    technical_shop_page_id = ensure_technical_shop_page(session, nonce)
+    update_woocommerce_shop_page(session, technical_shop_page_id)
     current_home = rest_get_page(session, HOME_PAGE_ID, nonce)
-    backup_path = save_backup("home-page-17-before", current_home)
+    current_shop = rest_get_page(session, SHOP_PAGE_ID, nonce)
+    home_backup_path = save_backup("home-page-17-before", current_home)
+    shop_backup_path = save_backup("shop-page-911-before", current_shop)
 
     updated_home = update_home_content(current_home)
-    response = rest_update_page(
+    home_response = rest_update_page(
         session,
         HOME_PAGE_ID,
         nonce,
         {"meta": {"_elementor_data": updated_home["meta"]["_elementor_data"]}},
+    )
+    updated_shop = update_shop_content(current_shop)
+    shop_response = rest_update_page(
+        session,
+        SHOP_PAGE_ID,
+        nonce,
+        {"content": updated_shop["content"]["raw"]},
     )
 
     home_social_image = "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/colline-scaled.webp"
@@ -701,24 +1034,28 @@ def main() -> int:
         session,
         SHOP_PAGE_ID,
         {
-            "siteseo_titles_title": "Shop percorsi e PDF | Il Viaggio Emozionale",
-            "siteseo_titles_desc": "Acquista PDF, sessioni e strumenti simbolici per il tuo viaggio interiore: numerologia indiana, tarocchi archetipici, Soul Design e risorse evolutive.",
-            "siteseo_social_fb_title": "Strumenti per il tuo viaggio interiore",
-            "siteseo_social_fb_desc": "PDF, sessioni e risorse simboliche per accompagnare la tua crescita personale.",
+            "siteseo_titles_title": "Scegli come iniziare il tuo viaggio | Il Viaggio Emozionale",
+            "siteseo_titles_desc": "Ritratto dell'Anima, percorsi guidati e risorse simboliche per iniziare il tuo viaggio interiore con chiarezza.",
+            "siteseo_social_fb_title": "Scegli come iniziare il tuo viaggio",
+            "siteseo_social_fb_desc": "Ingressi guidati, Ritratto dell'Anima Premium e percorsi simbolici per il tuo momento presente.",
             "siteseo_social_fb_img": home_social_image,
-            "siteseo_social_twitter_title": "Strumenti per il tuo viaggio interiore",
-            "siteseo_social_twitter_desc": "PDF, sessioni e risorse simboliche per accompagnare la tua crescita personale.",
+            "siteseo_social_twitter_title": "Scegli come iniziare il tuo viaggio",
+            "siteseo_social_twitter_desc": "Ingressi guidati, Ritratto dell'Anima Premium e percorsi simbolici per il tuo momento presente.",
             "siteseo_social_twitter_img": home_social_image,
         },
     )
     for post_id in NOINDEX_PAGE_IDS:
         save_siteseo_meta(session, post_id, {"siteseo_robots_index": "yes"})
+    save_siteseo_meta(session, technical_shop_page_id, {"siteseo_robots_index": "yes"})
 
     clear_elementor_cache(session, nonce)
     purge_url = purge_speedycache(session)
 
-    print(f"Home page updated: {response.get('link', BASE_URL)}")
-    print(f"Backup saved to: {backup_path}")
+    print(f"Home page updated: {home_response.get('link', BASE_URL)}")
+    print(f"Shop page updated: {shop_response.get('link', BASE_URL + '/negozio/')}")
+    print(f"Home backup saved to: {home_backup_path}")
+    print(f"Shop backup saved to: {shop_backup_path}")
+    print(f"Technical Woo shop page id: {technical_shop_page_id}")
     if purge_url:
         print(f"SpeedyCache purged via: {purge_url}")
     else:

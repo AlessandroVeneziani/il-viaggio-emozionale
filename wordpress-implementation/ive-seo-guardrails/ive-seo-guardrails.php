@@ -2,7 +2,7 @@
 /**
  * Plugin Name: IVE SEO Guardrails
  * Description: Forces explicit noindex/follow directives on technical and protected pages where the SEO metabox state is not emitted on the frontend.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Codex
  */
 
@@ -11,11 +11,19 @@ if (! defined('ABSPATH')) {
 }
 
 function ive_seo_guardrails_page_ids() {
-	return array(912, 913, 914, 921);
+	return array(912, 913, 914, 921, 939);
+}
+
+function ive_seo_guardrails_page_slugs() {
+	return array('archivio-shop-interno');
 }
 
 function ive_seo_guardrails_should_noindex() {
-	return is_page(ive_seo_guardrails_page_ids());
+	if (function_exists('is_shop') && is_shop()) {
+		return true;
+	}
+
+	return is_page(ive_seo_guardrails_page_ids()) || is_page(ive_seo_guardrails_page_slugs());
 }
 
 add_filter(
