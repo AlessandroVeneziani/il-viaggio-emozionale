@@ -35,8 +35,11 @@ USER_AGENT = "Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/605.1.
 
 HOME_PAGE_ID = 17
 SHOP_PAGE_ID = 911
+CHECKOUT_PAGE_ID = 913
 TECHNICAL_SHOP_SLUG = "archivio-shop-interno"
 TECHNICAL_SHOP_TITLE = "Archivio Shop Interno"
+RITRATTO_CATEGORY_NAME = "Ritratto dell'Anima"
+RITRATTO_CATEGORY_SLUG = "ritratto-dell-anima"
 NOINDEX_PAGE_IDS = {
     912: "Carrello",
     913: "Pagamento",
@@ -56,6 +59,212 @@ class Session:
     opener: urllib.request.OpenerDirector
     username: str
     password: str
+
+
+@dataclass(frozen=True)
+class ProductSpec:
+    key: str
+    name: str
+    slug: str
+    price: str | None
+    description: str
+    short_description: str
+    purchase_note: str
+    virtual: bool
+    status: str = "publish"
+    category_slugs: tuple[str, ...] = ()
+    catalog_visibility: str = "hidden"
+    sku: str = ""
+
+
+SHOP_PRODUCT_SPECS = (
+    ProductSpec(
+        key="ritratto_digitale",
+        name="Ritratto dell'Anima Digitale",
+        slug="ritratto-dell-anima-digitale",
+        price="150",
+        description="""
+<p>Ricevi il tuo Ritratto dell'Anima in formato PDF, costruito su di te e consegnato via mail. E un primo ingresso chiaro e personale nel linguaggio dei numeri, dei simboli e della tua direzione interiore.</p>
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari alla personalizzazione.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>data di nascita</li>
+  <li>recapito email da usare per la consegna</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail con le istruzioni per inviare nome e cognome completi, data di nascita e recapito email utile alla consegna del Ritratto.",
+        virtual=True,
+        category_slugs=(RITRATTO_CATEGORY_SLUG,),
+        sku="IVE-RDA-DIG-150",
+    ),
+    ProductSpec(
+        key="ritratto_digitale_guidato",
+        name="Ritratto dell'Anima Digitale Guidato",
+        slug="ritratto-dell-anima-digitale-guidato",
+        price="200",
+        description="""
+<p>Ricevi il tuo Ritratto dell'Anima in formato PDF e lo attraversiamo insieme in una guida di 30 minuti con Alessandro, per mettere a fuoco i passaggi piu importanti e orientare i primi passi concreti.</p>
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari e concordare la guida.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>data di nascita</li>
+  <li>recapito telefonico per concordare la guida</li>
+  <li>indirizzo email da usare per la consegna del PDF</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail con le istruzioni per inviare nome e cognome completi, data di nascita, recapito email e recapito telefonico per concordare la guida con Alessandro.",
+        virtual=True,
+        category_slugs=(RITRATTO_CATEGORY_SLUG,),
+        sku="IVE-RDA-DIGG-200",
+    ),
+    ProductSpec(
+        key="ritratto_stampato",
+        name="Ritratto dell'Anima Stampato",
+        slug="ritratto-dell-anima-stampato",
+        price="250",
+        description="""
+<p>Il tuo Ritratto dell'Anima prende forma su carta pergamena, rilegato a spirale e pensato per essere custodito, riletto e portato con te nel tempo.</p>
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari e indicare se desideri spedizione o ritiro in studio.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>data di nascita</li>
+  <li>indirizzo di spedizione, se previsto</li>
+  <li>preferenza tra spedizione o ritiro in studio</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail con le istruzioni per inviare nome e cognome completi, data di nascita e, se prevista, l'indicazione dell'indirizzo di spedizione oppure del ritiro in studio.",
+        virtual=False,
+        category_slugs=(RITRATTO_CATEGORY_SLUG,),
+        sku="IVE-RDA-PRINT-250",
+    ),
+    ProductSpec(
+        key="ritratto_premium",
+        name="Ritratto dell'Anima Premium",
+        slug="ritratto-dell-anima-premium",
+        price="350",
+        description="""
+<p>La versione piu completa del Ritratto dell'Anima: un libro personale stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari alla personalizzazione e la preferenza di consegna.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>data di nascita</li>
+  <li>indirizzo di spedizione, se previsto</li>
+  <li>recapito email per il contatto organizzativo</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail con le istruzioni per inviare nome e cognome completi, data di nascita, recapito email e l'eventuale indirizzo di spedizione.",
+        virtual=False,
+        category_slugs=(RITRATTO_CATEGORY_SLUG,),
+        sku="IVE-RDA-PREM-350",
+    ),
+    ProductSpec(
+        key="ritratto_premium_guidato",
+        name="Ritratto dell'Anima Premium Guidato",
+        slug="ritratto-dell-anima-premium-guidato",
+        price="420",
+        description="""
+<p>Libro personale premium + 1 ora di spiegazione con Alessandro per entrare con piu profondita nei simboli, nei cicli e nei punti di svolta che emergono dal tuo Ritratto.</p>
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari e concordare la sessione.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>data di nascita</li>
+  <li>indirizzo di spedizione, se previsto</li>
+  <li>recapito telefonico per concordare la guida</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail con le istruzioni per inviare nome e cognome completi, data di nascita, recapito telefonico e l'eventuale indirizzo di spedizione per concordare la guida con Alessandro.",
+        virtual=False,
+        category_slugs=(RITRATTO_CATEGORY_SLUG,),
+        sku="IVE-RDA-PREMG-420",
+    ),
+    ProductSpec(
+        key="tarocchi_archetipici",
+        name="Sessione Tarocchi Archetipici",
+        slug="sessione-tarocchi-archetipici",
+        price="100",
+        description="""
+<p>Una sessione simbolica individuale per leggere con chiarezza il momento che stai attraversando e dialogare con il tuo inconscio attraverso i Tarocchi Archetipici.</p>
+<p>Dopo l'acquisto riceverai una mail per concordare disponibilita e dettagli della sessione.</p>
+""".strip(),
+        short_description="""
+<p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
+<ul>
+  <li>nome e cognome completi</li>
+  <li>recapito telefonico o email per concordare l'appuntamento</li>
+</ul>
+""".strip(),
+        purchase_note="Dopo l'acquisto riceverai una mail per concordare la disponibilita della sessione di Tarocchi Archetipici.",
+        virtual=True,
+        sku="IVE-TARO-100",
+    ),
+)
+
+
+FUTURE_PRODUCT_SPECS = (
+    ProductSpec(
+        key="corso_scrittura_automatica",
+        name="Corso di Scrittura Automatica",
+        slug="corso-di-scrittura-automatica",
+        price=None,
+        description="<p>Placeholder prodotto da completare con programma, formato e prezzo definitivo.</p>",
+        short_description="<p>Prodotto in preparazione.</p>",
+        purchase_note="Prodotto in preparazione.",
+        virtual=True,
+        status="draft",
+        sku="IVE-SCR-AUTO-DRAFT",
+    ),
+    ProductSpec(
+        key="meditazioni_guidate",
+        name="Meditazioni Guidate",
+        slug="meditazioni-guidate",
+        price=None,
+        description="<p>Placeholder prodotto da completare con raccolta audio, formato e prezzo definitivo.</p>",
+        short_description="<p>Prodotto in preparazione.</p>",
+        purchase_note="Prodotto in preparazione.",
+        virtual=True,
+        status="draft",
+        sku="IVE-MEDIT-DRAFT",
+    ),
+    ProductSpec(
+        key="laboratorio_anima_pdf",
+        name="Laboratorio dell'Anima PDF",
+        slug="laboratorio-dell-anima-pdf",
+        price=None,
+        description="<p>Placeholder prodotto da completare con formato finale e prezzo definitivo.</p>",
+        short_description="<p>Prodotto in preparazione.</p>",
+        purchase_note="Prodotto in preparazione.",
+        virtual=True,
+        status="draft",
+        sku="IVE-LAB-PDF-DRAFT",
+    ),
+    ProductSpec(
+        key="soul_design_prima_sessione",
+        name="Prima Sessione Soul Design",
+        slug="prima-sessione-soul-design",
+        price="150",
+        description="<p>Placeholder di prodotto per la prima sessione Soul Design. Il flusso commerciale resta attualmente guidato via contatto diretto.</p>",
+        short_description="<p>Prodotto in preparazione.</p>",
+        purchase_note="Dopo l'acquisto riceverai una mail per concordare data e dettagli del percorso.",
+        virtual=True,
+        status="draft",
+        sku="IVE-SOUL-150-DRAFT",
+    ),
+)
 
 
 def require_env(name: str) -> str:
@@ -94,13 +303,47 @@ def get_text(url: str, session: Session, referer: str | None = None) -> str:
     return session.opener.open(request).read().decode("utf-8", "ignore")
 
 
+def extract_wp_api_nonce(html_text: str) -> str:
+    match = re.search(r"wpApiSettings\s*=\s*(\{.*?\})\s*;", html_text, re.S)
+    if match:
+        return json.loads(match.group(1))["nonce"]
+
+    fallback = re.search(r'"nonce":"([a-f0-9]+)"', html_text)
+    if fallback:
+        return fallback.group(1)
+
+    raise RuntimeError("Could not find wpApiSettings nonce")
+
+
 def get_rest_nonce(session: Session, post_id: int) -> str:
     edit_url = f"{BASE_URL}/wp-admin/post.php?post={post_id}&action=edit"
     html_text = get_text(edit_url, session)
-    match = re.search(r"wpApiSettings\s*=\s*(\{.*?\})\s*;", html_text, re.S)
-    if not match:
-        raise RuntimeError("Could not find wpApiSettings nonce")
-    return json.loads(match.group(1))["nonce"]
+    return extract_wp_api_nonce(html_text)
+
+
+def rest_request_json(
+    session: Session,
+    endpoint: str,
+    nonce: str,
+    *,
+    method: str = "GET",
+    payload: Any | None = None,
+    referer: str | None = None,
+) -> Any:
+    data = None if payload is None else json.dumps(payload).encode("utf-8")
+    request = urllib.request.Request(
+        BASE_URL + endpoint,
+        data=data,
+        headers={
+            "User-Agent": USER_AGENT,
+            "X-WP-Nonce": nonce,
+            "Referer": referer or BASE_URL + "/wp-admin/",
+            "Content-Type": "application/json; charset=utf-8",
+            "Accept": "application/json",
+        },
+        method=method,
+    )
+    return json.loads(session.opener.open(request).read().decode("utf-8"))
 
 
 def rest_get_page(session: Session, post_id: int, nonce: str) -> dict[str, Any]:
@@ -211,6 +454,9 @@ def parse_selected_settings(form_html: str) -> dict[str, str]:
                 values[name] = attrs.get("value", "1")
             else:
                 values.pop(name, None)
+        elif input_type == "radio":
+            if re.search(r"\bchecked(?:\s*=\s*['\"]?checked['\"]?)?", tag, re.I):
+                values[name] = attrs.get("value", "")
         else:
             values[name] = attrs.get("value", "")
 
@@ -273,6 +519,130 @@ def update_woocommerce_shop_page(session: Session, technical_shop_page_id: int) 
         },
     )
     session.opener.open(request).read()
+
+
+def ensure_product_category(session: Session, nonce: str, *, name: str, slug: str) -> int:
+    categories = rest_request_json(
+        session,
+        f"/wp-json/wp/v2/product_cat?slug={urllib.parse.quote(slug)}&context=edit&per_page=100",
+        nonce,
+        referer=BASE_URL + "/wp-admin/edit-tags.php?taxonomy=product_cat&post_type=product",
+    )
+    if categories:
+        category = categories[0]
+        if category.get("name") != name:
+            category = rest_request_json(
+                session,
+                f"/wp-json/wp/v2/product_cat/{category['id']}",
+                nonce,
+                method="POST",
+                payload={"name": name, "slug": slug},
+                referer=BASE_URL + f"/wp-admin/term.php?taxonomy=product_cat&tag_ID={category['id']}&post_type=product",
+            )
+        return int(category["id"])
+
+    created = rest_request_json(
+        session,
+        "/wp-json/wp/v2/product_cat",
+        nonce,
+        method="POST",
+        payload={"name": name, "slug": slug},
+        referer=BASE_URL + "/wp-admin/edit-tags.php?taxonomy=product_cat&post_type=product",
+    )
+    return int(created["id"])
+
+
+def wc_request_json(
+    session: Session,
+    endpoint: str,
+    nonce: str,
+    *,
+    method: str = "GET",
+    payload: Any | None = None,
+) -> Any:
+    return rest_request_json(
+        session,
+        endpoint,
+        nonce,
+        method=method,
+        payload=payload,
+        referer=BASE_URL + "/wp-admin/edit.php?post_type=product",
+    )
+
+
+def wc_find_product_by_slug(session: Session, nonce: str, slug: str) -> dict[str, Any] | None:
+    products = wc_request_json(session, f"/wp-json/wc/v3/products?slug={urllib.parse.quote(slug)}", nonce)
+    return products[0] if products else None
+
+
+def build_checkout_link(checkout_page_link: str, product_id: int) -> str:
+    path = urllib.parse.urlparse(checkout_page_link).path or "/pagamento/"
+    if not path.endswith("/"):
+        path += "/"
+    return f"{path}?add-to-cart={product_id}"
+
+
+def product_payload(spec: ProductSpec, category_ids: dict[str, int]) -> dict[str, Any]:
+    payload: dict[str, Any] = {
+        "name": spec.name,
+        "slug": spec.slug,
+        "status": spec.status,
+        "type": "simple",
+        "description": spec.description,
+        "short_description": spec.short_description,
+        "virtual": spec.virtual,
+        "downloadable": False,
+        "catalog_visibility": spec.catalog_visibility,
+        "sku": spec.sku,
+        "stock_status": "instock",
+        "manage_stock": False,
+        "sold_individually": True,
+        "reviews_allowed": False,
+        "purchase_note": spec.purchase_note,
+        "categories": [{"id": category_ids[slug]} for slug in spec.category_slugs if slug in category_ids],
+    }
+    if spec.price is not None:
+        payload["regular_price"] = spec.price
+    return payload
+
+
+def ensure_wc_product(session: Session, nonce: str, spec: ProductSpec, category_ids: dict[str, int]) -> dict[str, Any]:
+    payload = product_payload(spec, category_ids)
+    existing = wc_find_product_by_slug(session, nonce, spec.slug)
+    if existing:
+        return wc_request_json(session, f"/wp-json/wc/v3/products/{existing['id']}", nonce, method="POST", payload=payload)
+    return wc_request_json(session, "/wp-json/wc/v3/products", nonce, method="POST", payload=payload)
+
+
+def ensure_wc_products(session: Session, nonce: str, checkout_page_link: str) -> dict[str, dict[str, Any]]:
+    ritratto_category_id = ensure_product_category(
+        session,
+        nonce,
+        name=RITRATTO_CATEGORY_NAME,
+        slug=RITRATTO_CATEGORY_SLUG,
+    )
+    category_ids = {
+        RITRATTO_CATEGORY_SLUG: ritratto_category_id,
+    }
+
+    products: dict[str, dict[str, Any]] = {}
+    for spec in SHOP_PRODUCT_SPECS + FUTURE_PRODUCT_SPECS:
+        product = ensure_wc_product(session, nonce, spec, category_ids)
+        products[spec.key] = {
+            "id": int(product["id"]),
+            "name": product["name"],
+            "status": product["status"],
+            "price": product.get("regular_price", ""),
+            "checkout_url": build_checkout_link(checkout_page_link, int(product["id"])),
+        }
+    return products
+
+
+def delete_wc_product_if_exists(session: Session, nonce: str, slug: str) -> None:
+    existing = wc_find_product_by_slug(session, nonce, slug)
+    if not existing:
+        return
+    wc_request_json(session, f"/wp-json/wc/v3/products/{existing['id']}?force=true", nonce, method="DELETE")
 
 
 def save_backup(name: str, payload: dict[str, Any]) -> Path:
@@ -693,7 +1063,7 @@ def build_widget_html() -> dict[str, str]:
     }
 
 
-def build_shop_content() -> str:
+def build_shop_content(product_links: dict[str, str]) -> str:
     shop_css = read_shop_css_string()
     return f"""
 <style>{shop_css}</style>
@@ -721,7 +1091,7 @@ def build_shop_content() -> str:
           <li>Lettura numerologica e simbolica</li>
         </ul>
         <p class="shop-price">150 EUR</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20dell%27Anima%20Digitale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20acquistare%20il%20Ritratto%20dell%27Anima%20Digitale.%0D%0A%0D%0AGrazie" class="shop-cta">Acquista il Digitale</a>
+        <a href="{product_links['ritratto_digitale']}" class="shop-cta">Acquista il Digitale</a>
       </article>
 
       <article id="shop-digitale-guidato" class="shop-card featured">
@@ -735,7 +1105,7 @@ def build_shop_content() -> str:
           <li>30 minuti di guida con Alessandro</li>
         </ul>
         <p class="shop-price">200 EUR</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20Digitale%20Guidato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20scegliere%20il%20Ritratto%20Digitale%20Guidato.%0D%0A%0D%0AGrazie" class="shop-cta">Scegli il Digitale Guidato</a>
+        <a href="{product_links['ritratto_digitale_guidato']}" class="shop-cta">Scegli il Digitale Guidato</a>
       </article>
 
       <article id="shop-stampato" class="shop-card">
@@ -749,7 +1119,7 @@ def build_shop_content() -> str:
           <li>Spedizione o ritiro in studio</li>
         </ul>
         <p class="shop-price">250 EUR</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Ritratto%20dell%27Anima%20Stampato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20il%20Ritratto%20dell%27Anima%20Stampato.%0D%0A%0D%0AGrazie" class="shop-cta">Ricevi il tuo Ritratto</a>
+        <a href="{product_links['ritratto_stampato']}" class="shop-cta">Ricevi il tuo Ritratto</a>
       </article>
     </div>
 
@@ -788,13 +1158,13 @@ def build_shop_content() -> str:
             <h4>Premium</h4>
             <p>Libro personale stampato e curato, senza sessione.</p>
             <p class="shop-price">350 EUR</p>
-            <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20Premium&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20il%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="shop-cta">Richiedi il Premium</a>
+            <a href="{product_links['ritratto_premium']}" class="shop-cta">Richiedi il Premium</a>
           </div>
           <div class="premium-option">
             <h4>Premium Guidato</h4>
             <p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>
             <p class="shop-price">420 EUR</p>
-            <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20Premium%20Guidato&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20scoprire%20il%20Ritratto%20dell%27Anima%20Premium%20Guidato.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il Premium Guidato</a>
+            <a href="{product_links['ritratto_premium_guidato']}" class="shop-cta secondary">Scopri il Premium Guidato</a>
           </div>
         </div>
       </div>
@@ -848,7 +1218,7 @@ def build_shop_content() -> str:
       <article class="resource-card">
         <h3>Tarocchi Archetipici</h3>
         <p>Una sessione simbolica per leggere il momento che stai attraversando e portare chiarezza nel presente.</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20prenotare%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Prenota una sessione</a>
+        <a href="{product_links['tarocchi_archetipici']}" class="shop-cta secondary">Prenota una sessione</a>
       </article>
       <article class="resource-card">
         <h3>Soul Design</h3>
@@ -932,8 +1302,8 @@ def update_home_content(page_payload: dict[str, Any]) -> dict[str, Any]:
     return page_payload
 
 
-def update_shop_content(page_payload: dict[str, Any]) -> dict[str, Any]:
-    page_payload["content"]["raw"] = build_shop_content()
+def update_shop_content(page_payload: dict[str, Any], product_links: dict[str, str]) -> dict[str, Any]:
+    page_payload["content"]["raw"] = build_shop_content(product_links)
     return page_payload
 
 
@@ -997,8 +1367,12 @@ def main() -> int:
     update_woocommerce_shop_page(session, technical_shop_page_id)
     current_home = rest_get_page(session, HOME_PAGE_ID, nonce)
     current_shop = rest_get_page(session, SHOP_PAGE_ID, nonce)
+    current_checkout = rest_get_page(session, CHECKOUT_PAGE_ID, nonce)
     home_backup_path = save_backup("home-page-17-before", current_home)
     shop_backup_path = save_backup("shop-page-911-before", current_shop)
+    products = ensure_wc_products(session, nonce, current_checkout["link"])
+    delete_wc_product_if_exists(session, nonce, "zz-test-prodotto-codex")
+    product_links = {key: product["checkout_url"] for key, product in products.items()}
 
     updated_home = update_home_content(current_home)
     home_response = rest_update_page(
@@ -1007,7 +1381,7 @@ def main() -> int:
         nonce,
         {"meta": {"_elementor_data": updated_home["meta"]["_elementor_data"]}},
     )
-    updated_shop = update_shop_content(current_shop)
+    updated_shop = update_shop_content(current_shop, product_links)
     shop_response = rest_update_page(
         session,
         SHOP_PAGE_ID,
@@ -1056,6 +1430,8 @@ def main() -> int:
     print(f"Home backup saved to: {home_backup_path}")
     print(f"Shop backup saved to: {shop_backup_path}")
     print(f"Technical Woo shop page id: {technical_shop_page_id}")
+    for key, product in products.items():
+        print(f"Product {key}: id={product['id']} status={product['status']} price={product['price']} checkout={product['checkout_url']}")
     if purge_url:
         print(f"SpeedyCache purged via: {purge_url}")
     else:

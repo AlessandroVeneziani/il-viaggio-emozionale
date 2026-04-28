@@ -315,3 +315,61 @@ Sedicesimo aggiornamento live pubblicato il `2026-04-28`.
 - verifica pubblica completata:
   - `/negozio/` risponde come pagina editoriale indicizzabile
   - `/archivio-shop-interno/` espone l'header `X-Robots-Tag: noindex, follow`
+
+## Shop WooCommerce collegato alla landing custom
+
+Diciassettesimo aggiornamento live pubblicato il `2026-04-28`.
+
+- creati e verificati i prodotti WooCommerce reali necessari per la landing `/negozio/`
+- prodotti pubblicati e collegati al checkout:
+  - `Ritratto dell'Anima Digitale` — ID `946` — `150 EUR`
+  - `Ritratto dell'Anima Digitale Guidato` — ID `947` — `200 EUR`
+  - `Ritratto dell'Anima Stampato` — ID `948` — `250 EUR`
+  - `Ritratto dell'Anima Premium` — ID `949` — `350 EUR`
+  - `Ritratto dell'Anima Premium Guidato` — ID `950` — `420 EUR`
+  - `Sessione Tarocchi Archetipici` — ID `951` — `100 EUR`
+- prodotti futuri preparati come placeholder in bozza:
+  - `Corso di Scrittura Automatica` — ID `952`
+  - `Meditazioni Guidate` — ID `953`
+  - `Laboratorio dell'Anima PDF` — ID `954`
+  - `Prima Sessione Soul Design` — ID `955`
+- ogni CTA acquisto nella pagina `/negozio/` ora punta al checkout WooCommerce reale tramite URL con `add-to-cart`
+- rimossi i `mailto` dai prodotti acquistabili direttamente:
+  - Digitale
+  - Digitale Guidato
+  - Stampato
+  - Premium
+  - Premium Guidato
+  - Tarocchi Archetipici nello shop
+- mantenuti i `mailto` solo per:
+  - richiesta di aiuto nella scelta
+  - richieste informative generiche
+  - risorse non ancora commercializzate direttamente
+  - percorso `Soul Design`
+- i prodotti digitali risultano `virtual`
+- i prodotti fisici del Ritratto risultano non virtuali e sono stati arricchiti con descrizione breve e nota acquisto che richiedono:
+  - nome e cognome completi
+  - data di nascita
+  - eventuale indirizzo di spedizione
+  - recapito telefonico quando e inclusa una guida
+
+## Verifiche WooCommerce
+
+Controlli eseguiti il `2026-04-28`.
+
+- valuta WooCommerce confermata su `EUR`
+- gateway pagamento rilevati nel checkout/store API:
+  - `PayPal`
+  - `Stripe`
+  - `Stripe Klarna`
+- il menu pubblico continua a puntare a `/negozio/`
+- la landing `/negozio/` mantiene il layout custom premium e non usa il layout archivio WooCommerce
+- verifica via Store API:
+  - il prodotto digitale aggiunto al checkout espone `needs_payment: true` e `needs_shipping: false`
+  - il prodotto stampato aggiunto al checkout espone `needs_payment: true`
+
+Nota tecnica importante:
+
+- la spedizione WooCommerce del negozio risulta attualmente disabilitata a livello store (`Località di spedizione: Disabilita spedizione e relativo calcolo`)
+- per questo motivo i prodotti fisici non calcolano ancora spedizione via Woo e il flusso pratico continua a raccogliere indirizzo o preferenza di ritiro tramite follow-up email post acquisto
+- non e stata forzata una configurazione di spedizione live senza una regola commerciale esplicita su costi o zone, per evitare effetti collaterali sul checkout reale
