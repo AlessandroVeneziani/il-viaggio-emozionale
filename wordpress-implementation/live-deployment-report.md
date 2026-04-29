@@ -373,3 +373,46 @@ Nota tecnica importante:
 - la spedizione WooCommerce del negozio risulta attualmente disabilitata a livello store (`Località di spedizione: Disabilita spedizione e relativo calcolo`)
 - per questo motivo i prodotti fisici non calcolano ancora spedizione via Woo e il flusso pratico continua a raccogliere indirizzo o preferenza di ritiro tramite follow-up email post acquisto
 - non e stata forzata una configurazione di spedizione live senza una regola commerciale esplicita su costi o zone, per evitare effetti collaterali sul checkout reale
+
+## Restyling premium della landing Shop
+
+Diciottesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- trasformata la pagina `/negozio/` in una landing piu coerente con la home:
+  - hero editoriale con kicker `SHOP PERCORSI E PDF`
+  - sezione guida `Non sai da dove partire?`
+  - griglia `Ritratto dell'Anima` a quattro card
+  - sezione `Premium` come blocco editoriale forte
+  - griglia `Altri modi per entrare nel viaggio`
+  - CTA finale dedicata
+- unificata la palette della pagina con:
+  - blu profondo `#073B57`
+  - oro `#C6A75E`
+  - oro scuro `#9E7728`
+  - avorio `#F8F3E8`
+  - pergamena `#F4F1EA`
+- rimossi dal markup pubblico gli elementi della versione precedente:
+  - `shop-card-grid`
+  - `guided-choice-grid`
+  - recensioni nella landing shop
+  - vecchi bottoni `.shop-cta` come sistema principale
+- introdotto un nuovo sistema di bottoni premium `.ive-btn`
+- mantenuti i checkout Woo diretti per:
+  - `946` Ritratto Digitale
+  - `947` Ritratto Digitale Guidato
+  - `948` Ritratto Stampato
+  - `949` Ritratto Premium
+  - `950` Ritratto Premium Guidato
+- i blocchi `Tarocchi Archetipici` e `Soul Design` nella sezione risorse puntano ora alle rispettive ancore della home:
+  - `/#tarocchi`
+  - `/#soul-design`
+
+## Correzione rendering HTML pagina Shop
+
+Diciannovesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- il contenuto custom della pagina `/negozio/` e stato incapsulato in un blocco HTML puro Gutenberg
+- corretto il problema di autop di WordPress che inseriva `<p>` e `<br>` indesiderati dentro il template custom
+- verifica pubblica completata:
+  - il markup della landing non contiene piu paragrafi automatici indesiderati nei wrapper delle sezioni
+  - le CTA acquisto mantengono i link Woo reali verso `/pagamento/?add-to-cart=...`

@@ -1065,78 +1065,123 @@ def build_widget_html() -> dict[str, str]:
 
 def build_shop_content(product_links: dict[str, str]) -> str:
     shop_css = read_shop_css_string()
-    return f"""
+    inner_html = f"""
 <style>{shop_css}</style>
 <div class="shop-page">
-  <section class="shop-hero">
-    <h1>Scegli come iniziare il tuo viaggio</h1>
-    <p>Dal primo passo fino al lavoro profondo: scegli il livello che senti piu vicino al tuo momento.</p>
-    <div class="shop-hero__actions">
-      <a href="#ritratto-shop" class="shop-cta">Scopri le opzioni</a>
+  <section class="shop-hero ive-shop-section">
+    <div class="shop-hero-inner">
+      <span class="shop-kicker">SHOP PERCORSI E PDF</span>
+      <h1>Scegli come entrare nel tuo Viaggio</h1>
+      <p>Ogni percorso e una porta diversa. Sta a te scegliere da dove iniziare.</p>
     </div>
   </section>
 
-  <section id="ritratto-shop" class="shop-section">
-    <h2 class="shop-section-title">Ritratto dell&apos;Anima</h2>
-    <p class="shop-section-subtitle">Tre modi diversi per ricevere la tua mappa simbolica personale.</p>
+  <section class="shop-choice ive-shop-section">
+    <div class="shop-section-header">
+      <h2>Non sai da dove partire?</h2>
+      <p>Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>
+    </div>
 
-    <div class="shop-card-grid">
-      <article id="shop-digitale" class="shop-card">
-        <h3>Digitale</h3>
-        <p class="product-name">Ritratto dell&apos;Anima via mail</p>
-        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail. Una lettura personale e completa per iniziare a riconoscerti attraverso numeri, simboli e direzione.</p>
+    <div class="choice-grid">
+      <div class="choice-card">
+        <h3>Se vuoi capire</h3>
+        <p>Inizia dal Ritratto Digitale.</p>
+        <a href="#ritratto-digitale" class="ive-btn secondary">Vai al Digitale</a>
+      </div>
+
+      <div class="choice-card featured-soft">
+        <h3>Se vuoi essere guidato</h3>
+        <p>Scegli il Ritratto con guida da 30 minuti.</p>
+        <a href="#ritratto-guidato" class="ive-btn">Vai al Digitale Guidato</a>
+      </div>
+
+      <div class="choice-card">
+        <h3>Se vuoi custodire</h3>
+        <p>Scegli lo Stampato o il Premium.</p>
+        <a href="#ritratto-premium" class="ive-btn secondary">Vai al Premium</a>
+      </div>
+    </div>
+
+    <div class="choice-help">
+      <a href="mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie">Scrivimi e ti aiuto a scegliere</a>
+    </div>
+  </section>
+
+  <section class="ritratto-shop ive-shop-section" id="ritratto-shop">
+    <div class="shop-section-header">
+      <span class="shop-kicker">RITRATTO DELL&apos;ANIMA</span>
+      <h2>Scegli il tuo livello di profondita</h2>
+      <p>Dal formato digitale al libro personale da custodire: ogni versione apre un modo diverso di attraversare la tua mappa simbolica.</p>
+    </div>
+
+    <div class="product-grid">
+      <article class="product-card" id="ritratto-digitale">
+        <span class="product-label">Digitale</span>
+        <h3>Ritratto via mail</h3>
+        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail.</p>
         <ul>
           <li>PDF personalizzato</li>
           <li>Consegna via mail</li>
           <li>Lettura numerologica e simbolica</li>
         </ul>
-        <p class="shop-price">150 EUR</p>
-        <a href="{product_links['ritratto_digitale']}" class="shop-cta">Acquista il Digitale</a>
+        <div class="product-price">150 EUR</div>
+        <a class="ive-btn" href="{product_links['ritratto_digitale']}">Acquista il Digitale</a>
       </article>
 
-      <article id="shop-digitale-guidato" class="shop-card featured">
+      <article class="product-card product-card-featured" id="ritratto-guidato">
         <span class="shop-badge">Consigliato</span>
-        <h3>Digitale Guidato</h3>
-        <p class="product-name">Ritratto + 30 minuti con Alessandro</p>
-        <p>Ricevi il tuo Ritratto in formato PDF e lo attraversiamo insieme in una guida di 30 minuti, per aiutarti a comprendere i passaggi piu importanti.</p>
+        <span class="product-label">Digitale Guidato</span>
+        <h3>Ritratto + 30 minuti</h3>
+        <p>Ricevi il PDF e lo attraversiamo insieme in una guida di 30 minuti.</p>
         <ul>
           <li>PDF personalizzato</li>
           <li>Consegna via mail</li>
-          <li>30 minuti di guida con Alessandro</li>
+          <li>30 minuti con Alessandro</li>
         </ul>
-        <p class="shop-price">200 EUR</p>
-        <a href="{product_links['ritratto_digitale_guidato']}" class="shop-cta">Scegli il Digitale Guidato</a>
+        <div class="product-price">200 EUR</div>
+        <a class="ive-btn" href="{product_links['ritratto_digitale_guidato']}">Scegli il Guidato</a>
       </article>
 
-      <article id="shop-stampato" class="shop-card">
-        <h3>Stampato</h3>
-        <p class="product-name">Ritratto dell&apos;Anima stampato</p>
-        <p>Il tuo Ritratto prende forma. Stampato su carta pergamena, rilegato a spirale, da tenere, rileggere e portare con te.</p>
+      <article class="product-card" id="ritratto-stampato">
+        <span class="product-label">Stampato</span>
+        <h3>Ritratto stampato</h3>
+        <p>Il tuo Ritratto prende forma su carta pergamena, rilegato a spirale.</p>
         <ul>
           <li>Ritratto stampato</li>
           <li>Carta pergamena</li>
-          <li>Rilegatura a spirale</li>
           <li>Spedizione o ritiro in studio</li>
         </ul>
-        <p class="shop-price">250 EUR</p>
-        <a href="{product_links['ritratto_stampato']}" class="shop-cta">Ricevi il tuo Ritratto</a>
+        <div class="product-price">250 EUR</div>
+        <a class="ive-btn" href="{product_links['ritratto_stampato']}">Ricevi il tuo Ritratto</a>
+      </article>
+
+      <article class="product-card product-card-premium" id="ritratto-premium-card">
+        <span class="product-label">Premium</span>
+        <h3>Ritratto Premium</h3>
+        <p>Un libro personale pensato per essere custodito nel tempo.</p>
+        <ul>
+          <li>Versione piu completa</li>
+          <li>Libro personale stampato e curato</li>
+          <li>Disponibile anche con guida da 1 ora</li>
+        </ul>
+        <div class="product-price">da 350 EUR</div>
+        <a class="ive-btn" href="#ritratto-premium">Scopri il Premium</a>
       </article>
     </div>
 
     <p class="shop-quote">Non e solo una lettura. E un punto di svolta.</p>
   </section>
 
-  <section id="ritratto-premium-block" class="shop-section">
-    <h2 class="shop-section-title">Ritratto dell&apos;Anima Premium</h2>
-    <p class="shop-section-subtitle">Un libro personale pensato per essere custodito nel tempo.</p>
-
-    <div class="premium-card">
-      <div class="premium-card__content">
-        <h3>Ritratto dell&apos;Anima Premium</h3>
+  <section class="premium-shop-section ive-shop-section" id="ritratto-premium">
+    <div class="premium-shop-card">
+      <div class="premium-shop-content">
+        <span class="shop-kicker">VERSIONE PREMIUM</span>
+        <h2>Ritratto dell&apos;Anima Premium</h2>
+        <p class="premium-lead">Un libro personale pensato per essere custodito nel tempo.</p>
         <p>Il Ritratto dell&apos;Anima Premium e la versione piu completa e profonda: un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
 
         <div class="premium-includes">
-          <h4>Cosa include</h4>
+          <h3>Cosa include</h3>
           <ul>
             <li>Profilo numerologico completo</li>
             <li>Lettura astrologica narrativa e identitaria</li>
@@ -1155,106 +1200,66 @@ def build_shop_content(product_links: dict[str, str]) -> str:
 
         <div class="premium-options">
           <div class="premium-option">
-            <h4>Premium</h4>
+            <h3>Premium</h3>
             <p>Libro personale stampato e curato, senza sessione.</p>
-            <p class="shop-price">350 EUR</p>
-            <a href="{product_links['ritratto_premium']}" class="shop-cta">Richiedi il Premium</a>
+            <div class="product-price">350 EUR</div>
+            <a class="ive-btn" href="{product_links['ritratto_premium']}">Richiedi il Premium</a>
           </div>
           <div class="premium-option">
-            <h4>Premium Guidato</h4>
+            <h3>Premium Guidato</h3>
             <p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>
-            <p class="shop-price">420 EUR</p>
-            <a href="{product_links['ritratto_premium_guidato']}" class="shop-cta secondary">Scopri il Premium Guidato</a>
+            <div class="product-price">420 EUR</div>
+            <a class="ive-btn" href="{product_links['ritratto_premium_guidato']}">Scegli il Premium Guidato</a>
           </div>
         </div>
       </div>
 
-      <div class="premium-card__visual">
+      <div class="premium-shop-visual">
         <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png" alt="Ritratto dell&apos;Anima Premium">
       </div>
     </div>
   </section>
 
-  <section class="shop-section">
-    <h2 class="shop-section-title">Non sai da dove partire?</h2>
-    <p class="shop-section-subtitle">Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>
-
-    <div class="guided-choice-grid">
-      <article class="guided-choice-card">
-        <h3>Se vuoi capire</h3>
-        <p>Inizia dal Ritratto Digitale.</p>
-        <a href="#shop-digitale" class="shop-cta secondary">Vai al Digitale</a>
-      </article>
-      <article class="guided-choice-card">
-        <h3>Se vuoi essere guidato</h3>
-        <p>Scegli il Ritratto con guida da 30 minuti.</p>
-        <a href="#shop-digitale-guidato" class="shop-cta secondary">Vai al Digitale Guidato</a>
-      </article>
-      <article class="guided-choice-card">
-        <h3>Se vuoi custodire</h3>
-        <p>Scegli lo Stampato o il Premium.</p>
-        <a href="#ritratto-premium-block" class="shop-cta secondary">Vai al Premium</a>
-      </article>
+  <section class="resources-shop ive-shop-section">
+    <div class="shop-section-header">
+      <h2>Altri modi per entrare nel viaggio</h2>
+      <p>Risorse e percorsi per iniziare da una pratica, da una voce o da un ascolto.</p>
     </div>
 
-    <div class="guided-choice-actions">
-      <a href="mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie" class="shop-cta">Scrivimi e ti aiuto a scegliere</a>
-    </div>
-  </section>
-
-  <section class="shop-section">
-    <h2 class="shop-section-title">Altri modi per entrare nel viaggio</h2>
     <div class="resource-grid">
       <article class="resource-card">
         <h3>Corso di Scrittura Automatica</h3>
         <p>Un percorso per aprire il dialogo interiore e lasciare emergere parole, immagini e intuizioni senza forzatura.</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20corso%20di%20Scrittura%20Automatica&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20corso%20di%20Scrittura%20Automatica.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il corso</a>
+        <a class="ive-btn secondary" href="mailto:info@alessandroveneziani.it?subject=Richiesta%20corso%20di%20Scrittura%20Automatica&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20corso%20di%20Scrittura%20Automatica.%0D%0A%0D%0AGrazie">Scopri il corso</a>
       </article>
       <article class="resource-card">
         <h3>Meditazioni Guidate</h3>
         <p>Tracce audio per accompagnarti nei momenti di ascolto, centratura e trasformazione.</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Meditazioni%20Guidate&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sulle%20Meditazioni%20Guidate.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Ascolta le meditazioni</a>
+        <a class="ive-btn secondary" href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Meditazioni%20Guidate&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sulle%20Meditazioni%20Guidate.%0D%0A%0D%0AGrazie">Ascolta le meditazioni</a>
       </article>
       <article class="resource-card">
         <h3>Tarocchi Archetipici</h3>
         <p>Una sessione simbolica per leggere il momento che stai attraversando e portare chiarezza nel presente.</p>
-        <a href="{product_links['tarocchi_archetipici']}" class="shop-cta secondary">Prenota una sessione</a>
+        <a class="ive-btn secondary" href="/#tarocchi">Prenota una sessione</a>
       </article>
       <article class="resource-card">
         <h3>Soul Design</h3>
         <p>Un percorso continuativo per trasformare intuizioni, blocchi e passaggi interiori in scelte concrete.</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="shop-cta secondary">Scopri il percorso</a>
+        <a class="ive-btn secondary" href="/#soul-design">Scopri il percorso</a>
       </article>
     </div>
   </section>
 
-  <section class="shop-section">
-    <h2 class="shop-section-title">Le parole di chi ha gia iniziato</h2>
-    <div class="shop-review-grid">
-      <blockquote class="shop-review-card">
-        <p>&ldquo;E stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla e a caso.&rdquo;</p>
-        <cite>Rita Adamo · recensione Google</cite>
-      </blockquote>
-      <blockquote class="shop-review-card">
-        <p>&ldquo;Ho avuto proprio la sensazione che non vi fosse alcun timore o vergogna di farsi vedere con le proprie debolezze. Alessandro ci ha accolti con grande presenza.&rdquo;</p>
-        <cite>Antonella Scabbia · recensione Google</cite>
-      </blockquote>
-      <blockquote class="shop-review-card">
-        <p>&ldquo;E stato un piacevole e interessante confronto tra anime. Alessandro e stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
-        <cite>Marco Ferrari · recensione Google</cite>
-      </blockquote>
-    </div>
-  </section>
-
-  <section class="shop-section">
-    <div class="shop-final-card">
-      <h3>Il momento giusto non arriva. Lo scegli.</h3>
+  <section class="shop-final-cta ive-shop-section">
+    <div class="final-cta-card">
+      <h2>Il momento giusto non arriva. Lo scegli.</h2>
       <p>Non serve fare tutto subito. Serve iniziare dal punto giusto.</p>
-      <a href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie" class="shop-cta">Inizia il tuo viaggio</a>
+      <a class="ive-btn" href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie">Inizia il tuo viaggio</a>
     </div>
   </section>
 </div>
 """.strip()
+    return f"<!-- wp:html -->\n{inner_html}\n<!-- /wp:html -->"
 
 
 def walk_nodes(nodes: list[dict[str, Any]], callback) -> None:
