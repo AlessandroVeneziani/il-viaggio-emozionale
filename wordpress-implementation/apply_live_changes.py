@@ -728,9 +728,11 @@ def build_shared_header_html(*, current_page: str) -> str:
         ("/negozio/", "Negozio"),
     ]
     nav_items = []
+    mobile_items = []
     for href, label in links:
         current_attr = ' aria-current="page"' if current_page == "shop" and href == "/negozio/" else ""
         nav_items.append(f'<li><a href="{href}"{current_attr}>{label}</a></li>')
+        mobile_items.append(f'<a href="{href}"{current_attr} data-mobile-link="true">{label}</a>')
 
     return f"""
 <header class="ive-sticky-header">
@@ -756,6 +758,85 @@ def build_shared_header_html(*, current_page: str) -> str:
     </a>
   </div>
 </header>
+
+<div class="ive-mobile-header">
+  <a class="logo-sticky" href="/#chi-sono" aria-label="Il Viaggio Emozionale">
+    <img
+      src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
+      alt="Il Viaggio Emozionale"
+      loading="eager"
+      decoding="async"
+    >
+  </a>
+  <button
+    class="ive-mobile-toggle"
+    type="button"
+    aria-expanded="false"
+    aria-controls="ive-mobile-menu"
+    aria-label="Apri il menu di navigazione"
+  >
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
+</div>
+
+<nav class="ive-mobile-menu" id="ive-mobile-menu" aria-label="Navigazione mobile" hidden>
+  <div class="ive-mobile-menu__inner">
+    {''.join(mobile_items)}
+    <a class="menu-cta" href="/negozio/" data-mobile-link="true">Inizia il tuo viaggio</a>
+  </div>
+</nav>
+
+<script>
+(function() {{
+  function initIveMobileMenu() {{
+    const toggle = document.querySelector('.ive-mobile-toggle');
+    const menu = document.querySelector('.ive-mobile-menu');
+    if (!toggle || !menu || menu.dataset.ready === 'true') {{
+      return;
+    }}
+
+    menu.dataset.ready = 'true';
+
+    function setOpen(isOpen) {{
+      menu.hidden = !isOpen;
+      menu.classList.toggle('is-open', isOpen);
+      toggle.classList.toggle('is-open', isOpen);
+      toggle.setAttribute('aria-expanded', String(isOpen));
+      document.body.classList.toggle('ive-menu-open', isOpen);
+    }}
+
+    toggle.addEventListener('click', function() {{
+      setOpen(!menu.classList.contains('is-open'));
+    }});
+
+    menu.querySelectorAll('a').forEach(function(link) {{
+      link.addEventListener('click', function() {{
+        setOpen(false);
+      }});
+    }});
+
+    document.addEventListener('keydown', function(event) {{
+      if (event.key === 'Escape') {{
+        setOpen(false);
+      }}
+    }});
+
+    window.addEventListener('resize', function() {{
+      if (window.innerWidth > 900) {{
+        setOpen(false);
+      }}
+    }});
+  }}
+
+  if (document.readyState === 'loading') {{
+    document.addEventListener('DOMContentLoaded', initIveMobileMenu, {{ once: true }});
+  }} else {{
+    initIveMobileMenu();
+  }}
+}})();
+</script>
 """.strip()
 
 
@@ -812,6 +893,12 @@ def build_widget_html() -> dict[str, str]:
         <h2>Un accompagnamento simbolico per quando senti di esserti perso</h2>
         <p class="subtitle">Alessandro Veneziani · Designer dell&apos;Anima e Ricercatore Simbolico</p>
         <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
+        <div class="chi-credentials">
+          <p class="chi-credentials__title">Formazione e ricerca</p>
+          <p>Il mio percorso unisce ricerca simbolica, formazione accademica e comunicazione.</p>
+          <p>La mia base nasce da una laurea in Economia e Commercio presso l&apos;Universita Bocconi, con specializzazione in marketing e comunicazione. A questa formazione ho affiancato un secondo percorso di laurea in Antropologia Esoterica presso HETG, realta accademica con sede a Ginevra e Roma, dove oggi collaboro anche come professore.</p>
+          <p>Questa doppia direzione, economica, comunicativa e simbolico-antropologica, e il fondamento del mio lavoro: trasformare intuizioni, numeri, archetipi e vissuti interiori in strumenti concreti di lettura, scelta e cambiamento.</p>
+        </div>
         <p>Ci sono momenti in cui continui a fare, decidere e andare avanti, ma manca una mappa interiore che ti aiuti a leggere quello che stai vivendo. Il mio lavoro nasce proprio qui: trasformare simboli e intuizioni in passi concreti.</p>
         <div class="chi-buttons">
           <a href="#numerologia" class="btn btn--solid">Scopri il percorso piu adatto</a>
@@ -871,7 +958,7 @@ def build_widget_html() -> dict[str, str]:
     activeSectionId = currentId;
 
     document
-      .querySelectorAll('.page-id-17 .ive-sticky-header .menu a')
+      .querySelectorAll('.page-id-17 .ive-sticky-header .menu a, .page-id-17 .ive-mobile-menu a[data-mobile-link="true"]')
       .forEach((link) => {
       let linkHash = '';
 
@@ -1147,7 +1234,6 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 </section>
-<div class="ive-separator-gold" aria-hidden="true"></div>
 {shared_footer}
 <script type="application/ld+json">{schema_json}</script>
 """.strip()

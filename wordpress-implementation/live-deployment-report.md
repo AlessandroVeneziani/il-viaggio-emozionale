@@ -575,3 +575,33 @@ Ventottesimo aggiornamento live pubblicato il `2026-04-29`.
 - sezione finale resa trasparente per lasciare visibile lo sfondo pergamena/numeri del sito
 - verifica pubblica completata con cache-busting:
   - regola `.shop-final-cta { background: transparent; }` presente nel sorgente live
+
+## Home e Shop: hamburger mobile, blocco autorevolezza e footer unificato
+
+Ventinovesimo aggiornamento live pubblicato il `2026-04-30`.
+
+- esteso l'header condiviso con una variante mobile sotto i `900px`
+- aggiunti nella struttura condivisa:
+  - `.ive-mobile-header`
+  - `.ive-mobile-toggle`
+  - `.ive-mobile-menu`
+- previsto il comportamento mobile:
+  - apertura/chiusura hamburger
+  - chiusura automatica al click sulle voci
+  - chiusura con tasto `Escape`
+  - blocco dello scroll body a menu aperto
+- inserito nella home, dentro la sezione `Chi sono`, il box `Formazione e ricerca`
+- il box autorevolezza e stato posizionato dopo il primo paragrafo introduttivo e mantiene tono narrativo, non da CV
+- aggiornati i CSS della home:
+  - nuova stilizzazione del box `chi-credentials`
+  - rimozione effettiva del separatore legacy sopra il footer
+  - azzeramento del fondo sabbia residuo sotto la sezione `Laboratorio dell'Anima`
+- aggiornati i CSS di home e shop per rendere il footer identico:
+  - fondo blu profondo con lieve gradiente superiore
+  - claim e sottotesto bianchi
+  - pulsanti social circolari oro coerenti
+  - copyright `© 2026 Il Viaggio Emozionale · Alessandro Veneziani`
+- mantenuta coerenza tra home e shop:
+  - stesso header sticky desktop
+  - stesso header mobile
+  - stesso footer premium
