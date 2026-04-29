@@ -508,3 +508,17 @@ Ventitreesimo aggiornamento live pubblicato il `2026-04-29`.
   - `choice-symbol` presente con immagine del Matto
   - `ive-session-note` presente
   - conteggio `ive-product-card` pari a `3`
+
+## Home: rimozione menu pergamena residuo
+
+Ventiquattresimo aggiornamento live pubblicato il `2026-04-29`.
+
+- aggiunto un override difensivo nella home per nascondere qualsiasi menu verticale legacy residuo sotto la hero
+- disattivati i selettori legacy:
+  - `.menu-pergamena`
+  - `.menu-verticale-sticky`
+  - fallback sugli stessi selettori dentro `.elementor-element-368bd2b`
+- mantenuto come unica navigazione visibile il menu sticky orizzontale premium
+- home ripubblicata e cache Elementor/SpeedyCache svuotate
+- verifica pubblica completata sul CSS live `post-17.css` con regola:
+  - `display: none !important` sui selettori del vecchio menu pergamena

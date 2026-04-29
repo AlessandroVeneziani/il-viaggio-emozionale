@@ -222,6 +222,21 @@
   gap: 12px;
 }
 
+/*
+ * Safety override: hide any legacy vertical/pergamena menu that may still
+ * be served by stale Elementor/theme cache. The active navigation for the
+ * home page is now the horizontal sticky header only.
+ */
+.page-id-17 .menu-pergamena,
+.page-id-17 .menu-verticale-sticky,
+.page-id-17 .elementor-element-368bd2b .menu-pergamena,
+.page-id-17 .elementor-element-368bd2b .menu-verticale-sticky {
+  display: none !important;
+  visibility: hidden !important;
+  opacity: 0 !important;
+  pointer-events: none !important;
+}
+
 .page-id-17 .section-cta-row {
   margin-top: 22px;
 }
