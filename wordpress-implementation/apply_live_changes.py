@@ -54,7 +54,6 @@ CSS_PATH = WORKDIR / "live-home-page.css"
 SHOP_CSS_PATH = WORKDIR / "live-shop-page.css"
 SCHEMA_PATH = WORKDIR / "schema" / "service-organization.jsonld"
 SHOP_BG_ASSET_PATH = WORKDIR / "assets" / "sfondo-numeri.png"
-SHOP_AMANTI_ASSET_PATH = Path("/Users/alessandroveneziani/Desktop/amanti.jpg")
 
 
 @dataclass
@@ -1162,7 +1161,7 @@ def build_widget_html() -> dict[str, str]:
     }
 
 
-def build_shop_content(product_links: dict[str, str], shop_bg_url: str, amanti_image_url: str) -> str:
+def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     shop_css = read_shop_css_string(shop_bg_url)
     shared_header = build_shared_header_html(current_page="shop")
     shared_footer = build_shared_footer_html()
@@ -1353,9 +1352,6 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str, amanti_i
   </section>
 
   <section class="shop-final-cta ive-shop-section">
-    <div class="shop-final-symbol" aria-hidden="true">
-      <img src="{amanti_image_url}" alt="Gli Amanti - simbolo della scelta" loading="lazy" decoding="async">
-    </div>
     <div class="final-cta-card">
       <h2>Il momento giusto non arriva. Lo scegli.</h2>
       <p>Non serve fare tutto subito. Serve iniziare dal punto giusto.</p>
@@ -1414,10 +1410,8 @@ def update_home_content(page_payload: dict[str, Any]) -> dict[str, Any]:
     return page_payload
 
 
-def update_shop_content(
-    page_payload: dict[str, Any], product_links: dict[str, str], shop_bg_url: str, amanti_image_url: str
-) -> dict[str, Any]:
-    page_payload["content"]["raw"] = build_shop_content(product_links, shop_bg_url, amanti_image_url)
+def update_shop_content(page_payload: dict[str, Any], product_links: dict[str, str], shop_bg_url: str) -> dict[str, Any]:
+    page_payload["content"]["raw"] = build_shop_content(product_links, shop_bg_url)
     return page_payload
 
 
@@ -1498,18 +1492,6 @@ def main() -> int:
     shop_bg_url = shop_bg_media.get("source_url") or shop_bg_media.get("guid", {}).get("rendered", "")
     if not shop_bg_url:
         raise RuntimeError("Could not resolve the shop background image URL")
-    amanti_media = ensure_media_upload(
-        session,
-        nonce,
-        SHOP_AMANTI_ASSET_PATH,
-        filename="amanti.jpg",
-        slug="amanti-shop",
-        alt_text="Gli Amanti, simbolo della scelta e dell'inizio del viaggio interiore",
-    )
-    amanti_image_url = amanti_media.get("source_url") or amanti_media.get("guid", {}).get("rendered", "")
-    if not amanti_image_url:
-        raise RuntimeError("Could not resolve the amanti image URL")
-
     updated_home = update_home_content(current_home)
     home_response = rest_update_page(
         session,
@@ -1517,7 +1499,7 @@ def main() -> int:
         nonce,
         {"meta": {"_elementor_data": updated_home["meta"]["_elementor_data"]}},
     )
-    updated_shop = update_shop_content(current_shop, product_links, shop_bg_url, amanti_image_url)
+    updated_shop = update_shop_content(current_shop, product_links, shop_bg_url)
     shop_response = rest_update_page(
         session,
         SHOP_PAGE_ID,

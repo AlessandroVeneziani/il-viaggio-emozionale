@@ -535,3 +535,22 @@ Venticinquesimo aggiornamento live pubblicato il `2026-04-29`.
   - `shop-final-symbol` presente nel markup
   - URL live `https://ilviaggioemozionale.it/wp-content/uploads/2026/04/amanti.jpg` presente nel markup
   - CTA finale ancora presente e invariata nel contenuto
+
+## Shop: rifinitura card Premium e rimozione immagine finale
+
+Ventiseiesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- rimosso dalla pagina `/negozio/` il blocco immagine `shop-final-symbol` con la foto degli Amanti sopra la CTA finale
+- ripristinata una chiusura piu pulita e compatta del negozio
+- rifinite le due card della sezione `Ritratto dell'Anima Premium`:
+  - `Premium`
+  - `Premium Guidato`
+- migliorato l'allineamento interno delle card con layout flex verticale
+- prezzi `350 EUR` e `420 EUR` resi piu forti, in blu profondo e con allineamento visivo coerente
+- aggiunto piu spazio tra prezzo e bottone
+- aumentato il respiro interno dei bottoni `Richiedi il Premium` e `Scegli il Premium Guidato`
+- verifiche pubbliche completate con cache-busting:
+  - `shop-final-symbol` assente
+  - `amanti.jpg` assente
+  - regola `.premium-option .product-price` presente nel sorgente pubblico
+  - contenuti `350 EUR`, `420 EUR`, `Richiedi il Premium` e `Scegli il Premium Guidato` presenti
