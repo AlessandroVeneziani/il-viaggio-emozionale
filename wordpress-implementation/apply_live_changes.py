@@ -1171,7 +1171,7 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
   {shared_header}
   <section class="shop-hero ive-shop-section">
     <div class="shop-hero-inner">
-      <span class="shop-kicker">SHOP PERCORSI E PDF</span>
+      <span class="shop-kicker">NEGOZIO DEL VIAGGIO</span>
       <h1>Scegli come entrare nel tuo Viaggio</h1>
       <p>Ogni percorso e una porta diversa. Sta a te scegliere da dove iniziare.</p>
     </div>
@@ -1179,6 +1179,9 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
 
   <section class="shop-choice ive-shop-section">
     <div class="shop-section-header">
+      <div class="choice-symbol">
+        <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Matto.png" alt="Il Matto - simbolo del primo passo" loading="lazy" decoding="async">
+      </div>
       <h2>Non sai da dove partire?</h2>
       <p>Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>
     </div>
@@ -1192,8 +1195,8 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
 
       <div class="choice-card featured-soft">
         <h3>Se vuoi essere guidato</h3>
-        <p>Scegli il Ritratto con guida da 30 minuti.</p>
-        <a href="#ritratto-guidato" class="ive-btn">Vai al Digitale Guidato</a>
+        <p>Scegli il Ritratto che senti piu vicino e affiancalo a una sessione personalizzata con Alessandro.</p>
+        <a href="#ritratto-shop" class="ive-btn">Vai alle opzioni</a>
       </div>
 
       <div class="choice-card">
@@ -1208,69 +1211,66 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     </div>
   </section>
 
-  <section class="ritratto-shop ive-shop-section" id="ritratto-shop">
-    <div class="shop-section-header">
-      <span class="shop-kicker">RITRATTO DELL&apos;ANIMA</span>
+  <section class="ritratto-shop ive-shop-section ive-ritratto-options" id="ritratto-shop">
+    <div class="shop-section-header ive-section-header">
+      <span class="shop-kicker ive-kicker">RITRATTO DELL&apos;ANIMA</span>
       <h2>Scegli il tuo livello di profondita</h2>
       <p>Dal formato digitale al libro personale da custodire: ogni versione apre un modo diverso di attraversare la tua mappa simbolica.</p>
     </div>
 
     <div class="product-grid">
-      <article class="product-card" id="ritratto-digitale">
-        <span class="product-label">Digitale</span>
-        <h3>Ritratto via mail</h3>
-        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail.</p>
+      <article class="ive-product-card ive-card-digitale" id="ritratto-digitale">
+        <span class="ive-card-label">Digitale</span>
+        <h3>Ritratto dell&apos;Anima via mail</h3>
+        <p class="ive-card-subtitle">Il primo passo per comprendere la tua mappa interiore.</p>
+        <p>Ricevi il tuo Ritratto dell&apos;Anima in formato PDF: una lettura completa che unisce numeri, simboli e direzione evolutiva.</p>
         <ul>
           <li>PDF personalizzato</li>
           <li>Consegna via mail</li>
           <li>Lettura numerologica e simbolica</li>
         </ul>
-        <div class="product-price">150 EUR</div>
-        <a class="ive-btn" href="{product_links['ritratto_digitale']}">Acquista il Digitale</a>
+        <div class="ive-price">150 EUR</div>
+        <a class="ive-btn" href="{product_links['ritratto_digitale']}">Inizia il tuo viaggio</a>
       </article>
 
-      <article class="product-card product-card-featured" id="ritratto-guidato">
-        <span class="shop-badge">Consigliato</span>
-        <span class="product-label">Digitale Guidato</span>
-        <h3>Ritratto + 30 minuti</h3>
-        <p>Ricevi il PDF e lo attraversiamo insieme in una guida di 30 minuti.</p>
-        <ul>
-          <li>PDF personalizzato</li>
-          <li>Consegna via mail</li>
-          <li>30 minuti con Alessandro</li>
-        </ul>
-        <div class="product-price">200 EUR</div>
-        <a class="ive-btn" href="{product_links['ritratto_digitale_guidato']}">Scegli il Guidato</a>
-      </article>
-
-      <article class="product-card" id="ritratto-stampato">
-        <span class="product-label">Stampato</span>
-        <h3>Ritratto stampato</h3>
-        <p>Il tuo Ritratto prende forma su carta pergamena, rilegato a spirale.</p>
+      <article class="ive-product-card ive-card-stampato" id="ritratto-stampato">
+        <span class="ive-card-label">Stampato</span>
+        <h3>Ritratto dell&apos;Anima stampato</h3>
+        <p class="ive-card-subtitle">Un oggetto da custodire e ritrovare nel tempo.</p>
+        <p>Il tuo Ritratto prende forma su carta: stampato e rilegato come un libro personale da conservare, rileggere e vivere.</p>
         <ul>
           <li>Ritratto stampato</li>
           <li>Carta pergamena</li>
           <li>Spedizione o ritiro in studio</li>
         </ul>
-        <div class="product-price">250 EUR</div>
-        <a class="ive-btn" href="{product_links['ritratto_stampato']}">Ricevi il tuo Ritratto</a>
+        <div class="ive-price">250 EUR</div>
+        <a class="ive-btn" href="{product_links['ritratto_stampato']}">Custodisci il tuo Ritratto</a>
       </article>
 
-      <article class="product-card product-card-premium" id="ritratto-premium-card">
-        <span class="product-label">Premium</span>
-        <h3>Ritratto Premium</h3>
-        <p>Un libro personale pensato per essere custodito nel tempo.</p>
+      <article class="ive-product-card ive-card-premium" id="ritratto-premium-card">
+        <span class="ive-card-label">Premium</span>
+        <h3>Ritratto dell&apos;Anima Premium</h3>
+        <p class="ive-card-subtitle">La versione piu completa e profonda del tuo percorso.</p>
+        <p>Un libro personale costruito su di te: un viaggio completo tra numerologia, simboli e direzione evolutiva, pensato per accompagnarti nel tempo.</p>
         <ul>
-          <li>Versione piu completa</li>
-          <li>Libro personale stampato e curato</li>
-          <li>Disponibile anche con guida da 1 ora</li>
+          <li>Versione completa</li>
+          <li>Libro stampato e curato</li>
+          <li>Approccio simbolico ed evolutivo</li>
         </ul>
-        <div class="product-price">da 350 EUR</div>
-        <a class="ive-btn" href="#ritratto-premium">Scopri il Premium</a>
+        <div class="ive-price">da 350 EUR</div>
+        <a class="ive-btn" href="/negozio#ritratto-premium">Scopri il tuo Ritratto</a>
       </article>
     </div>
 
-    <p class="shop-quote">Non e solo una lettura. E un punto di svolta.</p>
+    <div class="ive-session-note" id="sessioni-ritratto">
+      <p>Ogni Ritratto puo essere affiancato a una sessione personalizzata con Alessandro Veneziani, per trasformare cio che emerge in direzione concreta.</p>
+      <div class="ive-session-prices">
+        30 minuti — 40 EUR<br>
+        60 minuti — 80 EUR<br>
+        <span>tariffa riservata in abbinamento al Ritratto</span>
+      </div>
+      <p class="ive-final-line">Perche comprendere e solo l&apos;inizio.</p>
+    </div>
   </section>
 
   <section class="premium-shop-section ive-shop-section" id="ritratto-premium">

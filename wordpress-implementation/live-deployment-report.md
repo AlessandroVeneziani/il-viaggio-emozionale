@@ -479,3 +479,32 @@ Ventiduesimo aggiornamento live pubblicato il `2026-04-29`.
 - verifica pubblica completata sul CSS live `post-17.css`:
   - `.page-id-17 .ive-separator-gold { margin: 60px auto 0; }`
   - `.page-id-17 .ive-footer { border-top: none; }`
+
+## Shop: Ritratto a 3 card e hero rifinita
+
+Ventitreesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- pagina `/negozio/` aggiornata con hero rifinita:
+  - kicker sostituito da `NEGOZIO DEL VIAGGIO`
+  - ridotta la distanza verticale tra hero e blocco guida
+- aggiunta immagine del Matto sopra `Non sai da dove partire?`
+- blocco guida aggiornato per rimuovere il riferimento alla vecchia opzione `Digitale Guidato` come card dedicata
+- sezione `Scegli il tuo livello di profondita` riscritta con sole 3 card:
+  - `Digitale`
+  - `Stampato`
+  - `Premium`
+- rimossa la card `Digitale Guidato`
+- inserito sotto le card il box centrale `ive-session-note` con sessione personalizzata in abbinamento al Ritratto:
+  - `30 minuti — 40 EUR`
+  - `60 minuti — 80 EUR`
+  - nota `tariffa riservata in abbinamento al Ritratto`
+- mantenuti i link WooCommerce reali:
+  - Digitale `946`
+  - Stampato `948`
+  - Premium con ancora interna verso `#ritratto-premium`
+- verifiche pubbliche completate con cache-busting:
+  - `NEGOZIO DEL VIAGGIO` presente
+  - `Digitale Guidato` assente
+  - `choice-symbol` presente con immagine del Matto
+  - `ive-session-note` presente
+  - conteggio `ive-product-card` pari a `3`
