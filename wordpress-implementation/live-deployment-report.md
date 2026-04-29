@@ -554,3 +554,14 @@ Ventiseiesimo aggiornamento live pubblicato il `2026-04-29`.
   - `amanti.jpg` assente
   - regola `.premium-option .product-price` presente nel sorgente pubblico
   - contenuti `350 EUR`, `420 EUR`, `Richiedi il Premium` e `Scegli il Premium Guidato` presenti
+
+## Shop: micro-allineamento card Premium Guidato
+
+Ventisettesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- alzato leggermente il blocco descrittivo del secondo riquadro `Premium Guidato`
+- ridotta la distanza sotto il titolo del secondo riquadro
+- anticipata leggermente la riga descrittiva e il prezzo `420 EUR` per avvicinarli al livello visivo del riquadro `Premium`
+- mantenuta invariata la struttura generale della sezione `Ritratto dell'Anima Premium`
+- verifica pubblica completata con cache-busting:
+  - regole `.premium-option:last-child h3`, `.premium-option:last-child p` e `.premium-option:last-child .product-price` presenti nel sorgente live

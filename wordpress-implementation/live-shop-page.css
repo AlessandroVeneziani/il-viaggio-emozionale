@@ -624,6 +624,21 @@ body.post-type-archive-product ul.products {
   line-height: 1.25;
 }
 
+.premium-option:last-child h3 {
+  line-height: 1.05;
+  margin-bottom: 10px;
+}
+
+.premium-option:last-child p {
+  margin-top: -2px;
+  margin-bottom: 18px;
+}
+
+.premium-option:last-child .product-price,
+.premium-option:last-child .ive-price {
+  margin: 10px 0 22px;
+}
+
 .premium-shop-visual {
   display: flex;
   justify-content: center;
