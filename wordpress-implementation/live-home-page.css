@@ -38,12 +38,17 @@
 }
 
 .page-id-17 #chi,
+.page-id-17 #chi-sono,
 .page-id-17 #numerologia,
 .page-id-17 #ritratto,
 .page-id-17 #tarocchi,
 .page-id-17 #soul-design,
 .page-id-17 #lab {
   scroll-margin-top: 112px;
+}
+
+.page-id-17 .ive-anchor-target {
+  position: relative;
 }
 
 .page-id-17 h1,
@@ -228,7 +233,7 @@
   background-size: cover;
   background-position: center;
   text-align: center;
-  padding: clamp(48px, 7vw, 92px) 20px 42px;
+  padding: clamp(120px, 12vw, 150px) 20px 42px;
   overflow: clip;
 }
 
@@ -262,88 +267,26 @@
   filter: drop-shadow(0 16px 36px rgba(8, 34, 52, 0.12));
 }
 
-.page-id-17 .menu-pergamena {
-  width: min(100%, var(--ive-rail-width));
-  background: rgba(253, 246, 236, 0.96);
-  border: 1px solid var(--ive-card-border);
-  border-radius: 18px;
-  box-shadow: 0 14px 30px rgba(0, 0, 0, 0.08);
-  padding: 14px 10px;
-  backdrop-filter: blur(8px);
-  text-align: center;
-}
-
-.page-id-17 .hero .menu-pergamena {
-  margin: 26px auto 0;
-}
-
-.page-id-17 .menu-pergamena ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-  display: grid;
-  gap: 8px;
-}
-
-.page-id-17 .menu-pergamena li {
-  margin: 0;
-}
-
-.page-id-17 .menu-pergamena a {
-  display: block;
-  padding: 10px 8px;
-  border-radius: 12px;
-  color: var(--ive-ink) !important;
-  font-weight: 600;
-  font-size: 13px;
-  line-height: 1.25;
-  text-decoration: none !important;
-}
-
-.page-id-17 .menu-pergamena a:hover {
-  background: rgba(122, 91, 46, 0.08);
-  color: var(--ive-gold-deep) !important;
-}
-
-.page-id-17 .menu-pergamena a.is-active,
-.page-id-17 .menu-pergamena a[aria-current="page"] {
-  background: rgba(139, 106, 47, 0.14);
-  border: 1px solid rgba(139, 106, 47, 0.22);
-  color: var(--ive-gold-deep) !important;
-  padding: 12px 8px;
-  box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.45);
-}
-
 body.page-id-17 .ive-sticky-header {
   position: fixed;
   top: 18px;
   left: 50%;
-  width: min(calc(100% - 32px), 1180px);
-  transform: translate(-50%, -18px);
-  opacity: 0;
-  pointer-events: none;
-  z-index: 90;
-  transition: opacity 0.24s ease, transform 0.24s ease;
-}
-
-body.page-id-17.ive-sticky-header-visible .ive-sticky-header {
-  transform: translate(-50%, 0);
-  opacity: 1;
-  pointer-events: auto;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: min(1180px, calc(100% - 40px));
 }
 
 body.page-id-17 .header-sticky {
-  display: grid;
-  grid-template-columns: auto minmax(0, 1fr) auto;
+  display: flex;
   align-items: center;
-  gap: 24px;
+  justify-content: space-between;
+  gap: 28px;
   background: rgba(248, 243, 232, 0.92);
-  backdrop-filter: blur(10px);
-  border: 1px solid rgba(198, 167, 94, 0.32);
-  border-bottom: 1px solid rgba(198, 167, 94, 0.25);
-  border-radius: 24px;
-  padding: 14px 28px;
-  box-shadow: 0 18px 36px rgba(0, 0, 0, 0.09);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 167, 94, 0.42);
+  border-radius: 28px;
+  padding: 14px 24px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
 }
 
 body.page-id-17 .logo-sticky {
@@ -354,9 +297,16 @@ body.page-id-17 .logo-sticky {
 
 body.page-id-17 .logo-sticky img {
   display: block;
-  height: 36px;
+  height: 34px;
   width: auto;
   opacity: 0.95;
+}
+
+body.page-id-17 .header-sticky .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
 }
 
 body.page-id-17 .header-sticky .menu ul {
@@ -365,8 +315,9 @@ body.page-id-17 .header-sticky .menu ul {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-  justify-content: flex-end;
-  gap: 8px;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
 }
 
 body.page-id-17 .header-sticky .menu li {
@@ -374,46 +325,43 @@ body.page-id-17 .header-sticky .menu li {
 }
 
 body.page-id-17 .header-sticky .menu a {
-  display: inline-flex;
-  align-items: center;
-  justify-content: center;
-  padding: 10px 12px;
-  border-radius: 12px;
+  display: inline-block;
   color: #073b57 !important;
-  font-weight: 600;
+  font-weight: 700;
   font-size: 15px;
-  line-height: 1.25;
+  line-height: 1.2;
   letter-spacing: 0.02em;
   text-decoration: none !important;
 }
 
 body.page-id-17 .header-sticky .menu a:hover {
   color: #9e7728 !important;
-  background: rgba(158, 119, 40, 0.08);
 }
 
 body.page-id-17 .header-sticky .menu a.is-active,
 body.page-id-17 .header-sticky .menu a[aria-current="page"] {
-  background: rgba(158, 119, 40, 0.14);
   color: #9e7728 !important;
-  box-shadow: inset 0 0 0 1px rgba(198, 167, 94, 0.24);
 }
 
-body.page-id-17 .header-sticky .ive-btn.small {
-  min-height: 42px;
-  padding: 12px 18px;
+body.page-id-17 .header-sticky .ive-btn.small,
+body.page-id-17 .header-sticky .menu-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 13px 24px;
   border-radius: 999px;
-  background: var(--ive-gold);
+  background: #9e7728;
   color: #ffffff !important;
   font-size: 14px;
   font-weight: 700;
   line-height: 1.1;
   text-decoration: none !important;
   white-space: nowrap;
-  box-shadow: 0 12px 26px rgba(122, 91, 46, 0.18);
+  box-shadow: 0 12px 26px rgba(158, 119, 40, 0.22);
 }
 
-body.page-id-17 .header-sticky .ive-btn.small:hover {
+body.page-id-17 .header-sticky .ive-btn.small:hover,
+body.page-id-17 .header-sticky .menu-cta:hover {
   background: var(--ive-gold-deep);
 }
 
@@ -753,11 +701,18 @@ body.page-id-17 .header-sticky .ive-btn.small:hover {
   font-weight: 600;
 }
 
+.page-id-17 .ritratto-cta-row {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  gap: 14px;
+  margin-top: 18px;
+}
+
 .page-id-17 .ritratto-cta {
   display: inline-flex;
   align-items: center;
   justify-content: center;
-  margin-top: 18px;
   padding: 17px 30px;
   border-radius: 999px;
   background: #9e7728;
@@ -773,19 +728,23 @@ body.page-id-17 .header-sticky .ive-btn.small:hover {
   box-shadow: 0 18px 34px rgba(158, 119, 40, 0.28);
 }
 
-.page-id-17 .ritratto-secondary-link {
-  display: inline-block;
-  margin-top: 14px;
-  font-size: 14px;
+.page-id-17 .ritratto-secondary-cta {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 15px 26px;
+  border-radius: 999px;
+  border: 1px solid rgba(198, 167, 94, 0.65);
   color: #073b57;
-  text-decoration: none;
-  opacity: 0.7;
+  background: transparent;
+  text-decoration: none !important;
+  font-weight: 700;
   transition: all 0.2s ease;
 }
 
-.page-id-17 .ritratto-secondary-link:hover {
-  opacity: 1;
-  text-decoration: underline;
+.page-id-17 .ritratto-secondary-cta:hover {
+  background: rgba(198, 167, 94, 0.1);
+  color: #9e7728 !important;
 }
 
 .page-id-17 .ritratto-premium-visual {
@@ -1081,38 +1040,85 @@ body.page-id-17 .header-sticky .ive-btn.small:hover {
   border-radius: 28px;
 }
 
-.page-id-17 .footer-prelude {
-  width: min(100%, 760px);
-  margin: clamp(16px, 3vw, 28px) auto clamp(28px, 4vw, 42px);
-  padding: 0 20px;
+.page-id-17 .ive-separator-gold {
+  width: 100%;
+  max-width: 1100px;
+  height: 1px;
+  margin: 60px auto 30px;
+  background: linear-gradient(to right, transparent, #c6a75e, transparent);
+}
+
+.page-id-17 .ive-footer {
+  background: #073b57;
+  color: #f4f1ea;
+  padding: 80px 5% 42px;
   text-align: center;
-  color: #6b4f1d;
-  font-size: clamp(1.15rem, 2.2vw, 1.55rem);
-  font-style: italic;
-  font-weight: 600;
+  border-top: 1px solid rgba(198, 167, 94, 0.45);
+}
+
+.page-id-17 .ive-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.page-id-17 .ive-footer-claim h2 {
+  color: #f4f1ea;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.page-id-17 .ive-footer-claim p {
+  color: rgba(244, 241, 234, 0.78);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.page-id-17 .ive-footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+}
+
+.page-id-17 .ive-footer-icons a {
+  width: 74px;
+  height: 74px;
+  border: 2px solid #c6a75e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c6a75e !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.page-id-17 .ive-footer-icons a:hover {
+  background: #c6a75e;
+  color: #073b57 !important;
+  transform: translateY(-3px);
+}
+
+.page-id-17 .ive-footer-copy {
+  color: rgba(244, 241, 234, 0.55);
+  font-size: 14px;
   letter-spacing: 0.03em;
 }
 
-body.page-id-17 .footer-icons i {
-  font-size: 22px;
-}
-
-body.page-id-17 footer {
-  letter-spacing: 0.04em;
-  font-size: 13px;
-}
-
-body.page-id-17 .ive-sticky-menu-rail {
+.page-id-17 .elementor-element.elementor-element-153f41d,
+.page-id-17 .elementor-element.elementor-element-c1a61da,
+.page-id-17 .elementor-element.elementor-element-58df384 {
   display: none !important;
 }
 
-@media (min-width: 1200px) {
-  body.page-id-17 .hero .menu-pergamena {
-    width: min(100%, 210px);
-  }
-}
-
-@media (max-width: 1199px) {
+@media (max-width: 900px) {
   body.page-id-17 .ive-sticky-header {
     display: none;
   }
@@ -1234,6 +1240,10 @@ body.page-id-17 .ive-sticky-menu-rail {
 }
 
 @media (max-width: 900px) {
+  .page-id-17 .hero {
+    padding-top: clamp(48px, 7vw, 92px);
+  }
+
   .page-id-17 .ritratto-premium-section {
     padding: 60px 20px;
   }
@@ -1271,7 +1281,8 @@ body.page-id-17 .ive-sticky-menu-rail {
     max-width: 360px;
   }
 
-  .page-id-17 .ritratto-cta {
+  .page-id-17 .ritratto-cta,
+  .page-id-17 .ritratto-secondary-cta {
     width: 100%;
     text-align: center;
   }
@@ -1288,15 +1299,6 @@ body.page-id-17 .ive-sticky-menu-rail {
 }
 
 @media (max-width: 921px) {
-  .page-id-17 .menu-pergamena {
-    width: 100%;
-    max-width: none;
-  }
-
-  .page-id-17 .menu-pergamena ul {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
-  }
-
   .page-id-17 .section-cta-row,
   .page-id-17 .product-card__btn-row,
   .page-id-17 .tarocchi-buttons,
@@ -1317,6 +1319,24 @@ body.page-id-17 .ive-sticky-menu-rail {
 }
 
 @media (max-width: 768px) {
+  .page-id-17 .ive-separator-gold {
+    margin: 40px auto 24px;
+  }
+
+  .page-id-17 .ive-footer {
+    padding: 60px 24px 34px;
+  }
+
+  .page-id-17 .ive-footer-icons {
+    gap: 16px;
+  }
+
+  .page-id-17 .ive-footer-icons a {
+    width: 62px;
+    height: 62px;
+    font-size: 12px;
+  }
+
   .page-id-17 .soul-content-row {
     grid-template-columns: 1fr;
     gap: 30px;
@@ -1386,10 +1406,6 @@ body.page-id-17 .ive-sticky-menu-rail {
 
   .page-id-17 .card-pergamena {
     padding: 24px;
-  }
-
-  .page-id-17 .menu-pergamena ul {
-    grid-template-columns: 1fr;
   }
 
   .page-id-17 .chi-text,

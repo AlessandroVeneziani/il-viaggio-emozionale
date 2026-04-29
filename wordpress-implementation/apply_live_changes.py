@@ -718,10 +718,78 @@ def read_shop_css_string(shop_bg_url: str) -> str:
     return SHOP_CSS_PATH.read_text(encoding="utf-8").strip().replace("__SHOP_BG_URL__", shop_bg_url)
 
 
+def build_shared_header_html(*, current_page: str) -> str:
+    links = [
+        ("/#chi-sono", "Chi sono"),
+        ("/#numerologia", "Numerologia Indiana"),
+        ("/#ritratto", "Ritratto dell'Anima"),
+        ("/#tarocchi", "Tarocchi Archetipici"),
+        ("/#soul-design", "Soul Design"),
+        ("/negozio/", "Negozio"),
+    ]
+    nav_items = []
+    for href, label in links:
+        current_attr = ' aria-current="page"' if current_page == "shop" and href == "/negozio/" else ""
+        nav_items.append(f'<li><a href="{href}"{current_attr}>{label}</a></li>')
+
+    return f"""
+<header class="ive-sticky-header">
+  <div class="header-sticky">
+    <a class="logo-sticky" href="/#chi-sono" aria-label="Il Viaggio Emozionale">
+      <img
+        src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
+        alt="Il Viaggio Emozionale"
+        loading="eager"
+        decoding="async"
+      >
+    </a>
+    <nav class="menu" aria-label="Navigazione principale del sito">
+      <ul>
+        {''.join(nav_items)}
+      </ul>
+    </nav>
+    <a
+      class="ive-btn small menu-cta"
+      href="/#ritratto"
+    >
+      Inizia il tuo viaggio
+    </a>
+  </div>
+</header>
+""".strip()
+
+
+def build_shared_footer_html() -> str:
+    return """
+<footer class="ive-footer">
+  <div class="ive-footer-inner">
+    <div class="ive-footer-claim">
+      <h2>Il viaggio continua anche fuori da qui.</h2>
+      <p>Uno spazio dedicato a simboli, numeri, archetipi e trasformazione interiore.</p>
+    </div>
+
+    <div class="ive-footer-icons">
+      <a href="https://www.tiktok.com/@ilviaggioemozionale" target="_blank" rel="noopener noreferrer" aria-label="TikTok">TikTok</a>
+      <a href="https://www.youtube.com/@IlViaggioEmozionale" target="_blank" rel="noopener noreferrer" aria-label="YouTube">YouTube</a>
+      <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20informazioni%20da%20ilviaggioemozionale.it" aria-label="Email">Email</a>
+      <a href="https://wa.me/393929124461?text=Ciao%20Alessandro%2C%20ho%20trovato%20il%20tuo%20sito%20ilviaggioemozionale.it%20e%20vorrei%20ricevere%20pi%C3%B9%20informazioni." target="_blank" rel="noopener noreferrer" aria-label="WhatsApp">WhatsApp</a>
+      <a href="tel:+393929124461" aria-label="Telefono">Telefono</a>
+    </div>
+
+    <div class="ive-footer-copy">© 2026 Il Viaggio Emozionale · Alessandro Veneziani</div>
+  </div>
+</footer>
+""".strip()
+
+
 def build_widget_html() -> dict[str, str]:
     schema_json = read_schema_string()
+    shared_header = build_shared_header_html(current_page="home")
+    shared_footer = build_shared_footer_html()
 
-    hero_html = """
+    hero_html = (
+        shared_header
+        + """
 <header class="hero" data-aos="fade-down">
   <div class="hero__container">
     <div class="hero__brand" data-aos="zoom-in" data-aos-delay="250">
@@ -733,20 +801,10 @@ def build_widget_html() -> dict[str, str]:
         decoding="async"
       >
     </div>
-
-    <nav class="menu-pergamena" aria-label="Percorsi e sezioni del sito" data-aos="fade-up" data-aos-delay="450">
-      <ul>
-        <li><a href="#chi">Chi sono</a></li>
-        <li><a href="#numerologia">Numerologia Indiana</a></li>
-        <li><a href="#ritratto">Ritratto dell&apos;Anima</a></li>
-        <li><a href="#tarocchi">Tarocchi Archetipici</a></li>
-        <li><a href="#soul-design">Soul Design</a></li>
-        <li><a href="/negozio/">Negozio</a></li>
-      </ul>
-    </nav>
   </div>
 </header>
 
+<div id="chi-sono" class="ive-anchor-target" aria-hidden="true"></div>
 <section id="chi" class="chi-section" data-aos="fade-up">
   <div class="chi-shell">
     <div class="chi-content">
@@ -778,78 +836,9 @@ def build_widget_html() -> dict[str, str]:
 
 <script>
 (function() {
-  const breakpoint = 1200;
-  const revealOffset = 140;
-  const sectionIds = ['chi', 'numerologia', 'ritratto', 'tarocchi', 'soul-design'];
+  const sectionIds = ['chi-sono', 'numerologia', 'ritratto', 'tarocchi', 'soul-design'];
   let trackedSections = [];
   let activeSectionId = '';
-
-  function buildStickyHeader(sourceMenu) {
-    const sourceList = sourceMenu.querySelector('ul');
-
-    if (!sourceList) {
-      return null;
-    }
-
-    const wrapper = document.createElement('header');
-    wrapper.className = 'ive-sticky-header';
-    wrapper.innerHTML = `
-      <div class="header-sticky">
-        <a class="logo-sticky" href="#chi" aria-label="Il Viaggio Emozionale">
-          <img
-            src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
-            alt="Il Viaggio Emozionale"
-            loading="eager"
-            decoding="async"
-          >
-        </a>
-        <nav class="menu" aria-label="Navigazione rapida del sito">
-          <ul>${sourceList.innerHTML}</ul>
-        </nav>
-        <a
-          class="ive-btn small"
-          href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20viaggio%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie"
-        >
-          Inizia il tuo viaggio
-        </a>
-      </div>
-    `;
-
-    return wrapper;
-  }
-
-  function syncStickyHeader() {
-    const page = document.querySelector('.page-id-17 .elementor-17');
-    const sourceMenu = document.querySelector('.page-id-17 .hero .menu-pergamena');
-
-    if (!page || !sourceMenu) {
-      return;
-    }
-
-    let header = page.querySelector('.ive-sticky-header');
-
-    if (window.innerWidth >= breakpoint) {
-      if (!header) {
-        header = buildStickyHeader(sourceMenu);
-
-        if (header) {
-          page.appendChild(header);
-        }
-      }
-
-      document.body.classList.add('ive-sticky-menu-active');
-      updateHeaderVisibility();
-    } else {
-      if (header) {
-        header.remove();
-      }
-
-      document.body.classList.remove('ive-sticky-menu-active');
-      document.body.classList.remove('ive-sticky-header-visible');
-    }
-
-    updateActiveMenu();
-  }
 
   function collectSections() {
     trackedSections = sectionIds
@@ -882,10 +871,17 @@ def build_widget_html() -> dict[str, str]:
     activeSectionId = currentId;
 
     document
-      .querySelectorAll('.page-id-17 .menu-pergamena a, .page-id-17 .ive-sticky-header .menu a')
+      .querySelectorAll('.page-id-17 .ive-sticky-header .menu a')
       .forEach((link) => {
-      const href = link.getAttribute('href') || '';
-      const isActive = href.charAt(0) === '#' && href === '#' + currentId;
+      let linkHash = '';
+
+      try {
+        linkHash = new URL(link.href, window.location.origin).hash.replace('#', '');
+      } catch (error) {
+        linkHash = '';
+      }
+
+      const isActive = linkHash === currentId;
       link.classList.toggle('is-active', isActive);
 
       if (isActive) {
@@ -896,12 +892,6 @@ def build_widget_html() -> dict[str, str]:
     });
   }
 
-  function updateHeaderVisibility() {
-    const isDesktop = window.innerWidth >= breakpoint;
-    const shouldShow = isDesktop && window.scrollY > revealOffset;
-    document.body.classList.toggle('ive-sticky-header-visible', shouldShow);
-  }
-
   let resizeFrame = null;
   function handleResize() {
     if (resizeFrame) {
@@ -910,7 +900,7 @@ def build_widget_html() -> dict[str, str]:
 
     resizeFrame = requestAnimationFrame(function() {
       collectSections();
-      syncStickyHeader();
+      updateActiveMenu();
     });
   }
 
@@ -921,7 +911,6 @@ def build_widget_html() -> dict[str, str]:
     }
 
     scrollFrame = requestAnimationFrame(function() {
-      updateHeaderVisibility();
       updateActiveMenu();
     });
   }
@@ -929,14 +918,10 @@ def build_widget_html() -> dict[str, str]:
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
       collectSections();
-      syncStickyHeader();
-      updateHeaderVisibility();
       updateActiveMenu();
     });
   } else {
     collectSections();
-    syncStickyHeader();
-    updateHeaderVisibility();
     updateActiveMenu();
   }
 
@@ -945,6 +930,7 @@ def build_widget_html() -> dict[str, str]:
 })();
 </script>
 """.strip()
+    )
 
     numerologia_html = """
 <section id="numerologia" class="section-numerologia">
@@ -1004,7 +990,10 @@ def build_widget_html() -> dict[str, str]:
         </div>
 
         <p class="ritratto-closing">Non e una lettura. E una mappa per muoverti davvero.</p>
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="btn btn--primary ritratto-cta">Richiedi il tuo Ritratto dell&apos;Anima</a>
+        <div class="ritratto-cta-row">
+          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="btn btn--primary ritratto-cta">Richiedi il tuo Ritratto dell&apos;Anima</a>
+          <a href="/negozio/#ritratto-shop" class="ritratto-secondary-cta">Scopri tutte le opzioni</a>
+        </div>
       </div>
 
       <div class="ritratto-premium-visual" data-aos="fade-left" data-aos-delay="120">
@@ -1158,7 +1147,8 @@ def build_widget_html() -> dict[str, str]:
     </div>
   </div>
 </section>
-<div class="footer-prelude" data-aos="fade-up">Il tuo viaggio non finisce qui.</div>
+<div class="ive-separator-gold" aria-hidden="true"></div>
+{shared_footer}
 <script type="application/ld+json">{schema_json}</script>
 """.strip()
 
@@ -1173,9 +1163,12 @@ def build_widget_html() -> dict[str, str]:
 
 def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     shop_css = read_shop_css_string(shop_bg_url)
+    shared_header = build_shared_header_html(current_page="shop")
+    shared_footer = build_shared_footer_html()
     inner_html = f"""
 <style>{shop_css}</style>
 <div class="shop-page">
+  {shared_header}
   <section class="shop-hero ive-shop-section">
     <div class="shop-hero-inner">
       <span class="shop-kicker">SHOP PERCORSI E PDF</span>
@@ -1365,6 +1358,8 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
       <a class="ive-btn" href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie">Inizia il tuo viaggio</a>
     </div>
   </section>
+
+  {shared_footer}
 </div>
 """.strip()
     return f"<!-- wp:html -->\n{inner_html}\n<!-- /wp:html -->"

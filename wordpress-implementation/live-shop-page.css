@@ -41,6 +41,13 @@ body.post-type-archive-product .site-content > .ast-container {
   padding-right: 0;
 }
 
+body.page-id-911 #masthead,
+body.page-id-911 #colophon,
+body.page-id-911 .entry-header,
+body.page-id-911 .ast-title-bar {
+  display: none !important;
+}
+
 body.post-type-archive-product .ast-woocommerce-container,
 body.post-type-archive-product .ast-archive-description {
   background: transparent;
@@ -72,10 +79,89 @@ body.post-type-archive-product ul.products {
   padding: 100px 5%;
 }
 
+.shop-page .ive-sticky-header {
+  position: fixed;
+  top: 18px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 9999;
+  width: min(1180px, calc(100% - 40px));
+}
+
+.shop-page .header-sticky {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 28px;
+  padding: 14px 24px;
+  background: rgba(248, 243, 232, 0.92);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(198, 167, 94, 0.42);
+  border-radius: 28px;
+  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.08);
+}
+
+.shop-page .logo-sticky {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.shop-page .logo-sticky img {
+  height: 34px;
+  width: auto;
+  opacity: 0.95;
+}
+
+.shop-page .header-sticky .menu {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex: 1 1 auto;
+}
+
+.shop-page .header-sticky .menu ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: center;
+  gap: 26px;
+}
+
+.shop-page .header-sticky .menu li {
+  margin: 0;
+}
+
+.shop-page .header-sticky .menu a {
+  color: #073b57 !important;
+  text-decoration: none !important;
+  font-size: 15px;
+  font-weight: 700;
+  line-height: 1.2;
+}
+
+.shop-page .header-sticky .menu a:hover,
+.shop-page .header-sticky .menu a.active,
+.shop-page .header-sticky .menu a[aria-current="page"] {
+  color: #9e7728 !important;
+}
+
+.shop-page .header-sticky .menu-cta {
+  background: #9e7728;
+  color: #fff !important;
+  padding: 13px 24px;
+  border-radius: 999px;
+  box-shadow: 0 12px 26px rgba(158, 119, 40, 0.22);
+}
+
 .shop-hero {
   text-align: center;
   position: relative;
   overflow: hidden;
+  padding-top: 150px;
 }
 
 .shop-hero::before {
@@ -478,6 +564,70 @@ body.post-type-archive-product ul.products {
   margin: 0 0 28px;
 }
 
+.shop-page .ive-footer {
+  background: #073b57;
+  color: #f4f1ea;
+  padding: 80px 5% 42px;
+  text-align: center;
+  border-top: 1px solid rgba(198, 167, 94, 0.45);
+}
+
+.shop-page .ive-footer-inner {
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.shop-page .ive-footer-claim h2 {
+  color: #f4f1ea;
+  font-size: clamp(30px, 4vw, 48px);
+  line-height: 1.15;
+  margin: 0 0 18px;
+}
+
+.shop-page .ive-footer-claim p {
+  color: rgba(244, 241, 234, 0.78);
+  font-size: 18px;
+  line-height: 1.7;
+  max-width: 720px;
+  margin: 0 auto 42px;
+}
+
+.shop-page .ive-footer-icons {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 28px;
+  flex-wrap: wrap;
+  margin-bottom: 38px;
+}
+
+.shop-page .ive-footer-icons a {
+  width: 74px;
+  height: 74px;
+  border: 2px solid #c6a75e;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #c6a75e !important;
+  text-decoration: none !important;
+  font-weight: 700;
+  font-size: 13px;
+  transition: all 0.2s ease;
+}
+
+.shop-page .ive-footer-icons a:hover {
+  background: #c6a75e;
+  color: #073b57 !important;
+  transform: translateY(-3px);
+}
+
+.shop-page .ive-footer-copy {
+  color: rgba(244, 241, 234, 0.55);
+  font-size: 14px;
+  letter-spacing: 0.03em;
+}
+
 @media (max-width: 1100px) {
   .product-grid {
     grid-template-columns: repeat(2, 1fr);
@@ -489,6 +639,14 @@ body.post-type-archive-product ul.products {
   body.page-id-911 .site {
     background-attachment: scroll;
     background-position: center top;
+  }
+
+  .shop-hero {
+    padding-top: 100px;
+  }
+
+  .shop-page .ive-sticky-header {
+    display: none;
   }
 
   .choice-grid,
@@ -529,5 +687,19 @@ body.post-type-archive-product ul.products {
 
   .final-cta-card {
     padding: 42px 28px;
+  }
+
+  .shop-page .ive-footer {
+    padding: 60px 24px 34px;
+  }
+
+  .shop-page .ive-footer-icons {
+    gap: 16px;
+  }
+
+  .shop-page .ive-footer-icons a {
+    width: 62px;
+    height: 62px;
+    font-size: 12px;
   }
 }

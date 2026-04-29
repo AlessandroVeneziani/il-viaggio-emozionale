@@ -438,3 +438,32 @@ Ventesimo aggiornamento live pubblicato il `2026-04-29`.
   - home con nuovo markup `header-sticky`, `logo-sticky` e voce `Negozio`
   - shop che serve il nuovo asset `sfondo-numeri.png`
   - CTA WooCommerce dello shop ancora puntate ai prodotti reali su `/pagamento/?add-to-cart=...`
+
+## Header e footer condivisi tra home e shop
+
+Ventunesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- rimossa dalla home la presenza del vecchio menu verticale `menu-pergamena` nel markup pubblico
+- introdotto un header sticky orizzontale condiviso tra home e `/negozio/` con:
+  - logo piccolo del brand
+  - link `Chi sono`, `Numerologia Indiana`, `Ritratto dell'Anima`, `Tarocchi Archetipici`, `Soul Design`, `Negozio`
+  - CTA `Inizia il tuo viaggio`
+  - link uniformati verso `/#chi-sono`, `/#numerologia`, `/#ritratto`, `/#tarocchi`, `/#soul-design`, `/negozio/`
+- home aggiornata con ancora dedicata `#chi-sono` per allineare la navigazione tra pagine
+- sezione `Ritratto dell'Anima` della home ampliata con CTA secondaria:
+  - `Scopri tutte le opzioni`
+  - link a `/negozio/#ritratto-shop`
+- rimossa la frase `Il tuo viaggio non finisce qui.`
+- eliminata la banda piena collegata alla frase e sostituita con una sola linea di separazione gold `ive-separator-gold`
+- aggiunto un footer premium condiviso su home e shop con:
+  - claim `Il viaggio continua anche fuori da qui.`
+  - sottotesto dedicato a simboli, numeri, archetipi e trasformazione interiore
+  - link `TikTok`, `YouTube`, `Email`, `WhatsApp`, `Telefono`
+  - copyright `© 2026 Il Viaggio Emozionale · Alessandro Veneziani`
+- nello shop i blocchi Astra standard `#masthead`, `#colophon`, titolo pagina e title bar sono stati soppressi via CSS per lasciare visibile solo il sistema custom premium
+- nella home gli elementi Elementor legacy del vecchio footer sono stati nascosti per evitare doppioni visivi
+- verifiche pubbliche completate con cache-busting:
+  - home senza `menu-pergamena`
+  - home con CTA `Scopri tutte le opzioni`
+  - home con nuovo footer `ive-footer`
+  - shop con header sticky custom e footer premium custom
