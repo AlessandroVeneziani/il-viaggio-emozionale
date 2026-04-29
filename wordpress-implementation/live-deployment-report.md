@@ -467,3 +467,15 @@ Ventunesimo aggiornamento live pubblicato il `2026-04-29`.
   - home con CTA `Scopri tutte le opzioni`
   - home con nuovo footer `ive-footer`
   - shop con header sticky custom e footer premium custom
+
+## Rifinitura spaziatura footer home
+
+Ventiduesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- rimossa l'area avorio residua tra la linea gold `ive-separator-gold` e il footer premium della home
+- azzerato il margine inferiore del separatore gold sulla home
+- rimosso il bordo-top gold del footer per lasciare come unica separazione visiva la linea già presente sopra
+- mantenuto il comportamento responsive con margine inferiore azzerato anche su mobile
+- verifica pubblica completata sul CSS live `post-17.css`:
+  - `.page-id-17 .ive-separator-gold { margin: 60px auto 0; }`
+  - `.page-id-17 .ive-footer { border-top: none; }`

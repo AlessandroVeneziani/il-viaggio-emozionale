@@ -1044,7 +1044,7 @@ body.page-id-17 .header-sticky .menu-cta:hover {
   width: 100%;
   max-width: 1100px;
   height: 1px;
-  margin: 60px auto 30px;
+  margin: 60px auto 0;
   background: linear-gradient(to right, transparent, #c6a75e, transparent);
 }
 
@@ -1053,7 +1053,7 @@ body.page-id-17 .header-sticky .menu-cta:hover {
   color: #f4f1ea;
   padding: 80px 5% 42px;
   text-align: center;
-  border-top: 1px solid rgba(198, 167, 94, 0.45);
+  border-top: none;
 }
 
 .page-id-17 .ive-footer-inner {
@@ -1320,7 +1320,7 @@ body.page-id-17 .header-sticky .menu-cta:hover {
 
 @media (max-width: 768px) {
   .page-id-17 .ive-separator-gold {
-    margin: 40px auto 24px;
+    margin: 40px auto 0;
   }
 
   .page-id-17 .ive-footer {
