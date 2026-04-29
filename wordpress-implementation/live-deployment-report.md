@@ -522,3 +522,16 @@ Ventiquattresimo aggiornamento live pubblicato il `2026-04-29`.
 - home ripubblicata e cache Elementor/SpeedyCache svuotate
 - verifica pubblica completata sul CSS live `post-17.css` con regola:
   - `display: none !important` sui selettori del vecchio menu pergamena
+
+## Shop: inserimento immagine degli Amanti nella CTA finale
+
+Venticinquesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- caricata in media library l'immagine `amanti.jpg`
+- aggiunta nella pagina `/negozio/` sopra la CTA finale `Il momento giusto non arriva. Lo scegli.`
+- immagine posizionata in chiusura pagina con allineamento verso destra su desktop e centrata su mobile
+- mantenuto il blocco CTA finale come elemento principale, con l'immagine usata come simbolo di scelta e passaggio
+- verifiche pubbliche completate con cache-busting:
+  - `shop-final-symbol` presente nel markup
+  - URL live `https://ilviaggioemozionale.it/wp-content/uploads/2026/04/amanti.jpg` presente nel markup
+  - CTA finale ancora presente e invariata nel contenuto
