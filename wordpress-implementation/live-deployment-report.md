@@ -416,3 +416,25 @@ Diciannovesimo aggiornamento live pubblicato il `2026-04-29`.
 - verifica pubblica completata:
   - il markup della landing non contiene piu paragrafi automatici indesiderati nei wrapper delle sezioni
   - le CTA acquisto mantengono i link Woo reali verso `/pagamento/?add-to-cart=...`
+
+## Sticky header premium e sfondo numeri shop
+
+Ventesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- home aggiornata con un nuovo sticky header desktop piu coerente con il posizionamento premium del sito:
+  - logo piccolo a sinistra
+  - voci `Chi sono`, `Numerologia Indiana`, `Ritratto dell'Anima`, `Tarocchi Archetipici`, `Soul Design`, `Negozio`
+  - CTA finale `Inizia il tuo viaggio`
+  - stile con blur leggero, fondo avorio traslucido e bordo gold sottile
+- rimosso dal menu hero il link `Laboratorio dell'Anima` e sostituito con `Negozio`
+- disattivata la vecchia logica della rail laterale sticky sulla home
+- caricato nello stack locale di deploy l'asset `sfondo-numeri.png` e pubblicato via media library per l'uso nello shop
+- pagina `/negozio/` aggiornata con sfondo globale numeri/pergamena visibile anche ai lati:
+  - body `page-id-911` con background dedicato
+  - wrapper Astra e contenitori principali resi trasparenti
+  - sezioni `.ive-shop-section` convertite a overlay avorio semi-trasparente
+  - card mantenute in pergamena piena `#F4F1EA`
+- verifiche pubbliche completate:
+  - home con nuovo markup `header-sticky`, `logo-sticky` e voce `Negozio`
+  - shop che serve il nuovo asset `sfondo-numeri.png`
+  - CTA WooCommerce dello shop ancora puntate ai prodotti reali su `/pagamento/?add-to-cart=...`

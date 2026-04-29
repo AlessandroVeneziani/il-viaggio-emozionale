@@ -19,6 +19,7 @@ from __future__ import annotations
 import html
 import http.cookiejar
 import json
+import mimetypes
 import os
 import re
 import sys
@@ -52,6 +53,7 @@ BACKUP_DIR = WORKDIR / "backups"
 CSS_PATH = WORKDIR / "live-home-page.css"
 SHOP_CSS_PATH = WORKDIR / "live-shop-page.css"
 SCHEMA_PATH = WORKDIR / "schema" / "service-organization.jsonld"
+SHOP_BG_ASSET_PATH = WORKDIR / "assets" / "sfondo-numeri.png"
 
 
 @dataclass
@@ -407,6 +409,60 @@ def rest_find_page_by_slug(session: Session, nonce: str, slug: str) -> dict[str,
     return pages[0] if pages else None
 
 
+def rest_find_media_by_slug(session: Session, nonce: str, slug: str) -> dict[str, Any] | None:
+    request = urllib.request.Request(
+        f"{BASE_URL}/wp-json/wp/v2/media?slug={urllib.parse.quote(slug)}&context=edit&per_page=100",
+        headers={
+            "User-Agent": USER_AGENT,
+            "X-WP-Nonce": nonce,
+            "Referer": BASE_URL + "/wp-admin/upload.php",
+            "Accept": "application/json",
+        },
+    )
+    media_items = json.loads(session.opener.open(request).read().decode("utf-8"))
+    return media_items[0] if media_items else None
+
+
+def ensure_media_upload(
+    session: Session,
+    nonce: str,
+    file_path: Path,
+    *,
+    filename: str,
+    slug: str,
+    alt_text: str,
+) -> dict[str, Any]:
+    existing = rest_find_media_by_slug(session, nonce, slug)
+    if existing:
+        return existing
+
+    mime_type = mimetypes.guess_type(filename)[0] or "application/octet-stream"
+    file_bytes = file_path.read_bytes()
+    request = urllib.request.Request(
+        f"{BASE_URL}/wp-json/wp/v2/media",
+        data=file_bytes,
+        headers={
+            "User-Agent": USER_AGENT,
+            "X-WP-Nonce": nonce,
+            "Referer": BASE_URL + "/wp-admin/upload.php",
+            "Content-Type": mime_type,
+            "Content-Disposition": f'attachment; filename="{filename}"',
+            "Content-Length": str(len(file_bytes)),
+            "Accept": "application/json",
+        },
+        method="POST",
+    )
+    uploaded = json.loads(session.opener.open(request).read().decode("utf-8"))
+    return rest_request_json(
+        session,
+        f"/wp-json/wp/v2/media/{uploaded['id']}",
+        nonce,
+        method="POST",
+        payload={"alt_text": alt_text},
+        referer=BASE_URL + "/wp-admin/upload.php",
+    )
+
+
 def clear_elementor_cache(session: Session, nonce: str) -> None:
     request = urllib.request.Request(
         f"{BASE_URL}/wp-json/elementor/v1/cache",
@@ -658,8 +714,8 @@ def read_schema_string() -> str:
     return json.dumps(schema, ensure_ascii=False, separators=(",", ":"))
 
 
-def read_shop_css_string() -> str:
-    return SHOP_CSS_PATH.read_text(encoding="utf-8").strip()
+def read_shop_css_string(shop_bg_url: str) -> str:
+    return SHOP_CSS_PATH.read_text(encoding="utf-8").strip().replace("__SHOP_BG_URL__", shop_bg_url)
 
 
 def build_widget_html() -> dict[str, str]:
@@ -685,7 +741,7 @@ def build_widget_html() -> dict[str, str]:
         <li><a href="#ritratto">Ritratto dell&apos;Anima</a></li>
         <li><a href="#tarocchi">Tarocchi Archetipici</a></li>
         <li><a href="#soul-design">Soul Design</a></li>
-        <li><a href="#lab">Laboratorio dell&apos;Anima</a></li>
+        <li><a href="/negozio/">Negozio</a></li>
       </ul>
     </nav>
   </div>
@@ -722,12 +778,47 @@ def build_widget_html() -> dict[str, str]:
 
 <script>
 (function() {
-  const breakpoint = 1360;
-  const sectionIds = ['chi', 'numerologia', 'ritratto', 'tarocchi', 'soul-design', 'lab'];
+  const breakpoint = 1200;
+  const revealOffset = 140;
+  const sectionIds = ['chi', 'numerologia', 'ritratto', 'tarocchi', 'soul-design'];
   let trackedSections = [];
   let activeSectionId = '';
 
-  function syncStickyRail() {
+  function buildStickyHeader(sourceMenu) {
+    const sourceList = sourceMenu.querySelector('ul');
+
+    if (!sourceList) {
+      return null;
+    }
+
+    const wrapper = document.createElement('header');
+    wrapper.className = 'ive-sticky-header';
+    wrapper.innerHTML = `
+      <div class="header-sticky">
+        <a class="logo-sticky" href="#chi" aria-label="Il Viaggio Emozionale">
+          <img
+            src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/logo-new.png"
+            alt="Il Viaggio Emozionale"
+            loading="eager"
+            decoding="async"
+          >
+        </a>
+        <nav class="menu" aria-label="Navigazione rapida del sito">
+          <ul>${sourceList.innerHTML}</ul>
+        </nav>
+        <a
+          class="ive-btn small"
+          href="mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20viaggio%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie"
+        >
+          Inizia il tuo viaggio
+        </a>
+      </div>
+    `;
+
+    return wrapper;
+  }
+
+  function syncStickyHeader() {
     const page = document.querySelector('.page-id-17 .elementor-17');
     const sourceMenu = document.querySelector('.page-id-17 .hero .menu-pergamena');
 
@@ -735,23 +826,26 @@ def build_widget_html() -> dict[str, str]:
       return;
     }
 
-    let rail = page.querySelector('.ive-sticky-menu-rail');
+    let header = page.querySelector('.ive-sticky-header');
 
     if (window.innerWidth >= breakpoint) {
-      if (!rail) {
-        rail = document.createElement('aside');
-        rail.className = 'ive-sticky-menu-rail';
-        rail.appendChild(sourceMenu.cloneNode(true));
-        page.appendChild(rail);
+      if (!header) {
+        header = buildStickyHeader(sourceMenu);
+
+        if (header) {
+          page.appendChild(header);
+        }
       }
 
       document.body.classList.add('ive-sticky-menu-active');
+      updateHeaderVisibility();
     } else {
-      if (rail) {
-        rail.remove();
+      if (header) {
+        header.remove();
       }
 
       document.body.classList.remove('ive-sticky-menu-active');
+      document.body.classList.remove('ive-sticky-header-visible');
     }
 
     updateActiveMenu();
@@ -787,8 +881,11 @@ def build_widget_html() -> dict[str, str]:
 
     activeSectionId = currentId;
 
-    document.querySelectorAll('.page-id-17 .menu-pergamena a').forEach((link) => {
-      const isActive = link.getAttribute('href') === '#' + currentId;
+    document
+      .querySelectorAll('.page-id-17 .menu-pergamena a, .page-id-17 .ive-sticky-header .menu a')
+      .forEach((link) => {
+      const href = link.getAttribute('href') || '';
+      const isActive = href.charAt(0) === '#' && href === '#' + currentId;
       link.classList.toggle('is-active', isActive);
 
       if (isActive) {
@@ -799,6 +896,12 @@ def build_widget_html() -> dict[str, str]:
     });
   }
 
+  function updateHeaderVisibility() {
+    const isDesktop = window.innerWidth >= breakpoint;
+    const shouldShow = isDesktop && window.scrollY > revealOffset;
+    document.body.classList.toggle('ive-sticky-header-visible', shouldShow);
+  }
+
   let resizeFrame = null;
   function handleResize() {
     if (resizeFrame) {
@@ -807,7 +910,7 @@ def build_widget_html() -> dict[str, str]:
 
     resizeFrame = requestAnimationFrame(function() {
       collectSections();
-      syncStickyRail();
+      syncStickyHeader();
     });
   }
 
@@ -817,18 +920,23 @@ def build_widget_html() -> dict[str, str]:
       cancelAnimationFrame(scrollFrame);
     }
 
-    scrollFrame = requestAnimationFrame(updateActiveMenu);
+    scrollFrame = requestAnimationFrame(function() {
+      updateHeaderVisibility();
+      updateActiveMenu();
+    });
   }
 
   if (document.readyState === 'loading') {
     document.addEventListener('DOMContentLoaded', function() {
       collectSections();
-      syncStickyRail();
+      syncStickyHeader();
+      updateHeaderVisibility();
       updateActiveMenu();
     });
   } else {
     collectSections();
-    syncStickyRail();
+    syncStickyHeader();
+    updateHeaderVisibility();
     updateActiveMenu();
   }
 
@@ -1063,8 +1171,8 @@ def build_widget_html() -> dict[str, str]:
     }
 
 
-def build_shop_content(product_links: dict[str, str]) -> str:
-    shop_css = read_shop_css_string()
+def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
+    shop_css = read_shop_css_string(shop_bg_url)
     inner_html = f"""
 <style>{shop_css}</style>
 <div class="shop-page">
@@ -1307,8 +1415,8 @@ def update_home_content(page_payload: dict[str, Any]) -> dict[str, Any]:
     return page_payload
 
 
-def update_shop_content(page_payload: dict[str, Any], product_links: dict[str, str]) -> dict[str, Any]:
-    page_payload["content"]["raw"] = build_shop_content(product_links)
+def update_shop_content(page_payload: dict[str, Any], product_links: dict[str, str], shop_bg_url: str) -> dict[str, Any]:
+    page_payload["content"]["raw"] = build_shop_content(product_links, shop_bg_url)
     return page_payload
 
 
@@ -1378,6 +1486,17 @@ def main() -> int:
     products = ensure_wc_products(session, nonce, current_checkout["link"])
     delete_wc_product_if_exists(session, nonce, "zz-test-prodotto-codex")
     product_links = {key: product["checkout_url"] for key, product in products.items()}
+    shop_bg_media = ensure_media_upload(
+        session,
+        nonce,
+        SHOP_BG_ASSET_PATH,
+        filename="sfondo-numeri.png",
+        slug="sfondo-numeri",
+        alt_text="Sfondo con numeri simbolici in stile pergamena per la pagina Shop",
+    )
+    shop_bg_url = shop_bg_media.get("source_url") or shop_bg_media.get("guid", {}).get("rendered", "")
+    if not shop_bg_url:
+        raise RuntimeError("Could not resolve the shop background image URL")
 
     updated_home = update_home_content(current_home)
     home_response = rest_update_page(
@@ -1386,7 +1505,7 @@ def main() -> int:
         nonce,
         {"meta": {"_elementor_data": updated_home["meta"]["_elementor_data"]}},
     )
-    updated_shop = update_shop_content(current_shop, product_links)
+    updated_shop = update_shop_content(current_shop, product_links, shop_bg_url)
     shop_response = rest_update_page(
         session,
         SHOP_PAGE_ID,
