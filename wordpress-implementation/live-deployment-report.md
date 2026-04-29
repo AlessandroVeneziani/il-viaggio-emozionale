@@ -565,3 +565,13 @@ Ventisettesimo aggiornamento live pubblicato il `2026-04-29`.
 - mantenuta invariata la struttura generale della sezione `Ritratto dell'Anima Premium`
 - verifica pubblica completata con cache-busting:
   - regole `.premium-option:last-child h3`, `.premium-option:last-child p` e `.premium-option:last-child .product-price` presenti nel sorgente live
+
+## Shop: rimozione banda sabbia nella CTA finale
+
+Ventottesimo aggiornamento live pubblicato il `2026-04-29`.
+
+- rimossa la fascia color sabbia dietro la sezione finale del negozio
+- mantenuto invariato il contenuto della CTA finale `Il momento giusto non arriva. Lo scegli.`
+- sezione finale resa trasparente per lasciare visibile lo sfondo pergamena/numeri del sito
+- verifica pubblica completata con cache-busting:
+  - regola `.shop-final-cta { background: transparent; }` presente nel sorgente live
