@@ -630,3 +630,13 @@ Trentaduesimo aggiornamento live pubblicato il `2026-04-30`.
 - aumentato in modo piu evidente il `padding-top` del footer della home
 - nuovo respiro verticale pensato per rendere visibile subito piu aria blu sopra al titolo
 - aggiornato anche il valore mobile in proporzione
+
+## Home e Shop: correzione finale del respiro footer
+
+Trentatreesimo aggiornamento live pubblicato il `2026-04-30`.
+
+- ridotto di nuovo il respiro extra del footer nello shop, riportandolo a una misura piu compatta
+- aumentato invece in modo piu marcato il vuoto blu sopra il titolo del footer della home
+- separati in modo piu netto i due comportamenti:
+  - shop piu compatto
+  - home piu ariosa
