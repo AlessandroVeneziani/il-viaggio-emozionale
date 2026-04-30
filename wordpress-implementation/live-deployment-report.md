@@ -614,3 +614,11 @@ Trentesimo aggiornamento live pubblicato il `2026-04-30`.
 - mantenuto il footer coerente anche nel negozio, con lo stesso respiro verticale
 - reintrodotto spazio finale nella sezione `Laboratorio dell'Anima` senza tornare a una banda sabbia eccessiva
 - la chiusura del blocco laboratorio ora respira di piu prima dell'ingresso al footer
+
+## Home: ulteriore aumento dello spazio blu sopra il titolo del footer
+
+Trentunesimo aggiornamento live pubblicato il `2026-04-30`.
+
+- aumentato ancora il `padding-top` del footer della home
+- lasciato invariato il resto del blocco footer
+- mantenuta anche una versione mobile piu ariosa per evitare che il titolo risulti troppo vicino al bordo superiore
