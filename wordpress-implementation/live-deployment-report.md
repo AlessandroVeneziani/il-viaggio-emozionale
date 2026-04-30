@@ -605,3 +605,12 @@ Ventinovesimo aggiornamento live pubblicato il `2026-04-30`.
   - stesso header sticky desktop
   - stesso header mobile
   - stesso footer premium
+
+## Home: piu aria sopra il footer e chiusura piu respirata del Laboratorio
+
+Trentesimo aggiornamento live pubblicato il `2026-04-30`.
+
+- aumentato il `padding-top` del footer premium per lasciare piu aria sopra al titolo `Il viaggio continua anche fuori da qui.`
+- mantenuto il footer coerente anche nel negozio, con lo stesso respiro verticale
+- reintrodotto spazio finale nella sezione `Laboratorio dell'Anima` senza tornare a una banda sabbia eccessiva
+- la chiusura del blocco laboratorio ora respira di piu prima dell'ingresso al footer
