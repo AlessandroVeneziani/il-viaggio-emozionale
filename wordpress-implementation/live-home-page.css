@@ -1214,7 +1214,7 @@ body.page-id-17 .ive-mobile-menu a.menu-cta {
 .page-id-17 .ive-footer {
   background: linear-gradient(to top, #0f3a4a 85%, rgba(15, 58, 74, 0.85) 100%);
   color: #ffffff;
-  padding: 136px 5% 42px;
+  padding: 192px 5% 42px;
   text-align: center;
   border-top: none;
   margin-top: 0;
@@ -1495,7 +1495,7 @@ body.page-id-17 .ive-mobile-menu a.menu-cta {
 
 @media (max-width: 768px) {
   .page-id-17 .ive-footer {
-    padding: 96px 24px 34px;
+    padding: 128px 24px 34px;
   }
 
   .page-id-17 .ive-footer-icons {

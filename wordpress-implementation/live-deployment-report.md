@@ -622,3 +622,11 @@ Trentunesimo aggiornamento live pubblicato il `2026-04-30`.
 - aumentato ancora il `padding-top` del footer della home
 - lasciato invariato il resto del blocco footer
 - mantenuta anche una versione mobile piu ariosa per evitare che il titolo risulti troppo vicino al bordo superiore
+
+## Home: aumento deciso dello spazio blu sopra il titolo del footer
+
+Trentaduesimo aggiornamento live pubblicato il `2026-04-30`.
+
+- aumentato in modo piu evidente il `padding-top` del footer della home
+- nuovo respiro verticale pensato per rendere visibile subito piu aria blu sopra al titolo
+- aggiornato anche il valore mobile in proporzione
