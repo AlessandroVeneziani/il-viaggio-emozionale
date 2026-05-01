@@ -659,3 +659,4 @@ Trentaquattresimo aggiornamento live pubblicato il `2026-05-02`.
 - rimosse le virgole superflue prima della congiunzione `e` nei testi aggiornati
 - spezzati alcuni paragrafi dopo il punto nei blocchi più densi per dare maggiore enfasi e leggibilità
 - riallineate anche le descrizioni principali del Ritratto e del Premium nello shop
+- corretti anche i campi descrittivi nello schema JSON-LD pubblico

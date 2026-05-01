@@ -35,7 +35,7 @@
       "brand": {
         "@id": "https://ilviaggioemozionale.it/#organization"
       },
-      "description": "Libro personale stampato costruito su numeri, simboli, cicli di vita e lettura narrativa per offrire una mappa profonda dell'identita.",
+      "description": "Libro personale stampato costruito su numeri, simboli, cicli di vita e lettura narrativa per offrire una mappa profonda dell'identità.",
       "url": "https://ilviaggioemozionale.it/#ritratto",
       "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png",
       "offers": {
@@ -75,7 +75,7 @@
       },
       "url": "https://ilviaggioemozionale.it/#soul-design",
       "image": "https://ilviaggioemozionale.it/wp-content/uploads/2025/06/mondo.png",
-      "description": "Percorso esclusivo tra simboli, numeri e intuizione per tradurre la propria interiorita in scelte concrete.",
+      "description": "Percorso esclusivo tra simboli, numeri e intuizione per tradurre la propria interiorità in scelte concrete.",
       "offers": {
         "@type": "Offer",
         "priceCurrency": "EUR",
