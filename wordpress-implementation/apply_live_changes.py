@@ -86,7 +86,8 @@ SHOP_PRODUCT_SPECS = (
         slug="ritratto-dell-anima-digitale",
         price="150",
         description="""
-<p>Ricevi il tuo Ritratto dell'Anima in formato PDF, costruito su di te e consegnato via mail. E un primo ingresso chiaro e personale nel linguaggio dei numeri, dei simboli e della tua direzione interiore.</p>
+<p>Ricevi il tuo Ritratto dell'Anima in formato PDF, costruito su di te e consegnato via mail.</p>
+<p>È un primo ingresso chiaro e personale nel linguaggio dei numeri, dei simboli e della tua direzione interiore.</p>
 <p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari alla personalizzazione.</p>
 """.strip(),
         short_description="""
@@ -108,7 +109,8 @@ SHOP_PRODUCT_SPECS = (
         slug="ritratto-dell-anima-digitale-guidato",
         price="200",
         description="""
-<p>Ricevi il tuo Ritratto dell'Anima in formato PDF e lo attraversiamo insieme in una guida di 30 minuti con Alessandro, per mettere a fuoco i passaggi piu importanti e orientare i primi passi concreti.</p>
+<p>Ricevi il tuo Ritratto dell'Anima in formato PDF e lo attraversiamo insieme in una guida di 30 minuti con Alessandro.</p>
+<p>Questo ti aiuta a mettere a fuoco i passaggi più importanti e a orientare i primi passi concreti.</p>
 <p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari e concordare la guida.</p>
 """.strip(),
         short_description="""
@@ -154,7 +156,8 @@ SHOP_PRODUCT_SPECS = (
         slug="ritratto-dell-anima-premium",
         price="350",
         description="""
-<p>La versione piu completa del Ritratto dell'Anima: un libro personale stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
+<p>La versione più completa del Ritratto dell'Anima.</p>
+<p>Un libro personale stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
 <p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari alla personalizzazione e la preferenza di consegna.</p>
 """.strip(),
         short_description="""
@@ -177,7 +180,8 @@ SHOP_PRODUCT_SPECS = (
         slug="ritratto-dell-anima-premium-guidato",
         price="420",
         description="""
-<p>Libro personale premium + 1 ora di spiegazione con Alessandro per entrare con piu profondita nei simboli, nei cicli e nei punti di svolta che emergono dal tuo Ritratto.</p>
+<p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>
+<p>Un modo per entrare con più profondità nei simboli, nei cicli e nei punti di svolta che emergono dal tuo Ritratto.</p>
 <p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare i dati necessari e concordare la sessione.</p>
 """.strip(),
         short_description="""
@@ -201,7 +205,7 @@ SHOP_PRODUCT_SPECS = (
         price="100",
         description="""
 <p>Una sessione simbolica individuale per leggere con chiarezza il momento che stai attraversando e dialogare con il tuo inconscio attraverso i Tarocchi Archetipici.</p>
-<p>Dopo l'acquisto riceverai una mail per concordare disponibilita e dettagli della sessione.</p>
+<p>Dopo l'acquisto riceverai una mail per concordare disponibilità e dettagli della sessione.</p>
 """.strip(),
         short_description="""
 <p>Dopo l'acquisto riceverai una mail con le istruzioni per inviare:</p>
@@ -210,7 +214,7 @@ SHOP_PRODUCT_SPECS = (
   <li>recapito telefonico o email per concordare l'appuntamento</li>
 </ul>
 """.strip(),
-        purchase_note="Dopo l'acquisto riceverai una mail per concordare la disponibilita della sessione di Tarocchi Archetipici.",
+        purchase_note="Dopo l'acquisto riceverai una mail per concordare la disponibilità della sessione di Tarocchi Archetipici.",
         virtual=True,
         sku="IVE-TARO-100",
     ),
@@ -892,17 +896,18 @@ def build_widget_html() -> dict[str, str]:
       <div class="chi-text hero-box" data-aos="fade-left" data-aos-delay="200">
         <h2>Un accompagnamento simbolico per quando senti di esserti perso</h2>
         <p class="subtitle">Alessandro Veneziani · Designer dell&apos;Anima e Ricercatore Simbolico</p>
-        <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si e fermato.</p>
+        <p>Benvenutə nel mio sito. Integro Tarocchi evolutivi, numerologia, comunicazione consapevole e lettura simbolica per aiutarti a ritrovare una direzione chiara quando senti che qualcosa dentro si è fermato.</p>
         <div class="chi-credentials">
           <p class="chi-credentials__title">Formazione e ricerca</p>
           <p>Il mio percorso unisce ricerca simbolica, formazione accademica e comunicazione.</p>
-          <p>La mia base nasce da una laurea in Economia e Commercio presso l&apos;Universita Bocconi, con specializzazione in marketing e comunicazione. A questa formazione ho affiancato un secondo percorso di laurea in Antropologia Esoterica presso HETG, realta accademica con sede a Ginevra e Roma, dove oggi collaboro anche come professore.</p>
-          <p>Questa doppia direzione, economica, comunicativa e simbolico-antropologica, e il fondamento del mio lavoro: trasformare intuizioni, numeri, archetipi e vissuti interiori in strumenti concreti di lettura, scelta e cambiamento.</p>
+          <p>La mia base nasce da una laurea in Economia e Commercio presso l&apos;Università Bocconi, con specializzazione in marketing e comunicazione.</p>
+          <p>A questa formazione ho affiancato un secondo percorso di laurea in Antropologia Esoterica presso HETG, realtà accademica con sede a Ginevra e Roma, dove oggi collaboro anche come professore.</p>
+          <p>Questa doppia direzione economica, comunicativa e simbolico-antropologica è il fondamento del mio lavoro: trasformare intuizioni, numeri, archetipi e vissuti interiori in strumenti concreti di lettura, scelta e cambiamento.</p>
         </div>
         <p>Ci sono momenti in cui continui a fare, decidere e andare avanti, ma manca una mappa interiore che ti aiuti a leggere quello che stai vivendo. Il mio lavoro nasce proprio qui: trasformare simboli e intuizioni in passi concreti.</p>
         <div class="chi-buttons">
-          <a href="#numerologia" class="btn btn--solid">Scopri il percorso piu adatto</a>
-          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20informazioni&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sul%20percorso%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi una prima disponibilita</a>
+          <a href="#numerologia" class="btn btn--solid">Scopri il percorso più adatto</a>
+          <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20informazioni&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20sul%20percorso%20pi%C3%B9%20adatto%20a%20me.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi una prima disponibilità</a>
         </div>
       </div>
 
@@ -917,7 +922,7 @@ def build_widget_html() -> dict[str, str]:
       </div>
     </div>
 
-    <p class="hero-quote"><em>Un viaggio dedicato a chi sente che manca qualcosa e desidera tornare a se con piu presenza, senso e consapevolezza.</em></p>
+    <p class="hero-quote"><em>Un viaggio dedicato a chi sente che manca qualcosa e desidera tornare a sé con più presenza, senso e consapevolezza.</em></p>
   </div>
 </section>
 
@@ -1024,7 +1029,7 @@ def build_widget_html() -> dict[str, str]:
   <div class="numerologia__header" data-aos="fade-down">
     <h2 class="numerologia__title">Scopri la tua missione dell&apos;anima con la Numerologia Indiana</h2>
     <p class="numerologia__lead">Quando vivi schemi che si ripetono o blocchi difficili da nominare, i numeri possono offrirti una chiave di lettura nuova e concreta.</p>
-    <p class="section-story">La numerologia indiana ti aiuta a riconoscere cicli, talenti interiori e punti di disequilibrio, cosi da rileggere la tua storia con piu chiarezza e direzione senza perdere il contatto con la tua esperienza concreta.</p>
+    <p class="section-story">La numerologia indiana ti aiuta a riconoscere cicli, talenti interiori e punti di disequilibrio così da rileggere la tua storia con più chiarezza e direzione senza perdere il contatto con la tua esperienza concreta.</p>
   </div>
 
   <div class="numerologia__summary">
@@ -1033,17 +1038,17 @@ def build_widget_html() -> dict[str, str]:
     </div>
 
     <div class="numerologia__text numerologia__text--compact card-pergamena" data-aos="fade-up" data-aos-delay="100">
-      <p><strong>Cos&apos;e?</strong><br>Una bussola sottile per il tuo viaggio interiore: il linguaggio dei numeri, delle date e dei nomi.</p>
-      <p><strong>Quando puo aiutarti?</strong><br>Quando senti che la tua storia ripete schemi, ma non riesci ancora a dare un nome preciso a cio che stai vivendo.</p>
+      <p><strong>Cos&apos;è?</strong><br>Una bussola sottile per il tuo viaggio interiore: il linguaggio dei numeri, delle date e dei nomi.</p>
+      <p><strong>Quando può aiutarti?</strong><br>Quando senti che la tua storia ripete schemi, ma non riesci ancora a dare un nome preciso a ciò che stai vivendo.</p>
       <ul class="numerologia__subpoints">
-        <li>Ti aiuta a leggere cicli e ricorrenze con maggiore lucidita</li>
+        <li>Ti aiuta a leggere cicli e ricorrenze con maggiore lucidità</li>
         <li>Rende visibili talenti interiori e punti di disequilibrio</li>
-        <li>Offre una chiave simbolica che puo diventare pratica quotidiana</li>
+        <li>Offre una chiave simbolica che può diventare pratica quotidiana</li>
       </ul>
       <div class="section-cta-row numerologia__actions">
         <a href="https://ilviaggioemozionale.it/negozio/" class="btn btn--solid">Approfondisci</a>
       </div>
-      <p class="numerologia__shop-note">Le risorse dedicate alla numerologia e il PDF completo vengono raccolti nello Shop del sito, cosi la home resta piu essenziale e orientata al percorso.</p>
+      <p class="numerologia__shop-note">Le risorse dedicate alla numerologia e il PDF completo vengono raccolti nello Shop del sito così la home resta più essenziale e orientata al percorso.</p>
     </div>
   </div>
 </section>
@@ -1055,7 +1060,8 @@ def build_widget_html() -> dict[str, str]:
         <span class="ritratto-kicker">Lettura numerologica personalizzata</span>
         <h2>Ritratto dell&apos;Anima</h2>
         <p class="ritratto-subtitle">Libro personale stampato &middot; 350 EUR</p>
-        <p>Il Ritratto dell&apos;Anima non e una semplice lettura numerologica. E un libro personale costruito su di te, che traduce numeri, simboli, cicli e vissuti in una mappa profonda della tua identita.</p>
+        <p>Il Ritratto dell&apos;Anima non è una semplice lettura numerologica.</p>
+        <p>È un libro personale costruito su di te che traduce numeri, simboli, cicli e vissuti in una mappa profonda della tua identità.</p>
         <p>Ogni Ritratto viene realizzato su richiesta, stampato e rilegato come un oggetto da conservare nel tempo.</p>
 
         <div class="ritratto-includes">
@@ -1067,7 +1073,7 @@ def build_widget_html() -> dict[str, str]:
             <li>Memorie e vite precedenti</li>
             <li>Archetipi guida e figura mitologica</li>
             <li>Talenti, blocchi e direzione evolutiva</li>
-            <li>Chakra e qualita energetica</li>
+            <li>Chakra e qualità energetica</li>
             <li>Cicli di vita e anno personale</li>
             <li>Carta oracolare canalizzata</li>
             <li>Animali totem e simboli guida</li>
@@ -1076,7 +1082,7 @@ def build_widget_html() -> dict[str, str]:
           </ul>
         </div>
 
-        <p class="ritratto-closing">Non e una lettura. E una mappa per muoverti davvero.</p>
+        <p class="ritratto-closing">Non è una lettura.<br>È una mappa per muoverti davvero.</p>
         <div class="ritratto-cta-row">
           <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20Ritratto%20dell%27Anima&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20Ritratto%20dell%27Anima%20Premium.%0D%0A%0D%0AGrazie" class="btn btn--primary ritratto-cta">Richiedi il tuo Ritratto dell&apos;Anima</a>
           <a href="/negozio/#ritratto-shop" class="ritratto-secondary-cta">Scopri tutte le opzioni</a>
@@ -1089,7 +1095,7 @@ def build_widget_html() -> dict[str, str]:
     </article>
 
     <div class="ritratto-testimonials" data-aos="fade-up">
-      <h3 class="ritratto-testimonials__title">Le parole di chi ha gia vissuto questo cammino</h3>
+      <h3 class="ritratto-testimonials__title">Le parole di chi ha già vissuto questo cammino</h3>
       <div class="ritratto-testimonial-grid">
         <blockquote class="ritratto-quote">
           <span class="ritratto-quote__badge" aria-hidden="true">
@@ -1099,7 +1105,7 @@ def build_widget_html() -> dict[str, str]:
             </svg>
             <span>Recensione</span>
           </span>
-          <p>&ldquo;E stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla e a caso.&rdquo;</p>
+          <p>&ldquo;È stata una vera e propria immersione in energia positiva, pulita, rassicurante. Torni a casa alleggerita e consapevole del fatto che davvero nulla è a caso.&rdquo;</p>
           <cite>Rita Adamo · recensione Google</cite>
         </blockquote>
         <blockquote class="ritratto-quote">
@@ -1121,11 +1127,11 @@ def build_widget_html() -> dict[str, str]:
             </svg>
             <span>Recensione</span>
           </span>
-          <p>&ldquo;E stato un piacevole e interessante confronto tra anime. Alessandro e stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
+          <p>&ldquo;È stato un piacevole e interessante confronto tra anime. Alessandro è stato bravo a condurre il gruppo verso un confronto sincero.&rdquo;</p>
           <cite>Marco Ferrari · recensione Google</cite>
         </blockquote>
       </div>
-      <p class="ritratto-note">Se hai gia ricevuto il tuo Ritratto dell&apos;Anima, racconta la tua esperienza con una testimonianza sincera: aiutera chi arriva qui a sentirsi rassicurato e accompagnato nella scelta.</p>
+      <p class="ritratto-note">Se hai già ricevuto il tuo Ritratto dell&apos;Anima, racconta la tua esperienza con una testimonianza sincera: aiuterà chi arriva qui a sentirsi rassicurato e accompagnato nella scelta.</p>
     </div>
   </div>
 </section>
@@ -1138,9 +1144,9 @@ def build_widget_html() -> dict[str, str]:
     <div class="tarocchi-header" data-aos="fade-up">
       <h2>Fai chiarezza nel presente con i Tarocchi Archetipici</h2>
       <p class="subtitle">Le carte non dicono il futuro: rendono visibile il passaggio interiore che oggi chiede attenzione.</p>
-      <p class="section-story">Quando senti che qualcosa non torna, una lettura simbolica puo aiutarti a nominare blocchi, desideri e movimenti profondi, trasformandoli in scelte piu consapevoli.</p>
+      <p class="section-story">Quando senti che qualcosa non torna, una lettura simbolica può aiutarti a nominare blocchi, desideri e movimenti profondi trasformandoli in scelte più consapevoli.</p>
       <div class="section-cta-row">
-        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20verificare%20una%20disponibilita%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi disponibilita</a>
+        <a href="mailto:info@alessandroveneziani.it?subject=Richiesta%20sessione%20Tarocchi%20Archetipici&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20o%20verificare%20una%20disponibilit%C3%A0%20per%20una%20sessione%20di%20Tarocchi%20Archetipici.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi disponibilità</a>
         <a href="https://www.paypal.com/paypalme/AVeneziani868/100EUR" class="btn btn--solid" target="_blank" rel="noopener noreferrer">Prenota una sessione</a>
       </div>
     </div>
@@ -1151,9 +1157,9 @@ def build_widget_html() -> dict[str, str]:
       </div>
 
       <div class="tarocchi-box" data-aos="fade-left" data-aos-delay="200">
-        <p><strong>Cos&apos;e?</strong><br>Un percorso intuitivo con i Tarocchi di Marsiglia per esplorare l&apos;adesso e dialogare con il tuo inconscio.</p>
-        <p><strong>Perche li uso?</strong><br>Mettono in relazione razionale e irrazionale e aiutano a comprendere bisogni, blocchi e passaggi evolutivi che spesso restano senza nome.</p>
-        <p><strong>Cosa puo portarti?</strong><br>Chiarezza sul momento attuale<br>Connessione con i tuoi archetipi<br>Una guida trasformativa, simbolica e concreta</p>
+        <p><strong>Cos&apos;è?</strong><br>Un percorso intuitivo con i Tarocchi di Marsiglia per esplorare l&apos;adesso e dialogare con il tuo inconscio.</p>
+        <p><strong>Perché li uso?</strong><br>Mettono in relazione razionale e irrazionale e aiutano a comprendere bisogni, blocchi e passaggi evolutivi che spesso restano senza nome.</p>
+        <p><strong>Cosa può portarti?</strong><br>Chiarezza sul momento attuale<br>Connessione con i tuoi archetipi<br>Una guida trasformativa, simbolica e concreta</p>
         <p class="tarocchi-price">Sessione individuale &middot; 100 EUR</p>
       </div>
     </div>
@@ -1165,7 +1171,7 @@ def build_widget_html() -> dict[str, str]:
 <section id="soul-design" class="soul-wrapper">
   <div class="section-header" data-aos="fade-down">
     <h2 class="section-title">Trasforma intuizioni confuse in scelte concrete con Soul Design</h2>
-    <p class="section-sub">Quando senti molto ma fai fatica a tradurre quella sensibilita in direzione, serve un ponte tra intuito e azione.</p>
+    <p class="section-sub">Quando senti molto ma fai fatica a tradurre quella sensibilità in direzione, serve un ponte tra intuito e azione.</p>
     <p class="section-story">Soul Design nasce per accompagnarti nelle relazioni, nel lavoro e nella crescita personale con una lettura simbolica che diventa pratica, orientamento e passi possibili.</p>
     <div class="section-cta-row">
       <a href="mailto:info@alessandroveneziani.it?subject=Accesso%20percorso%20Soul%20Design&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20maggiori%20informazioni%20per%20accedere%20al%20percorso%20Soul%20Design.%0D%0A%0D%0AGrazie" class="btn btn--outline">Richiedi accesso al percorso</a>
@@ -1175,14 +1181,14 @@ def build_widget_html() -> dict[str, str]:
 
   <div class="soul-content-row">
     <div class="soul-description-card" data-aos="fade-right" data-aos-delay="100">
-      <p><strong>Cos&apos;e:</strong> Una tecnica esclusiva creata da Alessandro Veneziani che crea un ponte tra razionale e irrazionale, tra intuito e azione.</p>
-      <p><strong>Perche:</strong> Per aiutarti ad agire concretamente nelle relazioni, nel lavoro e nella tua crescita personale e spirituale.</p>
+      <p><strong>Cos&apos;è:</strong> Una tecnica esclusiva creata da Alessandro Veneziani che crea un ponte tra razionale e irrazionale, tra intuito e azione.</p>
+      <p><strong>Perché:</strong> Per aiutarti ad agire concretamente nelle relazioni, nel lavoro e nella tua crescita personale e spirituale.</p>
       <p><strong>Cosa ottieni:</strong></p>
       <ul>
         <li>Percorso trasformativo personalizzato</li>
         <li>Connessione con la missione dell&apos;anima</li>
         <li>Guida simbolica e pratica per le tue scelte</li>
-        <li>Continuita nel tempo</li>
+        <li>Continuità nel tempo</li>
         <li>Lettura dei passaggi interiori mentre accadono</li>
       </ul>
     </div>
@@ -1194,10 +1200,10 @@ def build_widget_html() -> dict[str, str]:
 
   <div class="soul-pricing-card" data-aos="fade-up" data-aos-delay="120">
     <p><strong>Prima sessione Soul Design · 150 EUR</strong><br>Durata: 90 minuti</p>
-    <p>Un incontro piu lungo e strutturato per entrare davvero nella tua storia, leggere le dinamiche profonde e costruire una prima direzione chiara.</p>
+    <p>Un incontro più lungo e strutturato per entrare davvero nella tua storia, leggere le dinamiche profonde e costruire una prima direzione chiara.</p>
     <p><strong>Sessioni successive · 100 EUR</strong><br>Durata: 60 minuti</p>
-    <p>Incontri di continuita per approfondire cio che emerge, integrare le letture e trasformarle in scelte concrete.</p>
-    <p class="soul-price__note"><strong>Nota finale:</strong><br>Il Ritratto dell&apos;Anima puo essere integrato nel percorso come libro personale separato. Non e incluso automaticamente.</p>
+    <p>Incontri di continuità per approfondire ciò che emerge, integrare le letture e trasformarle in scelte concrete.</p>
+    <p class="soul-price__note"><strong>Nota finale:</strong><br>Il Ritratto dell&apos;Anima può essere integrato nel percorso come libro personale separato. Non è incluso automaticamente.</p>
   </div>
 </section>
 """.strip()
@@ -1206,7 +1212,7 @@ def build_widget_html() -> dict[str, str]:
 <section id="lab" class="lab-section soul-wrapper">
   <div class="lab-header" data-aos="fade-up">
     <h2 class="lab-title">Inizia il tuo viaggio interiore con il Laboratorio dell&apos;Anima</h2>
-    <p class="lab-subtitle">Una guida simbolica e pratica per quando senti che c&apos;e qualcosa di piu, ma non sai ancora da dove partire.</p>
+    <p class="lab-subtitle">Una guida simbolica e pratica per quando senti che c&apos;è qualcosa di più, ma non sai ancora da dove partire.</p>
     <p class="section-story">Tra mito, alchimia ed esercizi quotidiani, il Laboratorio dell&apos;Anima ti accompagna a trasformare intuizioni sparse in un percorso concreto di ascolto e cambiamento.</p>
     <div class="section-cta-row">
       <a href="https://www.paypal.com/paypalme/AVeneziani868/10EUR" class="btn btn--outline" target="_blank" rel="noopener noreferrer">Acquista PDF - 10 EUR</a>
@@ -1217,8 +1223,8 @@ def build_widget_html() -> dict[str, str]:
   <div class="lab-container">
     <div class="lab-text-box" data-aos="fade-right">
       <p><strong>Un libro simbolico e pratico che attraversa i tre stadi dell&apos;alchimia: Caduta, Risalita e Chiusura.</strong></p>
-      <p>Se senti che c&apos;e qualcosa di piu ma non sai da dove iniziare, qui trovi una mappa per dare forma al tuo lavoro interiore senza perderti in parole vuote.</p>
-      <p>In un tempo dominato da velocita, social e distrazioni, questo percorso ti riporta verso interiorita, presenza e trasformazione attraverso immagini, miti e pratica quotidiana.</p>
+      <p>Se senti che c&apos;è qualcosa di più ma non sai da dove iniziare, qui trovi una mappa per dare forma al tuo lavoro interiore senza perderti in parole vuote.</p>
+      <p>In un tempo dominato da velocità, social e distrazioni, questo percorso ti riporta verso interiorità, presenza e trasformazione attraverso immagini, miti e pratica quotidiana.</p>
 
       <p><strong>Cosa troverai al suo interno:</strong></p>
       <ul>
@@ -1259,7 +1265,8 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     <div class="shop-hero-inner">
       <span class="shop-kicker">NEGOZIO DEL VIAGGIO</span>
       <h1>Scegli come entrare nel tuo Viaggio</h1>
-      <p>Ogni percorso e una porta diversa. Sta a te scegliere da dove iniziare.</p>
+      <p>Ogni percorso è una porta diversa.</p>
+      <p>Sta a te scegliere da dove iniziare.</p>
     </div>
   </section>
 
@@ -1269,7 +1276,8 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
         <img src="https://ilviaggioemozionale.it/wp-content/uploads/2025/06/Matto.png" alt="Il Matto - simbolo del primo passo" loading="lazy" decoding="async">
       </div>
       <h2>Non sai da dove partire?</h2>
-      <p>Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>
+      <p>Ogni persona arriva in un momento diverso.</p>
+      <p>Scegli il punto più adatto al tuo passaggio.</p>
     </div>
 
     <div class="choice-grid">
@@ -1281,7 +1289,7 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
 
       <div class="choice-card featured-soft">
         <h3>Se vuoi essere guidato</h3>
-        <p>Scegli il Ritratto che senti piu vicino e affiancalo a una sessione personalizzata con Alessandro.</p>
+        <p>Scegli il Ritratto che senti più vicino e affiancalo a una sessione personalizzata con Alessandro.</p>
         <a href="#ritratto-shop" class="ive-btn">Vai alle opzioni</a>
       </div>
 
@@ -1293,14 +1301,14 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     </div>
 
     <div class="choice-help">
-      <a href="mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie">Scrivimi e ti aiuto a scegliere</a>
+      <a href="mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20%C3%A8%20pi%C3%B9%20adatto%20a%20me.%0D%0A%0D%0AGrazie">Scrivimi e ti aiuto a scegliere</a>
     </div>
   </section>
 
   <section class="ritratto-shop ive-shop-section ive-ritratto-options" id="ritratto-shop">
     <div class="shop-section-header ive-section-header">
       <span class="shop-kicker ive-kicker">RITRATTO DELL&apos;ANIMA</span>
-      <h2>Scegli il tuo livello di profondita</h2>
+      <h2>Scegli il tuo livello di profondità</h2>
       <p>Dal formato digitale al libro personale da custodire: ogni versione apre un modo diverso di attraversare la tua mappa simbolica.</p>
     </div>
 
@@ -1336,7 +1344,7 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
       <article class="ive-product-card ive-card-premium" id="ritratto-premium-card">
         <span class="ive-card-label">Premium</span>
         <h3>Ritratto dell&apos;Anima Premium</h3>
-        <p class="ive-card-subtitle">La versione piu completa e profonda del tuo percorso.</p>
+        <p class="ive-card-subtitle">La versione più completa e profonda del tuo percorso.</p>
         <p>Un libro personale costruito su di te: un viaggio completo tra numerologia, simboli e direzione evolutiva, pensato per accompagnarti nel tempo.</p>
         <ul>
           <li>Versione completa</li>
@@ -1349,13 +1357,13 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
     </div>
 
     <div class="ive-session-note" id="sessioni-ritratto">
-      <p>Ogni Ritratto puo essere affiancato a una sessione personalizzata con Alessandro Veneziani, per trasformare cio che emerge in direzione concreta.</p>
+      <p>Ogni Ritratto può essere affiancato a una sessione personalizzata con Alessandro Veneziani per trasformare ciò che emerge in direzione concreta.</p>
       <div class="ive-session-prices">
         30 minuti — 40 EUR<br>
         60 minuti — 80 EUR<br>
         <span>tariffa riservata in abbinamento al Ritratto</span>
       </div>
-      <p class="ive-final-line">Perche comprendere e solo l&apos;inizio.</p>
+      <p class="ive-final-line">Perché comprendere è solo l&apos;inizio.</p>
     </div>
   </section>
 
@@ -1365,7 +1373,8 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
         <span class="shop-kicker">VERSIONE PREMIUM</span>
         <h2>Ritratto dell&apos;Anima Premium</h2>
         <p class="premium-lead">Un libro personale pensato per essere custodito nel tempo.</p>
-        <p>Il Ritratto dell&apos;Anima Premium e la versione piu completa e profonda: un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
+        <p>Il Ritratto dell&apos;Anima Premium è la versione più completa e profonda.</p>
+        <p>È un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>
 
         <div class="premium-includes">
           <h3>Cosa include</h3>
@@ -1376,7 +1385,7 @@ def build_shop_content(product_links: dict[str, str], shop_bg_url: str) -> str:
             <li>Memorie e vite precedenti</li>
             <li>Archetipi guida e figura mitologica</li>
             <li>Talenti, blocchi e direzione evolutiva</li>
-            <li>Chakra e qualita energetica</li>
+            <li>Chakra e qualità energetica</li>
             <li>Cicli di vita e anno personale</li>
             <li>Carta oracolare canalizzata</li>
             <li>Animali totem e simboli guida</li>
@@ -1601,10 +1610,10 @@ def main() -> int:
             "siteseo_titles_title": "Percorsi di crescita personale | Il Viaggio Emozionale",
             "siteseo_titles_desc": "Tarocchi archetipici, numerologia indiana e Soul Design per ritrovare chiarezza, missione interiore e direzione nel tuo viaggio di crescita personale.",
             "siteseo_social_fb_title": "Ritrova la tua mappa interiore",
-            "siteseo_social_fb_desc": "Percorsi di crescita personale tra numeri, simboli e archetipi per chi sente che e tempo di tornare a se.",
+            "siteseo_social_fb_desc": "Percorsi di crescita personale tra numeri, simboli e archetipi per chi sente che è tempo di tornare a sé.",
             "siteseo_social_fb_img": home_social_image,
             "siteseo_social_twitter_title": "Ritrova la tua mappa interiore",
-            "siteseo_social_twitter_desc": "Percorsi di crescita personale tra numeri, simboli e archetipi per chi sente che e tempo di tornare a se.",
+            "siteseo_social_twitter_desc": "Percorsi di crescita personale tra numeri, simboli e archetipi per chi sente che è tempo di tornare a sé.",
             "siteseo_social_twitter_img": home_social_image,
         },
     )

@@ -640,3 +640,22 @@ Trentatreesimo aggiornamento live pubblicato il `2026-04-30`.
 - separati in modo piu netto i due comportamenti:
   - shop piu compatto
   - home piu ariosa
+
+## Home e Shop: correzione ortografica e pulizia della punteggiatura
+
+Trentaquattresimo aggiornamento live pubblicato il `2026-05-02`.
+
+- corretti gli accenti mancanti nei testi pubblici di home e shop
+- sistemate forme come:
+  - `è`
+  - `più`
+  - `profondità`
+  - `già`
+  - `così`
+  - `ciò`
+  - `qualità`
+  - `interiorità`
+  - `disponibilità`
+- rimosse le virgole superflue prima della congiunzione `e` nei testi aggiornati
+- spezzati alcuni paragrafi dopo il punto nei blocchi più densi per dare maggiore enfasi e leggibilità
+- riallineate anche le descrizioni principali del Ritratto e del Premium nello shop
