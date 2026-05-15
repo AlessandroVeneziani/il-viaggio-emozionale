@@ -1,0 +1,245 @@
+{
+  "id": 911,
+  "date": "2026-02-12T22:59:35",
+  "date_gmt": "2026-02-12T22:59:35",
+  "guid": {
+    "rendered": "https://ilviaggioemozionale.it/negozio/",
+    "raw": "https://ilviaggioemozionale.it/negozio/"
+  },
+  "modified": "2026-04-29T14:16:28",
+  "modified_gmt": "2026-04-29T14:16:28",
+  "password": "",
+  "slug": "negozio",
+  "status": "publish",
+  "type": "page",
+  "link": "https://ilviaggioemozionale.it/negozio/",
+  "title": {
+    "raw": "Shop percorsi e PDF",
+    "rendered": "Shop percorsi e PDF"
+  },
+  "content": {
+    "raw": "<!-- wp:html -->\n<style>body.page-id-911,\n.shop-page {\n  --shop-blue: #073b57;\n  --shop-gold: #c6a75e;\n  --shop-gold-deep: #9e7728;\n  --shop-ivory: #f8f3e8;\n  --shop-paper: #f4f1ea;\n  --shop-text: #4b3d34;\n}\n\n.shop-page {\n  background: transparent;\n  color: var(--shop-text);\n}\n\nbody.page-id-911,\nbody.page-id-911 .site {\n  background-color: var(--shop-ivory);\n  background-image: url(\"https://ilviaggioemozionale.it/wp-content/uploads/2026/04/sfondo-numeri.png\");\n  background-size: cover;\n  background-position: center top;\n  background-repeat: repeat-y;\n  background-attachment: fixed;\n}\n\nbody.page-id-911 .site-content,\nbody.page-id-911 .site-content > .ast-container,\nbody.page-id-911 .ast-container,\nbody.page-id-911 main,\nbody.page-id-911 article,\nbody.page-id-911 .entry-content,\nbody.page-id-911 .ast-plain-container,\nbody.page-id-911 .site-primary-container {\n  background: transparent !important;\n}\n\nbody.page-id-911 .site-content > .ast-container,\nbody.post-type-archive-product .site-content > .ast-container {\n  max-width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\nbody.post-type-archive-product .ast-woocommerce-container,\nbody.post-type-archive-product .ast-archive-description {\n  background: transparent;\n  box-shadow: none;\n  padding: 0 !important;\n  margin: 0;\n}\n\nbody.post-type-archive-product .woocommerce-result-count,\nbody.post-type-archive-product .woocommerce-ordering,\nbody.post-type-archive-product .woocommerce-products-header,\nbody.post-type-archive-product .woocommerce-info,\nbody.post-type-archive-product .woocommerce-pagination,\nbody.post-type-archive-product ul.products {\n  display: none !important;\n}\n\n.shop-page [id] {\n  scroll-margin-top: 120px;\n}\n\n.shop-page a {\n  color: inherit;\n  text-decoration: none;\n}\n\n.ive-shop-section {\n  background: rgba(248, 243, 232, 0.88);\n  padding: 100px 5%;\n}\n\n.shop-hero {\n  text-align: center;\n  position: relative;\n  overflow: hidden;\n}\n\n.shop-hero::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background-image:\n    linear-gradient(180deg, rgba(248, 243, 232, 0.88) 0%, rgba(248, 243, 232, 0.96) 100%),\n    url(\"https://ilviaggioemozionale.it/wp-content/uploads/2026/04/sfondo-numeri.png\");\n  background-size: cover;\n  background-position: center;\n  opacity: 0.28;\n  pointer-events: none;\n}\n\n.shop-hero-inner {\n  position: relative;\n  z-index: 1;\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n.shop-kicker {\n  display: inline-block;\n  color: var(--shop-gold-deep);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  margin-bottom: 18px;\n}\n\n.shop-hero h1 {\n  color: var(--shop-blue);\n  font-size: clamp(42px, 6vw, 76px);\n  line-height: 1.05;\n  margin: 0 0 24px;\n}\n\n.shop-hero p {\n  color: var(--shop-text);\n  font-size: 21px;\n  line-height: 1.65;\n  max-width: 760px;\n  margin: 0 auto;\n}\n\n.shop-section-header {\n  text-align: center;\n  max-width: 780px;\n  margin: 0 auto 54px;\n}\n\n.shop-section-header h2 {\n  color: var(--shop-blue);\n  font-size: clamp(34px, 4vw, 54px);\n  line-height: 1.1;\n  margin: 0 0 18px;\n}\n\n.shop-section-header p {\n  color: var(--shop-text);\n  font-size: 18px;\n  line-height: 1.65;\n  margin: 0;\n}\n\n.choice-grid {\n  max-width: 1100px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 28px;\n}\n\n.choice-card,\n.product-card,\n.resource-card,\n.final-cta-card {\n  background: var(--shop-paper);\n  border: 1px solid rgba(198, 167, 94, 0.42);\n  border-radius: 28px;\n  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.055);\n}\n\n.choice-card {\n  padding: 36px 30px;\n  text-align: center;\n}\n\n.choice-card h3 {\n  color: var(--shop-blue);\n  font-size: 25px;\n  margin: 0 0 12px;\n}\n\n.choice-card p {\n  color: var(--shop-text);\n  font-size: 16px;\n  line-height: 1.6;\n  margin: 0 0 24px;\n}\n\n.featured-soft {\n  transform: translateY(-8px);\n  border: 2px solid rgba(198, 167, 94, 0.68);\n}\n\n.choice-help {\n  text-align: center;\n  margin-top: 34px;\n}\n\n.choice-help a {\n  color: var(--shop-blue);\n  font-weight: 700;\n  text-decoration: none;\n  border-bottom: 1px solid rgba(198, 167, 94, 0.7);\n}\n\n.product-grid {\n  max-width: 1180px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 26px;\n}\n\n.product-card {\n  padding: 36px 30px;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n\n.product-card-featured {\n  transform: translateY(-12px);\n  border: 2px solid rgba(198, 167, 94, 0.75);\n  box-shadow: 0 28px 60px rgba(158, 119, 40, 0.14);\n}\n\n.product-card-premium {\n  background: linear-gradient(180deg, #fffdf7 0%, var(--shop-paper) 100%);\n  border: 2px solid rgba(198, 167, 94, 0.75);\n}\n\n.shop-badge {\n  display: inline-block;\n  width: fit-content;\n  background: var(--shop-gold-deep);\n  color: #fff;\n  border-radius: 999px;\n  padding: 8px 14px;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n  margin-bottom: 16px;\n}\n\n.product-label {\n  color: var(--shop-gold-deep);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  margin-bottom: 14px;\n}\n\n.product-card h3 {\n  color: var(--shop-blue);\n  font-size: 27px;\n  line-height: 1.15;\n  margin: 0 0 16px;\n}\n\n.product-card p {\n  color: var(--shop-text);\n  font-size: 16px;\n  line-height: 1.65;\n  margin: 0 0 20px;\n}\n\n.product-card ul {\n  padding-left: 20px;\n  margin: 0 0 24px;\n}\n\n.product-card li {\n  color: var(--shop-text);\n  font-size: 15px;\n  line-height: 1.55;\n  margin-bottom: 8px;\n}\n\n.product-price {\n  color: var(--shop-blue);\n  font-size: 28px;\n  font-weight: 800;\n  margin-top: auto;\n  margin-bottom: 22px;\n}\n\n.shop-quote {\n  text-align: center;\n  margin: 56px auto 0;\n  font-size: 22px;\n  font-style: italic;\n  color: #6b4f1d;\n  font-weight: 600;\n}\n\n.ive-btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 15px 26px;\n  border-radius: 999px;\n  background: var(--shop-gold-deep);\n  color: #fff !important;\n  text-decoration: none !important;\n  font-weight: 700;\n  box-shadow: 0 14px 28px rgba(158, 119, 40, 0.22);\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n\n.ive-btn:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 18px 34px rgba(158, 119, 40, 0.28);\n  color: #fff !important;\n}\n\n.ive-btn.secondary {\n  background: transparent;\n  color: var(--shop-blue) !important;\n  border: 1px solid rgba(198, 167, 94, 0.65);\n  box-shadow: none;\n}\n\n.ive-btn.secondary:hover {\n  background: rgba(198, 167, 94, 0.12);\n  color: var(--shop-blue) !important;\n}\n\n.premium-shop-card {\n  max-width: 1180px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: 1.15fr 0.85fr;\n  gap: 64px;\n  align-items: center;\n  background: var(--shop-paper);\n  border: 1px solid rgba(198, 167, 94, 0.48);\n  border-radius: 34px;\n  padding: 64px;\n  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.07);\n  position: relative;\n}\n\n.premium-shop-card::before {\n  content: \"\";\n  position: absolute;\n  inset: 18px;\n  border: 1px solid rgba(198, 167, 94, 0.22);\n  border-radius: 26px;\n  pointer-events: none;\n}\n\n.premium-shop-content,\n.premium-shop-visual {\n  position: relative;\n  z-index: 1;\n}\n\n.premium-shop-content h2 {\n  color: var(--shop-blue);\n  font-size: clamp(36px, 4vw, 58px);\n  line-height: 1.05;\n  margin: 0 0 18px;\n}\n\n.premium-shop-content p {\n  color: var(--shop-text);\n  font-size: 17px;\n  line-height: 1.75;\n}\n\n.premium-lead {\n  color: #6b4f1d !important;\n  font-size: 21px !important;\n  font-style: italic;\n  font-weight: 600;\n}\n\n.premium-includes {\n  margin-top: 34px;\n  padding: 30px;\n  background: rgba(255, 255, 255, 0.45);\n  border-left: 5px solid var(--shop-gold-deep);\n  border-radius: 22px;\n  border-top: 1px solid rgba(198, 167, 94, 0.25);\n  border-right: 1px solid rgba(198, 167, 94, 0.25);\n  border-bottom: 1px solid rgba(198, 167, 94, 0.25);\n}\n\n.premium-includes h3 {\n  color: var(--shop-blue);\n  font-size: 22px;\n  margin: 0 0 18px;\n}\n\n.premium-includes ul {\n  columns: 2;\n  column-gap: 34px;\n  padding-left: 20px;\n  margin: 0;\n}\n\n.premium-includes li {\n  margin-bottom: 8px;\n  break-inside: avoid;\n}\n\n.premium-options {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 22px;\n  margin-top: 34px;\n}\n\n.premium-option {\n  background: rgba(255, 255, 255, 0.48);\n  border: 1px solid rgba(198, 167, 94, 0.35);\n  border-radius: 22px;\n  padding: 28px;\n}\n\n.premium-option h3 {\n  color: var(--shop-blue);\n  font-size: 28px;\n  margin: 0 0 12px;\n}\n\n.premium-option p {\n  margin: 0 0 16px;\n}\n\n.premium-shop-visual {\n  display: flex;\n  justify-content: center;\n}\n\n.premium-shop-visual img {\n  width: 115%;\n  max-width: none;\n  filter: drop-shadow(0 24px 38px rgba(198, 167, 94, 0.28));\n}\n\n.resource-grid {\n  max-width: 1100px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 28px;\n}\n\n.resource-card {\n  padding: 38px;\n}\n\n.resource-card h3 {\n  color: var(--shop-blue);\n  font-size: 26px;\n  margin: 0 0 14px;\n}\n\n.resource-card p {\n  color: var(--shop-text);\n  line-height: 1.7;\n  margin: 0 0 24px;\n}\n\n.final-cta-card {\n  max-width: 900px;\n  margin: 0 auto;\n  text-align: center;\n  padding: 60px;\n  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.06);\n}\n\n.final-cta-card h2 {\n  color: var(--shop-blue);\n  font-size: clamp(34px, 4vw, 52px);\n  margin: 0 0 18px;\n}\n\n.final-cta-card p {\n  color: var(--shop-text);\n  font-size: 18px;\n  margin: 0 0 28px;\n}\n\n@media (max-width: 1100px) {\n  .product-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (max-width: 900px) {\n  body.page-id-911,\n  body.page-id-911 .site {\n    background-attachment: scroll;\n    background-position: center top;\n  }\n\n  .choice-grid,\n  .product-grid,\n  .premium-shop-card,\n  .premium-options,\n  .resource-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .product-card-featured,\n  .featured-soft {\n    transform: none;\n  }\n\n  .premium-shop-card {\n    padding: 38px 26px;\n  }\n\n  .premium-includes ul {\n    columns: 1;\n  }\n\n  .premium-shop-visual img {\n    width: 100%;\n    max-width: 360px;\n    margin: 0 auto;\n    display: block;\n  }\n\n  .ive-shop-section {\n    padding: 64px 20px;\n  }\n\n  .shop-hero p {\n    font-size: 18px;\n  }\n\n  .final-cta-card {\n    padding: 42px 28px;\n  }\n}</style>\n<div class=\"shop-page\">\n  <section class=\"shop-hero ive-shop-section\">\n    <div class=\"shop-hero-inner\">\n      <span class=\"shop-kicker\">SHOP PERCORSI E PDF</span>\n      <h1>Scegli come entrare nel tuo Viaggio</h1>\n      <p>Ogni percorso e una porta diversa. Sta a te scegliere da dove iniziare.</p>\n    </div>\n  </section>\n\n  <section class=\"shop-choice ive-shop-section\">\n    <div class=\"shop-section-header\">\n      <h2>Non sai da dove partire?</h2>\n      <p>Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>\n    </div>\n\n    <div class=\"choice-grid\">\n      <div class=\"choice-card\">\n        <h3>Se vuoi capire</h3>\n        <p>Inizia dal Ritratto Digitale.</p>\n        <a href=\"#ritratto-digitale\" class=\"ive-btn secondary\">Vai al Digitale</a>\n      </div>\n\n      <div class=\"choice-card featured-soft\">\n        <h3>Se vuoi essere guidato</h3>\n        <p>Scegli il Ritratto con guida da 30 minuti.</p>\n        <a href=\"#ritratto-guidato\" class=\"ive-btn\">Vai al Digitale Guidato</a>\n      </div>\n\n      <div class=\"choice-card\">\n        <h3>Se vuoi custodire</h3>\n        <p>Scegli lo Stampato o il Premium.</p>\n        <a href=\"#ritratto-premium\" class=\"ive-btn secondary\">Vai al Premium</a>\n      </div>\n    </div>\n\n    <div class=\"choice-help\">\n      <a href=\"mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie\">Scrivimi e ti aiuto a scegliere</a>\n    </div>\n  </section>\n\n  <section class=\"ritratto-shop ive-shop-section\" id=\"ritratto-shop\">\n    <div class=\"shop-section-header\">\n      <span class=\"shop-kicker\">RITRATTO DELL&apos;ANIMA</span>\n      <h2>Scegli il tuo livello di profondita</h2>\n      <p>Dal formato digitale al libro personale da custodire: ogni versione apre un modo diverso di attraversare la tua mappa simbolica.</p>\n    </div>\n\n    <div class=\"product-grid\">\n      <article class=\"product-card\" id=\"ritratto-digitale\">\n        <span class=\"product-label\">Digitale</span>\n        <h3>Ritratto via mail</h3>\n        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail.</p>\n        <ul>\n          <li>PDF personalizzato</li>\n          <li>Consegna via mail</li>\n          <li>Lettura numerologica e simbolica</li>\n        </ul>\n        <div class=\"product-price\">150 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=946\">Acquista il Digitale</a>\n      </article>\n\n      <article class=\"product-card product-card-featured\" id=\"ritratto-guidato\">\n        <span class=\"shop-badge\">Consigliato</span>\n        <span class=\"product-label\">Digitale Guidato</span>\n        <h3>Ritratto + 30 minuti</h3>\n        <p>Ricevi il PDF e lo attraversiamo insieme in una guida di 30 minuti.</p>\n        <ul>\n          <li>PDF personalizzato</li>\n          <li>Consegna via mail</li>\n          <li>30 minuti con Alessandro</li>\n        </ul>\n        <div class=\"product-price\">200 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=947\">Scegli il Guidato</a>\n      </article>\n\n      <article class=\"product-card\" id=\"ritratto-stampato\">\n        <span class=\"product-label\">Stampato</span>\n        <h3>Ritratto stampato</h3>\n        <p>Il tuo Ritratto prende forma su carta pergamena, rilegato a spirale.</p>\n        <ul>\n          <li>Ritratto stampato</li>\n          <li>Carta pergamena</li>\n          <li>Spedizione o ritiro in studio</li>\n        </ul>\n        <div class=\"product-price\">250 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=948\">Ricevi il tuo Ritratto</a>\n      </article>\n\n      <article class=\"product-card product-card-premium\" id=\"ritratto-premium-card\">\n        <span class=\"product-label\">Premium</span>\n        <h3>Ritratto Premium</h3>\n        <p>Un libro personale pensato per essere custodito nel tempo.</p>\n        <ul>\n          <li>Versione piu completa</li>\n          <li>Libro personale stampato e curato</li>\n          <li>Disponibile anche con guida da 1 ora</li>\n        </ul>\n        <div class=\"product-price\">da 350 EUR</div>\n        <a class=\"ive-btn\" href=\"#ritratto-premium\">Scopri il Premium</a>\n      </article>\n    </div>\n\n    <p class=\"shop-quote\">Non e solo una lettura. E un punto di svolta.</p>\n  </section>\n\n  <section class=\"premium-shop-section ive-shop-section\" id=\"ritratto-premium\">\n    <div class=\"premium-shop-card\">\n      <div class=\"premium-shop-content\">\n        <span class=\"shop-kicker\">VERSIONE PREMIUM</span>\n        <h2>Ritratto dell&apos;Anima Premium</h2>\n        <p class=\"premium-lead\">Un libro personale pensato per essere custodito nel tempo.</p>\n        <p>Il Ritratto dell&apos;Anima Premium e la versione piu completa e profonda: un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>\n\n        <div class=\"premium-includes\">\n          <h3>Cosa include</h3>\n          <ul>\n            <li>Profilo numerologico completo</li>\n            <li>Lettura astrologica narrativa e identitaria</li>\n            <li>Essenza e percorso karmico</li>\n            <li>Memorie e vite precedenti</li>\n            <li>Archetipi guida e figura mitologica</li>\n            <li>Talenti, blocchi e direzione evolutiva</li>\n            <li>Chakra e qualita energetica</li>\n            <li>Cicli di vita e anno personale</li>\n            <li>Carta oracolare canalizzata</li>\n            <li>Animali totem e simboli guida</li>\n            <li>Domande profonde per attivare il cambiamento</li>\n            <li>Sintesi finale del tuo percorso</li>\n          </ul>\n        </div>\n\n        <div class=\"premium-options\">\n          <div class=\"premium-option\">\n            <h3>Premium</h3>\n            <p>Libro personale stampato e curato, senza sessione.</p>\n            <div class=\"product-price\">350 EUR</div>\n            <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=949\">Richiedi il Premium</a>\n          </div>\n          <div class=\"premium-option\">\n            <h3>Premium Guidato</h3>\n            <p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>\n            <div class=\"product-price\">420 EUR</div>\n            <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=950\">Scegli il Premium Guidato</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"premium-shop-visual\">\n        <img src=\"https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png\" alt=\"Ritratto dell&apos;Anima Premium\">\n      </div>\n    </div>\n  </section>\n\n  <section class=\"resources-shop ive-shop-section\">\n    <div class=\"shop-section-header\">\n      <h2>Altri modi per entrare nel viaggio</h2>\n      <p>Risorse e percorsi per iniziare da una pratica, da una voce o da un ascolto.</p>\n    </div>\n\n    <div class=\"resource-grid\">\n      <article class=\"resource-card\">\n        <h3>Corso di Scrittura Automatica</h3>\n        <p>Un percorso per aprire il dialogo interiore e lasciare emergere parole, immagini e intuizioni senza forzatura.</p>\n        <a class=\"ive-btn secondary\" href=\"mailto:info@alessandroveneziani.it?subject=Richiesta%20corso%20di%20Scrittura%20Automatica&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20corso%20di%20Scrittura%20Automatica.%0D%0A%0D%0AGrazie\">Scopri il corso</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Meditazioni Guidate</h3>\n        <p>Tracce audio per accompagnarti nei momenti di ascolto, centratura e trasformazione.</p>\n        <a class=\"ive-btn secondary\" href=\"mailto:info@alessandroveneziani.it?subject=Richiesta%20Meditazioni%20Guidate&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sulle%20Meditazioni%20Guidate.%0D%0A%0D%0AGrazie\">Ascolta le meditazioni</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Tarocchi Archetipici</h3>\n        <p>Una sessione simbolica per leggere il momento che stai attraversando e portare chiarezza nel presente.</p>\n        <a class=\"ive-btn secondary\" href=\"/#tarocchi\">Prenota una sessione</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Soul Design</h3>\n        <p>Un percorso continuativo per trasformare intuizioni, blocchi e passaggi interiori in scelte concrete.</p>\n        <a class=\"ive-btn secondary\" href=\"/#soul-design\">Scopri il percorso</a>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"shop-final-cta ive-shop-section\">\n    <div class=\"final-cta-card\">\n      <h2>Il momento giusto non arriva. Lo scegli.</h2>\n      <p>Non serve fare tutto subito. Serve iniziare dal punto giusto.</p>\n      <a class=\"ive-btn\" href=\"mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie\">Inizia il tuo viaggio</a>\n    </div>\n  </section>\n</div>\n<!-- /wp:html -->",
+    "rendered": "\n<style>body.page-id-911,\n.shop-page {\n  --shop-blue: #073b57;\n  --shop-gold: #c6a75e;\n  --shop-gold-deep: #9e7728;\n  --shop-ivory: #f8f3e8;\n  --shop-paper: #f4f1ea;\n  --shop-text: #4b3d34;\n}\n\n.shop-page {\n  background: transparent;\n  color: var(--shop-text);\n}\n\nbody.page-id-911,\nbody.page-id-911 .site {\n  background-color: var(--shop-ivory);\n  background-image: url(\"https://ilviaggioemozionale.it/wp-content/uploads/2026/04/sfondo-numeri.png\");\n  background-size: cover;\n  background-position: center top;\n  background-repeat: repeat-y;\n  background-attachment: fixed;\n}\n\nbody.page-id-911 .site-content,\nbody.page-id-911 .site-content > .ast-container,\nbody.page-id-911 .ast-container,\nbody.page-id-911 main,\nbody.page-id-911 article,\nbody.page-id-911 .entry-content,\nbody.page-id-911 .ast-plain-container,\nbody.page-id-911 .site-primary-container {\n  background: transparent !important;\n}\n\nbody.page-id-911 .site-content > .ast-container,\nbody.post-type-archive-product .site-content > .ast-container {\n  max-width: 100%;\n  padding-left: 0;\n  padding-right: 0;\n}\n\nbody.post-type-archive-product .ast-woocommerce-container,\nbody.post-type-archive-product .ast-archive-description {\n  background: transparent;\n  box-shadow: none;\n  padding: 0 !important;\n  margin: 0;\n}\n\nbody.post-type-archive-product .woocommerce-result-count,\nbody.post-type-archive-product .woocommerce-ordering,\nbody.post-type-archive-product .woocommerce-products-header,\nbody.post-type-archive-product .woocommerce-info,\nbody.post-type-archive-product .woocommerce-pagination,\nbody.post-type-archive-product ul.products {\n  display: none !important;\n}\n\n.shop-page [id] {\n  scroll-margin-top: 120px;\n}\n\n.shop-page a {\n  color: inherit;\n  text-decoration: none;\n}\n\n.ive-shop-section {\n  background: rgba(248, 243, 232, 0.88);\n  padding: 100px 5%;\n}\n\n.shop-hero {\n  text-align: center;\n  position: relative;\n  overflow: hidden;\n}\n\n.shop-hero::before {\n  content: \"\";\n  position: absolute;\n  inset: 0;\n  background-image:\n    linear-gradient(180deg, rgba(248, 243, 232, 0.88) 0%, rgba(248, 243, 232, 0.96) 100%),\n    url(\"https://ilviaggioemozionale.it/wp-content/uploads/2026/04/sfondo-numeri.png\");\n  background-size: cover;\n  background-position: center;\n  opacity: 0.28;\n  pointer-events: none;\n}\n\n.shop-hero-inner {\n  position: relative;\n  z-index: 1;\n  max-width: 900px;\n  margin: 0 auto;\n}\n\n.shop-kicker {\n  display: inline-block;\n  color: var(--shop-gold-deep);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.14em;\n  text-transform: uppercase;\n  margin-bottom: 18px;\n}\n\n.shop-hero h1 {\n  color: var(--shop-blue);\n  font-size: clamp(42px, 6vw, 76px);\n  line-height: 1.05;\n  margin: 0 0 24px;\n}\n\n.shop-hero p {\n  color: var(--shop-text);\n  font-size: 21px;\n  line-height: 1.65;\n  max-width: 760px;\n  margin: 0 auto;\n}\n\n.shop-section-header {\n  text-align: center;\n  max-width: 780px;\n  margin: 0 auto 54px;\n}\n\n.shop-section-header h2 {\n  color: var(--shop-blue);\n  font-size: clamp(34px, 4vw, 54px);\n  line-height: 1.1;\n  margin: 0 0 18px;\n}\n\n.shop-section-header p {\n  color: var(--shop-text);\n  font-size: 18px;\n  line-height: 1.65;\n  margin: 0;\n}\n\n.choice-grid {\n  max-width: 1100px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(3, 1fr);\n  gap: 28px;\n}\n\n.choice-card,\n.product-card,\n.resource-card,\n.final-cta-card {\n  background: var(--shop-paper);\n  border: 1px solid rgba(198, 167, 94, 0.42);\n  border-radius: 28px;\n  box-shadow: 0 18px 42px rgba(0, 0, 0, 0.055);\n}\n\n.choice-card {\n  padding: 36px 30px;\n  text-align: center;\n}\n\n.choice-card h3 {\n  color: var(--shop-blue);\n  font-size: 25px;\n  margin: 0 0 12px;\n}\n\n.choice-card p {\n  color: var(--shop-text);\n  font-size: 16px;\n  line-height: 1.6;\n  margin: 0 0 24px;\n}\n\n.featured-soft {\n  transform: translateY(-8px);\n  border: 2px solid rgba(198, 167, 94, 0.68);\n}\n\n.choice-help {\n  text-align: center;\n  margin-top: 34px;\n}\n\n.choice-help a {\n  color: var(--shop-blue);\n  font-weight: 700;\n  text-decoration: none;\n  border-bottom: 1px solid rgba(198, 167, 94, 0.7);\n}\n\n.product-grid {\n  max-width: 1180px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(4, 1fr);\n  gap: 26px;\n}\n\n.product-card {\n  padding: 36px 30px;\n  position: relative;\n  display: flex;\n  flex-direction: column;\n}\n\n.product-card-featured {\n  transform: translateY(-12px);\n  border: 2px solid rgba(198, 167, 94, 0.75);\n  box-shadow: 0 28px 60px rgba(158, 119, 40, 0.14);\n}\n\n.product-card-premium {\n  background: linear-gradient(180deg, #fffdf7 0%, var(--shop-paper) 100%);\n  border: 2px solid rgba(198, 167, 94, 0.75);\n}\n\n.shop-badge {\n  display: inline-block;\n  width: fit-content;\n  background: var(--shop-gold-deep);\n  color: #fff;\n  border-radius: 999px;\n  padding: 8px 14px;\n  font-size: 12px;\n  font-weight: 700;\n  letter-spacing: 0.08em;\n  text-transform: uppercase;\n  margin-bottom: 16px;\n}\n\n.product-label {\n  color: var(--shop-gold-deep);\n  font-size: 13px;\n  font-weight: 700;\n  letter-spacing: 0.12em;\n  text-transform: uppercase;\n  margin-bottom: 14px;\n}\n\n.product-card h3 {\n  color: var(--shop-blue);\n  font-size: 27px;\n  line-height: 1.15;\n  margin: 0 0 16px;\n}\n\n.product-card p {\n  color: var(--shop-text);\n  font-size: 16px;\n  line-height: 1.65;\n  margin: 0 0 20px;\n}\n\n.product-card ul {\n  padding-left: 20px;\n  margin: 0 0 24px;\n}\n\n.product-card li {\n  color: var(--shop-text);\n  font-size: 15px;\n  line-height: 1.55;\n  margin-bottom: 8px;\n}\n\n.product-price {\n  color: var(--shop-blue);\n  font-size: 28px;\n  font-weight: 800;\n  margin-top: auto;\n  margin-bottom: 22px;\n}\n\n.shop-quote {\n  text-align: center;\n  margin: 56px auto 0;\n  font-size: 22px;\n  font-style: italic;\n  color: #6b4f1d;\n  font-weight: 600;\n}\n\n.ive-btn {\n  display: inline-flex;\n  align-items: center;\n  justify-content: center;\n  padding: 15px 26px;\n  border-radius: 999px;\n  background: var(--shop-gold-deep);\n  color: #fff !important;\n  text-decoration: none !important;\n  font-weight: 700;\n  box-shadow: 0 14px 28px rgba(158, 119, 40, 0.22);\n  transition: transform 0.2s ease, box-shadow 0.2s ease;\n}\n\n.ive-btn:hover {\n  transform: translateY(-2px);\n  box-shadow: 0 18px 34px rgba(158, 119, 40, 0.28);\n  color: #fff !important;\n}\n\n.ive-btn.secondary {\n  background: transparent;\n  color: var(--shop-blue) !important;\n  border: 1px solid rgba(198, 167, 94, 0.65);\n  box-shadow: none;\n}\n\n.ive-btn.secondary:hover {\n  background: rgba(198, 167, 94, 0.12);\n  color: var(--shop-blue) !important;\n}\n\n.premium-shop-card {\n  max-width: 1180px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: 1.15fr 0.85fr;\n  gap: 64px;\n  align-items: center;\n  background: var(--shop-paper);\n  border: 1px solid rgba(198, 167, 94, 0.48);\n  border-radius: 34px;\n  padding: 64px;\n  box-shadow: 0 26px 60px rgba(0, 0, 0, 0.07);\n  position: relative;\n}\n\n.premium-shop-card::before {\n  content: \"\";\n  position: absolute;\n  inset: 18px;\n  border: 1px solid rgba(198, 167, 94, 0.22);\n  border-radius: 26px;\n  pointer-events: none;\n}\n\n.premium-shop-content,\n.premium-shop-visual {\n  position: relative;\n  z-index: 1;\n}\n\n.premium-shop-content h2 {\n  color: var(--shop-blue);\n  font-size: clamp(36px, 4vw, 58px);\n  line-height: 1.05;\n  margin: 0 0 18px;\n}\n\n.premium-shop-content p {\n  color: var(--shop-text);\n  font-size: 17px;\n  line-height: 1.75;\n}\n\n.premium-lead {\n  color: #6b4f1d !important;\n  font-size: 21px !important;\n  font-style: italic;\n  font-weight: 600;\n}\n\n.premium-includes {\n  margin-top: 34px;\n  padding: 30px;\n  background: rgba(255, 255, 255, 0.45);\n  border-left: 5px solid var(--shop-gold-deep);\n  border-radius: 22px;\n  border-top: 1px solid rgba(198, 167, 94, 0.25);\n  border-right: 1px solid rgba(198, 167, 94, 0.25);\n  border-bottom: 1px solid rgba(198, 167, 94, 0.25);\n}\n\n.premium-includes h3 {\n  color: var(--shop-blue);\n  font-size: 22px;\n  margin: 0 0 18px;\n}\n\n.premium-includes ul {\n  columns: 2;\n  column-gap: 34px;\n  padding-left: 20px;\n  margin: 0;\n}\n\n.premium-includes li {\n  margin-bottom: 8px;\n  break-inside: avoid;\n}\n\n.premium-options {\n  display: grid;\n  grid-template-columns: 1fr 1fr;\n  gap: 22px;\n  margin-top: 34px;\n}\n\n.premium-option {\n  background: rgba(255, 255, 255, 0.48);\n  border: 1px solid rgba(198, 167, 94, 0.35);\n  border-radius: 22px;\n  padding: 28px;\n}\n\n.premium-option h3 {\n  color: var(--shop-blue);\n  font-size: 28px;\n  margin: 0 0 12px;\n}\n\n.premium-option p {\n  margin: 0 0 16px;\n}\n\n.premium-shop-visual {\n  display: flex;\n  justify-content: center;\n}\n\n.premium-shop-visual img {\n  width: 115%;\n  max-width: none;\n  filter: drop-shadow(0 24px 38px rgba(198, 167, 94, 0.28));\n}\n\n.resource-grid {\n  max-width: 1100px;\n  margin: 0 auto;\n  display: grid;\n  grid-template-columns: repeat(2, 1fr);\n  gap: 28px;\n}\n\n.resource-card {\n  padding: 38px;\n}\n\n.resource-card h3 {\n  color: var(--shop-blue);\n  font-size: 26px;\n  margin: 0 0 14px;\n}\n\n.resource-card p {\n  color: var(--shop-text);\n  line-height: 1.7;\n  margin: 0 0 24px;\n}\n\n.final-cta-card {\n  max-width: 900px;\n  margin: 0 auto;\n  text-align: center;\n  padding: 60px;\n  box-shadow: 0 20px 44px rgba(0, 0, 0, 0.06);\n}\n\n.final-cta-card h2 {\n  color: var(--shop-blue);\n  font-size: clamp(34px, 4vw, 52px);\n  margin: 0 0 18px;\n}\n\n.final-cta-card p {\n  color: var(--shop-text);\n  font-size: 18px;\n  margin: 0 0 28px;\n}\n\n@media (max-width: 1100px) {\n  .product-grid {\n    grid-template-columns: repeat(2, 1fr);\n  }\n}\n\n@media (max-width: 900px) {\n  body.page-id-911,\n  body.page-id-911 .site {\n    background-attachment: scroll;\n    background-position: center top;\n  }\n\n  .choice-grid,\n  .product-grid,\n  .premium-shop-card,\n  .premium-options,\n  .resource-grid {\n    grid-template-columns: 1fr;\n  }\n\n  .product-card-featured,\n  .featured-soft {\n    transform: none;\n  }\n\n  .premium-shop-card {\n    padding: 38px 26px;\n  }\n\n  .premium-includes ul {\n    columns: 1;\n  }\n\n  .premium-shop-visual img {\n    width: 100%;\n    max-width: 360px;\n    margin: 0 auto;\n    display: block;\n  }\n\n  .ive-shop-section {\n    padding: 64px 20px;\n  }\n\n  .shop-hero p {\n    font-size: 18px;\n  }\n\n  .final-cta-card {\n    padding: 42px 28px;\n  }\n}</style>\n<div class=\"shop-page\">\n  <section class=\"shop-hero ive-shop-section\">\n    <div class=\"shop-hero-inner\">\n      <span class=\"shop-kicker\">SHOP PERCORSI E PDF</span>\n      <h1>Scegli come entrare nel tuo Viaggio</h1>\n      <p>Ogni percorso e una porta diversa. Sta a te scegliere da dove iniziare.</p>\n    </div>\n  </section>\n\n  <section class=\"shop-choice ive-shop-section\">\n    <div class=\"shop-section-header\">\n      <h2>Non sai da dove partire?</h2>\n      <p>Ogni persona arriva in un momento diverso. Scegli il punto piu adatto al tuo passaggio.</p>\n    </div>\n\n    <div class=\"choice-grid\">\n      <div class=\"choice-card\">\n        <h3>Se vuoi capire</h3>\n        <p>Inizia dal Ritratto Digitale.</p>\n        <a href=\"#ritratto-digitale\" class=\"ive-btn secondary\">Vai al Digitale</a>\n      </div>\n\n      <div class=\"choice-card featured-soft\">\n        <h3>Se vuoi essere guidato</h3>\n        <p>Scegli il Ritratto con guida da 30 minuti.</p>\n        <a href=\"#ritratto-guidato\" class=\"ive-btn\">Vai al Digitale Guidato</a>\n      </div>\n\n      <div class=\"choice-card\">\n        <h3>Se vuoi custodire</h3>\n        <p>Scegli lo Stampato o il Premium.</p>\n        <a href=\"#ritratto-premium\" class=\"ive-btn secondary\">Vai al Premium</a>\n      </div>\n    </div>\n\n    <div class=\"choice-help\">\n      <a href=\"mailto:info@alessandroveneziani.it?subject=Aiuto%20scelta%20percorso&#038;body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20capire%20quale%20percorso%20o%20prodotto%20e%20piu%20adatto%20a%20me.%0D%0A%0D%0AGrazie\">Scrivimi e ti aiuto a scegliere</a>\n    </div>\n  </section>\n\n  <section class=\"ritratto-shop ive-shop-section\" id=\"ritratto-shop\">\n    <div class=\"shop-section-header\">\n      <span class=\"shop-kicker\">RITRATTO DELL&apos;ANIMA</span>\n      <h2>Scegli il tuo livello di profondita</h2>\n      <p>Dal formato digitale al libro personale da custodire: ogni versione apre un modo diverso di attraversare la tua mappa simbolica.</p>\n    </div>\n\n    <div class=\"product-grid\">\n      <article class=\"product-card\" id=\"ritratto-digitale\">\n        <span class=\"product-label\">Digitale</span>\n        <h3>Ritratto via mail</h3>\n        <p>Ricevi il tuo Ritratto in formato PDF, direttamente via mail.</p>\n        <ul>\n          <li>PDF personalizzato</li>\n          <li>Consegna via mail</li>\n          <li>Lettura numerologica e simbolica</li>\n        </ul>\n        <div class=\"product-price\">150 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=946\">Acquista il Digitale</a>\n      </article>\n\n      <article class=\"product-card product-card-featured\" id=\"ritratto-guidato\">\n        <span class=\"shop-badge\">Consigliato</span>\n        <span class=\"product-label\">Digitale Guidato</span>\n        <h3>Ritratto + 30 minuti</h3>\n        <p>Ricevi il PDF e lo attraversiamo insieme in una guida di 30 minuti.</p>\n        <ul>\n          <li>PDF personalizzato</li>\n          <li>Consegna via mail</li>\n          <li>30 minuti con Alessandro</li>\n        </ul>\n        <div class=\"product-price\">200 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=947\">Scegli il Guidato</a>\n      </article>\n\n      <article class=\"product-card\" id=\"ritratto-stampato\">\n        <span class=\"product-label\">Stampato</span>\n        <h3>Ritratto stampato</h3>\n        <p>Il tuo Ritratto prende forma su carta pergamena, rilegato a spirale.</p>\n        <ul>\n          <li>Ritratto stampato</li>\n          <li>Carta pergamena</li>\n          <li>Spedizione o ritiro in studio</li>\n        </ul>\n        <div class=\"product-price\">250 EUR</div>\n        <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=948\">Ricevi il tuo Ritratto</a>\n      </article>\n\n      <article class=\"product-card product-card-premium\" id=\"ritratto-premium-card\">\n        <span class=\"product-label\">Premium</span>\n        <h3>Ritratto Premium</h3>\n        <p>Un libro personale pensato per essere custodito nel tempo.</p>\n        <ul>\n          <li>Versione piu completa</li>\n          <li>Libro personale stampato e curato</li>\n          <li>Disponibile anche con guida da 1 ora</li>\n        </ul>\n        <div class=\"product-price\">da 350 EUR</div>\n        <a class=\"ive-btn\" href=\"#ritratto-premium\">Scopri il Premium</a>\n      </article>\n    </div>\n\n    <p class=\"shop-quote\">Non e solo una lettura. E un punto di svolta.</p>\n  </section>\n\n  <section class=\"premium-shop-section ive-shop-section\" id=\"ritratto-premium\">\n    <div class=\"premium-shop-card\">\n      <div class=\"premium-shop-content\">\n        <span class=\"shop-kicker\">VERSIONE PREMIUM</span>\n        <h2>Ritratto dell&apos;Anima Premium</h2>\n        <p class=\"premium-lead\">Un libro personale pensato per essere custodito nel tempo.</p>\n        <p>Il Ritratto dell&apos;Anima Premium e la versione piu completa e profonda: un libro personale costruito su di te, stampato e curato come un oggetto simbolico da conservare, rileggere e ritrovare nel tempo.</p>\n\n        <div class=\"premium-includes\">\n          <h3>Cosa include</h3>\n          <ul>\n            <li>Profilo numerologico completo</li>\n            <li>Lettura astrologica narrativa e identitaria</li>\n            <li>Essenza e percorso karmico</li>\n            <li>Memorie e vite precedenti</li>\n            <li>Archetipi guida e figura mitologica</li>\n            <li>Talenti, blocchi e direzione evolutiva</li>\n            <li>Chakra e qualita energetica</li>\n            <li>Cicli di vita e anno personale</li>\n            <li>Carta oracolare canalizzata</li>\n            <li>Animali totem e simboli guida</li>\n            <li>Domande profonde per attivare il cambiamento</li>\n            <li>Sintesi finale del tuo percorso</li>\n          </ul>\n        </div>\n\n        <div class=\"premium-options\">\n          <div class=\"premium-option\">\n            <h3>Premium</h3>\n            <p>Libro personale stampato e curato, senza sessione.</p>\n            <div class=\"product-price\">350 EUR</div>\n            <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=949\">Richiedi il Premium</a>\n          </div>\n          <div class=\"premium-option\">\n            <h3>Premium Guidato</h3>\n            <p>Libro personale premium + 1 ora di spiegazione con Alessandro.</p>\n            <div class=\"product-price\">420 EUR</div>\n            <a class=\"ive-btn\" href=\"/pagamento/?add-to-cart=950\">Scegli il Premium Guidato</a>\n          </div>\n        </div>\n      </div>\n\n      <div class=\"premium-shop-visual\">\n        <img decoding=\"async\" src=\"https://ilviaggioemozionale.it/wp-content/uploads/2025/06/ritratto-dellanima-copertina.png\" alt=\"Ritratto dell&apos;Anima Premium\">\n      </div>\n    </div>\n  </section>\n\n  <section class=\"resources-shop ive-shop-section\">\n    <div class=\"shop-section-header\">\n      <h2>Altri modi per entrare nel viaggio</h2>\n      <p>Risorse e percorsi per iniziare da una pratica, da una voce o da un ascolto.</p>\n    </div>\n\n    <div class=\"resource-grid\">\n      <article class=\"resource-card\">\n        <h3>Corso di Scrittura Automatica</h3>\n        <p>Un percorso per aprire il dialogo interiore e lasciare emergere parole, immagini e intuizioni senza forzatura.</p>\n        <a class=\"ive-btn secondary\" href=\"mailto:info@alessandroveneziani.it?subject=Richiesta%20corso%20di%20Scrittura%20Automatica&#038;body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sul%20corso%20di%20Scrittura%20Automatica.%0D%0A%0D%0AGrazie\">Scopri il corso</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Meditazioni Guidate</h3>\n        <p>Tracce audio per accompagnarti nei momenti di ascolto, centratura e trasformazione.</p>\n        <a class=\"ive-btn secondary\" href=\"mailto:info@alessandroveneziani.it?subject=Richiesta%20Meditazioni%20Guidate&#038;body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20ricevere%20informazioni%20sulle%20Meditazioni%20Guidate.%0D%0A%0D%0AGrazie\">Ascolta le meditazioni</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Tarocchi Archetipici</h3>\n        <p>Una sessione simbolica per leggere il momento che stai attraversando e portare chiarezza nel presente.</p>\n        <a class=\"ive-btn secondary\" href=\"/#tarocchi\">Prenota una sessione</a>\n      </article>\n      <article class=\"resource-card\">\n        <h3>Soul Design</h3>\n        <p>Un percorso continuativo per trasformare intuizioni, blocchi e passaggi interiori in scelte concrete.</p>\n        <a class=\"ive-btn secondary\" href=\"/#soul-design\">Scopri il percorso</a>\n      </article>\n    </div>\n  </section>\n\n  <section class=\"shop-final-cta ive-shop-section\">\n    <div class=\"final-cta-card\">\n      <h2>Il momento giusto non arriva. Lo scegli.</h2>\n      <p>Non serve fare tutto subito. Serve iniziare dal punto giusto.</p>\n      <a class=\"ive-btn\" href=\"mailto:info@alessandroveneziani.it?subject=Inizio%20percorso%20Il%20Viaggio%20Emozionale&#038;body=Ciao%20Alessandro,%0D%0A%0D%0AVorrei%20iniziare%20il%20mio%20percorso%20e%20capire%20da%20dove%20partire.%0D%0A%0D%0AGrazie\">Inizia il tuo viaggio</a>\n    </div>\n  </section>\n</div>\n",
+    "protected": false,
+    "block_version": 1
+  },
+  "excerpt": {
+    "raw": "Acquista PDF, sessioni e strumenti simbolici per il tuo viaggio interiore: numerologia indiana, tarocchi archetipici, Soul Design e risorse evolutive.",
+    "rendered": "<p>Acquista PDF, sessioni e strumenti simbolici per il tuo viaggio interiore: numerologia indiana, tarocchi archetipici, Soul Design e risorse evolutive.</p>\n",
+    "protected": false
+  },
+  "author": 1,
+  "featured_media": 0,
+  "parent": 0,
+  "menu_order": 0,
+  "comment_status": "closed",
+  "ping_status": "closed",
+  "template": "",
+  "meta": {
+    "pagelayer_contact_templates": [],
+    "_pagelayer_content": "",
+    "site-sidebar-layout": "default",
+    "site-content-layout": "",
+    "ast-site-content-layout": "default",
+    "site-content-style": "default",
+    "site-sidebar-style": "default",
+    "ast-global-header-display": "",
+    "ast-banner-title-visibility": "",
+    "ast-main-header-display": "",
+    "ast-hfb-above-header-display": "",
+    "ast-hfb-below-header-display": "",
+    "ast-hfb-mobile-header-display": "",
+    "site-post-title": "",
+    "ast-breadcrumbs-content": "",
+    "ast-featured-img": "",
+    "footer-sml-layout": "",
+    "theme-transparent-header-meta": "",
+    "adv-header-id-meta": "",
+    "stick-header-meta": "",
+    "header-above-stick-meta": "",
+    "header-main-stick-meta": "",
+    "header-below-stick-meta": "",
+    "astra-migrate-meta-layouts": "default",
+    "ast-page-background-enabled": "default",
+    "ast-page-background-meta": {
+      "desktop": {
+        "background-color": "var(--ast-global-color-5)",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      },
+      "tablet": {
+        "background-color": "",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      },
+      "mobile": {
+        "background-color": "",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      }
+    },
+    "ast-content-background-meta": {
+      "desktop": {
+        "background-color": "var(--ast-global-color-4)",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      },
+      "tablet": {
+        "background-color": "var(--ast-global-color-4)",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      },
+      "mobile": {
+        "background-color": "var(--ast-global-color-4)",
+        "background-image": "",
+        "background-repeat": "repeat",
+        "background-position": "center center",
+        "background-size": "auto",
+        "background-attachment": "scroll",
+        "background-type": "",
+        "background-media": "",
+        "overlay-type": "",
+        "overlay-color": "",
+        "overlay-opacity": "",
+        "overlay-gradient": ""
+      }
+    },
+    "footnotes": "",
+    "_elementor_edit_mode": "",
+    "_elementor_template_type": "",
+    "_elementor_data": "",
+    "_elementor_page_settings": null,
+    "_elementor_conditions": []
+  },
+  "permalink_template": "https://ilviaggioemozionale.it/%pagename%/",
+  "generated_slug": "shop-percorsi-e-pdf",
+  "class_list": [
+    "post-911",
+    "page",
+    "type-page",
+    "status-publish",
+    "hentry"
+  ],
+  "_links": {
+    "self": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911",
+        "targetHints": {
+          "allow": [
+            "GET",
+            "POST",
+            "PUT",
+            "PATCH",
+            "DELETE"
+          ]
+        }
+      }
+    ],
+    "collection": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages"
+      }
+    ],
+    "about": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/types/page"
+      }
+    ],
+    "author": [
+      {
+        "embeddable": true,
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/users/1"
+      }
+    ],
+    "replies": [
+      {
+        "embeddable": true,
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/comments?post=911"
+      }
+    ],
+    "version-history": [
+      {
+        "count": 6,
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911/revisions"
+      }
+    ],
+    "predecessor-version": [
+      {
+        "id": 960,
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911/revisions/960"
+      }
+    ],
+    "wp:attachment": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/media?parent=911"
+      }
+    ],
+    "wp:action-publish": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911"
+      }
+    ],
+    "wp:action-unfiltered-html": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911"
+      }
+    ],
+    "wp:action-assign-author": [
+      {
+        "href": "https://ilviaggioemozionale.it/wp-json/wp/v2/pages/911"
+      }
+    ],
+    "curies": [
+      {
+        "name": "wp",
+        "href": "https://api.w.org/{rel}",
+        "templated": true
+      }
+    ]
+  }
+}
