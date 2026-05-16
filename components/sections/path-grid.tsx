@@ -9,15 +9,22 @@ import { featuredPaths } from "@/content/site-content";
 import { cn } from "@/lib/utils";
 
 export function PathGrid() {
+  const isSinglePath = featuredPaths.length === 1;
+
   return (
     <section className="section-shell py-24 sm:py-32">
       <Container>
         <SectionHeading
-          eyebrow="Tre percorsi"
-          title="Tre accessi diversi alla chiarezza"
-          description="Un ritratto identitario, una progettazione simbolica dello spazio e una lettura del presente: tre modi diversi per rendere più leggibile ciò che stai vivendo."
+          eyebrow="Percorsi"
+          title="Altri modi per leggere il presente"
+          description="Quando hai bisogno di un orientamento più immediato o di un punto d'ingresso diverso nel metodo, puoi partire da qui."
         />
-        <div className="mt-16 grid gap-6 lg:grid-cols-3">
+        <div
+          className={cn(
+            "mt-16 grid gap-6",
+            isSinglePath ? "mx-auto max-w-[440px]" : "lg:grid-cols-3",
+          )}
+        >
           {featuredPaths.map((path, index) => (
             <Reveal key={path.title} delay={index * 0.08}>
               <SurfaceCard className="group flex h-full flex-col overflow-hidden p-0 transition duration-300 hover:-translate-y-1 hover:border-gold/40">
@@ -38,8 +45,6 @@ export function PathGrid() {
                     sizes="(max-width: 1024px) 70vw, 24vw"
                     className={cn(
                       "relative z-10 w-auto object-contain saturate-[0.88] brightness-[0.98] contrast-[0.95] drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)] transition duration-300 group-hover:scale-[1.02]",
-                      path.title === "Ritratto dell'Anima" && "h-[230px] sm:h-[250px]",
-                      path.title === "Soul Design" && "h-[235px] sm:h-[260px]",
                       path.title === "Lettura Evolutiva" && "h-[250px] sm:h-[280px]",
                     )}
                   />
@@ -106,6 +111,11 @@ export function PathGrid() {
               </SurfaceCard>
             </Reveal>
           ))}
+        </div>
+        <div className="mt-8 flex justify-center">
+          <ButtonLink href="/percorsi" variant="ghost" size="sm">
+            Vedi tutti i percorsi
+          </ButtonLink>
         </div>
       </Container>
     </section>

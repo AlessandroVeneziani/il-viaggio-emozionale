@@ -15,7 +15,10 @@ export function GoogleReviewsReadySection() {
               title={googleReviewsSection.title}
               description={googleReviewsSection.description}
             />
-            <div className="mt-6">
+            <div className="mt-6 flex flex-wrap gap-3">
+              <ButtonLink href={googleReviewsSection.profileHref} variant="secondary">
+                {googleReviewsSection.profileLabel}
+              </ButtonLink>
               <ButtonLink href={googleReviewsSection.cta.href} variant="secondary">
                 {googleReviewsSection.cta.label}
               </ButtonLink>
@@ -31,22 +34,25 @@ export function GoogleReviewsReadySection() {
                   </p>
                   <div className="mt-4 flex items-end gap-4">
                     <span className="font-display text-[3.15rem] leading-none text-ivory">
-                      4.9
+                      {googleReviewsSection.ratingValue}
                     </span>
                     <div className="pb-1">
                       <p className="text-sm tracking-[0.3em] text-gold">★★★★★</p>
                       <p className="mt-2 text-sm text-ivory/64">
-                        Recensioni verificabili e collegabili al profilo reale
+                        {googleReviewsSection.ratingLabel} · {googleReviewsSection.reviewCount}
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-3 text-[0.72rem] uppercase tracking-[0.22em] text-ivory/62">
-                  <span className="border-b border-gold/14 pb-1">Profilo reale</span>
-                  <span className="border-b border-gold/14 pb-1">Estratti sobri</span>
-                  <span className="border-b border-gold/14 pb-1">Verifica diretta</span>
+                  <span className="border-b border-gold/14 pb-1">Google</span>
+                  <span className="border-b border-gold/14 pb-1">Trustindex</span>
+                  <span className="border-b border-gold/14 pb-1">Verificabile</span>
                 </div>
               </div>
+              <p className="mt-4 max-w-[56ch] text-sm leading-7 text-ivory/60">
+                {googleReviewsSection.verifiedNote}
+              </p>
             </Reveal>
 
             {googleReviewsSection.snippets.map((item, index) => (
@@ -60,7 +66,7 @@ export function GoogleReviewsReadySection() {
                       <div className="flex flex-wrap items-center gap-3">
                         <p className="text-sm font-semibold text-ivory/88">{item.label}</p>
                         <span className="text-[10px] font-semibold uppercase tracking-[0.2em] text-gold/78">
-                          Verificata
+                          {item.meta}
                         </span>
                       </div>
                       <p className="mt-2 text-sm tracking-[0.24em] text-gold">★★★★★</p>

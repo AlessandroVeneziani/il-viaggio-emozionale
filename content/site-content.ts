@@ -2,9 +2,9 @@ export const homeHero = {
   kicker: "Metodo simbolico contemporaneo",
   title: "Non sei confuso. Stai attraversando un passaggio.",
   seoLine:
-    "Il Viaggio Emozionale nasce per trasformare ciò che senti confuso in una mappa più chiara: attraverso numerologia evolutiva, tarocchi archetipici, Soul Design e percorsi simbolici di orientamento personale.",
+    "Il Viaggio Emozionale nasce per rendere più leggibile ciò che stai vivendo: attraverso numerologia evolutiva, lettura archetipica, Soul Design e percorsi simbolici di orientamento personale.",
   subtitle:
-    "Qui non trovi predizioni da consumare in fretta. Trovi un metodo per leggere il presente, dare senso a ciò che si ripete e ritrovare una direzione personale più leggibile.",
+    "Qui non trovi predizioni da consumare in fretta. Trovi un metodo per leggere il presente, riconoscere ciò che si ripete e ritrovare una direzione personale più chiara.",
   primaryCta: {
     label: "Scopri il tuo Ritratto dell'Anima",
     href: "/ritratto-dell-anima",
@@ -50,40 +50,6 @@ export const methodSteps = [
 
 export const featuredPaths = [
   {
-    title: "Ritratto dell'Anima",
-    problem:
-      "Quando senti di vivere una fase di confusione o di svolta e hai bisogno di capire meglio chi sei e cosa si sta muovendo sotto la superficie.",
-    transformation:
-      "Una mappa identitaria per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo.",
-    audience:
-      "Per chi sente di essere in una fase di svolta e vuole una lettura identitaria profonda da rileggere nel tempo.",
-    href: "/ritratto-dell-anima",
-    kicker: "Mappa identitaria",
-    image: "/images/brand/ritratto-dell-anima.png",
-    imageAlt: "Copertina del Ritratto dell'Anima",
-    duration: "Consegna personale su richiesta",
-    format: "Digitale, stampato o premium",
-    investment: "Da 150 €",
-    ctaLabel: "Scopri il Ritratto",
-  },
-  {
-    title: "Soul Design",
-    problem:
-      "Quando il problema non è soltanto quello che stai vivendo, ma il fatto che lo spazio intorno a te non ti rappresenta più.",
-    transformation:
-      "Una progettazione identitaria dello spazio per ricostruire coerenza tra ambiente, percezione e presenza.",
-    audience:
-      "Per chi sente disallineamento tra identità e ambiente e vuole ritrovare una forma più leggibile del proprio passaggio.",
-    href: "/soul-design",
-    kicker: "Identità e spazio",
-    image: "/images/brand/mondo.png",
-    imageAlt: "Il Mondo come simbolo del percorso Soul Design",
-    duration: "Percorso su richiesta",
-    format: "Lettura simbolica e progettazione identitaria",
-    investment: "Scopri il percorso",
-    ctaLabel: "Scopri il Soul Design",
-  },
-  {
     title: "Lettura Evolutiva",
     problem:
       "Quando il presente è pieno di nodi, blocchi emotivi o relazioni che si ripetono e serve uno sguardo chiaro per leggere il momento.",
@@ -101,6 +67,24 @@ export const featuredPaths = [
     ctaLabel: "Scopri la lettura",
   },
 ] as const;
+
+export const ritrattoHomeSpotlight = {
+  eyebrow: "Ritratto dell'Anima",
+  title: "Capire chi sei è il primo modo per dare struttura a ciò che stai vivendo.",
+  description:
+    "Una mappa identitaria per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo. Il Ritratto dell'Anima nasce per restituire leggibilità al presente, non per aggiungere mistero.",
+  lines: [
+    "Non è una predizione. È una lettura della tua struttura personale.",
+    "Numeri, cicli e simboli diventano una forma più chiara del passaggio che stai vivendo.",
+    "Il Ritratto aiuta a collegare intuizione, identità e direzione concreta.",
+  ],
+  cta: {
+    label: "Scopri il Ritratto",
+    href: "/ritratto-dell-anima",
+  },
+  image: "/images/brand/ritratto-dell-anima.png",
+  imageAlt: "Copertina del Ritratto dell'Anima come mappa identitaria del progetto",
+};
 
 export const numerologySpotlight = {
   eyebrow: "Numerologia evolutiva",
@@ -152,10 +136,10 @@ export const testimonialsNote =
   "Questa sezione può essere sostituita progressivamente con recensioni reali, autorizzate e verificabili, mantenendo lo stesso tono sobrio.";
 
 export const founderPreview = {
-  title: "Un metodo che tiene insieme simbolo e concretezza",
+  title: "Ricerca simbolica contemporanea, tradotta in orientamento",
   body: [
-    "Il mio lavoro nasce dall'incontro tra ricerca simbolica, formazione accademica e capacità di tradurre l'invisibile in scelte leggibili.",
-    "Non offro formule astratte. Costruisco mappe. Per aiutarti a leggere ciò che stai vivendo con più presenza, visione e direzione.",
+    "Osservo da anni passaggi, ripetizioni, crisi e soglie dell'esperienza umana attraverso numeri, archetipi e linguaggi simbolici.",
+    "Il mio lavoro non nasce per rassicurare o impressionare. Nasce per rendere leggibile il presente e aiutarti a trasformarlo in scelta, presenza e direzione.",
   ],
   cta: {
     label: "Conosci il mio percorso",
@@ -165,14 +149,14 @@ export const founderPreview = {
 
 export const finalCta = {
   title: "Quando il passaggio è chiaro, anche la scelta diventa più semplice.",
-  body: "Non serve fare tutto subito. Serve iniziare dal percorso che oggi può aiutarti a vedere meglio.",
+  body: "Non serve avere già tutte le risposte. Serve iniziare dal punto che oggi può aiutarti a vedere meglio.",
   primary: {
-    label: "Inizia dal Ritratto dell'Anima",
-    href: "/ritratto-dell-anima",
+    label: "Inizia il tuo percorso",
+    href: "/contatti",
   },
   secondary: {
-    label: "Vai ai contatti",
-    href: "/contatti",
+    label: "Scopri il Ritratto",
+    href: "/ritratto-dell-anima",
   },
 };
 
@@ -219,7 +203,7 @@ export const experiencesToolsSection = {
   description:
     "Laboratorio dell'Anima, meditazioni guidate e strumenti editoriali nascono per accompagnare il metodo fuori dalla lettura e renderlo abitabile nel quotidiano.",
   closing:
-    "Non contenuti da consumare velocemente. Ma forme di continuità, presenza e integrazione.",
+    "Non prodotti da consumare velocemente. Ma strumenti di integrazione, presenza e continuità.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -687,23 +671,33 @@ export const aboutPage = {
 
 export const googleReviewsSection = {
   eyebrow: "Trust",
-  title: "Recensioni verificabili e riscontri concreti",
+  title: "Recensioni Google verificabili",
   description:
-    "Prima di scegliere un percorso puoi vedere il riscontro di chi ha già lavorato con il metodo. Nessuna testimonianza costruita. Solo segnali di fiducia sobri e leggibili.",
+    "Prima di scegliere un percorso puoi vedere un riscontro reale del metodo. Nessuna testimonianza costruita: solo recensioni Google e segnali di fiducia verificabili.",
+  ratingLabel: "Eccellente",
+  ratingValue: "5.0",
+  reviewCount: "27 recensioni",
+  profileHref:
+    "https://www.google.com/search?q=Il+Viaggio+Emozionale+Alessandro+Veneziani+recensioni+google",
+  profileLabel: "Apri la scheda Google",
+  verifiedNote: "Fonte originale verificata da Google tramite Trustindex.",
   cta: {
-    label: "Trova orientamento",
+    label: "Scrivimi",
     href: "/contatti",
   },
   snippets: [
     {
-      initials: "SR",
-      label: "Da Google",
-      body: "Mi ha aiutata a mettere ordine in un momento confuso.",
+      initials: "DP",
+      label: "Daniela Pellegrini",
+      meta: "Google · 28/02/2024",
+      body: "Mi sono sentita fortemente accolta.",
     },
     {
-      initials: "MV",
-      label: "Da Google",
-      body: "Più una mappa che un consulto. Chiaro, profondo e leggibile.",
+      initials: "AS",
+      label: "Antonella Scabbia",
+      meta: "Google · 29/02/2024",
+      body:
+        "Esperienza interessante oltre che rilassante. Alessandro con il suo savoir faire ci ha confortati ed accolti.",
     },
   ],
 };
