@@ -244,90 +244,99 @@ export const experiencesToolsSection = {
 
 export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
-  title: "Quando il problema non è la casa. È che non ti rappresenta più.",
+  title: "Quando ciò che vivi chiede una forma più leggibile.",
   description:
-    "Lo spazio in cui vivi influenza il modo in cui pensi, senti e attraversi la vita. Il Soul Design nasce per ricostruire coerenza tra identità, spazio e presenza.",
+    "Il Soul Design è il nucleo metodologico che collega identità, simboli, relazioni e presenza. Nasce per ricostruire coerenza tra ciò che senti, il linguaggio con cui ti racconti e la direzione che stai cercando.",
   lines: [
-    "Ci sono spazi che arredano. E spazi che ti rimettono in asse.",
-    "Lo spazio non è solo sfondo. Può diventare una parte attiva della tua lucidità.",
-    "Quando identità e ambiente tornano coerenti, anche il passaggio interiore diventa più leggibile.",
+    "Non tutte le crisi chiedono soluzioni. Alcune chiedono un nuovo linguaggio.",
+    "Quando identità e presenza si disallineano, anche le scelte diventano opache.",
+    "Il Soul Design lavora su questa soglia: trasformare confusione in struttura.",
   ],
   cta: {
     label: "Scopri il Soul Design",
     href: "/soul-design",
   },
   image: "/images/brand/mondo.png",
-  imageAlt: "Il Mondo come simbolo di identità, spazio e presenza",
+  imageAlt: "Il Mondo come simbolo di identità, presenza e trasformazione leggibile",
 };
 
 export const soulDesignPage = {
   hero: {
-    kicker: "Transformational interior identity",
+    kicker: "Progettazione simbolica della presenza",
     title: "Soul Design",
     subtitle:
-      "Un percorso simbolico per ricostruire coerenza tra identità, spazio e presenza.",
+      "Un metodo per ricostruire coerenza tra identità, presenza, linguaggio personale e direzione.",
   },
   intro: [
-    "Ci sono spazi che arredano. E spazi che ti rimettono in asse.",
-    "Il Soul Design nasce quando il problema non è la casa in sé, ma il fatto che non ti rappresenta più. È un lavoro simbolico e percettivo che aiuta a ricostruire coerenza tra ciò che senti, ciò che vivi e l'ambiente che ti contiene.",
+    "Il Soul Design nasce da un'idea semplice: molte persone non hanno bisogno di un'altra spiegazione emotiva. Hanno bisogno di una forma più leggibile di sé.",
+    "È il punto in cui identità, simboli, relazioni, ritmo e presenza smettono di essere frammenti separati e tornano a comporre una struttura. Non per definirti in modo rigido, ma per aiutarti a riconoscere chi stai diventando.",
   ],
   whatItIs: {
-    title: "Non interior design classico. Una forma di riallineamento simbolico.",
+    title: "Non design degli spazi. Progettazione simbolica della presenza.",
     paragraphs: [
-      "Lo spazio in cui vivi influenza il modo in cui pensi, senti e attraversi la vita. Per questo identità, ambiente, passaggi interiori e presenza non sono elementi separati.",
-      "Il Soul Design nasce per leggere queste connessioni e restituire una forma più chiara al rapporto tra la persona e il suo spazio. Non decora. Interpreta, riallinea e rende abitabile ciò che oggi appare disperso.",
+      "Il Soul Design non parte da stanze, arredi o armonizzazioni estetiche. Parte da una domanda più profonda: dove si è interrotta la coerenza tra ciò che senti, il modo in cui vivi e la direzione che stai cercando.",
+      "Per questo il lavoro non è psicologico in senso clinico e non è esoterico in senso spettacolare. È simbolico, antropologico e orientativo: un metodo per restituire leggibilità a ciò che oggi appare disperso.",
     ],
   },
   includes: [
     {
       title: "Identità",
-      text: "Leggere chi sei oggi e quale cambiamento sta chiedendo una forma più coerente e più respirabile.",
+      text: "Riconoscere la forma che stai assumendo oggi e il punto in cui la tua identità chiede più coerenza.",
     },
     {
-      title: "Spazio",
-      text: "Osservare l'ambiente come estensione della tua presenza, non come semplice contenitore estetico.",
+      title: "Linguaggio",
+      text: "Dare un nome più preciso a ciò che stai vivendo, senza lasciarlo nel rumore o nell'indistinto.",
     },
     {
       title: "Simbolo",
-      text: "Riconoscere forme, oggetti, percezioni e atmosfere che raccontano più di quanto sembri.",
+      text: "Leggere immagini ricorrenti, passaggi e nuclei di significato che stanno cercando forma nella tua esperienza.",
     },
     {
-      title: "Percezione",
-      text: "Comprendere come il tuo spazio incida sul ritmo mentale, emotivo e relazionale che stai vivendo.",
+      title: "Relazioni",
+      text: "Comprendere come i legami, gli attriti e le ripetizioni partecipino alla tua struttura di vita attuale.",
     },
     {
-      title: "Presenza",
-      text: "Restituire allo spazio una funzione trasformativa: sostenere il passaggio invece di amplificare il disallineamento.",
+      title: "Direzione",
+      text: "Trasformare la lettura in orientamento concreto, presenza e decisione più leggibile.",
     },
   ],
   arrivals: [
     "momenti di confusione",
-    "la sensazione che la casa non ti rappresenti più",
     "passaggi identitari o relazionali profondi",
-    "un cambiamento già iniziato che non ha ancora trovato forma",
-    "ambienti che confondono invece di sostenere",
-    "il desiderio di sentirti di nuovo presente nello spazio che vivi",
+    "schemi che si ripetono e non trovano ancora una lettura chiara",
     "nuovi inizi che chiedono un linguaggio più coerente",
-    "momenti in cui il fuori non rispecchia più il dentro",
-    "una ricerca di ordine, significato e orientamento",
+    "la sensazione di vivere senza una struttura che ti rappresenti più",
+    "momenti in cui ciò che senti e ciò che fai non coincidono più",
+    "un desiderio di direzione più forte del bisogno di motivazione",
+    "blocchi interiori che chiedono interpretazione, non rumore",
+    "una ricerca di ordine, significato e presenza",
   ],
   approach: {
     title: "Ogni lettura comincia dall'ascolto.",
     paragraphs: [
-      "Non esiste una formula valida per ogni spazio e per ogni persona. Il Soul Design non è consulenza arredo e non nasce per aggiungere oggetti o stile a una stanza.",
-      "Nasce per ricostruire coerenza tra identità, ambiente e presenza. Per aiutarti a sentire quando il problema non è la casa. È che non ti rappresenta più.",
+      "Non esiste una formula che valga per tutti. Il Soul Design non nasce per offrirti una nuova estetica personale, ma un nuovo modo di leggere la tua struttura di vita.",
+      "Lavora sulla coerenza tra identità, presenza, relazioni e direzione. Se il contesto esterno entra nel percorso, entra come conseguenza di questo riallineamento, non come punto di partenza.",
     ],
     principles: [
-      "Nessuna estetica fine a sé stessa",
-      "Nessuna spiritualità teatrale",
-      "Più coerenza tra spazio e identità",
-      "Più presenza, orientamento e respiro",
+      "Nessun linguaggio teatrale",
+      "Nessuna dipendenza dal metodo",
+      "Più struttura e meno rumore",
+      "Più presenza, orientamento e direzione concreta",
+    ],
+  },
+  fragments: {
+    title: "Frammenti",
+    items: [
+      "Le persone non soffrono solo per ciò che vivono. Soffrono perché non riescono più a leggerlo.",
+      "Molte crisi non chiedono soluzioni. Chiedono un nuovo linguaggio.",
+      "Quando la struttura si chiarisce, anche la scelta smette di sembrare lontana.",
+      "Non tutto va risolto subito. Alcune cose vanno prima interpretate meglio.",
     ],
   },
   ecosystem: {
     title: "Un metodo che prende forme diverse.",
     description:
-      "Il Soul Design non vive isolato. Dialoga con Ritratto dell'Anima, meditazioni, percorsi e strumenti editoriali come area più sensoriale e trasformativa del progetto.",
+      "Il Soul Design non è un ramo laterale del progetto. È una delle forme più distintive attraverso cui il metodo prende corpo e diventa orientamento concreto.",
     items: [
       {
         title: "Ritratto dell'Anima",
@@ -352,9 +361,9 @@ export const soulDesignPage = {
     ],
   },
   finalCta: {
-    title: "A volte non serve cambiare casa. Serve capire perché non ti rispecchia più.",
+    title: "A volte il primo riallineamento non è fuori. È nel modo in cui torni a leggerti.",
     body:
-      "Se senti che il tuo spazio non sostiene più il momento che stai vivendo, possiamo partire da lì. Non per arredare meglio. Per ritrovare coerenza, presenza e direzione.",
+      "Se senti che qualcosa nella tua struttura di vita non ti rappresenta più, possiamo partire da lì. Non per aggiungere teoria. Per restituire leggibilità, presenza e direzione.",
     primary: {
       label: "Esplora il Soul Design",
       href: "/contatti",
@@ -824,10 +833,10 @@ export const blogPosts = [
 
 export const contactPage = {
   hero: {
-    kicker: "Contatto diretto",
+    kicker: "Contatto riservato",
     title: "Contatti",
     subtitle:
-      "Se senti che è il momento di iniziare, scrivimi. Capiremo insieme quale percorso può accompagnarti meglio.",
+      "Se senti che è il momento di dare un nome a ciò che stai vivendo, scrivimi.",
   },
   methods: [
     {
@@ -841,11 +850,11 @@ export const contactPage = {
       href: "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20informazioni.",
     },
     {
-      label: "Telefono",
-      value: "+39 392 912 4461",
-      href: "tel:+393929124461",
+      label: "Disponibilità",
+      value: "Percorsi e sessioni solo su appuntamento.",
+      href: "mailto:info@alessandroveneziani.it?subject=Richiesta%20disponibilit%C3%A0",
     },
   ],
   intro:
-    "Scrivimi se senti che è il momento di dare un nome a ciò che stai vivendo. Ti aiuterò a capire da quale porta entrare.",
+    "Se senti che è il momento di dare un nome a ciò che stai vivendo, scrivimi. Ti aiuterò a capire da quale punto può essere più giusto iniziare.",
 };

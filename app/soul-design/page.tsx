@@ -54,7 +54,7 @@ export default function SoulDesignPage() {
               </div>
               <p className="mt-6 max-w-[32ch] text-sm leading-7 text-ivory/62">
                 Non si tratta di dirti chi sarai. Si tratta di leggere con più
-                chiarezza chi stai diventando.
+                chiarezza la forma che oggi la tua identità sta cercando.
               </p>
             </div>
           </div>
@@ -92,9 +92,9 @@ export default function SoulDesignPage() {
                 Gli strumenti del metodo
               </h2>
               <p className="mt-5 max-w-[34ch] text-base leading-[1.9] text-ivory/72">
-                Numerologia, archetipi, ascolto simbolico e tarocchi evolutivi
-                non sono linguaggi separati. Sono modi diversi di leggere lo
-                stesso passaggio.
+                Identità, simboli, relazioni, linguaggio personale e direzione
+                non sono elementi separati. Sono modi diversi di leggere lo
+                stesso passaggio e renderlo più coerente.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">
@@ -107,6 +107,28 @@ export default function SoulDesignPage() {
                     {item.text}
                   </p>
                 </div>
+              ))}
+            </div>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-shell py-12 sm:py-18">
+        <Container>
+          <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
+            <div>
+              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+                {soulDesignPage.fragments.title}
+              </p>
+            </div>
+            <div className="grid gap-5 sm:grid-cols-2">
+              {soulDesignPage.fragments.items.map((item) => (
+                <p
+                  key={item}
+                  className="border-t border-gold/10 pt-5 font-display text-[1.35rem] leading-[1.5] text-ivory/84 sm:text-[1.55rem]"
+                >
+                  {item}
+                </p>
               ))}
             </div>
           </div>
