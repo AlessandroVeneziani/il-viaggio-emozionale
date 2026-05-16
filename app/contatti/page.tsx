@@ -1,17 +1,10 @@
-import { ArrowUpRight, Mail, MessageCircle, Clock3 } from "lucide-react";
+import { ArrowUpRight } from "lucide-react";
 
 import { Container } from "@/components/ui/container";
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
-import { SurfaceCard } from "@/components/ui/surface-card";
 import { contactPage, contactReasons } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
-
-const icons = {
-  Email: Mail,
-  WhatsApp: MessageCircle,
-  Disponibilità: Clock3,
-} as const;
 
 export const metadata = buildMetadata({
   title: contactPage.hero.title,
@@ -26,7 +19,7 @@ export default function ContactPage() {
 
       <section className="section-shell py-16 sm:py-20">
         <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
+          <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="border-t border-gold/10 pt-8">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Studio privato
@@ -47,28 +40,26 @@ export default function ContactPage() {
               </div>
               <p className="mt-8 max-w-[34ch] text-sm leading-7 text-ivory/60">
                 Se non sai da quale percorso partire, puoi scrivermi liberamente.
-                Il primo obiettivo non è venderti qualcosa, ma capire cosa stai
-                vivendo e quale linguaggio può aiutarti di più.
+                Il primo obiettivo non è proporti qualcosa in fretta, ma capire
+                cosa stai vivendo e quale accesso può essere più giusto per te.
               </p>
             </div>
 
-            <SurfaceCard className="p-8 sm:p-10 lg:p-12">
+            <div className="border-t border-gold/10 pt-8 lg:pl-8">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                Contatti
+                Contatto riservato
               </p>
-              <div className="mt-8 space-y-7">
+              <p className="mt-5 max-w-[30ch] font-display text-[2rem] leading-[1.12] text-ivory sm:text-[2.5rem]">
+                Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.
+              </p>
+              <div className="mt-10 space-y-8">
               {contactPage.methods.map((method) => {
-                const Icon = icons[method.label as keyof typeof icons];
-
                 return (
                   <div key={method.label} className="border-t border-gold/10 pt-6">
-                    <div className="inline-flex rounded-full border border-gold/20 bg-gold/10 p-3 text-gold">
-                      <Icon size={18} />
-                    </div>
-                    <p className="mt-6 text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       {method.label}
                     </p>
-                    <p className="mt-4 max-w-[30ch] text-lg leading-[1.8] text-ivory/80 break-words">
+                    <p className="mt-4 max-w-[34ch] text-lg leading-[1.8] text-ivory/80 break-words">
                       {method.value}
                     </p>
                     <a
@@ -85,7 +76,7 @@ export default function ContactPage() {
                 );
               })}
               </div>
-            </SurfaceCard>
+            </div>
           </div>
         </Container>
       </section>

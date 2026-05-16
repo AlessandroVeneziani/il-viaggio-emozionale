@@ -53,8 +53,9 @@ export default function SoulDesignPage() {
                 />
               </div>
               <p className="mt-6 max-w-[32ch] text-sm leading-7 text-ivory/62">
-                Non si tratta di dirti chi sarai. Si tratta di leggere con più
-                chiarezza la forma che oggi la tua identità sta cercando.
+                Non si tratta di reinventarti. Si tratta di coordinare meglio
+                le parti che già ti abitano e chiedono una direzione più
+                coerente.
               </p>
             </div>
           </div>
@@ -89,12 +90,12 @@ export default function SoulDesignPage() {
                 Cosa include
               </p>
               <h2 className="mt-5 max-w-[12ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
-                Gli strumenti del metodo
+                Le parti che il metodo aiuta a coordinare
               </h2>
               <p className="mt-5 max-w-[34ch] text-base leading-[1.9] text-ivory/72">
-                Identità, simboli, relazioni, linguaggio personale e direzione
-                non sono elementi separati. Sono modi diversi di leggere lo
-                stesso passaggio e renderlo più coerente.
+                Il Soul Design guarda la persona come una struttura viva. Non
+                una voce sola, ma un insieme di parti che hanno bisogno di
+                tornare a dialogare.
               </p>
             </div>
             <div className="grid gap-6 sm:grid-cols-2">

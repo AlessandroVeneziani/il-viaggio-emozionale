@@ -66,7 +66,7 @@ export default function LetturaEvolutivaPage() {
                 ))}
               </ul>
               <div className="mt-8">
-                <ButtonLink href="/contatti">Prenota una lettura</ButtonLink>
+                <ButtonLink href="/contatti">Prenota una sessione</ButtonLink>
               </div>
             </SurfaceCard>
           </div>
@@ -74,7 +74,7 @@ export default function LetturaEvolutivaPage() {
       </section>
 
       <GenericFinalCta
-        title="La lettura evolutiva non ti dice cosa credere. Ti aiuta a vedere meglio il punto in cui sei."
+        title="Il Percorso Evolutivo non ti dice cosa credere. Ti aiuta a vedere meglio il punto in cui sei."
         body="Se stai attraversando un nodo, una scelta o un passaggio emotivo importante, possiamo leggerlo insieme con più lucidità."
         primary={{ label: "Scrivimi per prenotare", href: "/contatti" }}
         secondary={{ label: "Scopri il Ritratto dell'Anima", href: "/ritratto-dell-anima" }}

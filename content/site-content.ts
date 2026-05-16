@@ -2,7 +2,7 @@ export const homeHero = {
   kicker: "Metodo simbolico contemporaneo",
   title: "Non sei confuso. Stai attraversando un passaggio.",
   seoLine:
-    "Il Viaggio Emozionale nasce per rendere più leggibile ciò che stai vivendo: attraverso numerologia evolutiva, lettura archetipica, Soul Design e percorsi simbolici di orientamento personale.",
+    "Il Viaggio Emozionale nasce per rendere più leggibile ciò che stai vivendo: attraverso Ritratto dell'Anima, numerologia evolutiva, Soul Design e Percorso Evolutivo.",
   subtitle:
     "Qui non trovi predizioni da consumare in fretta. Trovi un metodo per leggere il presente, riconoscere ciò che si ripete e ritrovare una direzione personale più chiara.",
   primaryCta: {
@@ -10,14 +10,14 @@ export const homeHero = {
     href: "/ritratto-dell-anima",
   },
   secondaryCta: {
-    label: "Prenota una lettura",
+    label: "Prenota una sessione",
     href: "/lettura-evolutiva",
   },
   softBridge: "Non sai da dove iniziare? Raccontami cosa stai vivendo.",
   whatYouFind: [
     "Ritratto dell'Anima",
-    "Numerologia Evolutiva",
-    "Lettura Evolutiva",
+    "Soul Design",
+    "Percorso Evolutivo",
   ],
 };
 
@@ -50,48 +50,10 @@ export const methodSteps = [
 
 export const featuredPaths = [
   {
-    title: "Ritratto dell'Anima",
-    kicker: "Mappa identitaria",
-    summary:
-      "Una lettura personale che unisce numeri, simboli e passaggi interiori per dare forma leggibile a ciò che stai vivendo.",
-    problem:
-      "Quando senti di essere in una fase di svolta e hai bisogno di comprendere meglio chi sei, cosa si sta muovendo e quale direzione sta emergendo.",
-    transformation:
-      "Porta chiarezza, struttura e linguaggio a ciò che prima restava confuso.",
-    audience:
-      "Per chi sente che la propria storia contiene già una direzione, ma non riesce ancora a leggerla con abbastanza precisione.",
-    href: "/ritratto-dell-anima",
-    image: "/images/brand/ritratto-dell-anima.png",
-    imageAlt: "Ritratto dell'Anima come mappa identitaria del percorso",
-    detailLabel: "Investimento",
-    detailValue: "Da 150 €",
-    ctaLabel: "Scopri il Ritratto",
-  },
-  {
-    title: "Soul Design",
-    kicker: "Integrazione simbolica",
-    summary:
-      "Un lavoro di lettura e ricomposizione simbolica per riportare coerenza tra identità, scelte, presenza e direzione personale.",
-    problem:
-      "Quando hai già compreso qualcosa di importante, ma senti che deve diventare più concreto nella tua vita quotidiana.",
-    transformation:
-      "Trasforma intuizioni, simboli e passaggi interiori in una forma più abitabile, leggibile e orientata.",
-    audience:
-      "Per chi non cerca un altro servizio standard, ma un percorso costruito sul proprio momento e sulla propria struttura di vita.",
-    href: "/soul-design",
-    image: "/images/brand/mondo.png",
-    imageAlt: "Il Mondo come simbolo di integrazione e presenza",
-    detailLabel: "Percorso",
-    detailValue: "Personalizzato su richiesta",
-    detailNote:
-      "Il Soul Design viene costruito in base al momento, alla profondità del lavoro e alla continuità del percorso.",
-    ctaLabel: "Scopri il Soul Design",
-  },
-  {
-    title: "Lettura Evolutiva",
+    title: "Percorso Evolutivo",
     kicker: "Orientamento del presente",
     summary:
-      "Una sessione per leggere il presente, dare un nome ai nodi emotivi o decisionali e ritrovare una direzione più chiara.",
+      "Una sessione per leggere il presente, dare un nome ai nodi emotivi o decisionali e trasformare intuizioni e simboli in direzione concreta.",
     problem:
       "Quando il presente è pieno di segnali, blocchi, ripetizioni o relazioni che chiedono una lettura più lucida.",
     transformation:
@@ -100,22 +62,22 @@ export const featuredPaths = [
       "Per chi ha bisogno di fare chiarezza su un passaggio preciso e orientarsi meglio nelle scelte immediate.",
     href: "/lettura-evolutiva",
     image: "/images/brand/matto.png",
-    imageAlt: "Carta del Matto dei Tarocchi",
+    imageAlt: "Carta del Matto come simbolo di orientamento del presente",
     detailLabel: "Investimento",
     detailValue: "100 €",
-    ctaLabel: "Prenota una lettura",
+    ctaLabel: "Prenota una sessione",
   },
 ] as const;
 
 export const ritrattoHomeSpotlight = {
   eyebrow: "Ritratto dell'Anima",
-  title: "Capire chi sei è il primo modo per dare struttura a ciò che stai vivendo.",
+  title: "Comprendere da dove parti.",
   description:
-    "Una mappa identitaria per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo. Il Ritratto dell'Anima nasce per restituire leggibilità al presente, non per aggiungere mistero.",
+    "Una mappa identitaria per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo. Il Ritratto dell'Anima non aggiunge mistero: restituisce struttura, linguaggio e orientamento al tuo passaggio.",
   lines: [
     "Non è una predizione. È una lettura della tua struttura personale.",
-    "Numeri, cicli e simboli diventano una forma più chiara del passaggio che stai vivendo.",
-    "Il Ritratto aiuta a collegare intuizione, identità e direzione concreta.",
+    "Numeri, cicli e simboli diventano una mappa più chiara del passaggio che stai vivendo.",
+    "Disponibile in digitale, stampato o premium, a partire da 150 €.",
   ],
   cta: {
     label: "Scopri il Ritratto",
@@ -187,8 +149,8 @@ export const founderPreview = {
 };
 
 export const finalCta = {
-  title: "Quando il passaggio è chiaro, anche la scelta diventa più semplice.",
-  body: "Non serve avere già tutte le risposte. Serve iniziare dal punto che oggi può aiutarti a vedere meglio.",
+  title: "Welcome Back Home.",
+  body: "Non significa tornare indietro. Significa tornare a una forma più coerente di te, con più struttura, presenza e direzione.",
   primary: {
     label: "Inizia il tuo percorso",
     href: "/contatti",
@@ -201,7 +163,7 @@ export const finalCta = {
 
 export const contactReasons = [
   "Capire da quale percorso iniziare",
-  "Prenotare una lettura o un Ritratto",
+  "Prenotare una sessione o un Ritratto",
   "Ricevere indicazioni su disponibilità e tempi",
 ] as const;
 
@@ -240,7 +202,7 @@ export const experiencesToolsSection = {
   eyebrow: "Strumenti di integrazione",
   title: "Il lavoro non finisce nella lettura.",
   description:
-    "Alcuni strumenti servono a continuare il processo con più presenza, ritmo e continuità. Laboratorio dell'Anima, meditazioni guidate e materiali editoriali nascono per accompagnare ciò che emerge e renderlo più abitabile nel quotidiano.",
+    "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e continuità. Laboratorio dell'Anima, meditazioni guidate e materiali editoriali nascono per accompagnare ciò che emerge e renderlo più abitabile nel quotidiano.",
   closing:
     "Non servizi minori e non prodotti da consumare in fretta. Ma forme di continuità che aiutano a restare in relazione con il percorso.",
   cards: [
@@ -283,13 +245,14 @@ export const experiencesToolsSection = {
 
 export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
-  title: "Quando ciò che vivi chiede una forma più leggibile.",
+  title: "Ritrovare coerenza tra le parti che ti abitano.",
   description:
-    "Il Soul Design è il nucleo metodologico che collega identità, simboli, relazioni e presenza. Nasce per ricostruire coerenza tra ciò che senti, il linguaggio con cui ti racconti e la direzione che stai cercando.",
+    "Il Soul Design è il cuore metodologico del progetto. Parte da un'idea semplice: non siamo una cosa sola, siamo una famiglia interiore fatta di testa, cuore, desiderio, corpo, energia e anima.",
   lines: [
-    "Non tutte le crisi chiedono soluzioni. Alcune chiedono un nuovo linguaggio.",
-    "Quando identità e presenza si disallineano, anche le scelte diventano opache.",
-    "Il Soul Design lavora su questa soglia: trasformare confusione in struttura.",
+    "Quando queste parti entrano in conflitto nasce frammentazione. Quando iniziano a dialogare nasce orientamento.",
+    "Il Soul Design non lavora sulla casa come punto di partenza, ma sulla tua presenza e sulla struttura della tua vita.",
+    "Serve a coordinare simboli, scelte, linguaggio personale e direzione concreta.",
+    "Welcome Back Home: tornare a una forma più coerente di sé.",
   ],
   cta: {
     label: "Scopri il Soul Design",
@@ -304,39 +267,44 @@ export const soulDesignPage = {
     kicker: "Progettazione simbolica della presenza",
     title: "Soul Design",
     subtitle:
-      "Un metodo per ricostruire coerenza tra identità, presenza, linguaggio personale e direzione.",
+      "Un metodo per coordinare le parti interiori, ritrovare coerenza e trasformare il caos in una forma più leggibile di vita.",
   },
   intro: [
-    "Il Soul Design nasce da un'idea semplice: molte persone non hanno bisogno di un'altra spiegazione emotiva. Hanno bisogno di una forma più leggibile di sé.",
-    "È il punto in cui identità, simboli, relazioni, ritmo e presenza smettono di essere frammenti separati e tornano a comporre una struttura. Non per definirti in modo rigido, ma per aiutarti a riconoscere chi stai diventando.",
+    "Il Soul Design nasce da un'idea semplice: non siamo una cosa sola. Siamo una famiglia interiore fatta di testa, cuore, desiderio, corpo, energia e anima.",
+    "Quando queste parti non dialogano, la vita si frammenta. Quando iniziano a coordinarsi, torna leggibilità. Non per costruire un personaggio migliore, ma per riconoscere una forma più coerente di te.",
   ],
   whatItIs: {
-    title: "Non design degli spazi. Progettazione simbolica della presenza.",
+    title: "Non design degli spazi. Progettazione simbolica dell'esistenza.",
     paragraphs: [
-      "Il Soul Design non parte da stanze, arredi o armonizzazioni estetiche. Parte da una domanda più profonda: dove si è interrotta la coerenza tra ciò che senti, il modo in cui vivi e la direzione che stai cercando.",
-      "Per questo il lavoro non è psicologico in senso clinico e non è esoterico in senso spettacolare. È simbolico, antropologico e orientativo: un metodo per restituire leggibilità a ciò che oggi appare disperso.",
+      "Il Soul Design non parte da stanze, arredi o armonizzazioni estetiche. Parte da una domanda più radicale: quale parte di te sta guidando oggi la tua vita e quali parti, invece, sono rimaste senza voce.",
+      "La casa può entrare nel percorso come conseguenza di questo riallineamento, non come centro del lavoro. Il punto non è decorare l'esterno, ma ricostruire coerenza tra struttura interiore, presenza quotidiana e direzione.",
+      "Per questo il lavoro non è psicologico in senso clinico e non è esoterico in senso spettacolare. È simbolico, antropologico e orientativo: un metodo per rendere leggibile ciò che oggi appare frammentato.",
     ],
   },
   includes: [
     {
-      title: "Identità",
-      text: "Riconoscere la forma che stai assumendo oggi e il punto in cui la tua identità chiede più coerenza.",
+      title: "Testa",
+      text: "La parte che interpreta, organizza e cerca struttura, ma che da sola può irrigidire tutto in controllo.",
     },
     {
-      title: "Linguaggio",
-      text: "Dare un nome più preciso a ciò che stai vivendo, senza lasciarlo nel rumore o nell'indistinto.",
+      title: "Cuore",
+      text: "La parte che sente e si espone, ma che senza ascolto rischia di confondere intensità e verità.",
     },
     {
-      title: "Simbolo",
-      text: "Leggere immagini ricorrenti, passaggi e nuclei di significato che stanno cercando forma nella tua esperienza.",
+      title: "Desiderio",
+      text: "La parte che orienta e spinge in avanti, ma che può restare muta quando la vita diventa solo adattamento.",
     },
     {
-      title: "Relazioni",
-      text: "Comprendere come i legami, gli attriti e le ripetizioni partecipino alla tua struttura di vita attuale.",
+      title: "Corpo",
+      text: "La parte che registra il ritmo reale del tuo presente e segnala quando stai vivendo fuori asse.",
     },
     {
-      title: "Direzione",
-      text: "Trasformare la lettura in orientamento concreto, presenza e decisione più leggibile.",
+      title: "Energia",
+      text: "La parte che distribuisce attenzione, slancio e dispersione e rende visibile dove si sta consumando la tua presenza.",
+    },
+    {
+      title: "Anima",
+      text: "La parte che tiene insieme senso, profondità e direzione e che spesso chiede un nuovo linguaggio prima di chiedere soluzioni.",
     },
   ],
   arrivals: [
@@ -353,13 +321,13 @@ export const soulDesignPage = {
   approach: {
     title: "Ogni lettura comincia dall'ascolto.",
     paragraphs: [
-      "Non esiste una formula che valga per tutti. Il Soul Design non nasce per offrirti una nuova estetica personale, ma un nuovo modo di leggere la tua struttura di vita.",
-      "Lavora sulla coerenza tra identità, presenza, relazioni e direzione. Se il contesto esterno entra nel percorso, entra come conseguenza di questo riallineamento, non come punto di partenza.",
+      "Non esiste una formula che valga per tutti. Il Soul Design non nasce per darti un'immagine nuova da interpretare, ma per coordinare le parti che oggi si stanno parlando male o non si stanno parlando affatto.",
+      "Lavora sulla coerenza tra struttura interiore, presenza, ritmo, relazioni e decisioni. Se il contesto esterno entra nel percorso, entra come riflesso di questa nuova coerenza, non come soluzione apparente.",
     ],
     principles: [
       "Nessun linguaggio teatrale",
       "Nessuna dipendenza dal metodo",
-      "Più struttura e meno rumore",
+      "Più coordinamento tra le parti e meno frammentazione",
       "Più presenza, orientamento e direzione concreta",
     ],
   },
@@ -368,8 +336,9 @@ export const soulDesignPage = {
     items: [
       "Le persone non soffrono solo per ciò che vivono. Soffrono perché non riescono più a leggerlo.",
       "Molte crisi non chiedono soluzioni. Chiedono un nuovo linguaggio.",
+      "Non siamo una cosa sola. Siamo una famiglia interiore che ha bisogno di tornare a dialogare.",
       "Quando la struttura si chiarisce, anche la scelta smette di sembrare lontana.",
-      "Non tutto va risolto subito. Alcune cose vanno prima interpretate meglio.",
+      "Welcome Back Home non significa tornare indietro. Significa tornare a una forma più coerente di sé.",
     ],
   },
   ecosystem: {
@@ -400,11 +369,11 @@ export const soulDesignPage = {
     ],
   },
   finalCta: {
-    title: "A volte il primo riallineamento non è fuori. È nel modo in cui torni a leggerti.",
+    title: "Welcome Back Home.",
     body:
-      "Se senti che qualcosa nella tua struttura di vita non ti rappresenta più, possiamo partire da lì. Non per aggiungere teoria. Per restituire leggibilità, presenza e direzione.",
+      "Non significa tornare indietro. Significa tornare a una forma più coerente di te, in cui testa, cuore, desiderio e presenza possano finalmente dialogare.",
     primary: {
-      label: "Esplora il Soul Design",
+      label: "Inizia il tuo percorso",
       href: "/contatti",
     },
     secondary: {
@@ -454,8 +423,8 @@ export const methodPage = {
   soulDesign: {
     title: "Soul Design",
     paragraphs: [
-      "Il Soul Design è il cuore distintivo del progetto: il punto in cui identità, simboli, emozioni, relazioni, spazio e scelte smettono di apparire come elementi separati.",
-      "L'idea è semplice e radicale: ogni percorso di trasformazione chiede coerenza non solo dentro la persona, ma anche nel modo in cui quella persona abita il proprio ambiente, il proprio tempo e la propria presenza.",
+      "Il Soul Design è il cuore distintivo del progetto: il punto in cui testa, cuore, desiderio, corpo, energia e anima smettono di apparire come parti scollegate e tornano a cercare coordinamento.",
+      "L'idea è semplice e radicale: ogni percorso di trasformazione chiede coerenza dentro la persona prima ancora che fuori. Per questo il metodo lavora sulla presenza, sul linguaggio personale e sulla direzione che sta emergendo.",
     ],
   },
   audience: {
@@ -497,7 +466,7 @@ export const percorsiPage = {
     kicker: "Percorsi evolutivi",
     title: "Percorsi",
     subtitle:
-      "Tre percorsi principali per entrare nel metodo e alcuni strumenti di continuità per renderlo più abitabile nel tempo.",
+      "Tre accessi principali al metodo e alcuni strumenti di continuità per trasformare la lettura in vita concreta.",
   },
   intro: [
     "Qui i percorsi non sono prodotti separati. Sono accessi diversi allo stesso lavoro di orientamento simbolico.",
@@ -507,7 +476,7 @@ export const percorsiPage = {
     {
       title: "Ritratto dell'Anima",
       kicker: "Mappa identitaria",
-      text: "Una lettura profonda per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo.",
+      text: "Comprendere da dove parti: una mappa identitaria per leggere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo.",
       details: "Digitale, stampato o premium · da 150 €",
       href: "/ritratto-dell-anima",
       ctaLabel: "Scopri il Ritratto",
@@ -515,19 +484,19 @@ export const percorsiPage = {
     {
       title: "Soul Design",
       kicker: "Integrazione simbolica",
-      text: "Un percorso personalizzato per riportare coerenza tra identità, presenza, scelte e direzione personale.",
+      text: "Ritrovare coerenza tra le parti che ti abitano e trasformare intuizioni interiori in una struttura di vita più leggibile.",
       details:
         "Percorso costruito su richiesta · definito in base al momento e alla continuità del lavoro",
       href: "/soul-design",
       ctaLabel: "Scopri il Soul Design",
     },
     {
-      title: "Lettura Evolutiva",
-      kicker: "Lettura del presente",
-      text: "Un orientamento simbolico per leggere il momento che stai vivendo, sciogliere nodi emotivi e ritrovare lucidità.",
+      title: "Percorso Evolutivo",
+      kicker: "Orientamento del presente",
+      text: "Trasformare intuizioni e simboli in direzione concreta, leggendo il presente con più lucidità e struttura.",
       details: "Sessione individuale · 100 €",
       href: "/lettura-evolutiva",
-      ctaLabel: "Scopri la lettura",
+      ctaLabel: "Prenota una sessione",
     },
     {
       title: "Laboratorio dell'Anima",
@@ -634,21 +603,21 @@ export const ritrattoPage = {
 
 export const tarocchiPage = {
   hero: {
-    kicker: "Lettura del presente",
-    title: "Lettura Evolutiva",
+    kicker: "Orientamento del presente",
+    title: "Percorso Evolutivo",
     subtitle:
-      "Una lettura simbolica per orientarti nel presente, sciogliere nodi emotivi e comprendere con più lucidità il passaggio che stai vivendo.",
+      "Una sessione simbolica per leggere il presente, dare forma al passaggio che stai vivendo e trasformare intuizioni in direzione concreta.",
   },
   paragraphs: [
-    "I Tarocchi non servono a indovinare il futuro. Servono a mettere ordine nel presente.",
-    "Attraverso gli archetipi, le immagini e le risonanze che emergono, la lettura ti aiuta a riconoscere blocchi, desideri e possibilità con maggiore lucidità.",
+    "Qui il simbolo non serve a indovinare il futuro. Serve a rendere leggibile il presente.",
+    "Attraverso archetipi, immagini e risonanze che emergono durante la sessione, il percorso ti aiuta a riconoscere blocchi, desideri, ripetizioni e possibilità con maggiore lucidità.",
   ],
   bullets: [
     "Chiarezza sul momento attuale",
     "Comprensione dei nodi emotivi e relazionali",
     "Orientamento simbolico e pratico",
   ],
-  note: "Ogni sessione è pensata per riportare simbolo e intuizione dentro una scelta reale.",
+  note: "Ogni sessione è pensata per trasformare ciò che senti in una direzione più concreta e praticabile.",
 };
 
 export const laboratorioPage = {
@@ -885,7 +854,7 @@ export const contactPage = {
     kicker: "Contatto riservato",
     title: "Contatti",
     subtitle:
-      "Se senti che è il momento di dare un nome a ciò che stai vivendo, scrivimi.",
+      "Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.",
   },
   methods: [
     {
@@ -905,5 +874,5 @@ export const contactPage = {
     },
   ],
   intro:
-    "Se senti che è il momento di dare un nome a ciò che stai vivendo, scrivimi. Ti aiuterò a capire da quale punto può essere più giusto iniziare.",
+    "Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi. Ti aiuterò a capire da quale punto può essere più giusto iniziare, con più chiarezza e senza fretta.",
 };
