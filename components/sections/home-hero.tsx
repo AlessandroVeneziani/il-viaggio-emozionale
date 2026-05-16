@@ -55,7 +55,7 @@ export function HomeHero() {
               </ButtonLink>
             </div>
             <div className="mt-4">
-              <ButtonLink href="/#metodo" variant="ghost" size="sm">
+              <ButtonLink href="/il-metodo" variant="ghost" size="sm">
                 Scopri il metodo
               </ButtonLink>
             </div>

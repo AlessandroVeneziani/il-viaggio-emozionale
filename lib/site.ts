@@ -1,7 +1,7 @@
 export const siteConfig = {
   name: "Il Viaggio Emozionale",
   description:
-    "Percorsi di crescita personale attraverso numerologia, tarocchi evolutivi e letture simboliche dell'anima.",
+    "Studio contemporaneo di orientamento simbolico per ritrovare chiarezza, direzione personale e leggibilità del presente.",
   url: process.env.NEXT_PUBLIC_SITE_URL ?? "https://ilviaggioemozionale.it",
   ogImage: "/images/brand/ritratto-dell-anima.png",
   email: "info@alessandroveneziani.it",
@@ -16,9 +16,10 @@ export const siteConfig = {
 
 export const navigation = [
   { href: "/", label: "Home" },
+  { href: "/il-metodo", label: "Il Metodo" },
   { href: "/ritratto-dell-anima", label: "Ritratto dell'Anima" },
-  { href: "/letture-tarocchi", label: "Letture Tarocchi" },
-  { href: "/laboratorio-dell-anima", label: "Laboratorio dell'Anima" },
+  { href: "/soul-design", label: "Soul Design" },
+  { href: "/percorsi", label: "Percorsi" },
   { href: "/chi-sono", label: "Chi sono" },
   { href: "/contatti", label: "Contatti" },
 ] as const;

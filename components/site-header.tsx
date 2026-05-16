@@ -15,6 +15,21 @@ export function SiteHeader() {
   const pathname = usePathname();
   const [open, setOpen] = useState(false);
 
+  function isActive(href: string) {
+    if (href === "/") return pathname === "/";
+    if (href === "/percorsi") {
+      return [
+        "/percorsi",
+        "/lettura-evolutiva",
+        "/letture-tarocchi",
+        "/laboratorio-dell-anima",
+        "/meditazioni-guidate",
+      ].includes(pathname);
+    }
+
+    return pathname === href;
+  }
+
   useEffect(() => {
     document.body.dataset.menuOpen = open ? "true" : "false";
 
@@ -43,18 +58,18 @@ export function SiteHeader() {
     <>
       <header className="fixed inset-x-0 top-4 z-50 hidden lg:block">
         <Container>
-          <div className="mx-auto flex max-w-[1080px] items-center gap-5 rounded-[18px] border border-gold/12 bg-[#131313]/58 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.16)] backdrop-blur-[3px]">
+          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/12 bg-[#131313]/58 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.16)] backdrop-blur-[3px]">
             <BrandMark compact className="shrink-0" />
-            <nav className="ml-auto flex items-center gap-[1.1rem]">
+            <nav className="ml-auto flex items-center gap-4">
               {navigation.map((item) => {
-                const active = pathname === item.href;
+                const active = isActive(item.href);
 
                 return (
                   <Link
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "text-[0.88rem] font-semibold tracking-[0.01em] text-ivory/74 transition hover:text-gold",
+                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/74 transition hover:text-gold xl:text-[0.88rem]",
                       active && "text-gold",
                     )}
                   >
@@ -63,8 +78,8 @@ export function SiteHeader() {
                 );
               })}
             </nav>
-            <ButtonLink href="/ritratto-dell-anima" size="sm" className="shrink-0 px-4 py-1.25">
-              Inizia il tuo viaggio
+            <ButtonLink href="/contatti" size="sm" className="shrink-0 px-4 py-1.25">
+              Inizia il tuo percorso
             </ButtonLink>
           </div>
         </Container>
@@ -110,7 +125,7 @@ export function SiteHeader() {
         >
           <nav className="flex flex-col gap-3">
             {navigation.map((item) => {
-              const active = pathname === item.href;
+              const active = isActive(item.href);
 
               return (
                 <Link
@@ -129,11 +144,11 @@ export function SiteHeader() {
           </nav>
           <div className="mt-8 border-t border-gold/15 pt-6">
             <ButtonLink
-              href="/ritratto-dell-anima"
+              href="/contatti"
               className="w-full justify-center"
               onClick={() => setOpen(false)}
             >
-              Inizia il tuo viaggio
+              Inizia il tuo percorso
             </ButtonLink>
           </div>
         </div>

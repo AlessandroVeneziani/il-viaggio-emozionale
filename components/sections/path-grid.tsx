@@ -14,8 +14,8 @@ export function PathGrid() {
       <Container>
         <SectionHeading
           eyebrow="Tre percorsi"
-          title="Tre modi per rendere più leggibile ciò che stai vivendo"
-          description="Ogni percorso è un accesso diverso alla chiarezza: una mappa identitaria, una lettura del presente o uno spazio più continuo di integrazione e orientamento."
+          title="Tre accessi diversi alla chiarezza"
+          description="Un ritratto identitario, una progettazione simbolica dello spazio e una lettura del presente: tre modi diversi per rendere più leggibile ciò che stai vivendo."
         />
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {featuredPaths.map((path, index) => (
@@ -39,8 +39,8 @@ export function PathGrid() {
                     className={cn(
                       "relative z-10 w-auto object-contain saturate-[0.88] brightness-[0.98] contrast-[0.95] drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)] transition duration-300 group-hover:scale-[1.02]",
                       path.title === "Ritratto dell'Anima" && "h-[230px] sm:h-[250px]",
-                      path.title === "Lettura Tarocchi" && "h-[250px] sm:h-[280px]",
-                      path.title === "Laboratorio dell'Anima" && "h-[250px] sm:h-[270px]",
+                      path.title === "Soul Design" && "h-[235px] sm:h-[260px]",
+                      path.title === "Lettura Evolutiva" && "h-[250px] sm:h-[280px]",
                     )}
                   />
                 </div>

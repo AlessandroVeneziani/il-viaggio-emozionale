@@ -124,7 +124,7 @@ export default function RitrattoPage() {
         title="Quando la tua storia chiede una forma, il Ritratto la rende leggibile."
         body="Scrivimi per capire quale versione è più adatta al tuo momento e come iniziare."
         primary={{ label: "Vai ai contatti", href: "/contatti" }}
-        secondary={{ label: "Scopri le letture Tarocchi", href: "/letture-tarocchi" }}
+        secondary={{ label: "Scopri la Lettura Evolutiva", href: "/lettura-evolutiva" }}
       />
     </main>
   );

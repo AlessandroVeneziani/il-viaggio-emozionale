@@ -6,9 +6,9 @@ import { googleReviewsSection } from "@/content/site-content";
 
 export function GoogleReviewsReadySection() {
   return (
-    <section className="section-shell py-20 sm:py-28">
+    <section className="section-shell py-20 sm:py-24">
       <Container>
-        <div className="grid gap-12 lg:grid-cols-[0.7fr_1.3fr] lg:items-start">
+        <div className="grid gap-12 lg:grid-cols-[0.66fr_1.34fr] lg:items-start">
           <Reveal>
             <SectionHeading
               eyebrow={googleReviewsSection.eyebrow}
@@ -27,7 +27,7 @@ export function GoogleReviewsReadySection() {
               <div className="flex flex-wrap items-end gap-5 border-t border-gold/10 pt-6">
                 <div>
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-gold/78">
-                    Profilo Google
+                    Google Reviews
                   </p>
                   <div className="mt-4 flex items-end gap-4">
                     <span className="font-display text-[3.15rem] leading-none text-ivory">
@@ -36,31 +36,20 @@ export function GoogleReviewsReadySection() {
                     <div className="pb-1">
                       <p className="text-sm tracking-[0.3em] text-gold">★★★★★</p>
                       <p className="mt-2 text-sm text-ivory/64">
-                        Recensioni verificate e collegabili al profilo reale
+                        Recensioni verificabili e collegabili al profilo reale
                       </p>
                     </div>
                   </div>
                 </div>
                 <div className="flex flex-wrap gap-3 text-[0.72rem] uppercase tracking-[0.22em] text-ivory/62">
-                  <span className="border-b border-gold/14 pb-1">Badge verificato</span>
-                  <span className="border-b border-gold/14 pb-1">Avatar discreti</span>
-                  <span className="border-b border-gold/14 pb-1">Link al profilo</span>
+                  <span className="border-b border-gold/14 pb-1">Profilo reale</span>
+                  <span className="border-b border-gold/14 pb-1">Estratti sobri</span>
+                  <span className="border-b border-gold/14 pb-1">Verifica diretta</span>
                 </div>
               </div>
             </Reveal>
 
-            {[
-              {
-                initials: "SR",
-                label: "Recensione verificata",
-                body: "Qui comparirà il testo autentico di una recensione Google, con un tono sobrio e riconoscibile.",
-              },
-              {
-                initials: "MV",
-                label: "Recensione sincronizzata",
-                body: "La struttura è pronta per ospitare nome, stelle, badge di verifica e collegamento al profilo reale.",
-              },
-            ].map((item, index) => (
+            {googleReviewsSection.snippets.map((item, index) => (
               <Reveal key={item.initials} delay={0.08 + index * 0.06}>
                 <div className="border-t border-gold/10 pt-6">
                   <div className="flex items-start gap-4">
@@ -75,7 +64,7 @@ export function GoogleReviewsReadySection() {
                         </span>
                       </div>
                       <p className="mt-2 text-sm tracking-[0.24em] text-gold">★★★★★</p>
-                      <p className="mt-4 max-w-[60ch] text-base leading-[1.9] text-ivory/76">
+                      <p className="mt-4 max-w-[54ch] text-base leading-[1.9] text-ivory/76">
                         {item.body}
                       </p>
                     </div>

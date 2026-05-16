@@ -105,7 +105,7 @@ export default function AboutPage() {
         title="Il Viaggio Emozionale esiste per dare forma a ciò che senti, senza renderlo vago."
         body="Se vuoi capire come lavorare insieme o quale percorso può aiutarti oggi, scrivimi. Possiamo partire da lì."
         primary={{ label: "Vai ai contatti", href: "/contatti" }}
-        secondary={{ label: "Scopri il metodo", href: "/#metodo" }}
+        secondary={{ label: "Scopri il metodo", href: "/il-metodo" }}
       />
     </main>
   );

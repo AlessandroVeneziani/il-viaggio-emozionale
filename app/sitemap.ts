@@ -13,8 +13,9 @@ export default function sitemap(): MetadataRoute.Sitemap {
   }));
 
   const ecosystemPages: MetadataRoute.Sitemap = [
-    "/soul-design",
+    "/lettura-evolutiva",
     "/meditazioni-guidate",
+    "/laboratorio-dell-anima",
     "/shop-editoriale",
   ].map((path) => ({
     url: new URL(path, siteConfig.url).toString(),

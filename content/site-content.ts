@@ -11,13 +11,13 @@ export const homeHero = {
   },
   secondaryCta: {
     label: "Prenota una lettura",
-    href: "/letture-tarocchi",
+    href: "/lettura-evolutiva",
   },
   softBridge: "Non sai da dove iniziare? Raccontami cosa stai vivendo.",
   whatYouFind: [
     "Ritratto dell'Anima",
     "Numerologia Evolutiva",
-    "Letture Tarocchi Evolutive",
+    "Lettura Evolutiva",
   ],
 };
 
@@ -26,25 +26,25 @@ export const methodSteps = [
     value: "01",
     title: "Numeri",
     description:
-      "Leggere la struttura della tua storia attraverso cicli, ricorrenze e nodi che continuano a ripresentarsi.",
+      "Individuare cicli, ricorrenze e nodi che continuano a ripresentarsi nella tua vita.",
   },
   {
     value: "02",
     title: "Tarocchi",
     description:
-      "Dare forma al presente e riconoscere il passaggio che oggi chiede chiarezza, lucidità e orientamento.",
+      "Mettere a fuoco il presente e dare un nome al passaggio che oggi chiede chiarezza e orientamento.",
   },
   {
     value: "03",
     title: "Simbolo",
     description:
-      "Riconoscere il significato di immagini, temi e risonanze che emergono nella lettura e diventano una mappa leggibile.",
+      "Individuare temi, immagini e passaggi che si stanno ripetendo nella tua esperienza.",
   },
   {
     value: "04",
     title: "Decisione",
     description:
-      "Trasformare la chiarezza in scelta e riportarla dentro la vita reale con più coerenza e presenza.",
+      "Trasformare la chiarezza in una scelta concreta e più coerente con ciò che stai vivendo.",
   },
 ] as const;
 
@@ -67,38 +67,38 @@ export const featuredPaths = [
     ctaLabel: "Scopri il Ritratto",
   },
   {
-    title: "Lettura Tarocchi",
+    title: "Soul Design",
+    problem:
+      "Quando il problema non è soltanto quello che stai vivendo, ma il fatto che lo spazio intorno a te non ti rappresenta più.",
+    transformation:
+      "Una progettazione identitaria dello spazio per ricostruire coerenza tra ambiente, percezione e presenza.",
+    audience:
+      "Per chi sente disallineamento tra identità e ambiente e vuole ritrovare una forma più leggibile del proprio passaggio.",
+    href: "/soul-design",
+    kicker: "Identità e spazio",
+    image: "/images/brand/mondo.png",
+    imageAlt: "Il Mondo come simbolo del percorso Soul Design",
+    duration: "Percorso su richiesta",
+    format: "Lettura simbolica e progettazione identitaria",
+    investment: "Scopri il percorso",
+    ctaLabel: "Scopri il Soul Design",
+  },
+  {
+    title: "Lettura Evolutiva",
     problem:
       "Quando il presente è pieno di nodi, blocchi emotivi o relazioni che si ripetono e serve uno sguardo chiaro per leggere il momento.",
     transformation:
       "Un orientamento simbolico per leggere il presente, sciogliere nodi emotivi e vedere con più lucidità il passaggio che stai vivendo.",
     audience:
       "Per chi ha bisogno di una lettura evolutiva del momento attuale e vuole orientarsi meglio nelle decisioni.",
-    href: "/letture-tarocchi",
+    href: "/lettura-evolutiva",
     kicker: "Orientamento simbolico",
     image: "/images/brand/matto.png",
     imageAlt: "Carta del Matto dei Tarocchi",
     duration: "Sessione individuale",
     format: "Incontro online o su richiesta",
     investment: "100 €",
-    ctaLabel: "Prenota una lettura",
-  },
-  {
-    title: "Laboratorio dell'Anima",
-    problem:
-      "Quando senti che il cambiamento è già iniziato ma ti manca una struttura stabile per attraversarlo con profondità e continuità.",
-    transformation:
-      "Un percorso più continuativo per integrare ciò che emerge, trasformarlo in pratica e ritrovare una forma più stabile.",
-    audience:
-      "Per chi vuole un percorso più lento, editoriale e pratico, da abitare con continuità e presenza.",
-    href: "/laboratorio-dell-anima",
-    kicker: "Percorso di integrazione",
-    image: "/images/brand/laboratorio-libro.webp",
-    imageAlt: "Copertina del Laboratorio dell'Anima",
-    duration: "Percorso da attraversare nel tempo",
-    format: "Libro-percorso e pratica personale",
-    investment: "Scopri il percorso",
-    ctaLabel: "Entra nel Laboratorio",
+    ctaLabel: "Scopri la lettura",
   },
 ] as const;
 
@@ -144,7 +144,7 @@ export const testimonials = [
     quote:
       "Il valore per me è stato questo: profondità simbolica, ma anche indicazioni pratiche e comprensibili.",
     author: "Giulia T.",
-    context: "Lettura Tarocchi",
+    context: "Lettura Evolutiva",
   },
 ] as const;
 
@@ -214,24 +214,24 @@ export const seoTopics = [
 ] as const;
 
 export const experiencesToolsSection = {
-  eyebrow: "Esperienze e strumenti",
-  title: "Il percorso non finisce nella lettura.",
+  eyebrow: "Meditazioni e strumenti editoriali",
+  title: "Ciò che emerge ha bisogno anche di continuità.",
   description:
-    "Alcuni strumenti nascono per aiutarti a integrare ciò che emerge durante il percorso: meditazioni guidate, Soul Design, pratiche simboliche e materiali da abitare nel quotidiano.",
+    "Laboratorio dell'Anima, meditazioni guidate e strumenti editoriali nascono per accompagnare il metodo fuori dalla lettura e renderlo abitabile nel quotidiano.",
   closing:
-    "Non contenuti da consumare velocemente. Ma spazi da attraversare con presenza.",
+    "Non contenuti da consumare velocemente. Ma forme di continuità, presenza e integrazione.",
   cards: [
     {
-      title: "Soul Design",
-      kicker: "Metodo simbolico",
-      subtitle: "Quando ciò che vivi chiede una forma più leggibile.",
+      title: "Laboratorio dell'Anima",
+      kicker: "Percorso di integrazione",
+      subtitle: "Quando ciò che hai compreso ha bisogno di pratica e continuità.",
       body:
-        "Un metodo simbolico per dare forma a passaggi interiori, identità, decisioni e trasformazioni personali.",
-      href: "/soul-design",
-      ctaLabel: "Scopri il Soul Design",
-      image: "/images/brand/mondo.png",
+        "Un libro-percorso per trasformare ciò che emerge in ritmo, scrittura, presenza e struttura personale.",
+      href: "/laboratorio-dell-anima",
+      ctaLabel: "Entra nel Laboratorio",
+      image: "/images/brand/laboratorio-libro.webp",
       imageAlt:
-        "Il Mondo come simbolo di identità, passaggio e direzione personale",
+        "Libro del Laboratorio dell'Anima come percorso editoriale di integrazione",
     },
     {
       title: "Meditazioni Guidate",
@@ -252,79 +252,98 @@ export const experiencesToolsSection = {
         "Materiali simbolici, ritratti e pratiche da portare nel quotidiano.",
       href: "/shop-editoriale",
       ctaLabel: "Entra nello shop",
-      image: "/images/brand/laboratorio-libro.webp",
+      image: "/images/brand/ritratto-dell-anima.png",
       imageAlt: "Libro simbolico come parte della collezione editoriale del brand",
     },
   ],
 } as const;
 
+export const soulDesignHomeSpotlight = {
+  eyebrow: "Soul Design",
+  title: "Quando il problema non è la casa. È che non ti rappresenta più.",
+  description:
+    "Lo spazio in cui vivi influenza il modo in cui pensi, senti e attraversi la vita. Il Soul Design nasce per ricostruire coerenza tra identità, spazio e presenza.",
+  lines: [
+    "Ci sono spazi che arredano. E spazi che ti rimettono in asse.",
+    "Lo spazio non è solo sfondo. Può diventare una parte attiva della tua lucidità.",
+    "Quando identità e ambiente tornano coerenti, anche il passaggio interiore diventa più leggibile.",
+  ],
+  cta: {
+    label: "Scopri il Soul Design",
+    href: "/soul-design",
+  },
+  image: "/images/brand/mondo.png",
+  imageAlt: "Il Mondo come simbolo di identità, spazio e presenza",
+};
+
 export const soulDesignPage = {
   hero: {
-    kicker: "Metodo simbolico contemporaneo",
+    kicker: "Transformational interior identity",
     title: "Soul Design",
     subtitle:
-      "Un metodo simbolico per comprendere passaggi, identità e direzione personale.",
+      "Un percorso simbolico per ricostruire coerenza tra identità, spazio e presenza.",
   },
   intro: [
-    "Soul Design è l'approccio che attraversa ogni lettura, ritratto e percorso di Il Viaggio Emozionale. Unisce interpretazione simbolica, ascolto e lettura archetipica per aiutarti a comprendere ciò che stai vivendo e chi stai diventando.",
-    "Non nasce per predire il futuro. Nasce per rendere leggibile ciò che oggi, dentro di te, appare confuso, frammentato o senza forma.",
+    "Ci sono spazi che arredano. E spazi che ti rimettono in asse.",
+    "Il Soul Design nasce quando il problema non è la casa in sé, ma il fatto che non ti rappresenta più. È un lavoro simbolico e percettivo che aiuta a ricostruire coerenza tra ciò che senti, ciò che vivi e l'ambiente che ti contiene.",
   ],
   whatItIs: {
-    title: "Non una predizione. Una forma di orientamento simbolico.",
+    title: "Non interior design classico. Una forma di riallineamento simbolico.",
     paragraphs: [
-      "Soul Design nasce dall'idea che ogni fase della vita lasci tracce: nelle emozioni, nelle relazioni, nelle ripetizioni, nei desideri, nelle scelte e nei conflitti interiori.",
-      "Il lavoro non è dire il futuro. Il lavoro è leggere quelle tracce con chiarezza e restituire una mappa più comprensibile del momento che stai attraversando.",
+      "Lo spazio in cui vivi influenza il modo in cui pensi, senti e attraversi la vita. Per questo identità, ambiente, passaggi interiori e presenza non sono elementi separati.",
+      "Il Soul Design nasce per leggere queste connessioni e restituire una forma più chiara al rapporto tra la persona e il suo spazio. Non decora. Interpreta, riallinea e rende abitabile ciò che oggi appare disperso.",
     ],
   },
   includes: [
     {
-      title: "Numerologia",
-      text: "Lettura di cicli, tendenze e strutture simboliche che attraversano la tua storia.",
+      title: "Identità",
+      text: "Leggere chi sei oggi e quale cambiamento sta chiedendo una forma più coerente e più respirabile.",
     },
     {
-      title: "Archetipi",
-      text: "Comprendere dinamiche interiori ricorrenti, identità in trasformazione e pattern che chiedono riconoscimento.",
+      title: "Spazio",
+      text: "Osservare l'ambiente come estensione della tua presenza, non come semplice contenitore estetico.",
     },
     {
-      title: "Ascolto simbolico",
-      text: "Dare significato ai passaggi emotivi, alla confusione e a ciò che oggi non riesce ancora a trovare forma.",
+      title: "Simbolo",
+      text: "Riconoscere forme, oggetti, percezioni e atmosfere che raccontano più di quanto sembri.",
     },
     {
-      title: "Tarocchi evolutivi",
-      text: "Leggere il presente con lucidità per orientarsi senza paura e senza dipendere da risposte esterne.",
+      title: "Percezione",
+      text: "Comprendere come il tuo spazio incida sul ritmo mentale, emotivo e relazionale che stai vivendo.",
     },
     {
-      title: "Direzione identitaria",
-      text: "Ricollegare azioni, scelte e presenza interiore per costruire una coerenza più viva e personale.",
+      title: "Presenza",
+      text: "Restituire allo spazio una funzione trasformativa: sostenere il passaggio invece di amplificare il disallineamento.",
     },
   ],
   arrivals: [
     "momenti di confusione",
-    "passaggi emotivi intensi",
-    "schemi relazionali che si ripetono",
-    "cambi di identità o di fase",
-    "sensazione di essersi allontanati da sé",
-    "nuovi inizi",
-    "blocchi interiori",
-    "desiderio di chiarezza",
+    "la sensazione che la casa non ti rappresenti più",
+    "passaggi identitari o relazionali profondi",
+    "un cambiamento già iniziato che non ha ancora trovato forma",
+    "ambienti che confondono invece di sostenere",
+    "il desiderio di sentirti di nuovo presente nello spazio che vivi",
+    "nuovi inizi che chiedono un linguaggio più coerente",
+    "momenti in cui il fuori non rispecchia più il dentro",
+    "una ricerca di ordine, significato e orientamento",
   ],
   approach: {
     title: "Ogni lettura comincia dall'ascolto.",
     paragraphs: [
-      "Non esiste una formula uguale per tutti. Non c'è dogma da applicare né spiritualità rigida da imitare.",
-      "Soul Design non crea dipendenza e non mette in scena il mistero. Lavora con presenza, chiarezza, lettura simbolica e orientamento, per aiutarti a riconoscere ciò che stai vivendo con maggiore consapevolezza.",
+      "Non esiste una formula valida per ogni spazio e per ogni persona. Il Soul Design non è consulenza arredo e non nasce per aggiungere oggetti o stile a una stanza.",
+      "Nasce per ricostruire coerenza tra identità, ambiente e presenza. Per aiutarti a sentire quando il problema non è la casa. È che non ti rappresenta più.",
     ],
     principles: [
-      "Nessun dogma",
-      "Nessuna teatralità",
-      "Nessuna dipendenza",
-      "Più chiarezza, presenza e orientamento",
+      "Nessuna estetica fine a sé stessa",
+      "Nessuna spiritualità teatrale",
+      "Più coerenza tra spazio e identità",
+      "Più presenza, orientamento e respiro",
     ],
   },
   ecosystem: {
     title: "Un metodo che prende forme diverse.",
     description:
-      "Ritratto dell'Anima, meditazioni, percorsi e strumenti editoriali non sono mondi separati. Sono espressioni diverse dello stesso metodo: leggere il presente, dare senso al passaggio e ritrovare direzione.",
+      "Il Soul Design non vive isolato. Dialoga con Ritratto dell'Anima, meditazioni, percorsi e strumenti editoriali come area più sensoriale e trasformativa del progetto.",
     items: [
       {
         title: "Ritratto dell'Anima",
@@ -338,8 +357,8 @@ export const soulDesignPage = {
       },
       {
         title: "Percorsi",
-        text: "Letture e cammini simbolici per trasformare la chiarezza in scelte più leggibili.",
-        href: "/",
+        text: "Letture e percorsi evolutivi per accompagnare il passaggio con maggiore leggibilità.",
+        href: "/percorsi",
       },
       {
         title: "Strumenti editoriali",
@@ -349,11 +368,11 @@ export const soulDesignPage = {
     ],
   },
   finalCta: {
-    title: "A volte la chiarezza comincia quando smetti di forzare le risposte.",
+    title: "A volte non serve cambiare casa. Serve capire perché non ti rispecchia più.",
     body:
-      "Non hai bisogno di avere tutto chiaro prima di iniziare. A volte il primo passo è riconoscere che qualcosa, dentro di te, chiede di essere compreso in modo diverso.",
+      "Se senti che il tuo spazio non sostiene più il momento che stai vivendo, possiamo partire da lì. Non per arredare meglio. Per ritrovare coerenza, presenza e direzione.",
     primary: {
-      label: "Inizia il tuo percorso",
+      label: "Esplora il Soul Design",
       href: "/contatti",
     },
     secondary: {
@@ -361,6 +380,133 @@ export const soulDesignPage = {
       href: "/ritratto-dell-anima",
     },
   },
+};
+
+export const methodPage = {
+  hero: {
+    kicker: "Studio contemporaneo di orientamento simbolico",
+    title: "IL METODO",
+    subtitle:
+      "Un approccio simbolico contemporaneo per ritrovare orientamento in un'epoca piena di rumore.",
+  },
+  intro: [
+    "Il Viaggio Emozionale nasce dall'idea che molte persone oggi non siano realmente perse.",
+    "Siano semplicemente diventate incapaci di leggere ciò che stanno vivendo.",
+    "In un mondo pieno di informazioni, velocità e sovrastimolazione, l'essere umano ha perso gran parte dei suoi strumenti simbolici: riti, passaggi, mappe interiori, momenti di ascolto e forme di orientamento.",
+    "Il metodo nasce per restituire leggibilità all'esperienza umana.",
+  ],
+  sections: [
+    {
+      title: "Il problema non è solo psicologico.",
+      paragraphs: [
+        "Molte crisi contemporanee non nascono soltanto dalla mente. Nascono dalla perdita di significato.",
+        "Per secoli, culture diverse hanno utilizzato simboli, rituali, archetipi, cicli e forme narrative per aiutare le persone a comprendere chi erano, cosa stavano attraversando e quale direzione stavano prendendo.",
+        "Oggi gran parte di queste strutture è scomparsa. Ma il bisogno umano di orientamento è rimasto.",
+      ],
+    },
+    {
+      title: "Un metodo simbolico contemporaneo.",
+      paragraphs: [
+        "Il metodo integra strumenti differenti: numerologia evolutiva, lettura archetipica, tarocchi evolutivi, ascolto simbolico, osservazione dei passaggi interiori, Soul Design e pratiche di integrazione.",
+        "Non come superstizione. Ma come linguaggi capaci di rendere leggibile ciò che spesso appare confuso.",
+      ],
+    },
+  ],
+  centralTitle: "Tradurre il caos interiore in qualcosa di leggibile.",
+  centralBody: [
+    "Non per dare risposte assolute.",
+    "Non per creare dipendenza.",
+    "Non per prevedere il futuro.",
+    "Ma per aiutare le persone a riconoscere schemi, comprendere passaggi, ritrovare presenza, dare forma a ciò che sentono e trasformare intuizioni in direzione concreta.",
+  ],
+  soulDesign: {
+    title: "Soul Design",
+    paragraphs: [
+      "Il Soul Design è il cuore distintivo del progetto: il punto in cui identità, simboli, emozioni, relazioni, spazio e scelte smettono di apparire come elementi separati.",
+      "L'idea è semplice e radicale: ogni percorso di trasformazione chiede coerenza non solo dentro la persona, ma anche nel modo in cui quella persona abita il proprio ambiente, il proprio tempo e la propria presenza.",
+    ],
+  },
+  audience: {
+    title: "A chi si rivolge.",
+    items: [
+      "persone in passaggi di vita",
+      "persone che sentono disallineamento",
+      "chi vive cambiamenti profondi",
+      "chi si sente scollegato da sé",
+      "chi cerca direzione più che motivazione",
+      "chi vuole comprendersi in modo più simbolico e meno superficiale",
+    ],
+  },
+  social: {
+    title: "Anche i canali seguono lo stesso principio.",
+    paragraphs: [
+      "Su TikTok il progetto prende la forma di micro-frammenti di orientamento contemporaneo: osservazioni brevi, leggibili, mai rumorose.",
+      "Telegram non è pensato come community spirituale. Ma come spazio continuo del metodo: un luogo più silenzioso in cui il lavoro può sedimentare con maggiore profondità.",
+    ],
+  },
+  finalCta: {
+    title:
+      "A volte il primo passo non è trovare una risposta. È imparare a leggere meglio la domanda.",
+    body:
+      "Se senti che il punto non è essere motivato ma orientarti con più verità, possiamo partire da qui.",
+    primary: {
+      label: "Inizia il tuo percorso",
+      href: "/contatti",
+    },
+    secondary: {
+      label: "Esplora i percorsi",
+      href: "/percorsi",
+    },
+  },
+};
+
+export const percorsiPage = {
+  hero: {
+    kicker: "Percorsi evolutivi",
+    title: "Percorsi",
+    subtitle:
+      "Quattro accessi diversi alla chiarezza: mappa identitaria, lettura del presente, integrazione simbolica e pratiche di ascolto.",
+  },
+  intro: [
+    "Qui i percorsi non sono prodotti separati. Sono modi diversi di entrare in relazione con lo stesso metodo.",
+    "Alcuni aiutano a leggere chi sei. Altri a comprendere il presente. Altri ancora a integrare ciò che emerge con più continuità.",
+  ],
+  items: [
+    {
+      title: "Ritratto dell'Anima",
+      kicker: "Mappa identitaria",
+      text: "Una lettura profonda per comprendere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo.",
+      details: "Digitale, stampato o premium · da 150 €",
+      href: "/ritratto-dell-anima",
+      ctaLabel: "Scopri il Ritratto",
+    },
+    {
+      title: "Lettura Evolutiva",
+      kicker: "Lettura del presente",
+      text: "Un orientamento simbolico per leggere il momento che stai vivendo, sciogliere nodi emotivi e ritrovare lucidità.",
+      details: "Sessione individuale · 100 €",
+      href: "/lettura-evolutiva",
+      ctaLabel: "Scopri la lettura",
+    },
+    {
+      title: "Laboratorio dell'Anima",
+      kicker: "Percorso di integrazione",
+      text: "Uno spazio più continuativo per trasformare ciò che emerge in pratica, struttura e presenza nel tempo.",
+      details: "Libro-percorso e pratica personale",
+      href: "/laboratorio-dell-anima",
+      ctaLabel: "Entra nel Laboratorio",
+    },
+    {
+      title: "Meditazioni Guidate",
+      kicker: "Pratiche di ascolto",
+      text: "Audio e pratiche per integrare il passaggio, tornare al corpo e accompagnare il cambiamento con più calma.",
+      details: "Pratiche audio e aggiornamenti su richiesta",
+      href: "/meditazioni-guidate",
+      ctaLabel: "Ascolta le meditazioni",
+    },
+  ],
+  finalNote:
+    "Ogni percorso nasce per offrire un linguaggio più leggibile a ciò che oggi, dentro di te, chiede orientamento.",
 };
 
 export const meditationsPage = {
@@ -447,9 +593,9 @@ export const ritrattoPage = {
 export const tarocchiPage = {
   hero: {
     kicker: "Lettura del presente",
-    title: "Letture Tarocchi",
+    title: "Lettura Evolutiva",
     subtitle:
-      "Una sessione simbolica per leggere il momento che stai attraversando, dare un nome al passaggio e comprendere dove si apre la tua scelta.",
+      "Una lettura simbolica per orientarti nel presente, sciogliere nodi emotivi e comprendere con più lucidità il passaggio che stai vivendo.",
   },
   paragraphs: [
     "I Tarocchi non servono a indovinare il futuro. Servono a mettere ordine nel presente.",
@@ -540,14 +686,26 @@ export const aboutPage = {
 };
 
 export const googleReviewsSection = {
-  eyebrow: "Recensioni verificabili",
-  title: "Uno spazio pensato per recensioni reali e riconoscibili",
+  eyebrow: "Trust",
+  title: "Recensioni verificabili e riscontri concreti",
   description:
-    "Il layout è già predisposto per integrare recensioni Google verificate senza appesantire il tono del sito. Fino a quando non saranno collegate, il blocco resta sobrio e trasparente.",
+    "Prima di scegliere un percorso puoi vedere il riscontro di chi ha già lavorato con il metodo. Nessuna testimonianza costruita. Solo segnali di fiducia sobri e leggibili.",
   cta: {
-    label: "Richiedi una lettura",
+    label: "Trova orientamento",
     href: "/contatti",
   },
+  snippets: [
+    {
+      initials: "SR",
+      label: "Da Google",
+      body: "Mi ha aiutata a mettere ordine in un momento confuso.",
+    },
+    {
+      initials: "MV",
+      label: "Da Google",
+      body: "Più una mappa che un consulto. Chiaro, profondo e leggibile.",
+    },
+  ],
 };
 
 export const blogCategories = [
