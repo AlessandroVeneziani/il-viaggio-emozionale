@@ -50,21 +50,60 @@ export const methodSteps = [
 
 export const featuredPaths = [
   {
-    title: "Lettura Evolutiva",
+    title: "Ritratto dell'Anima",
+    kicker: "Mappa identitaria",
+    summary:
+      "Una lettura personale che unisce numeri, simboli e passaggi interiori per dare forma leggibile a ciò che stai vivendo.",
     problem:
-      "Quando il presente è pieno di nodi, blocchi emotivi o relazioni che si ripetono e serve uno sguardo chiaro per leggere il momento.",
+      "Quando senti di essere in una fase di svolta e hai bisogno di comprendere meglio chi sei, cosa si sta muovendo e quale direzione sta emergendo.",
     transformation:
-      "Un orientamento simbolico per leggere il presente, sciogliere nodi emotivi e vedere con più lucidità il passaggio che stai vivendo.",
+      "Porta chiarezza, struttura e linguaggio a ciò che prima restava confuso.",
     audience:
-      "Per chi ha bisogno di una lettura evolutiva del momento attuale e vuole orientarsi meglio nelle decisioni.",
+      "Per chi sente che la propria storia contiene già una direzione, ma non riesce ancora a leggerla con abbastanza precisione.",
+    href: "/ritratto-dell-anima",
+    image: "/images/brand/ritratto-dell-anima.png",
+    imageAlt: "Ritratto dell'Anima come mappa identitaria del percorso",
+    detailLabel: "Investimento",
+    detailValue: "Da 150 €",
+    ctaLabel: "Scopri il Ritratto",
+  },
+  {
+    title: "Soul Design",
+    kicker: "Integrazione simbolica",
+    summary:
+      "Un lavoro di lettura e ricomposizione simbolica per riportare coerenza tra identità, scelte, presenza e direzione personale.",
+    problem:
+      "Quando hai già compreso qualcosa di importante, ma senti che deve diventare più concreto nella tua vita quotidiana.",
+    transformation:
+      "Trasforma intuizioni, simboli e passaggi interiori in una forma più abitabile, leggibile e orientata.",
+    audience:
+      "Per chi non cerca un altro servizio standard, ma un percorso costruito sul proprio momento e sulla propria struttura di vita.",
+    href: "/soul-design",
+    image: "/images/brand/mondo.png",
+    imageAlt: "Il Mondo come simbolo di integrazione e presenza",
+    detailLabel: "Percorso",
+    detailValue: "Personalizzato su richiesta",
+    detailNote:
+      "Il Soul Design viene costruito in base al momento, alla profondità del lavoro e alla continuità del percorso.",
+    ctaLabel: "Scopri il Soul Design",
+  },
+  {
+    title: "Lettura Evolutiva",
+    kicker: "Orientamento del presente",
+    summary:
+      "Una sessione per leggere il presente, dare un nome ai nodi emotivi o decisionali e ritrovare una direzione più chiara.",
+    problem:
+      "Quando il presente è pieno di segnali, blocchi, ripetizioni o relazioni che chiedono una lettura più lucida.",
+    transformation:
+      "Aiuta a passare dalla confusione alla comprensione, dalla domanda vaga a una direzione praticabile.",
+    audience:
+      "Per chi ha bisogno di fare chiarezza su un passaggio preciso e orientarsi meglio nelle scelte immediate.",
     href: "/lettura-evolutiva",
-    kicker: "Orientamento simbolico",
     image: "/images/brand/matto.png",
     imageAlt: "Carta del Matto dei Tarocchi",
-    duration: "Sessione individuale",
-    format: "Incontro online o su richiesta",
-    investment: "100 €",
-    ctaLabel: "Scopri la lettura",
+    detailLabel: "Investimento",
+    detailValue: "100 €",
+    ctaLabel: "Prenota una lettura",
   },
 ] as const;
 
@@ -198,12 +237,12 @@ export const seoTopics = [
 ] as const;
 
 export const experiencesToolsSection = {
-  eyebrow: "Meditazioni e strumenti editoriali",
-  title: "Ciò che emerge ha bisogno anche di continuità.",
+  eyebrow: "Strumenti di integrazione",
+  title: "Il lavoro non finisce nella lettura.",
   description:
-    "Laboratorio dell'Anima, meditazioni guidate e strumenti editoriali nascono per accompagnare il metodo fuori dalla lettura e renderlo abitabile nel quotidiano.",
+    "Alcuni strumenti servono a continuare il processo con più presenza, ritmo e continuità. Laboratorio dell'Anima, meditazioni guidate e materiali editoriali nascono per accompagnare ciò che emerge e renderlo più abitabile nel quotidiano.",
   closing:
-    "Non prodotti da consumare velocemente. Ma strumenti di integrazione, presenza e continuità.",
+    "Non servizi minori e non prodotti da consumare in fretta. Ma forme di continuità che aiutano a restare in relazione con il percorso.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -233,9 +272,9 @@ export const experiencesToolsSection = {
       kicker: "Collezione curata",
       subtitle: "Parole, simboli e materiali da portare con te.",
       body:
-        "Materiali simbolici, ritratti e pratiche da portare nel quotidiano.",
+        "Materiali simbolici, ritratti e pratiche da portare nel quotidiano. Lo shop editoriale sarà integrato in una fase successiva: per ora puoi richiedere informazioni sui materiali disponibili.",
       href: "/shop-editoriale",
-      ctaLabel: "Entra nello shop",
+      ctaLabel: "Scopri gli strumenti editoriali",
       image: "/images/brand/ritratto-dell-anima.png",
       imageAlt: "Libro simbolico come parte della collezione editoriale del brand",
     },
@@ -458,11 +497,11 @@ export const percorsiPage = {
     kicker: "Percorsi evolutivi",
     title: "Percorsi",
     subtitle:
-      "Quattro accessi diversi alla chiarezza: mappa identitaria, lettura del presente, integrazione simbolica e pratiche di ascolto.",
+      "Tre percorsi principali per entrare nel metodo e alcuni strumenti di continuità per renderlo più abitabile nel tempo.",
   },
   intro: [
-    "Qui i percorsi non sono prodotti separati. Sono modi diversi di entrare in relazione con lo stesso metodo.",
-    "Alcuni aiutano a leggere chi sei. Altri a comprendere il presente. Altri ancora a integrare ciò che emerge con più continuità.",
+    "Qui i percorsi non sono prodotti separati. Sono accessi diversi allo stesso lavoro di orientamento simbolico.",
+    "Alcuni aiutano a leggere chi sei. Altri a integrare ciò che emerge nella vita reale. Altri ancora a mettere ordine nel presente con maggiore lucidità.",
   ],
   items: [
     {
@@ -474,6 +513,15 @@ export const percorsiPage = {
       ctaLabel: "Scopri il Ritratto",
     },
     {
+      title: "Soul Design",
+      kicker: "Integrazione simbolica",
+      text: "Un percorso personalizzato per riportare coerenza tra identità, presenza, scelte e direzione personale.",
+      details:
+        "Percorso costruito su richiesta · definito in base al momento e alla continuità del lavoro",
+      href: "/soul-design",
+      ctaLabel: "Scopri il Soul Design",
+    },
+    {
       title: "Lettura Evolutiva",
       kicker: "Lettura del presente",
       text: "Un orientamento simbolico per leggere il momento che stai vivendo, sciogliere nodi emotivi e ritrovare lucidità.",
@@ -483,8 +531,8 @@ export const percorsiPage = {
     },
     {
       title: "Laboratorio dell'Anima",
-      kicker: "Percorso di integrazione",
-      text: "Uno spazio più continuativo per trasformare ciò che emerge in pratica, struttura e presenza nel tempo.",
+      kicker: "Strumento di integrazione",
+      text: "Uno spazio scritto e rituale per trasformare ciò che emerge in pratica, struttura e presenza nel tempo.",
       details: "Libro-percorso e pratica personale",
       href: "/laboratorio-dell-anima",
       ctaLabel: "Entra nel Laboratorio",
@@ -532,6 +580,7 @@ export const editorialToolsPage = {
   },
   intro: [
     "Non uno shop tradizionale. Piuttosto una raccolta curata di strumenti da portare con te: ritratti stampati, libri, quaderni rituali e materiali che aiutano a tenere aperta la relazione con ciò che hai compreso.",
+    "Lo shop editoriale verrà integrato in una fase successiva. Per ora puoi richiedere disponibilità e informazioni sui materiali già pronti o in preparazione.",
     "Ogni oggetto nasce per essere abitato con calma. Per diventare memoria viva del percorso, non semplice acquisto impulsivo.",
   ],
   pillars: [

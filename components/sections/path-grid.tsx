@@ -9,22 +9,15 @@ import { featuredPaths } from "@/content/site-content";
 import { cn } from "@/lib/utils";
 
 export function PathGrid() {
-  const isSinglePath = featuredPaths.length === 1;
-
   return (
     <section className="section-shell py-24 sm:py-32">
       <Container>
         <SectionHeading
           eyebrow="Percorsi"
-          title="Altri modi per leggere il presente"
-          description="Quando hai bisogno di un orientamento più immediato o di un punto d'ingresso diverso nel metodo, puoi partire da qui."
+          title="Tre modi diversi per rendere leggibile il presente"
+          description="Ritratto dell'Anima, Soul Design e Lettura Evolutiva sono i tre accessi principali al metodo: comprensione identitaria, integrazione simbolica e orientamento del presente."
         />
-        <div
-          className={cn(
-            "mt-16 grid gap-6",
-            isSinglePath ? "mx-auto max-w-[440px]" : "lg:grid-cols-3",
-          )}
-        >
+        <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {featuredPaths.map((path, index) => (
             <Reveal key={path.title} delay={index * 0.08}>
               <SurfaceCard className="group flex h-full flex-col overflow-hidden p-0 transition duration-300 hover:-translate-y-1 hover:border-gold/40">
@@ -56,6 +49,9 @@ export function PathGrid() {
                   <h3 className="mt-4 font-display text-4xl leading-tight text-ivory">
                     {path.title}
                   </h3>
+                  <p className="mt-4 text-base leading-[1.9] text-ivory/78">
+                    {path.summary}
+                  </p>
                   <div className="mt-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
                       Quando serve
@@ -80,27 +76,18 @@ export function PathGrid() {
                       {path.audience}
                     </p>
                   </div>
-                  <div className="mt-8 flex flex-wrap gap-x-8 gap-y-5 border-t border-gold/12 pt-6">
-                    <div className="min-w-[120px]">
-                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
-                        Durata
+                  <div className="mt-8 border-t border-gold/12 pt-6">
+                    <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
+                      {path.detailLabel}
+                    </p>
+                    <p className="mt-3 font-display text-[1.7rem] leading-[1.12] text-ivory">
+                      {path.detailValue}
+                    </p>
+                    {"detailNote" in path && path.detailNote ? (
+                      <p className="mt-3 max-w-[28ch] text-sm leading-7 text-ivory/60">
+                        {path.detailNote}
                       </p>
-                      <p className="mt-2 text-sm leading-6 text-ivory/76">{path.duration}</p>
-                    </div>
-                    <div className="min-w-[120px]">
-                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
-                        Formato
-                      </p>
-                      <p className="mt-2 text-sm leading-6 text-ivory/76">{path.format}</p>
-                    </div>
-                    <div className="min-w-[120px]">
-                      <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
-                        {path.investment.includes("€") ? "Investimento" : "Accesso"}
-                      </p>
-                      <p className="mt-2 font-display text-2xl leading-none text-ivory">
-                        {path.investment}
-                      </p>
-                    </div>
+                    ) : null}
                   </div>
                   <div className="mt-7">
                     <ButtonLink href={path.href} variant="secondary">

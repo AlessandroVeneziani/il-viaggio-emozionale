@@ -35,7 +35,7 @@ export default function EditorialToolsPage() {
               </p>
               <div className="mt-8">
                 <ButtonLink href="/contatti" variant="secondary">
-                  Richiedi la collezione editoriale
+                  Richiedi disponibilità
                 </ButtonLink>
               </div>
             </div>
@@ -80,7 +80,7 @@ export default function EditorialToolsPage() {
 
       <GenericFinalCta
         title="Alcune trasformazioni hanno bisogno di restare tra le mani."
-        body="Se vuoi ricevere la collezione disponibile o capire quale materiale può accompagnarti meglio, scrivimi."
+        body="Se vuoi capire quali materiali sono già disponibili o quali strumenti editoriali stanno entrando nella collezione, scrivimi."
         primary={{ label: "Vai ai contatti", href: "/contatti" }}
         secondary={{ label: "Scopri il Laboratorio dell'Anima", href: "/laboratorio-dell-anima" }}
       />
