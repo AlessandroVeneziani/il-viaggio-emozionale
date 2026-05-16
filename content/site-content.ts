@@ -1,17 +1,17 @@
 export const homeHero = {
   kicker: "Metodo simbolico contemporaneo",
-  title: "Non sei confuso. Stai attraversando un passaggio.",
+  title: "NON SEI SBAGLIATO.\nSTAI CERCANDO UNA DIREZIONE.",
   seoLine:
-    "Il Viaggio Emozionale nasce per rendere più leggibile ciò che stai vivendo: attraverso Ritratto dell'Anima, numerologia evolutiva, Soul Design e Percorso Evolutivo.",
+    "Il Viaggio Emozionale è un sistema simbolico contemporaneo dedicato alla comprensione dell'essere.",
   subtitle:
-    "Qui non trovi predizioni da consumare in fretta. Trovi un metodo per leggere il presente, riconoscere ciò che si ripete e ritrovare una direzione personale più chiara.",
+    "Numeri, archetipi, immaginario e corpo diventano strumenti per rendere leggibile ciò che stai vivendo.",
   primaryCta: {
-    label: "Scopri il tuo Ritratto dell'Anima",
-    href: "/ritratto-dell-anima",
+    label: "Esplora il Metodo",
+    href: "/il-metodo",
   },
   secondaryCta: {
-    label: "Prenota una sessione",
-    href: "/lettura-evolutiva",
+    label: "Inizia dal Ritratto",
+    href: "/ritratto-dell-anima",
   },
   softBridge: "Non sai da dove iniziare? Raccontami cosa stai vivendo.",
   whatYouFind: [
@@ -21,37 +21,81 @@ export const homeHero = {
   ],
 };
 
+export const manifestoSection = {
+  eyebrow: "Manifesto",
+  title: "Rendere leggibile ciò che stai vivendo.",
+  introduction:
+    "Il Viaggio Emozionale nasce da una domanda semplice: cosa accade quando una persona smette di sopravvivere e inizia finalmente a leggersi.",
+  statements: [
+    ["IL NUMERO NON MISURA.", "RIVELA."],
+    ["IL SIMBOLO NON SPIEGA.", "TRASFORMA."],
+    ["IL CORPO NON MENTE.", "RICORDA."],
+    ["NON ESISTE UNA FORMULA IDENTICA PER TUTTI.", "ESISTE UNA MAPPA."],
+  ],
+} as const;
+
 export const methodSteps = [
   {
     value: "01",
-    title: "Numeri",
+    title: "Numero",
     description:
-      "Individuare cicli, ricorrenze e nodi che continuano a ripresentarsi nella tua vita.",
+      "La struttura simbolica del percorso: cicli, ricorrenze e nodi che continuano a ripresentarsi nella tua vita.",
   },
   {
     value: "02",
-    title: "Tarocchi",
+    title: "Immagine",
     description:
-      "Mettere a fuoco il presente e dare un nome al passaggio che oggi chiede chiarezza e orientamento.",
+      "L'essere umano cambia quando inizia a vedersi: archetipi, immagini e immaginario aiutano a leggere il presente.",
   },
   {
     value: "03",
-    title: "Simbolo",
+    title: "Corpo",
     description:
-      "Individuare temi, immagini e passaggi che si stanno ripetendo nella tua esperienza.",
-  },
-  {
-    value: "04",
-    title: "Decisione",
-    description:
-      "Trasformare la chiarezza in una scelta concreta e più coerente con ciò che stai vivendo.",
+      "Il luogo in cui ogni trasformazione diventa reale e in cui presenza, ritmo e orientamento smettono di restare astratti.",
   },
 ] as const;
 
 export const featuredPaths = [
   {
+    title: "Ritratto dell'Anima",
+    kicker: "Comprendere da dove parti",
+    summary:
+      "Una lettura personale che unisce numeri, simboli e passaggi interiori per dare forma leggibile a ciò che stai vivendo.",
+    problem:
+      "Quando senti di essere in una fase di svolta e hai bisogno di comprendere meglio chi sei, cosa si sta muovendo e quale direzione sta emergendo.",
+    transformation:
+      "Porta chiarezza, struttura e linguaggio a ciò che prima restava confuso.",
+    audience:
+      "Per chi sente il bisogno di una mappa identitaria prima di prendere decisioni o iniziare un cambiamento più concreto.",
+    href: "/ritratto-dell-anima",
+    image: "/images/brand/ritratto-dell-anima.png",
+    imageAlt: "Copertina del Ritratto dell'Anima",
+    detailLabel: "Investimento",
+    detailValue: "Da 150 €",
+    ctaLabel: "Scopri il Ritratto",
+  },
+  {
+    title: "Soul Design",
+    kicker: "Coordinare le parti interiori",
+    summary:
+      "Un metodo proprietario per coordinare testa, cuore, desiderio, corpo, energia e anima e ritrovare una forma più coerente di sé.",
+    problem:
+      "Quando hai già compreso qualcosa di importante, ma senti che deve diventare più concreto nella tua vita quotidiana.",
+    transformation:
+      "Trasforma intuizioni, simboli e passaggi interiori in una forma più abitabile, leggibile e orientata.",
+    audience:
+      "Per chi sente frammentazione interiore e ha bisogno di riallineare presenza, direzione e linguaggio personale.",
+    href: "/soul-design",
+    image: "/images/brand/mondo.png",
+    imageAlt: "Il Mondo come simbolo di coordinamento interiore",
+    detailLabel: "Percorso",
+    detailValue:
+      "Personalizzato su richiesta",
+    ctaLabel: "Scopri il Soul Design",
+  },
+  {
     title: "Percorso Evolutivo",
-    kicker: "Orientamento del presente",
+    kicker: "Trasformare intuizioni in direzione",
     summary:
       "Una sessione per leggere il presente, dare un nome ai nodi emotivi o decisionali e trasformare intuizioni e simboli in direzione concreta.",
     problem:
@@ -137,10 +181,10 @@ export const testimonialsNote =
   "Questa sezione può essere sostituita progressivamente con recensioni reali, autorizzate e verificabili, mantenendo lo stesso tono sobrio.";
 
 export const founderPreview = {
-  title: "Ricerca simbolica contemporanea, tradotta in orientamento",
+  title: "Un ricercatore simbolico contemporaneo, prima ancora che un interprete.",
   body: [
-    "Osservo da anni passaggi, ripetizioni, crisi e soglie dell'esperienza umana attraverso numeri, archetipi e linguaggi simbolici.",
-    "Il mio lavoro non nasce per rassicurare o impressionare. Nasce per rendere leggibile il presente e aiutarti a trasformarlo in scelta, presenza e direzione.",
+    "Mi chiamo Alessandro Veneziani e lavoro da anni sulla relazione tra simboli, identità, passaggi interiori e linguaggi capaci di rendere più leggibile il presente.",
+    "Il mio lavoro non nasce per rassicurare o impressionare. Nasce per costruire un metodo contemporaneo che unisce numeri, archetipi, immaginario e corpo e li trasforma in orientamento concreto.",
   ],
   cta: {
     label: "Conosci il mio percorso",
@@ -149,15 +193,13 @@ export const founderPreview = {
 };
 
 export const finalCta = {
-  title: "Welcome Back Home.",
-  body: "Non significa tornare indietro. Significa tornare a una forma più coerente di te, con più struttura, presenza e direzione.",
+  title:
+    "A volte la trasformazione non consiste nel diventare qualcun altro.",
+  body:
+    "Ma nel tornare a una forma più coerente di sé. Welcome Back Home.",
   primary: {
-    label: "Inizia il tuo percorso",
+    label: "Inizia il tuo viaggio",
     href: "/contatti",
-  },
-  secondary: {
-    label: "Scopri il Ritratto",
-    href: "/ritratto-dell-anima",
   },
 };
 
@@ -199,12 +241,12 @@ export const seoTopics = [
 ] as const;
 
 export const experiencesToolsSection = {
-  eyebrow: "Strumenti di integrazione",
+  eyebrow: "Strumenti di continuità",
   title: "Il lavoro non finisce nella lettura.",
   description:
-    "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e continuità. Laboratorio dell'Anima, meditazioni guidate e materiali editoriali nascono per accompagnare ciò che emerge e renderlo più abitabile nel quotidiano.",
+    "Il lavoro non finisce nella lettura. Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Non servizi minori e non prodotti da consumare in fretta. Ma forme di continuità che aiutano a restare in relazione con il percorso.",
+    "Non prodotti da consumare in fretta. Ma forme editoriali e pratiche di continuità che aiutano a restare in relazione con il percorso.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -214,6 +256,7 @@ export const experiencesToolsSection = {
         "Un libro-percorso per trasformare ciò che emerge in ritmo, scrittura, presenza e struttura personale.",
       href: "/laboratorio-dell-anima",
       ctaLabel: "Entra nel Laboratorio",
+      mode: "book",
       image: "/images/brand/laboratorio-libro.webp",
       imageAlt:
         "Libro del Laboratorio dell'Anima come percorso editoriale di integrazione",
@@ -226,33 +269,44 @@ export const experiencesToolsSection = {
         "Pratiche audio per integrare ciò che emerge e tornare ad ascoltare il corpo.",
       href: "/meditazioni-guidate",
       ctaLabel: "Ascolta le meditazioni",
-      image: "/images/backgrounds/colline.webp",
-      imageAlt: "Paesaggio morbido e contemplativo per la sezione meditazioni",
+      mode: "ambient",
+      image: "",
+      imageAlt: "",
     },
     {
-      title: "Strumenti Editoriali",
-      kicker: "Collezione curata",
-      subtitle: "Parole, simboli e materiali da portare con te.",
+      title: "Pratiche in arrivo",
+      kicker: "Strumenti in evoluzione",
+      subtitle: "Una collezione viva di strumenti simbolici e formativi.",
       body:
-        "Materiali simbolici, ritratti e pratiche da portare nel quotidiano. Lo shop editoriale sarà integrato in una fase successiva: per ora puoi richiedere informazioni sui materiali disponibili.",
+        "Scrittura automatica, esercizi simbolici, journaling archetipico, percorsi audio e corsi online pensati per dare continuità al metodo senza trasformarlo in ecommerce.",
       href: "/shop-editoriale",
-      ctaLabel: "Scopri gli strumenti editoriali",
-      image: "/images/brand/ritratto-dell-anima.png",
-      imageAlt: "Libro simbolico come parte della collezione editoriale del brand",
+      ctaLabel: "Scopri gli strumenti",
+      mode: "text",
+      image: "",
+      imageAlt: "",
+      items: [
+        "scrittura automatica",
+        "esercizi simbolici",
+        "rituali contemporanei",
+        "journaling archetipico",
+        "percorsi audio",
+        "corsi online",
+      ],
     },
   ],
 } as const;
 
 export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
-  title: "Ritrovare coerenza tra le parti che ti abitano.",
+  title: "Non siamo una cosa sola. Siamo una famiglia interiore.",
   description:
-    "Il Soul Design è il cuore metodologico del progetto. Parte da un'idea semplice: non siamo una cosa sola, siamo una famiglia interiore fatta di testa, cuore, desiderio, corpo, energia e anima.",
+    "Il Soul Design è il metodo proprietario con cui Alessandro Veneziani coordina le parti interiori e restituisce orientamento a ciò che oggi appare frammentato.",
   lines: [
-    "Quando queste parti entrano in conflitto nasce frammentazione. Quando iniziano a dialogare nasce orientamento.",
-    "Il Soul Design non lavora sulla casa come punto di partenza, ma sulla tua presenza e sulla struttura della tua vita.",
-    "Serve a coordinare simboli, scelte, linguaggio personale e direzione concreta.",
-    "Welcome Back Home: tornare a una forma più coerente di sé.",
+    "Testa: visione, linguaggio, direzione.",
+    "Cuore: emozione, relazione, vulnerabilità.",
+    "Desiderio: fuoco, movimento, scelta.",
+    "Corpo: radicamento, presenza, realtà.",
+    "Energia e anima: forza che muove il sistema e direzione profonda.",
   ],
   cta: {
     label: "Scopri il Soul Design",
@@ -698,7 +752,7 @@ export const aboutPage = {
 
 export const googleReviewsSection = {
   eyebrow: "Trust",
-  title: "Recensioni Google verificabili",
+  title: "Un riscontro reale del metodo.",
   description:
     "Prima di scegliere un percorso puoi vedere un riscontro reale del metodo. Nessuna testimonianza costruita: solo recensioni Google e segnali di fiducia verificabili.",
   ratingLabel: "Eccellente",
@@ -866,6 +920,11 @@ export const contactPage = {
       label: "WhatsApp",
       value: "+39 392 912 4461",
       href: "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20informazioni.",
+    },
+    {
+      label: "Telegram",
+      value: "Accesso privato su richiesta",
+      href: "mailto:info@alessandroveneziani.it?subject=Richiesta%20accesso%20Telegram",
     },
     {
       label: "Disponibilità",

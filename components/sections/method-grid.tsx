@@ -1,14 +1,13 @@
-import { Binary, Compass, Eye, Shapes } from "lucide-react";
-
-import Image from "next/image";
+import { Binary, Eye, HeartPulse } from "lucide-react";
 
 import { Reveal } from "@/components/motion/reveal";
+import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SurfaceCard } from "@/components/ui/surface-card";
-import { methodSteps, numerologySpotlight } from "@/content/site-content";
+import { methodSteps } from "@/content/site-content";
 
-const icons = [Binary, Eye, Shapes, Compass] as const;
+const icons = [Binary, Eye, HeartPulse] as const;
 
 export function MethodGrid() {
   return (
@@ -16,17 +15,17 @@ export function MethodGrid() {
       <Container>
         <SectionHeading
           eyebrow="Il metodo"
-          title="Un metodo per tradurre il caos interiore in qualcosa di leggibile"
-          description="Numeri per leggere la struttura, tarocchi per dare forma al presente, simbolo per riconoscere il significato e decisione per trasformare la chiarezza in scelta."
+          title="Un linguaggio simbolico per leggere ciò che stai attraversando."
+          description="Il Viaggio Emozionale non interpreta la persona dall'esterno. Accompagna dall'interno attraverso numeri, archetipi, sogni, immagini e corpo."
           centered
         />
-        <div className="mt-16 grid gap-8 lg:grid-cols-4">
+        <div className="mt-16 grid gap-8 lg:grid-cols-3">
           {methodSteps.map((step, index) => {
             const Icon = icons[index];
 
             return (
               <Reveal key={step.value} delay={index * 0.08}>
-                <div className="h-full border-t border-gold/12 pt-6">
+                <SurfaceCard className="h-full p-7 sm:p-8">
                   <div className="flex items-start justify-between gap-4">
                     <div className="text-gold/86">
                       <Icon size={18} />
@@ -41,45 +40,24 @@ export function MethodGrid() {
                   <p className="mt-4 max-w-[26ch] text-base leading-[1.95] text-ivory/76">
                     {step.description}
                   </p>
-                </div>
+                </SurfaceCard>
               </Reveal>
             );
           })}
         </div>
-        <Reveal delay={0.18} className="mt-8">
-          <SurfaceCard className="overflow-hidden p-0">
-            <div className="grid items-center gap-0 lg:grid-cols-[0.62fr_0.38fr]">
-              <div className="p-8 sm:p-10 lg:p-12">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                  {numerologySpotlight.eyebrow}
-                </p>
-                <h3 className="mt-5 max-w-3xl font-display text-4xl leading-tight text-ivory sm:text-5xl">
-                  {numerologySpotlight.title}
-                </h3>
-                <p className="mt-6 max-w-2xl text-base leading-8 text-ivory/80 sm:text-lg">
-                  {numerologySpotlight.description}
-                </p>
-              </div>
-              <div className="relative flex min-h-[320px] items-end justify-center bg-gradient-to-br from-gold/[0.06] via-transparent to-transparent p-8">
-                <div
-                  className="absolute inset-0 opacity-[0.1]"
-                  style={{
-                    backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
-                    backgroundSize: "cover",
-                    backgroundPosition: "center",
-                  }}
-                />
-                <Image
-                  src={numerologySpotlight.image}
-                  alt={numerologySpotlight.imageAlt}
-                  width={757}
-                  height={622}
-                  sizes="(max-width: 1024px) 60vw, 26vw"
-                  className="relative z-10 h-auto w-full max-w-[320px] object-contain saturate-[0.88] brightness-[0.98] contrast-[0.94] drop-shadow-[0_20px_30px_rgba(0,0,0,0.2)]"
-                />
-              </div>
+        <Reveal delay={0.18} className="mt-10">
+          <div className="border-t border-gold/10 pt-6 text-center">
+            <p className="mx-auto max-w-[52ch] text-base leading-[1.95] text-ivory/68 sm:text-[1.03rem]">
+              Numero, immagine e corpo non vengono usati per spiegarti
+              dall&apos;esterno, ma per offrirti una mappa più leggibile del
+              presente e della direzione che oggi chiede forma.
+            </p>
+            <div className="mt-8 flex justify-center">
+              <ButtonLink href="/il-metodo" variant="secondary">
+                Approfondisci il Metodo
+              </ButtonLink>
             </div>
-          </SurfaceCard>
+          </div>
         </Reveal>
       </Container>
     </section>

@@ -12,6 +12,7 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
@@ -32,6 +33,7 @@ body {
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
 }
 
 body[data-menu-open="true"] {
@@ -70,7 +72,14 @@ a {
 
 .section-shell {
   position: relative;
-  overflow: clip;
+  overflow: hidden;
+}
+
+img,
+svg,
+video,
+canvas {
+  max-width: 100%;
 }
 
 .gold-divider {
@@ -114,5 +123,9 @@ a {
   body {
     background-size: cover, 780px auto, auto, auto, auto;
     background-attachment: scroll, scroll, scroll, scroll, scroll;
+  }
+
+  .section-shell {
+    overflow-x: hidden;
   }
 }

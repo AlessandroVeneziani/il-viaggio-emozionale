@@ -7,12 +7,12 @@ import { founderPreview } from "@/content/site-content";
 export function FounderPreviewSection() {
   return (
     <section className="section-shell py-24 sm:py-32">
-      <NumberBackdrop className="opacity-58" />
+      <NumberBackdrop className="opacity-42" />
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <Reveal className="border-t border-gold/14 pt-8">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
-              Chi guida il metodo
+              Chi sono
             </p>
             <h2 className="mt-5 font-display text-[3rem] leading-[1.06] text-ivory sm:text-[3.7rem]">
               Alessandro
@@ -20,8 +20,8 @@ export function FounderPreviewSection() {
               Veneziani
             </h2>
             <p className="mt-6 max-w-md text-base leading-8 text-ivory/76">
-              Un approccio che tiene insieme profondità simbolica, lettura del
-              presente e orientamento concreto.
+              Ricercatore simbolico contemporaneo, autore del metodo e fondatore
+              de Il Viaggio Emozionale.
             </p>
           </Reveal>
           <Reveal delay={0.08}>

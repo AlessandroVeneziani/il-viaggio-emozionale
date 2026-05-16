@@ -45,7 +45,7 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="border-t border-gold/10 pt-8 lg:pl-8">
+            <div className="texture-paper rounded-[30px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.015))] p-8 sm:p-10 lg:p-12">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Contatto riservato
               </p>
@@ -54,12 +54,19 @@ export default function ContactPage() {
               </p>
               <div className="mt-10 space-y-8">
               {contactPage.methods.map((method) => {
+                const valueClassName =
+                  method.label === "Email"
+                    ? "mt-4 max-w-[34ch] break-all text-lg leading-[1.8] text-ivory/80"
+                    : method.label === "WhatsApp"
+                      ? "mt-4 text-lg leading-[1.8] text-ivory/80 whitespace-nowrap"
+                      : "mt-4 max-w-[34ch] text-lg leading-[1.8] text-ivory/80";
+
                 return (
                   <div key={method.label} className="border-t border-gold/10 pt-6">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       {method.label}
                     </p>
-                    <p className="mt-4 max-w-[34ch] text-lg leading-[1.8] text-ivory/80 break-words">
+                    <p className={valueClassName}>
                       {method.value}
                     </p>
                     <a
@@ -69,7 +76,11 @@ export default function ContactPage() {
                         ? { target: "_blank", rel: "noopener noreferrer" }
                         : {})}
                     >
-                      {method.label === "Disponibilità" ? "Richiedi disponibilità" : "Apri contatto"}
+                      {method.label === "Disponibilità"
+                        ? "Richiedi disponibilità"
+                        : method.label === "Telegram"
+                          ? "Richiedi accesso"
+                          : "Apri contatto"}
                       <ArrowUpRight size={16} />
                     </a>
                   </div>

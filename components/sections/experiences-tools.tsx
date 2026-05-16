@@ -3,6 +3,7 @@ import Image from "next/image";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { SurfaceCard } from "@/components/ui/surface-card";
 import { experiencesToolsSection } from "@/content/site-content";
 
 export function ExperiencesToolsSection() {
@@ -33,12 +34,9 @@ export function ExperiencesToolsSection() {
 
         <div className="mt-16 grid gap-6 lg:grid-cols-3">
           {experiencesToolsSection.cards.map((card, index) => {
-            const isMeditation = card.title === "Meditazioni Guidate";
-            const isEditorial = card.title === "Strumenti Editoriali";
-
             return (
               <Reveal key={card.title} delay={index * 0.06}>
-                <article className="flex h-full flex-col border-t border-gold/10 pt-6">
+                <SurfaceCard className="flex h-full flex-col p-7 sm:p-8">
                   <p className="text-xs font-semibold uppercase tracking-[0.26em] text-gold">
                     {card.kicker}
                   </p>
@@ -57,32 +55,64 @@ export function ExperiencesToolsSection() {
                     </ButtonLink>
                   </div>
                   <div className="mt-10 flex flex-1 items-end justify-start">
-                    {isMeditation ? (
-                      <div className="relative w-full overflow-hidden rounded-[28px] border border-gold/8">
-                        <Image
-                          src={card.image}
-                          alt={card.imageAlt}
-                          width={1920}
-                          height={479}
-                          sizes="(max-width: 1024px) 80vw, 24vw"
-                          className="h-[190px] w-full object-cover saturate-[0.58] brightness-[0.56] contrast-[0.84]"
+                    {card.mode === "ambient" ? (
+                      <div className="texture-paper relative w-full overflow-hidden rounded-[28px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.016))] p-8">
+                        <div className="absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl" />
+                        <div className="absolute inset-x-14 bottom-8 h-20 rounded-full bg-ivory/[0.05] blur-2xl" />
+                        <div
+                          className="absolute inset-0 opacity-[0.05]"
+                          style={{
+                            backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                            backgroundSize: "cover",
+                            backgroundPosition: "center",
+                          }}
                         />
-                        <div className="absolute inset-0 bg-gradient-to-t from-ink via-ink/28 to-transparent" />
+                        <div className="relative z-10 flex min-h-[190px] items-end">
+                          <p className="max-w-[22ch] font-display text-[1.5rem] leading-[1.45] text-ivory/84">
+                            Un luogo di ascolto in cui corpo, emozione e direzione tornano a respirare insieme.
+                          </p>
+                        </div>
+                      </div>
+                    ) : card.mode === "text" ? (
+                      <div className="w-full border-t border-gold/8 pt-5">
+                        <div className="grid gap-3 sm:grid-cols-2">
+                          {card.items.map((item) => (
+                            <p
+                              key={item}
+                              className="text-sm leading-7 text-ivory/66"
+                            >
+                              {item}
+                            </p>
+                          ))}
+                        </div>
+                        <p className="mt-6 text-sm leading-7 text-ivory/54">
+                          Una sezione viva, in crescita e disponibile su richiesta.
+                        </p>
                       </div>
                     ) : (
-                      <div className={`relative w-full ${isEditorial ? "max-w-[220px]" : "max-w-[260px]"}`}>
-                        <Image
-                          src={card.image}
-                          alt={card.imageAlt}
-                          width={1024}
-                          height={1536}
-                          sizes="(max-width: 1024px) 70vw, 22vw"
-                          className="h-auto w-full object-contain saturate-[0.86] brightness-[0.98] contrast-[0.94] drop-shadow-[0_20px_32px_rgba(0,0,0,0.18)]"
-                        />
+                      <div className="relative w-full max-w-[240px]">
+                        <div className="texture-paper relative overflow-hidden rounded-[28px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.018))] p-5">
+                          <div
+                            className="absolute inset-0 opacity-[0.05]"
+                            style={{
+                              backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                              backgroundSize: "cover",
+                              backgroundPosition: "center",
+                            }}
+                          />
+                          <Image
+                            src={card.image}
+                            alt={card.imageAlt}
+                            width={1024}
+                            height={1536}
+                            sizes="(max-width: 1024px) 70vw, 22vw"
+                            className="relative z-10 h-auto w-full object-contain saturate-[0.9] brightness-[0.99] contrast-[0.95] drop-shadow-[0_18px_30px_rgba(0,0,0,0.18)]"
+                          />
+                        </div>
                       </div>
                     )}
                   </div>
-                </article>
+                </SurfaceCard>
               </Reveal>
             );
           })}

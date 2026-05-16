@@ -8,6 +8,8 @@ export const siteConfig = {
   phone: "+39 392 912 4461",
   whatsapp:
     "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20maggiori%20informazioni.",
+  telegram:
+    "mailto:info@alessandroveneziani.it?subject=Richiesta%20accesso%20Telegram",
   socials: {
     tiktok: "https://www.tiktok.com/@ilviaggioemozionale",
     youtube: "https://www.youtube.com/@IlViaggioEmozionale",

@@ -12,26 +12,26 @@ export function HomeHero() {
 
   return (
     <section className="section-shell overflow-hidden pb-24 pt-8 sm:pb-28 sm:pt-12 lg:pb-36 lg:pt-16">
-      <NumberBackdrop className="opacity-60" />
+      <NumberBackdrop className="opacity-42" />
       <div className="grain-overlay" />
       <Container>
-        <div className="grid items-center gap-16 lg:grid-cols-[1fr_0.96fr] lg:gap-20">
+        <div className="grid items-center gap-16 lg:grid-cols-[1fr_0.88fr] lg:gap-24">
           <Reveal className="relative z-10 max-w-3xl">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-gold sm:text-sm">
               {homeHero.kicker}
             </p>
-            <h1 className="text-balance font-display text-[3rem] leading-[1.01] text-ivory sm:text-[3.75rem] lg:text-[5.15rem]">
+            <h1 className="whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] text-ivory sm:text-[3.6rem] lg:text-[4.9rem]">
               {homeHero.title}
             </h1>
-            <div className="mt-7 max-w-2xl rounded-[20px] border border-gold/7 bg-ivory/[0.025] px-5 py-4 backdrop-blur-[1px]">
-              <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/90 sm:text-base">
+            <div className="mt-7 max-w-xl rounded-[18px] border border-gold/7 bg-ivory/[0.02] px-5 py-4 backdrop-blur-[1px]">
+              <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/88 sm:text-base">
                 {homeHero.seoLine}
               </p>
             </div>
-            <p className="mt-6 max-w-2xl text-pretty text-base leading-[1.9] text-ivory/78 sm:text-[1.03rem]">
+            <p className="mt-6 max-w-xl text-pretty text-base leading-[1.9] text-ivory/74 sm:text-[1.03rem]">
               {homeHero.subtitle}
             </p>
-            <div className="mt-9 rounded-[20px] border border-gold/7 bg-ivory/[0.02] p-5 sm:p-6">
+            <div className="mt-9 rounded-[20px] border border-gold/6 bg-ivory/[0.018] p-5 sm:p-6">
               <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
                 Cosa troverai qui
               </p>
@@ -39,7 +39,7 @@ export function HomeHero() {
                 {homeHero.whatYouFind.map((item) => (
                   <div
                     key={item}
-                    className="rounded-[18px] border border-gold/5 bg-ivory/[0.012] px-4 py-4 text-sm font-semibold text-ivory/82"
+                    className="rounded-[18px] border border-gold/5 bg-ivory/[0.01] px-4 py-4 text-sm font-semibold text-ivory/82"
                   >
                     {item}
                   </div>
@@ -71,23 +71,23 @@ export function HomeHero() {
           </Reveal>
 
           <Reveal delay={0.15} className="relative">
-            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/7 bg-gradient-to-br from-ivory/[0.045] via-ivory/[0.01] to-transparent shadow-[0_24px_52px_rgba(0,0,0,0.17)] sm:min-h-[600px]">
+            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/7 bg-gradient-to-br from-ivory/[0.035] via-ivory/[0.01] to-transparent shadow-[0_24px_52px_rgba(0,0,0,0.15)] sm:min-h-[580px]">
               <div
-                className="absolute inset-0 opacity-[0.06]"
+                className="absolute inset-0 opacity-[0.04]"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute inset-x-0 bottom-0 h-36 bg-gradient-to-t from-ink via-ink/56 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-32 bg-gradient-to-t from-ink via-ink/52 to-transparent" />
               <Image
                 src="/images/brand/logo-originale.webp"
                 alt=""
                 aria-hidden="true"
                 width={1536}
                 height={1024}
-                className="pointer-events-none absolute right-[-14%] top-[-2%] w-[88%] max-w-[680px] opacity-[0.05] mix-blend-screen"
+                className="pointer-events-none absolute right-[-14%] top-[-2%] w-[88%] max-w-[680px] opacity-[0.035] mix-blend-screen"
               />
               <Image
                 src="/images/backgrounds/colline.webp"
@@ -95,30 +95,29 @@ export function HomeHero() {
                 aria-hidden="true"
                 width={1920}
                 height={479}
-                className="pointer-events-none absolute bottom-0 left-0 w-full opacity-[0.5] saturate-[0.8] brightness-[0.86]"
+                className="pointer-events-none absolute bottom-0 left-0 w-full opacity-[0.42] saturate-[0.72] brightness-[0.8]"
               />
-              <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[620px] sm:p-10">
+              <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
                 <div className="flex items-end justify-between gap-5">
-                  <div className="max-w-[225px]">
+                  <div className="max-w-[210px]">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Studio simbolico
                     </p>
                     <p className="mt-4 text-sm leading-7 text-ivory/76">
-                      Numeri, archetipi e Soul Design diventano un linguaggio
-                      per leggere il presente con più struttura e più lucidità.
+                      Un linguaggio contemporaneo per leggere il presente con
+                      più struttura, orientamento e verità.
                     </p>
                     <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-gold">
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>
-                    <div className="mt-5 border-t border-gold/8 pt-4 space-y-2 text-sm text-ivory/66">
-                      <p>Numeri per leggere la struttura.</p>
-                      <p>Archetipi per dare forma al presente.</p>
-                      <p>Scelta per trasformare la chiarezza in direzione.</p>
+                    <div className="mt-5 border-t border-gold/8 pt-4 space-y-2 text-sm text-ivory/62">
+                      <p>Numero, immagine, corpo.</p>
+                      <p>Welcome Back Home.</p>
                     </div>
                   </div>
 
-                  <div className="relative mr-[-6%] w-[64%] max-w-[480px]">
+                  <div className="relative mr-[-4%] w-[62%] max-w-[440px]">
                     <Image
                       src="/images/brand/bagatto.webp"
                       alt="Bagatto simbolico del brand Il Viaggio Emozionale"
@@ -126,7 +125,7 @@ export function HomeHero() {
                       height={1298}
                       priority
                       sizes="(max-width: 1024px) 70vw, 34vw"
-                      className="h-auto w-full object-contain saturate-[0.86] brightness-[0.98] contrast-[0.94] drop-shadow-[0_24px_42px_rgba(0,0,0,0.28)]"
+                      className="h-auto w-full object-contain saturate-[0.78] brightness-[0.95] contrast-[0.92] drop-shadow-[0_22px_40px_rgba(0,0,0,0.24)]"
                     />
                   </div>
                 </div>

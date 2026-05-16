@@ -3,9 +3,9 @@ import { FinalCtaSection } from "@/components/sections/final-cta";
 import { FounderPreviewSection } from "@/components/sections/founder-preview";
 import { GoogleReviewsReadySection } from "@/components/sections/google-reviews-ready";
 import { HomeHero } from "@/components/sections/home-hero";
+import { HomeManifestoSection } from "@/components/sections/home-manifesto";
 import { MethodGrid } from "@/components/sections/method-grid";
 import { PathGrid } from "@/components/sections/path-grid";
-import { RitrattoSpotlightSection } from "@/components/sections/ritratto-spotlight";
 import { SoulDesignSpotlightSection } from "@/components/sections/soul-design-spotlight";
 import { buildMetadata } from "@/lib/metadata";
 
@@ -20,8 +20,8 @@ export default function HomePage() {
   return (
     <main>
       <HomeHero />
+      <HomeManifestoSection />
       <MethodGrid />
-      <RitrattoSpotlightSection />
       <SoulDesignSpotlightSection />
       <PathGrid />
       <ExperiencesToolsSection />
