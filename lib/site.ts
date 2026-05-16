@@ -9,7 +9,7 @@ export const siteConfig = {
   whatsapp:
     "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20maggiori%20informazioni.",
   telegram:
-    "mailto:info@alessandroveneziani.it?subject=Richiesta%20accesso%20Telegram",
+    "https://t.me/ilviaggioemozionale",
   socials: {
     tiktok: "https://www.tiktok.com/@ilviaggioemozionale",
     youtube: "https://www.youtube.com/@IlViaggioEmozionale",

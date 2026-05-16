@@ -31,20 +31,15 @@ export function HomeHero() {
             <p className="mt-6 max-w-xl text-pretty text-base leading-[1.9] text-ivory/74 sm:text-[1.03rem]">
               {homeHero.subtitle}
             </p>
-            <div className="mt-9 rounded-[20px] border border-gold/6 bg-ivory/[0.018] p-5 sm:p-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
-                Cosa troverai qui
-              </p>
-              <div className="mt-4 grid gap-3 sm:grid-cols-3">
-                {homeHero.whatYouFind.map((item) => (
-                  <div
-                    key={item}
-                    className="rounded-[18px] border border-gold/5 bg-ivory/[0.01] px-4 py-4 text-sm font-semibold text-ivory/82"
-                  >
-                    {item}
-                  </div>
-                ))}
-              </div>
+            <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
+              {homeHero.whatYouFind.map((item, index) => (
+                <div key={item} className="inline-flex items-center gap-5">
+                  <span>{item}</span>
+                  {index < homeHero.whatYouFind.length - 1 ? (
+                    <span className="h-1 w-1 rounded-full bg-gold/50" />
+                  ) : null}
+                </div>
+              ))}
             </div>
             <div className="mt-10 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href={homeHero.primaryCta.href} size="lg">
@@ -52,11 +47,6 @@ export function HomeHero() {
               </ButtonLink>
               <ButtonLink href={homeHero.secondaryCta.href} variant="secondary" size="lg">
                 {homeHero.secondaryCta.label}
-              </ButtonLink>
-            </div>
-            <div className="mt-4">
-              <ButtonLink href="/il-metodo" variant="ghost" size="sm">
-                Scopri il metodo
               </ButtonLink>
             </div>
             <p className="mt-8 max-w-xl text-sm leading-7 text-ivory/62">
@@ -71,7 +61,7 @@ export function HomeHero() {
           </Reveal>
 
           <Reveal delay={0.15} className="relative">
-            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/7 bg-gradient-to-br from-ivory/[0.035] via-ivory/[0.01] to-transparent shadow-[0_24px_52px_rgba(0,0,0,0.15)] sm:min-h-[580px]">
+            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/7 bg-gradient-to-br from-ivory/[0.03] via-ivory/[0.008] to-transparent shadow-[0_24px_52px_rgba(0,0,0,0.15)] sm:min-h-[580px]">
               <div
                 className="absolute inset-0 opacity-[0.04]"
                 style={{
@@ -99,7 +89,7 @@ export function HomeHero() {
               />
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
                 <div className="flex items-end justify-between gap-5">
-                  <div className="max-w-[210px]">
+                  <div className="max-w-[190px]">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Studio simbolico
                     </p>
@@ -107,7 +97,7 @@ export function HomeHero() {
                       Un linguaggio contemporaneo per leggere il presente con
                       più struttura, orientamento e verità.
                     </p>
-                    <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-gold">
+                    <div className="mt-5 flex items-center gap-2 text-sm font-semibold text-gold/86">
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>

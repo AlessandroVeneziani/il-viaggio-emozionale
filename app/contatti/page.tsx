@@ -52,14 +52,14 @@ export default function ContactPage() {
               <p className="mt-5 max-w-[30ch] font-display text-[2rem] leading-[1.12] text-ivory sm:text-[2.5rem]">
                 Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.
               </p>
-              <div className="mt-10 space-y-8">
+              <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:gap-x-10">
               {contactPage.methods.map((method) => {
                 const valueClassName =
                   method.label === "Email"
-                    ? "mt-4 max-w-[34ch] break-all text-lg leading-[1.8] text-ivory/80"
+                    ? "mt-4 max-w-[34ch] break-all text-base leading-[1.9] text-ivory/80 sm:text-lg"
                     : method.label === "WhatsApp"
-                      ? "mt-4 text-lg leading-[1.8] text-ivory/80 whitespace-nowrap"
-                      : "mt-4 max-w-[34ch] text-lg leading-[1.8] text-ivory/80";
+                      ? "mt-4 text-base leading-[1.9] text-ivory/80 sm:text-lg sm:whitespace-nowrap"
+                      : "mt-4 max-w-[34ch] text-base leading-[1.9] text-ivory/80 sm:text-lg";
 
                 return (
                   <div key={method.label} className="border-t border-gold/10 pt-6">
@@ -79,7 +79,7 @@ export default function ContactPage() {
                       {method.label === "Disponibilità"
                         ? "Richiedi disponibilità"
                         : method.label === "Telegram"
-                          ? "Richiedi accesso"
+                          ? "Apri Telegram"
                           : "Apri contatto"}
                       <ArrowUpRight size={16} />
                     </a>

@@ -60,7 +60,7 @@ export const featuredPaths = [
     title: "Ritratto dell'Anima",
     kicker: "Comprendere da dove parti",
     summary:
-      "Una lettura personale che unisce numeri, simboli e passaggi interiori per dare forma leggibile a ciò che stai vivendo.",
+      "Una mappa simbolica personale costruita attraverso numeri, cicli, immagini e direzione interiore.",
     problem:
       "Quando senti di essere in una fase di svolta e hai bisogno di comprendere meglio chi sei, cosa si sta muovendo e quale direzione sta emergendo.",
     transformation:
@@ -246,7 +246,7 @@ export const experiencesToolsSection = {
   description:
     "Il lavoro non finisce nella lettura. Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Non prodotti da consumare in fretta. Ma forme editoriali e pratiche di continuità che aiutano a restare in relazione con il percorso.",
+    "Uno spazio editoriale in continua evoluzione dedicato a pratiche, meditazioni, scrittura simbolica e strumenti di integrazione.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -280,7 +280,7 @@ export const experiencesToolsSection = {
       body:
         "Scrittura automatica, esercizi simbolici, journaling archetipico, percorsi audio e corsi online pensati per dare continuità al metodo senza trasformarlo in ecommerce.",
       href: "/shop-editoriale",
-      ctaLabel: "Scopri gli strumenti",
+      ctaLabel: "Esplora gli strumenti editoriali",
       mode: "text",
       image: "",
       imageAlt: "",
@@ -923,8 +923,8 @@ export const contactPage = {
     },
     {
       label: "Telegram",
-      value: "Accesso privato su richiesta",
-      href: "mailto:info@alessandroveneziani.it?subject=Richiesta%20accesso%20Telegram",
+      value: "@ilviaggioemozionale",
+      href: "https://t.me/ilviaggioemozionale",
     },
     {
       label: "Disponibilità",

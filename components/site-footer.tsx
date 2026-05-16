@@ -31,7 +31,7 @@ const footerLinks = [
 
 const footerContactLinks = [
   {
-    label: "Telegram",
+    label: "Telegram del metodo",
     href: siteConfig.telegram,
     icon: ArrowUpRight,
   },
@@ -112,9 +112,9 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-8 flex flex-col gap-3 border-t border-gold/15 pt-5 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-10 flex flex-col gap-4 border-t border-gold/15 pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
-          <div className="flex flex-wrap gap-4 sm:justify-end">
+          <div className="flex flex-wrap gap-x-5 gap-y-2 sm:justify-end">
             <Link href="/blog" className="transition hover:text-gold">
               Blog
             </Link>

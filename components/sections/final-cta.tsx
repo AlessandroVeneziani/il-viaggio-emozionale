@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { SurfaceCard } from "@/components/ui/surface-card";
 import { finalCta } from "@/content/site-content";
 import { siteConfig } from "@/lib/site";
 
@@ -11,7 +12,7 @@ export function FinalCtaSection() {
     <section className="section-shell pb-28 pt-20 sm:pb-36 sm:pt-24">
       <Container>
         <Reveal>
-          <div className="mx-auto max-w-4xl text-center">
+          <SurfaceCard className="mx-auto max-w-4xl p-8 text-center sm:p-12 lg:p-14">
             <div className="gold-divider mb-10" />
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
               Welcome Back Home
@@ -42,7 +43,7 @@ export function FinalCtaSection() {
               </a>{" "}
               e raccontarmi cosa stai vivendo.
             </p>
-          </div>
+          </SurfaceCard>
         </Reveal>
       </Container>
     </section>

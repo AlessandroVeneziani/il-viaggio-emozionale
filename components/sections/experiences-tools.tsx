@@ -21,7 +21,7 @@ export function ExperiencesToolsSection() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="border-t border-gold/10 pt-6">
+            <div className="texture-paper rounded-[26px] border border-gold/7 bg-ivory/[0.018] p-6 sm:p-7">
               <p className="max-w-[62ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
                 {experiencesToolsSection.description}
               </p>
@@ -86,7 +86,7 @@ export function ExperiencesToolsSection() {
                           ))}
                         </div>
                         <p className="mt-6 text-sm leading-7 text-ivory/54">
-                          Una sezione viva, in crescita e disponibile su richiesta.
+                          Una collezione editoriale viva, in crescita e costruita per accompagnare il metodo nel tempo.
                         </p>
                       </div>
                     ) : (
