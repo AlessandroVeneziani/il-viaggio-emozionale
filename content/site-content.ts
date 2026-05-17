@@ -181,11 +181,11 @@ export const testimonialsNote =
   "Questa sezione può essere sostituita progressivamente con recensioni reali, autorizzate e verificabili, mantenendo lo stesso tono sobrio.";
 
 export const founderPreview = {
-  title: "Un ricercatore simbolico contemporaneo, prima ancora che un interprete.",
+  title: "Mappe simboliche per leggere il presente con più chiarezza.",
   body: [
-    "Mi chiamo Alessandro Veneziani e lavoro da anni sulla relazione tra simboli, identità, passaggi interiori e linguaggi capaci di rendere più leggibile il presente.",
-    "Il mio lavoro nasce per dare forma leggibile a ciò che spesso resta confuso: simboli, numeri, immagini interiori e passaggi di vita.",
-    "Il mio lavoro non nasce per rassicurare o impressionare. Nasce per costruire un metodo contemporaneo che unisce numeri, archetipi, immaginario e corpo e li trasforma in orientamento concreto.",
+    "Il mio lavoro nasce dall'incontro tra simboli, numeri, immagini interiori e passaggi di vita.",
+    "Non interpreto per dare risposte rapide: costruisco mappe per rendere più leggibile ciò che una persona sta attraversando.",
+    "Per questo il metodo unisce numeri, archetipi, immaginario e corpo e li trasforma in orientamento concreto, senza perdere profondità o presenza umana.",
   ],
   cta: {
     label: "Conosci il mio percorso",
@@ -279,7 +279,7 @@ export const experiencesToolsSection = {
       kicker: "Strumenti in evoluzione",
       subtitle: "Una collezione viva di strumenti simbolici e formativi.",
       body:
-        "Scrittura automatica, esercizi simbolici, journaling archetipico, percorsi audio e corsi online pensati per dare continuità al metodo senza trasformarlo in ecommerce.",
+        "Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana senza perdere la sua natura personale.",
       href: "/shop-editoriale",
       ctaLabel: "Esplora gli strumenti editoriali",
       mode: "text",
@@ -756,7 +756,7 @@ export const googleReviewsSection = {
   eyebrow: "Trust",
   title: "Un riscontro reale del metodo.",
   description:
-    "Prima di scegliere un percorso puoi vedere un riscontro reale del metodo. Nessuna testimonianza costruita: solo recensioni Google e segnali di fiducia verificabili.",
+    "Prima di scegliere un percorso puoi vedere un riscontro reale del metodo. Solo recensioni reali e segnali di fiducia verificabili.",
   ratingLabel: "Eccellente",
   ratingValue: "5.0",
   reviewCount: "27 recensioni",

@@ -35,8 +35,7 @@ export function FounderPreviewSection() {
               Veneziani
             </h2>
             <p className="mt-6 max-w-md text-base leading-8 text-ivory/76">
-              Ricercatore simbolico contemporaneo, autore del metodo e fondatore
-              de Il Viaggio Emozionale.
+              Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.
             </p>
           </Reveal>
           <Reveal delay={0.08}>

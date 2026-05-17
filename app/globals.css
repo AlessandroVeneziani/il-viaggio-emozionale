@@ -189,6 +189,22 @@ canvas {
     display: none !important;
   }
 
+  .section-shell [class*="border-t"][class*="border-gold"] {
+    border-top-color: transparent !important;
+  }
+
+  .section-shell [class*="border-b"][class*="border-gold"] {
+    border-bottom-color: transparent !important;
+  }
+
+  .section-shell [class*="border-l"][class*="border-gold"] {
+    border-left-color: transparent !important;
+  }
+
+  .section-shell [class*="border-r"][class*="border-gold"] {
+    border-right-color: transparent !important;
+  }
+
   .section-shell .absolute.rounded-full.border,
   .section-shell .absolute.rounded-full[class*="border"] {
     display: none !important;

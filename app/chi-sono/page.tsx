@@ -72,7 +72,7 @@ export default function AboutPage() {
                         Alessandro Veneziani
                       </p>
                       <p className="mt-2 text-sm leading-6 text-[#efe6d6]/84">
-                        Ricercatore simbolico contemporaneo, autore del metodo e fondatore de Il Viaggio Emozionale.
+                        Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.
                       </p>
                     </div>
                   </div>

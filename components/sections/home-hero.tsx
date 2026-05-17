@@ -70,10 +70,10 @@ export function HomeHero() {
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[rgba(53,45,38,0.58)] via-[rgba(53,45,38,0.16)] to-transparent sm:from-[rgba(45,39,34,0.62)] sm:via-[rgba(45,39,34,0.2)]" />
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[rgba(74,63,52,0.44)] via-[rgba(74,63,52,0.12)] to-transparent sm:from-[rgba(54,46,38,0.56)] sm:via-[rgba(54,46,38,0.16)]" />
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
-                <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
-                  <div className="max-w-[240px] text-left sm:max-w-[190px]">
+                <div className="flex flex-col-reverse items-center gap-10 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
+                  <div className="max-w-[260px] text-center sm:max-w-[190px] sm:text-left">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Figura soglia
                     </p>
@@ -91,7 +91,7 @@ export function HomeHero() {
                     </div>
                   </div>
 
-                  <div className="relative mx-auto w-[72%] max-w-[280px] sm:mr-[-1%] sm:ml-0 sm:w-[60%] sm:max-w-[410px]">
+                  <div className="relative mx-auto w-[66%] max-w-[248px] sm:mr-[-1%] sm:ml-0 sm:w-[60%] sm:max-w-[410px]">
                     <Image
                       src="/images/brand/matto.png"
                       alt="Il Matto come figura simbolica ricorrente del metodo Il Viaggio Emozionale"
@@ -99,7 +99,7 @@ export function HomeHero() {
                       height={1425}
                       priority
                       sizes="(max-width: 1024px) 70vw, 34vw"
-                      className="h-auto w-full object-contain saturate-[0.72] brightness-[0.95] contrast-[0.9] opacity-[0.94] drop-shadow-[0_16px_24px_rgba(0,0,0,0.14)] sm:drop-shadow-[0_22px_38px_rgba(0,0,0,0.18)]"
+                      className="h-auto w-full object-contain saturate-[0.74] brightness-[0.96] contrast-[0.91] opacity-[0.95] drop-shadow-[0_16px_26px_rgba(64,50,37,0.14)] sm:drop-shadow-[0_22px_38px_rgba(54,42,31,0.18)]"
                     />
                   </div>
                 </div>
