@@ -59,9 +59,9 @@ export default function RitrattoPage() {
                   className="h-auto w-full max-w-[360px] object-contain drop-shadow-[0_20px_34px_rgba(0,0,0,0.28)]"
                 />
               </div>
-              <div className="relative z-10 mt-6 max-w-[34ch] rounded-[18px] border border-gold/[0.08] bg-[rgba(35,30,25,0.5)] px-5 py-4 shadow-[0_14px_30px_rgba(0,0,0,0.1)] backdrop-blur-[4px]">
-                <p className="text-[0.98rem] font-medium leading-8 text-[#efe6d6]/84">
-                  La copertina resta parte viva dell&apos;identità del brand: un oggetto editoriale, non un box prodotto standard.
+              <div className="relative z-10 mt-6 max-w-[35ch] rounded-[18px] border border-gold/[0.06] bg-[rgba(35,30,25,0.42)] px-5 py-4 shadow-[0_12px_26px_rgba(0,0,0,0.08)] backdrop-blur-[3px]">
+                <p className="text-[0.95rem] font-medium leading-8 text-[#efe6d6]/82">
+                  Ogni Ritratto nasce come una mappa personale: da leggere, custodire e ritrovare nel tempo.
                 </p>
               </div>
             </SurfaceCard>

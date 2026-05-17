@@ -28,9 +28,9 @@ export function RitrattoSpotlightSection() {
                 sizes="(max-width: 1024px) 80vw, 34vw"
                 className="relative z-10 h-auto w-full max-w-[280px] object-contain saturate-[0.8] brightness-[0.97] contrast-[0.94] drop-shadow-[0_22px_34px_rgba(0,0,0,0.18)]"
               />
-              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.07] bg-[rgba(35,30,25,0.6)] px-4 py-3 shadow-[0_12px_26px_rgba(0,0,0,0.1)] backdrop-blur-[4px] sm:left-auto sm:right-5 sm:max-w-[210px] sm:px-4 sm:py-3 sm:border-gold/[0.08] sm:bg-[rgba(35,30,25,0.52)] sm:shadow-[0_14px_28px_rgba(0,0,0,0.12)] sm:backdrop-blur-[8px]">
-                <p className="text-[0.72rem] font-medium leading-6 text-[#efe6d6]/82 sm:text-[0.72rem] sm:leading-[1.75]">
-                  La copertina resta parte viva dell&apos;identità del brand: un oggetto editoriale, non un box prodotto standard.
+              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.06] bg-[rgba(35,30,25,0.46)] px-4 py-3 shadow-[0_10px_22px_rgba(0,0,0,0.08)] backdrop-blur-[3px] sm:left-auto sm:right-5 sm:max-w-[220px] sm:px-4 sm:py-3 sm:border-gold/[0.07] sm:bg-[rgba(35,30,25,0.4)] sm:shadow-[0_12px_24px_rgba(0,0,0,0.1)] sm:backdrop-blur-[6px]">
+                <p className="text-[0.7rem] font-medium leading-[1.7] text-[#efe6d6]/80 sm:text-[0.72rem] sm:leading-[1.72]">
+                  Ogni Ritratto nasce come una mappa personale: da leggere, custodire e ritrovare nel tempo.
                 </p>
               </div>
             </div>
