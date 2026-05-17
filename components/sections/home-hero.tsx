@@ -23,12 +23,12 @@ export function HomeHero() {
             <h1 className="editorial-title-depth whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] sm:text-[3.6rem] lg:text-[4.9rem]">
               {homeHero.title}
             </h1>
-            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.045] bg-ivory/[0.032] px-5 py-4.5 backdrop-blur-0 sm:border-gold/[0.055] sm:bg-ivory/[0.038] sm:backdrop-blur-[4px]">
+            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.055] bg-ivory/[0.045] px-5 py-4.5 backdrop-blur-0 sm:border-gold/[0.065] sm:bg-ivory/[0.05] sm:backdrop-blur-[4px]">
               <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/88 sm:text-base">
                 {homeHero.seoLine}
               </p>
             </div>
-            <p className="mt-7 max-w-xl text-pretty text-base leading-[1.95] text-ivory/74 sm:text-[1.03rem]">
+            <p className="mt-7 max-w-xl text-pretty text-base leading-[1.98] text-ivory/79 sm:text-[1.03rem]">
               {homeHero.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
@@ -49,7 +49,7 @@ export function HomeHero() {
                 {homeHero.secondaryCta.label}
               </ButtonLink>
             </div>
-            <p className="mt-8 max-w-xl text-sm leading-7 text-ivory/62">
+            <p className="mt-8 max-w-xl text-sm leading-7 text-ivory/68">
               {softLead.trim()}?{" "}
               <a
                 href="/contatti"
@@ -61,7 +61,7 @@ export function HomeHero() {
           </Reveal>
 
           <Reveal delay={0.15} className="relative">
-            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.045] bg-gradient-to-br from-ivory/[0.048] via-ivory/[0.02] to-transparent shadow-[0_18px_34px_rgba(54,42,31,0.08)] sm:border-gold/[0.055] sm:shadow-[0_24px_48px_rgba(54,42,31,0.1)] sm:min-h-[580px]">
+            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.06] bg-gradient-to-br from-ivory/[0.075] via-ivory/[0.03] to-transparent shadow-[0_18px_34px_rgba(54,42,31,0.1)] sm:border-gold/[0.07] sm:shadow-[0_24px_48px_rgba(54,42,31,0.12)] sm:min-h-[580px]">
               <div
                 className="absolute inset-0 opacity-[0.04]"
                 style={{
@@ -77,7 +77,7 @@ export function HomeHero() {
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Figura soglia
                     </p>
-                    <p className="mt-4 text-sm leading-7 text-ivory/76">
+                    <p className="mt-4 text-sm leading-7 text-ivory/80">
                       Il Matto ritorna come figura di soglia: non promessa di
                       fuga, ma inizio di una lettura più chiara del presente.
                     </p>
@@ -85,7 +85,7 @@ export function HomeHero() {
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>
-                    <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/62 xl:border-t xl:border-gold/[0.08] xl:pt-4">
+                    <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/68 xl:border-t xl:border-gold/[0.08] xl:pt-4">
                       <p>Numero, immagine, corpo.</p>
                       <p>Welcome Back Home.</p>
                     </div>

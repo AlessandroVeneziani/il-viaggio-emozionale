@@ -38,7 +38,7 @@ export function GoogleReviewsReadySection() {
                     </span>
                     <div className="pb-1">
                       <p className="text-sm tracking-[0.3em] text-gold">★★★★★</p>
-                      <p className="mt-2 text-sm text-ivory/64">
+                      <p className="mt-2 text-sm text-ivory/70">
                         {googleReviewsSection.ratingLabel} · {googleReviewsSection.reviewCount}
                       </p>
                     </div>
@@ -50,7 +50,7 @@ export function GoogleReviewsReadySection() {
                   <span className="border-b border-gold/14 pb-1">Verificabile</span>
                 </div>
               </div>
-              <p className="mt-4 max-w-[56ch] text-sm leading-7 text-ivory/60">
+              <p className="mt-4 max-w-[56ch] text-sm leading-7 text-ivory/68">
                 {googleReviewsSection.verifiedNote}
               </p>
             </Reveal>
@@ -70,7 +70,7 @@ export function GoogleReviewsReadySection() {
                         </span>
                       </div>
                       <p className="mt-2 text-sm tracking-[0.24em] text-gold">★★★★★</p>
-                      <p className="mt-4 max-w-[54ch] text-base leading-[1.9] text-ivory/76">
+                      <p className="mt-4 max-w-[54ch] text-base leading-[1.92] text-ivory/80">
                         {item.body}
                       </p>
                     </div>

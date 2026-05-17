@@ -34,7 +34,7 @@ export function FounderPreviewSection() {
               <br />
               Veneziani
             </h2>
-            <p className="mt-6 max-w-md text-base leading-8 text-ivory/76">
+            <p className="mt-6 max-w-md text-base leading-8 text-ivory/82">
               Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.
             </p>
           </Reveal>
@@ -42,7 +42,7 @@ export function FounderPreviewSection() {
             <h2 className="editorial-title-depth font-display text-[2.5rem] leading-[1.06] sm:text-[3.2rem]">
               {founderPreview.title}
             </h2>
-            <div className="mt-7 max-w-[64ch] space-y-7 text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
+            <div className="mt-7 max-w-[64ch] space-y-7 text-base leading-[1.98] text-ivory/84 sm:text-[1.04rem]">
               {founderPreview.body.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -52,7 +52,7 @@ export function FounderPreviewSection() {
                 {founderPreview.cta.label}
               </ButtonLink>
             </div>
-            <p className="mt-5 max-w-[46ch] text-sm leading-7 text-ivory/62">
+            <p className="mt-5 max-w-[46ch] text-sm leading-7 text-ivory/68">
               Non sai da dove iniziare? Puoi scrivermi direttamente e raccontarmi cosa
               stai vivendo. Ti aiuterò a capire quale percorso può esserti più utile.
             </p>

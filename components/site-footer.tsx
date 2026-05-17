@@ -44,7 +44,7 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#14110e]">
+    <footer className="relative overflow-hidden bg-[#191510]">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{
@@ -112,12 +112,13 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col gap-5 border-t-0 pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between xl:border-t xl:border-gold/[0.06]">
+        <div className="mt-12 flex flex-col gap-5 border-t-0 pt-6 text-sm text-ivory/54 sm:flex-row sm:items-center sm:justify-between xl:border-t xl:border-gold/[0.06]">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:justify-end sm:gap-x-6 sm:gap-y-2">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-0 sm:gap-y-2">
             <Link href="/blog" className="transition hover:text-gold">
               Blog
             </Link>
+            <span className="hidden text-gold/28 sm:inline-block sm:px-3">•</span>
             <a href={`mailto:${siteConfig.email}`} className="transition hover:text-gold">
               {siteConfig.email}
             </a>

@@ -22,11 +22,11 @@ body {
   min-height: 100vh;
   width: 100%;
   background:
-    linear-gradient(180deg, rgba(31, 27, 23, 0.16) 0%, rgba(31, 27, 23, 0.25) 100%),
+    linear-gradient(180deg, rgba(33, 29, 25, 0.22) 0%, rgba(33, 29, 25, 0.34) 100%),
     url("/images/backgrounds/sfondo-numeri.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.13), transparent 38%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.075), transparent 40%),
-    linear-gradient(180deg, #312a22 0%, #262018 46%, #201a15 100%);
+    radial-gradient(circle at top, rgba(198, 167, 94, 0.14), transparent 36%),
+    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.082), transparent 38%),
+    linear-gradient(180deg, #2c251e 0%, #231d17 44%, #1d1813 100%);
   background-size: cover, 1180px auto, auto, auto, auto;
   background-position: center top, center top, center top, center top, center top;
   background-repeat: no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
@@ -147,10 +147,10 @@ canvas {
 }
 
 .editorial-title-depth {
-  color: #f5f1e8;
+  color: #f7f1e4;
   text-shadow:
-    0 1px 0 rgba(255, 248, 238, 0.04),
-    0 10px 22px rgba(60, 47, 35, 0.14);
+    0 1px 0 rgba(255, 248, 238, 0.06),
+    0 12px 24px rgba(62, 48, 36, 0.18);
 }
 
 @media (max-width: 1024px) {

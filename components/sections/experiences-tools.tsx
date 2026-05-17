@@ -85,8 +85,8 @@ export function ExperiencesToolsSection() {
                             </p>
                           ))}
                         </div>
-                        <p className="mt-6 text-sm leading-7 text-ivory/54">
-                          Una collezione editoriale viva, in crescita e costruita per accompagnare il metodo nel tempo.
+                        <p className="mt-6 text-sm leading-7 text-ivory/62">
+                          Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana senza perdere la sua natura personale.
                         </p>
                       </div>
                     ) : (

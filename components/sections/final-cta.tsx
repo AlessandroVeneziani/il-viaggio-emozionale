@@ -20,7 +20,7 @@ export function FinalCtaSection() {
             <h2 className="editorial-title-depth mx-auto mt-5 max-w-3xl text-balance font-display text-[2.75rem] leading-[1.06] sm:text-[3.7rem]">
               {finalCta.title}
             </h2>
-            <p className="mx-auto mt-7 max-w-[46ch] text-lg leading-[1.9] text-ivory/78">
+            <p className="mx-auto mt-7 max-w-[46ch] text-lg leading-[1.92] text-ivory/82">
               {finalCta.body}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -33,7 +33,7 @@ export function FinalCtaSection() {
                 </ButtonLink>
               ) : null}
             </div>
-            <p className="mx-auto mt-6 max-w-[46ch] text-sm leading-7 text-ivory/62">
+            <p className="mx-auto mt-6 max-w-[46ch] text-sm leading-7 text-ivory/68">
               Non sai da dove iniziare?{" "}
               <a
                 href={`mailto:${siteConfig.email}`}
