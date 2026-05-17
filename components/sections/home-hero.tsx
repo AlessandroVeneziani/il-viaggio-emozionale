@@ -71,9 +71,6 @@ export function HomeHero() {
                 }}
               />
               <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink/86 via-ink/34 to-transparent" />
-              <div className="pointer-events-none absolute inset-y-10 right-10 hidden w-px bg-gradient-to-b from-gold/0 via-gold/16 to-gold/0 sm:block" />
-              <div className="pointer-events-none absolute right-8 top-8 hidden h-36 w-36 rounded-full border border-gold/8 sm:block sm:h-44 sm:w-44" />
-              <div className="pointer-events-none absolute bottom-10 left-8 hidden h-24 w-24 rounded-full border border-gold/8 sm:block sm:h-28 sm:w-28" />
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
                 <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
                   <div className="max-w-[240px] text-left sm:max-w-[190px]">
@@ -94,7 +91,7 @@ export function HomeHero() {
                     </div>
                   </div>
 
-                  <div className="relative mx-auto w-[72%] max-w-[280px] sm:mr-[-2%] sm:ml-0 sm:w-[60%] sm:max-w-[410px]">
+                  <div className="relative mx-auto w-[72%] max-w-[280px] sm:mr-[-1%] sm:ml-0 sm:w-[60%] sm:max-w-[410px]">
                     <Image
                       src="/images/brand/matto.png"
                       alt="Il Matto come figura simbolica ricorrente del metodo Il Viaggio Emozionale"
@@ -102,7 +99,7 @@ export function HomeHero() {
                       height={1425}
                       priority
                       sizes="(max-width: 1024px) 70vw, 34vw"
-                      className="h-auto w-full object-contain saturate-[0.72] brightness-[0.95] contrast-[0.9] opacity-[0.94] drop-shadow-[0_18px_28px_rgba(0,0,0,0.16)] sm:drop-shadow-[0_22px_38px_rgba(0,0,0,0.18)]"
+                      className="h-auto w-full object-contain saturate-[0.72] brightness-[0.95] contrast-[0.9] opacity-[0.94] drop-shadow-[0_16px_24px_rgba(0,0,0,0.14)] sm:drop-shadow-[0_22px_38px_rgba(0,0,0,0.18)]"
                     />
                   </div>
                 </div>

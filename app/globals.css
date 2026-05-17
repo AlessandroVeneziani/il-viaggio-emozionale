@@ -179,4 +179,20 @@ canvas {
   .section-shell .gold-divider {
     opacity: 0.22;
   }
+
+  .section-shell [class*="border-t"],
+  .section-shell [class*="border-b"] {
+    border-top-color: rgba(243, 234, 219, 0.035) !important;
+    border-bottom-color: rgba(243, 234, 219, 0.035) !important;
+  }
+
+  .section-shell [class*="h-px"],
+  .section-shell [class*="w-px"] {
+    display: none !important;
+  }
+
+  .section-shell .absolute.rounded-full.border,
+  .section-shell .absolute.rounded-full[class*="border"] {
+    display: none !important;
+  }
 }

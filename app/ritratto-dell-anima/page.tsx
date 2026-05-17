@@ -59,8 +59,8 @@ export default function RitrattoPage() {
                   className="h-auto w-full max-w-[360px] object-contain drop-shadow-[0_20px_34px_rgba(0,0,0,0.28)]"
                 />
               </div>
-              <div className="relative z-10 mt-6 max-w-[38ch] rounded-[18px] border border-gold/[0.08] bg-[rgba(34,29,24,0.56)] px-5 py-4 backdrop-blur-[6px]">
-                <p className="text-base font-medium leading-8 text-[#efe6d6]/86">
+              <div className="relative z-10 mt-6 max-w-[34ch] rounded-[18px] border border-gold/[0.08] bg-[rgba(35,30,25,0.5)] px-5 py-4 shadow-[0_14px_30px_rgba(0,0,0,0.1)] backdrop-blur-[4px]">
+                <p className="text-[0.98rem] font-medium leading-8 text-[#efe6d6]/84">
                   La copertina resta parte viva dell&apos;identità del brand: un oggetto editoriale, non un box prodotto standard.
                 </p>
               </div>
@@ -101,25 +101,25 @@ export default function RitrattoPage() {
             {ritrattoPage.options.map((option, index) => (
               <SurfaceCard
                 key={option.title}
-                className={`relative flex h-full flex-col overflow-hidden p-8 ${index === 2 ? "border-[#d2b674]/26 bg-[linear-gradient(180deg,rgba(86,72,60,0.28),rgba(33,28,24,0.42))] shadow-[0_24px_50px_rgba(0,0,0,0.16)]" : ""}`}
+                className={`relative flex h-full flex-col overflow-hidden p-8 ${index === 2 ? "border-[#d2b674]/28 bg-[linear-gradient(180deg,rgba(92,76,63,0.3),rgba(35,29,24,0.46))] shadow-[0_26px_56px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,244,225,0.06)]" : ""}`}
               >
                 {index === 2 ? (
                   <>
                     <div
-                      className="absolute inset-0 opacity-[0.055]"
+                      className="absolute inset-0 opacity-[0.05]"
                       style={{
                         backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                       }}
                     />
-                    <div className="absolute inset-x-8 top-7 h-20 rounded-full bg-gold/[0.08] blur-3xl" />
+                    <div className="absolute inset-x-8 top-7 h-20 rounded-full bg-gold/[0.07] blur-3xl" />
                   </>
                 ) : null}
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+                <p className={`text-xs font-semibold uppercase tracking-[0.3em] ${index === 2 ? "text-[#d8bf83]" : "text-gold"}`}>
                   {option.title}
                 </p>
-                <h3 className={`mt-5 font-display text-4xl ${index === 2 ? "text-[#f3ead9]" : "text-ivory"}`}>
+                <h3 className={`mt-5 font-display text-4xl ${index === 2 ? "text-[#f2e7d5]" : "text-ivory"}`}>
                   {option.price}
                 </h3>
                 <p className={`mt-4 flex-1 text-base leading-8 ${index === 2 ? "text-[#efe6d6]/78" : "text-ivory/76"}`}>
