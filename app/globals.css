@@ -22,11 +22,11 @@ body {
   min-height: 100vh;
   width: 100%;
   background:
-    linear-gradient(180deg, rgba(15, 15, 15, 0.5) 0%, rgba(15, 15, 15, 0.66) 100%),
+    linear-gradient(180deg, rgba(24, 21, 18, 0.3) 0%, rgba(24, 21, 18, 0.44) 100%),
     url("/images/backgrounds/sfondo-numeri.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.09), transparent 32%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.05), transparent 34%),
-    linear-gradient(180deg, #171512 0%, #111111 44%, #121212 100%);
+    radial-gradient(circle at top, rgba(198, 167, 94, 0.11), transparent 34%),
+    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.06), transparent 36%),
+    linear-gradient(180deg, #211d18 0%, #1a1714 46%, #181512 100%);
   background-size: cover, 1180px auto, auto, auto, auto;
   background-position: center top, center top, center top, center top, center top;
   background-repeat: no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
@@ -78,7 +78,7 @@ a {
     linear-gradient(135deg, rgba(255, 255, 255, 0.014), transparent 35%),
     radial-gradient(circle at 20% 20%, rgba(198, 167, 94, 0.026), transparent 30%);
   mix-blend-mode: screen;
-  opacity: 0.42;
+  opacity: 0.36;
   pointer-events: none;
 }
 

@@ -184,6 +184,7 @@ export const founderPreview = {
   title: "Un ricercatore simbolico contemporaneo, prima ancora che un interprete.",
   body: [
     "Mi chiamo Alessandro Veneziani e lavoro da anni sulla relazione tra simboli, identità, passaggi interiori e linguaggi capaci di rendere più leggibile il presente.",
+    "Il mio lavoro nasce per dare forma leggibile a ciò che spesso resta confuso: simboli, numeri, immagini interiori e passaggi di vita.",
     "Il mio lavoro non nasce per rassicurare o impressionare. Nasce per costruire un metodo contemporaneo che unisce numeri, archetipi, immaginario e corpo e li trasforma in orientamento concreto.",
   ],
   cta: {
@@ -244,9 +245,9 @@ export const experiencesToolsSection = {
   eyebrow: "Strumenti di continuità",
   title: "Il lavoro non finisce nella lettura.",
   description:
-    "Il lavoro non finisce nella lettura. Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
+    "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Uno spazio editoriale in continua evoluzione dedicato a pratiche, meditazioni, scrittura simbolica e strumenti di integrazione.",
+    "Una collezione editoriale in evoluzione: meditazioni, scrittura simbolica, esercizi, percorsi audio e pratiche per portare il metodo nella vita quotidiana.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -702,6 +703,7 @@ export const aboutPage = {
   },
   introduction: [
     "Mi chiamo Alessandro Veneziani e Il Viaggio Emozionale nasce dall'esigenza di costruire un linguaggio più chiaro, più autorevole e più contemporaneo per parlare di simboli, identità e trasformazione interiore.",
+    "Il mio lavoro nasce per dare forma leggibile a ciò che spesso resta confuso: simboli, numeri, immagini interiori e passaggi di vita.",
     "Non mi interessa alimentare confusione spirituale. Mi interessa creare letture che aiutino le persone a riconoscere ciò che stanno vivendo e a trasformarlo in una direzione concreta.",
   ],
   sections: [

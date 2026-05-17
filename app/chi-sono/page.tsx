@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
@@ -43,7 +45,7 @@ export default function AboutPage() {
 
             <SurfaceCard className="relative overflow-hidden p-8 sm:p-10">
               <div
-                className="absolute inset-0 opacity-10"
+                className="absolute inset-0 opacity-[0.08]"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
                   backgroundSize: "cover",
@@ -54,22 +56,23 @@ export default function AboutPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                   Formazione e ricerca
                 </p>
-                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/10 bg-gradient-to-br from-ivory/[0.06] to-transparent p-6">
-                  <div
-                    className="relative min-h-[240px] overflow-hidden rounded-[22px] border border-gold/8"
-                    style={{
-                      backgroundImage:
-                        'linear-gradient(180deg, rgba(244, 241, 234, 0.04), rgba(244, 241, 234, 0.015)), url("/images/backgrounds/sfondo-numeri.png")',
-                      backgroundSize: "cover",
-                      backgroundPosition: "center",
-                    }}
-                  >
-                    <div className="absolute inset-x-8 top-10 h-px bg-gradient-to-r from-transparent via-gold/24 to-transparent" />
-                    <div className="absolute inset-y-8 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-gold/18 to-transparent" />
-                    <div className="absolute inset-x-10 bottom-10">
-                      <p className="max-w-[16ch] font-display text-[1.45rem] leading-[1.5] text-ivory/84 sm:text-[1.7rem]">
-                        Il simbolo non promette.
-                        <span className="block text-gold/88">Orienta.</span>
+                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/[0.08] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4 sm:p-5">
+                  <div className="relative overflow-hidden rounded-[24px]">
+                    <Image
+                      src="/images/brand/alessandro-veneziani-portrait.jpg"
+                      alt="Ritratto editoriale di Alessandro Veneziani"
+                      width={1200}
+                      height={1800}
+                      sizes="(max-width: 1024px) 90vw, 32vw"
+                      className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9]"
+                    />
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)]" />
+                    <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.08] bg-[rgba(35,30,25,0.34)] px-4 py-3 backdrop-blur-[6px]">
+                      <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-gold/88">
+                        Alessandro Veneziani
+                      </p>
+                      <p className="mt-2 text-sm leading-6 text-[#efe6d6]/84">
+                        Ricercatore simbolico contemporaneo, autore del metodo e fondatore de Il Viaggio Emozionale.
                       </p>
                     </div>
                   </div>

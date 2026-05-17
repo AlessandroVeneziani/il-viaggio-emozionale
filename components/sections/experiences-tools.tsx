@@ -21,7 +21,7 @@ export function ExperiencesToolsSection() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="texture-paper rounded-[26px] border border-gold/5 bg-ivory/[0.018] p-6 sm:p-7">
+            <div className="texture-paper rounded-[26px] border border-gold/[0.05] bg-ivory/[0.024] p-6 sm:p-7">
               <p className="max-w-[62ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
                 {experiencesToolsSection.description}
               </p>
