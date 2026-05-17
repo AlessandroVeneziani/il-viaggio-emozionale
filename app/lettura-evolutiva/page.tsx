@@ -39,7 +39,7 @@ export default function LetturaEvolutivaPage() {
               <div
                 className="absolute inset-0 opacity-12"
                 style={{
-                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

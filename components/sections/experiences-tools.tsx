@@ -62,7 +62,7 @@ export function ExperiencesToolsSection() {
                         <div
                           className="absolute inset-0 opacity-[0.05]"
                           style={{
-                            backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                            backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                             backgroundSize: "cover",
                             backgroundPosition: "center",
                           }}
@@ -95,7 +95,7 @@ export function ExperiencesToolsSection() {
                           <div
                             className="absolute inset-0 opacity-[0.05]"
                             style={{
-                              backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                              backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                               backgroundSize: "cover",
                               backgroundPosition: "center",
                             }}

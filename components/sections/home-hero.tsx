@@ -65,7 +65,7 @@ export function HomeHero() {
               <div
                 className="absolute inset-0 opacity-[0.04]"
                 style={{
-                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
