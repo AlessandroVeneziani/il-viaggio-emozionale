@@ -603,8 +603,8 @@ export const editorialToolsPage = {
       "Una piccola collezione di materiali simbolici pensati per dare continuità al percorso e accompagnarti nel quotidiano.",
   },
   intro: [
-    "Non uno shop tradizionale. Piuttosto una raccolta curata di strumenti da portare con te: ritratti stampati, libri, quaderni rituali e materiali che aiutano a tenere aperta la relazione con ciò che hai compreso.",
-    "Lo shop editoriale verrà integrato in una fase successiva. Per ora puoi richiedere disponibilità e informazioni sui materiali già pronti o in preparazione.",
+    "Più che uno shop, una raccolta curata di strumenti da portare con te: ritratti stampati, libri, quaderni rituali e materiali che aiutano a tenere aperta la relazione con ciò che hai compreso.",
+    "Alcuni materiali sono già disponibili su richiesta, altri nasceranno progressivamente come estensione naturale del metodo.",
     "Ogni oggetto nasce per essere abitato con calma. Per diventare memoria viva del percorso, non semplice acquisto impulsivo.",
   ],
   pillars: [
