@@ -13,7 +13,7 @@ export function SoulDesignSpotlightSection() {
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {soulDesignHomeSpotlight.eyebrow}
               </p>
-              <h2 className="mt-5 max-w-[14ch] font-display text-[2.7rem] leading-[1.08] text-ivory sm:text-[3.45rem]">
+              <h2 className="editorial-title-depth mt-5 max-w-[14ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
                 {soulDesignHomeSpotlight.title}
               </h2>
               <p className="mt-6 max-w-[60ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
@@ -23,7 +23,7 @@ export function SoulDesignSpotlightSection() {
                 {soulDesignHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
-                    className="border-t-0 pt-1 text-sm leading-7 text-ivory/66 sm:border-t sm:border-gold/8 sm:pt-4 sm:text-base"
+                    className="pt-1 text-sm leading-7 text-ivory/66 sm:text-base xl:border-t xl:border-gold/[0.08] xl:pt-4"
                   >
                     {line}
                   </p>
@@ -60,7 +60,7 @@ export function SoulDesignSpotlightSection() {
                   ["ENERGIA", "forza che muove il sistema"],
                   ["ANIMA", "direzione profonda"],
                 ].map(([label, text]) => (
-                  <div key={label} className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5">
+                  <div key={label} className="pt-1 xl:border-t xl:border-gold/[0.08] xl:pt-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       {label}
                     </p>

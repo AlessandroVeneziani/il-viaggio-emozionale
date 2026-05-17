@@ -32,7 +32,7 @@ export function PageHero({
               {label}
             </p>
           ) : null}
-          <h1 className="text-balance font-display text-[2.95rem] leading-[1.06] text-ivory sm:text-[4.1rem] lg:text-[5.3rem]">
+          <h1 className="editorial-title-depth text-balance font-display text-[2.95rem] leading-[1.06] sm:text-[4.1rem] lg:text-[5.3rem]">
             {title}
           </h1>
           <p className="mt-7 max-w-3xl text-pretty text-lg leading-[1.9] text-ivory/80 sm:text-[1.12rem]">

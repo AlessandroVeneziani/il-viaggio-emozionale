@@ -22,11 +22,11 @@ body {
   min-height: 100vh;
   width: 100%;
   background:
-    linear-gradient(180deg, rgba(31, 27, 23, 0.2) 0%, rgba(31, 27, 23, 0.3) 100%),
+    linear-gradient(180deg, rgba(31, 27, 23, 0.16) 0%, rgba(31, 27, 23, 0.25) 100%),
     url("/images/backgrounds/sfondo-numeri.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.12), transparent 36%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.07), transparent 38%),
-    linear-gradient(180deg, #2b261f 0%, #221d18 46%, #1d1915 100%);
+    radial-gradient(circle at top, rgba(198, 167, 94, 0.13), transparent 38%),
+    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.075), transparent 40%),
+    linear-gradient(180deg, #312a22 0%, #262018 46%, #201a15 100%);
   background-size: cover, 1180px auto, auto, auto, auto;
   background-position: center top, center top, center top, center top, center top;
   background-repeat: no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
@@ -146,7 +146,14 @@ canvas {
     inset 0 0 0 1px rgba(198, 167, 94, 0.18);
 }
 
-@media (max-width: 767px) {
+.editorial-title-depth {
+  color: #f5f1e8;
+  text-shadow:
+    0 1px 0 rgba(255, 248, 238, 0.04),
+    0 10px 22px rgba(60, 47, 35, 0.14);
+}
+
+@media (max-width: 1024px) {
   body {
     background-size: cover, 920px auto, auto, auto, auto;
     background-attachment: scroll, scroll, scroll, scroll, scroll;
@@ -169,15 +176,6 @@ canvas {
     border-color: transparent;
   }
 
-  .section-shell .texture-paper {
-    border-color: rgba(243, 234, 219, 0.075) !important;
-    box-shadow:
-      0 14px 28px rgba(69, 54, 39, 0.06),
-      inset 0 1px 0 rgba(255, 248, 238, 0.04) !important;
-    -webkit-backdrop-filter: none !important;
-    backdrop-filter: none !important;
-  }
-
   .section-shell .gold-divider {
     display: none !important;
   }
@@ -186,20 +184,29 @@ canvas {
     display: none !important;
   }
 
-  .section-shell [class*="border-t"],
-  .section-shell [class*="border-b"],
-  .section-shell [class*="border-l"],
-  .section-shell [class*="border-r"] {
-    border-top-width: 0 !important;
-    border-bottom-width: 0 !important;
-    border-left-width: 0 !important;
-    border-right-width: 0 !important;
-    border-color: transparent !important;
-  }
-
   .section-shell [class*="h-px"],
   .section-shell [class*="w-px"] {
     display: none !important;
+  }
+
+  .section-shell .absolute.rounded-full.border,
+  .section-shell .absolute.rounded-full[class*="border"] {
+    display: none !important;
+  }
+}
+
+@media (max-width: 767px) {
+  .texture-paper::before {
+    opacity: 0.2;
+  }
+
+  .section-shell .texture-paper {
+    border-color: rgba(243, 234, 219, 0.075) !important;
+    box-shadow:
+      0 14px 28px rgba(69, 54, 39, 0.06),
+      inset 0 1px 0 rgba(255, 248, 238, 0.04) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
   }
 
   .section-shell [class*="backdrop-blur"] {
@@ -211,10 +218,5 @@ canvas {
     box-shadow:
       0 14px 28px rgba(69, 54, 39, 0.06),
       inset 0 1px 0 rgba(255, 248, 238, 0.04) !important;
-  }
-
-  .section-shell .absolute.rounded-full.border,
-  .section-shell .absolute.rounded-full[class*="border"] {
-    display: none !important;
   }
 }

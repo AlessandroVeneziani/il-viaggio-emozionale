@@ -17,7 +17,7 @@ export function FinalCtaSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
               Welcome Back Home
             </p>
-            <h2 className="mx-auto mt-5 max-w-3xl text-balance font-display text-[2.75rem] leading-[1.06] text-ivory sm:text-[3.7rem]">
+            <h2 className="editorial-title-depth mx-auto mt-5 max-w-3xl text-balance font-display text-[2.75rem] leading-[1.06] sm:text-[3.7rem]">
               {finalCta.title}
             </h2>
             <p className="mx-auto mt-7 max-w-[46ch] text-lg leading-[1.9] text-ivory/78">

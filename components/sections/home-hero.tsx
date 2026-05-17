@@ -20,7 +20,7 @@ export function HomeHero() {
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-gold sm:text-sm">
               {homeHero.kicker}
             </p>
-            <h1 className="whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] text-ivory sm:text-[3.6rem] lg:text-[4.9rem]">
+            <h1 className="editorial-title-depth whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] sm:text-[3.6rem] lg:text-[4.9rem]">
               {homeHero.title}
             </h1>
             <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.045] bg-ivory/[0.032] px-5 py-4.5 backdrop-blur-0 sm:border-gold/[0.055] sm:bg-ivory/[0.038] sm:backdrop-blur-[4px]">
@@ -85,7 +85,7 @@ export function HomeHero() {
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>
-                    <div className="mt-5 space-y-2 border-t-0 pt-1 text-sm text-ivory/62 sm:border-t sm:border-gold/8 sm:pt-4">
+                    <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/62 xl:border-t xl:border-gold/[0.08] xl:pt-4">
                       <p>Numero, immagine, corpo.</p>
                       <p>Welcome Back Home.</p>
                     </div>

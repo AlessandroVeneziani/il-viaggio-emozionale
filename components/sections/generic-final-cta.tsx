@@ -20,7 +20,7 @@ export function GenericFinalCta({
         <div className="mx-auto max-w-4xl text-center">
           <div className="gold-divider mb-10" />
           <div className="mx-auto max-w-3xl">
-            <h2 className="font-display text-[2.75rem] leading-[1.06] text-ivory sm:text-[3.7rem]">
+            <h2 className="editorial-title-depth font-display text-[2.75rem] leading-[1.06] sm:text-[3.7rem]">
               {title}
             </h2>
             <p className="mt-7 text-lg leading-[1.9] text-ivory/78">{body}</p>

@@ -46,7 +46,7 @@ export function MethodGrid() {
           })}
         </div>
         <Reveal delay={0.18} className="mt-10">
-          <div className="border-t-0 pt-1 text-center sm:border-t sm:border-gold/10 sm:pt-6">
+          <div className="pt-1 text-center xl:border-t xl:border-gold/[0.08] xl:pt-6">
             <p className="mx-auto max-w-[52ch] text-base leading-[1.95] text-ivory/68 sm:text-[1.03rem]">
               Numero, immagine e corpo non vengono usati per spiegarti
               dall&apos;esterno, ma per offrirti una mappa più leggibile del

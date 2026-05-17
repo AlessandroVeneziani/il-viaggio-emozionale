@@ -12,7 +12,7 @@ export function FounderPreviewSection() {
       <NumberBackdrop className="opacity-42" />
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-          <Reveal className="border-t-0 pt-1 sm:border-t sm:border-gold/14 sm:pt-8">
+          <Reveal className="pt-1 xl:border-t xl:border-gold/[0.1] xl:pt-8">
             <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4">
               <div className="relative overflow-hidden rounded-[22px]">
                 <Image
@@ -29,7 +29,7 @@ export function FounderPreviewSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
               Chi sono
             </p>
-            <h2 className="mt-5 font-display text-[3rem] leading-[1.06] text-ivory sm:text-[3.7rem]">
+            <h2 className="editorial-title-depth mt-5 font-display text-[3rem] leading-[1.06] sm:text-[3.7rem]">
               Alessandro
               <br />
               Veneziani
@@ -40,7 +40,7 @@ export function FounderPreviewSection() {
             </p>
           </Reveal>
           <Reveal delay={0.08}>
-            <h2 className="font-display text-[2.5rem] leading-[1.06] text-ivory sm:text-[3.2rem]">
+            <h2 className="editorial-title-depth font-display text-[2.5rem] leading-[1.06] sm:text-[3.2rem]">
               {founderPreview.title}
             </h2>
             <div className="mt-7 max-w-[64ch] space-y-7 text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">

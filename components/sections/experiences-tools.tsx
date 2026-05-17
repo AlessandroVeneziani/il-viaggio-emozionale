@@ -15,7 +15,7 @@ export function ExperiencesToolsSection() {
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
               {experiencesToolsSection.eyebrow}
             </p>
-            <h2 className="mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] text-ivory sm:text-[3.45rem]">
+            <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
               {experiencesToolsSection.title}
             </h2>
           </Reveal>
@@ -74,7 +74,7 @@ export function ExperiencesToolsSection() {
                         </div>
                       </div>
                     ) : card.mode === "text" ? (
-                      <div className="w-full border-t-0 pt-1 sm:border-t sm:border-gold/7 sm:pt-5">
+                      <div className="w-full pt-1 xl:border-t xl:border-gold/[0.07] xl:pt-5">
                         <div className="grid gap-3 sm:grid-cols-2">
                           {card.items.map((item) => (
                             <p

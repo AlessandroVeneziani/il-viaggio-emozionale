@@ -37,11 +37,11 @@ export function RitrattoSpotlightSection() {
           </Reveal>
 
           <Reveal>
-            <div className="border-t-0 pt-1 sm:border-t sm:border-gold/10 sm:pt-6">
+            <div className="pt-1 xl:border-t xl:border-gold/[0.08] xl:pt-6">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {ritrattoHomeSpotlight.eyebrow}
               </p>
-              <h2 className="mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] text-ivory sm:text-[3.45rem]">
+              <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
                 {ritrattoHomeSpotlight.title}
               </h2>
               <p className="mt-6 max-w-[60ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
@@ -51,7 +51,7 @@ export function RitrattoSpotlightSection() {
                 {ritrattoHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
-                    className="border-t-0 pt-1 text-sm leading-7 text-ivory/66 sm:border-t sm:border-gold/8 sm:pt-4 sm:text-base"
+                    className="pt-1 text-sm leading-7 text-ivory/66 sm:text-base xl:border-t xl:border-gold/[0.08] xl:pt-4"
                   >
                     {line}
                   </p>

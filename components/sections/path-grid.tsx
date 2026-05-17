@@ -14,7 +14,7 @@ export function PathGrid() {
           description="Ritratto dell'Anima, Soul Design e Percorso Evolutivo sono tre accessi diversi allo stesso lavoro di orientamento simbolico."
         />
         <div className="mt-16 relative">
-          <div className="absolute left-[17px] top-0 hidden h-full w-px bg-gradient-to-b from-gold/0 via-gold/12 to-gold/0 lg:block" />
+          <div className="absolute left-[17px] top-0 hidden h-full w-px bg-gradient-to-b from-gold/0 via-gold/10 to-gold/0 xl:block" />
           <div className="grid gap-10">
             {featuredPaths.map((path, index) => (
               <Reveal key={path.title} delay={0.06 + index * 0.05}>
@@ -24,7 +24,7 @@ export function PathGrid() {
                       {index + 1}
                     </span>
                   </div>
-                  <div className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5 lg:pt-6">
+                  <div className="pt-1 lg:pt-6 xl:border-t xl:border-gold/[0.08] xl:pt-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                       Step {index + 1}
                     </p>
@@ -35,7 +35,7 @@ export function PathGrid() {
                       {path.kicker}
                     </p>
                   </div>
-                  <div className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5 lg:pt-6">
+                  <div className="pt-1 lg:pt-6 xl:border-t xl:border-gold/[0.08] xl:pt-5">
                     <p className="max-w-[54ch] text-base leading-[1.9] text-ivory/78">
                       {path.summary}
                     </p>
@@ -57,7 +57,7 @@ export function PathGrid() {
                         </p>
                       </div>
                     </div>
-                    <div className="mt-7 flex flex-col gap-5 border-t-0 pt-1 sm:border-t sm:border-gold/7 sm:pt-5 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="mt-7 flex flex-col gap-5 pt-1 sm:flex-row sm:items-end sm:justify-between xl:border-t xl:border-gold/[0.07] xl:pt-5">
                       <div className="max-w-[34ch]">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
                           {path.detailLabel}
