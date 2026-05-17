@@ -17,10 +17,10 @@ export default function ContactPage() {
     <main>
       <PageHero {...contactPage.hero} accentNumber="6" />
 
-      <section className="section-shell py-16 sm:py-20">
+      <section className="section-shell py-18 sm:py-22">
         <Container>
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
-            <div className="border-t border-gold/10 pt-8">
+            <div className="border-t border-gold/8 pt-8">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Studio privato
               </p>
@@ -45,18 +45,18 @@ export default function ContactPage() {
               </p>
             </div>
 
-            <div className="texture-paper rounded-[30px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.015))] p-8 sm:p-10 lg:p-12">
+            <div className="texture-paper rounded-[30px] border border-gold/6 bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.016))] p-8 sm:p-10 lg:p-12">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Contatto riservato
               </p>
               <p className="mt-5 max-w-[30ch] font-display text-[2rem] leading-[1.12] text-ivory sm:text-[2.5rem]">
                 Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.
               </p>
-              <div className="mt-10 grid gap-8 lg:grid-cols-2 lg:gap-x-10">
+              <div className="mt-10 grid gap-8 sm:grid-cols-2 sm:gap-x-10">
               {contactPage.methods.map((method) => {
                 const valueClassName =
                   method.label === "Email"
-                    ? "mt-4 max-w-[34ch] break-all text-base leading-[1.9] text-ivory/80 sm:text-lg"
+                    ? "mt-4 max-w-[34ch] break-words text-base leading-[1.9] text-ivory/80 sm:text-lg"
                     : method.label === "WhatsApp"
                       ? "mt-4 text-base leading-[1.9] text-ivory/80 sm:text-lg sm:whitespace-nowrap"
                       : "mt-4 max-w-[34ch] text-base leading-[1.9] text-ivory/80 sm:text-lg";

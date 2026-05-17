@@ -44,7 +44,7 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden border-t border-gold/15 bg-[#0B0B0B]">
+    <footer className="relative overflow-hidden bg-[#0B0B0B]">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{
@@ -96,23 +96,23 @@ export function SiteFooter() {
             <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
               Presenza
             </p>
-            <div className="mt-5 space-y-3">
+            <div className="mt-5 space-y-3.5">
               {footerContactLinks.map(({ href, label, icon: Icon }) => (
                 <a
-                key={label}
-                href={href}
-                target={href.startsWith("http") ? "_blank" : undefined}
-                rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
-                className="group inline-flex items-center gap-2 text-sm font-medium text-ivory/72 transition hover:text-gold"
-              >
-                <Icon size={15} className="transition group-hover:translate-x-0.5" />
-                <span>{label}</span>
-              </a>
+                  key={label}
+                  href={href}
+                  target={href.startsWith("http") ? "_blank" : undefined}
+                  rel={href.startsWith("http") ? "noopener noreferrer" : undefined}
+                  className="group inline-flex items-center gap-2 text-sm font-medium text-ivory/72 transition hover:text-gold"
+                >
+                  <Icon size={15} className="transition group-hover:translate-x-0.5" />
+                  <span>{label}</span>
+                </a>
               ))}
             </div>
           </div>
         </div>
-        <div className="mt-10 flex flex-col gap-4 border-t border-gold/15 pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-gold/10 pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
           <div className="flex flex-wrap gap-x-5 gap-y-2 sm:justify-end">
             <Link href="/blog" className="transition hover:text-gold">

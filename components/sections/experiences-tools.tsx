@@ -21,7 +21,7 @@ export function ExperiencesToolsSection() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="texture-paper rounded-[26px] border border-gold/7 bg-ivory/[0.018] p-6 sm:p-7">
+            <div className="texture-paper rounded-[26px] border border-gold/5 bg-ivory/[0.018] p-6 sm:p-7">
               <p className="max-w-[62ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
                 {experiencesToolsSection.description}
               </p>
@@ -56,7 +56,7 @@ export function ExperiencesToolsSection() {
                   </div>
                   <div className="mt-10 flex flex-1 items-end justify-start">
                     {card.mode === "ambient" ? (
-                      <div className="texture-paper relative w-full overflow-hidden rounded-[28px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.016))] p-8">
+                      <div className="texture-paper relative w-full overflow-hidden rounded-[28px] border border-gold/6 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.016))] p-8">
                         <div className="absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl" />
                         <div className="absolute inset-x-14 bottom-8 h-20 rounded-full bg-ivory/[0.05] blur-2xl" />
                         <div
@@ -74,7 +74,7 @@ export function ExperiencesToolsSection() {
                         </div>
                       </div>
                     ) : card.mode === "text" ? (
-                      <div className="w-full border-t border-gold/8 pt-5">
+                      <div className="w-full border-t border-gold/7 pt-5">
                         <div className="grid gap-3 sm:grid-cols-2">
                           {card.items.map((item) => (
                             <p
@@ -91,7 +91,7 @@ export function ExperiencesToolsSection() {
                       </div>
                     ) : (
                       <div className="relative w-full max-w-[240px]">
-                        <div className="texture-paper relative overflow-hidden rounded-[28px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.018))] p-5">
+                        <div className="texture-paper relative overflow-hidden rounded-[28px] border border-gold/6 bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.018))] p-5">
                           <div
                             className="absolute inset-0 opacity-[0.05]"
                             style={{

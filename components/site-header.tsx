@@ -58,9 +58,12 @@ export function SiteHeader() {
     <>
       <header className="fixed inset-x-0 top-4 z-50 hidden lg:block">
         <Container>
-          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/10 bg-[#131313]/58 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.14)] backdrop-blur-[4px]">
-            <BrandMark compact className="shrink-0" />
-            <nav className="ml-auto flex items-center gap-4">
+          <div className="texture-paper relative mx-auto flex max-w-[1160px] items-center gap-4 overflow-hidden rounded-[18px] border border-[#f3eadb]/18 bg-[linear-gradient(180deg,rgba(78,66,55,0.62),rgba(32,27,23,0.74))] px-5 py-2 shadow-[0_16px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,250,241,0.07)] backdrop-blur-[18px]">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.12),transparent_38%),linear-gradient(180deg,rgba(255,248,238,0.05),transparent_34%)]" />
+            <div className="pointer-events-none absolute inset-y-0 left-0 w-[28%] bg-gradient-to-r from-[#a98a49]/12 via-transparent to-transparent" />
+            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
+            <BrandMark compact className="relative z-10 shrink-0" />
+            <nav className="relative z-10 ml-auto flex items-center gap-4">
               {navigation.map((item) => {
                 const active = isActive(item.href);
 
@@ -69,8 +72,8 @@ export function SiteHeader() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/82 transition hover:text-gold xl:text-[0.88rem]",
-                      active && "text-gold",
+                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/84 transition duration-300 hover:text-[#e2c57f] xl:text-[0.88rem]",
+                      active && "text-[#e2c57f]",
                     )}
                   >
                     {item.label}
@@ -78,7 +81,11 @@ export function SiteHeader() {
                 );
               })}
             </nav>
-            <ButtonLink href="/contatti" size="sm" className="shrink-0 px-4 py-1.25">
+            <ButtonLink
+              href="/contatti"
+              size="sm"
+              className="relative z-10 shrink-0 border border-[#f0e6d4]/14 bg-[linear-gradient(180deg,rgba(201,169,96,0.96),rgba(171,134,62,0.96))] px-4 py-1.5 text-ink shadow-[0_12px_30px_rgba(0,0,0,0.16),inset_0_1px_0_rgba(255,247,231,0.28)] hover:bg-[linear-gradient(180deg,rgba(214,183,109,0.98),rgba(183,146,73,0.98))]"
+            >
               Inizia il tuo percorso
             </ButtonLink>
           </div>
@@ -87,12 +94,14 @@ export function SiteHeader() {
 
       <header className="fixed inset-x-0 top-4 z-50 lg:hidden">
         <Container>
-          <div className="flex items-center justify-between rounded-[18px] border border-gold/10 bg-[linear-gradient(180deg,rgba(39,32,26,0.78),rgba(27,23,20,0.72))] px-4 py-2.5 shadow-[0_12px_28px_rgba(0,0,0,0.14)] backdrop-blur-[10px]">
-            <BrandMark compact className="max-w-[70%]" />
+          <div className="texture-paper relative flex items-center justify-between overflow-hidden rounded-[18px] border border-[#f3eadb]/18 bg-[linear-gradient(180deg,rgba(84,70,58,0.62),rgba(34,29,25,0.74))] px-4 py-2.5 shadow-[0_14px_32px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,248,238,0.07)] backdrop-blur-[16px]">
+            <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.14),transparent_42%),linear-gradient(180deg,rgba(255,248,238,0.04),transparent_36%)]" />
+            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
+            <BrandMark compact className="relative z-10 max-w-[70%]" />
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gold/12 bg-ivory/[0.03] text-gold transition duration-300 hover:bg-ivory/[0.05]"
+              className="relative z-10 inline-flex h-9 w-9 items-center justify-center rounded-full border border-[#f0e6d4]/16 bg-ivory/[0.04] text-[#ddb95d] transition duration-300 hover:bg-ivory/[0.06]"
               aria-expanded={open}
               aria-controls="mobile-navigation"
               aria-label={open ? "Chiudi menu" : "Apri menu"}
@@ -103,66 +112,54 @@ export function SiteHeader() {
         </Container>
       </header>
 
-      <div
-        id="mobile-navigation"
-        className={cn(
-          "fixed inset-0 z-40 lg:hidden",
-          open ? "pointer-events-auto" : "pointer-events-none",
-        )}
-      >
-        <div
-          className={cn(
-            "absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.12),transparent_34%),linear-gradient(180deg,rgba(32,27,22,0.54),rgba(19,16,14,0.74))] backdrop-blur-[18px] transition-opacity duration-500",
-            open ? "opacity-100" : "opacity-0",
-          )}
-          onClick={() => setOpen(false)}
-        />
-        <div
-          className={cn(
-            "texture-paper absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[28px] border border-gold/10 bg-[linear-gradient(180deg,rgba(56,47,39,0.66),rgba(25,21,18,0.78))] px-6 py-8 shadow-[0_20px_46px_rgba(0,0,0,0.22)] backdrop-blur-[22px] transition-all duration-500",
-            open ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0",
-          )}
-        >
+      {open ? (
+        <div id="mobile-navigation" className="fixed inset-0 z-40 lg:hidden">
           <div
-            className="pointer-events-none absolute inset-0 opacity-[0.08]"
-            style={{
-              backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
-              backgroundSize: "cover",
-              backgroundPosition: "center top",
-            }}
+            className="absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.16),transparent_34%),linear-gradient(180deg,rgba(74,61,51,0.34),rgba(20,17,15,0.56))] backdrop-blur-[18px] saturate-[0.9] transition-opacity duration-500"
+            onClick={() => setOpen(false)}
           />
-          <div className="pointer-events-none absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl" />
-          <div className="pointer-events-none absolute inset-x-14 bottom-10 h-24 rounded-full bg-ivory/[0.04] blur-2xl" />
-          <nav className="relative z-10 flex flex-col gap-3">
-            {navigation.map((item) => {
-              const active = isActive(item.href);
+          <div className="texture-paper absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[28px] border border-[#f3eadb]/16 bg-[linear-gradient(180deg,rgba(87,72,60,0.62),rgba(31,26,22,0.8))] px-6 py-8 shadow-[0_22px_50px_rgba(0,0,0,0.22),inset_0_1px_0_rgba(255,248,238,0.06)] backdrop-blur-[24px] transition-all duration-500">
+            <div
+              className="pointer-events-none absolute inset-0 opacity-[0.06]"
+              style={{
+                backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                backgroundSize: "cover",
+                backgroundPosition: "center top",
+              }}
+            />
+            <div className="pointer-events-none absolute inset-x-10 top-8 h-28 rounded-full bg-[#c6a75e]/10 blur-3xl" />
+            <div className="pointer-events-none absolute inset-x-14 bottom-10 h-24 rounded-full bg-ivory/[0.035] blur-2xl" />
+            <nav className="relative z-10 flex flex-col gap-3">
+              {navigation.map((item) => {
+                const active = isActive(item.href);
 
-              return (
-                <Link
+                return (
+                  <Link
                   key={item.href}
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className={cn(
-                    "relative rounded-[22px] border border-transparent px-5 py-4 text-[1.15rem] font-semibold text-ivory/88 transition duration-300 hover:bg-ivory/[0.03] hover:text-gold",
-                    active && "bg-ivory/[0.045] text-gold",
-                  )}
-                >
-                  {item.label}
-                </Link>
-              );
-            })}
-          </nav>
-          <div className="relative z-10 mt-10 border-t border-gold/10 pt-7">
-            <ButtonLink
-              href="/contatti"
-              className="w-full justify-center"
-              onClick={() => setOpen(false)}
-            >
-              Inizia il tuo percorso
-            </ButtonLink>
+                      "relative rounded-[22px] border border-transparent px-5 py-4 text-[1.15rem] font-semibold text-ivory/88 transition duration-300 hover:bg-ivory/[0.028] hover:text-[#e2c57f]",
+                      active && "border-[#f0e6d4]/10 bg-ivory/[0.04] text-[#e2c57f]",
+                    )}
+                  >
+                    {item.label}
+                  </Link>
+                );
+              })}
+            </nav>
+            <div className="relative z-10 mt-10 border-t border-gold/10 pt-7">
+              <ButtonLink
+                href="/contatti"
+                className="w-full justify-center border border-[#f0e6d4]/14 bg-[linear-gradient(180deg,rgba(201,169,96,0.96),rgba(171,134,62,0.96))] text-ink shadow-[0_12px_30px_rgba(0,0,0,0.16),inset_0_1px_0_rgba(255,247,231,0.28)] hover:bg-[linear-gradient(180deg,rgba(214,183,109,0.98),rgba(183,146,73,0.98))]"
+                onClick={() => setOpen(false)}
+              >
+                Inizia il tuo percorso
+              </ButtonLink>
+            </div>
           </div>
         </div>
-      </div>
+      ) : null}
     </>
   );
 }

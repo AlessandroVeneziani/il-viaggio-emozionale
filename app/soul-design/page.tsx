@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
@@ -34,7 +33,7 @@ export default function SoulDesignPage() {
             </div>
 
             <div className="border-t border-gold/10 pt-8 lg:pl-12">
-              <div className="texture-paper relative mx-auto max-w-[320px] overflow-hidden rounded-[30px] bg-ivory/[0.03] p-6">
+              <div className="texture-paper relative mx-auto max-w-[340px] overflow-hidden rounded-[30px] border border-gold/7 bg-[linear-gradient(180deg,rgba(244,241,234,0.038),rgba(244,241,234,0.016))] p-8">
                 <div
                   className="absolute inset-0 opacity-[0.06]"
                   style={{
@@ -43,14 +42,27 @@ export default function SoulDesignPage() {
                     backgroundPosition: "center",
                   }}
                 />
-                <Image
-                  src="/images/brand/mondo.png"
-                  alt="Il Mondo come simbolo di identità, passaggio e direzione personale"
-                  width={913}
-                  height={1466}
-                  sizes="(max-width: 1024px) 70vw, 24vw"
-                  className="relative z-10 mx-auto h-auto w-full max-w-[240px] object-contain saturate-[0.78] brightness-[0.95] contrast-[0.9] drop-shadow-[0_20px_30px_rgba(0,0,0,0.16)]"
-                />
+                <div className="relative z-10 flex min-h-[320px] flex-col items-center justify-center">
+                  <div className="relative flex h-[210px] w-[210px] items-center justify-center rounded-full border border-gold/10">
+                    <div className="absolute inset-5 rounded-full border border-gold/9" />
+                    <div className="absolute inset-10 rounded-full border border-gold/8" />
+                    <div className="absolute inset-y-6 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-gold/0 via-gold/18 to-gold/0" />
+                    <div className="absolute inset-x-6 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-gold/0 via-gold/18 to-gold/0" />
+                    <p className="max-w-[10ch] text-center font-display text-[1.2rem] leading-[1.45] text-ivory/84">
+                      Welcome Back Home
+                    </p>
+                  </div>
+                  <div className="mt-8 grid w-full grid-cols-2 gap-x-6 gap-y-3">
+                    {["Testa", "Cuore", "Corpo", "Desiderio"].map((item) => (
+                      <p
+                        key={item}
+                        className="border-t border-gold/8 pt-3 text-sm uppercase tracking-[0.2em] text-ivory/60"
+                      >
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+                </div>
               </div>
               <p className="mt-6 max-w-[32ch] text-sm leading-7 text-ivory/62">
                 Non si tratta di reinventarti. Si tratta di coordinare meglio

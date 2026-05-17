@@ -1,5 +1,3 @@
-import Image from "next/image";
-
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
@@ -56,15 +54,25 @@ export default function AboutPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                   Formazione e ricerca
                 </p>
-                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/14 bg-gradient-to-br from-ivory/[0.08] to-transparent p-6">
-                  <Image
-                    src="/images/brand/mondo.png"
-                    alt="Il Mondo come simbolo del metodo"
-                    width={913}
-                    height={1466}
-                    sizes="(max-width: 1024px) 65vw, 24vw"
-                    className="mx-auto h-auto w-full max-w-[250px] object-contain drop-shadow-[0_18px_30px_rgba(0,0,0,0.22)]"
-                  />
+                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/10 bg-gradient-to-br from-ivory/[0.06] to-transparent p-6">
+                  <div
+                    className="relative min-h-[240px] overflow-hidden rounded-[22px] border border-gold/8"
+                    style={{
+                      backgroundImage:
+                        'linear-gradient(180deg, rgba(244, 241, 234, 0.04), rgba(244, 241, 234, 0.015)), url("/images/backgrounds/sfondo-numeri.png")',
+                      backgroundSize: "cover",
+                      backgroundPosition: "center",
+                    }}
+                  >
+                    <div className="absolute inset-x-8 top-10 h-px bg-gradient-to-r from-transparent via-gold/24 to-transparent" />
+                    <div className="absolute inset-y-8 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-transparent via-gold/18 to-transparent" />
+                    <div className="absolute inset-x-10 bottom-10">
+                      <p className="max-w-[16ch] font-display text-[1.45rem] leading-[1.5] text-ivory/84 sm:text-[1.7rem]">
+                        Il simbolo non promette.
+                        <span className="block text-gold/88">Orienta.</span>
+                      </p>
+                    </div>
+                  </div>
                 </div>
                 <div className="mt-6 space-y-5 text-base leading-8 text-ivory/76 sm:text-lg">
                   {aboutPage.formation.body.map((paragraph) => (
