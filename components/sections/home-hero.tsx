@@ -11,7 +11,7 @@ export function HomeHero() {
   const [softLead = homeHero.softBridge, softAction = ""] = homeHero.softBridge.split("?");
 
   return (
-    <section className="section-shell overflow-hidden pb-24 pt-8 sm:pb-28 sm:pt-12 lg:pb-36 lg:pt-16">
+    <section className="section-shell overflow-hidden pb-24 pt-10 sm:pb-28 sm:pt-14 lg:pb-36 lg:pt-18">
       <NumberBackdrop className="opacity-42" />
       <div className="grain-overlay" />
       <Container>
@@ -41,7 +41,7 @@ export function HomeHero() {
                 </div>
               ))}
             </div>
-            <div className="mt-10 flex flex-col gap-4 sm:flex-row">
+            <div className="mt-12 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href={homeHero.primaryCta.href} size="lg">
                 {homeHero.primaryCta.label}
               </ButtonLink>

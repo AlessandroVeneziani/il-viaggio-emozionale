@@ -28,6 +28,11 @@ export function RitrattoSpotlightSection() {
                 sizes="(max-width: 1024px) 80vw, 34vw"
                 className="relative z-10 h-auto w-full max-w-[280px] object-contain saturate-[0.8] brightness-[0.97] contrast-[0.94] drop-shadow-[0_22px_34px_rgba(0,0,0,0.18)]"
               />
+              <div className="absolute bottom-5 right-5 z-20 max-w-[230px] rounded-[18px] border border-gold/8 bg-[#0f0f0f]/54 px-4 py-3 backdrop-blur-[10px]">
+                <p className="text-[0.72rem] leading-6 text-ivory/72 sm:text-xs">
+                  La copertina viene trattata come un oggetto editoriale, non come un prodotto standard.
+                </p>
+              </div>
             </div>
           </Reveal>
 

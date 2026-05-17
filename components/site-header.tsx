@@ -58,7 +58,7 @@ export function SiteHeader() {
     <>
       <header className="fixed inset-x-0 top-4 z-50 hidden lg:block">
         <Container>
-          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/12 bg-[#131313]/58 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.16)] backdrop-blur-[3px]">
+          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/12 bg-[#131313]/60 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.16)] backdrop-blur-[4px]">
             <BrandMark compact className="shrink-0" />
             <nav className="ml-auto flex items-center gap-4">
               {navigation.map((item) => {
@@ -69,7 +69,7 @@ export function SiteHeader() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/74 transition hover:text-gold xl:text-[0.88rem]",
+                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/80 transition hover:text-gold xl:text-[0.88rem]",
                       active && "text-gold",
                     )}
                   >
@@ -87,7 +87,7 @@ export function SiteHeader() {
 
       <header className="fixed inset-x-0 top-4 z-50 lg:hidden">
         <Container>
-          <div className="flex items-center justify-between rounded-[18px] border border-gold/12 bg-[#151312]/80 px-4 py-2 shadow-[0_10px_24px_rgba(0,0,0,0.15)] backdrop-blur-[3px]">
+          <div className="flex items-center justify-between rounded-[18px] border border-gold/12 bg-[#151312]/82 px-4 py-2 shadow-[0_10px_24px_rgba(0,0,0,0.15)] backdrop-blur-[4px]">
             <BrandMark compact className="max-w-[70%]" />
             <button
               type="button"
@@ -112,14 +112,14 @@ export function SiteHeader() {
       >
         <div
           className={cn(
-            "absolute inset-0 bg-ink/72 backdrop-blur-[2px] transition-opacity duration-300",
+            "absolute inset-0 bg-[#0a0a0a]/76 backdrop-blur-[18px] transition-opacity duration-300",
             open ? "opacity-100" : "opacity-0",
           )}
           onClick={() => setOpen(false)}
         />
         <div
           className={cn(
-            "absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[26px] border border-gold/12 bg-[#151312]/94 px-6 py-8 shadow-[0_14px_34px_rgba(0,0,0,0.2)] transition-all duration-300",
+            "texture-paper absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[26px] border border-gold/12 bg-[#151312]/90 px-6 py-8 shadow-[0_18px_42px_rgba(0,0,0,0.26)] backdrop-blur-[18px] transition-all duration-300",
             open ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0",
           )}
         >
