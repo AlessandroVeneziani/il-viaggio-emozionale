@@ -28,9 +28,9 @@ export function RitrattoSpotlightSection() {
                 sizes="(max-width: 1024px) 80vw, 34vw"
                 className="relative z-10 h-auto w-full max-w-[280px] object-contain saturate-[0.8] brightness-[0.97] contrast-[0.94] drop-shadow-[0_22px_34px_rgba(0,0,0,0.18)]"
               />
-              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.08] bg-[rgba(28,24,20,0.62)] px-4 py-3 backdrop-blur-[6px] sm:left-auto sm:right-5 sm:max-w-[230px] sm:border-gold/8 sm:backdrop-blur-[10px]">
-                <p className="text-[0.72rem] leading-6 text-ivory/72 sm:text-xs">
-                  La copertina viene trattata come un oggetto editoriale, non come un prodotto standard.
+              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.08] bg-[rgba(34,29,24,0.68)] px-4 py-3 backdrop-blur-[6px] sm:left-auto sm:right-5 sm:max-w-[250px] sm:border-gold/8 sm:bg-[rgba(34,29,24,0.62)] sm:backdrop-blur-[10px]">
+                <p className="text-[0.72rem] font-medium leading-6 text-[#efe6d6]/88 sm:text-xs">
+                  La copertina resta parte viva dell&apos;identità del brand: un oggetto editoriale, non un box prodotto standard.
                 </p>
               </div>
             </div>

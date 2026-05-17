@@ -38,13 +38,14 @@ export default function RitrattoPage() {
 
             <SurfaceCard className="relative overflow-hidden p-8 sm:p-10">
               <div
-                className="absolute inset-0 opacity-12"
+                className="absolute inset-0 opacity-[0.08]"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,24,20,0.12),rgba(28,24,20,0.04))]" />
               <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Libro personale stampato
               </p>
@@ -58,11 +59,11 @@ export default function RitrattoPage() {
                   className="h-auto w-full max-w-[360px] object-contain drop-shadow-[0_20px_34px_rgba(0,0,0,0.28)]"
                 />
               </div>
-              <p className="relative z-10 mt-6 text-base leading-8 text-ivory/76">
-                La copertina resta parte viva dell&apos;identità del brand e nel nuovo
-                sito viene trattata come un oggetto editoriale, non come un box
-                prodotto standard.
-              </p>
+              <div className="relative z-10 mt-6 max-w-[38ch] rounded-[18px] border border-gold/[0.08] bg-[rgba(34,29,24,0.56)] px-5 py-4 backdrop-blur-[6px]">
+                <p className="text-base font-medium leading-8 text-[#efe6d6]/86">
+                  La copertina resta parte viva dell&apos;identità del brand: un oggetto editoriale, non un box prodotto standard.
+                </p>
+              </div>
             </SurfaceCard>
           </div>
         </Container>
@@ -100,17 +101,40 @@ export default function RitrattoPage() {
             {ritrattoPage.options.map((option, index) => (
               <SurfaceCard
                 key={option.title}
-                className={`flex h-full flex-col p-8 ${index === 2 ? "border-gold/45 bg-gradient-to-b from-white/[0.06] to-white/[0.03]" : ""}`}
+                className={`relative flex h-full flex-col overflow-hidden p-8 ${index === 2 ? "border-[#d2b674]/26 bg-[linear-gradient(180deg,rgba(86,72,60,0.28),rgba(33,28,24,0.42))] shadow-[0_24px_50px_rgba(0,0,0,0.16)]" : ""}`}
               >
+                {index === 2 ? (
+                  <>
+                    <div
+                      className="absolute inset-0 opacity-[0.055]"
+                      style={{
+                        backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                        backgroundSize: "cover",
+                        backgroundPosition: "center",
+                      }}
+                    />
+                    <div className="absolute inset-x-8 top-7 h-20 rounded-full bg-gold/[0.08] blur-3xl" />
+                  </>
+                ) : null}
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                   {option.title}
                 </p>
-                <h3 className="mt-5 font-display text-4xl text-ivory">{option.price}</h3>
-                <p className="mt-4 flex-1 text-base leading-8 text-ivory/76">
+                <h3 className={`mt-5 font-display text-4xl ${index === 2 ? "text-[#f3ead9]" : "text-ivory"}`}>
+                  {option.price}
+                </h3>
+                <p className={`mt-4 flex-1 text-base leading-8 ${index === 2 ? "text-[#efe6d6]/78" : "text-ivory/76"}`}>
                   {option.text}
                 </p>
                 <div className="mt-8">
-                  <ButtonLink href="/contatti" variant={index === 2 ? "primary" : "secondary"}>
+                  <ButtonLink
+                    href="/contatti"
+                    variant={index === 2 ? "primary" : "secondary"}
+                    className={
+                      index === 2
+                        ? "border border-[#f0e6d4]/12 bg-[linear-gradient(180deg,rgba(205,174,102,0.94),rgba(172,136,64,0.95))] shadow-[0_14px_34px_rgba(0,0,0,0.16),inset_0_1px_0_rgba(255,247,231,0.24)] hover:bg-[linear-gradient(180deg,rgba(216,186,114,0.96),rgba(183,146,72,0.97))]"
+                        : undefined
+                    }
+                  >
                     Richiedi informazioni
                   </ButtonLink>
                 </div>

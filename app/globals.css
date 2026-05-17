@@ -168,4 +168,15 @@ canvas {
   .section-shell {
     border-color: transparent;
   }
+
+  .section-shell .texture-paper {
+    border-color: rgba(243, 234, 219, 0.11) !important;
+    box-shadow: 0 16px 34px rgba(0, 0, 0, 0.08) !important;
+    -webkit-backdrop-filter: none !important;
+    backdrop-filter: none !important;
+  }
+
+  .section-shell .gold-divider {
+    opacity: 0.22;
+  }
 }
