@@ -13,7 +13,7 @@ export function FounderPreviewSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <Reveal className="border-t-0 pt-1 sm:border-t sm:border-gold/14 sm:pt-8">
-            <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.08] bg-gradient-to-br from-ivory/[0.04] to-transparent p-4">
+            <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4">
               <div className="relative overflow-hidden rounded-[22px]">
                 <Image
                   src="/images/brand/alessandro-veneziani-portrait.jpg"

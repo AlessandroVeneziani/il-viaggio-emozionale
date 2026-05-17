@@ -56,7 +56,7 @@ export default function AboutPage() {
                 <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                   Formazione e ricerca
                 </p>
-                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/[0.08] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4 sm:p-5">
+                <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.055] to-transparent p-4 sm:p-5">
                   <div className="relative overflow-hidden rounded-[24px]">
                     <Image
                       src="/images/brand/alessandro-veneziani-portrait.jpg"
@@ -67,7 +67,7 @@ export default function AboutPage() {
                       className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9]"
                     />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)]" />
-                    <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.08] bg-[rgba(35,30,25,0.34)] px-4 py-3 backdrop-blur-[6px]">
+                    <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.06] bg-[rgba(66,56,47,0.22)] px-4 py-3 backdrop-blur-[4px]">
                       <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-gold/88">
                         Alessandro Veneziani
                       </p>

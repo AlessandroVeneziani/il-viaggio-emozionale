@@ -45,7 +45,7 @@ export default function RitrattoPage() {
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(28,24,20,0.12),rgba(28,24,20,0.04))]" />
+              <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(48,41,35,0.08),rgba(48,41,35,0.03))]" />
               <p className="relative z-10 text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                 Libro personale stampato
               </p>
@@ -59,8 +59,8 @@ export default function RitrattoPage() {
                   className="h-auto w-full max-w-[360px] object-contain drop-shadow-[0_20px_34px_rgba(0,0,0,0.28)]"
                 />
               </div>
-              <div className="relative z-10 mt-6 max-w-[35ch] rounded-[18px] border border-gold/[0.06] bg-[rgba(35,30,25,0.42)] px-5 py-4 shadow-[0_12px_26px_rgba(0,0,0,0.08)] backdrop-blur-[3px]">
-                <p className="text-[0.95rem] font-medium leading-8 text-[#efe6d6]/82">
+              <div className="relative z-10 mt-6 max-w-[35ch] rounded-[18px] border border-gold/[0.05] bg-[rgba(66,56,47,0.22)] px-5 py-3.5 shadow-[0_10px_22px_rgba(54,42,31,0.06)] backdrop-blur-[2px]">
+                <p className="text-[0.88rem] font-medium leading-7 text-[#f1e6d5]/84">
                   Ogni Ritratto nasce come una mappa personale: da leggere, custodire e ritrovare nel tempo.
                 </p>
               </div>
@@ -101,7 +101,7 @@ export default function RitrattoPage() {
             {ritrattoPage.options.map((option, index) => (
               <SurfaceCard
                 key={option.title}
-                className={`relative flex h-full flex-col overflow-hidden p-8 ${index === 2 ? "border-[#d2b674]/28 bg-[linear-gradient(180deg,rgba(92,76,63,0.3),rgba(35,29,24,0.46))] shadow-[0_26px_56px_rgba(0,0,0,0.18),inset_0_1px_0_rgba(255,244,225,0.06)]" : ""}`}
+                className={`relative flex h-full flex-col overflow-hidden p-8 ${index === 2 ? "border-[#d2b674]/22 bg-[linear-gradient(180deg,rgba(104,87,72,0.22),rgba(46,39,33,0.34))] shadow-[0_24px_48px_rgba(54,42,31,0.14),inset_0_1px_0_rgba(255,244,225,0.05)]" : ""}`}
               >
                 {index === 2 ? (
                   <>

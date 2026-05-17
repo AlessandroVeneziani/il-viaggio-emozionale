@@ -11,7 +11,7 @@ export function RitrattoSpotlightSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <Reveal delay={0.08}>
-            <div className="texture-paper relative mx-auto flex min-h-[460px] w-full max-w-[520px] items-end justify-center overflow-hidden rounded-[34px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.04),rgba(244,241,234,0.015))] p-8">
+            <div className="texture-paper relative mx-auto flex min-h-[460px] w-full max-w-[520px] items-end justify-center overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8">
               <div
                 className="absolute inset-0 opacity-[0.07]"
                 style={{
@@ -28,8 +28,8 @@ export function RitrattoSpotlightSection() {
                 sizes="(max-width: 1024px) 80vw, 34vw"
                 className="relative z-10 h-auto w-full max-w-[280px] object-contain saturate-[0.8] brightness-[0.97] contrast-[0.94] drop-shadow-[0_22px_34px_rgba(0,0,0,0.18)]"
               />
-              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.06] bg-[rgba(35,30,25,0.46)] px-4 py-3 shadow-[0_10px_22px_rgba(0,0,0,0.08)] backdrop-blur-[3px] sm:left-auto sm:right-5 sm:max-w-[220px] sm:px-4 sm:py-3 sm:border-gold/[0.07] sm:bg-[rgba(35,30,25,0.4)] sm:shadow-[0_12px_24px_rgba(0,0,0,0.1)] sm:backdrop-blur-[6px]">
-                <p className="text-[0.7rem] font-medium leading-[1.7] text-[#efe6d6]/80 sm:text-[0.72rem] sm:leading-[1.72]">
+              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.05] bg-[rgba(66,56,47,0.22)] px-4 py-3 shadow-[0_10px_22px_rgba(54,42,31,0.06)] backdrop-blur-[2px] sm:left-auto sm:right-5 sm:max-w-[220px] sm:border-gold/[0.06] sm:bg-[rgba(66,56,47,0.2)] sm:shadow-[0_12px_24px_rgba(54,42,31,0.08)] sm:backdrop-blur-[5px]">
+                <p className="text-[0.7rem] font-medium leading-[1.7] text-[#f1e6d5]/84 sm:text-[0.72rem] sm:leading-[1.72]">
                   Ogni Ritratto nasce come una mappa personale: da leggere, custodire e ritrovare nel tempo.
                 </p>
               </div>

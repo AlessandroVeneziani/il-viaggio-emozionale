@@ -23,7 +23,7 @@ export function HomeHero() {
             <h1 className="whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] text-ivory sm:text-[3.6rem] lg:text-[4.9rem]">
               {homeHero.title}
             </h1>
-            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.05] bg-ivory/[0.022] px-5 py-4.5 backdrop-blur-0 sm:border-gold/6 sm:backdrop-blur-[4px]">
+            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.045] bg-ivory/[0.032] px-5 py-4.5 backdrop-blur-0 sm:border-gold/[0.055] sm:bg-ivory/[0.038] sm:backdrop-blur-[4px]">
               <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/88 sm:text-base">
                 {homeHero.seoLine}
               </p>
@@ -61,7 +61,7 @@ export function HomeHero() {
           </Reveal>
 
           <Reveal delay={0.15} className="relative">
-            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.05] bg-gradient-to-br from-ivory/[0.032] via-ivory/[0.01] to-transparent shadow-[0_20px_42px_rgba(0,0,0,0.12)] sm:border-gold/6 sm:shadow-[0_24px_52px_rgba(0,0,0,0.14)] sm:min-h-[580px]">
+            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.045] bg-gradient-to-br from-ivory/[0.048] via-ivory/[0.02] to-transparent shadow-[0_18px_34px_rgba(54,42,31,0.08)] sm:border-gold/[0.055] sm:shadow-[0_24px_48px_rgba(54,42,31,0.1)] sm:min-h-[580px]">
               <div
                 className="absolute inset-0 opacity-[0.04]"
                 style={{
@@ -70,7 +70,7 @@ export function HomeHero() {
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink/86 via-ink/34 to-transparent" />
+              <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-[rgba(53,45,38,0.58)] via-[rgba(53,45,38,0.16)] to-transparent sm:from-[rgba(45,39,34,0.62)] sm:via-[rgba(45,39,34,0.2)]" />
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
                 <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
                   <div className="max-w-[240px] text-left sm:max-w-[190px]">

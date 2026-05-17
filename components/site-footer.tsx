@@ -44,7 +44,7 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#0B0B0B]">
+    <footer className="relative overflow-hidden bg-[#14110e]">
       <div
         className="absolute inset-0 opacity-[0.05]"
         style={{
@@ -112,7 +112,7 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col gap-4 border-t border-gold/10 pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
+        <div className="mt-12 flex flex-col gap-4 border-t border-gold/[0.08] pt-6 text-sm text-ivory/48 sm:flex-row sm:items-center sm:justify-between">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
           <div className="flex flex-wrap gap-x-5 gap-y-2 sm:justify-end">
             <Link href="/blog" className="transition hover:text-gold">

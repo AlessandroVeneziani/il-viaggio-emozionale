@@ -9,7 +9,7 @@ export function SoulDesignSpotlightSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Reveal>
-            <div className="texture-paper rounded-[30px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.016))] p-8 sm:p-10">
+            <div className="texture-paper rounded-[30px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.058),rgba(244,241,234,0.024))] p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {soulDesignHomeSpotlight.eyebrow}
               </p>
@@ -41,7 +41,7 @@ export function SoulDesignSpotlightSection() {
           </Reveal>
 
           <Reveal delay={0.08}>
-            <div className="texture-paper relative mx-auto overflow-hidden rounded-[34px] border border-gold/8 bg-[linear-gradient(180deg,rgba(244,241,234,0.04),rgba(244,241,234,0.014))] p-8 sm:p-10">
+            <div className="texture-paper relative mx-auto overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8 sm:p-10">
               <div
                 className="absolute inset-0 opacity-[0.05]"
                 style={{
