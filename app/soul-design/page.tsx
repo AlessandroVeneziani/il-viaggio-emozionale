@@ -37,7 +37,7 @@ export default function SoulDesignPage() {
                 <div
                   className="absolute inset-0 opacity-[0.06]"
                   style={{
-                    backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                    backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                     backgroundSize: "cover",
                     backgroundPosition: "center",
                   }}

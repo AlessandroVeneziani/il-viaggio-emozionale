@@ -40,7 +40,7 @@ export default function RitrattoPage() {
               <div
                 className="absolute inset-0 opacity-[0.08]"
                 style={{
-                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
@@ -108,7 +108,7 @@ export default function RitrattoPage() {
                     <div
                       className="absolute inset-0 opacity-[0.05]"
                       style={{
-                        backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                        backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                         backgroundSize: "cover",
                         backgroundPosition: "center",
                       }}

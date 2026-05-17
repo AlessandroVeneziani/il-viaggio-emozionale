@@ -47,7 +47,7 @@ export default function AboutPage() {
               <div
                 className="absolute inset-0 opacity-[0.08]"
                 style={{
-                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                  backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}

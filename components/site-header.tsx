@@ -61,7 +61,7 @@ export function SiteHeader() {
           <div className="texture-paper relative mx-auto flex max-w-[1160px] items-center gap-4 overflow-hidden rounded-[18px] border border-[#f3eadb]/18 bg-[linear-gradient(180deg,rgba(78,66,55,0.62),rgba(32,27,23,0.74))] px-5 py-2 shadow-[0_16px_40px_rgba(0,0,0,0.2),inset_0_1px_0_rgba(255,250,241,0.07)] backdrop-blur-[18px]">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.12),transparent_38%),linear-gradient(180deg,rgba(255,248,238,0.05),transparent_34%)]" />
             <div className="pointer-events-none absolute inset-y-0 left-0 w-[28%] bg-gradient-to-r from-[#a98a49]/12 via-transparent to-transparent" />
-            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
+            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
             <BrandMark compact className="relative z-10 shrink-0" />
             <nav className="relative z-10 ml-auto flex items-center gap-4">
               {navigation.map((item) => {
@@ -96,7 +96,7 @@ export function SiteHeader() {
         <Container>
           <div className="texture-paper relative isolate flex items-center justify-between overflow-hidden rounded-[18px] border border-[#f3eadb]/16 bg-[linear-gradient(180deg,rgba(98,84,71,0.68),rgba(52,45,39,0.74))] px-4 py-2.5 shadow-[0_14px_30px_rgba(54,42,31,0.12),inset_0_1px_0_rgba(255,248,238,0.06)] [backface-visibility:hidden] [contain:paint] [transform:translateZ(0)]">
             <div className="pointer-events-none absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.14),transparent_42%),linear-gradient(180deg,rgba(255,248,238,0.04),transparent_36%)]" />
-            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
+            <div className="pointer-events-none absolute inset-0 opacity-[0.04]" style={{ backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")', backgroundSize: "cover", backgroundPosition: "center top" }} />
             <BrandMark compact className="relative z-10 max-w-[70%]" />
             <button
               type="button"
@@ -122,7 +122,7 @@ export function SiteHeader() {
             <div
               className="pointer-events-none absolute inset-0 opacity-[0.06]"
               style={{
-                backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+                backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                 backgroundSize: "cover",
                 backgroundPosition: "center top",
               }}

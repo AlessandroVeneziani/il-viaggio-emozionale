@@ -23,7 +23,7 @@ body {
   width: 100%;
   background:
     linear-gradient(180deg, rgba(33, 29, 25, 0.22) 0%, rgba(33, 29, 25, 0.34) 100%),
-    url("/images/backgrounds/sfondo-numeri.png"),
+    url("/images/backgrounds/sfondo-numeri-seamless.png"),
     radial-gradient(circle at top, rgba(198, 167, 94, 0.14), transparent 36%),
     radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.082), transparent 38%),
     linear-gradient(180deg, #2c251e 0%, #231d17 44%, #1d1813 100%);
