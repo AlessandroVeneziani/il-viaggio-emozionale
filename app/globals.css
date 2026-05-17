@@ -13,6 +13,7 @@
 html {
   scroll-behavior: smooth;
   overflow-x: hidden;
+  overflow-x: clip;
   width: 100%;
 }
 
@@ -36,6 +37,8 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
   overflow-x: hidden;
+  overflow-x: clip;
+  position: relative;
 }
 
 body[data-menu-open="true"] {
@@ -55,6 +58,10 @@ a {
 
 .texture-paper {
   position: relative;
+  isolation: isolate;
+  background-clip: padding-box;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
 }
 
 .texture-paper::before {
@@ -77,6 +84,7 @@ a {
 .section-shell {
   position: relative;
   overflow: hidden;
+  overflow-x: clip;
   width: 100%;
   isolation: isolate;
 }
@@ -84,6 +92,7 @@ a {
 main {
   width: 100%;
   overflow-x: hidden;
+  overflow-x: clip;
 }
 
 img,
@@ -91,6 +100,7 @@ svg,
 video,
 canvas {
   max-width: 100%;
+  display: block;
 }
 
 .gold-divider {
@@ -138,6 +148,7 @@ canvas {
 
   .section-shell {
     overflow-x: hidden;
+    overflow-x: clip;
   }
 
   .texture-paper {

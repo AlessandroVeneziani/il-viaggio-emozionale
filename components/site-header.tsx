@@ -58,7 +58,7 @@ export function SiteHeader() {
     <>
       <header className="fixed inset-x-0 top-4 z-50 hidden lg:block">
         <Container>
-          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/12 bg-[#131313]/60 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.16)] backdrop-blur-[4px]">
+          <div className="mx-auto flex max-w-[1160px] items-center gap-4 rounded-[18px] border border-gold/10 bg-[#131313]/58 px-5 py-1.5 shadow-[0_10px_26px_rgba(0,0,0,0.14)] backdrop-blur-[4px]">
             <BrandMark compact className="shrink-0" />
             <nav className="ml-auto flex items-center gap-4">
               {navigation.map((item) => {
@@ -69,7 +69,7 @@ export function SiteHeader() {
                     key={item.href}
                     href={item.href}
                     className={cn(
-                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/80 transition hover:text-gold xl:text-[0.88rem]",
+                      "text-[0.84rem] font-semibold tracking-[0.01em] text-ivory/82 transition hover:text-gold xl:text-[0.88rem]",
                       active && "text-gold",
                     )}
                   >
@@ -87,12 +87,12 @@ export function SiteHeader() {
 
       <header className="fixed inset-x-0 top-4 z-50 lg:hidden">
         <Container>
-          <div className="flex items-center justify-between rounded-[18px] border border-gold/12 bg-[#151312]/82 px-4 py-2 shadow-[0_10px_24px_rgba(0,0,0,0.15)] backdrop-blur-[4px]">
+          <div className="flex items-center justify-between rounded-[18px] border border-gold/10 bg-[linear-gradient(180deg,rgba(39,32,26,0.78),rgba(27,23,20,0.72))] px-4 py-2.5 shadow-[0_12px_28px_rgba(0,0,0,0.14)] backdrop-blur-[10px]">
             <BrandMark compact className="max-w-[70%]" />
             <button
               type="button"
               onClick={() => setOpen((value) => !value)}
-              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gold/16 bg-ivory/[0.02] text-gold transition hover:bg-ivory/[0.04]"
+              className="inline-flex h-9 w-9 items-center justify-center rounded-full border border-gold/12 bg-ivory/[0.03] text-gold transition duration-300 hover:bg-ivory/[0.05]"
               aria-expanded={open}
               aria-controls="mobile-navigation"
               aria-label={open ? "Chiudi menu" : "Apri menu"}
@@ -112,18 +112,28 @@ export function SiteHeader() {
       >
         <div
           className={cn(
-            "absolute inset-0 bg-[#0a0a0a]/76 backdrop-blur-[18px] transition-opacity duration-300",
+            "absolute inset-0 bg-[radial-gradient(circle_at_top,rgba(198,167,94,0.12),transparent_34%),linear-gradient(180deg,rgba(32,27,22,0.54),rgba(19,16,14,0.74))] backdrop-blur-[18px] transition-opacity duration-500",
             open ? "opacity-100" : "opacity-0",
           )}
           onClick={() => setOpen(false)}
         />
         <div
           className={cn(
-            "texture-paper absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[26px] border border-gold/12 bg-[#151312]/90 px-6 py-8 shadow-[0_18px_42px_rgba(0,0,0,0.26)] backdrop-blur-[18px] transition-all duration-300",
+            "texture-paper absolute inset-x-4 bottom-4 top-24 overflow-y-auto rounded-[28px] border border-gold/10 bg-[linear-gradient(180deg,rgba(56,47,39,0.66),rgba(25,21,18,0.78))] px-6 py-8 shadow-[0_20px_46px_rgba(0,0,0,0.22)] backdrop-blur-[22px] transition-all duration-500",
             open ? "translate-y-0 opacity-100" : "-translate-y-4 opacity-0",
           )}
         >
-          <nav className="flex flex-col gap-3">
+          <div
+            className="pointer-events-none absolute inset-0 opacity-[0.08]"
+            style={{
+              backgroundImage: 'url("/images/backgrounds/sfondo-numeri.png")',
+              backgroundSize: "cover",
+              backgroundPosition: "center top",
+            }}
+          />
+          <div className="pointer-events-none absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl" />
+          <div className="pointer-events-none absolute inset-x-14 bottom-10 h-24 rounded-full bg-ivory/[0.04] blur-2xl" />
+          <nav className="relative z-10 flex flex-col gap-3">
             {navigation.map((item) => {
               const active = isActive(item.href);
 
@@ -133,8 +143,8 @@ export function SiteHeader() {
                   href={item.href}
                   onClick={() => setOpen(false)}
                   className={cn(
-                    "rounded-[22px] border border-transparent px-5 py-4 text-xl font-semibold text-ivory/88 transition hover:border-gold/14 hover:bg-ivory/[0.025] hover:text-gold",
-                    active && "border-gold/16 bg-ivory/[0.035] text-gold",
+                    "relative rounded-[22px] border border-transparent px-5 py-4 text-[1.15rem] font-semibold text-ivory/88 transition duration-300 hover:bg-ivory/[0.03] hover:text-gold",
+                    active && "bg-ivory/[0.045] text-gold",
                   )}
                 >
                   {item.label}
@@ -142,7 +152,7 @@ export function SiteHeader() {
               );
             })}
           </nav>
-          <div className="mt-8 border-t border-gold/15 pt-6">
+          <div className="relative z-10 mt-10 border-t border-gold/10 pt-7">
             <ButtonLink
               href="/contatti"
               className="w-full justify-center"
