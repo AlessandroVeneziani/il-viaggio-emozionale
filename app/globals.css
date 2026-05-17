@@ -168,19 +168,25 @@ canvas {
   body {
     background:
       linear-gradient(180deg, rgba(58, 50, 41, 0.1) 0%, rgba(35, 29, 24, 0.2) 100%),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
       radial-gradient(circle at top, rgba(198, 167, 94, 0.09), transparent 36%),
       radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.05), transparent 40%),
       linear-gradient(180deg, #776f64 0%, #6c6358 48%, #60574e 100%);
-    background-size: cover, 920px auto, auto, auto, cover;
-    background-position: center top, center top, center top, center top, center top;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-attachment: scroll, scroll, scroll, scroll, scroll;
+    background-size: cover, auto, auto, cover;
+    background-position: center top, center top, center top, center top;
+    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
+    background-attachment: scroll, scroll, scroll, scroll;
   }
 
   .section-shell {
     overflow-x: hidden;
     overflow-x: clip;
+  }
+
+  .gold-divider,
+  header [style*="sfondo-numeri-seamless"],
+  main [style*="sfondo-numeri-seamless"],
+  footer [style*="sfondo-numeri-seamless"] {
+    display: none !important;
   }
 
   .texture-paper {
@@ -195,37 +201,40 @@ canvas {
     border-color: transparent;
   }
 
-  .section-shell .gold-divider {
+  header [class*="h-px"],
+  header [class*="w-px"],
+  main [class*="h-px"],
+  main [class*="w-px"],
+  footer [class*="h-px"],
+  footer [class*="w-px"] {
     display: none !important;
   }
 
-  footer .gold-divider {
-    display: none !important;
-  }
-
-  .section-shell [class*="h-px"],
-  .section-shell [class*="w-px"] {
-    display: none !important;
-  }
-
-  .section-shell [class*="border-t"][class*="border-gold"] {
+  header [class*="border-t"],
+  header [class*="border-b"],
+  header [class*="border-y"],
+  main [class*="border-t"],
+  main [class*="border-b"],
+  main [class*="border-y"],
+  footer [class*="border-t"],
+  footer [class*="border-b"],
+  footer [class*="border-y"] {
     border-top-color: transparent !important;
-  }
-
-  .section-shell [class*="border-b"][class*="border-gold"] {
     border-bottom-color: transparent !important;
   }
 
-  .section-shell [class*="border-l"][class*="border-gold"] {
-    border-left-color: transparent !important;
-  }
-
-  .section-shell [class*="border-r"][class*="border-gold"] {
-    border-right-color: transparent !important;
-  }
-
-  .section-shell .absolute.rounded-full.border,
-  .section-shell .absolute.rounded-full[class*="border"] {
+  header [class*="divide-y"],
+  header [class*="divide-x"],
+  main [class*="divide-y"],
+  main [class*="divide-x"],
+  footer [class*="divide-y"],
+  footer [class*="divide-x"],
+  header .absolute.rounded-full.border,
+  header .absolute.rounded-full[class*="border"],
+  main .absolute.rounded-full.border,
+  main .absolute.rounded-full[class*="border"],
+  footer .absolute.rounded-full.border,
+  footer .absolute.rounded-full[class*="border"] {
     display: none !important;
   }
 }

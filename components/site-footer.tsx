@@ -114,13 +114,18 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 flex flex-col gap-5 border-t-0 pt-6 text-sm text-ivory/54 sm:flex-row sm:items-center sm:justify-between xl:border-t xl:border-gold/[0.06]">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-0 sm:gap-y-2">
+          <div className="flex flex-col gap-3 sm:items-end">
             <Link href="/blog" className="transition hover:text-gold">
               Blog
             </Link>
-            <span className="hidden text-gold/28 sm:inline-block sm:px-3">•</span>
             <a href={`mailto:${siteConfig.email}`} className="transition hover:text-gold">
               {siteConfig.email}
+            </a>
+            <a
+              href={`tel:${siteConfig.phone.replace(/\s+/g, "")}`}
+              className="transition hover:text-gold"
+            >
+              {siteConfig.phone}
             </a>
           </div>
         </div>
