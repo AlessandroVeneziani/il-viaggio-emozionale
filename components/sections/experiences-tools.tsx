@@ -74,7 +74,7 @@ export function ExperiencesToolsSection() {
                         </div>
                       </div>
                     ) : card.mode === "text" ? (
-                      <div className="w-full border-t border-gold/7 pt-5">
+                      <div className="w-full border-t-0 pt-1 sm:border-t sm:border-gold/7 sm:pt-5">
                         <div className="grid gap-3 sm:grid-cols-2">
                           {card.items.map((item) => (
                             <p

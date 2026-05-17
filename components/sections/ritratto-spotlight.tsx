@@ -28,7 +28,7 @@ export function RitrattoSpotlightSection() {
                 sizes="(max-width: 1024px) 80vw, 34vw"
                 className="relative z-10 h-auto w-full max-w-[280px] object-contain saturate-[0.8] brightness-[0.97] contrast-[0.94] drop-shadow-[0_22px_34px_rgba(0,0,0,0.18)]"
               />
-              <div className="absolute bottom-5 right-5 z-20 max-w-[230px] rounded-[18px] border border-gold/8 bg-[#0f0f0f]/54 px-4 py-3 backdrop-blur-[10px]">
+              <div className="absolute bottom-5 left-5 right-5 z-20 max-w-none rounded-[18px] border border-gold/[0.08] bg-[rgba(28,24,20,0.62)] px-4 py-3 backdrop-blur-[6px] sm:left-auto sm:right-5 sm:max-w-[230px] sm:border-gold/8 sm:backdrop-blur-[10px]">
                 <p className="text-[0.72rem] leading-6 text-ivory/72 sm:text-xs">
                   La copertina viene trattata come un oggetto editoriale, non come un prodotto standard.
                 </p>
@@ -37,7 +37,7 @@ export function RitrattoSpotlightSection() {
           </Reveal>
 
           <Reveal>
-            <div className="border-t border-gold/10 pt-6">
+            <div className="border-t-0 pt-1 sm:border-t sm:border-gold/10 sm:pt-6">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {ritrattoHomeSpotlight.eyebrow}
               </p>
@@ -51,7 +51,7 @@ export function RitrattoSpotlightSection() {
                 {ritrattoHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
-                    className="border-t border-gold/8 pt-4 text-sm leading-7 text-ivory/66 sm:text-base"
+                    className="border-t-0 pt-1 text-sm leading-7 text-ivory/66 sm:border-t sm:border-gold/8 sm:pt-4 sm:text-base"
                   >
                     {line}
                   </p>

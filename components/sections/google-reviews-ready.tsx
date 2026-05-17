@@ -27,7 +27,7 @@ export function GoogleReviewsReadySection() {
 
           <div className="grid gap-8">
             <Reveal delay={0.04}>
-              <div className="flex flex-wrap items-end gap-5 border-t border-gold/10 pt-6">
+              <div className="flex flex-wrap items-end gap-5 border-t-0 pt-1 sm:border-t sm:border-gold/10 sm:pt-6">
                 <div>
                   <p className="text-[0.72rem] font-semibold uppercase tracking-[0.26em] text-gold/78">
                     Google Reviews
@@ -57,7 +57,7 @@ export function GoogleReviewsReadySection() {
 
             {googleReviewsSection.snippets.map((item, index) => (
               <Reveal key={item.initials} delay={0.08 + index * 0.06}>
-                <div className="border-t border-gold/10 pt-6">
+                <div className="border-t-0 pt-1 sm:border-t sm:border-gold/10 sm:pt-6">
                   <div className="flex items-start gap-4">
                     <div className="flex h-11 w-11 shrink-0 items-center justify-center rounded-full border border-gold/10 text-sm font-semibold text-gold/88">
                       {item.initials}

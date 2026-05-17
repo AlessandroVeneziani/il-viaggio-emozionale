@@ -23,7 +23,7 @@ export function HomeHero() {
             <h1 className="whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] text-ivory sm:text-[3.6rem] lg:text-[4.9rem]">
               {homeHero.title}
             </h1>
-            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/6 bg-ivory/[0.022] px-5 py-4.5 backdrop-blur-[4px]">
+            <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.05] bg-ivory/[0.022] px-5 py-4.5 backdrop-blur-0 sm:border-gold/6 sm:backdrop-blur-[4px]">
               <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/88 sm:text-base">
                 {homeHero.seoLine}
               </p>
@@ -61,7 +61,7 @@ export function HomeHero() {
           </Reveal>
 
           <Reveal delay={0.15} className="relative">
-            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/6 bg-gradient-to-br from-ivory/[0.032] via-ivory/[0.01] to-transparent shadow-[0_24px_52px_rgba(0,0,0,0.14)] sm:min-h-[580px]">
+            <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.05] bg-gradient-to-br from-ivory/[0.032] via-ivory/[0.01] to-transparent shadow-[0_20px_42px_rgba(0,0,0,0.12)] sm:border-gold/6 sm:shadow-[0_24px_52px_rgba(0,0,0,0.14)] sm:min-h-[580px]">
               <div
                 className="absolute inset-0 opacity-[0.04]"
                 style={{
@@ -72,11 +72,11 @@ export function HomeHero() {
               />
               <div className="absolute inset-x-0 bottom-0 h-28 bg-gradient-to-t from-ink/86 via-ink/34 to-transparent" />
               <div className="pointer-events-none absolute inset-y-10 right-10 hidden w-px bg-gradient-to-b from-gold/0 via-gold/16 to-gold/0 sm:block" />
-              <div className="pointer-events-none absolute right-8 top-8 h-36 w-36 rounded-full border border-gold/8 sm:h-44 sm:w-44" />
-              <div className="pointer-events-none absolute bottom-10 left-8 h-24 w-24 rounded-full border border-gold/8 sm:h-28 sm:w-28" />
+              <div className="pointer-events-none absolute right-8 top-8 hidden h-36 w-36 rounded-full border border-gold/8 sm:block sm:h-44 sm:w-44" />
+              <div className="pointer-events-none absolute bottom-10 left-8 hidden h-24 w-24 rounded-full border border-gold/8 sm:block sm:h-28 sm:w-28" />
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
-                <div className="flex items-end justify-between gap-5">
-                  <div className="max-w-[190px]">
+                <div className="flex flex-col-reverse items-center gap-8 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
+                  <div className="max-w-[240px] text-left sm:max-w-[190px]">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Figura soglia
                     </p>
@@ -88,13 +88,13 @@ export function HomeHero() {
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>
-                    <div className="mt-5 border-t border-gold/8 pt-4 space-y-2 text-sm text-ivory/62">
+                    <div className="mt-5 space-y-2 border-t-0 pt-1 text-sm text-ivory/62 sm:border-t sm:border-gold/8 sm:pt-4">
                       <p>Numero, immagine, corpo.</p>
                       <p>Welcome Back Home.</p>
                     </div>
                   </div>
 
-                  <div className="relative mr-[-2%] w-[60%] max-w-[410px]">
+                  <div className="relative mx-auto w-[72%] max-w-[280px] sm:mr-[-2%] sm:ml-0 sm:w-[60%] sm:max-w-[410px]">
                     <Image
                       src="/images/brand/matto.png"
                       alt="Il Matto come figura simbolica ricorrente del metodo Il Viaggio Emozionale"
@@ -102,7 +102,7 @@ export function HomeHero() {
                       height={1425}
                       priority
                       sizes="(max-width: 1024px) 70vw, 34vw"
-                      className="h-auto w-full object-contain saturate-[0.72] brightness-[0.94] contrast-[0.9] opacity-[0.92] drop-shadow-[0_22px_38px_rgba(0,0,0,0.18)]"
+                      className="h-auto w-full object-contain saturate-[0.72] brightness-[0.95] contrast-[0.9] opacity-[0.94] drop-shadow-[0_18px_28px_rgba(0,0,0,0.16)] sm:drop-shadow-[0_22px_38px_rgba(0,0,0,0.18)]"
                     />
                   </div>
                 </div>

@@ -24,7 +24,7 @@ export function PathGrid() {
                       {index + 1}
                     </span>
                   </div>
-                  <div className="border-t border-gold/8 pt-5 lg:pt-6">
+                  <div className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5 lg:pt-6">
                     <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
                       Step {index + 1}
                     </p>
@@ -35,7 +35,7 @@ export function PathGrid() {
                       {path.kicker}
                     </p>
                   </div>
-                  <div className="border-t border-gold/8 pt-5 lg:pt-6">
+                  <div className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5 lg:pt-6">
                     <p className="max-w-[54ch] text-base leading-[1.9] text-ivory/78">
                       {path.summary}
                     </p>
@@ -57,7 +57,7 @@ export function PathGrid() {
                         </p>
                       </div>
                     </div>
-                    <div className="mt-7 flex flex-col gap-5 border-t border-gold/7 pt-5 sm:flex-row sm:items-end sm:justify-between">
+                    <div className="mt-7 flex flex-col gap-5 border-t-0 pt-1 sm:border-t sm:border-gold/7 sm:pt-5 sm:flex-row sm:items-end sm:justify-between">
                       <div className="max-w-[34ch]">
                         <p className="text-xs font-semibold uppercase tracking-[0.22em] text-gold">
                           {path.detailLabel}

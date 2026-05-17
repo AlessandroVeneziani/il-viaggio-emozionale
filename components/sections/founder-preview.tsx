@@ -10,7 +10,7 @@ export function FounderPreviewSection() {
       <NumberBackdrop className="opacity-42" />
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-          <Reveal className="border-t border-gold/14 pt-8">
+          <Reveal className="border-t-0 pt-1 sm:border-t sm:border-gold/14 sm:pt-8">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
               Chi sono
             </p>

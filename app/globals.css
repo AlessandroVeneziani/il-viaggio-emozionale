@@ -160,4 +160,12 @@ canvas {
   .texture-paper {
     overflow: hidden;
   }
+
+  .texture-paper::before {
+    opacity: 0.26;
+  }
+
+  .section-shell {
+    border-color: transparent;
+  }
 }

@@ -23,7 +23,7 @@ export function SoulDesignSpotlightSection() {
                 {soulDesignHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
-                    className="border-t border-gold/8 pt-4 text-sm leading-7 text-ivory/66 sm:text-base"
+                    className="border-t-0 pt-1 text-sm leading-7 text-ivory/66 sm:border-t sm:border-gold/8 sm:pt-4 sm:text-base"
                   >
                     {line}
                   </p>
@@ -50,7 +50,7 @@ export function SoulDesignSpotlightSection() {
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute left-1/2 top-1/2 h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/10 bg-gold/[0.03] blur-[1px]" />
+              <div className="absolute left-1/2 top-1/2 hidden h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/10 bg-gold/[0.03] blur-[1px] sm:block" />
               <div className="relative grid gap-4 sm:grid-cols-2">
                 {[
                   ["TESTA", "visione, linguaggio, direzione"],
@@ -60,7 +60,7 @@ export function SoulDesignSpotlightSection() {
                   ["ENERGIA", "forza che muove il sistema"],
                   ["ANIMA", "direzione profonda"],
                 ].map(([label, text]) => (
-                  <div key={label} className="border-t border-gold/8 pt-5">
+                  <div key={label} className="border-t-0 pt-1 sm:border-t sm:border-gold/8 sm:pt-5">
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       {label}
                     </p>
