@@ -24,7 +24,7 @@ export default function AboutPage() {
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <SurfaceCard className="p-8 sm:p-10 lg:p-12">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                Ricerca simbolica contemporanea
+                Fondatore del metodo
               </p>
               <div className="mt-6 space-y-6 text-lg leading-9 text-ivory/82">
                 {aboutPage.introduction.map((paragraph) => (

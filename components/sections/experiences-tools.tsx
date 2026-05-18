@@ -86,7 +86,7 @@ export function ExperiencesToolsSection() {
                           ))}
                         </div>
                         <p className="mt-6 text-sm leading-7 text-ivory/62">
-                          Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana senza perdere la sua natura personale.
+                          Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana.
                         </p>
                       </div>
                     ) : (

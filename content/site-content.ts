@@ -279,7 +279,7 @@ export const experiencesToolsSection = {
       kicker: "Strumenti in evoluzione",
       subtitle: "Una collezione viva di strumenti simbolici e formativi.",
       body:
-        "Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana senza perdere la sua natura personale.",
+        "Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana.",
       href: "/shop-editoriale",
       ctaLabel: "Esplora gli strumenti editoriali",
       mode: "text",
@@ -702,9 +702,8 @@ export const aboutPage = {
       "Ricerca simbolica contemporanea al servizio della crescita personale, della lettura dei passaggi interiori e delle scelte che chiedono più verità.",
   },
   introduction: [
-    "Mi chiamo Alessandro Veneziani e Il Viaggio Emozionale nasce dall'esigenza di costruire un linguaggio più chiaro, più autorevole e più contemporaneo per parlare di simboli, identità e trasformazione interiore.",
-    "Il mio lavoro nasce per dare forma leggibile a ciò che spesso resta confuso: simboli, numeri, immagini interiori e passaggi di vita.",
-    "Non mi interessa alimentare confusione spirituale. Mi interessa creare letture che aiutino le persone a riconoscere ciò che stanno vivendo e a trasformarlo in una direzione concreta.",
+    "Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.",
+    "Il mio lavoro nasce dall'incontro tra simboli, numeri, immagini interiori e passaggi di vita. Non interpreto per dare risposte rapide: costruisco mappe per rendere più leggibile ciò che una persona sta attraversando.",
   ],
   sections: [
     {
@@ -745,7 +744,7 @@ export const aboutPage = {
     ],
   },
   highlights: [
-    "Ricerca simbolica contemporanea",
+    "Metodo Soul Design",
     "Narrazione chiara, non fumosa",
     "Simbolo come strumento di lettura",
     "Decisione concreta come approdo del metodo",

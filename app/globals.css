@@ -164,7 +164,7 @@ canvas {
     0 10px 24px rgba(49, 39, 32, 0.18);
 }
 
-@media (max-width: 1024px) {
+@media (max-width: 1023px) {
   body {
     background:
       linear-gradient(180deg, rgba(58, 50, 41, 0.1) 0%, rgba(35, 29, 24, 0.2) 100%),
@@ -198,6 +198,8 @@ canvas {
   }
 
   .section-shell .texture-paper {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
     border-top-color: transparent !important;
     border-bottom-color: transparent !important;
     border-left-color: rgba(243, 234, 219, 0.06) !important;
@@ -227,6 +229,8 @@ canvas {
   footer [class*="border-t"],
   footer [class*="border-b"],
   footer [class*="border-y"] {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
     border-top-color: transparent !important;
     border-bottom-color: transparent !important;
   }
@@ -236,7 +240,22 @@ canvas {
   main [class*="divide-y"],
   main [class*="divide-x"],
   footer [class*="divide-y"],
-  footer [class*="divide-x"],
+  footer [class*="divide-x"] {
+    --tw-divide-y-reverse: 0 !important;
+    --tw-divide-x-reverse: 0 !important;
+    border-color: transparent !important;
+  }
+
+  header [class*="divide-y"] > :not([hidden]) ~ :not([hidden]),
+  main [class*="divide-y"] > :not([hidden]) ~ :not([hidden]),
+  footer [class*="divide-y"] > :not([hidden]) ~ :not([hidden]),
+  header [class*="divide-x"] > :not([hidden]) ~ :not([hidden]),
+  main [class*="divide-x"] > :not([hidden]) ~ :not([hidden]),
+  footer [class*="divide-x"] > :not([hidden]) ~ :not([hidden]) {
+    border-color: transparent !important;
+    box-shadow: none !important;
+  }
+
   header .absolute.rounded-full.border,
   header .absolute.rounded-full[class*="border"],
   main .absolute.rounded-full.border,
@@ -253,6 +272,8 @@ canvas {
   }
 
   .section-shell .texture-paper {
+    border-top-width: 0 !important;
+    border-bottom-width: 0 !important;
     border-top-color: transparent !important;
     border-bottom-color: transparent !important;
     border-left-color: rgba(243, 234, 219, 0.06) !important;
