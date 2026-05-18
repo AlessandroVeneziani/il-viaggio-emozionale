@@ -26,7 +26,7 @@ export function PageHero({
         {accentNumber}
       </div>
       <Container>
-        <Reveal className="max-w-4xl">
+        <Reveal className="editorial-title-haze max-w-4xl">
           {label ? (
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-gold sm:text-sm">
               {label}

@@ -18,7 +18,7 @@ export function SectionHeading({
   return (
     <div
       className={cn(
-        "max-w-3xl",
+        "editorial-title-haze max-w-3xl",
         centered ? "mx-auto text-center" : "text-left",
         className,
       )}

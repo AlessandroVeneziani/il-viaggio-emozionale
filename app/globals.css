@@ -189,9 +189,35 @@ canvas {
     background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow:
-      0 1px 0 rgba(255, 250, 241, 0.14),
-      0 6px 14px rgba(82, 66, 51, 0.08),
-      0 18px 38px rgba(40, 31, 25, 0.24);
+      0 1px 0 rgba(255, 250, 241, 0.16),
+      0 8px 18px rgba(94, 75, 57, 0.12),
+      0 22px 46px rgba(40, 31, 25, 0.3);
+    filter: saturate(1.02) contrast(1.02);
+  }
+
+  .editorial-title-haze {
+    position: relative;
+    isolation: isolate;
+  }
+
+  .editorial-title-haze::before {
+    content: "";
+    position: absolute;
+    inset: -3.4rem -3.6rem auto -3.6rem;
+    height: clamp(12rem, 56%, 24rem);
+    background:
+      radial-gradient(
+        circle at 28% 34%,
+        rgba(71, 56, 43, 0.28) 0%,
+        rgba(71, 56, 43, 0.18) 28%,
+        rgba(71, 56, 43, 0.08) 52%,
+        rgba(71, 56, 43, 0.02) 68%,
+        transparent 82%
+      );
+    filter: blur(26px);
+    opacity: 0.72;
+    pointer-events: none;
+    z-index: -1;
   }
 
   main p[class*="uppercase"][class*="text-gold"] {
@@ -240,10 +266,11 @@ canvas {
 
   main h3.font-display:not(.editorial-title-depth),
   main h2.font-display:not(.editorial-title-depth) {
-    color: rgba(246, 239, 227, 0.96);
+    color: rgba(247, 240, 229, 0.97);
     text-shadow:
-      0 1px 0 rgba(255, 249, 239, 0.1),
-      0 12px 28px rgba(42, 33, 26, 0.18);
+      0 1px 0 rgba(255, 249, 239, 0.12),
+      0 8px 18px rgba(92, 72, 54, 0.1),
+      0 18px 38px rgba(42, 33, 26, 0.2);
   }
 
   main .section-shell .gold-divider {

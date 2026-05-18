@@ -9,7 +9,7 @@ export function HomeManifestoSection() {
       <Container>
         <div className="grid gap-12 lg:grid-cols-[0.62fr_1.38fr] lg:items-start">
           <Reveal>
-            <SurfaceCard className="p-8 sm:p-10">
+            <SurfaceCard className="editorial-title-haze p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
                 {manifestoSection.eyebrow}
               </p>

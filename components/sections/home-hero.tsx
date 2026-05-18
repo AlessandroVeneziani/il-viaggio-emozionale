@@ -16,7 +16,7 @@ export function HomeHero() {
       <div className="grain-overlay" />
       <Container>
         <div className="grid items-center gap-[4.5rem] lg:grid-cols-[1fr_0.88fr] lg:gap-24">
-          <Reveal className="relative z-10 max-w-3xl">
+          <Reveal className="editorial-title-haze relative z-10 max-w-3xl">
             <p className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-gold sm:text-sm lg:mb-7">
               {homeHero.kicker}
             </p>

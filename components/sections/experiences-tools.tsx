@@ -11,7 +11,7 @@ export function ExperiencesToolsSection() {
     <section className="section-shell py-24 sm:py-32">
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-end">
-          <Reveal>
+          <Reveal className="editorial-title-haze">
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
               {experiencesToolsSection.eyebrow}
             </p>

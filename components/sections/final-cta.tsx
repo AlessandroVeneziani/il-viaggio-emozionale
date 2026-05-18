@@ -12,7 +12,7 @@ export function FinalCtaSection() {
     <section className="section-shell pb-28 pt-20 sm:pb-36 sm:pt-24">
       <Container>
         <Reveal>
-          <SurfaceCard className="mx-auto max-w-4xl p-8 text-center sm:p-12 lg:p-14">
+          <SurfaceCard className="editorial-title-haze mx-auto max-w-4xl p-8 text-center sm:p-12 lg:p-14">
             <div className="gold-divider mb-10" />
             <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
               Welcome Back Home

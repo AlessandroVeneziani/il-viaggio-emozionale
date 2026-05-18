@@ -36,7 +36,7 @@ export function RitrattoSpotlightSection() {
             </div>
           </Reveal>
 
-          <Reveal>
+          <Reveal className="editorial-title-haze">
             <div className="pt-1 xl:border-t xl:border-gold/[0.08] xl:pt-6">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {ritrattoHomeSpotlight.eyebrow}

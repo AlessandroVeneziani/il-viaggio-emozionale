@@ -12,7 +12,7 @@ export function FounderPreviewSection() {
       <NumberBackdrop className="opacity-42" />
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
-          <Reveal className="pt-1 xl:border-t xl:border-gold/[0.1] xl:pt-8">
+          <Reveal className="editorial-title-haze pt-1 xl:border-t xl:border-gold/[0.1] xl:pt-8">
             <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4">
               <div className="relative overflow-hidden rounded-[22px]">
                 <Image
@@ -38,7 +38,7 @@ export function FounderPreviewSection() {
               Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.
             </p>
           </Reveal>
-          <Reveal delay={0.08}>
+          <Reveal delay={0.08} className="editorial-title-haze">
             <h2 className="editorial-title-depth font-display text-[2.5rem] leading-[1.06] sm:text-[3.2rem]">
               {founderPreview.title}
             </h2>

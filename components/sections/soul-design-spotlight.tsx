@@ -9,7 +9,7 @@ export function SoulDesignSpotlightSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Reveal>
-            <div className="texture-paper rounded-[30px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.058),rgba(244,241,234,0.024))] p-8 sm:p-10">
+            <div className="editorial-title-haze texture-paper rounded-[30px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.058),rgba(244,241,234,0.024))] p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
                 {soulDesignHomeSpotlight.eyebrow}
               </p>
