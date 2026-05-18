@@ -197,6 +197,13 @@ canvas {
     opacity: 0.2;
   }
 
+  .section-shell .texture-paper {
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: rgba(243, 234, 219, 0.06) !important;
+    border-right-color: rgba(243, 234, 219, 0.06) !important;
+  }
+
   .section-shell {
     border-color: transparent;
   }
@@ -245,7 +252,10 @@ canvas {
   }
 
   .section-shell .texture-paper {
-    border-color: rgba(243, 234, 219, 0.075) !important;
+    border-top-color: transparent !important;
+    border-bottom-color: transparent !important;
+    border-left-color: rgba(243, 234, 219, 0.06) !important;
+    border-right-color: rgba(243, 234, 219, 0.06) !important;
     box-shadow:
       0 14px 28px rgba(69, 54, 39, 0.06),
       inset 0 1px 0 rgba(255, 248, 238, 0.04) !important;

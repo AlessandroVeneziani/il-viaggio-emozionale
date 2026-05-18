@@ -112,9 +112,9 @@ export function SiteFooter() {
             </div>
           </div>
         </div>
-        <div className="mt-12 flex flex-col gap-5 border-t-0 pt-6 text-sm text-ivory/54 sm:flex-row sm:items-center sm:justify-between xl:border-t xl:border-gold/[0.06]">
+        <div className="mt-12 flex flex-col gap-6 border-t-0 pt-6 text-sm text-ivory/54 sm:flex-row sm:items-start sm:justify-between xl:border-t xl:border-gold/[0.06]">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
-          <div className="flex flex-col gap-3 sm:items-end">
+          <div className="flex flex-col gap-4 text-left sm:min-w-[18rem] sm:items-end sm:text-right">
             <Link href="/blog" className="transition hover:text-gold">
               Blog
             </Link>

@@ -28,7 +28,7 @@ export function HomeHero() {
                 {homeHero.seoLine}
               </p>
             </div>
-            <p className="mt-7 max-w-xl text-pretty text-base leading-[1.98] text-ivory/79 sm:text-[1.03rem]">
+            <p className="mt-7 max-w-xl text-pretty text-base leading-[1.98] text-ivory/82 sm:text-[1.03rem]">
               {homeHero.subtitle}
             </p>
             <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
@@ -77,7 +77,7 @@ export function HomeHero() {
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       Figura soglia
                     </p>
-                    <p className="mt-4 text-sm leading-7 text-ivory/80">
+                    <p className="mt-4 text-sm leading-7 text-ivory/84">
                       Il Matto ritorna come figura di soglia: non promessa di
                       fuga, ma inizio di una lettura più chiara del presente.
                     </p>
@@ -85,7 +85,7 @@ export function HomeHero() {
                       <span>Esplora il metodo</span>
                       <ArrowRight size={16} />
                     </div>
-                    <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/68 xl:border-t xl:border-gold/[0.08] xl:pt-4">
+                    <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/72 xl:border-t xl:border-gold/[0.08] xl:pt-4">
                       <p>Numero, immagine, corpo.</p>
                       <p>Welcome Back Home.</p>
                     </div>
