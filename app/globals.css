@@ -181,12 +181,12 @@ canvas {
         rgba(15, 13, 11, 0.992) 82%,
         rgba(15, 13, 11, 0.992) 100%
       ),
-      radial-gradient(circle at 50% 24%, rgba(39, 32, 26, 0.18) 0%, rgba(39, 32, 26, 0.11) 30%, rgba(39, 32, 26, 0.038) 56%, transparent 74%),
+      radial-gradient(circle at 50% 78%, rgba(53, 43, 34, 0.1) 0%, rgba(53, 43, 34, 0.058) 26%, rgba(53, 43, 34, 0.018) 48%, transparent 66%),
       linear-gradient(180deg, rgba(50, 43, 36, 0.14) 0%, rgba(23, 19, 16, 0.26) 100%),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      radial-gradient(circle at 50% 12%, rgba(193, 169, 124, 0.024), transparent 26%),
+      radial-gradient(circle at 50% 10%, rgba(193, 169, 124, 0.012), transparent 22%),
       linear-gradient(180deg, #6b6459 0%, #60584e 46%, #554d44 100%);
     background-size: cover, auto, cover, 1160px auto, 1820px auto, 1660px auto, auto, cover;
     background-position: center top, center 7rem, center top, center top, 14% 2rem, 86% 6rem, center top, center top;
@@ -195,7 +195,11 @@ canvas {
   }
 
   .texture-paper::before {
-    opacity: 0.2;
+    background:
+      linear-gradient(180deg, rgba(255, 249, 240, 0.016), transparent 32%),
+      radial-gradient(circle at 18% 18%, rgba(198, 167, 94, 0.012), transparent 24%);
+    mix-blend-mode: normal;
+    opacity: 0.1;
   }
 
   .number-backdrop {
