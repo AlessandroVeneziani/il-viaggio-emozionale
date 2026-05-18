@@ -44,14 +44,14 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(24,21,18,0.74)_0%,rgba(19,16,14,0.88)_18%,rgba(15,13,11,0.95)_48%,rgba(11,9,8,0.985)_100%)]">
-      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-40 lg:block lg:bg-[linear-gradient(180deg,rgba(118,103,84,0.09)_0%,rgba(44,36,29,0.18)_32%,rgba(19,16,14,0.12)_64%,transparent_100%)]" />
-      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_0%,rgba(198,167,94,0.038),transparent_35%),radial-gradient(circle_at_50%_18%,rgba(38,31,25,0.14),transparent_58%)]" />
+    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(69,60,49,0.12)_0%,rgba(29,25,21,0.72)_12%,rgba(21,18,16,0.9)_34%,rgba(15,13,11,0.97)_100%)]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-48 lg:block lg:bg-[linear-gradient(180deg,rgba(122,108,89,0.14)_0%,rgba(73,60,47,0.16)_26%,rgba(28,23,19,0.14)_54%,rgba(16,13,12,0.06)_78%,transparent_100%)]" />
+      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_4%,rgba(184,151,92,0.055),transparent_28%),radial-gradient(circle_at_50%_22%,rgba(45,37,30,0.2),transparent_56%),radial-gradient(circle_at_50%_74%,rgba(30,24,20,0.18),transparent_52%)]" />
       <div
-        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.018]"
+        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.052]"
         style={{
           backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
-          backgroundSize: "1250px auto",
+          backgroundSize: "1320px auto",
           backgroundPosition: "center top",
         }}
       />
@@ -62,10 +62,10 @@ export function SiteFooter() {
         aria-hidden="true"
         width={1920}
         height={479}
-        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.022] lg:saturate-[0.18] lg:brightness-[0.23] lg:contrast-[0.44]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.034] lg:saturate-[0.22] lg:brightness-[0.27] lg:contrast-[0.48]"
       />
       <Container className="relative py-16 sm:py-20 lg:py-24">
-        <div className="gold-divider mb-10 lg:mb-12" />
+        <div className="gold-divider mb-10 opacity-55 lg:mb-12 lg:opacity-30" />
         <div className="grid gap-10 lg:grid-cols-[1.24fr_0.68fr_0.72fr] lg:items-start lg:gap-12">
           <div className="max-w-2xl">
             <BrandMark compact className="lg:scale-[1.04] lg:origin-left" />
