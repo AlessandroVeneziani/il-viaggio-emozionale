@@ -23,7 +23,7 @@ export function NumberBackdrop({
   return (
     <div
       aria-hidden="true"
-      className={cn("pointer-events-none absolute inset-0 overflow-hidden", className)}
+      className={cn("number-backdrop pointer-events-none absolute inset-0 overflow-hidden", className)}
     >
       {symbols.map((symbol) => (
         <span

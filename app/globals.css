@@ -166,6 +166,22 @@ canvas {
 }
 
 @media (min-width: 1024px) {
+  body {
+    background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
+  }
+
+  .texture-paper::before {
+    opacity: 0.2;
+  }
+
+  .number-backdrop {
+    opacity: 0.3 !important;
+  }
+
+  main .texture-paper > div[style*="sfondo-numeri-seamless"] {
+    opacity: 0.032 !important;
+  }
+
   .editorial-title-depth {
     color: #f8f1e4;
     text-shadow:

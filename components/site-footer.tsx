@@ -44,9 +44,10 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#191510]">
+    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(23,19,15,0.88),rgba(13,11,9,0.98))]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-28 bg-gradient-to-b from-[#100d0b]/70 to-transparent lg:block" />
       <div
-        className="absolute inset-0 opacity-[0.05]"
+        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.038]"
         style={{
           backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
           backgroundSize: "1250px auto",
@@ -60,7 +61,7 @@ export function SiteFooter() {
         aria-hidden="true"
         width={1920}
         height={479}
-        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.055] lg:brightness-[0.34] lg:contrast-[0.5]"
       />
       <Container className="relative py-16 sm:py-20">
         <div className="gold-divider mb-10" />
@@ -114,7 +115,7 @@ export function SiteFooter() {
         </div>
         <div className="mt-12 flex flex-col gap-5 border-t-0 pt-6 text-sm text-ivory/54 sm:flex-row sm:items-center sm:justify-between xl:border-t xl:border-gold/[0.06]">
           <p>© 2026 Il Viaggio Emozionale · Alessandro Veneziani</p>
-          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-3 sm:gap-y-2">
+          <div className="flex flex-col gap-3 sm:flex-row sm:flex-wrap sm:items-center sm:justify-end sm:gap-x-4 sm:gap-y-2 lg:gap-x-5">
             <Link href="/blog" className="transition hover:text-gold">
               Blog
             </Link>
