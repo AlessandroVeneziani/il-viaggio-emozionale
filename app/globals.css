@@ -181,14 +181,15 @@ canvas {
         rgba(15, 13, 11, 0.988) 81%,
         rgba(15, 13, 11, 0.988) 100%
       ),
+      radial-gradient(circle at 50% 30%, rgba(39, 31, 25, 0.16), rgba(39, 31, 25, 0.08) 28%, rgba(39, 31, 25, 0.02) 52%, transparent 72%),
       linear-gradient(180deg, rgba(54, 47, 39, 0.15) 0%, rgba(24, 20, 17, 0.28) 100%),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       radial-gradient(circle at 50% 14%, rgba(196, 171, 129, 0.042), transparent 31%),
       radial-gradient(circle at 50% 54%, rgba(34, 28, 23, 0.14), transparent 47%),
       linear-gradient(180deg, #6f675c 0%, #635b50 46%, #584f46 100%);
-    background-size: cover, cover, 1180px auto, auto, auto, cover;
-    background-position: center top, center top, center top, center top, center top, center top;
-    background-repeat: no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
+    background-size: cover, auto, cover, 1180px auto, auto, auto, cover;
+    background-position: center top, center 8rem, center top, center top, center top, center top, center top;
+    background-repeat: no-repeat, no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
     background-attachment: fixed, fixed, fixed, fixed, fixed, fixed, fixed;
   }
 
@@ -212,8 +213,8 @@ canvas {
     -webkit-text-fill-color: transparent;
     text-shadow:
       0 1px 0 rgba(255, 250, 241, 0.16),
-      0 8px 18px rgba(94, 75, 57, 0.12),
-      0 22px 46px rgba(40, 31, 25, 0.3);
+      0 10px 22px rgba(94, 75, 57, 0.16),
+      0 26px 52px rgba(40, 31, 25, 0.34);
     filter: saturate(1.02) contrast(1.02);
   }
 

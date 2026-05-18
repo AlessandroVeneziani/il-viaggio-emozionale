@@ -247,7 +247,7 @@ export const experiencesToolsSection = {
   description:
     "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Una collezione editoriale in evoluzione: meditazioni, scrittura simbolica, esercizi, percorsi audio e pratiche per portare il metodo nella vita quotidiana.",
+    "Una collezione editoriale in evoluzione, pensata per dare continuità al metodo con più presenza e ascolto.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
