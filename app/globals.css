@@ -26,18 +26,18 @@ body {
       90deg,
       rgba(17, 15, 13, 0.98) 0%,
       rgba(17, 15, 13, 0.98) 22%,
-      rgba(17, 15, 13, 0.28) 34%,
+      rgba(17, 15, 13, 0.34) 34%,
       rgba(17, 15, 13, 0) 40%,
       rgba(17, 15, 13, 0) 60%,
-      rgba(17, 15, 13, 0.28) 66%,
+      rgba(17, 15, 13, 0.34) 66%,
       rgba(17, 15, 13, 0.98) 78%,
       rgba(17, 15, 13, 0.98) 100%
     ),
-    linear-gradient(180deg, rgba(58, 50, 41, 0.1) 0%, rgba(35, 29, 24, 0.2) 100%),
+    linear-gradient(180deg, rgba(58, 50, 41, 0.16) 0%, rgba(35, 29, 24, 0.28) 100%),
     url("/images/backgrounds/sfondo-numeri-seamless.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.095), transparent 36%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.05), transparent 40%),
-    linear-gradient(180deg, #7b7368 0%, #6e665b 46%, #61584f 100%);
+    radial-gradient(circle at top, rgba(198, 167, 94, 0.075), transparent 35%),
+    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.038), transparent 38%),
+    linear-gradient(180deg, #746c61 0%, #686055 46%, #5c544a 100%);
   background-size: cover, cover, 1120px auto, auto, auto, cover;
   background-position: center top, center top, center top, center top, center top, center top;
   background-repeat: no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
