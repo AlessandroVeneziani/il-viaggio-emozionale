@@ -45,8 +45,8 @@ const footerContactLinks = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(24,21,18,0.74)_0%,rgba(19,16,14,0.88)_18%,rgba(15,13,11,0.95)_48%,rgba(11,9,8,0.985)_100%)]">
-      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-36 lg:block lg:bg-[linear-gradient(180deg,rgba(118,103,84,0.11)_0%,rgba(44,36,29,0.22)_34%,rgba(19,16,14,0.14)_64%,transparent_100%)]" />
-      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_0%,rgba(198,167,94,0.045),transparent_34%),radial-gradient(circle_at_50%_18%,rgba(38,31,25,0.16),transparent_56%)]" />
+      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-40 lg:block lg:bg-[linear-gradient(180deg,rgba(118,103,84,0.09)_0%,rgba(44,36,29,0.18)_32%,rgba(19,16,14,0.12)_64%,transparent_100%)]" />
+      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_0%,rgba(198,167,94,0.038),transparent_35%),radial-gradient(circle_at_50%_18%,rgba(38,31,25,0.14),transparent_58%)]" />
       <div
         className="absolute inset-0 opacity-[0.05] lg:opacity-[0.018]"
         style={{
@@ -62,7 +62,7 @@ export function SiteFooter() {
         aria-hidden="true"
         width={1920}
         height={479}
-        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.028] lg:saturate-[0.22] lg:brightness-[0.25] lg:contrast-[0.48]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.022] lg:saturate-[0.18] lg:brightness-[0.23] lg:contrast-[0.44]"
       />
       <Container className="relative py-16 sm:py-20 lg:py-24">
         <div className="gold-divider mb-10 lg:mb-12" />

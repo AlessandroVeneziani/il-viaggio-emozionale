@@ -213,8 +213,8 @@ canvas {
     -webkit-text-fill-color: transparent;
     text-shadow:
       0 1px 0 rgba(255, 250, 241, 0.16),
-      0 10px 22px rgba(94, 75, 57, 0.16),
-      0 26px 52px rgba(40, 31, 25, 0.34);
+      0 12px 24px rgba(98, 78, 60, 0.18),
+      0 28px 56px rgba(40, 31, 25, 0.36);
     filter: saturate(1.02) contrast(1.02);
   }
 

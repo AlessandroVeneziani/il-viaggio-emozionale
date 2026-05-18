@@ -13,7 +13,7 @@ export function FounderPreviewSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.78fr_1.22fr] lg:items-start">
           <Reveal className="editorial-title-haze pt-1 xl:border-t xl:border-gold/[0.1] xl:pt-8">
-            <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4">
+            <div className="mb-7 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.05] to-transparent p-4 lg:border-gold/[0.075] lg:bg-[linear-gradient(145deg,rgba(244,241,234,0.06),rgba(244,241,234,0.018))] lg:shadow-[0_18px_34px_rgba(41,32,25,0.1)]">
               <div className="relative overflow-hidden rounded-[22px]">
                 <Image
                   src="/images/brand/alessandro-veneziani-portrait.jpg"
@@ -21,9 +21,10 @@ export function FounderPreviewSection() {
                   width={1200}
                   height={1800}
                   sizes="(max-width: 1024px) 88vw, 28vw"
-                  className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9]"
+                  className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9] lg:brightness-[0.92] lg:contrast-[1.06] lg:saturate-[0.84]"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.02),rgba(32,27,23,0.08)_44%,rgba(32,27,23,0.22)_100%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.02),rgba(32,27,23,0.08)_44%,rgba(32,27,23,0.22)_100%)] lg:bg-[linear-gradient(180deg,rgba(27,22,18,0.08),rgba(38,31,25,0.14)_38%,rgba(40,32,26,0.28)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_18%,rgba(204,176,120,0.045),transparent_34%),linear-gradient(135deg,rgba(255,248,238,0.035),transparent_46%)]" />
               </div>
             </div>
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">

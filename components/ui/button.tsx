@@ -10,7 +10,7 @@ const variantClasses: Record<Variant, string> = {
   primary:
     "bg-gold text-ink shadow-[0_12px_28px_rgba(198,167,94,0.18)] hover:bg-[#d0b168] hover:shadow-[0_16px_30px_rgba(198,167,94,0.2)] focus-visible:outline-gold lg:shadow-[0_16px_32px_rgba(198,167,94,0.2)] lg:hover:bg-[#d3b46a] lg:hover:shadow-[0_20px_38px_rgba(198,167,94,0.24)]",
   secondary:
-    "border border-gold/24 bg-ivory/[0.035] text-ivory/90 hover:border-gold/36 hover:bg-gold/[0.08] focus-visible:outline-gold lg:border-[rgba(244,234,218,0.48)] lg:bg-[linear-gradient(180deg,rgba(244,241,234,0.06),rgba(244,241,234,0.024))] lg:text-[rgba(247,241,232,0.92)] lg:shadow-[0_12px_26px_rgba(43,35,28,0.08),inset_0_1px_0_rgba(255,248,238,0.04)] lg:hover:border-gold/34 lg:hover:bg-[linear-gradient(180deg,rgba(198,167,94,0.12),rgba(244,241,234,0.038))] lg:hover:text-[rgba(249,244,237,0.98)] lg:hover:shadow-[0_16px_30px_rgba(43,35,28,0.1),inset_0_1px_0_rgba(255,248,238,0.06)]",
+    "border border-gold/24 bg-ivory/[0.035] text-ivory/90 hover:border-gold/36 hover:bg-gold/[0.08] focus-visible:outline-gold lg:border-[rgba(244,234,218,0.54)] lg:bg-[linear-gradient(180deg,rgba(244,241,234,0.072),rgba(244,241,234,0.03))] lg:text-[rgba(247,241,232,0.94)] lg:shadow-[0_14px_28px_rgba(43,35,28,0.085),inset_0_1px_0_rgba(255,248,238,0.045)] lg:hover:border-[rgba(214,184,112,0.42)] lg:hover:bg-[linear-gradient(180deg,rgba(198,167,94,0.14),rgba(244,241,234,0.05))] lg:hover:text-[rgba(249,244,237,0.985)] lg:hover:shadow-[0_18px_34px_rgba(43,35,28,0.11),inset_0_1px_0_rgba(255,248,238,0.065)]",
   ghost:
     "bg-transparent text-ivory/76 hover:bg-white/[0.035] hover:text-ivory focus-visible:outline-gold lg:text-ivory/82 lg:hover:bg-[rgba(244,241,234,0.045)] lg:hover:text-[rgba(248,242,233,0.95)]",
 };
