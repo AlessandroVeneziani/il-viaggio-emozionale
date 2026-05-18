@@ -26,22 +26,23 @@ body {
       90deg,
       rgba(17, 15, 13, 0.98) 0%,
       rgba(17, 15, 13, 0.98) 22%,
-      rgba(17, 15, 13, 0.34) 34%,
-      rgba(17, 15, 13, 0) 40%,
-      rgba(17, 15, 13, 0) 60%,
-      rgba(17, 15, 13, 0.34) 66%,
+      rgba(17, 15, 13, 0.42) 34%,
+      rgba(17, 15, 13, 0.14) 41%,
+      rgba(17, 15, 13, 0.12) 59%,
+      rgba(17, 15, 13, 0.42) 66%,
       rgba(17, 15, 13, 0.98) 78%,
       rgba(17, 15, 13, 0.98) 100%
     ),
-    linear-gradient(180deg, rgba(58, 50, 41, 0.16) 0%, rgba(35, 29, 24, 0.28) 100%),
+    linear-gradient(180deg, rgba(58, 50, 41, 0.19) 0%, rgba(35, 29, 24, 0.32) 100%),
     url("/images/backgrounds/sfondo-numeri-seamless.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.075), transparent 35%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.038), transparent 38%),
+    radial-gradient(circle at top, rgba(198, 167, 94, 0.062), transparent 35%),
+    radial-gradient(circle at 50% 26%, rgba(28, 22, 18, 0.08), transparent 34%),
+    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.032), transparent 38%),
     linear-gradient(180deg, #746c61 0%, #686055 46%, #5c544a 100%);
-  background-size: cover, cover, 1120px auto, auto, auto, cover;
-  background-position: center top, center top, center top, center top, center top, center top;
-  background-repeat: no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll;
+  background-size: cover, cover, 1120px auto, auto, auto, auto, cover;
+  background-position: center top, center top, center top, center top, center top, center top, center top;
+  background-repeat: no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat, no-repeat;
+  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll;
   color: #f4f1ea;
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
@@ -162,6 +163,58 @@ canvas {
   text-shadow:
     0 1px 0 rgba(255, 249, 240, 0.08),
     0 10px 24px rgba(49, 39, 32, 0.18);
+}
+
+@media (min-width: 1024px) {
+  .editorial-title-depth {
+    color: #f8f1e4;
+    text-shadow:
+      0 1px 0 rgba(255, 250, 241, 0.12),
+      0 4px 12px rgba(73, 58, 45, 0.08),
+      0 16px 34px rgba(40, 31, 25, 0.22);
+  }
+
+  main p[class*="uppercase"][class*="text-gold"] {
+    color: rgba(220, 190, 117, 0.9) !important;
+    text-shadow: 0 1px 0 rgba(255, 248, 236, 0.06);
+  }
+
+  main [class*="text-ivory/62"] {
+    color: rgba(244, 241, 234, 0.72) !important;
+  }
+
+  main [class*="text-ivory/66"] {
+    color: rgba(244, 241, 234, 0.75) !important;
+  }
+
+  main [class*="text-ivory/68"] {
+    color: rgba(244, 241, 234, 0.77) !important;
+  }
+
+  main [class*="text-ivory/72"] {
+    color: rgba(244, 241, 234, 0.8) !important;
+  }
+
+  main [class*="text-ivory/76"] {
+    color: rgba(244, 241, 234, 0.83) !important;
+  }
+
+  main [class*="text-ivory/78"] {
+    color: rgba(244, 241, 234, 0.845) !important;
+  }
+
+  main [class*="text-ivory/80"] {
+    color: rgba(244, 241, 234, 0.86) !important;
+  }
+
+  main .texture-paper {
+    border-color: rgba(243, 234, 219, 0.1);
+    box-shadow:
+      0 24px 52px rgba(43, 35, 28, 0.14),
+      inset 0 1px 0 rgba(255, 248, 238, 0.045);
+    -webkit-backdrop-filter: blur(6px);
+    backdrop-filter: blur(6px);
+  }
 }
 
 @media (max-width: 1023px) {
