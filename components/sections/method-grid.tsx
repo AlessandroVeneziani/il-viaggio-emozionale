@@ -12,6 +12,12 @@ const icons = [Binary, Eye, HeartPulse] as const;
 export function MethodGrid() {
   return (
     <section id="metodo" className="section-shell py-24 sm:py-32">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute right-[-4rem] top-24 hidden font-display text-[16rem] leading-none text-gold/[0.035] blur-[1.4px] lg:block xl:text-[18rem]"
+      >
+        6
+      </span>
       <Container>
         <SectionHeading
           eyebrow="Il metodo"

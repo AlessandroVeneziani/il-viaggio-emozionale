@@ -45,6 +45,12 @@ const footerContactLinks = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(15,13,11,0.02)_0%,rgba(20,17,15,0.16)_12%,rgba(21,18,16,0.46)_30%,rgba(18,15,13,0.82)_58%,rgba(15,13,11,0.965)_100%)]">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-[-4.5rem] right-[-1rem] hidden font-display text-[15rem] leading-none text-gold/[0.028] blur-[1.4px] lg:block xl:text-[18rem]"
+      >
+        0
+      </span>
       <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-56 lg:block lg:bg-[linear-gradient(180deg,rgba(98,86,70,0.1)_0%,rgba(56,47,39,0.08)_24%,rgba(24,20,17,0.035)_54%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[linear-gradient(180deg,rgba(17,15,13,0)_0%,rgba(17,15,13,0.035)_26%,rgba(17,15,13,0.11)_66%,rgba(15,13,11,0.18)_100%)]" />
       <div
