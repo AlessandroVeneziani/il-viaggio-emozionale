@@ -219,8 +219,8 @@ canvas {
       1% 16rem,
       99% 28rem;
     background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, repeat-y;
-    opacity: 0.118;
-    filter: saturate(0.78) contrast(0.98) blur(0.26px);
+    opacity: 0.09;
+    filter: saturate(0.76) contrast(0.96) blur(0.24px);
   }
 
   body::after {
@@ -247,7 +247,7 @@ canvas {
   }
 
   main [style*="sfondo-numeri-seamless"] {
-    opacity: 0.014 !important;
+    opacity: 0.01 !important;
   }
 
   .editorial-title-depth {

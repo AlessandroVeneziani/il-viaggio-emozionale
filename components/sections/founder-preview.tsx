@@ -23,8 +23,8 @@ export function FounderPreviewSection() {
                   sizes="(max-width: 1024px) 88vw, 28vw"
                   className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9] lg:[filter:brightness(0.88)_contrast(1.14)_saturate(0.8)_sepia(0.08)]"
                 />
-                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.02),rgba(32,27,23,0.08)_44%,rgba(32,27,23,0.22)_100%)] lg:bg-[linear-gradient(180deg,rgba(21,17,14,0.1),rgba(30,24,20,0.16)_34%,rgba(28,23,19,0.3)_74%,rgba(24,20,17,0.38)_100%)]" />
-                <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_18%,rgba(190,160,107,0.03),transparent_32%),radial-gradient(circle_at_78%_26%,rgba(17,14,12,0.16),transparent_34%),linear-gradient(135deg,rgba(255,248,238,0.016),transparent_42%)]" />
+                <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.02),rgba(32,27,23,0.08)_44%,rgba(32,27,23,0.22)_100%)] lg:bg-[radial-gradient(circle_at_50%_34%,transparent_34%,rgba(16,13,11,0.08)_70%,rgba(16,13,11,0.18)_100%),linear-gradient(180deg,rgba(21,17,14,0.1),rgba(30,24,20,0.16)_34%,rgba(28,23,19,0.3)_74%,rgba(24,20,17,0.42)_100%)]" />
+                <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_18%,rgba(190,160,107,0.028),transparent_30%),radial-gradient(circle_at_78%_26%,rgba(17,14,12,0.18),transparent_34%),linear-gradient(135deg,rgba(255,248,238,0.012),transparent_42%)]" />
               </div>
             </div>
             <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
