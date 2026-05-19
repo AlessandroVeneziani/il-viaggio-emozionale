@@ -15,16 +15,12 @@ export function PageHero({
   kicker,
   title,
   subtitle,
-  accentNumber = "7",
 }: PageHeroProps) {
   const label = eyebrow ?? kicker ?? "";
 
   return (
     <section className="section-shell overflow-hidden pb-20 pt-8 sm:pb-24 sm:pt-10 lg:pb-28">
       <NumberBackdrop className="opacity-58" />
-      <div className="pointer-events-none absolute right-[6%] top-[12%] font-display text-[28vw] leading-none text-gold/[0.045]">
-        {accentNumber}
-      </div>
       <Container>
         <Reveal className="editorial-title-haze max-w-4xl">
           {label ? (

@@ -64,7 +64,7 @@ export default function AboutPage() {
                       width={1200}
                       height={1800}
                       sizes="(max-width: 1024px) 90vw, 32vw"
-                      className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9] lg:[filter:brightness(0.89)_contrast(1.12)_saturate(0.82)_sepia(0.08)]"
+                      className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9] lg:[filter:brightness(0.83)_contrast(1.2)_saturate(0.76)_sepia(0.12)]"
                     />
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)] lg:bg-[radial-gradient(circle_at_50%_34%,transparent_34%,rgba(16,13,11,0.08)_70%,rgba(16,13,11,0.18)_100%),linear-gradient(180deg,rgba(21,17,14,0.1),rgba(29,24,20,0.16)_34%,rgba(28,23,19,0.28)_72%,rgba(24,20,17,0.4)_100%)]" />
                     <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_16%,rgba(193,162,109,0.026),transparent_30%),linear-gradient(135deg,rgba(255,248,238,0.012),transparent_42%)]" />

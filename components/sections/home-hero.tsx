@@ -13,18 +13,6 @@ export function HomeHero() {
   return (
     <section className="section-shell overflow-hidden pb-24 pt-12 sm:pb-28 sm:pt-16 lg:pb-36 lg:pt-20">
       <NumberBackdrop className="opacity-42" />
-      <span
-        aria-hidden="true"
-        className="pointer-events-none absolute left-[-3.5rem] top-[18%] hidden font-display text-[17rem] leading-none text-gold/[0.055] blur-[1px] lg:block xl:text-[20rem]"
-      >
-        7
-      </span>
-      <span
-        aria-hidden="true"
-        className="pointer-events-none absolute right-[-2.5rem] top-[28%] hidden font-display text-[15rem] leading-none text-gold/[0.045] blur-[1.2px] lg:block xl:text-[18rem]"
-      >
-        3
-      </span>
       <div className="grain-overlay" />
       <Container>
         <div className="grid items-center gap-[4.5rem] lg:grid-cols-[1fr_0.88fr] lg:gap-24">
