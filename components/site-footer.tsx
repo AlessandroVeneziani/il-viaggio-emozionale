@@ -44,14 +44,14 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(77,68,58,0.1)_0%,rgba(43,36,30,0.44)_14%,rgba(25,21,18,0.82)_38%,rgba(15,13,11,0.972)_100%)]">
-      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-56 lg:block lg:bg-[linear-gradient(180deg,rgba(110,97,81,0.12)_0%,rgba(67,56,46,0.12)_26%,rgba(28,23,19,0.08)_52%,rgba(15,13,11,0.02)_78%,transparent_100%)]" />
-      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[linear-gradient(180deg,rgba(18,16,14,0)_0%,rgba(18,16,14,0.04)_28%,rgba(18,16,14,0.12)_72%,rgba(15,13,11,0.2)_100%)]" />
+    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(15,13,11,0.02)_0%,rgba(20,17,15,0.16)_12%,rgba(21,18,16,0.46)_30%,rgba(18,15,13,0.82)_58%,rgba(15,13,11,0.965)_100%)]">
+      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-56 lg:block lg:bg-[linear-gradient(180deg,rgba(98,86,70,0.1)_0%,rgba(56,47,39,0.08)_24%,rgba(24,20,17,0.035)_54%,transparent_100%)]" />
+      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[linear-gradient(180deg,rgba(17,15,13,0)_0%,rgba(17,15,13,0.035)_26%,rgba(17,15,13,0.11)_66%,rgba(15,13,11,0.18)_100%)]" />
       <div
-        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.04]"
+        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.056]"
         style={{
           backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
-          backgroundSize: "1360px auto",
+          backgroundSize: "1380px auto",
           backgroundPosition: "center top",
         }}
       />
@@ -62,7 +62,7 @@ export function SiteFooter() {
         aria-hidden="true"
         width={1920}
         height={479}
-        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.072] lg:saturate-[0.28] lg:brightness-[0.34] lg:contrast-[0.56]"
+        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.1] lg:saturate-[0.34] lg:brightness-[0.38] lg:contrast-[0.62]"
       />
       <Container className="relative py-16 sm:py-20 lg:py-24">
         <div className="gold-divider mb-10 opacity-55 lg:mb-12 lg:opacity-[0.16]" />
