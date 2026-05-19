@@ -47,7 +47,7 @@ export function SiteFooter() {
     <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(15,13,11,0.02)_0%,rgba(20,17,15,0.16)_12%,rgba(21,18,16,0.46)_30%,rgba(18,15,13,0.82)_58%,rgba(15,13,11,0.965)_100%)]">
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-[-4.5rem] right-[-1rem] hidden font-display text-[15rem] leading-none text-gold/[0.028] blur-[1.4px] lg:block xl:text-[18rem]"
+        className="pointer-events-none absolute bottom-[-5.5rem] right-[-2.2rem] hidden font-display text-[17rem] leading-none text-gold/[0.08] blur-[1.6px] lg:block xl:right-[-2.8rem] xl:text-[20rem]"
       >
         0
       </span>

@@ -15,13 +15,13 @@ export function HomeHero() {
       <NumberBackdrop className="opacity-42" />
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute left-[-3.5rem] top-[18%] hidden font-display text-[17rem] leading-none text-gold/[0.055] blur-[1px] lg:block xl:text-[20rem]"
+        className="pointer-events-none absolute left-[-4.8rem] top-[14%] hidden font-display text-[18rem] leading-none text-gold/[0.16] blur-[1.2px] lg:block xl:left-[-5.8rem] xl:text-[22rem]"
       >
         7
       </span>
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-2.5rem] top-[28%] hidden font-display text-[15rem] leading-none text-gold/[0.045] blur-[1.2px] lg:block xl:text-[18rem]"
+        className="pointer-events-none absolute right-[-4.1rem] top-[24%] hidden font-display text-[16rem] leading-none text-gold/[0.16] blur-[1.35px] lg:block xl:right-[-5rem] xl:text-[19rem]"
       >
         3
       </span>
