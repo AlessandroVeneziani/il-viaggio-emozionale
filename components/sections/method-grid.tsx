@@ -14,9 +14,9 @@ export function MethodGrid() {
     <section id="metodo" className="section-shell py-24 sm:py-32">
       <span
         aria-hidden="true"
-        className="pointer-events-none absolute right-[-5rem] top-20 hidden font-display text-[18rem] leading-none text-gold/[0.10] blur-[1.6px] lg:block xl:right-[-5.8rem] xl:text-[21rem]"
+        className="pointer-events-none absolute left-[-2.2rem] top-12 hidden font-display text-[20rem] leading-[0.88] text-gold/[0.055] blur-[2.1px] lg:block xl:left-[-2.8rem] xl:top-16 xl:text-[23rem]"
       >
-        6
+        1
       </span>
       <Container>
         <SectionHeading

@@ -7,6 +7,12 @@ import { featuredPaths } from "@/content/site-content";
 export function PathGrid() {
   return (
     <section className="section-shell py-24 sm:py-32">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute left-[-4.8rem] top-[32%] hidden font-display text-[17rem] leading-none text-gold/[0.048] blur-[2px] lg:block xl:left-[-5.6rem] xl:text-[20rem]"
+      >
+        4
+      </span>
       <Container>
         <SectionHeading
           eyebrow="Il Percorso"

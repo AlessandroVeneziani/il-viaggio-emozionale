@@ -42,6 +42,12 @@ export function SoulDesignSpotlightSection() {
 
           <Reveal delay={0.08}>
             <div className="texture-paper relative mx-auto overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8 sm:p-10">
+              <span
+                aria-hidden="true"
+                className="pointer-events-none absolute bottom-[-5.2rem] right-[6%] hidden font-display text-[22rem] leading-none text-gold/[0.058] blur-[2.4px] lg:block xl:bottom-[-6rem] xl:text-[26rem]"
+              >
+                2
+              </span>
               <div
                 className="absolute inset-0 opacity-[0.05]"
                 style={{

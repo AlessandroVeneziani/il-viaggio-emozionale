@@ -8,6 +8,12 @@ import { ritrattoHomeSpotlight } from "@/content/site-content";
 export function RitrattoSpotlightSection() {
   return (
     <section className="section-shell py-24 sm:py-32">
+      <span
+        aria-hidden="true"
+        className="pointer-events-none absolute bottom-[-3.5rem] right-[-2.4rem] hidden font-display text-[19rem] leading-none text-gold/[0.082] blur-[1.9px] lg:block xl:bottom-[-4.6rem] xl:right-[-3rem] xl:text-[23rem]"
+      >
+        8
+      </span>
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <Reveal delay={0.08}>
