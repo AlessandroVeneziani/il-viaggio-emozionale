@@ -45,7 +45,7 @@ export default function AboutPage() {
 
             <SurfaceCard className="relative overflow-hidden p-8 sm:p-10">
               <div
-                className="absolute inset-0 opacity-[0.08]"
+                className="absolute inset-0 opacity-[0.08] lg:opacity-[0.12]"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
@@ -64,10 +64,11 @@ export default function AboutPage() {
                       width={1200}
                       height={1800}
                       sizes="(max-width: 1024px) 90vw, 32vw"
-                      className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9]"
+                      className="h-auto w-full object-cover brightness-[0.98] contrast-[0.98] saturate-[0.9] lg:[filter:brightness(0.89)_contrast(1.12)_saturate(0.82)_sepia(0.08)]"
                     />
-                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)]" />
-                    <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.06] bg-[rgba(66,56,47,0.22)] px-4 py-3 backdrop-blur-[4px]">
+                    <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)] lg:bg-[linear-gradient(180deg,rgba(21,17,14,0.1),rgba(29,24,20,0.16)_34%,rgba(28,23,19,0.28)_72%,rgba(24,20,17,0.36)_100%)]" />
+                    <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_16%,rgba(193,162,109,0.028),transparent_32%),linear-gradient(135deg,rgba(255,248,238,0.014),transparent_42%)]" />
+                    <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.06] bg-[rgba(66,56,47,0.22)] px-4 py-3 backdrop-blur-[4px] lg:border-gold/[0.08] lg:bg-[rgba(53,45,38,0.28)]">
                       <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-gold/88">
                         Alessandro Veneziani
                       </p>

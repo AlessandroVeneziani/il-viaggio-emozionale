@@ -207,20 +207,20 @@ canvas {
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png");
     background-size:
-      1120px auto,
-      1780px auto,
-      1640px auto,
-      2140px auto,
-      2050px auto;
+      1100px auto,
+      1760px auto,
+      1620px auto,
+      2220px auto,
+      2120px auto;
     background-position:
       center top,
-      12% 2rem,
-      88% 5rem,
-      2% 18rem,
-      98% 30rem;
+      10% 2rem,
+      90% 5rem,
+      1% 16rem,
+      99% 28rem;
     background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, repeat-y;
-    opacity: 0.096;
-    filter: saturate(0.76) contrast(0.94) blur(0.24px);
+    opacity: 0.118;
+    filter: saturate(0.78) contrast(0.98) blur(0.26px);
   }
 
   body::after {
@@ -247,7 +247,7 @@ canvas {
   }
 
   main [style*="sfondo-numeri-seamless"] {
-    opacity: 0.008 !important;
+    opacity: 0.014 !important;
   }
 
   .editorial-title-depth {
