@@ -203,12 +203,24 @@ canvas {
     background-image:
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
+      url("/images/backgrounds/sfondo-numeri-seamless.png"),
+      url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png");
-    background-size: 1160px auto, 1820px auto, 1660px auto;
-    background-position: center top, 14% 2rem, 86% 6rem;
-    background-repeat: repeat-y, repeat-y, repeat-y;
-    opacity: 0.072;
-    filter: saturate(0.78) contrast(0.92) blur(0.15px);
+    background-size:
+      1120px auto,
+      1780px auto,
+      1640px auto,
+      2140px auto,
+      2050px auto;
+    background-position:
+      center top,
+      12% 2rem,
+      88% 5rem,
+      2% 18rem,
+      98% 30rem;
+    background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, repeat-y;
+    opacity: 0.096;
+    filter: saturate(0.76) contrast(0.94) blur(0.24px);
   }
 
   body::after {
