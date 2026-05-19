@@ -1,3 +1,5 @@
+import type { CSSProperties } from "react";
+
 import Image from "next/image";
 
 import { Reveal } from "@/components/motion/reveal";
@@ -8,12 +10,18 @@ import { ritrattoHomeSpotlight } from "@/content/site-content";
 export function RitrattoSpotlightSection() {
   return (
     <section className="section-shell py-24 sm:py-32">
-      <span
+      <div
         aria-hidden="true"
-        className="pointer-events-none absolute bottom-[-3.5rem] right-[-2.4rem] hidden font-display text-[19rem] leading-none text-gold/[0.082] blur-[1.9px] lg:block xl:bottom-[-4.6rem] xl:right-[-3rem] xl:text-[23rem]"
+        className="symbolic-fragment bottom-[-2.4rem] right-[-1.1rem] hidden h-[12rem] w-[10rem] lg:block xl:bottom-[-3.2rem] xl:right-[-1.6rem] xl:h-[13.5rem] xl:w-[11.25rem]"
+        style={
+          {
+            "--symbol-opacity": 0.054,
+            "--symbol-blur": "2.3px",
+          } as CSSProperties
+        }
       >
-        8
-      </span>
+        <span className="-translate-x-[8%] translate-y-[8%] text-[20rem] xl:text-[24rem]">8</span>
+      </div>
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <Reveal delay={0.08}>

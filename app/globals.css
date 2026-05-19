@@ -272,6 +272,34 @@ canvas {
     display: none;
   }
 
+  .symbolic-fragment {
+    position: absolute;
+    pointer-events: none;
+    overflow: hidden;
+    z-index: 0;
+    display: block;
+  }
+
+  .symbolic-fragment::before {
+    content: "";
+    position: absolute;
+    inset: -6%;
+    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.66) 34%, rgba(0, 0, 0, 0.2) 64%, transparent 86%);
+    -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
+    mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
+    pointer-events: none;
+  }
+
+  .symbolic-fragment > span {
+    position: absolute;
+    inset: 0;
+    display: block;
+    font-family: var(--font-display), serif;
+    line-height: 0.82;
+    color: rgba(198, 167, 94, var(--symbol-opacity, 0.04));
+    filter: blur(var(--symbol-blur, 2px));
+  }
+
   main p[class*="uppercase"][class*="text-gold"] {
     color: rgba(224, 194, 121, 0.92) !important;
     text-shadow:
