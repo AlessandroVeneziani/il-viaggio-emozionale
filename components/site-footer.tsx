@@ -48,7 +48,7 @@ export function SiteFooter() {
       <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-56 lg:block lg:bg-[linear-gradient(180deg,rgba(98,86,70,0.1)_0%,rgba(56,47,39,0.08)_24%,rgba(24,20,17,0.035)_54%,transparent_100%)]" />
       <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[linear-gradient(180deg,rgba(17,15,13,0)_0%,rgba(17,15,13,0.035)_26%,rgba(17,15,13,0.11)_66%,rgba(15,13,11,0.18)_100%)]" />
       <div
-        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.056]"
+        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.072]"
         style={{
           backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
           backgroundSize: "1380px auto",
