@@ -171,19 +171,19 @@ canvas {
     background:
       linear-gradient(
         90deg,
-        rgba(15, 13, 11, 0.996) 0%,
-        rgba(15, 13, 11, 0.996) 17%,
-        rgba(21, 18, 16, 0.948) 24%,
-        rgba(34, 29, 25, 0.76) 31%,
-        rgba(63, 56, 48, 0.34) 39%,
-        rgba(63, 56, 48, 0.28) 61%,
-        rgba(34, 29, 25, 0.76) 69%,
-        rgba(21, 18, 16, 0.948) 76%,
-        rgba(15, 13, 11, 0.996) 83%,
-        rgba(15, 13, 11, 0.996) 100%
+        rgba(15, 13, 11, 0.998) 0%,
+        rgba(15, 13, 11, 0.998) 15%,
+        rgba(20, 17, 15, 0.986) 24%,
+        rgba(36, 31, 27, 0.93) 33%,
+        rgba(69, 62, 54, 0.86) 45%,
+        rgba(72, 65, 57, 0.84) 55%,
+        rgba(36, 31, 27, 0.93) 67%,
+        rgba(20, 17, 15, 0.986) 76%,
+        rgba(15, 13, 11, 0.998) 85%,
+        rgba(15, 13, 11, 0.998) 100%
       ),
-      linear-gradient(180deg, rgba(50, 43, 36, 0.14) 0%, rgba(23, 19, 16, 0.26) 100%),
-      linear-gradient(180deg, #696156 0%, #5f574c 44%, #544c43 100%);
+      linear-gradient(180deg, rgba(65, 57, 49, 0.08) 0%, rgba(33, 29, 25, 0.08) 42%, rgba(19, 16, 14, 0.18) 100%),
+      linear-gradient(180deg, #5b544c 0%, #4f483f 44%, #453e36 100%);
     background-size: cover, cover, cover;
     background-position: center top, center top, center top;
     background-repeat: no-repeat, no-repeat, no-repeat;
@@ -203,30 +203,32 @@ canvas {
     background-image:
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
       url("/images/backgrounds/sfondo-numeri-seamless.png");
     background-size:
-      1100px auto,
-      1760px auto,
-      1620px auto,
-      2220px auto,
-      2120px auto;
+      1480px auto,
+      1780px auto,
+      1260px auto;
     background-position:
-      center top,
-      10% 2rem,
-      90% 5rem,
-      1% 16rem,
-      99% 28rem;
-    background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, repeat-y;
-    opacity: 0.09;
-    filter: saturate(0.76) contrast(0.96) blur(0.24px);
+      left -18rem top -6rem,
+      right -14rem top 10rem,
+      center top -8rem;
+    background-repeat: repeat-y, repeat-y, repeat-y;
+    opacity: 0.034;
+    filter: saturate(0.58) contrast(0.88) blur(0.42px);
   }
 
   body::after {
     background:
-      radial-gradient(circle at 50% 74%, rgba(73, 59, 46, 0.14) 0%, rgba(73, 59, 46, 0.06) 28%, rgba(73, 59, 46, 0.018) 48%, transparent 66%),
-      linear-gradient(180deg, rgba(17, 15, 13, 0) 0%, rgba(17, 15, 13, 0.012) 36%, rgba(17, 15, 13, 0.075) 100%);
+      linear-gradient(
+        90deg,
+        rgba(15, 13, 11, 0.14) 0%,
+        rgba(15, 13, 11, 0.05) 14%,
+        transparent 28%,
+        transparent 72%,
+        rgba(15, 13, 11, 0.05) 86%,
+        rgba(15, 13, 11, 0.14) 100%
+      ),
+      linear-gradient(180deg, rgba(17, 15, 13, 0) 0%, rgba(17, 15, 13, 0.016) 40%, rgba(17, 15, 13, 0.06) 100%);
   }
 
   body > div:first-child {
@@ -236,18 +238,19 @@ canvas {
 
   .texture-paper::before {
     background:
-      linear-gradient(180deg, rgba(255, 249, 240, 0.012), transparent 28%),
-      radial-gradient(circle at 18% 18%, rgba(198, 167, 94, 0.008), transparent 22%);
+      linear-gradient(180deg, rgba(255, 249, 240, 0.014), transparent 26%),
+      linear-gradient(135deg, rgba(198, 167, 94, 0.016), transparent 44%);
     mix-blend-mode: normal;
-    opacity: 0.045;
+    opacity: 0.05;
   }
 
   .number-backdrop {
     display: none !important;
   }
 
+  header [style*="sfondo-numeri-seamless"],
   main [style*="sfondo-numeri-seamless"] {
-    opacity: 0.01 !important;
+    opacity: 0 !important;
   }
 
   .editorial-title-depth {
@@ -269,35 +272,14 @@ canvas {
   }
 
   .editorial-title-haze::before {
-    display: none;
-  }
-
-  .symbolic-fragment {
-    position: absolute;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-    display: block;
-  }
-
-  .symbolic-fragment::before {
     content: "";
     position: absolute;
-    inset: -6%;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.66) 34%, rgba(0, 0, 0, 0.2) 64%, transparent 86%);
-    -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
-    mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
+    inset: -2.25rem -2.5rem -1.5rem -1.5rem;
+    z-index: -1;
+    background: radial-gradient(circle at 34% 28%, rgba(94, 81, 66, 0.18) 0%, rgba(94, 81, 66, 0.095) 22%, rgba(94, 81, 66, 0.028) 46%, transparent 74%);
+    filter: blur(18px);
+    opacity: 0.72;
     pointer-events: none;
-  }
-
-  .symbolic-fragment > span {
-    position: absolute;
-    inset: 0;
-    display: block;
-    font-family: var(--font-display), serif;
-    line-height: 0.82;
-    color: rgba(198, 167, 94, var(--symbol-opacity, 0.04));
-    filter: blur(var(--symbol-blur, 2px));
   }
 
   main p[class*="uppercase"][class*="text-gold"] {
@@ -336,12 +318,12 @@ canvas {
   }
 
   main .texture-paper {
-    border-color: rgba(243, 234, 219, 0.11);
+    border-color: rgba(243, 234, 219, 0.085);
     box-shadow:
-      0 26px 58px rgba(43, 35, 28, 0.15),
-      inset 0 1px 0 rgba(255, 248, 238, 0.052);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
+      0 18px 34px rgba(27, 22, 18, 0.17),
+      inset 0 1px 0 rgba(255, 248, 238, 0.038);
+    -webkit-backdrop-filter: blur(2px);
+    backdrop-filter: blur(2px);
   }
 
   main h3.font-display:not(.editorial-title-depth),
@@ -354,7 +336,7 @@ canvas {
   }
 
   main .section-shell .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(214, 184, 112, 0.44), transparent);
+    background: linear-gradient(90deg, transparent, rgba(214, 184, 112, 0.24), transparent);
   }
 }
 
