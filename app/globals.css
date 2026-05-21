@@ -92,6 +92,30 @@ main {
   overflow-x: clip;
 }
 
+.home-main-background {
+  position: relative;
+  isolation: isolate;
+  background-color: #120e0b;
+}
+
+.home-main-background::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("/images/backgrounds/homepage-symbolic-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  opacity: 0.32;
+}
+
+.home-main-background > * {
+  position: relative;
+  z-index: 1;
+}
+
 img,
 svg,
 video,
@@ -151,18 +175,7 @@ canvas {
   }
 
   body::before {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    background-image:
-      linear-gradient(rgba(12, 10, 9, 0.78), rgba(12, 10, 9, 0.78)),
-      url("/images/backgrounds/numeric-texture.png");
-    background-repeat: no-repeat;
-    background-position: center top;
-    background-size: 62vw auto;
-    opacity: 1;
+    display: none;
   }
 
   body > div:first-child {
@@ -176,6 +189,16 @@ canvas {
   section {
     position: relative;
     z-index: 1;
+  }
+
+  .home-main-background::before {
+    position: fixed;
+    inset: 0;
+    background-attachment: fixed;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: cover;
+    opacity: 0.88;
   }
 
   .texture-paper::before {
