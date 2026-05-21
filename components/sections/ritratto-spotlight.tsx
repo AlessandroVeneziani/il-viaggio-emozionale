@@ -13,7 +13,7 @@ export function RitrattoSpotlightSection() {
           <Reveal delay={0.08}>
             <div className="texture-paper relative mx-auto flex min-h-[460px] w-full max-w-[520px] items-end justify-center overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8">
               <div
-                className="absolute inset-0 opacity-[0.07]"
+                className="absolute inset-0 opacity-[0.07] lg:hidden"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",

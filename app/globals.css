@@ -176,6 +176,11 @@ canvas {
     display: none;
   }
 
+  .section-shell::before,
+  .section-shell::after {
+    display: none !important;
+  }
+
   body > div:first-child {
     position: relative;
     z-index: 1;
@@ -190,7 +195,8 @@ canvas {
   }
 
   header [style*="sfondo-numeri-seamless"],
-  main [style*="sfondo-numeri-seamless"] {
+  main [style*="sfondo-numeri-seamless"],
+  footer [style*="sfondo-numeri-seamless"] {
     display: none !important;
   }
 
@@ -269,8 +275,7 @@ canvas {
       0 14px 28px rgba(30, 24, 20, 0.14);
   }
 
-  main .section-shell .gold-divider,
-  footer .gold-divider,
+  .gold-divider,
   .grain-overlay {
     display: none !important;
   }

@@ -43,14 +43,14 @@ export function SoulDesignSpotlightSection() {
           <Reveal delay={0.08}>
             <div className="texture-paper relative mx-auto overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8 sm:p-10">
               <div
-                className="absolute inset-0 opacity-[0.05]"
+                className="absolute inset-0 opacity-[0.05] lg:hidden"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
                   backgroundPosition: "center",
                 }}
               />
-              <div className="absolute left-1/2 top-1/2 hidden h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/10 bg-gold/[0.03] blur-[1px] sm:block" />
+              <div className="absolute left-1/2 top-1/2 hidden h-40 w-40 -translate-x-1/2 -translate-y-1/2 rounded-full border border-gold/10 bg-gold/[0.03] blur-[1px] sm:block lg:hidden" />
               <div className="relative grid gap-4 sm:grid-cols-2">
                 {[
                   ["TESTA", "visione, linguaggio, direzione"],

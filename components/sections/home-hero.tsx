@@ -63,7 +63,7 @@ export function HomeHero() {
           <Reveal delay={0.15} className="relative">
             <div className="texture-paper relative isolate min-h-[500px] overflow-hidden rounded-[34px] border border-gold/[0.06] bg-gradient-to-br from-ivory/[0.075] via-ivory/[0.03] to-transparent shadow-[0_18px_34px_rgba(54,42,31,0.1)] sm:border-gold/[0.07] sm:shadow-[0_24px_48px_rgba(54,42,31,0.12)] sm:min-h-[580px]">
               <div
-                className="absolute inset-0 opacity-[0.04]"
+                className="absolute inset-0 opacity-[0.04] lg:hidden"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",
