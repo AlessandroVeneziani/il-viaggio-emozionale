@@ -21,28 +21,7 @@ body {
   margin: 0;
   min-height: 100vh;
   width: 100%;
-  background:
-    linear-gradient(
-      90deg,
-      rgba(17, 15, 13, 0.98) 0%,
-      rgba(17, 15, 13, 0.98) 22%,
-      rgba(17, 15, 13, 0.42) 34%,
-      rgba(17, 15, 13, 0.14) 41%,
-      rgba(17, 15, 13, 0.12) 59%,
-      rgba(17, 15, 13, 0.42) 66%,
-      rgba(17, 15, 13, 0.98) 78%,
-      rgba(17, 15, 13, 0.98) 100%
-    ),
-    linear-gradient(180deg, rgba(58, 50, 41, 0.19) 0%, rgba(35, 29, 24, 0.32) 100%),
-    url("/images/backgrounds/sfondo-numeri-seamless.png"),
-    radial-gradient(circle at top, rgba(198, 167, 94, 0.062), transparent 35%),
-    radial-gradient(circle at 50% 26%, rgba(28, 22, 18, 0.08), transparent 34%),
-    radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.032), transparent 38%),
-    linear-gradient(180deg, #746c61 0%, #686055 46%, #5c544a 100%);
-  background-size: cover, cover, 1120px auto, auto, auto, auto, cover;
-  background-position: center top, center top, center top, center top, center top, center top, center top;
-  background-repeat: no-repeat, no-repeat, repeat-y, no-repeat, no-repeat, no-repeat, no-repeat;
-  background-attachment: scroll, scroll, scroll, scroll, scroll, scroll, scroll;
+  background: #6f665b;
   color: #f4f1ea;
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
@@ -168,11 +147,10 @@ canvas {
 @media (min-width: 1024px) {
   body {
     isolation: isolate;
-    background: #1b1713;
+    background: #15110e;
   }
 
-  body::before,
-  body::after {
+  body::before {
     content: "";
     position: fixed;
     inset: 0;
@@ -182,34 +160,36 @@ canvas {
 
   body::before {
     background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
-    background-position: center top 10vh;
+    background-position: center top;
     background-repeat: no-repeat;
-    background-size: 72vw auto;
-    opacity: 0.06;
-    filter: sepia(0.18) saturate(0.32) brightness(0.52) contrast(0.9) blur(0.28px);
-    -webkit-mask-image: radial-gradient(circle at center 32%, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.74) 36%, rgba(0, 0, 0, 0.32) 68%, transparent 100%);
-    mask-image: radial-gradient(circle at center 32%, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.74) 36%, rgba(0, 0, 0, 0.32) 68%, transparent 100%);
-  }
-
-  .section-shell::before,
-  .section-shell::after {
-    display: none !important;
+    background-size: 62vw auto;
+    opacity: 0.072;
+    filter: sepia(0.24) saturate(0.28) brightness(0.22) contrast(1.08);
+    -webkit-mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.56) 6%,
+      rgba(0, 0, 0, 0.94) 14%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 84%,
+      rgba(0, 0, 0, 0.88) 94%,
+      transparent 100%
+    );
+    mask-image: linear-gradient(
+      180deg,
+      transparent 0%,
+      rgba(0, 0, 0, 0.56) 6%,
+      rgba(0, 0, 0, 0.94) 14%,
+      rgba(0, 0, 0, 1) 32%,
+      rgba(0, 0, 0, 1) 84%,
+      rgba(0, 0, 0, 0.88) 94%,
+      transparent 100%
+    );
   }
 
   body > div:first-child {
     position: relative;
     z-index: 1;
-  }
-
-  .desktop-footer-numeric-texture {
-    background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
-    background-position: center bottom;
-    background-repeat: no-repeat;
-    background-size: 74vw auto;
-    opacity: 0.07;
-    filter: sepia(0.2) saturate(0.32) brightness(0.48) contrast(0.9) blur(0.24px);
-    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.28) 18%, rgba(0, 0, 0, 0.88) 46%, rgba(0, 0, 0, 0.98) 100%);
-    mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.28) 18%, rgba(0, 0, 0, 0.88) 46%, rgba(0, 0, 0, 0.98) 100%);
   }
 
   .texture-paper::before {
