@@ -173,7 +173,20 @@ canvas {
 
   body::before,
   body::after {
-    display: none;
+    content: "";
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  body::before {
+    background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
+    background-position: center 4rem;
+    background-repeat: no-repeat;
+    background-size: clamp(1120px, 76vw, 1560px) auto;
+    opacity: 0.048;
+    filter: sepia(0.22) saturate(0.34) brightness(0.32) contrast(0.92) blur(0.45px);
   }
 
   .section-shell::before,
@@ -184,6 +197,15 @@ canvas {
   body > div:first-child {
     position: relative;
     z-index: 1;
+  }
+
+  .desktop-footer-numeric-texture {
+    background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
+    background-position: center bottom;
+    background-repeat: no-repeat;
+    background-size: clamp(1160px, 80vw, 1640px) auto;
+    opacity: 0.064;
+    filter: sepia(0.24) saturate(0.34) brightness(0.28) contrast(0.94) blur(0.42px);
   }
 
   .texture-paper::before {
