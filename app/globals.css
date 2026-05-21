@@ -182,11 +182,13 @@ canvas {
 
   body::before {
     background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
-    background-position: center 4rem;
+    background-position: center top 10vh;
     background-repeat: no-repeat;
-    background-size: clamp(1120px, 76vw, 1560px) auto;
-    opacity: 0.048;
-    filter: sepia(0.22) saturate(0.34) brightness(0.32) contrast(0.92) blur(0.45px);
+    background-size: 72vw auto;
+    opacity: 0.06;
+    filter: sepia(0.18) saturate(0.32) brightness(0.52) contrast(0.9) blur(0.28px);
+    -webkit-mask-image: radial-gradient(circle at center 32%, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.74) 36%, rgba(0, 0, 0, 0.32) 68%, transparent 100%);
+    mask-image: radial-gradient(circle at center 32%, rgba(0, 0, 0, 0.94) 0%, rgba(0, 0, 0, 0.74) 36%, rgba(0, 0, 0, 0.32) 68%, transparent 100%);
   }
 
   .section-shell::before,
@@ -203,9 +205,11 @@ canvas {
     background-image: url("/images/backgrounds/sfondo-numeri-seamless.png");
     background-position: center bottom;
     background-repeat: no-repeat;
-    background-size: clamp(1160px, 80vw, 1640px) auto;
-    opacity: 0.064;
-    filter: sepia(0.24) saturate(0.34) brightness(0.28) contrast(0.94) blur(0.42px);
+    background-size: 74vw auto;
+    opacity: 0.07;
+    filter: sepia(0.2) saturate(0.32) brightness(0.48) contrast(0.9) blur(0.24px);
+    -webkit-mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.28) 18%, rgba(0, 0, 0, 0.88) 46%, rgba(0, 0, 0, 0.98) 100%);
+    mask-image: linear-gradient(180deg, transparent 0%, rgba(0, 0, 0, 0.28) 18%, rgba(0, 0, 0, 0.88) 46%, rgba(0, 0, 0, 0.98) 100%);
   }
 
   .texture-paper::before {
