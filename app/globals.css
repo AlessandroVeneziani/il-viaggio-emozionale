@@ -261,7 +261,7 @@ canvas {
     background-image: none !important;
     background-color: rgba(108, 97, 84, 0.18) !important;
     border-color: rgba(243, 234, 219, 0.075);
-    box-shadow: 0 10px 24px rgba(12, 10, 9, 0.12);
+    box-shadow: 0 8px 18px rgba(12, 10, 9, 0.08);
     -webkit-backdrop-filter: none;
     backdrop-filter: none;
   }
