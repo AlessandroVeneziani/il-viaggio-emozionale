@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 import { Binary, Eye, HeartPulse } from "lucide-react";
 
 import { Reveal } from "@/components/motion/reveal";
@@ -14,18 +12,6 @@ const icons = [Binary, Eye, HeartPulse] as const;
 export function MethodGrid() {
   return (
     <section id="metodo" className="section-shell py-24 sm:py-32">
-      <div
-        aria-hidden="true"
-        className="symbolic-fragment left-[-1.35rem] top-12 hidden h-[16.5rem] w-[5.75rem] lg:block xl:left-[-1.9rem] xl:top-16 xl:h-[19rem] xl:w-[6.25rem]"
-        style={
-          {
-            "--symbol-opacity": 0.036,
-            "--symbol-blur": "2.5px",
-          } as CSSProperties
-        }
-      >
-        <span className="-translate-x-[22%] translate-y-[-3%] text-[22rem] xl:text-[25rem]">1</span>
-      </div>
       <Container>
         <SectionHeading
           eyebrow="Il metodo"

@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -9,18 +7,6 @@ import { featuredPaths } from "@/content/site-content";
 export function PathGrid() {
   return (
     <section className="section-shell py-24 sm:py-32">
-      <div
-        aria-hidden="true"
-        className="symbolic-fragment left-[-1.9rem] top-[38%] hidden h-[11rem] w-[7rem] lg:block xl:left-[-2.4rem] xl:top-[35%] xl:h-[12.5rem] xl:w-[7.75rem]"
-        style={
-          {
-            "--symbol-opacity": 0.03,
-            "--symbol-blur": "2.6px",
-          } as CSSProperties
-        }
-      >
-        <span className="-translate-x-[26%] translate-y-[-8%] text-[18rem] xl:text-[21rem]">4</span>
-      </div>
       <Container>
         <SectionHeading
           eyebrow="Il Percorso"

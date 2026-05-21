@@ -168,65 +168,17 @@ canvas {
 @media (min-width: 1024px) {
   body {
     isolation: isolate;
-    background:
-      linear-gradient(
-        90deg,
-        rgba(15, 13, 11, 0.996) 0%,
-        rgba(15, 13, 11, 0.996) 17%,
-        rgba(21, 18, 16, 0.948) 24%,
-        rgba(34, 29, 25, 0.76) 31%,
-        rgba(63, 56, 48, 0.34) 39%,
-        rgba(63, 56, 48, 0.28) 61%,
-        rgba(34, 29, 25, 0.76) 69%,
-        rgba(21, 18, 16, 0.948) 76%,
-        rgba(15, 13, 11, 0.996) 83%,
-        rgba(15, 13, 11, 0.996) 100%
-      ),
-      linear-gradient(180deg, rgba(50, 43, 36, 0.14) 0%, rgba(23, 19, 16, 0.26) 100%),
-      linear-gradient(180deg, #696156 0%, #5f574c 44%, #544c43 100%);
-    background-size: cover, cover, cover;
-    background-position: center top, center top, center top;
-    background-repeat: no-repeat, no-repeat, no-repeat;
-    background-attachment: fixed, fixed, fixed;
+    background: #1b1713;
   }
 
   body::before,
   body::after {
-    content: "";
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
+    display: none;
   }
 
-  body::before {
-    background-image:
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png"),
-      url("/images/backgrounds/sfondo-numeri-seamless.png");
-    background-size:
-      1100px auto,
-      1760px auto,
-      1620px auto,
-      2220px auto,
-      2120px auto;
-    background-position:
-      center top,
-      10% 2rem,
-      90% 5rem,
-      1% 16rem,
-      99% 28rem;
-    background-repeat: repeat-y, repeat-y, repeat-y, repeat-y, repeat-y;
-    opacity: 0.09;
-    filter: saturate(0.76) contrast(0.96) blur(0.24px);
-  }
-
-  body::after {
-    background:
-      radial-gradient(circle at 50% 74%, rgba(73, 59, 46, 0.14) 0%, rgba(73, 59, 46, 0.06) 28%, rgba(73, 59, 46, 0.018) 48%, transparent 66%),
-      linear-gradient(180deg, rgba(17, 15, 13, 0) 0%, rgba(17, 15, 13, 0.012) 36%, rgba(17, 15, 13, 0.075) 100%);
+  .section-shell::before,
+  .section-shell::after {
+    display: none !important;
   }
 
   body > div:first-child {
@@ -235,19 +187,17 @@ canvas {
   }
 
   .texture-paper::before {
-    background:
-      linear-gradient(180deg, rgba(255, 249, 240, 0.012), transparent 28%),
-      radial-gradient(circle at 18% 18%, rgba(198, 167, 94, 0.008), transparent 22%);
-    mix-blend-mode: normal;
-    opacity: 0.045;
+    display: none;
   }
 
   .number-backdrop {
     display: none !important;
   }
 
-  main [style*="sfondo-numeri-seamless"] {
-    opacity: 0.01 !important;
+  header [style*="sfondo-numeri-seamless"],
+  main [style*="sfondo-numeri-seamless"],
+  footer [style*="sfondo-numeri-seamless"] {
+    display: none !important;
   }
 
   .editorial-title-depth {
@@ -270,34 +220,6 @@ canvas {
 
   .editorial-title-haze::before {
     display: none;
-  }
-
-  .symbolic-fragment {
-    position: absolute;
-    pointer-events: none;
-    overflow: hidden;
-    z-index: 0;
-    display: block;
-  }
-
-  .symbolic-fragment::before {
-    content: "";
-    position: absolute;
-    inset: -6%;
-    background: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 0.9) 0%, rgba(0, 0, 0, 0.66) 34%, rgba(0, 0, 0, 0.2) 64%, transparent 86%);
-    -webkit-mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
-    mask-image: radial-gradient(circle at 50% 50%, rgba(0, 0, 0, 1) 0%, rgba(0, 0, 0, 0.82) 42%, rgba(0, 0, 0, 0.26) 70%, transparent 92%);
-    pointer-events: none;
-  }
-
-  .symbolic-fragment > span {
-    position: absolute;
-    inset: 0;
-    display: block;
-    font-family: var(--font-display), serif;
-    line-height: 0.82;
-    color: rgba(198, 167, 94, var(--symbol-opacity, 0.04));
-    filter: blur(var(--symbol-blur, 2px));
   }
 
   main p[class*="uppercase"][class*="text-gold"] {
@@ -336,25 +258,33 @@ canvas {
   }
 
   main .texture-paper {
-    border-color: rgba(243, 234, 219, 0.11);
-    box-shadow:
-      0 26px 58px rgba(43, 35, 28, 0.15),
-      inset 0 1px 0 rgba(255, 248, 238, 0.052);
-    -webkit-backdrop-filter: blur(6px);
-    backdrop-filter: blur(6px);
+    background-image: none !important;
+    background-color: rgba(108, 97, 84, 0.18) !important;
+    border-color: rgba(243, 234, 219, 0.075);
+    box-shadow: 0 10px 24px rgba(12, 10, 9, 0.12);
+    -webkit-backdrop-filter: none;
+    backdrop-filter: none;
   }
 
   main h3.font-display:not(.editorial-title-depth),
   main h2.font-display:not(.editorial-title-depth) {
     color: rgba(247, 240, 229, 0.97);
     text-shadow:
-      0 1px 0 rgba(255, 249, 239, 0.12),
-      0 8px 18px rgba(92, 72, 54, 0.1),
-      0 18px 38px rgba(42, 33, 26, 0.2);
+      0 1px 0 rgba(255, 249, 239, 0.1),
+      0 6px 14px rgba(66, 52, 40, 0.1),
+      0 14px 28px rgba(30, 24, 20, 0.14);
   }
 
-  main .section-shell .gold-divider {
-    background: linear-gradient(90deg, transparent, rgba(214, 184, 112, 0.44), transparent);
+  .gold-divider,
+  .grain-overlay {
+    display: none !important;
+  }
+
+  main .section-shell [class*="xl:border-t"],
+  main .section-shell [class*="lg:border-t"],
+  footer [class*="xl:border-t"],
+  footer [class*="lg:border-t"] {
+    border-top-color: transparent !important;
   }
 }
 

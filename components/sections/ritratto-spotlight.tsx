@@ -1,5 +1,3 @@
-import type { CSSProperties } from "react";
-
 import Image from "next/image";
 
 import { Reveal } from "@/components/motion/reveal";
@@ -10,24 +8,12 @@ import { ritrattoHomeSpotlight } from "@/content/site-content";
 export function RitrattoSpotlightSection() {
   return (
     <section className="section-shell py-24 sm:py-32">
-      <div
-        aria-hidden="true"
-        className="symbolic-fragment bottom-[-2.4rem] right-[-1.1rem] hidden h-[12rem] w-[10rem] lg:block xl:bottom-[-3.2rem] xl:right-[-1.6rem] xl:h-[13.5rem] xl:w-[11.25rem]"
-        style={
-          {
-            "--symbol-opacity": 0.054,
-            "--symbol-blur": "2.3px",
-          } as CSSProperties
-        }
-      >
-        <span className="-translate-x-[8%] translate-y-[8%] text-[20rem] xl:text-[24rem]">8</span>
-      </div>
       <Container>
         <div className="grid gap-10 lg:grid-cols-[1.02fr_0.98fr] lg:items-center">
           <Reveal delay={0.08}>
             <div className="texture-paper relative mx-auto flex min-h-[460px] w-full max-w-[520px] items-end justify-center overflow-hidden rounded-[34px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8">
               <div
-                className="absolute inset-0 opacity-[0.07]"
+                className="absolute inset-0 opacity-[0.07] lg:hidden"
                 style={{
                   backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                   backgroundSize: "cover",

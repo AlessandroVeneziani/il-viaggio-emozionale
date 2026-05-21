@@ -1,4 +1,3 @@
-import Image from "next/image";
 import Link from "next/link";
 import { ArrowUpRight } from "lucide-react";
 
@@ -44,28 +43,9 @@ const footerContactLinks = [
 
 export function SiteFooter() {
   return (
-    <footer className="relative overflow-hidden bg-[#191510] lg:bg-[linear-gradient(180deg,rgba(15,13,11,0.02)_0%,rgba(20,17,15,0.16)_12%,rgba(21,18,16,0.46)_30%,rgba(18,15,13,0.82)_58%,rgba(15,13,11,0.965)_100%)]">
-      <div className="pointer-events-none absolute inset-x-0 top-0 hidden h-56 lg:block lg:bg-[linear-gradient(180deg,rgba(98,86,70,0.1)_0%,rgba(56,47,39,0.08)_24%,rgba(24,20,17,0.035)_54%,transparent_100%)]" />
-      <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[linear-gradient(180deg,rgba(17,15,13,0)_0%,rgba(17,15,13,0.035)_26%,rgba(17,15,13,0.11)_66%,rgba(15,13,11,0.18)_100%)]" />
-      <div
-        className="absolute inset-0 opacity-[0.05] lg:opacity-[0.072]"
-        style={{
-          backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
-          backgroundSize: "1380px auto",
-          backgroundPosition: "center top",
-        }}
-      />
-      <div className="grain-overlay" />
-      <Image
-        src="/images/backgrounds/colline.webp"
-        alt=""
-        aria-hidden="true"
-        width={1920}
-        height={479}
-        className="pointer-events-none absolute inset-x-0 bottom-0 w-full opacity-[0.08] saturate-[0.34] brightness-[0.42] contrast-[0.54] blur-[0.8px] lg:opacity-[0.1] lg:saturate-[0.34] lg:brightness-[0.38] lg:contrast-[0.62]"
-      />
+    <footer className="relative overflow-hidden bg-[#191510] lg:bg-transparent">
       <Container className="relative py-16 sm:py-20 lg:py-24">
-        <div className="gold-divider mb-10 opacity-55 lg:mb-12 lg:opacity-[0.16]" />
+        <div className="gold-divider mb-10 opacity-55 lg:hidden lg:mb-12" />
         <div className="grid gap-10 lg:grid-cols-[1.24fr_0.68fr_0.72fr] lg:items-start lg:gap-12">
           <div className="max-w-2xl">
             <BrandMark compact className="lg:scale-[1.04] lg:origin-left" />

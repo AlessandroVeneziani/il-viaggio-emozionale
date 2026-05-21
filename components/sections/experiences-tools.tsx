@@ -57,10 +57,10 @@ export function ExperiencesToolsSection() {
                   <div className="mt-10 flex flex-1 items-end justify-start">
                     {card.mode === "ambient" ? (
                       <div className="texture-paper relative w-full overflow-hidden rounded-[28px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.02))] p-8">
-                        <div className="absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl" />
-                        <div className="absolute inset-x-14 bottom-8 h-20 rounded-full bg-ivory/[0.05] blur-2xl" />
+                        <div className="absolute inset-x-10 top-8 h-28 rounded-full bg-gold/[0.08] blur-3xl lg:hidden" />
+                        <div className="absolute inset-x-14 bottom-8 h-20 rounded-full bg-ivory/[0.05] blur-2xl lg:hidden" />
                         <div
-                          className="absolute inset-0 opacity-[0.05]"
+                          className="absolute inset-0 opacity-[0.05] lg:hidden"
                           style={{
                             backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                             backgroundSize: "cover",
@@ -90,7 +90,7 @@ export function ExperiencesToolsSection() {
                       <div className="relative w-full max-w-[240px]">
                         <div className="texture-paper relative overflow-hidden rounded-[28px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.055),rgba(244,241,234,0.022))] p-5">
                           <div
-                            className="absolute inset-0 opacity-[0.05]"
+                            className="absolute inset-0 opacity-[0.05] lg:hidden"
                             style={{
                               backgroundImage: 'url("/images/backgrounds/sfondo-numeri-seamless.png")',
                               backgroundSize: "cover",
