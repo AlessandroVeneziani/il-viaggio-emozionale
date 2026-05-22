@@ -44,6 +44,10 @@ const footerContactLinks = [
 export function SiteFooter() {
   return (
     <footer className="relative overflow-hidden bg-[#191510] lg:bg-transparent">
+      <div
+        aria-hidden="true"
+        className="pointer-events-none absolute inset-0 z-0 hidden bg-[rgba(5,4,3,0.82)] lg:block"
+      />
       <Container className="relative py-16 sm:py-20 lg:py-24">
         <div className="gold-divider mb-10 opacity-55 lg:hidden lg:mb-12" />
         <div className="grid gap-10 lg:grid-cols-[1.24fr_0.68fr_0.72fr] lg:items-start lg:gap-12">
