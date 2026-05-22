@@ -21,7 +21,7 @@ body {
   margin: 0;
   min-height: 100vh;
   width: 100%;
-  background: #6f665b;
+  background: #120e0b;
   color: #f4f1ea;
   font-family: var(--font-body), sans-serif;
   text-rendering: optimizeLegibility;
@@ -30,6 +30,24 @@ body {
   overflow-x: hidden;
   overflow-x: clip;
   position: relative;
+  isolation: isolate;
+}
+
+body::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  pointer-events: none;
+  z-index: 0;
+  background-image: url("/images/backgrounds/site-symbolic-background.png");
+  background-repeat: no-repeat;
+  background-position: center top;
+  background-size: cover;
+  opacity: 0.12;
+}
+
+body:has(.home-main-background)::before {
+  opacity: 0.22;
 }
 
 body[data-menu-open="true"] {
@@ -42,6 +60,14 @@ body > div:first-child {
   width: 100%;
   overflow-x: hidden;
   overflow-x: clip;
+}
+
+header,
+main,
+footer,
+section {
+  position: relative;
+  z-index: 1;
 }
 
 a {
@@ -95,20 +121,7 @@ main {
 .home-main-background {
   position: relative;
   isolation: isolate;
-  background-color: #120e0b;
-}
-
-.home-main-background::before {
-  content: "";
-  position: absolute;
-  inset: 0;
-  pointer-events: none;
-  z-index: 0;
-  background-image: url("/images/backgrounds/homepage-symbolic-background.png");
-  background-repeat: no-repeat;
-  background-position: center top;
-  background-size: cover;
-  opacity: 0.32;
+  background-color: transparent;
 }
 
 .home-main-background > * {
@@ -169,36 +182,23 @@ canvas {
 }
 
 @media (min-width: 1024px) {
-  body {
-    isolation: isolate;
-    background: #120e0b;
-  }
-
   body::before {
-    display: none;
-  }
-
-  body > div:first-child {
-    position: relative;
-    z-index: 1;
-  }
-
-  header,
-  main,
-  footer,
-  section {
-    position: relative;
-    z-index: 1;
-  }
-
-  .home-main-background::before {
     position: fixed;
     inset: 0;
     background-attachment: fixed;
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.88;
+    opacity: 0.38;
+  }
+
+  body:has(.home-main-background)::before {
+    opacity: 0.78;
+  }
+
+  body > div:first-child {
+    position: relative;
+    z-index: 1;
   }
 
   .texture-paper::before {
@@ -305,15 +305,7 @@ canvas {
 
 @media (max-width: 1023px) {
   body {
-    background:
-      linear-gradient(180deg, rgba(58, 50, 41, 0.1) 0%, rgba(35, 29, 24, 0.2) 100%),
-      radial-gradient(circle at top, rgba(198, 167, 94, 0.09), transparent 36%),
-      radial-gradient(circle at 18% 82%, rgba(198, 167, 94, 0.05), transparent 40%),
-      linear-gradient(180deg, #776f64 0%, #6c6358 48%, #60574e 100%);
-    background-size: cover, auto, auto, cover;
-    background-position: center top, center top, center top, center top;
-    background-repeat: no-repeat, no-repeat, no-repeat, no-repeat;
-    background-attachment: scroll, scroll, scroll, scroll;
+    background: #120e0b;
   }
 
   .section-shell {
