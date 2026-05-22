@@ -15,8 +15,8 @@ export function BrandMark({ className, compact = false }: BrandMarkProps) {
       className={cn("group inline-flex items-center gap-3 text-left", className)}
       aria-label="Vai alla home di Il Viaggio Emozionale"
     >
-      <div className="relative flex h-10 w-10 items-center justify-center rounded-full border border-gold/35 bg-ivory/[0.04] text-gold">
-        <MattoEssenzialeMark className="h-[1.18rem] w-[1.18rem] transition-transform duration-300 group-hover:scale-[1.04]" />
+      <div className="relative flex h-11 w-11 items-center justify-center rounded-full border border-gold/35 bg-ivory/[0.035] text-gold">
+        <MattoEssenzialeMark className="h-[1.55rem] w-[1.55rem] transition-transform duration-300 group-hover:scale-[1.03]" />
       </div>
       <div className={cn("leading-none", compact ? "hidden sm:block" : "block")}>
         <div className="font-display text-lg text-ivory transition group-hover:text-gold sm:text-xl">
