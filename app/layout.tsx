@@ -21,32 +21,54 @@ const bodyFont = Manrope({
   display: "swap",
 });
 
+const structuredData = {
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Organization",
+      name: siteConfig.name,
+      description: siteConfig.schemaDescription,
+      url: siteConfig.url,
+      founder: {
+        "@type": "Person",
+        name: siteConfig.founder,
+      },
+    },
+    {
+      "@type": "WebSite",
+      name: siteConfig.name,
+      description: siteConfig.schemaDescription,
+      url: siteConfig.url,
+      publisher: {
+        "@type": "Organization",
+        name: siteConfig.name,
+      },
+    },
+  ],
+};
+
 export const metadata: Metadata = {
   metadataBase: new URL(siteConfig.url),
-  title: {
-    default: siteConfig.name,
-    template: `%s | ${siteConfig.name}`,
-  },
+  title: siteConfig.defaultTitle,
   description: siteConfig.description,
   applicationName: siteConfig.name,
-  authors: [{ name: "Alessandro Veneziani" }],
-  creator: "Alessandro Veneziani",
+  authors: [{ name: siteConfig.founder }],
+  creator: siteConfig.founder,
   publisher: siteConfig.name,
-  keywords: [
-    "crescita personale",
-    "numerologia evolutiva",
-    "lettura tarocchi evolutiva",
-    "ritratto dell'anima",
-    "relazioni karmiche",
-    "blocchi emotivi",
-    "direzione personale",
-    "numerologia",
-    "tarocchi",
-    "lettura dell'anima",
-    "Il Viaggio Emozionale",
-  ],
+  keywords: [...siteConfig.keywords],
+  alternates: {
+    canonical: siteConfig.url,
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
+  },
   openGraph: {
-    title: siteConfig.name,
+    title: siteConfig.defaultTitle,
     description: siteConfig.description,
     siteName: siteConfig.name,
     url: siteConfig.url,
@@ -55,15 +77,15 @@ export const metadata: Metadata = {
     images: [
       {
         url: siteConfig.ogImage,
-        width: 1200,
-        height: 630,
-        alt: siteConfig.name,
+        width: siteConfig.ogImageWidth,
+        height: siteConfig.ogImageHeight,
+        alt: siteConfig.ogImageAlt,
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: siteConfig.name,
+    title: siteConfig.defaultTitle,
     description: siteConfig.description,
     images: [siteConfig.ogImage],
   },
@@ -95,6 +117,10 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body className="font-body antialiased">
+        <script
+          type="application/ld+json"
+          dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
+        />
         <SiteHeader />
         <div className="relative min-h-screen pt-24 sm:pt-28">{children}</div>
         <SiteFooter />

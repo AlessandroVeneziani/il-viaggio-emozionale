@@ -8,12 +8,13 @@ import { MethodGrid } from "@/components/sections/method-grid";
 import { PathGrid } from "@/components/sections/path-grid";
 import { SoulDesignSpotlightSection } from "@/components/sections/soul-design-spotlight";
 import { buildMetadata } from "@/lib/metadata";
+import { siteConfig } from "@/lib/site";
 
 export const metadata = buildMetadata({
-  title: "Home",
-  description:
-    "Il Viaggio Emozionale è uno studio contemporaneo di orientamento simbolico che aiuta a rendere leggibile il presente attraverso Ritratto dell'Anima, Soul Design, Percorso Evolutivo e strumenti di integrazione.",
+  title: siteConfig.defaultTitle,
+  description: siteConfig.description,
   path: "/",
+  absoluteTitle: true,
 });
 
 export default function HomePage() {

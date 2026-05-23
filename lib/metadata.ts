@@ -6,19 +6,22 @@ type MetadataInput = {
   title: string;
   description: string;
   path?: string;
+  absoluteTitle?: boolean;
 };
 
 export function buildMetadata({
   title,
   description,
   path = "/",
+  absoluteTitle = false,
 }: MetadataInput): Metadata {
   const url = new URL(path, siteConfig.url).toString();
-  const fullTitle = `${title} | ${siteConfig.name}`;
+  const fullTitle = absoluteTitle ? title : `${title} | ${siteConfig.name}`;
 
   return {
     title: fullTitle,
     description,
+    keywords: [...siteConfig.keywords],
     alternates: {
       canonical: url,
     },
@@ -32,9 +35,9 @@ export function buildMetadata({
       images: [
         {
           url: siteConfig.ogImage,
-          width: 1200,
-          height: 630,
-          alt: fullTitle,
+          width: siteConfig.ogImageWidth,
+          height: siteConfig.ogImageHeight,
+          alt: siteConfig.ogImageAlt,
         },
       ],
     },

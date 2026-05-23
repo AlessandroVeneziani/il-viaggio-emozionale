@@ -5,14 +5,14 @@ import { navigation, siteConfig } from "@/lib/site";
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const now = new Date();
-  const staticPages: MetadataRoute.Sitemap = navigation.map((item) => ({
+  const corePages: MetadataRoute.Sitemap = navigation.map((item) => ({
     url: new URL(item.href, siteConfig.url).toString(),
     lastModified: now,
     changeFrequency: item.href === "/" ? "weekly" : "monthly",
-    priority: item.href === "/" ? 1 : 0.8,
+    priority: item.href === "/" ? 1 : item.href === "/contatti" ? 0.75 : 0.85,
   }));
 
-  const ecosystemPages: MetadataRoute.Sitemap = [
+  const servicePages: MetadataRoute.Sitemap = [
     "/lettura-evolutiva",
     "/meditazioni-guidate",
     "/laboratorio-dell-anima",
@@ -45,5 +45,5 @@ export default function sitemap(): MetadataRoute.Sitemap {
     priority: 0.75,
   }));
 
-  return [...staticPages, ...ecosystemPages, blogIndex, ...categoryPages, ...posts];
+  return [...corePages, ...servicePages, blogIndex, ...categoryPages, ...posts];
 }
