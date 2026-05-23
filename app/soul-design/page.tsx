@@ -48,7 +48,7 @@ export default function SoulDesignPage() {
                     <div className="absolute inset-10 rounded-full border border-gold/8" />
                     <div className="absolute inset-y-6 left-1/2 w-px -translate-x-1/2 bg-gradient-to-b from-gold/0 via-gold/18 to-gold/0" />
                     <div className="absolute inset-x-6 top-1/2 h-px -translate-y-1/2 bg-gradient-to-r from-gold/0 via-gold/18 to-gold/0" />
-                    <p className="max-w-[10ch] text-center font-display text-[1.2rem] leading-[1.45] text-ivory/84">
+                    <p className="editorial-label max-w-[11ch] text-center text-gold/84">
                       Welcome Back Home
                     </p>
                   </div>
@@ -78,7 +78,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.78fr_1.22fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Cosa è Soul Design
               </p>
               <h2 className="mt-5 max-w-[12ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
@@ -98,7 +98,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-10 lg:grid-cols-[0.72fr_1.28fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Cosa include
               </p>
               <h2 className="mt-5 max-w-[12ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
@@ -130,7 +130,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.7fr_1.3fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 {soulDesignPage.fragments.title}
               </p>
             </div>
@@ -152,7 +152,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.72fr_1.28fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Quando si arriva qui
               </p>
               <h2 className="mt-5 max-w-[13ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
@@ -175,7 +175,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.76fr_1.24fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 L&apos;approccio
               </p>
               <h2 className="mt-5 max-w-[11ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
@@ -204,7 +204,7 @@ export default function SoulDesignPage() {
         <Container>
           <div className="grid gap-8 lg:grid-cols-[0.76fr_1.24fr]">
             <div>
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Ecosistema
               </p>
               <h2 className="mt-5 max-w-[12ch] font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">

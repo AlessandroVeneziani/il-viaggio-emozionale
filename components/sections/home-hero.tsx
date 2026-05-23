@@ -87,7 +87,7 @@ export function HomeHero() {
                     </div>
                     <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/70 xl:border-t xl:border-gold/[0.08] xl:pt-4">
                       <p>Numero, immagine, corpo.</p>
-                      <p>Welcome Back Home.</p>
+                      <p className="editorial-label pt-2 text-gold/82">Welcome Back Home</p>
                     </div>
                   </div>
 

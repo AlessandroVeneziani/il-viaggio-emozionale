@@ -196,7 +196,7 @@ export const founderPreview = {
 export const finalCta = {
   title: "A volte la trasformazione\nnon consiste nel diventare\nqualcun altro.",
   body:
-    "Ma nel tornare a una forma più coerente di sé. Welcome Back Home.",
+    "Ma nel tornare a una forma più coerente di sé.",
   primary: {
     label: "Inizia il tuo viaggio",
     href: "/contatti",
@@ -393,7 +393,7 @@ export const soulDesignPage = {
       "Molte crisi non chiedono soluzioni. Chiedono un nuovo linguaggio.",
       "Non siamo una cosa sola. Siamo una famiglia interiore che ha bisogno di tornare a dialogare.",
       "Quando la struttura si chiarisce, anche la scelta smette di sembrare lontana.",
-      "Welcome Back Home non significa tornare indietro. Significa tornare a una forma più coerente di sé.",
+      "Non significa tornare indietro. Significa tornare a una forma più coerente di sé.",
     ],
   },
   ecosystem: {
@@ -424,7 +424,7 @@ export const soulDesignPage = {
     ],
   },
   finalCta: {
-    title: "Welcome Back Home.",
+    title: "Tornare a una forma\npiù coerente di sé.",
     body:
       "Non significa tornare indietro. Significa tornare a una forma più coerente di te, in cui testa, cuore, desiderio e presenza possano finalmente dialogare.",
     primary: {
