@@ -38,13 +38,13 @@ export function RitrattoSpotlightSection() {
 
           <Reveal className="editorial-title-haze">
             <div className="pt-1 xl:border-t xl:border-gold/[0.08] xl:pt-6">
-              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
+              <p className="editorial-label">
                 {ritrattoHomeSpotlight.eyebrow}
               </p>
-              <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
+              <h2 className="editorial-title-depth mt-6 max-w-[12ch] whitespace-pre-line font-display text-[2.7rem] leading-[1.1] sm:text-[3.45rem]">
                 {ritrattoHomeSpotlight.title}
               </h2>
-              <p className="mt-6 max-w-[60ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
+              <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
                 {ritrattoHomeSpotlight.description}
               </p>
               <div className="mt-8 space-y-4">

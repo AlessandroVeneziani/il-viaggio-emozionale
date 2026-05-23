@@ -10,7 +10,7 @@ export function PathGrid() {
       <Container>
         <SectionHeading
           eyebrow="Il Percorso"
-          title="Non si entra nel metodo da una risposta. Si entra da una mappa."
+          title={"Non si entra nel metodo\nda una risposta.\nSi entra da una mappa."}
           description="Ritratto dell'Anima, Soul Design e Percorso Evolutivo sono tre accessi diversi allo stesso lavoro di orientamento simbolico."
         />
         <div className="mt-16 relative">
@@ -25,7 +25,7 @@ export function PathGrid() {
                     </span>
                   </div>
                   <div className="pt-1 lg:pt-6 xl:border-t xl:border-gold/[0.08] xl:pt-5">
-                    <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+                    <p className="editorial-label">
                       Step {index + 1}
                     </p>
                     <h3 className="mt-4 font-display text-[2rem] leading-[1.05] text-ivory sm:text-[2.25rem]">

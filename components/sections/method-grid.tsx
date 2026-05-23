@@ -15,7 +15,7 @@ export function MethodGrid() {
       <Container>
         <SectionHeading
           eyebrow="Il metodo"
-          title="Un linguaggio simbolico per leggere ciò che stai attraversando."
+          title={"Un linguaggio simbolico\nper leggere ciò che\nstai attraversando."}
           description="Il Viaggio Emozionale non interpreta la persona dall'esterno. Accompagna dall'interno attraverso numeri, archetipi, sogni, immagini e corpo."
           centered
         />
@@ -34,9 +34,9 @@ export function MethodGrid() {
                       {step.value}
                     </span>
                   </div>
-                  <h3 className="mt-7 font-display text-[2rem] leading-tight text-ivory">
-                    {step.title}
-                  </h3>
+              <h3 className="mt-7 font-display text-[2rem] leading-[1.12] text-ivory">
+                {step.title}
+              </h3>
                   <p className="mt-4 max-w-[26ch] text-base leading-[1.95] text-ivory/76">
                     {step.description}
                   </p>

@@ -23,9 +23,9 @@ export const homeHero = {
 
 export const manifestoSection = {
   eyebrow: "Manifesto",
-  title: "Rendere leggibile ciò che stai vivendo.",
+  title: "Rendere leggibile\nciò che stai vivendo.",
   introduction:
-    "Il Viaggio Emozionale nasce da una domanda semplice: cosa accade quando una persona smette di sopravvivere e inizia finalmente a leggersi.",
+    "Il Viaggio Emozionale nasce da una domanda semplice: cosa accade quando una persona smette di sopravvivere e inizia, finalmente, a leggersi.",
   statements: [
     ["IL NUMERO NON MISURA.", "RIVELA."],
     ["IL SIMBOLO NON SPIEGA.", "TRASFORMA."],
@@ -181,7 +181,7 @@ export const testimonialsNote =
   "Questa sezione può essere sostituita progressivamente con recensioni reali, autorizzate e verificabili, mantenendo lo stesso tono sobrio.";
 
 export const founderPreview = {
-  title: "Mappe simboliche per leggere il presente con più chiarezza.",
+  title: "Mappe simboliche\nper leggere il presente\ncon più chiarezza.",
   body: [
     "Il mio lavoro nasce dall'incontro tra simboli, numeri, immagini interiori e passaggi di vita.",
     "Non interpreto per dare risposte rapide: costruisco mappe per rendere più leggibile ciò che una persona sta attraversando.",
@@ -194,8 +194,7 @@ export const founderPreview = {
 };
 
 export const finalCta = {
-  title:
-    "A volte la trasformazione non consiste nel diventare qualcun altro.",
+  title: "A volte la trasformazione\nnon consiste nel diventare\nqualcun altro.",
   body:
     "Ma nel tornare a una forma più coerente di sé. Welcome Back Home.",
   primary: {
@@ -243,11 +242,11 @@ export const seoTopics = [
 
 export const experiencesToolsSection = {
   eyebrow: "Strumenti di continuità",
-  title: "Il lavoro non finisce nella lettura.",
+  title: "Il lavoro non finisce\nnella lettura.",
   description:
     "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Una collezione editoriale in evoluzione, pensata per dare continuità al metodo con più presenza e ascolto.",
+    "Una collezione editoriale in evoluzione: meditazioni, scrittura simbolica, esercizi, percorsi audio e pratiche per portare il metodo nella vita quotidiana.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -299,7 +298,7 @@ export const experiencesToolsSection = {
 
 export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
-  title: "Non siamo una cosa sola. Siamo una famiglia interiore.",
+  title: "Non siamo una cosa sola.\nSiamo una famiglia interiore.",
   description:
     "Il Soul Design è il metodo proprietario con cui Alessandro Veneziani coordina le parti interiori e restituisce orientamento a ciò che oggi appare frammentato.",
   lines: [
@@ -321,6 +320,7 @@ export const soulDesignPage = {
   hero: {
     kicker: "Progettazione simbolica della presenza",
     title: "Soul Design",
+    displayTitle: "Soul Design",
     subtitle:
       "Un metodo per coordinare le parti interiori, ritrovare coerenza e trasformare il caos in una forma più leggibile di vita.",
   },
@@ -442,6 +442,7 @@ export const methodPage = {
   hero: {
     kicker: "Studio contemporaneo di orientamento simbolico",
     title: "IL METODO",
+    displayTitle: "Il Metodo",
     subtitle:
       "Un approccio simbolico contemporaneo per ritrovare orientamento in un'epoca piena di rumore.",
   },
@@ -520,6 +521,7 @@ export const percorsiPage = {
   hero: {
     kicker: "Percorsi evolutivi",
     title: "Percorsi",
+    displayTitle: "Percorsi",
     subtitle:
       "Tre accessi principali al metodo e alcuni strumenti di continuità per trasformare la lettura in vita concreta.",
   },
@@ -578,6 +580,7 @@ export const meditationsPage = {
   hero: {
     kicker: "Pratiche di ascolto",
     title: "Meditazioni Guidate",
+    displayTitle: "Meditazioni\nGuidate",
     subtitle:
       "Audio e pratiche pensate per accompagnarti nei passaggi in cui serve rallentare, sentire e tornare al centro.",
   },
@@ -599,6 +602,7 @@ export const editorialToolsPage = {
   hero: {
     kicker: "Collezione editoriale",
     title: "Strumenti Editoriali",
+    displayTitle: "Strumenti\nEditoriali",
     subtitle:
       "Una piccola collezione di materiali simbolici pensati per dare continuità al percorso e accompagnarti nel quotidiano.",
   },
@@ -621,6 +625,7 @@ export const ritrattoPage = {
   hero: {
     kicker: "Lettura identitaria",
     title: "Ritratto dell'Anima",
+    displayTitle: "Ritratto\ndell'Anima",
     subtitle:
       "Un libro personale costruito su di te per dare forma a numeri, cicli, immagini e direzione interiore.",
   },
@@ -660,6 +665,7 @@ export const tarocchiPage = {
   hero: {
     kicker: "Orientamento del presente",
     title: "Percorso Evolutivo",
+    displayTitle: "Percorso\nEvolutivo",
     subtitle:
       "Una sessione simbolica per leggere il presente, dare forma al passaggio che stai vivendo e trasformare intuizioni in direzione concreta.",
   },
@@ -679,6 +685,7 @@ export const laboratorioPage = {
   hero: {
     kicker: "Percorso scritto e rituale",
     title: "Laboratorio dell'Anima",
+    displayTitle: "Laboratorio\ndell'Anima",
     subtitle:
       "Uno spazio da attraversare con lentezza, immagini e pratica per dare forma a un cambiamento interiore reale.",
   },
@@ -698,6 +705,7 @@ export const aboutPage = {
   hero: {
     kicker: "Metodo e fondatore",
     title: "Chi sono",
+    displayTitle: "Chi sono",
     subtitle:
       "Ricerca simbolica contemporanea al servizio della crescita personale, della lettura dei passaggi interiori e delle scelte che chiedono più verità.",
   },
@@ -753,7 +761,7 @@ export const aboutPage = {
 
 export const googleReviewsSection = {
   eyebrow: "Trust",
-  title: "Un riscontro reale del metodo.",
+  title: "Un riscontro reale\ndel metodo.",
   description:
     "Prima di scegliere un percorso puoi vedere un riscontro reale del metodo. Solo recensioni reali e segnali di fiducia verificabili.",
   ratingLabel: "Eccellente",
@@ -908,6 +916,7 @@ export const contactPage = {
   hero: {
     kicker: "Contatto riservato",
     title: "Contatti",
+    displayTitle: "Contatti",
     subtitle:
       "Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.",
   },

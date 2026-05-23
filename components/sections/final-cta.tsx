@@ -14,13 +14,13 @@ export function FinalCtaSection() {
         <Reveal>
           <SurfaceCard className="editorial-title-haze mx-auto max-w-4xl p-8 text-center sm:p-12 lg:p-14">
             <div className="gold-divider mb-10" />
-            <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
+            <p className="editorial-label">
               Welcome Back Home
             </p>
-            <h2 className="editorial-title-depth mx-auto mt-5 max-w-3xl text-balance font-display text-[2.75rem] leading-[1.06] sm:text-[3.7rem]">
+            <h2 className="editorial-title-depth mx-auto mt-6 max-w-[18ch] whitespace-pre-line text-balance font-display text-[2.75rem] leading-[1.08] sm:text-[3.7rem]">
               {finalCta.title}
             </h2>
-            <p className="mx-auto mt-7 max-w-[46ch] text-lg leading-[1.92] text-ivory/82">
+            <p className="mx-auto mt-8 max-w-[44ch] text-lg leading-[1.98] text-ivory/82">
               {finalCta.body}
             </p>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
@@ -33,7 +33,7 @@ export function FinalCtaSection() {
                 </ButtonLink>
               ) : null}
             </div>
-            <p className="mx-auto mt-6 max-w-[46ch] text-sm leading-7 text-ivory/68">
+            <p className="mx-auto mt-7 max-w-[44ch] text-sm leading-[1.9] text-ivory/68">
               Non sai da dove iniziare?{" "}
               <a
                 href={`mailto:${siteConfig.email}`}

@@ -10,13 +10,13 @@ export function SoulDesignSpotlightSection() {
         <div className="grid gap-10 lg:grid-cols-[0.9fr_1.1fr] lg:items-center">
           <Reveal>
             <div className="editorial-title-haze texture-paper rounded-[30px] border border-gold/[0.05] bg-[linear-gradient(180deg,rgba(244,241,234,0.058),rgba(244,241,234,0.024))] p-8 sm:p-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
+              <p className="editorial-label">
                 {soulDesignHomeSpotlight.eyebrow}
               </p>
-              <h2 className="editorial-title-depth mt-5 max-w-[14ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
+              <h2 className="editorial-title-depth mt-6 max-w-[14ch] whitespace-pre-line font-display text-[2.7rem] leading-[1.1] sm:text-[3.45rem]">
                 {soulDesignHomeSpotlight.title}
               </h2>
-              <p className="mt-6 max-w-[60ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
+              <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
                 {soulDesignHomeSpotlight.description}
               </p>
               <div className="mt-8 space-y-4">
@@ -29,7 +29,7 @@ export function SoulDesignSpotlightSection() {
                   </p>
                 ))}
               </div>
-              <p className="mt-8 text-sm uppercase tracking-[0.32em] text-gold/82">
+              <p className="editorial-label mt-9 text-gold/82">
                 Welcome Back Home
               </p>
               <div className="mt-8">

@@ -23,7 +23,7 @@ export default function AboutPage() {
         <Container>
           <div className="grid gap-6 lg:grid-cols-[1.1fr_0.9fr]">
             <SurfaceCard className="p-8 sm:p-10 lg:p-12">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Fondatore del metodo
               </p>
               <div className="mt-6 space-y-6 text-lg leading-9 text-ivory/82">
@@ -53,7 +53,7 @@ export default function AboutPage() {
                 }}
               />
               <div className="relative z-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+                <p className="editorial-label">
                   Formazione e ricerca
                 </p>
                 <div className="mt-6 overflow-hidden rounded-[28px] border border-gold/[0.055] bg-gradient-to-br from-ivory/[0.055] to-transparent p-4 sm:p-5">
@@ -69,7 +69,7 @@ export default function AboutPage() {
                     <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(32,27,23,0.06),rgba(32,27,23,0.02)_40%,rgba(32,27,23,0.18)_100%)] lg:bg-[radial-gradient(circle_at_50%_34%,transparent_34%,rgba(16,13,11,0.08)_70%,rgba(16,13,11,0.18)_100%),linear-gradient(180deg,rgba(21,17,14,0.1),rgba(29,24,20,0.16)_34%,rgba(28,23,19,0.28)_72%,rgba(24,20,17,0.4)_100%)]" />
                     <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_16%,rgba(193,162,109,0.026),transparent_30%),linear-gradient(135deg,rgba(255,248,238,0.012),transparent_42%)]" />
                     <div className="absolute inset-x-5 bottom-5 rounded-[18px] border border-gold/[0.06] bg-[rgba(66,56,47,0.22)] px-4 py-3 backdrop-blur-[4px] lg:border-gold/[0.08] lg:bg-[rgba(53,45,38,0.28)]">
-                      <p className="text-[0.7rem] font-semibold uppercase tracking-[0.28em] text-gold/88">
+                      <p className="editorial-label text-gold/88">
                         Alessandro Veneziani
                       </p>
                       <p className="mt-2 text-sm leading-6 text-[#efe6d6]/84">
@@ -99,7 +99,7 @@ export default function AboutPage() {
           <div className="grid gap-5 md:grid-cols-2">
             {aboutPage.sections.map((section) => (
               <SurfaceCard key={section.title} className="h-full p-8 sm:p-10">
-                <p className="text-xs font-semibold uppercase tracking-[0.26em] text-gold">
+                <p className="editorial-label">
                   {section.title}
                 </p>
                 <div className="mt-5 space-y-5 text-base leading-8 text-ivory/80 sm:text-lg">

@@ -17,7 +17,7 @@ export function HomeHero() {
       <Container>
         <div className="grid items-center gap-[4.5rem] lg:grid-cols-[1fr_0.88fr] lg:gap-24">
           <Reveal className="editorial-title-haze relative z-10 max-w-3xl">
-            <p className="mb-6 text-xs font-semibold uppercase tracking-[0.34em] text-gold sm:text-sm lg:mb-7">
+            <p className="editorial-label mb-6 lg:mb-7">
               {homeHero.kicker}
             </p>
             <h1 className="editorial-title-depth whitespace-pre-line text-balance font-display text-[2.9rem] leading-[0.98] sm:text-[3.6rem] lg:text-[4.9rem]">
@@ -28,10 +28,10 @@ export function HomeHero() {
                 {homeHero.seoLine}
               </p>
             </div>
-            <p className="mt-7 max-w-xl text-pretty text-base leading-[1.98] text-ivory/79 sm:text-[1.03rem] lg:mt-8 lg:text-[1.065rem] lg:leading-[2.02]">
+            <p className="mt-8 max-w-[34rem] text-pretty text-base leading-[2] text-ivory/79 sm:text-[1.03rem] lg:mt-9 lg:text-[1.065rem] lg:leading-[2.06]">
               {homeHero.subtitle}
             </p>
-            <div className="mt-8 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
+            <div className="mt-9 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
               {homeHero.whatYouFind.map((item, index) => (
                 <div key={item} className="inline-flex items-center gap-5">
                   <span>{item}</span>
@@ -49,7 +49,7 @@ export function HomeHero() {
                 {homeHero.secondaryCta.label}
               </ButtonLink>
             </div>
-            <p className="mt-8 max-w-xl text-sm leading-7 text-ivory/68 lg:mt-9 lg:text-[0.95rem] lg:leading-[1.92]">
+            <p className="mt-9 max-w-[34rem] text-sm leading-[1.92] text-ivory/68 lg:text-[0.95rem] lg:leading-[1.96]">
               {softLead.trim()}?{" "}
               <a
                 href="/contatti"
@@ -74,7 +74,7 @@ export function HomeHero() {
               <div className="relative z-10 flex min-h-[520px] flex-col justify-end p-8 sm:min-h-[600px] sm:p-10">
                 <div className="flex flex-col-reverse items-center gap-10 sm:flex-row sm:items-end sm:justify-between sm:gap-5">
                   <div className="max-w-[260px] text-center sm:max-w-[190px] sm:text-left">
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                    <p className="editorial-label">
                       Figura soglia
                     </p>
                     <p className="mt-4 text-sm leading-7 text-ivory/82 lg:text-[0.96rem] lg:leading-[1.9]">

@@ -21,13 +21,13 @@ export default function ContactPage() {
         <Container>
           <div className="grid gap-14 lg:grid-cols-[0.9fr_1.1fr] lg:items-start">
             <div className="border-t border-gold/8 pt-8">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Studio privato
               </p>
-              <h2 className="mt-5 max-w-[12ch] font-display text-[2.5rem] leading-[1.08] text-ivory sm:text-[3.2rem]">
-                Un contatto diretto, semplice e riservato.
+              <h2 className="mt-6 max-w-[13ch] whitespace-pre-line font-display text-[2.5rem] leading-[1.1] text-ivory sm:text-[3.2rem]">
+                {"Un contatto diretto,\nsemplice e riservato."}
               </h2>
-              <p className="mt-6 max-w-[36ch] text-lg leading-[1.9] text-ivory/80">
+              <p className="mt-7 max-w-[35ch] text-lg leading-[1.96] text-ivory/80">
                 {contactPage.intro}
               </p>
               <div className="mt-8 space-y-4">
@@ -46,11 +46,11 @@ export default function ContactPage() {
             </div>
 
             <div className="texture-paper rounded-[30px] border border-gold/6 bg-[linear-gradient(180deg,rgba(244,241,234,0.05),rgba(244,241,234,0.016))] p-8 sm:p-10 lg:p-12">
-              <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
+              <p className="editorial-label">
                 Contatto riservato
               </p>
-              <p className="mt-5 max-w-[30ch] font-display text-[2rem] leading-[1.12] text-ivory sm:text-[2.5rem]">
-                Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.
+              <p className="mt-6 max-w-[17ch] whitespace-pre-line font-display text-[2rem] leading-[1.16] text-ivory sm:text-[2.5rem]">
+                {"Se senti che è il momento\ndi dare un nome a ciò\nche stai vivendo,\npuoi scrivermi."}
               </p>
               <div className="mt-10 grid gap-8 sm:grid-cols-2 sm:gap-x-10">
               {contactPage.methods.map((method) => {
@@ -63,7 +63,7 @@ export default function ContactPage() {
 
                 return (
                   <div key={method.label} className="border-t border-gold/10 pt-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                    <p className="editorial-label">
                       {method.label}
                     </p>
                     <p className={valueClassName}>

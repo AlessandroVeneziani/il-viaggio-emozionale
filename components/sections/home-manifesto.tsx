@@ -10,13 +10,13 @@ export function HomeManifestoSection() {
         <div className="grid gap-12 lg:grid-cols-[0.62fr_1.38fr] lg:items-start">
           <Reveal>
             <SurfaceCard className="editorial-title-haze p-8 sm:p-10">
-              <p className="text-xs font-semibold uppercase tracking-[0.34em] text-gold">
+              <p className="editorial-label">
                 {manifestoSection.eyebrow}
               </p>
-              <h2 className="editorial-title-depth mt-5 max-w-[10ch] font-display text-[2.7rem] leading-[1.05] sm:text-[3.4rem]">
+              <h2 className="editorial-title-depth mt-6 max-w-[11ch] whitespace-pre-line font-display text-[2.7rem] leading-[1.08] sm:text-[3.4rem]">
                 {manifestoSection.title}
               </h2>
-              <p className="mt-6 max-w-[34ch] text-base leading-[1.95] text-ivory/72 sm:text-[1.03rem]">
+              <p className="mt-7 max-w-[34ch] text-base leading-[2] text-ivory/74 sm:text-[1.03rem]">
                 {manifestoSection.introduction}
               </p>
             </SurfaceCard>

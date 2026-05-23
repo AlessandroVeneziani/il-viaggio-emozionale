@@ -27,23 +27,23 @@ export function FounderPreviewSection() {
                 <div className="pointer-events-none absolute inset-0 hidden lg:block lg:bg-[radial-gradient(circle_at_50%_18%,rgba(190,160,107,0.028),transparent_30%),radial-gradient(circle_at_78%_26%,rgba(17,14,12,0.18),transparent_34%),linear-gradient(135deg,rgba(255,248,238,0.012),transparent_42%)]" />
               </div>
             </div>
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
+            <p className="editorial-label">
               Chi sono
             </p>
-            <h2 className="editorial-title-depth mt-5 font-display text-[3rem] leading-[1.06] sm:text-[3.7rem]">
+            <h2 className="editorial-title-depth mt-6 whitespace-pre-line font-display text-[3rem] leading-[1.08] sm:text-[3.7rem]">
               Alessandro
               <br />
               Veneziani
             </h2>
-            <p className="mt-6 max-w-md text-base leading-8 text-ivory/82">
+            <p className="mt-7 max-w-[32ch] text-base leading-[1.95] text-ivory/82">
               Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.
             </p>
           </Reveal>
           <Reveal delay={0.08} className="editorial-title-haze">
-            <h2 className="editorial-title-depth font-display text-[2.5rem] leading-[1.06] sm:text-[3.2rem]">
+            <h2 className="editorial-title-depth max-w-[18ch] whitespace-pre-line font-display text-[2.5rem] leading-[1.08] sm:text-[3.2rem]">
               {founderPreview.title}
             </h2>
-            <div className="mt-7 max-w-[64ch] space-y-7 text-base leading-[1.98] text-ivory/84 sm:text-[1.04rem]">
+            <div className="mt-8 max-w-[60ch] space-y-7 text-base leading-[2] text-ivory/84 sm:text-[1.04rem]">
               {founderPreview.body.map((paragraph) => (
                 <p key={paragraph}>{paragraph}</p>
               ))}
@@ -53,7 +53,7 @@ export function FounderPreviewSection() {
                 {founderPreview.cta.label}
               </ButtonLink>
             </div>
-            <p className="mt-5 max-w-[46ch] text-sm leading-7 text-ivory/68">
+            <p className="mt-6 max-w-[44ch] text-sm leading-[1.9] text-ivory/68">
               Non sai da dove iniziare? Puoi scrivermi direttamente e raccontarmi cosa
               stai vivendo. Ti aiuterò a capire quale percorso può esserti più utile.
             </p>

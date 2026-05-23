@@ -12,20 +12,20 @@ export function ExperiencesToolsSection() {
       <Container>
         <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr] lg:items-end">
           <Reveal className="editorial-title-haze">
-            <p className="text-xs font-semibold uppercase tracking-[0.32em] text-gold">
+            <p className="editorial-label">
               {experiencesToolsSection.eyebrow}
             </p>
-            <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.7rem] leading-[1.08] sm:text-[3.45rem]">
+            <h2 className="editorial-title-depth mt-6 max-w-[12ch] whitespace-pre-line font-display text-[2.7rem] leading-[1.1] sm:text-[3.45rem]">
               {experiencesToolsSection.title}
             </h2>
           </Reveal>
 
           <Reveal delay={0.08}>
             <div className="texture-paper rounded-[26px] border border-gold/[0.045] bg-ivory/[0.03] p-6 sm:p-7">
-              <p className="max-w-[62ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.04rem]">
+              <p className="max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
                 {experiencesToolsSection.description}
               </p>
-              <p className="mt-5 max-w-[52ch] text-base italic leading-[1.9] text-ivory/62 sm:text-[1.02rem]">
+              <p className="mt-6 max-w-[50ch] text-base italic leading-[1.94] text-ivory/62 sm:text-[1.02rem]">
                 {experiencesToolsSection.closing}
               </p>
             </div>
@@ -37,10 +37,10 @@ export function ExperiencesToolsSection() {
             return (
               <Reveal key={card.title} delay={index * 0.06}>
                 <SurfaceCard className="flex h-full flex-col p-7 sm:p-8">
-                  <p className="text-xs font-semibold uppercase tracking-[0.26em] text-gold">
+                  <p className="editorial-label">
                     {card.kicker}
                   </p>
-                  <h3 className="mt-5 font-display text-[2.05rem] leading-[1.08] text-ivory sm:text-[2.25rem]">
+                  <h3 className="mt-6 whitespace-pre-line font-display text-[2.05rem] leading-[1.1] text-ivory sm:text-[2.25rem]">
                     {card.title}
                   </h3>
                   <p className="mt-5 max-w-[24ch] text-lg leading-[1.85] text-ivory/84">
