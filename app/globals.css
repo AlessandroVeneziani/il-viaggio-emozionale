@@ -205,11 +205,11 @@ canvas {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.58;
+    opacity: 0.74;
   }
 
   body:has(.home-main-background)::before {
-    opacity: 0.78;
+    opacity: 0.88;
   }
 
   body > div:first-child {
@@ -329,12 +329,12 @@ canvas {
     inset: 0;
     background-position: center top;
     background-repeat: no-repeat;
-    background-size: auto 112vh;
-    opacity: 0.28;
+    background-size: auto 124vh;
+    opacity: 0.44;
   }
 
   body:has(.home-main-background)::before {
-    opacity: 0.34;
+    opacity: 0.5;
   }
 
   .section-shell {
@@ -427,6 +427,16 @@ canvas {
 }
 
 @media (max-width: 767px) {
+  body::before {
+    background-position: center top;
+    background-size: auto 132vh;
+    opacity: 0.46;
+  }
+
+  body:has(.home-main-background)::before {
+    opacity: 0.52;
+  }
+
   .texture-paper::before {
     opacity: 0.2;
   }
