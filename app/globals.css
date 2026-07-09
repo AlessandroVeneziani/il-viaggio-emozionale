@@ -205,7 +205,7 @@ canvas {
     background-position: center top;
     background-repeat: no-repeat;
     background-size: cover;
-    opacity: 0.38;
+    opacity: 0.58;
   }
 
   body:has(.home-main-background)::before {
@@ -322,6 +322,19 @@ canvas {
 @media (max-width: 1023px) {
   body {
     background: #120e0b;
+  }
+
+  body::before {
+    position: fixed;
+    inset: 0;
+    background-position: center top;
+    background-repeat: no-repeat;
+    background-size: auto 112vh;
+    opacity: 0.28;
+  }
+
+  body:has(.home-main-background)::before {
+    opacity: 0.34;
   }
 
   .section-shell {
