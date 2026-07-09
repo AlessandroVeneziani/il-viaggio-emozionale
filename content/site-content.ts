@@ -325,23 +325,23 @@ export const soulDesignPage = {
       "Il design dell’esperienza identitaria",
   },
   intro: [
-    "Soul Design è una sessione individuale di orientamento identitario e crescita personale che ti aiuta a leggere un momento di crisi, blocco o passaggio attraverso simboli, corpo, desiderio, archetipi e scelte concrete.",
     "Non serve a dirti chi sei una volta per tutte. Serve a riconoscere quale forma di te non ti rappresenta più — e quale movimento può iniziare adesso.",
+    "Soul Design è una sessione individuale concreta: si parte da un tema reale — una scelta, una crisi, una relazione, un blocco, un desiderio — e si arriva a una direzione da iniziare a testare.",
   ],
   manifesto: {
     title: "Non sei da correggere. Sei da ascoltare.",
     paragraphs: [
-      "Ci sono momenti in cui la vita non chiede una risposta immediata. Chiede una forma nuova.",
-      "Una relazione, una crisi, una scelta, un desiderio che ritorna o un corpo che si blocca possono diventare segnali.",
-      "Non problemi da eliminare. Soglie da comprendere.",
+      "Ci sono momenti in cui la vita non chiede una risposta immediata. Chiede ascolto, ordine e un gesto possibile.",
+      "Una relazione, una scelta, un desiderio che ritorna o un corpo che si blocca possono diventare segnali.",
+      "Non problemi da eliminare. Soglie da attraversare con più presenza.",
     ],
   },
   whatItIs: {
     title: "Sessioni individuali di orientamento identitario",
     paragraphs: [
-      "Una sessione di Soul Design è uno spazio individuale per leggere il momento che stai attraversando e trasformarlo in una direzione più chiara.",
-      "Può essere utile quando senti un blocco personale, una crisi di identità, una ripetizione relazionale, una scelta difficile o il bisogno di ritrovare direzione.",
-      "Soul Design non sostituisce un percorso terapeutico o clinico. Si muove nello spazio dell’orientamento identitario, del simbolo, della consapevolezza e della direzione personale.",
+      "Una sessione di Soul Design è uno spazio individuale per leggere una fase concreta e tradurla in orientamento.",
+      "Può essere utile davanti a un blocco personale, una crisi di identità, una ripetizione relazionale, una scelta difficile o il bisogno di ritrovare direzione.",
+      "Soul Design non sostituisce un percorso terapeutico o clinico. Si muove nello spazio dell’orientamento identitario, del simbolo e della consapevolezza personale.",
     ],
   },
   movements: {
@@ -349,15 +349,15 @@ export const soulDesignPage = {
     items: [
       {
         title: "Leggere",
-        text: "Rendere visibile ciò che oggi appare confuso: immagini, ripetizioni, corpo, desiderio, simboli.",
+        text: "Portare alla luce immagini, ripetizioni, segnali del corpo, desideri e simboli.",
       },
       {
         title: "Riconoscere",
-        text: "Capire quale storia stai abitando, quale ruolo continui a ripetere e quale parte di te sta chiedendo spazio.",
+        text: "Capire quale storia stai abitando e quale parte di te sta chiedendo spazio.",
       },
       {
         title: "Dare forma",
-        text: "Tradurre la lettura in un primo movimento concreto: una scelta, un confine, una prova, una nuova postura nella vita.",
+        text: "Tradurre la lettura in un movimento pratico: una scelta, un confine, una prova, una postura diversa.",
       },
     ],
   },
@@ -366,7 +366,7 @@ export const soulDesignPage = {
     paragraphs: [
       "Nel Soul Design, design significa processo.",
       "Osservare. Intuire. Provare. Sbagliare. Correggere. Riprogettare.",
-      "La persona non cambia perché qualcuno le dà una definizione. Cambia quando inizia a testare modi più veri di scegliere, amare, parlare, stare nel corpo e attraversare le proprie soglie.",
+      "Non cambi perché qualcuno ti definisce. Cambi quando inizi a testare modi più veri di scegliere, amare, parlare, stare nel corpo e attraversare le tue soglie.",
     ],
     movements: [
       "Un nuovo modo di scegliere.",
@@ -382,7 +382,7 @@ export const soulDesignPage = {
     paragraphs: [
       "Soul Design lavora con il simbolo come strumento di orientamento.",
       "Un numero, un archetipo, un’immagine, una ripetizione o una figura mitologica non servono a predire il futuro. Servono a leggere il presente.",
-      "Il metodo si ispira alla dimensione dell’immaginario, al viaggio dell’eroe e alla narrazione simbolica dell’esperienza umana: ogni passaggio importante porta con sé una chiamata, una soglia, una prova e una possibile trasformazione.",
+      "Il metodo si ispira all’immaginario, al viaggio dell’eroe e alla narrazione simbolica: ogni passaggio importante porta con sé una chiamata, una soglia, una prova e una possibile trasformazione.",
     ],
   },
   includes: [
@@ -412,21 +412,21 @@ export const soulDesignPage = {
     },
   ],
   partsClose:
-    "Quando queste parti non dialogano, nasce frammentazione. Soul Design serve a rimetterle in relazione.",
+    "Quando queste parti non dialogano, nasce frammentazione. Il lavoro serve a rimetterle in relazione.",
   arrivals: [
     "quando attraversi un passaggio personale",
-    "quando una relazione ti mostra parti che non puoi più ignorare",
-    "quando ripeti uno schema che riconosci ma non riesci a cambiare",
-    "quando senti distanza tra ciò che pensi, vuoi e fai",
-    "quando il corpo manda segnali che la mente non riesce a risolvere",
-    "quando una vecchia versione di te non ti contiene più",
+    "quando una relazione ti mostra qualcosa che non puoi più ignorare",
+    "quando ripeti uno schema che riconosci",
+    "quando senti distanza tra pensiero, desiderio e azione",
+    "quando il corpo manda segnali che la mente non risolve",
+    "quando una vecchia versione di te non basta più",
     "quando hai bisogno di ritrovare direzione",
   ],
   approach: {
     title: "Cosa accade in una sessione",
     paragraphs: [
-      "Si parte da ciò che stai vivendo adesso: una domanda, un blocco, una relazione, una crisi, una scelta, un desiderio o una ripetizione.",
-      "Poi il lavoro si apre su cinque livelli.",
+      "Si parte da un tema reale: una domanda, un blocco, una relazione, una crisi, una scelta, un desiderio o una ripetizione.",
+      "Da lì il lavoro si apre su cinque livelli.",
     ],
     principles: [
       "Narrativo — Che storia sta raccontando questa fase?",
@@ -439,8 +439,8 @@ export const soulDesignPage = {
   result: {
     title: "Il risultato",
     paragraphs: [
-      "Il risultato di Soul Design non è una soluzione magica. È una nuova leggibilità.",
-      "Esci dalla sessione con più chiarezza sul momento che stai attraversando, sulle parti interiori coinvolte e sul primo movimento concreto da sperimentare.",
+      "Il risultato non è una soluzione magica. È una direzione più chiara.",
+      "Esci con più consapevolezza del momento, delle parti coinvolte e del primo passo concreto da sperimentare.",
     ],
     items: [
       "Più chiarezza",
@@ -454,7 +454,7 @@ export const soulDesignPage = {
   finalCta: {
     title: "Inizia dal punto\nin cui sei",
     body:
-      "Non devi arrivare con una risposta. Puoi arrivare con una domanda aperta, una confusione, una relazione che ti muove, un blocco che ritorna o una scelta che non riesci ancora a fare. Soul Design serve a dare forma a ciò che dentro di te è già iniziato, ma non ha ancora trovato linguaggio.",
+      "Non devi arrivare con una risposta. Puoi arrivare con una domanda aperta, una relazione che ti muove, un blocco che ritorna o una scelta che non riesci ancora a fare. Soul Design serve a trasformare ciò che dentro di te è già iniziato in un linguaggio e in una direzione.",
     note:
       "Sessioni individuali personalizzate. Durata e formato vengono definiti in base al tipo di lavoro richiesto.",
     primary: {

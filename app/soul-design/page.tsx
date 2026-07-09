@@ -66,7 +66,7 @@ export default function SoulDesignPage() {
                 <div className="relative z-10">
                   <p className="editorial-label text-gold/84">Processo</p>
                   <h2 className="mt-5 max-w-[11ch] font-display text-[2.35rem] leading-[1.08] text-ivory sm:text-[2.85rem]">
-                    Dare forma a ciò che stai vivendo
+                    Dal tema alla direzione
                   </h2>
                   <div className="mt-10 grid grid-cols-2 gap-x-6 gap-y-3">
                     {[
@@ -86,7 +86,7 @@ export default function SoulDesignPage() {
                     ))}
                   </div>
                   <p className="mt-8 text-sm leading-7 text-ivory/68">
-                    Il design non è decorazione. È il processo con cui una forma
+                    Il design non è decorazione. È il modo in cui un’intuizione
                     diventa più precisa, abitabile e vera.
                   </p>
                 </div>
