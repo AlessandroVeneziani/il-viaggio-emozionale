@@ -14,8 +14,8 @@ export function FinalCtaSection() {
         <Reveal>
           <SurfaceCard className="editorial-title-haze mx-auto max-w-4xl p-8 text-center sm:p-12 lg:p-14">
             <div className="gold-divider mb-10" />
-            <p className="editorial-label">
-              Welcome Back Home
+            <p className="text-[0.76rem] font-medium uppercase leading-relaxed tracking-[0.36em] text-gold/90">
+              WELCOME BACK HOME
             </p>
             <h2 className="editorial-title-depth mx-auto mt-6 max-w-[18ch] whitespace-pre-line text-balance font-display text-[2.75rem] leading-[1.08] sm:text-[3.7rem]">
               {finalCta.title}

@@ -19,7 +19,10 @@ export function SoulDesignSpotlightSection() {
               <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
                 {soulDesignHomeSpotlight.description}
               </p>
-              <div className="mt-8 space-y-4">
+              <p className="mt-9 text-[0.76rem] font-medium uppercase leading-relaxed tracking-[0.36em] text-gold/90">
+                WELCOME BACK HOME
+              </p>
+              <div className="mt-6 space-y-4">
                 {soulDesignHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
@@ -29,9 +32,30 @@ export function SoulDesignSpotlightSection() {
                   </p>
                 ))}
               </div>
-              <p className="editorial-label mt-9 text-gold/82">
-                Welcome Back Home
-              </p>
+              <div className="mt-9 grid gap-4 sm:grid-cols-2">
+                <div className="rounded-[22px] border border-gold/[0.08] bg-ink/[0.18] p-5">
+                  <p className="text-xs font-medium uppercase tracking-[0.26em] text-gold/82">
+                    Prima sessione
+                  </p>
+                  <p className="mt-3 font-display text-[2rem] leading-none text-ivory">
+                    150 €
+                  </p>
+                  <p className="mt-4 text-sm leading-7 text-ivory/68">
+                    Sessione introduttiva più ampia, dedicata all&apos;apertura del lavoro e alla prima lettura del Viaggio Emozionale.
+                  </p>
+                </div>
+                <div className="rounded-[22px] border border-gold/[0.08] bg-ink/[0.18] p-5">
+                  <p className="text-xs font-medium uppercase tracking-[0.26em] text-gold/82">
+                    Sessioni successive
+                  </p>
+                  <p className="mt-3 font-display text-[2rem] leading-none text-ivory">
+                    100 €
+                  </p>
+                  <p className="mt-4 text-sm leading-7 text-ivory/68">
+                    Sessioni di approfondimento e riallineamento, della durata di circa 60 minuti.
+                  </p>
+                </div>
+              </div>
               <div className="mt-8">
                 <ButtonLink href={soulDesignHomeSpotlight.cta.href} variant="secondary">
                   {soulDesignHomeSpotlight.cta.label}
@@ -70,8 +94,10 @@ export function SoulDesignSpotlightSection() {
                   </div>
                 ))}
               </div>
-              <p className="relative mt-8 max-w-[24ch] font-display text-[1.45rem] leading-[1.45] text-ivory/84 sm:text-[1.7rem]">
-                L&apos;essere umano non deve essere aggiustato. Deve essere riallineato.
+              <p className="relative mt-8 max-w-[25ch] font-display text-[1.45rem] leading-[1.46] text-ivory/84 sm:text-[1.7rem]">
+                L&apos;essere umano non deve essere aggiustato.
+                <br className="hidden sm:block" />
+                Deve essere riallineato.
               </p>
             </div>
           </Reveal>

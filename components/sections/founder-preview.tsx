@@ -48,14 +48,17 @@ export function FounderPreviewSection() {
                 <p key={paragraph}>{paragraph}</p>
               ))}
             </div>
-            <div className="mt-8">
-              <ButtonLink href={founderPreview.cta.href} variant="secondary">
+            <div className="mt-9">
+              <ButtonLink href={founderPreview.cta.href} variant="secondary" className="px-7 py-3.5">
                 {founderPreview.cta.label}
               </ButtonLink>
             </div>
-            <p className="mt-6 max-w-[44ch] text-sm leading-[1.9] text-ivory/68">
-              Non sai da dove iniziare? Puoi scrivermi direttamente e raccontarmi cosa
-              stai vivendo. Ti aiuterò a capire quale percorso può esserti più utile.
+            <p className="mt-8 max-w-[48ch] text-base leading-[1.95] text-ivory/76">
+              Non sai da dove iniziare?
+              <br className="hidden sm:block" />
+              Puoi scrivermi direttamente e raccontarmi cosa stai vivendo.
+              <br className="hidden sm:block" />
+              Ti aiuterò a capire quale percorso può esserti più utile.
             </p>
           </Reveal>
         </div>

@@ -100,13 +100,25 @@ export default function SoulDesignPage() {
         <Container>
           <div className="mx-auto max-w-4xl text-center">
             <p className="editorial-label">Manifesto</p>
-            <h2 className="editorial-title-depth mx-auto mt-6 max-w-[16ch] font-display text-[2.85rem] leading-[1.06] sm:text-[4rem]">
+            <h2 className="editorial-title-depth mx-auto mt-6 max-w-[15ch] font-display text-[2.85rem] leading-[1.06] sm:text-[4rem]">
               {soulDesignPage.manifesto.title}
             </h2>
-            <div className="mx-auto mt-8 max-w-[58ch] space-y-5 text-lg leading-[1.9] text-ivory/78">
-              {soulDesignPage.manifesto.paragraphs.map((paragraph) => (
-                <p key={paragraph}>{paragraph}</p>
-              ))}
+            <div className="mx-auto mt-8 max-w-[52ch] space-y-5 text-lg leading-[1.9] text-ivory/78">
+              <p>
+                Ci sono momenti in cui la vita non chiede una risposta immediata.
+                <br className="hidden sm:block" />
+                Chiede ascolto, ordine e un gesto possibile.
+              </p>
+              <p>
+                Una relazione, una scelta, un desiderio che ritorna o un corpo che si blocca
+                <br className="hidden sm:block" />
+                possono diventare segnali.
+              </p>
+              <p>
+                Non problemi da eliminare.
+                <br className="hidden sm:block" />
+                Soglie da attraversare con più presenza.
+              </p>
             </div>
           </div>
         </Container>
@@ -231,8 +243,10 @@ export default function SoulDesignPage() {
               <EditorialCard key={item.title} title={item.title} text={item.text} />
             ))}
           </div>
-          <p className="mx-auto mt-10 max-w-[42ch] text-center font-display text-[1.55rem] leading-[1.45] text-ivory/88 sm:text-[2rem]">
-            {soulDesignPage.partsClose}
+          <p className="mx-auto mt-10 max-w-[34ch] text-center font-display text-[1.55rem] leading-[1.45] text-ivory/88 sm:text-[2rem]">
+            Quando queste parti non dialogano, nasce frammentazione.
+            <br className="hidden sm:block" />
+            Il lavoro serve a rimetterle in relazione.
           </p>
         </Container>
       </section>
