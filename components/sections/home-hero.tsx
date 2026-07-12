@@ -5,6 +5,7 @@ import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { NumberBackdrop } from "@/components/ui/number-backdrop";
+import { WelcomeBackHome } from "@/components/ui/welcome-back-home";
 import { homeHero } from "@/content/site-content";
 
 export function HomeHero() {
@@ -87,9 +88,7 @@ export function HomeHero() {
                     </div>
                     <div className="mt-5 space-y-2 pt-1 text-sm text-ivory/70 xl:border-t xl:border-gold/[0.08] xl:pt-4">
                       <p>Numero, immagine, corpo.</p>
-                      <p className="pt-3 text-[0.72rem] font-medium uppercase leading-relaxed tracking-[0.34em] text-gold/90">
-                        WELCOME BACK HOME
-                      </p>
+                      <WelcomeBackHome className="pt-3" />
                     </div>
                   </div>
 

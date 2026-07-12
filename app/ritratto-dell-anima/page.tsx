@@ -3,6 +3,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { NumberBackdrop } from "@/components/ui/number-backdrop";
 import { SurfaceCard } from "@/components/ui/surface-card";
+import { WelcomeBackHome } from "@/components/ui/welcome-back-home";
 import { buildMetadata } from "@/lib/metadata";
 
 const portraitContents = [
@@ -25,10 +26,30 @@ const portraitContents = [
   "Sintesi finale del percorso",
 ] as const;
 
+const portraitBenefits = [
+  {
+    title: "La tua matrice simbolica",
+    text: "Numeri, archetipi e immagini che raccontano il modo in cui la tua energia prende forma.",
+  },
+  {
+    title: "I tuoi passaggi di vita",
+    text: "Cicli, soglie e momenti evolutivi che aiutano a leggere il presente con più profondità.",
+  },
+  {
+    title: "Talenti, sfide e direzione",
+    text: "Le risorse che porti, i nodi che incontri e il movimento che può riportarti verso una forma più coerente.",
+  },
+  {
+    title: "Domande per il tuo cammino",
+    text: "Spunti e riflessioni da usare nel tempo, non solo durante la prima lettura.",
+  },
+] as const;
+
 const portraitFormats = [
   {
     title: "Ritratto Digitale",
-    subtitle: "Per chi desidera iniziare subito.",
+    subtitle:
+      "Per chi desidera ricevere la propria mappa in formato PDF, consultabile ovunque.",
     intro: "",
     features: [
       "PDF personalizzato",
@@ -39,11 +60,13 @@ const portraitFormats = [
     featured: false,
   },
   {
-    title: "Ritratto Premium",
+    title: "Ritratto Premium Stampato",
     subtitle:
-      "Per chi desidera conservare il proprio Ritratto come un oggetto personale.",
+      "Per chi desidera trasformare il proprio Ritratto in un oggetto personale da conservare.",
     intro: "",
     features: [
+      "PDF personalizzato",
+      "consegna digitale",
       "stampa su carta pergamena",
       "rilegatura artigianale",
       "copertina personalizzata con il tuo nome",
@@ -53,10 +76,12 @@ const portraitFormats = [
     featured: false,
   },
   {
-    title: "Libro dell'Anima",
-    subtitle: "L'esperienza più completa.",
+    title: "Libro dell'Anima — Edizione Completa",
+    subtitle: "L'esperienza più ampia e completa.",
     intro: "Comprende inoltre",
     features: [
+      "PDF personalizzato",
+      "consegna digitale",
       "copertina in seta personalizzata",
       "contenuti ampliati",
       "Manifesto Personale",
@@ -72,20 +97,20 @@ const comparisonRows = [
   {
     label: "PDF personalizzato",
     digital: "Incluso",
-    premium: "Non incluso",
-    book: "Non incluso",
+    premium: "Incluso",
+    book: "Incluso",
   },
   {
     label: "Consegna digitale",
     digital: "Inclusa",
-    premium: "Non inclusa",
-    book: "Non inclusa",
+    premium: "Inclusa",
+    book: "Inclusa",
   },
   {
     label: "Consultabile ovunque",
     digital: "Incluso",
-    premium: "Oggetto fisico",
-    book: "Oggetto fisico",
+    premium: "Incluso con copia digitale",
+    book: "Incluso con copia digitale",
   },
   {
     label: "Stampa su carta pergamena",
@@ -158,19 +183,17 @@ export default function RitrattoPage() {
               Ritratto dell&apos;Anima
             </h1>
             <p className="mt-7 font-display text-[1.85rem] leading-[1.25] text-ivory/90 sm:text-[2.35rem]">
-              Il libro del tuo viaggio interiore.
+              La porta d&apos;ingresso nel tuo Viaggio Emozionale.
             </p>
             <div className="mt-8 max-w-[62ch] space-y-5 text-lg leading-[1.96] text-ivory/82 sm:text-[1.08rem] lg:mt-9 lg:text-[1.12rem] lg:leading-[2.02]">
-              <p>Non un semplice documento.</p>
               <p>
-                Una mappa personale che raccoglie la tua storia simbolica, le
-                tue energie, i tuoi archetipi e le principali chiavi di lettura
-                del tuo percorso evolutivo.
+                Una mappa personale, scritta su misura, per leggere numeri,
+                simboli, archetipi, cicli di vita e direzione interiore.
               </p>
+              <p>Non nasce per dirti chi sei una volta per tutte.</p>
               <p>
-                Ogni Ritratto è realizzato su misura e nasce per accompagnarti
-                nel tempo, ogni volta che sentirai il bisogno di ritrovare la
-                tua direzione.
+                Nasce per aiutarti a riconoscerti meglio, dare ordine a ciò che
+                vivi e tornare a consultare una mappa nei passaggi importanti.
               </p>
             </div>
             <div className="mt-10">
@@ -193,24 +216,50 @@ export default function RitrattoPage() {
               <div className="mt-8 grid gap-6 text-lg leading-[1.95] text-ivory/80 lg:grid-cols-2">
                 <div className="space-y-5">
                   <p>
-                    Il Ritratto dell&apos;Anima rappresenta l&apos;approfondimento
-                    completo del Metodo Il Viaggio Emozionale.
+                    Il Ritratto dell&apos;Anima è la prima soglia del Metodo Il
+                    Viaggio Emozionale.
                   </p>
                   <p>
-                    Attraverso numerologia simbolica, archetipi, Tarocchi, Soul
-                    Design e lettura narrativa, raccoglie in un unico volume le
-                    principali coordinate della tua identità.
+                    Non è una lettura veloce, né un documento generico. È un
+                    lavoro scritto e personalizzato che raccoglie le principali
+                    coordinate della tua esperienza identitaria: numeri, simboli,
+                    archetipi, cicli, memorie, talenti, sfide e direzione.
                   </p>
                 </div>
                 <div className="space-y-5">
-                  <p>Non nasce per dirti chi sei.</p>
+                  <p>Il suo valore non è dirti cosa accadrà.</p>
                   <p>
-                    Nasce per aiutarti a riconoscerti con maggiore chiarezza.
+                    È aiutarti a leggere con più chiarezza ciò che sei, ciò che
+                    stai attraversando e ciò che dentro di te sta cercando
+                    forma.
                   </p>
                 </div>
               </div>
             </SurfaceCard>
           </Reveal>
+        </Container>
+      </section>
+
+      <section className="section-shell py-16 sm:py-24">
+        <Container>
+          <div className="mb-12 max-w-3xl">
+            <p className="editorial-label">Orientamento personale</p>
+            <h2 className="editorial-title-depth mt-5 max-w-[14ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
+              Cosa ti aiuta a vedere
+            </h2>
+          </div>
+          <div className="grid gap-5 sm:grid-cols-2">
+            {portraitBenefits.map((benefit) => (
+              <SurfaceCard key={benefit.title} className="p-7 sm:p-8">
+                <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                  {benefit.title}
+                </p>
+                <p className="mt-5 text-base leading-8 text-ivory/76">
+                  {benefit.text}
+                </p>
+              </SurfaceCard>
+            ))}
+          </div>
         </Container>
       </section>
 
@@ -326,10 +375,10 @@ export default function RitrattoPage() {
                       Digitale
                     </th>
                     <th className="px-5 py-5 text-xs font-semibold uppercase tracking-[0.22em] text-ivory/74">
-                      Premium
+                      Premium Stampato
                     </th>
                     <th className="px-5 py-5 text-xs font-semibold uppercase tracking-[0.22em] text-gold/90">
-                      Libro dell&apos;Anima
+                      Edizione Completa
                     </th>
                   </tr>
                 </thead>
@@ -370,12 +419,13 @@ export default function RitrattoPage() {
                   Ogni Ritratto dell&apos;Anima è scritto interamente su misura.
                 </p>
                 <p>
-                  Non esistono testi predefiniti o interpretazioni standard.
+                  Non esistono testi predefiniti, formule automatiche o
+                  interpretazioni standard.
                 </p>
                 <p>
                   Ogni documento nasce da un lavoro di studio, analisi e
-                  scrittura dedicato alla singola persona affinché possa
-                  diventare una mappa autentica del suo percorso.
+                  scrittura dedicato alla singola persona, affinché possa
+                  diventare una mappa autentica da consultare nel tempo.
                 </p>
               </div>
             </SurfaceCard>
@@ -388,9 +438,7 @@ export default function RitrattoPage() {
           <Reveal>
             <div className="mx-auto max-w-4xl text-center">
               <div className="gold-divider mb-10" />
-              <p className="text-[0.76rem] font-medium uppercase leading-relaxed tracking-[0.36em] text-gold/90">
-                WELCOME BACK HOME
-              </p>
+              <WelcomeBackHome variant="statement" align="center" />
               <h2 className="editorial-title-depth mx-auto mt-7 max-w-[17ch] whitespace-pre-line font-display text-[2.75rem] leading-[1.08] sm:text-[3.7rem]">
                 Il viaggio più importante non è diventare qualcuno di diverso.
               </h2>

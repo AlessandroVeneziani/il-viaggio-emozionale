@@ -1,6 +1,7 @@
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
+import { WelcomeBackHome } from "@/components/ui/welcome-back-home";
 import { soulDesignHomeSpotlight } from "@/content/site-content";
 
 export function SoulDesignSpotlightSection() {
@@ -19,9 +20,7 @@ export function SoulDesignSpotlightSection() {
               <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
                 {soulDesignHomeSpotlight.description}
               </p>
-              <p className="mt-9 text-[0.76rem] font-medium uppercase leading-relaxed tracking-[0.36em] text-gold/90">
-                WELCOME BACK HOME
-              </p>
+              <WelcomeBackHome className="mt-9" />
               <div className="mt-6 space-y-4">
                 {soulDesignHomeSpotlight.lines.map((line) => (
                   <p

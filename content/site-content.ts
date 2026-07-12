@@ -17,7 +17,7 @@ export const homeHero = {
   whatYouFind: [
     "Ritratto dell'Anima",
     "Soul Design",
-    "Percorso Evolutivo",
+    "Sessione Evolutiva",
   ],
 };
 
@@ -58,15 +58,15 @@ export const methodSteps = [
 export const featuredPaths = [
   {
     title: "Ritratto dell'Anima",
-    kicker: "Comprendere da dove parti",
+    kicker: "La porta d'ingresso",
     summary:
-      "Una mappa simbolica personale costruita attraverso numeri, cicli, immagini e direzione interiore.",
+      "Una mappa personale costruita su numeri, simboli, cicli e archetipi per leggere la tua matrice identitaria e la direzione che sta chiedendo spazio.",
     problem:
-      "Quando senti di essere in una fase di svolta e hai bisogno di comprendere meglio chi sei, cosa si sta muovendo e quale direzione sta emergendo.",
+      "Quando senti il bisogno di riconoscere la tua struttura simbolica prima di scegliere, cambiare o iniziare un lavoro più profondo.",
     transformation:
-      "Porta chiarezza, struttura e linguaggio a ciò che prima restava confuso.",
+      "Restituisce una prima mappa identitaria: numeri, simboli, cicli, archetipi e direzione interiore in una forma personale.",
     audience:
-      "Per chi sente il bisogno di una mappa identitaria prima di prendere decisioni o iniziare un cambiamento più concreto.",
+      "Per chi vuole entrare nel metodo da una lettura strutturata, spesso in forma di libro o ritratto personale.",
     href: "/ritratto-dell-anima",
     image: "/images/brand/ritratto-dell-anima.png",
     imageAlt: "Copertina del Ritratto dell'Anima",
@@ -76,34 +76,34 @@ export const featuredPaths = [
   },
   {
     title: "Soul Design",
-    kicker: "Coordinare le parti interiori",
+    kicker: "Il percorso",
     summary:
-      "Un metodo proprietario per coordinare testa, cuore, desiderio, corpo, energia e anima e ritrovare una forma più coerente di sé.",
+      "Il design dell'esperienza identitaria: un lavoro individuale per riallineare testa, cuore, desiderio, corpo, energia e anima.",
     problem:
-      "Quando hai già compreso qualcosa di importante, ma senti che deve diventare più concreto nella tua vita quotidiana.",
+      "Quando la mappa ha bisogno di diventare vita concreta: scelte, corpo, desiderio, passaggi e direzione personale.",
     transformation:
-      "Trasforma intuizioni, simboli e passaggi interiori in una forma più abitabile, leggibile e orientata.",
+      "Trasforma ciò che appare frammentato in una forma più coerente, abitabile e orientata nel tempo.",
     audience:
-      "Per chi sente frammentazione interiore e ha bisogno di riallineare presenza, direzione e linguaggio personale.",
+      "Per chi desidera lavorare nel tempo sulle parti interiori e portare il metodo dentro le scelte quotidiane.",
     href: "/soul-design",
     image: "/images/brand/mondo.png",
     imageAlt: "Il Mondo come simbolo di coordinamento interiore",
-    detailLabel: "Percorso",
+    detailLabel: "Formato",
     detailValue:
-      "Personalizzato su richiesta",
+      "Prima sessione 150 € · successive 100 €",
     ctaLabel: "Scopri il Soul Design",
   },
   {
-    title: "Percorso Evolutivo",
-    kicker: "Trasformare intuizioni in direzione",
+    title: "Sessione Evolutiva",
+    kicker: "L'incontro mirato",
     summary:
-      "Una sessione per leggere il presente, dare un nome ai nodi emotivi o decisionali e trasformare intuizioni e simboli in direzione concreta.",
+      "Una sessione individuale per leggere un tema specifico del presente: una scelta, una crisi, una relazione, un blocco o un passaggio che chiede orientamento.",
     problem:
-      "Quando il presente è pieno di segnali, blocchi, ripetizioni o relazioni che chiedono una lettura più lucida.",
+      "Quando hai bisogno di portare chiarezza su un punto preciso, senza entrare necessariamente in un percorso continuativo.",
     transformation:
-      "Aiuta a passare dalla confusione alla comprensione, dalla domanda vaga a una direzione praticabile.",
+      "Aiuta a leggere il presente con più lucidità e a trasformare una domanda aperta in una direzione praticabile.",
     audience:
-      "Per chi ha bisogno di fare chiarezza su un passaggio preciso e orientarsi meglio nelle scelte immediate.",
+      "Per chi cerca un incontro diretto, concreto e simbolico per orientarsi su un tema specifico.",
     href: "/lettura-evolutiva",
     image: "/images/brand/matto.png",
     imageAlt: "Carta del Matto come simbolo di orientamento del presente",
@@ -246,7 +246,7 @@ export const experiencesToolsSection = {
   description:
     "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
   closing:
-    "Una collezione editoriale in evoluzione: meditazioni, scrittura simbolica, esercizi, percorsi audio e pratiche per portare il metodo nella vita quotidiana.",
+    "Una collezione editoriale in evoluzione: pratiche, meditazioni, scrittura simbolica ed esercizi guidati che nasceranno progressivamente per accompagnare il lavoro anche fuori dalla sessione.",
   cards: [
     {
       title: "Laboratorio dell'Anima",
@@ -274,23 +274,23 @@ export const experiencesToolsSection = {
       imageAlt: "",
     },
     {
-      title: "Pratiche in arrivo",
-      kicker: "Strumenti in evoluzione",
-      subtitle: "Una collezione viva di strumenti simbolici e formativi.",
+      title: "Pratiche e percorsi\nin costruzione",
+      kicker: "Sezione in evoluzione",
+      subtitle: "Materiali futuri per accompagnare il lavoro anche fuori dalla sessione.",
       body:
-        "Scrittura simbolica, esercizi, journaling archetipico, percorsi audio e pratiche guidate pensate per portare il metodo nella vita quotidiana.",
+        "Una sezione in evoluzione dedicata a meditazioni, esercizi simbolici e contenuti guidati per portare il metodo nella vita quotidiana, con tempi e forme che verranno aperti progressivamente.",
       href: "/shop-editoriale",
       ctaLabel: "Esplora gli strumenti editoriali",
       mode: "text",
       image: "",
       imageAlt: "",
       items: [
-        "scrittura automatica",
+        "scrittura simbolica",
         "esercizi simbolici",
-        "rituali contemporanei",
         "journaling archetipico",
-        "percorsi audio",
-        "corsi online",
+        "pratiche guidate",
+        "meditazioni future",
+        "percorsi audio in sviluppo",
       ],
     },
   ],
@@ -300,13 +300,11 @@ export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
   title: "Non siamo una cosa sola.\nSiamo una famiglia interiore.",
   description:
-    "Il Soul Design è il metodo proprietario con cui Alessandro Veneziani coordina le parti interiori e restituisce orientamento a ciò che oggi appare frammentato.",
+    "Soul Design è il design dell'esperienza identitaria: un percorso individuale per riconoscere quale forma di te non ti rappresenta più e quale movimento può iniziare adesso.",
   lines: [
-    "Testa: visione, linguaggio, direzione.",
-    "Cuore: emozione, relazione, vulnerabilità.",
-    "Desiderio: fuoco, movimento, scelta.",
-    "Corpo: radicamento, presenza, realtà.",
-    "Energia e anima: forza che muove il sistema e direzione profonda.",
+    "Testa, cuore, desiderio, corpo, energia e anima non vengono trattati come parti isolate.",
+    "Il lavoro le rimette in dialogo per trasformare frammentazione, blocchi e passaggi di vita in una forma più abitabile.",
+    "È un percorso concreto: parte da ciò che stai vivendo e lo traduce in direzione, postura e scelta.",
   ],
   cta: {
     label: "Scopri il Soul Design",

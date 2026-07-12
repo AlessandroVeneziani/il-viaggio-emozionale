@@ -5,6 +5,7 @@ import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { NumberBackdrop } from "@/components/ui/number-backdrop";
 import { SurfaceCard } from "@/components/ui/surface-card";
+import { WelcomeBackHome } from "@/components/ui/welcome-back-home";
 import { buildMetadata } from "@/lib/metadata";
 
 const roots = [
@@ -90,11 +91,12 @@ const notMethod = [
 ] as const;
 
 const audience = [
-  "A chi sente che una fase della vita si è chiusa, ma non sa ancora quale forma dare alla successiva.",
-  "A chi vive una crisi relazionale, professionale o identitaria e non vuole ridurla solo a un problema, ma comprenderne il significato.",
-  "A chi sente di avere dentro molto più di ciò che sta vivendo.",
-  "A chi desidera uno spazio serio, simbolico e concreto per ritrovare orientamento.",
-  "A chi non cerca una risposta preconfezionata, ma una mappa per attraversare meglio il proprio passaggio.",
+  "A chi attraversa un passaggio di vita.",
+  "A chi sente disallineamento tra ciò che pensa, sente e fa.",
+  "A chi vive un cambiamento profondo e non vuole ridurlo a problema.",
+  "A chi si sente scollegato da sé e cerca una direzione più chiara.",
+  "A chi cerca direzione, non motivazione.",
+  "A chi desidera leggere la propria esperienza in modo simbolico, concreto e meno superficiale.",
 ] as const;
 
 export const metadata = {
@@ -227,6 +229,13 @@ export default function MethodPage() {
         <p>
           Per questo il metodo utilizza numeri, archetipi, Arcani, immagini,
           corpo e racconto personale come strumenti di lettura.
+        </p>
+        <p>
+          Integra numerologia evolutiva, lettura archetipica, immagini
+          simboliche, ascolto dei passaggi interiori, Soul Design e pratiche di
+          integrazione. Anche le immagini archetipiche dei tarocchi, quando
+          utilizzate in chiave evolutiva, diventano strumenti di lettura del
+          presente, non di predizione del futuro.
         </p>
         <p>Non per definire la persona. Ma per aiutarla a orientarsi.</p>
       </EditorialBlock>
@@ -495,21 +504,23 @@ export default function MethodPage() {
       </section>
 
       <EditorialBlock title="Soul Design: dare forma alla propria direzione">
-        <p>Il cuore applicativo del metodo è il Soul Design.</p>
         <p>
-          Soul Design significa progettare una forma più coerente della propria
-          esperienza interiore ed esteriore.
+          Soul Design è il cuore distintivo del metodo: il design
+          dell&apos;esperienza identitaria.
         </p>
         <p>
-          Non si tratta di &quot;trovare se stessi&quot; in modo astratto. Si
-          tratta di comprendere quale forma la propria identità profonda, il
-          proprio desiderio e la propria direzione stanno cercando di prendere
-          nella vita concreta.
+          È il punto in cui testa, cuore, desiderio, corpo, energia e anima
+          smettono di apparire come parti scollegate e tornano a cercare una
+          forma più coerente.
         </p>
         <p>
-          Il Soul Design lavora sull&apos;integrazione delle parti: la mente che
-          interpreta, il cuore che sente, il corpo che desidera, i piedi che
-          scelgono una direzione.
+          Non lavora sull&apos;identità come definizione fissa, ma come esperienza
+          viva da osservare, orientare e trasformare.
+        </p>
+        <p>
+          Il percorso aiuta a riconoscere quale forma di sé non rappresenta più
+          la persona e quale movimento può iniziare a diventare concreto,
+          abitabile, praticabile.
         </p>
         <p>
           Molte persone non sono ferme perché non hanno risposte. Sono ferme
@@ -523,7 +534,7 @@ export default function MethodPage() {
         </p>
         <p>
           Il Soul Design aiuta a osservare queste parti, riconoscerle e
-          rimetterle in dialogo.
+          rimetterle in relazione.
         </p>
         <p>
           La direzione nasce quando l&apos;interiorità smette di essere una guerra
@@ -637,7 +648,7 @@ export default function MethodPage() {
           <Reveal>
             <div className="mx-auto max-w-4xl text-center">
               <div className="gold-divider mb-10" />
-              <p className="editorial-label">Welcome Back Home</p>
+              <WelcomeBackHome variant="statement" align="center" />
               <h2 className="editorial-title-depth mx-auto mt-6 max-w-[15ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[3.85rem]">
                 Inizia il tuo Viaggio Emozionale
               </h2>
@@ -658,6 +669,13 @@ export default function MethodPage() {
                   riconoscere la soglia su cui ti trovi.
                 </p>
                 <p>E attraversarla con più senso, dignità e orientamento.</p>
+                <p>
+                  Puoi entrare nel metodo da tre soglie diverse: il Ritratto
+                  dell&apos;Anima, come mappa identitaria; una Sessione Evolutiva,
+                  come incontro mirato su un tema specifico; oppure Soul
+                  Design, come percorso di riallineamento e design
+                  dell&apos;esperienza identitaria.
+                </p>
                 <p>
                   Il primo passo può essere il Ritratto dell&apos;Anima: una mappa
                   simbolica e narrativa per comprendere il momento che stai

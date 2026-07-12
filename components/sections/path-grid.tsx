@@ -9,9 +9,9 @@ export function PathGrid() {
     <section className="section-shell py-24 sm:py-32">
       <Container>
         <SectionHeading
-          eyebrow="Il Percorso"
+          eyebrow="Tre accessi al metodo"
           title={"Non si entra nel metodo\nda una risposta.\nSi entra da una mappa."}
-          description="Ritratto dell'Anima, Soul Design e Percorso Evolutivo sono tre accessi diversi allo stesso lavoro di orientamento simbolico."
+          description="Ritratto dell'Anima, Soul Design e Sessione Evolutiva hanno funzioni diverse: una mappa identitaria, un percorso di integrazione e un incontro mirato sul presente."
         />
         <div className="mt-16 relative">
           <div className="absolute left-[17px] top-0 hidden h-full w-px bg-gradient-to-b from-gold/0 via-gold/10 to-gold/0 xl:block" />
