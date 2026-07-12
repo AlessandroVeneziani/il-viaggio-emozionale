@@ -115,9 +115,9 @@ export default function AboutPage() {
 
       <GenericFinalCta
         title="Il Viaggio Emozionale esiste per dare forma a ciò che senti, senza renderlo vago."
-        body="Se vuoi capire come lavorare insieme o quale percorso può aiutarti oggi, scrivimi. Possiamo partire da lì."
-        primary={{ label: "Vai ai contatti", href: "/contatti" }}
-        secondary={{ label: "Scopri il metodo", href: "/il-metodo" }}
+        body="Puoi iniziare dal Ritratto dell'Anima, come porta d'ingresso e mappa identitaria; da una Sessione Evolutiva, se hai un tema specifico da leggere; oppure da Soul Design, se desideri intraprendere un percorso più profondo di riallineamento e trasformazione."
+        primary={{ label: "Vai ai percorsi", href: "/percorsi" }}
+        secondary={{ label: "Contattami", href: "/contatti" }}
       />
     </main>
   );

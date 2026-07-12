@@ -30,6 +30,10 @@ export default function ContactPage() {
               <p className="mt-7 max-w-[35ch] text-lg leading-[1.96] text-ivory/80">
                 {contactPage.intro}
               </p>
+              <p className="mt-5 max-w-[42ch] text-base leading-[1.9] text-ivory/72">
+                Ti aiuterò a capire se partire dal Ritratto dell&apos;Anima, da
+                una Sessione Evolutiva o da Soul Design.
+              </p>
               <div className="mt-8 space-y-4">
                 {contactReasons.map((reason) => (
                   <div key={reason} className="flex gap-3 text-base leading-8 text-ivory/76">
@@ -39,9 +43,9 @@ export default function ContactPage() {
                 ))}
               </div>
               <p className="mt-8 max-w-[34ch] text-sm leading-7 text-ivory/60">
-                Se non sai da quale percorso partire, puoi scrivermi liberamente.
-                Il primo obiettivo non è proporti qualcosa in fretta, ma capire
-                cosa stai vivendo e quale accesso può essere più giusto per te.
+                Il primo obiettivo non è proporti qualcosa in fretta, ma
+                comprendere cosa stai vivendo e quale accesso può essere più
+                utile per te.
               </p>
             </div>
 
@@ -49,8 +53,12 @@ export default function ContactPage() {
               <p className="editorial-label">
                 Contatto riservato
               </p>
-              <p className="mt-6 max-w-[17ch] whitespace-pre-line font-display text-[2rem] leading-[1.16] text-ivory sm:text-[2.5rem]">
-                {"Se senti che è il momento\ndi dare un nome a ciò\nche stai vivendo,\npuoi scrivermi."}
+              <p className="mt-6 max-w-[19ch] whitespace-pre-line font-display text-[2rem] leading-[1.16] text-ivory sm:text-[2.5rem]">
+                {"Puoi scegliere il canale\npiù semplice per te."}
+              </p>
+              <p className="mt-6 max-w-[42ch] text-base leading-[1.9] text-ivory/72 sm:text-lg">
+                Ogni contatto resta uno spazio riservato, diretto e senza
+                automatismi inutili.
               </p>
               <div className="mt-10 grid gap-8 sm:grid-cols-2 sm:gap-x-10">
               {contactPage.methods.map((method) => {
@@ -98,6 +106,10 @@ export default function ContactPage() {
         primary={{
           label: "Scrivi via email",
           href: "mailto:info@alessandroveneziani.it",
+        }}
+        secondary={{
+          label: "Scrivimi su WhatsApp",
+          href: "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20informazioni.",
         }}
       />
     </main>

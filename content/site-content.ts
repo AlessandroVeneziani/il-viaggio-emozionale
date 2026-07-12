@@ -204,9 +204,9 @@ export const finalCta = {
 };
 
 export const contactReasons = [
-  "Capire da quale percorso iniziare",
-  "Prenotare una sessione o un Ritratto",
-  "Ricevere indicazioni su disponibilità e tempi",
+  "Capire da quale accesso iniziare",
+  "Prenotare un Ritratto, una Sessione Evolutiva o un percorso di Soul Design",
+  "Ricevere indicazioni su disponibilità, tempi e modalità",
 ] as const;
 
 export const seoTopics = [
@@ -551,55 +551,61 @@ export const percorsiPage = {
     title: "Percorsi",
     displayTitle: "Percorsi",
     subtitle:
-      "Tre accessi principali al metodo e alcuni strumenti di continuità per trasformare la lettura in vita concreta.",
+      "Tre accessi al Metodo Il Viaggio Emozionale: una mappa per riconoscerti, un percorso per trasformare ciò che emerge e una sessione mirata per orientarti su un tema specifico.",
   },
   intro: [
-    "Qui i percorsi non sono prodotti separati. Sono accessi diversi allo stesso lavoro di orientamento simbolico.",
-    "Alcuni aiutano a leggere chi sei. Altri a integrare ciò che emerge nella vita reale. Altri ancora a mettere ordine nel presente con maggiore lucidità.",
+    "Qui i percorsi non sono prodotti separati. Sono soglie diverse dello stesso lavoro di orientamento simbolico.",
+    "Il Ritratto dell'Anima ti aiuta a leggere la tua mappa. Soul Design ti accompagna a trasformarla in una forma più coerente di vita. La Sessione Evolutiva porta chiarezza su un tema preciso del presente.",
   ],
   items: [
     {
       title: "Ritratto dell'Anima",
-      kicker: "Mappa identitaria",
-      text: "Comprendere da dove parti: una mappa identitaria per leggere chi sei, cosa stai attraversando e quale direzione interiore sta emergendo.",
-      details: "Digitale, stampato o premium · da 150 €",
+      kicker: "Porta d'ingresso",
+      text: "La mappa identitaria personale: numeri, simboli, archetipi e cicli di vita per leggere da dove parti, cosa stai attraversando e quale direzione interiore sta emergendo.",
+      details: "Digitale, stampato o completo · da 150 €",
       href: "/ritratto-dell-anima",
       ctaLabel: "Scopri il Ritratto",
     },
     {
       title: "Soul Design",
-      kicker: "Integrazione simbolica",
-      text: "Ritrovare coerenza tra le parti che ti abitano e trasformare intuizioni interiori in una struttura di vita più leggibile.",
+      kicker: "Percorso identitario",
+      text: "Il design dell'esperienza identitaria: un percorso individuale per riallineare testa, cuore, desiderio, corpo, energia e anima, trasformando ciò che appare frammentato in una forma più coerente di vita.",
       details:
-        "Percorso costruito su richiesta · definito in base al momento e alla continuità del lavoro",
+        "Prima sessione 150 € · successive 100 € · la prima sessione apre il lavoro, le successive durano circa 60 minuti.",
       href: "/soul-design",
       ctaLabel: "Scopri il Soul Design",
     },
     {
-      title: "Percorso Evolutivo",
-      kicker: "Orientamento del presente",
-      text: "Trasformare intuizioni e simboli in direzione concreta, leggendo il presente con più lucidità e struttura.",
+      title: "Sessione Evolutiva",
+      kicker: "Incontro mirato",
+      text: "Una sessione individuale per leggere un tema specifico del presente: una scelta, una crisi, una relazione, un blocco o un passaggio che chiede orientamento.",
       details: "Sessione individuale · 100 €",
       href: "/lettura-evolutiva",
       ctaLabel: "Prenota una sessione",
     },
-    {
-      title: "Laboratorio dell'Anima",
-      kicker: "Strumento di integrazione",
-      text: "Uno spazio scritto e rituale per trasformare ciò che emerge in pratica, struttura e presenza nel tempo.",
-      details: "Libro-percorso e pratica personale",
-      href: "/laboratorio-dell-anima",
-      ctaLabel: "Entra nel Laboratorio",
-    },
-    {
-      title: "Meditazioni Guidate",
-      kicker: "Pratiche di ascolto",
-      text: "Audio e pratiche per integrare il passaggio, tornare al corpo e accompagnare il cambiamento con più calma.",
-      details: "Pratiche audio e aggiornamenti su richiesta",
-      href: "/meditazioni-guidate",
-      ctaLabel: "Ascolta le meditazioni",
-    },
   ],
+  continuityTools: {
+    title: "Strumenti di continuità — in evoluzione",
+    text: "Pratiche scritte, meditazioni guidate e contenuti di integrazione sono in fase di sviluppo per accompagnare il lavoro anche fuori dalle sessioni.",
+    items: [
+      {
+        title: "Laboratorio dell'Anima",
+        kicker: "In costruzione",
+        text: "Pratiche scritte e simboliche per trasformare ciò che emerge in esercizio, presenza e integrazione.",
+        details: "Strumento editoriale in evoluzione",
+        href: "/laboratorio-dell-anima",
+        ctaLabel: "In costruzione",
+      },
+      {
+        title: "Meditazioni Guidate",
+        kicker: "In arrivo",
+        text: "Audio e pratiche di ascolto per tornare al corpo, sedimentare il passaggio e accompagnare il cambiamento.",
+        details: "Pratiche audio in sviluppo",
+        href: "/meditazioni-guidate",
+        ctaLabel: "In arrivo",
+      },
+    ],
+  },
   finalNote:
     "Ogni percorso nasce per offrire un linguaggio più leggibile a ciò che oggi, dentro di te, chiede orientamento.",
 };
@@ -739,48 +745,49 @@ export const aboutPage = {
   },
   introduction: [
     "Fondatore de Il Viaggio Emozionale e creatore del metodo Soul Design.",
-    "Il mio lavoro nasce dall'incontro tra simboli, numeri, immagini interiori e passaggi di vita. Non interpreto per dare risposte rapide: costruisco mappe per rendere più leggibile ciò che una persona sta attraversando.",
+    "Il mio lavoro nasce dall'incontro tra ricerca simbolica, numeri, immagini interiori e passaggi di vita.",
+    "Non interpreto per dare risposte rapide. Costruisco mappe per rendere più leggibile ciò che una persona sta attraversando e trasformarlo in orientamento, scelta e direzione.",
   ],
   sections: [
     {
       title: "Percorso personale",
       paragraphs: [
-        "Il mio lavoro nasce dall'incontro tra studio, esperienza personale e ricerca su come il simbolo possa diventare uno strumento utile nella vita reale.",
-        "Negli anni ho cercato un metodo che non separasse profondità e chiarezza. Un metodo capace di tenere insieme intuizione, linguaggio e orientamento.",
+        "La mia ricerca nasce dal bisogno di non separare profondità e chiarezza.",
+        "Negli anni ho cercato un linguaggio capace di accogliere intuizione, esperienza personale e orientamento concreto, senza trasformare il simbolo in evasione o in promessa.",
       ],
     },
     {
       title: "Approccio",
       paragraphs: [
-        "Lavoro con numerologia, tarocchi evolutivi e lettura simbolica come strumenti di interpretazione, non come formule assolute.",
-        "Ogni percorso è costruito per aiutare chi arriva a dare un nome a ciò che sente, a leggere blocchi e ricorrenze e a scegliere con più presenza.",
+        "Lavoro con numerologia, immagini archetipiche, tarocchi utilizzati in chiave evolutiva e lettura simbolica come strumenti di interpretazione del presente, non come formule assolute o predizioni.",
+        "Ogni percorso aiuta a dare un nome a ciò che si muove, a leggere blocchi e ricorrenze e a trasformare la comprensione in una scelta più presente.",
       ],
     },
     {
       title: "Metodo",
       paragraphs: [
-        "La mia ricerca unisce osservazione simbolica, struttura narrativa e una forte attenzione alla dimensione concreta delle decisioni.",
-        "Per questo parlo di ricerca simbolica contemporanea: un modo di usare l'invisibile senza renderlo vago e di tradurre la profondità in una mappa praticabile.",
+        "Soul Design è il cuore metodologico di questo lavoro: il design dell'esperienza identitaria.",
+        "È il punto in cui simboli, corpo, desiderio e scelta tornano a cercare una forma più coerente, capace di tradurre la profondità in una mappa praticabile.",
       ],
     },
     {
       title: "Perché esiste Il Viaggio Emozionale",
       paragraphs: [
         "Il progetto esiste perché molte persone sensibili, profonde e intelligenti non hanno bisogno di altro rumore spirituale. Hanno bisogno di una lettura onesta e ben costruita.",
-        "Il Viaggio Emozionale nasce per questo: accompagnare il passaggio tra intuizione e direzione personale con un'estetica forte, un pensiero leggibile e un metodo realmente utile.",
+        "Il Viaggio Emozionale nasce per accompagnare il passaggio tra intuizione e direzione personale con un'estetica forte, un pensiero leggibile e un metodo realmente utile.",
       ],
     },
   ],
   formation: {
     title: "Formazione e ricerca",
     body: [
-      "Il mio percorso unisce ricerca simbolica, formazione accademica e comunicazione.",
-      "La mia base nasce da una laurea in Economia e Commercio presso l'Università Bocconi, con specializzazione in marketing e comunicazione. A questa formazione ho affiancato un secondo percorso di laurea in Antropologia Esoterica presso HETG, realtà accademica con sede a Ginevra e Roma, dove oggi collaboro anche come professore.",
-      "Questa doppia direzione, economica, comunicativa e simbolico-antropologica, è il fondamento del mio lavoro: trasformare intuizioni, numeri, archetipi e vissuti interiori in strumenti concreti di lettura, scelta e cambiamento.",
+      "Il mio percorso tiene insieme formazione accademica, comunicazione e ricerca simbolico-antropologica.",
+      "Dopo la laurea in Economia e Commercio presso l'Università Bocconi, con specializzazione in marketing e comunicazione, ho affiancato un secondo percorso in Antropologia Esoterica presso HETG, realtà accademica con sede a Ginevra e Roma, dove oggi collaboro anche come professore.",
+      "Questa doppia formazione è il fondamento del metodo: unire struttura, linguaggio e simbolo per trasformare intuizioni, archetipi e vissuti interiori in strumenti concreti di lettura, scelta e cambiamento.",
     ],
   },
   highlights: [
-    "Metodo Soul Design",
+    "Soul Design: design dell'esperienza identitaria",
     "Narrazione chiara, non fumosa",
     "Simbolo come strumento di lettura",
     "Decisione concreta come approdo del metodo",
@@ -971,5 +978,5 @@ export const contactPage = {
     },
   ],
   intro:
-    "Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi. Ti aiuterò a capire da quale punto può essere più giusto iniziare, con più chiarezza e senza fretta.",
+    "Non devi sapere già quale percorso scegliere. Puoi arrivare con una domanda, una crisi, una relazione, una scelta o un passaggio aperto.",
 };
