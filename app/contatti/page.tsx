@@ -31,8 +31,8 @@ export default function ContactPage() {
                 {contactPage.intro}
               </p>
               <p className="mt-5 max-w-[42ch] text-base leading-[1.9] text-ivory/72">
-                Ti aiuterò a capire se partire dal Ritratto dell&apos;Anima, da
-                una Sessione Evolutiva o da Soul Design.
+                Puoi arrivare con una domanda, una crisi, una relazione, una
+                scelta o un passaggio ancora aperto.
               </p>
               <div className="mt-8 space-y-4">
                 {contactReasons.map((reason) => (

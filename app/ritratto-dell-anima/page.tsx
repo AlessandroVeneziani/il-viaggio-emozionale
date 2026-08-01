@@ -9,15 +9,15 @@ import { buildMetadata } from "@/lib/metadata";
 const promisePoints = [
   {
     title: "Libro personale",
-    text: "Un manoscritto costruito sulla tua storia simbolica, non un file generico da archiviare.",
+    text: "Non un documento da consultare. Un libro che racconta la tua storia simbolica, costruito pagina dopo pagina per essere riletto nel tempo.",
   },
   {
     title: "Scritto una persona alla volta",
-    text: "Ogni capitolo nasce per un solo protagonista: tu, il tuo percorso, le tue soglie.",
+    text: "Ogni Ritratto nasce da un lavoro di studio, interpretazione e scrittura dedicato esclusivamente a una persona. Nessun testo viene replicato.",
   },
   {
     title: "Da leggere e conservare",
-    text: "Un oggetto editoriale da aprire nei passaggi importanti, quando hai bisogno di ritrovare filo e direzione.",
+    text: "Un libro pensato per accompagnarti negli anni. Da riaprire quando qualcosa cambia, quando una domanda ritorna o quando senti il bisogno di ritrovare direzione.",
   },
 ] as const;
 
@@ -59,7 +59,6 @@ const bookChapters = [
   "Le relazioni",
   "La carta oracolare",
   "L'animale guida",
-  "Le domande per l'Anima",
   "Il Patto con Te",
   "Sintesi finale",
 ] as const;
@@ -82,23 +81,23 @@ const tiktokPlaceholders = [
 const portraitEditions = [
   {
     title: "Ritratto Digitale",
-    eyebrow: "Manoscritto personale in PDF",
+    eyebrow: "Primo ingresso",
     experience:
-      "Per chi desidera ricevere il proprio libro in formato digitale, leggerlo con calma e tornarci quando serve.",
+      "Per chi desidera entrare nel proprio libro in modo essenziale: leggerlo con calma, tornare ai capitoli quando serve e iniziare da una mappa personale chiara.",
     features: [
-      "circa 100 pagine personalizzate",
-      "PDF editoriale",
+      "manoscritto editoriale in PDF",
+      "circa 100 pagine scritte su misura",
       "consegna digitale",
-      "consultabile ovunque",
+      "accesso immediato al primo passo del viaggio",
     ],
     price: "150 €",
     featured: false,
   },
   {
     title: "Ritratto Premium Stampato",
-    eyebrow: "Libro personale da custodire",
+    eyebrow: "Oggetto da custodire",
     experience:
-      "Per chi desidera trasformare il proprio Ritratto in un oggetto fisico, intimo e personale.",
+      "Per chi sente che il proprio Ritratto non debba restare solo su schermo, ma diventare un volume fisico da aprire, conservare e ritrovare nel tempo.",
     features: [
       "PDF editoriale incluso",
       "stampa su carta pergamena",
@@ -110,10 +109,10 @@ const portraitEditions = [
     featured: false,
   },
   {
-    title: "Libro dell'Anima",
-    eyebrow: "Edizione completa",
+    title: "Libro dell'Anima — Edizione Completa",
+    eyebrow: "Immersione completa",
     experience:
-      "L'esperienza più ampia: un libro personale arricchito da capitoli, spazi e materiali pensati per accompagnarti nel tempo.",
+      "Per chi desidera vivere il Ritratto come esperienza più ampia: un libro personale arricchito da materiali, spazi di scrittura e tracce da attraversare dopo la consegna.",
     features: [
       "PDF editoriale incluso",
       "copertina in seta personalizzata",
@@ -131,27 +130,27 @@ const faqs = [
   {
     question: "Quante pagine contiene il Ritratto?",
     answer:
-      "Il Ritratto nasce come libro personale di circa 100 pagine. La lunghezza può variare leggermente in base alla storia, ai capitoli e all'edizione scelta.",
+      "Il Ritratto nasce come libro personale di circa 100 pagine. Non inseguo una misura rigida: ogni manoscritto trova la propria estensione in base alla storia che deve custodire.",
   },
   {
     question: "È scritto davvero su misura?",
     answer:
-      "Sì. Ogni manoscritto viene costruito una persona alla volta: non esistono testi predefiniti, template impersonali o capitoli uguali per tutti.",
+      "Sì. Ogni Ritratto viene scritto una persona alla volta, dopo uno studio dedicato. La struttura sostiene il lavoro, ma le parole, i passaggi e la narrazione nascono solo per chi lo riceve.",
   },
   {
     question: "Da quali informazioni si parte?",
     answer:
-      "Si parte dai dati personali necessari alla costruzione simbolica del libro e da alcune domande orientative che aiutano a dare contesto al percorso.",
+      "Si parte dai dati necessari alla costruzione simbolica e da alcune tracce personali che aiutano a comprendere il momento che stai attraversando. Non raccolgo informazioni per compilare un modulo: le uso per dare corpo a un libro.",
   },
   {
     question: "Quanto tempo serve per riceverlo?",
     answer:
-      "I tempi dipendono dall'edizione e dal calendario di scrittura. Dopo il primo contatto riceverai indicazioni chiare su disponibilità, tempi e consegna.",
+      "Il tempo dipende dall'edizione e dal calendario di scrittura. Preferisco non accelerare un lavoro che nasce per restare: dopo il primo contatto ti indicherò tempi, disponibilità e modalità di consegna.",
   },
   {
     question: "Quale edizione dovrei scegliere?",
     answer:
-      "Il digitale è ideale per iniziare. Il Premium Stampato è pensato per chi vuole custodire il proprio libro come oggetto personale. Il Libro dell'Anima è l'edizione più completa e ampia.",
+      "Non esiste un'edizione migliore in assoluto. Il digitale apre la porta. Lo stampato trasforma il Ritratto in un oggetto da custodire. Il Libro dell'Anima — Edizione Completa amplia l'esperienza e la rende più abitabile nel tempo.",
   },
 ] as const;
 
@@ -192,18 +191,21 @@ export default function RitrattoPage() {
       <section className="section-shell py-16 sm:py-24">
         <Container>
           <Reveal>
-            <SurfaceCard className="mx-auto max-w-5xl p-8 sm:p-10 lg:p-12">
+            <SurfaceCard className="mx-auto max-w-5xl p-7 sm:p-9 lg:p-10">
               <p className="editorial-label">Opera editoriale</p>
-              <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
+              <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
                 Non riceverai un report.
               </h2>
-              <div className="mt-10 grid gap-5 md:grid-cols-3">
+              <div className="mt-8 grid gap-5 md:grid-cols-3">
                 {promisePoints.map((point) => (
-                  <div key={point.title} className="border-t border-gold/[0.08] pt-6">
-                    <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
+                  <div
+                    key={point.title}
+                    className="flex h-full flex-col border-t border-gold/[0.08] pt-5"
+                  >
+                    <p className="min-h-[2.8rem] text-xs font-semibold uppercase leading-[1.55] tracking-[0.28em] text-gold">
                       {point.title}
                     </p>
-                    <p className="mt-5 text-base leading-8 text-ivory/76">
+                    <p className="mt-4 text-base leading-8 text-ivory/76 md:min-h-[12rem]">
                       {point.text}
                     </p>
                   </div>
@@ -326,12 +328,19 @@ export default function RitrattoPage() {
                     <p>
                       L&apos;ho immaginato come un libro personale: un luogo in
                       cui simboli, numeri, archetipi e domande possano
-                      trasformarsi in una narrazione autentica, costruita una
-                      persona alla volta.
+                      diventare capitoli, passaggi e immagini interiori dentro
+                      una narrazione autentica.
                     </p>
                     <p>
-                      Ogni Ritratto nasce da un processo di studio, scrittura e
-                      revisione che richiede tempo, attenzione e presenza.
+                      Ogni Ritratto nasce da un processo manuale di studio,
+                      scrittura e revisione. Prima osservo le coordinate
+                      simboliche, poi cerco il filo narrativo che può renderle
+                      leggibili dentro una storia personale.
+                    </p>
+                    <p>
+                      Questo tempo è parte del metodo: nessun libro viene
+                      composto in serie, perché nessuna storia arriva nello stesso
+                      modo.
                     </p>
                     <p>Per questo motivo nessun libro è uguale a un altro.</p>
                     <p>Ogni persona porta una storia diversa.</p>
@@ -383,24 +392,24 @@ export default function RitrattoPage() {
       <section className="section-shell py-16 sm:py-24">
         <Container>
           <Reveal>
-            <div className="mx-auto max-w-5xl border-y border-gold/[0.10] py-12 sm:py-16 lg:py-20">
+            <div className="mx-auto max-w-5xl border-y border-gold/[0.10] py-10 sm:py-12 lg:py-16">
               <div className="mx-auto max-w-3xl text-center">
                 <p className="editorial-label">INDICE</p>
                 <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                  Un libro. Sedici capitoli. Una sola storia.
+                  Un libro. Quindici capitoli. Una sola storia.
                 </h2>
-                <p className="mx-auto mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
+                <p className="mx-auto mt-6 max-w-[58ch] text-base leading-[1.85] text-ivory/76 sm:text-[1.06rem]">
                   Ogni capitolo è scritto esclusivamente per te e dialoga con
                   quelli precedenti, trasformando il Ritratto in un&apos;unica
                   narrazione personale.
                 </p>
               </div>
 
-              <ol className="mx-auto mt-14 grid max-w-4xl gap-x-16 gap-y-0 sm:mt-16 lg:grid-cols-2">
+              <ol className="mx-auto mt-10 grid max-w-4xl gap-x-16 gap-y-0 sm:mt-12 lg:grid-cols-2">
                 {bookChapters.map((chapter, index) => (
                   <li
                     key={chapter}
-                    className="grid grid-cols-[3.25rem_1fr] gap-5 border-t border-gold/[0.08] py-5 sm:grid-cols-[4rem_1fr] sm:py-6"
+                    className="grid grid-cols-[3.25rem_1fr] gap-5 border-t border-gold/[0.08] py-4 sm:grid-cols-[4rem_1fr] sm:py-5"
                   >
                     <span className="pt-1 text-xs font-semibold uppercase tracking-[0.28em] text-gold/72 sm:text-sm">
                       {String(index + 1).padStart(2, "0")}
@@ -412,7 +421,7 @@ export default function RitrattoPage() {
                 ))}
               </ol>
 
-              <p className="mx-auto mt-12 max-w-[54ch] text-center text-sm leading-7 text-ivory/60 sm:mt-14">
+              <p className="mx-auto mt-10 max-w-[54ch] text-center text-sm leading-7 text-ivory/60 sm:mt-12">
                 Ogni capitolo viene scritto esclusivamente per la persona che lo
                 riceve. Nessun Ritratto è uguale a un altro.
               </p>
@@ -440,6 +449,11 @@ export default function RitrattoPage() {
                     Le parole di chi lo riceve raccontano spesso questo: non un
                     contenuto consumato in fretta, ma un oggetto che accompagna.
                   </p>
+                  <p>
+                    Per alcune persone sarà sufficiente. Per altre diventerà il
+                    primo ingresso naturale in un percorso più ampio, fatto di
+                    sessioni individuali, domande e nuovi capitoli da attraversare.
+                  </p>
                 </div>
                 <div className="space-y-5">
                   <p>
@@ -462,12 +476,12 @@ export default function RitrattoPage() {
           <div className="mb-12 max-w-3xl">
             <p className="editorial-label">Edizioni</p>
             <h2 className="editorial-title-depth mt-5 max-w-[13ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-              Tre modi di custodire il tuo libro
+              Tre modi di abitare lo stesso libro
             </h2>
             <p className="mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
-              La differenza non è solo nel formato, ma nell&apos;esperienza: dal
-              manoscritto digitale all&apos;oggetto personale, fino all&apos;edizione più
-              completa del viaggio.
+              Non sono tre prodotti separati. Sono tre intensità dello stesso
+              ingresso: dal manoscritto digitale all&apos;oggetto da custodire, fino
+              all&apos;edizione più ampia del Viaggio Emozionale.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">
@@ -521,7 +535,14 @@ export default function RitrattoPage() {
                     ))}
                   </ul>
                   <p
-                    className={`mt-8 font-display text-4xl ${
+                    className={`mt-8 text-xs font-semibold uppercase tracking-[0.28em] ${
+                      edition.featured ? "text-[#d8bf83]/88" : "text-gold/72"
+                    }`}
+                  >
+                    Investimento editoriale
+                  </p>
+                  <p
+                    className={`mt-3 font-display text-[2.35rem] leading-none ${
                       edition.featured ? "text-[#f2e7d5]" : "text-ivory"
                     }`}
                   >
@@ -567,11 +588,12 @@ export default function RitrattoPage() {
               <div className="gold-divider mb-10" />
               <WelcomeBackHome variant="statement" align="center" />
               <h2 className="editorial-title-depth mx-auto mt-7 max-w-[17ch] whitespace-pre-line font-display text-[2.75rem] leading-[1.08] sm:text-[3.7rem]">
-                Il libro comincia dal punto in cui sei.
+                {"Forse non hai bisogno\ndi cambiare vita.\n\nForse hai bisogno\ndi leggerla."}
               </h2>
-              <p className="mx-auto mt-8 max-w-[42ch] font-display text-[1.65rem] leading-[1.36] text-ivory/88 sm:text-[2.15rem]">
-                Se senti che la tua storia chiede una forma più chiara, possiamo
-                iniziare da qui.
+              <p className="mx-auto mt-8 max-w-[58ch] text-base leading-[1.95] text-ivory/78 sm:text-[1.1rem]">
+                Il Ritratto dell&apos;Anima non nasce per dirti chi sei, ma per
+                offrirti una narrazione più chiara della tua storia, attraverso
+                simboli, numeri, archetipi e domande.
               </p>
               <div className="mt-10">
                 <ButtonLink href="/contatti" size="lg">

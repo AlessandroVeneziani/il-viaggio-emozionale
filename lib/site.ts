@@ -11,7 +11,7 @@ export const siteConfig = {
     "soul design",
     "numerologia evolutiva",
     "archetipi",
-    "percorso evolutivo",
+    "sessione evolutiva",
     "simboli interiori",
     "identità simbolica",
     "lettura simbolica contemporanea",

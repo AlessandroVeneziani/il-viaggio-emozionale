@@ -547,7 +547,7 @@ export const methodPage = {
 
 export const percorsiPage = {
   hero: {
-    kicker: "Percorsi evolutivi",
+    kicker: "Accessi al metodo",
     title: "Percorsi",
     displayTitle: "Percorsi",
     subtitle:
@@ -579,9 +579,9 @@ export const percorsiPage = {
       title: "Sessione Evolutiva",
       kicker: "Incontro mirato",
       text: "Una sessione individuale per leggere un tema specifico del presente: una scelta, una crisi, una relazione, un blocco o un passaggio che chiede orientamento.",
-      details: "Sessione individuale · 100 €",
+      details: "Sessione Evolutiva · 100 €",
       href: "/lettura-evolutiva",
-      ctaLabel: "Prenota una sessione",
+      ctaLabel: "Prenota una Sessione Evolutiva",
     },
   ],
   continuityTools: {
@@ -686,7 +686,7 @@ export const ritrattoPage = {
       text: "Per custodire la lettura come un oggetto da tenere, rileggere e ritrovare.",
     },
     {
-      title: "Premium",
+      title: "Libro dell'Anima — Edizione Completa",
       price: "350 €",
       text: "Per chi vuole la versione più completa, curata e simbolicamente potente del percorso.",
     },
@@ -698,8 +698,8 @@ export const ritrattoPage = {
 export const tarocchiPage = {
   hero: {
     kicker: "Orientamento del presente",
-    title: "Percorso Evolutivo",
-    displayTitle: "Percorso\nEvolutivo",
+    title: "Sessione Evolutiva",
+    displayTitle: "Sessione\nEvolutiva",
     subtitle:
       "Una sessione simbolica per leggere il presente, dare forma al passaggio che stai vivendo e trasformare intuizioni in direzione concreta.",
   },
@@ -950,10 +950,10 @@ export const blogPosts = [
 export const contactPage = {
   hero: {
     kicker: "Contatto riservato",
-    title: "Contatti",
-    displayTitle: "Contatti",
+    title: "Raccontami da dove parti",
+    displayTitle: "Raccontami\nda dove parti",
     subtitle:
-      "Se senti che è il momento di dare un nome a ciò che stai vivendo, puoi scrivermi.",
+      "Puoi scrivermi per richiedere il Ritratto dell'Anima, prenotare una Sessione Evolutiva o capire quale accesso al Viaggio Emozionale è più adatto al momento che stai vivendo.",
   },
   methods: [
     {
@@ -978,5 +978,5 @@ export const contactPage = {
     },
   ],
   intro:
-    "Non devi sapere già quale percorso scegliere. Puoi arrivare con una domanda, una crisi, una relazione, una scelta o un passaggio aperto.",
+    "Non devi arrivare con una richiesta già definita. Il primo contatto serve a dare ordine al punto da cui stai partendo.",
 };

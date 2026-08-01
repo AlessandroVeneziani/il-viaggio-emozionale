@@ -40,11 +40,17 @@ export function BlogSidebar({
 
       <SurfaceCard className="p-6">
         <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold">
-          Navigazione interna
+          Continua il viaggio
         </p>
         <div className="mt-5 space-y-3 text-sm leading-7 text-ivory/76">
-          <p>Ogni articolo è pensato per collegarsi ai percorsi principali del sito.</p>
-          <p>Così il blog resta utile per SEO ma anche per conversione e orientamento.</p>
+          <p>
+            Ogni articolo apre una traccia: un simbolo, una domanda, un passaggio
+            da osservare con più presenza.
+          </p>
+          <p>
+            Puoi leggerli come appunti di viaggio, da riprendere quando senti il
+            bisogno di dare forma a ciò che stai attraversando.
+          </p>
         </div>
       </SurfaceCard>
     </div>

@@ -24,7 +24,7 @@ export default function LetturaEvolutivaPage() {
           <div className="grid gap-5 lg:grid-cols-[1.05fr_0.95fr]">
             <SurfaceCard className="p-8 sm:p-10">
               <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                Cosa accade in lettura
+                Cosa accade in sessione
               </p>
               <div className="mt-6 space-y-5 text-lg leading-8 text-ivory/80">
                 {tarocchiPage.paragraphs.map((paragraph) => (
@@ -50,7 +50,7 @@ export default function LetturaEvolutivaPage() {
               <div className="relative z-10 mt-6 flex items-center justify-center rounded-[28px] border border-gold/15 bg-white/[0.03] p-6">
                 <Image
                   src="/images/brand/matto.png"
-                  alt="Il Matto come immagine simbolica della pagina Lettura Evolutiva"
+                  alt="Il Matto come immagine simbolica della pagina Sessione Evolutiva"
                   width={958}
                   height={1425}
                   sizes="(max-width: 1024px) 72vw, 24vw"
@@ -66,7 +66,7 @@ export default function LetturaEvolutivaPage() {
                 ))}
               </ul>
               <div className="mt-8">
-                <ButtonLink href="/contatti">Prenota una sessione</ButtonLink>
+                <ButtonLink href="/contatti">Prenota una Sessione Evolutiva</ButtonLink>
               </div>
             </SurfaceCard>
           </div>
@@ -74,7 +74,7 @@ export default function LetturaEvolutivaPage() {
       </section>
 
       <GenericFinalCta
-        title="Il Percorso Evolutivo non ti dice cosa credere. Ti aiuta a vedere meglio il punto in cui sei."
+        title="La Sessione Evolutiva non ti dice cosa credere. Ti aiuta a vedere meglio il punto in cui sei."
         body="Se stai attraversando un nodo, una scelta o un passaggio emotivo importante, possiamo leggerlo insieme con più lucidità."
         primary={{ label: "Scrivimi per prenotare", href: "/contatti" }}
         secondary={{ label: "Scopri il Ritratto dell'Anima", href: "/ritratto-dell-anima" }}

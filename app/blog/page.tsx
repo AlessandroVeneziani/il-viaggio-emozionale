@@ -20,8 +20,8 @@ export default function BlogPage() {
     <main>
       <PageHero
         eyebrow="Editoriale"
-        title="Blog"
-        subtitle="Una struttura SEO-ready per far crescere Il Viaggio Emozionale come piattaforma editoriale dedicata a crescita personale, numerologia evolutiva e letture simboliche contemporanee."
+        title="Uno spazio per comprendere i passaggi che attraversiamo"
+        subtitle="Articoli su identità, simboli, numeri, relazioni e trasformazione personale, per continuare il viaggio anche fuori dalle sessioni."
         accentNumber="5"
       />
 
