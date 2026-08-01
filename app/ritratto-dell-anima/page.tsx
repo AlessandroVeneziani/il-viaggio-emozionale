@@ -275,6 +275,72 @@ export default function RitrattoPage() {
 
       <section className="section-shell py-16 sm:py-24">
         <Container>
+          <Reveal>
+            <SurfaceCard className="mx-auto max-w-6xl p-6 sm:p-8 lg:p-10">
+              <div className="grid gap-10 lg:grid-cols-[0.45fr_0.55fr] lg:items-stretch">
+                <div className="relative min-h-[420px] overflow-hidden rounded-[30px] border border-gold/[0.08] bg-[linear-gradient(180deg,rgba(244,241,234,0.055),rgba(244,241,234,0.016))] sm:min-h-[520px]">
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-0 opacity-[0.12]"
+                    style={{
+                      backgroundImage:
+                        'url("/images/backgrounds/numeric-texture.png")',
+                      backgroundPosition: "center",
+                      backgroundSize: "cover",
+                    }}
+                  />
+                  <div
+                    aria-hidden="true"
+                    className="absolute inset-6 rounded-[24px] border border-dashed border-gold/18"
+                  />
+                  <div className="relative z-10 flex h-full min-h-[420px] items-center justify-center px-8 text-center sm:min-h-[520px]">
+                    <div>
+                      <p className="editorial-label text-gold/78">
+                        Ritratto autore
+                      </p>
+                      <p className="mt-5 text-sm leading-7 text-ivory/58">
+                        Placeholder fotografico verticale
+                      </p>
+                    </div>
+                  </div>
+                </div>
+
+                <div className="flex flex-col justify-center py-2 lg:py-8">
+                  <p className="editorial-label">L&apos;AUTORE</p>
+                  <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
+                    Chi scrive questi libri?
+                  </h2>
+                  <div className="mt-8 max-w-[62ch] space-y-5 text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
+                    <p>
+                      Non ho creato il Ritratto dell&apos;Anima per offrire una
+                      risposta immediata o una lettura standardizzata.
+                    </p>
+                    <p>
+                      L&apos;ho immaginato come un libro personale: un luogo in
+                      cui simboli, numeri, archetipi e domande possano
+                      trasformarsi in una narrazione autentica, costruita una
+                      persona alla volta.
+                    </p>
+                    <p>
+                      Ogni Ritratto nasce da un processo di studio, scrittura e
+                      revisione che richiede tempo, attenzione e presenza.
+                    </p>
+                    <p>Per questo motivo nessun libro è uguale a un altro.</p>
+                    <p>Ogni persona porta una storia diversa.</p>
+                    <p>Ogni libro nasce per custodirla.</p>
+                  </div>
+                  <p className="editorial-title-depth mt-14 max-w-[14ch] whitespace-pre-line font-display text-[2rem] leading-[1.18] text-ivory sm:mt-16 sm:text-[2.55rem]">
+                    {"Ogni persona ha una storia.\nIo la trasformo in un libro."}
+                  </p>
+                </div>
+              </div>
+            </SurfaceCard>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="section-shell py-16 sm:py-24">
+        <Container>
           <div className="mb-12 max-w-3xl">
             <p className="editorial-label">Dentro il Ritratto</p>
             <h2 className="editorial-title-depth mt-5 max-w-[13ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
