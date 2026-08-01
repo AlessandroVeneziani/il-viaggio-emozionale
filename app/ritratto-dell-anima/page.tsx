@@ -46,14 +46,22 @@ const creationSteps = [
 ] as const;
 
 const bookChapters = [
-  "Nome, cognome e firma simbolica",
-  "Matrice numerologica personale",
-  "Cicli, soglie e passaggi di vita",
-  "Archetipi principali",
-  "Talenti, sfide e direzione",
-  "Capitoli dedicati a corpo, relazioni e desiderio",
-  "Domande per il cammino",
-  "Sintesi finale del percorso",
+  "Premessa",
+  "Il tuo cielo",
+  "La tua matrice",
+  "Il tuo nome",
+  "Il passato dell'Anima",
+  "Gli archetipi",
+  "Talenti e sfide",
+  "I tuoi chakra",
+  "I cicli della vita",
+  "Il nodo karmico",
+  "Le relazioni",
+  "La carta oracolare",
+  "L'animale guida",
+  "Le domande per l'Anima",
+  "Il Patto con Te",
+  "Sintesi finale",
 ] as const;
 
 const tiktokPlaceholders = [
@@ -374,22 +382,42 @@ export default function RitrattoPage() {
 
       <section className="section-shell py-16 sm:py-24">
         <Container>
-          <div className="mb-12 max-w-3xl">
-            <p className="editorial-label">Capitoli del libro</p>
-            <h2 className="editorial-title-depth mt-5 max-w-[13ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-              Cosa contiene il tuo Ritratto
-            </h2>
-          </div>
-          <SurfaceCard className="p-7 sm:p-10">
-            <ul className="grid gap-x-8 gap-y-4 text-base leading-8 text-ivory/80 sm:grid-cols-2 lg:grid-cols-3">
-              {bookChapters.map((item) => (
-                <li key={item} className="flex gap-3 border-t border-gold/[0.08] pt-4">
-                  <span className="mt-3 h-1.5 w-1.5 shrink-0 rounded-full bg-gold/75" />
-                  <span>{item}</span>
-                </li>
-              ))}
-            </ul>
-          </SurfaceCard>
+          <Reveal>
+            <div className="mx-auto max-w-5xl border-y border-gold/[0.10] py-12 sm:py-16 lg:py-20">
+              <div className="mx-auto max-w-3xl text-center">
+                <p className="editorial-label">INDICE</p>
+                <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
+                  Un libro. Sedici capitoli. Una sola storia.
+                </h2>
+                <p className="mx-auto mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
+                  Ogni capitolo è scritto esclusivamente per te e dialoga con
+                  quelli precedenti, trasformando il Ritratto in un&apos;unica
+                  narrazione personale.
+                </p>
+              </div>
+
+              <ol className="mx-auto mt-14 grid max-w-4xl gap-x-16 gap-y-0 sm:mt-16 lg:grid-cols-2">
+                {bookChapters.map((chapter, index) => (
+                  <li
+                    key={chapter}
+                    className="grid grid-cols-[3.25rem_1fr] gap-5 border-t border-gold/[0.08] py-5 sm:grid-cols-[4rem_1fr] sm:py-6"
+                  >
+                    <span className="pt-1 text-xs font-semibold uppercase tracking-[0.28em] text-gold/72 sm:text-sm">
+                      {String(index + 1).padStart(2, "0")}
+                    </span>
+                    <span className="font-display text-[1.75rem] leading-[1.16] text-ivory sm:text-[2.15rem]">
+                      {chapter}
+                    </span>
+                  </li>
+                ))}
+              </ol>
+
+              <p className="mx-auto mt-12 max-w-[54ch] text-center text-sm leading-7 text-ivory/60 sm:mt-14">
+                Ogni capitolo viene scritto esclusivamente per la persona che lo
+                riceve. Nessun Ritratto è uguale a un altro.
+              </p>
+            </div>
+          </Reveal>
         </Container>
       </section>
 
