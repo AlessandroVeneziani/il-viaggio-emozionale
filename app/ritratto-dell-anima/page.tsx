@@ -46,21 +46,21 @@ const creationSteps = [
 ] as const;
 
 const bookChapters = [
-  "Premessa",
-  "Il tuo cielo",
-  "La tua matrice",
-  "Il tuo nome",
+  "Prologo",
+  "Il cielo",
+  "La matrice",
+  "Il nome",
   "Il passato dell'Anima",
   "Gli archetipi",
   "Talenti e sfide",
-  "I tuoi chakra",
+  "I chakra",
   "I cicli della vita",
   "Il nodo karmico",
   "Le relazioni",
   "La carta oracolare",
   "L'animale guida",
   "Il Patto con Te",
-  "Sintesi finale",
+  "Epilogo",
 ] as const;
 
 const tiktokPlaceholders = [
@@ -400,8 +400,7 @@ export default function RitrattoPage() {
                 </h2>
                 <p className="mx-auto mt-6 max-w-[58ch] text-base leading-[1.85] text-ivory/76 sm:text-[1.06rem]">
                   Ogni capitolo è scritto esclusivamente per te e dialoga con
-                  quelli precedenti, trasformando il Ritratto in un&apos;unica
-                  narrazione personale.
+                  gli altri, come le parti di una stessa narrazione personale.
                 </p>
               </div>
 
@@ -441,25 +440,31 @@ export default function RitrattoPage() {
               <div className="mt-8 grid gap-6 text-lg leading-[1.95] text-ivory/80 lg:grid-cols-2">
                 <div className="space-y-5">
                   <p>
-                    Il Ritratto è pensato per essere attraversato più volte: una
-                    prima volta come scoperta, poi come libro da riaprire nei
-                    momenti in cui qualcosa cambia.
+                    Chi riceve il Ritratto spesso lo attraversa una prima volta
+                    come scoperta. Poi lo riapre più avanti, quando una scelta
+                    cambia forma, una domanda ritorna o una pagina sembra
+                    aspettare proprio quel momento.
                   </p>
                   <p>
-                    Le parole di chi lo riceve raccontano spesso questo: non un
-                    contenuto consumato in fretta, ma un oggetto che accompagna.
+                    Alla seconda lettura emergono dettagli rimasti silenziosi.
+                    Dopo settimane o mesi, alcune frasi sembrano parlare con una
+                    precisione nuova. Il testo è lo stesso, ma lo sguardo di chi
+                    legge non lo è più.
                   </p>
                   <p>
-                    Per alcune persone sarà sufficiente. Per altre diventerà il
-                    primo ingresso naturale in un percorso più ampio, fatto di
-                    sessioni individuali, domande e nuovi capitoli da attraversare.
+                    Non cambia il libro. Cambia il lettore.
                   </p>
                 </div>
                 <div className="space-y-5">
                   <p>
-                    Per questo le recensioni vengono raccolte come tracce
-                    narrative: piccoli segni di come un manoscritto personale
-                    possa diventare presenza, memoria e orientamento.
+                    Per questo non è pensato per essere consumato in fretta. È
+                    un oggetto da tenere vicino, da lasciare sedimentare, da
+                    ritrovare quando la vita chiede un modo diverso di leggere
+                    ciò che sta accadendo.
+                  </p>
+                  <p>
+                    Alcuni libri si leggono una volta. Altri crescono insieme a
+                    chi li legge.
                   </p>
                   <ButtonLink href="/contatti" variant="secondary">
                     Raccontami il tuo momento
