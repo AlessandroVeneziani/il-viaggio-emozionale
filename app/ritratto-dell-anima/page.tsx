@@ -37,7 +37,7 @@ const previewPages = [
 ] as const;
 
 const creationSteps = [
-  "Ricevo i dati",
+  "Ricevo la tua storia",
   "Studio",
   "Scrivo",
   "Revisiono",
@@ -60,7 +60,7 @@ const bookChapters = [
   "La carta oracolare",
   "L'animale guida",
   "Il Patto con Te",
-  "Epilogo",
+  "Sintesi finale",
 ] as const;
 
 const tiktokPlaceholders = [
