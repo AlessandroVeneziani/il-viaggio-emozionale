@@ -8,11 +8,21 @@ import { SurfaceCard } from "@/components/ui/surface-card";
 import { laboratorioPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = buildMetadata({
-  title: laboratorioPage.hero.title,
-  description: laboratorioPage.hero.subtitle,
-  path: "/laboratorio-dell-anima",
-});
+export const metadata = {
+  ...buildMetadata({
+    title: laboratorioPage.hero.title,
+    description: laboratorioPage.hero.subtitle,
+    path: "/laboratorio-dell-anima",
+  }),
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
 
 export default function LaboratorioPage() {
   return (

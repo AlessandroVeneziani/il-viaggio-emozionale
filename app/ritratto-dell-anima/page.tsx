@@ -25,23 +25,23 @@ const promisePoints = [
 
 const previewPages = [
   {
-    title: "Copertina personale",
-    text: "Spazio predisposto per mostrare il volto editoriale del tuo Ritratto.",
+    title: "Un libro personale",
+    text: "Una copertina pensata per custodire la tua storia.",
     image: "/images/ritratto-dell-anima/01-ritratto-anima-hero.png",
     alt: "Copertina del Ritratto dell'Anima con fiocco dorato su marmo scuro.",
     objectPosition: "center center",
   },
   {
-    title: "Capitoli interni",
-    text: "Anteprima futura delle pagine, della composizione e del ritmo del manoscritto.",
-    image: "/images/ritratto-dell-anima/03-ritratto-anima-lettura-new.png",
+    title: "Pagine da attraversare",
+    text: "Capitoli, simboli e domande costruiti per essere riletti nel tempo.",
+    image: "/images/ritratto-dell-anima/03-ritratto-anima-lettura-a4.png",
     alt: "Libro del Ritratto dell'Anima aperto durante la lettura.",
     objectPosition: "center center",
   },
   {
-    title: "Dettagli dell'edizione",
-    text: "Texture, carta, titolo, nome e segni distintivi dell'oggetto finale.",
-    image: "/images/ritratto-dell-anima/02-ritratto-anima-dettaglio1.png",
+    title: "Materia e dettagli",
+    text: "Carta, luce e segni distintivi di un oggetto che resta.",
+    image: "/images/ritratto-dell-anima/02-ritratto-anima-dettaglio-senza-rilegatura.png",
     alt: "Dettaglio della copertina del Ritratto dell'Anima con albero dorato.",
     objectPosition: "center center",
   },
@@ -215,13 +215,13 @@ export default function RitrattoPage() {
       <section className="section-shell py-16 sm:py-24">
         <Container>
           <div className="mb-12 max-w-3xl">
-            <p className="editorial-label">Anteprima editoriale</p>
+            <p className="editorial-label">UN OGGETTO DA CUSTODIRE</p>
             <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
               Sfoglia il Ritratto
             </h2>
             <p className="mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
-              Questa sezione è predisposta per accogliere le immagini future del
-              libro: copertina, pagine interne e dettagli dell&apos;edizione.
+              Tre immagini per entrare nella materia del Ritratto: la copertina,
+              le pagine che lo compongono e i dettagli dell&apos;edizione.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">

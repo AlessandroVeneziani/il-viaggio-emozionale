@@ -67,50 +67,6 @@ export default function PercorsiPage() {
             ))}
           </div>
 
-          <div className="mt-14 border-t border-gold/10 pt-10 sm:mt-16 sm:pt-12">
-            <div className="grid gap-8 lg:grid-cols-[0.84fr_1.16fr]">
-              <div>
-                <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold">
-                  Continuità editoriale
-                </p>
-                <h2 className="mt-4 max-w-[15ch] font-display text-[2.2rem] leading-[1.08] text-ivory sm:text-[2.75rem]">
-                  {percorsiPage.continuityTools.title}
-                </h2>
-              </div>
-              <div>
-                <p className="max-w-[62ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.04rem]">
-                  {percorsiPage.continuityTools.text}
-                </p>
-                <div className="mt-8 grid gap-4 sm:grid-cols-2">
-                  {percorsiPage.continuityTools.items.map((item) => (
-                    <article
-                      key={item.title}
-                      className="border-t border-gold/10 pt-6"
-                    >
-                      <div className="flex flex-wrap items-center gap-3">
-                        <p className="text-xs font-semibold uppercase tracking-[0.24em] text-gold/82">
-                          {item.kicker}
-                        </p>
-                        <span className="rounded-full border border-gold/15 px-3 py-1 text-[0.68rem] font-semibold uppercase tracking-[0.22em] text-ivory/58">
-                          {item.ctaLabel}
-                        </span>
-                      </div>
-                      <h3 className="mt-4 font-display text-[1.85rem] leading-[1.1] text-ivory sm:text-[2.1rem]">
-                        {item.title}
-                      </h3>
-                      <p className="mt-5 text-base leading-[1.85] text-ivory/72">
-                        {item.text}
-                      </p>
-                      <p className="mt-4 text-sm leading-7 text-ivory/52">
-                        {item.details}
-                      </p>
-                    </article>
-                  ))}
-                </div>
-              </div>
-            </div>
-          </div>
-
           <div className="mt-10 border-t border-gold/10 pt-8">
             <p className="max-w-3xl text-lg leading-[1.9] text-ivory/72">
               {percorsiPage.finalNote}

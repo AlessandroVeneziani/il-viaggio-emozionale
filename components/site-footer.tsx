@@ -22,10 +22,6 @@ const footerLinks = [
     label: "Soul Design",
     href: "/soul-design",
   },
-  {
-    label: "Meditazioni",
-    href: "/meditazioni-guidate",
-  },
 ] as const;
 
 const footerContactLinks = [

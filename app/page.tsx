@@ -1,4 +1,3 @@
-import { ExperiencesToolsSection } from "@/components/sections/experiences-tools";
 import { FinalCtaSection } from "@/components/sections/final-cta";
 import { FounderPreviewSection } from "@/components/sections/founder-preview";
 import { GoogleReviewsReadySection } from "@/components/sections/google-reviews-ready";
@@ -25,7 +24,6 @@ export default function HomePage() {
       <MethodGrid />
       <SoulDesignSpotlightSection />
       <PathGrid />
-      <ExperiencesToolsSection />
       <GoogleReviewsReadySection />
       <FounderPreviewSection />
       <FinalCtaSection />

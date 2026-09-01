@@ -14,9 +14,6 @@ export default function sitemap(): MetadataRoute.Sitemap {
 
   const servicePages: MetadataRoute.Sitemap = [
     "/lettura-evolutiva",
-    "/meditazioni-guidate",
-    "/laboratorio-dell-anima",
-    "/shop-editoriale",
   ].map((path) => ({
     url: new URL(path, siteConfig.url).toString(),
     lastModified: now,

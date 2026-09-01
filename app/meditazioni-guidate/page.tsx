@@ -7,11 +7,21 @@ import { Container } from "@/components/ui/container";
 import { meditationsPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
 
-export const metadata = buildMetadata({
-  title: meditationsPage.hero.title,
-  description: meditationsPage.hero.subtitle,
-  path: "/meditazioni-guidate",
-});
+export const metadata = {
+  ...buildMetadata({
+    title: meditationsPage.hero.title,
+    description: meditationsPage.hero.subtitle,
+    path: "/meditazioni-guidate",
+  }),
+  robots: {
+    index: false,
+    follow: false,
+    googleBot: {
+      index: false,
+      follow: false,
+    },
+  },
+};
 
 export default function MeditationsPage() {
   return (
