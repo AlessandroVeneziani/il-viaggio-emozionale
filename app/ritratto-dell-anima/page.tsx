@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -25,14 +27,23 @@ const previewPages = [
   {
     title: "Copertina personale",
     text: "Spazio predisposto per mostrare il volto editoriale del tuo Ritratto.",
+    image: "/images/ritratto-dell-anima/01-ritratto-anima-hero.png",
+    alt: "Copertina del Ritratto dell'Anima con fiocco dorato su marmo scuro.",
+    objectPosition: "center center",
   },
   {
     title: "Capitoli interni",
     text: "Anteprima futura delle pagine, della composizione e del ritmo del manoscritto.",
+    image: "/images/ritratto-dell-anima/03-ritratto-anima-lettura-new.png",
+    alt: "Libro del Ritratto dell'Anima aperto durante la lettura.",
+    objectPosition: "center center",
   },
   {
     title: "Dettagli dell'edizione",
     text: "Texture, carta, titolo, nome e segni distintivi dell'oggetto finale.",
+    image: "/images/ritratto-dell-anima/02-ritratto-anima-dettaglio1.png",
+    alt: "Dettaglio della copertina del Ritratto dell'Anima con albero dorato.",
+    objectPosition: "center center",
   },
 ] as const;
 
@@ -61,21 +72,6 @@ const bookChapters = [
   "L'animale guida",
   "Il Patto con Te",
   "Sintesi finale",
-] as const;
-
-const tiktokPlaceholders = [
-  {
-    title: "Dentro un capitolo",
-    text: "Video futuro dedicato al modo in cui un tema personale diventa pagina.",
-  },
-  {
-    title: "Il processo di scrittura",
-    text: "Video futuro sul passaggio dai dati al manoscritto finale.",
-  },
-  {
-    title: "L'oggetto editoriale",
-    text: "Video futuro su carta, copertina, dettagli e conservazione.",
-  },
 ] as const;
 
 const portraitEditions = [
@@ -231,10 +227,15 @@ export default function RitrattoPage() {
           <div className="grid gap-5 lg:grid-cols-3">
             {previewPages.map((page) => (
               <SurfaceCard key={page.title} className="p-6 sm:p-7">
-                <div className="flex aspect-[4/5] items-center justify-center rounded-[24px] border border-dashed border-gold/18 bg-ivory/[0.025] px-8 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-[0.3em] text-gold/72">
-                    Immagine in arrivo
-                  </p>
+                <div className="relative aspect-[4/5] overflow-hidden rounded-[24px] border border-gold/14 bg-ivory/[0.025] shadow-[0_24px_60px_rgba(0,0,0,0.24)]">
+                  <Image
+                    src={page.image}
+                    alt={page.alt}
+                    fill
+                    sizes="(min-width: 1024px) 31vw, (min-width: 640px) 60vw, 100vw"
+                    className="object-cover"
+                    style={{ objectPosition: page.objectPosition }}
+                  />
                 </div>
                 <p className="mt-6 font-display text-[1.85rem] leading-[1.12] text-ivory">
                   {page.title}
@@ -287,35 +288,8 @@ export default function RitrattoPage() {
         <Container>
           <Reveal>
             <SurfaceCard className="mx-auto max-w-6xl p-6 sm:p-8 lg:p-10">
-              <div className="grid gap-10 lg:grid-cols-[0.45fr_0.55fr] lg:items-stretch">
-                <div className="relative min-h-[420px] overflow-hidden rounded-[30px] border border-gold/[0.08] bg-[linear-gradient(180deg,rgba(244,241,234,0.055),rgba(244,241,234,0.016))] sm:min-h-[520px]">
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-0 opacity-[0.12]"
-                    style={{
-                      backgroundImage:
-                        'url("/images/backgrounds/numeric-texture.png")',
-                      backgroundPosition: "center",
-                      backgroundSize: "cover",
-                    }}
-                  />
-                  <div
-                    aria-hidden="true"
-                    className="absolute inset-6 rounded-[24px] border border-dashed border-gold/18"
-                  />
-                  <div className="relative z-10 flex h-full min-h-[420px] items-center justify-center px-8 text-center sm:min-h-[520px]">
-                    <div>
-                      <p className="editorial-label text-gold/78">
-                        Ritratto autore
-                      </p>
-                      <p className="mt-5 text-sm leading-7 text-ivory/58">
-                        Placeholder fotografico verticale
-                      </p>
-                    </div>
-                  </div>
-                </div>
-
-                <div className="flex flex-col justify-center py-2 lg:py-8">
+              <div className="mx-auto max-w-3xl">
+                <div className="flex flex-col py-2 lg:py-8">
                   <p className="editorial-label">L&apos;AUTORE</p>
                   <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
                     Chi scrive questi libri?
@@ -353,39 +327,6 @@ export default function RitrattoPage() {
               </div>
             </SurfaceCard>
           </Reveal>
-        </Container>
-      </section>
-
-      <section className="section-shell py-16 sm:py-24">
-        <Container>
-          <div className="mb-12 max-w-3xl">
-            <p className="editorial-label">Dentro il Ritratto</p>
-            <h2 className="editorial-title-depth mt-5 max-w-[13ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-              Tre frammenti video
-            </h2>
-            <p className="mt-7 max-w-[56ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
-              Uno spazio pronto per accogliere contenuti TikTok che mostrino il
-              libro, il processo di scrittura e i dettagli editoriali senza
-              trasformare il Ritratto in un prodotto freddo.
-            </p>
-          </div>
-          <div className="grid gap-5 lg:grid-cols-3">
-            {tiktokPlaceholders.map((video) => (
-              <SurfaceCard key={video.title} className="p-6 sm:p-7">
-                <div className="flex aspect-[9/16] items-center justify-center rounded-[28px] border border-gold/12 bg-[linear-gradient(180deg,rgba(244,241,234,0.045),rgba(244,241,234,0.014))] px-7 text-center">
-                  <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold/74">
-                    TikTok placeholder
-                  </p>
-                </div>
-                <p className="mt-6 font-display text-[1.8rem] leading-[1.12] text-ivory">
-                  {video.title}
-                </p>
-                <p className="mt-4 text-base leading-8 text-ivory/70">
-                  {video.text}
-                </p>
-              </SurfaceCard>
-            ))}
-          </div>
         </Container>
       </section>
 
