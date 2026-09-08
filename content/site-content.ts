@@ -71,7 +71,7 @@ export const featuredPaths = [
     image: "/images/brand/ritratto-dell-anima.png",
     imageAlt: "Copertina del Ritratto dell'Anima",
     detailLabel: "Investimento",
-    detailValue: "Da 150 €",
+    detailValue: "Da 250 €",
     ctaLabel: "Scopri il Ritratto",
   },
   {
@@ -121,7 +121,7 @@ export const ritrattoHomeSpotlight = {
   lines: [
     "Non è una predizione. È una lettura della tua struttura personale.",
     "Numeri, cicli e simboli diventano una mappa più chiara del passaggio che stai vivendo.",
-    "Disponibile in digitale, stampato o premium, a partire da 150 €.",
+    "Disponibile in digitale, stampato o premium, a partire da 250 €.",
   ],
   cta: {
     label: "Scopri il Ritratto",
@@ -239,62 +239,6 @@ export const seoTopics = [
     text: "Ogni lettura si chiude con un orientamento concreto, utile nella vita quotidiana e nelle scelte reali.",
   },
 ] as const;
-
-export const experiencesToolsSection = {
-  eyebrow: "Strumenti di continuità",
-  title: "Il lavoro non finisce\nnella lettura.",
-  description:
-    "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
-  closing:
-    "Una collezione editoriale in evoluzione: pratiche, meditazioni, scrittura simbolica ed esercizi guidati che nasceranno progressivamente per accompagnare il lavoro anche fuori dalla sessione.",
-  cards: [
-    {
-      title: "Laboratorio dell'Anima",
-      kicker: "Percorso di integrazione",
-      subtitle: "Quando ciò che hai compreso ha bisogno di pratica e continuità.",
-      body:
-        "Un libro-percorso per trasformare ciò che emerge in ritmo, scrittura, presenza e struttura personale.",
-      href: "/laboratorio-dell-anima",
-      ctaLabel: "Entra nel Laboratorio",
-      mode: "book",
-      image: "/images/brand/laboratorio-libro.webp",
-      imageAlt:
-        "Libro del Laboratorio dell'Anima come percorso editoriale di integrazione",
-    },
-    {
-      title: "Meditazioni Guidate",
-      kicker: "Pratica di ascolto",
-      subtitle: "Uno spazio per rallentare e ritrovare ascolto.",
-      body:
-        "Pratiche audio per integrare ciò che emerge e tornare ad ascoltare il corpo.",
-      href: "/meditazioni-guidate",
-      ctaLabel: "Ascolta le meditazioni",
-      mode: "ambient",
-      image: "",
-      imageAlt: "",
-    },
-    {
-      title: "Pratiche e percorsi\nin costruzione",
-      kicker: "Sezione in evoluzione",
-      subtitle: "Materiali futuri per accompagnare il lavoro anche fuori dalla sessione.",
-      body:
-        "Una sezione in evoluzione dedicata a meditazioni, esercizi simbolici e contenuti guidati per portare il metodo nella vita quotidiana, con tempi e forme che verranno aperti progressivamente.",
-      href: "/shop-editoriale",
-      ctaLabel: "Esplora gli strumenti editoriali",
-      mode: "text",
-      image: "",
-      imageAlt: "",
-      items: [
-        "scrittura simbolica",
-        "esercizi simbolici",
-        "journaling archetipico",
-        "pratiche guidate",
-        "meditazioni future",
-        "percorsi audio in sviluppo",
-      ],
-    },
-  ],
-} as const;
 
 export const soulDesignHomeSpotlight = {
   eyebrow: "Soul Design",
@@ -562,7 +506,7 @@ export const percorsiPage = {
       title: "Ritratto dell'Anima",
       kicker: "Porta d'ingresso",
       text: "La mappa identitaria personale: numeri, simboli, archetipi e cicli di vita per leggere da dove parti, cosa stai attraversando e quale direzione interiore sta emergendo.",
-      details: "Digitale, stampato o completo · da 150 €",
+      details: "Digitale, stampato o completo · da 250 €",
       href: "/ritratto-dell-anima",
       ctaLabel: "Scopri il Ritratto",
     },
@@ -584,75 +528,8 @@ export const percorsiPage = {
       ctaLabel: "Prenota una Sessione Evolutiva",
     },
   ],
-  continuityTools: {
-    title: "Strumenti di continuità — in evoluzione",
-    text: "Pratiche scritte, meditazioni guidate e contenuti di integrazione sono in fase di sviluppo per accompagnare il lavoro anche fuori dalle sessioni.",
-    items: [
-      {
-        title: "Laboratorio dell'Anima",
-        kicker: "In costruzione",
-        text: "Pratiche scritte e simboliche per trasformare ciò che emerge in esercizio, presenza e integrazione.",
-        details: "Strumento editoriale in evoluzione",
-        href: "/laboratorio-dell-anima",
-        ctaLabel: "In costruzione",
-      },
-      {
-        title: "Meditazioni Guidate",
-        kicker: "In arrivo",
-        text: "Audio e pratiche di ascolto per tornare al corpo, sedimentare il passaggio e accompagnare il cambiamento.",
-        details: "Pratiche audio in sviluppo",
-        href: "/meditazioni-guidate",
-        ctaLabel: "In arrivo",
-      },
-    ],
-  },
   finalNote:
     "Ogni percorso nasce per offrire un linguaggio più leggibile a ciò che oggi, dentro di te, chiede orientamento.",
-};
-
-export const meditationsPage = {
-  hero: {
-    kicker: "Pratiche di ascolto",
-    title: "Meditazioni Guidate",
-    displayTitle: "Meditazioni\nGuidate",
-    subtitle:
-      "Audio e pratiche pensate per accompagnarti nei passaggi in cui serve rallentare, sentire e tornare al centro.",
-  },
-  intro: [
-    "Le meditazioni guidate nascono per creare continuità tra una lettura e la vita quotidiana. Non sono contenuti da consumare in fretta, ma spazi da abitare con presenza.",
-    "Ogni traccia è pensata per accompagnare un momento preciso: un blocco emotivo, una soglia interiore, un bisogno di ascolto o di orientamento più sottile.",
-  ],
-  pillars: [
-    "Pratiche audio per ritrovare ascolto e centratura",
-    "Tracce utili nei passaggi di cambiamento o confusione",
-    "Un tono calmo, sobrio e privo di enfasi spirituale",
-    "Uno spazio di integrazione tra intuizione e quotidiano",
-  ],
-  promise:
-    "Quando rallenti davvero, ciò che stai vivendo smette di fare rumore e inizia a mostrarsi con più chiarezza.",
-};
-
-export const editorialToolsPage = {
-  hero: {
-    kicker: "Collezione editoriale",
-    title: "Strumenti Editoriali",
-    displayTitle: "Strumenti\nEditoriali",
-    subtitle:
-      "Una piccola collezione di materiali simbolici pensati per dare continuità al percorso e accompagnarti nel quotidiano.",
-  },
-  intro: [
-    "Più che uno shop, una raccolta curata di strumenti da portare con te: ritratti stampati, libri, quaderni rituali e materiali che aiutano a tenere aperta la relazione con ciò che hai compreso.",
-    "Alcuni materiali sono già disponibili su richiesta, altri nasceranno progressivamente come estensione naturale del metodo.",
-    "Ogni oggetto nasce per essere abitato con calma. Per diventare memoria viva del percorso, non semplice acquisto impulsivo.",
-  ],
-  pillars: [
-    "Ritratti stampati e versioni editoriali del lavoro simbolico",
-    "Quaderni rituali e materiali da attraversare nel tempo",
-    "Strumenti pensati per sostenere presenza, ritmo e continuità",
-    "Una collezione piccola, curata e coerente con il metodo",
-  ],
-  promise:
-    "Alcune trasformazioni hanno bisogno di restare tra le mani, non solo nella mente.",
 };
 
 export const ritrattoPage = {
@@ -677,17 +554,17 @@ export const ritrattoPage = {
   options: [
     {
       title: "Digitale",
-      price: "150 €",
+      price: "250 €",
       text: "Per iniziare con un PDF personale, essenziale e profondo.",
     },
     {
       title: "Stampato",
-      price: "250 €",
+      price: "350 €",
       text: "Per custodire la lettura come un oggetto da tenere, rileggere e ritrovare.",
     },
     {
       title: "Libro dell'Anima — Edizione Completa",
-      price: "350 €",
+      price: "450 €",
       text: "Per chi vuole la versione più completa, curata e simbolicamente potente del percorso.",
     },
   ],
@@ -713,26 +590,6 @@ export const tarocchiPage = {
     "Orientamento simbolico e pratico",
   ],
   note: "Ogni sessione è pensata per trasformare ciò che senti in una direzione più concreta e praticabile.",
-};
-
-export const laboratorioPage = {
-  hero: {
-    kicker: "Percorso scritto e rituale",
-    title: "Laboratorio dell'Anima",
-    displayTitle: "Laboratorio\ndell'Anima",
-    subtitle:
-      "Uno spazio da attraversare con lentezza, immagini e pratica per dare forma a un cambiamento interiore reale.",
-  },
-  paragraphs: [
-    "Il Laboratorio dell'Anima è un libro-percorso pensato per chi sente che qualcosa chiede ascolto ma non vuole perdersi nel rumore della crescita personale generica.",
-    "È una struttura fatta di archetipi, alchimia, esercizi e pagine da abitare. Un oggetto da usare, non solo da leggere.",
-  ],
-  bullets: [
-    "Racconti e immagini guida",
-    "Pratiche quotidiane e domande attivanti",
-    "Spazio di scrittura e riflessione personale",
-  ],
-  note: "È una soglia. Un luogo scritto in cui allenare presenza, ascolto e trasformazione.",
 };
 
 export const aboutPage = {
@@ -771,7 +628,7 @@ export const aboutPage = {
       ],
     },
     {
-      title: "Perché esiste Il Viaggio Emozionale",
+      title: "Perché existe Il Viaggio Emozionale",
       paragraphs: [
         "Il progetto esiste perché molte persone sensibili, profonde e intelligenti non hanno bisogno di altro rumore spirituale. Hanno bisogno di una lettura onesta e ben costruita.",
         "Il Viaggio Emozionale nasce per accompagnare il passaggio tra intuizione e direzione personale con un'estetica forte, un pensiero leggibile e un metodo realmente utile.",

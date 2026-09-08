@@ -37,7 +37,7 @@ export function MethodGrid() {
               <h3 className="mt-7 font-display text-[2rem] leading-[1.12] text-ivory">
                 {step.title}
               </h3>
-                  <p className="mt-4 max-w-[26ch] text-base leading-[1.95] text-ivory/76">
+                  <p className="mt-4 max-w-[26ch] text-base leading-[1.95] text-ivory/90">
                     {step.description}
                   </p>
                 </SurfaceCard>
@@ -47,7 +47,7 @@ export function MethodGrid() {
         </div>
         <Reveal delay={0.18} className="mt-10">
           <div className="pt-1 text-center xl:border-t xl:border-gold/[0.08] xl:pt-6">
-            <p className="mx-auto max-w-[52ch] text-base leading-[1.95] text-ivory/68 sm:text-[1.03rem]">
+            <p className="mx-auto max-w-[52ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.03rem]">
               Numero, immagine e corpo non vengono usati per spiegarti
               dall&apos;esterno, ma per offrirti una mappa più leggibile del
               presente e della direzione che oggi chiede forma.

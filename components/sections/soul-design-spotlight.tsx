@@ -17,7 +17,7 @@ export function SoulDesignSpotlightSection() {
               <h2 className="editorial-title-depth mt-6 max-w-[14ch] whitespace-pre-line font-display text-[2.7rem] leading-[1.1] sm:text-[3.45rem]">
                 {soulDesignHomeSpotlight.title}
               </h2>
-              <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/80 sm:text-[1.04rem]">
+              <p className="mt-7 max-w-[58ch] text-base leading-[2] text-ivory/90 sm:text-[1.04rem]">
                 {soulDesignHomeSpotlight.description}
               </p>
               <WelcomeBackHome className="mt-9" />
@@ -25,7 +25,7 @@ export function SoulDesignSpotlightSection() {
                 {soulDesignHomeSpotlight.lines.map((line) => (
                   <p
                     key={line}
-                    className="pt-1 text-sm leading-7 text-ivory/66 sm:text-base xl:border-t xl:border-gold/[0.08] xl:pt-4"
+                    className="pt-1 text-sm leading-7 text-ivory/80 sm:text-base xl:border-t xl:border-gold/[0.08] xl:pt-4"
                   >
                     {line}
                   </p>
@@ -39,7 +39,7 @@ export function SoulDesignSpotlightSection() {
                   <p className="mt-3 font-display text-[2rem] leading-none text-ivory">
                     150 €
                   </p>
-                  <p className="mt-4 text-sm leading-7 text-ivory/68">
+                  <p className="mt-4 text-sm leading-7 text-ivory/80">
                     Sessione introduttiva più ampia, dedicata all&apos;apertura del lavoro e alla prima lettura del Viaggio Emozionale.
                   </p>
                 </div>
@@ -50,7 +50,7 @@ export function SoulDesignSpotlightSection() {
                   <p className="mt-3 font-display text-[2rem] leading-none text-ivory">
                     100 €
                   </p>
-                  <p className="mt-4 text-sm leading-7 text-ivory/68">
+                  <p className="mt-4 text-sm leading-7 text-ivory/80">
                     Sessioni di approfondimento e riallineamento, della durata di circa 60 minuti.
                   </p>
                 </div>
@@ -87,13 +87,13 @@ export function SoulDesignSpotlightSection() {
                     <p className="text-xs font-semibold uppercase tracking-[0.28em] text-gold">
                       {label}
                     </p>
-                    <p className="mt-3 max-w-[22ch] text-sm leading-7 text-ivory/70">
+                    <p className="mt-3 max-w-[22ch] text-sm leading-7 text-ivory/80">
                       {text}
                     </p>
                   </div>
                 ))}
               </div>
-              <p className="relative mt-8 max-w-[25ch] font-display text-[1.45rem] leading-[1.46] text-ivory/84 sm:text-[1.7rem]">
+              <p className="relative mt-8 max-w-[25ch] font-display text-[1.45rem] leading-[1.46] text-ivory/90 sm:text-[1.7rem]">
                 L&apos;essere umano non deve essere aggiustato.
                 <br className="hidden sm:block" />
                 Deve essere riallineato.

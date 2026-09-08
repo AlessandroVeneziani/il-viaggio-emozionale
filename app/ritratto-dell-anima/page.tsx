@@ -86,7 +86,7 @@ const portraitEditions = [
       "consegna digitale",
       "accesso immediato al primo passo del viaggio",
     ],
-    price: "150 €",
+    price: "250 €",
     featured: false,
   },
   {
@@ -101,7 +101,7 @@ const portraitEditions = [
       "copertina personalizzata con il tuo nome",
       "dedica iniziale firmata",
     ],
-    price: "250 €",
+    price: "350 €",
     featured: false,
   },
   {
@@ -117,7 +117,7 @@ const portraitEditions = [
       "Diario del Viaggio",
       "spazio per annotazioni e riflessioni",
     ],
-    price: "350 €",
+    price: "450 €",
     featured: true,
   },
 ] as const;
@@ -146,7 +146,7 @@ const faqs = [
   {
     question: "Quale edizione dovrei scegliere?",
     answer:
-      "Non esiste un'edizione migliore in assoluto. Il digitale apre la porta. Lo stampato trasforma il Ritratto in un oggetto da custodire. Il Libro dell'Anima — Edizione Completa amplia l'esperienza e la rende più abitabile nel tempo.",
+      "Non existe un'edizione migliore in assoluto. Il digitale apre la porta. Lo stampato trasforma il Ritratto in un oggetto da custodire. Il Libro dell'Anima — Edizione Completa amplia l'esperienza e la rende più abitabile nel tempo.",
   },
 ] as const;
 
@@ -287,43 +287,41 @@ export default function RitrattoPage() {
       <section className="section-shell py-16 sm:py-24">
         <Container>
           <Reveal>
-            <SurfaceCard className="mx-auto max-w-6xl p-6 sm:p-8 lg:p-10">
-              <div className="mx-auto max-w-3xl">
-                <div className="flex flex-col py-2 lg:py-8">
-                  <p className="editorial-label">L&apos;AUTORE</p>
-                  <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                    Chi scrive questi libri?
-                  </h2>
-                  <div className="mt-8 max-w-[62ch] space-y-5 text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
-                    <p>
-                      Non ho creato il Ritratto dell&apos;Anima per offrire una
-                      risposta immediata o una lettura standardizzata.
-                    </p>
-                    <p>
-                      L&apos;ho immaginato come un libro personale: un luogo in
-                      cui simboli, numeri, archetipi e domande possano
-                      diventare capitoli, passaggi e immagini interiori dentro
-                      una narrazione autentica.
-                    </p>
-                    <p>
-                      Ogni Ritratto nasce da un processo manuale di studio,
-                      scrittura e revisione. Prima osservo le coordinate
-                      simboliche, poi cerco il filo narrativo che può renderle
-                      leggibili dentro una storia personale.
-                    </p>
-                    <p>
-                      Questo tempo è parte del metodo: nessun libro viene
-                      composto in serie, perché nessuna storia arriva nello stesso
-                      modo.
-                    </p>
-                    <p>Per questo motivo nessun libro è uguale a un altro.</p>
-                    <p>Ogni persona porta una storia diversa.</p>
-                    <p>Ogni libro nasce per custodirla.</p>
-                  </div>
-                  <p className="editorial-title-depth mt-14 max-w-[14ch] whitespace-pre-line font-display text-[2rem] leading-[1.18] text-ivory sm:mt-16 sm:text-[2.55rem]">
-                    {"Ogni persona ha una storia.\nIo la trasformo in un libro."}
+            <SurfaceCard className="mx-auto max-w-[820px] p-6 sm:p-8 lg:p-10">
+              <div className="flex flex-col py-2 lg:py-8">
+                <p className="editorial-label">L&apos;AUTORE</p>
+                <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
+                  Chi scrive questi libri?
+                </h2>
+                <div className="mt-8 max-w-[62ch] space-y-5 text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
+                  <p>
+                    Non ho creato il Ritratto dell&apos;Anima per offrire una
+                    risposta immediata o una lettura standardizzata.
                   </p>
+                  <p>
+                    L&apos;ho immaginato come un libro personale: un luogo in
+                    cui simboli, numeri, archetipi e domande possano
+                    diventare capitoli, passaggi e immagini interiori dentro
+                    una narrazione autentica.
+                  </p>
+                  <p>
+                    Ogni Ritratto nasce da un processo manuale di studio,
+                    scrittura e revisione. Prima osservo le coordinate
+                    simboliche, poi cerco il filo narrativo che può renderle
+                    leggibili dentro una storia personale.
+                  </p>
+                  <p>
+                    Questo tempo è parte del metodo: nessun libro viene
+                    composto in serie, perché nessuna storia arriva nello stesso
+                    modo.
+                  </p>
+                  <p>Per questo motivo nessun libro è uguale a un altro.</p>
+                  <p>Ogni persona porta una storia diversa.</p>
+                  <p>Ogni libro nasce per custodirla.</p>
                 </div>
+                <p className="editorial-title-depth mt-14 max-w-[14ch] whitespace-pre-line font-display text-[2rem] leading-[1.18] text-ivory sm:mt-16 sm:text-[2.55rem]">
+                  {"Ogni persona ha una storia.\nIo la trasformo in un libro."}
+                </p>
               </div>
             </SurfaceCard>
           </Reveal>
@@ -407,9 +405,6 @@ export default function RitrattoPage() {
                     Alcuni libri si leggono una volta. Altri crescono insieme a
                     chi li legge.
                   </p>
-                  <ButtonLink href="/contatti" variant="secondary">
-                    Raccontami il tuo momento
-                  </ButtonLink>
                 </div>
               </div>
             </SurfaceCard>
@@ -498,6 +493,22 @@ export default function RitrattoPage() {
               </SurfaceCard>
             ))}
           </div>
+
+          <Reveal className="mt-16">
+            <SurfaceCard className="mx-auto max-w-3xl p-8 text-center sm:p-10">
+              <h3 className="font-display text-[2.1rem] leading-[1.1] text-ivory sm:text-[2.5rem]">
+                Non sai da quale edizione iniziare?
+              </h3>
+              <p className="mx-auto mt-5 max-w-[48ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.06rem]">
+                Raccontami il momento che stai attraversando. Ti aiuterò a capire quale forma del Ritratto può esserti più utile.
+              </p>
+              <div className="mt-8">
+                <ButtonLink href="/contatti" variant="secondary">
+                  Raccontami il tuo momento
+                </ButtonLink>
+              </div>
+            </SurfaceCard>
+          </Reveal>
         </Container>
       </section>
 
