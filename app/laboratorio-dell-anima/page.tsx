@@ -5,8 +5,27 @@ import { Container } from "@/components/ui/container";
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { SurfaceCard } from "@/components/ui/surface-card";
-import { laboratorioPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
+
+const laboratorioPage = {
+  hero: {
+    kicker: "Percorso scritto e rituale",
+    title: "Laboratorio dell'Anima",
+    displayTitle: "Laboratorio\ndell'Anima",
+    subtitle:
+      "Uno spazio da attraversare con lentezza, immagini e pratica per dare forma a un cambiamento interiore reale.",
+  },
+  paragraphs: [
+    "Il Laboratorio dell'Anima è un libro-percorso pensato per chi sente che qualcosa chiede ascolto ma non vuole perdersi nel rumore della crescita personale generica.",
+    "È una struttura fatta di archetipi, alchimia, esercizi e pagine da abitare. Un oggetto da usare, non solo da leggere.",
+  ],
+  bullets: [
+    "Racconti e immagini guida",
+    "Pratiche quotidiane e domande attivanti",
+    "Spazio di scrittura e riflessione personale",
+  ],
+  note: "È una soglia. Un luogo scritto in cui allenare presenza, ascolto e trasformazione.",
+};
 
 export const metadata = {
   ...buildMetadata({
