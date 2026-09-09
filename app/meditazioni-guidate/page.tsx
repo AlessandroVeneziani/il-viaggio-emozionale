@@ -4,8 +4,29 @@ import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { meditationsPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
+
+const meditationsPage = {
+  hero: {
+    kicker: "Pratiche di ascolto",
+    title: "Meditazioni Guidate",
+    displayTitle: "Meditazioni\nGuidate",
+    subtitle:
+      "Audio e pratiche pensate per accompagnarti nei passaggi in cui serve rallentare, sentire e tornare al centro.",
+  },
+  intro: [
+    "Le meditazioni guidate nascono per creare continuità tra una lettura e la vita quotidiana. Non sono contenuti da consumare in fretta, ma spazi da abitare con presenza.",
+    "Ogni traccia è pensata per accompagnare un momento preciso: un blocco emotivo, una soglia interiore, un bisogno di ascolto o di orientamento più sottile.",
+  ],
+  pillars: [
+    "Pratiche audio per ritrovare ascolto e centratura",
+    "Tracce utili nei passaggi di cambiamento o confusione",
+    "Un tono calmo, sobrio e privo di enfasi spirituale",
+    "Uno spazio di integrazione tra intuizione e quotidiano",
+  ],
+  promise:
+    "Quando rallenti davvero, ciò che stai vivendo smette di fare rumore e inizia a mostrarsi con più chiarezza.",
+};
 
 export const metadata = {
   ...buildMetadata({
