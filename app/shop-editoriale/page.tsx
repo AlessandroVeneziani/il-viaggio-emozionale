@@ -4,8 +4,30 @@ import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { editorialToolsPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
+
+const editorialToolsPage = {
+  hero: {
+    kicker: "Collezione editoriale",
+    title: "Strumenti Editoriali",
+    displayTitle: "Strumenti\nEditoriali",
+    subtitle:
+      "Una piccola collezione di materiali simbolici pensati per dare continuità al percorso e accompagnarti nel quotidiano.",
+  },
+  intro: [
+    "Più che uno shop, una raccolta curata di strumenti da portare con te: ritratti stampati, libri, quaderni rituali e materiali che aiutano a tenere aperta la relazione con ciò che hai compreso.",
+    "Alcuni materiali sono già disponibili su richiesta, altri nasceranno progressivamente come estensione naturale del metodo.",
+    "Ogni oggetto nasce per essere abitato con calma. Per diventare memoria viva del percorso, non semplice acquisto impulsivo.",
+  ],
+  pillars: [
+    "Ritratti stampati e versioni editoriali del lavoro simbolico",
+    "Quaderni rituali e materiali da attraversare nel tempo",
+    "Strumenti pensati per sostenere presenza, ritmo e continuità",
+    "Una collezione piccola, curata e coerente con il metodo",
+  ],
+  promise:
+    "Alcune trasformazioni hanno bisogno di restare tra le mani, non solo nella mente.",
+};
 
 export const metadata = {
   ...buildMetadata({
