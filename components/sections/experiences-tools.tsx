@@ -4,7 +4,64 @@ import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { SurfaceCard } from "@/components/ui/surface-card";
-import { experiencesToolsSection } from "@/content/site-content";
+
+const experiencesToolsSection = {
+  eyebrow: "Strumenti di continuità",
+  title: "Il lavoro non finisce\nnella lettura.",
+  description:
+    "Alcuni strumenti aiutano a continuare il processo con più presenza, ascolto e integrazione.",
+  closing:
+    "Una collezione editoriale in evoluzione: pratiche, meditazioni, scrittura simbolica ed esercizi guidati che nasceranno progressivamente per accompagnare il lavoro anche fuori dalla sessione.",
+  cards: [
+    {
+      title: "Laboratorio dell'Anima",
+      kicker: "Percorso di integrazione",
+      subtitle: "Quando ciò che hai compreso ha bisogno di pratica e continuità.",
+      body:
+        "Un libro-percorso per trasformare ciò che emerge in ritmo, scrittura, presenza e struttura personale.",
+      href: "/laboratorio-dell-anima",
+      ctaLabel: "Entra nel Laboratorio",
+      mode: "book",
+      image: "/images/brand/laboratorio-libro.webp",
+      imageAlt:
+        "Libro del Laboratorio dell'Anima come percorso editoriale di integrazione",
+      items: [] as string[],
+    },
+    {
+      title: "Meditazioni Guidate",
+      kicker: "Pratica di ascolto",
+      subtitle: "Uno spazio per rallentare e ritrovare ascolto.",
+      body:
+        "Pratiche audio per integrare ciò che emerge e tornare ad ascoltare il corpo.",
+      href: "/meditazioni-guidate",
+      ctaLabel: "Ascolta le meditazioni",
+      mode: "ambient",
+      image: "",
+      imageAlt: "",
+      items: [] as string[],
+    },
+    {
+      title: "Pratiche e percorsi\nin costruzione",
+      kicker: "Sezione in evoluzione",
+      subtitle: "Materiali futuri per accompagnare il lavoro anche fuori dalla sessione.",
+      body:
+        "Una sezione in evoluzione dedicata a meditazioni, esercizi simbolici e contenuti guidati per portare il metodo nella vita quotidiana, con tempi e forme che verranno aperti progressivamente.",
+      href: "/shop-editoriale",
+      ctaLabel: "Esplora gli strumenti editoriali",
+      mode: "text",
+      image: "",
+      imageAlt: "",
+      items: [
+        "scrittura simbolica",
+        "esercizi simbolici",
+        "journaling archetipico",
+        "pratiche guidate",
+        "meditazioni future",
+        "percorsi audio in sviluppo",
+      ],
+    },
+  ],
+} as const;
 
 export function ExperiencesToolsSection() {
   return (
