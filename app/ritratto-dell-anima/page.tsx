@@ -495,7 +495,7 @@ export default function RitrattoPage() {
                   <div className="mt-6">
                     <ButtonLink
                       href={edition.purchaseHref}
-                      className="whitespace-nowrap"
+                      className="whitespace-nowrap px-7 sm:px-8"
                     >
                       Acquista ora
                     </ButtonLink>
