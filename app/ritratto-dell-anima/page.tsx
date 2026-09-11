@@ -87,6 +87,7 @@ const portraitEditions = [
       "accesso immediato al primo passo del viaggio",
     ],
     price: "250 €",
+    purchaseHref: "https://buy.stripe.com/aFabJ0gTT8o12Q6eIQ4F200",
     featured: false,
   },
   {
@@ -102,6 +103,7 @@ const portraitEditions = [
       "dedica iniziale firmata",
     ],
     price: "350 €",
+    purchaseHref: "https://buy.stripe.com/dRm6oGcDD0Vzaiy3084F201",
     featured: false,
   },
   {
@@ -118,6 +120,7 @@ const portraitEditions = [
       "spazio per annotazioni e riflessioni",
     ],
     price: "450 €",
+    purchaseHref: "https://buy.stripe.com/dRm00ieLL6fT62i0S04F202",
     featured: true,
   },
 ] as const;
@@ -489,6 +492,14 @@ export default function RitrattoPage() {
                   >
                     {edition.price}
                   </p>
+                  <div className="mt-6">
+                    <ButtonLink
+                      href={edition.purchaseHref}
+                      className="whitespace-nowrap"
+                    >
+                      Acquista ora
+                    </ButtonLink>
+                  </div>
                 </div>
               </SurfaceCard>
             ))}
