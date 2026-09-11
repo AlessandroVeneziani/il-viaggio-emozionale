@@ -1,3 +1,6 @@
+export const sessionCalendlyUrl =
+  "https://calendly.com/alessandroveneziani/sessione-individuale-il-viaggio-emozionale";
+
 export const homeHero = {
   kicker: "Metodo simbolico contemporaneo",
   title: "NON SEI SBAGLIATO.\nSTAI CERCANDO UNA DIREZIONE.",
@@ -104,7 +107,7 @@ export const featuredPaths = [
       "Aiuta a leggere il presente con più lucidità e a trasformare una domanda aperta in una direzione praticabile.",
     audience:
       "Per chi cerca un incontro diretto, concreto e simbolico per orientarsi su un tema specifico.",
-    href: "/lettura-evolutiva",
+    href: sessionCalendlyUrl,
     image: "/images/brand/matto.png",
     imageAlt: "Carta del Matto come simbolo di orientamento del presente",
     detailLabel: "Investimento",
@@ -401,7 +404,7 @@ export const soulDesignPage = {
       "Sessioni individuali personalizzate. Durata e formato vengono definiti in base al tipo di lavoro richiesto.",
     primary: {
       label: "Prenota una sessione di Soul Design",
-      href: "/contatti",
+      href: sessionCalendlyUrl,
     },
     secondary: {
       label: "Scrivimi per orientarti",
@@ -524,7 +527,7 @@ export const percorsiPage = {
       kicker: "Incontro mirato",
       text: "Una sessione individuale per leggere un tema specifico del presente: una scelta, una crisi, una relazione, un blocco o un passaggio che chiede orientamento.",
       details: "Sessione Evolutiva · 100 €",
-      href: "/lettura-evolutiva",
+      href: sessionCalendlyUrl,
       ctaLabel: "Prenota una Sessione Evolutiva",
     },
   ],

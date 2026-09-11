@@ -1,7 +1,7 @@
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
-import { soulDesignPage } from "@/content/site-content";
+import { sessionCalendlyUrl, soulDesignPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
@@ -52,7 +52,7 @@ export default function SoulDesignPage() {
                 ))}
               </div>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href="/contatti">
+                <ButtonLink href={sessionCalendlyUrl} target="_self">
                   Prenota una sessione
                 </ButtonLink>
                 <ButtonLink href="/contatti" variant="secondary">
@@ -196,7 +196,11 @@ export default function SoulDesignPage() {
                 ))}
               </div>
               <div className="mt-10">
-                <ButtonLink href="/contatti" variant="secondary">
+                <ButtonLink
+                  href={sessionCalendlyUrl}
+                  variant="secondary"
+                  target="_self"
+                >
                   Prenota una sessione di Soul Design
                 </ButtonLink>
               </div>
@@ -346,7 +350,11 @@ export default function SoulDesignPage() {
               </p>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <ButtonLink href={soulDesignPage.finalCta.primary.href} size="lg">
+              <ButtonLink
+                href={soulDesignPage.finalCta.primary.href}
+                size="lg"
+                target="_self"
+              >
                 {soulDesignPage.finalCta.primary.label}
               </ButtonLink>
               {soulDesignPage.finalCta.secondary ? (

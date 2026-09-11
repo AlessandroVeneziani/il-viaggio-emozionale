@@ -70,7 +70,15 @@ export function PathGrid() {
                         </p>
                       </div>
                       <div>
-                        <ButtonLink href={path.href} variant="secondary">
+                        <ButtonLink
+                          href={path.href}
+                          variant="secondary"
+                          target={
+                            path.href.startsWith("https://calendly.com/")
+                              ? "_self"
+                              : undefined
+                          }
+                        >
                           {path.ctaLabel}
                         </ButtonLink>
                       </div>

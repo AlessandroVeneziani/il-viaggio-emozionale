@@ -3,7 +3,12 @@ import { ArrowUpRight } from "lucide-react";
 import { Container } from "@/components/ui/container";
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
-import { contactPage, contactReasons } from "@/content/site-content";
+import { ButtonLink } from "@/components/ui/button";
+import {
+  contactPage,
+  contactReasons,
+  sessionCalendlyUrl,
+} from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
 
 export const metadata = buildMetadata({
@@ -77,6 +82,18 @@ export default function ContactPage() {
                     <p className={valueClassName}>
                       {method.value}
                     </p>
+                    {method.label === "Disponibilità" ? (
+                      <div className="mt-5">
+                        <ButtonLink
+                          href={sessionCalendlyUrl}
+                          variant="secondary"
+                          size="sm"
+                          target="_self"
+                        >
+                          Hai già scelto una sessione? Prenota il tuo spazio.
+                        </ButtonLink>
+                      </div>
+                    ) : null}
                     <a
                       href={method.href}
                       className="mt-5 inline-flex items-center gap-2 text-sm font-semibold text-ivory transition hover:text-gold"

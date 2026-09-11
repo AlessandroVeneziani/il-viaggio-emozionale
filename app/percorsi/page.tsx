@@ -58,7 +58,15 @@ export default function PercorsiPage() {
                     </p>
                   </div>
                   <div className="lg:flex lg:justify-end">
-                    <ButtonLink href={item.href} variant="secondary">
+                    <ButtonLink
+                      href={item.href}
+                      variant="secondary"
+                      target={
+                        item.href.startsWith("https://calendly.com/")
+                          ? "_self"
+                          : undefined
+                      }
+                    >
                       {item.ctaLabel}
                     </ButtonLink>
                   </div>
