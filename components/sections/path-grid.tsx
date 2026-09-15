@@ -6,6 +6,7 @@ import { Container } from "@/components/ui/container";
 import { SectionHeading } from "@/components/ui/section-heading";
 import { SurfaceCard } from "@/components/ui/surface-card";
 import { featuredPaths } from "@/content/site-content";
+import { cn } from "@/lib/utils";
 
 export function PathGrid() {
   return (
@@ -35,7 +36,10 @@ export function PathGrid() {
                     width={958}
                     height={1425}
                     sizes="(max-width: 1024px) 82vw, 28vw"
-                    className="absolute bottom-[-18%] right-4 h-[112%] w-auto max-w-[46%] object-contain opacity-80 saturate-[0.78] brightness-[0.95] contrast-[0.92] drop-shadow-[0_18px_30px_rgba(44,34,26,0.18)]"
+                    className={cn(
+                      "absolute bottom-[-18%] right-4 h-[112%] w-auto max-w-[46%] object-contain opacity-80 saturate-[0.78] brightness-[0.95] contrast-[0.92] drop-shadow-[0_18px_30px_rgba(44,34,26,0.18)]",
+                      index === 0 && "bottom-[-10%] h-[128%] max-w-[58%]",
+                    )}
                   />
                   <div className="relative z-10 max-w-[13rem]">
                     <p className="editorial-label">
