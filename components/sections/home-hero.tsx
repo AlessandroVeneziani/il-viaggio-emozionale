@@ -26,12 +26,9 @@ export function HomeHero() {
             </h1>
             <div className="mt-8 max-w-xl rounded-[20px] border border-gold/[0.055] bg-ivory/[0.045] px-5 py-4.5 backdrop-blur-0 sm:border-gold/[0.065] sm:bg-ivory/[0.05] sm:backdrop-blur-[4px] lg:mt-9 lg:border-gold/[0.08] lg:bg-ivory/[0.055] lg:shadow-[0_14px_28px_rgba(43,35,28,0.08)]">
               <p className="text-pretty text-[0.98rem] font-medium leading-7 text-ivory/88 sm:text-base lg:text-[1.03rem] lg:leading-[1.84]">
-                {homeHero.seoLine}
+                {homeHero.subtitle}
               </p>
             </div>
-            <p className="mt-8 max-w-[34rem] text-pretty text-base leading-[2] text-ivory/79 sm:text-[1.03rem] lg:mt-9 lg:text-[1.065rem] lg:leading-[2.06]">
-              {homeHero.subtitle}
-            </p>
             <div className="mt-9 flex flex-wrap gap-x-5 gap-y-3 text-sm font-medium uppercase tracking-[0.22em] text-ivory/56">
               {homeHero.whatYouFind.map((item, index) => (
                 <div key={item} className="inline-flex items-center gap-5">
@@ -45,9 +42,6 @@ export function HomeHero() {
             <div className="mt-12 flex flex-col gap-4 sm:flex-row">
               <ButtonLink href={homeHero.primaryCta.href} size="lg">
                 {homeHero.primaryCta.label}
-              </ButtonLink>
-              <ButtonLink href={homeHero.secondaryCta.href} variant="secondary" size="lg">
-                {homeHero.secondaryCta.label}
               </ButtonLink>
             </div>
             <p className="mt-9 max-w-[34rem] text-sm leading-[1.92] text-ivory/68 lg:text-[0.95rem] lg:leading-[1.96]">

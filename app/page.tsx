@@ -5,7 +5,6 @@ import { HomeHero } from "@/components/sections/home-hero";
 import { HomeManifestoSection } from "@/components/sections/home-manifesto";
 import { MethodGrid } from "@/components/sections/method-grid";
 import { PathGrid } from "@/components/sections/path-grid";
-import { SoulDesignSpotlightSection } from "@/components/sections/soul-design-spotlight";
 import { buildMetadata } from "@/lib/metadata";
 import { siteConfig } from "@/lib/site";
 
@@ -21,9 +20,8 @@ export default function HomePage() {
     <main className="home-main-background">
       <HomeHero />
       <HomeManifestoSection />
-      <MethodGrid />
-      <SoulDesignSpotlightSection />
       <PathGrid />
+      <MethodGrid />
       <GoogleReviewsReadySection />
       <FounderPreviewSection />
       <FinalCtaSection />

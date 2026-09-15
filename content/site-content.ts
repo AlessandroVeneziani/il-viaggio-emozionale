@@ -3,18 +3,18 @@ export const sessionCalendlyUrl =
 
 export const homeHero = {
   kicker: "Metodo simbolico contemporaneo",
-  title: "NON SEI SBAGLIATO.\nSTAI CERCANDO UNA DIREZIONE.",
+  title: "Non sei sbagliato. Forse stai solo cercando una direzione.",
   seoLine:
-    "Il Viaggio Emozionale è un sistema simbolico contemporaneo dedicato alla comprensione dell'essere.",
+    "Ti aiutiamo a fare chiarezza su ciò che stai vivendo, così da poter scegliere con maggiore consapevolezza la direzione del tuo percorso.",
   subtitle:
-    "Numeri, archetipi, immaginario e corpo diventano strumenti per rendere leggibile ciò che stai vivendo.",
+    "Ti aiutiamo a fare chiarezza su ciò che stai vivendo, così da poter scegliere con maggiore consapevolezza la direzione del tuo percorso.",
   primaryCta: {
-    label: "Esplora il Metodo",
-    href: "/il-metodo",
+    label: "Inizia da qui",
+    href: "#inizia-da-qui",
   },
   secondaryCta: {
-    label: "Inizia dal Ritratto",
-    href: "/ritratto-dell-anima",
+    label: "Raccontami cosa stai vivendo",
+    href: "/contatti",
   },
   softBridge: "Non sai da dove iniziare? Raccontami cosa stai vivendo.",
   whatYouFind: [
@@ -24,95 +24,110 @@ export const homeHero = {
   ],
 };
 
-export const manifestoSection = {
-  eyebrow: "Manifesto",
-  title: "Rendere leggibile\nciò che stai vivendo.",
+export const identificationSection = {
+  eyebrow: "Da dove inizi",
+  title: "Forse ti stai riconoscendo in uno di questi passaggi della tua vita.",
   introduction:
-    "Il Viaggio Emozionale nasce da una domanda semplice: cosa accade quando una persona smette di sopravvivere e inizia, finalmente, a leggersi.",
-  statements: [
-    ["IL NUMERO NON MISURA.", "RIVELA."],
-    ["IL SIMBOLO NON SPIEGA.", "TRASFORMA."],
-    ["IL CORPO NON MENTE.", "RICORDA."],
-    ["NON ESISTE UNA FORMULA IDENTICA PER TUTTI.", "ESISTE UNA MAPPA."],
+    "A volte non serve avere già una risposta. Serve dare un nome al momento che stai attraversando e ascoltare quale direzione sta iniziando a emergere.",
+  passages: [
+    {
+      title: "continui a vivere le stesse situazioni",
+      text: "Riconosci un movimento che ritorna, anche quando cambia forma, e senti il bisogno di leggerlo con più chiarezza.",
+    },
+    {
+      title: "senti che qualcosa sta cambiando",
+      text: "Una parte di te si muove, mentre un'altra cerca ancora linguaggio, ritmo e orientamento.",
+    },
+    {
+      title: "sai che è arrivato il momento di scegliere una direzione",
+      text: "Non cerchi una risposta imposta dall'esterno, ma uno spazio in cui ascoltare meglio il tuo passo successivo.",
+    },
   ],
+  conclusion: "Ogni passaggio può essere attraversato in modi diversi.",
 } as const;
 
-export const methodSteps = [
+export const changeJourneySteps = [
   {
     value: "01",
-    title: "Numero",
+    title: "Mi riconosco",
     description:
-      "La struttura simbolica del percorso: cicli, ricorrenze e nodi che continuano a ripresentarsi nella tua vita.",
+      "Dai un nome al passaggio che stai attraversando e inizi a vedere ciò che prima restava confuso.",
   },
   {
     value: "02",
-    title: "Immagine",
+    title: "Faccio chiarezza",
     description:
-      "L'essere umano cambia quando inizia a vedersi: archetipi, immagini e immaginario aiutano a leggere il presente.",
+      "Numeri, simboli, immagini e ascolto diventano una mappa per comprendere il presente con più presenza.",
   },
   {
     value: "03",
-    title: "Corpo",
+    title: "Scelgo una direzione",
     description:
-      "Il luogo in cui ogni trasformazione diventa reale e in cui presenza, ritmo e orientamento smettono di restare astratti.",
+      "La lettura non resta astratta: diventa orientamento, possibilità e scelta più consapevole.",
+  },
+  {
+    value: "04",
+    title: "Compio il primo passo",
+    description:
+      "Il cambiamento prende forma in un gesto possibile, proporzionato al momento che stai vivendo.",
   },
 ] as const;
 
 export const featuredPaths = [
   {
     title: "Ritratto dell'Anima",
-    kicker: "La porta d'ingresso",
+    kicker: "Esperienza autonoma",
     summary:
-      "Una mappa personale costruita su numeri, simboli, cicli e archetipi per leggere la tua matrice identitaria e la direzione che sta chiedendo spazio.",
+      "Una mappa personale costruita su numeri, simboli, cicli e archetipi per leggere il tuo passaggio e riconoscere la direzione che sta chiedendo spazio.",
     problem:
-      "Quando senti il bisogno di riconoscere la tua struttura simbolica prima di scegliere, cambiare o iniziare un lavoro più profondo.",
+      "Quando desideri un primo passo possibile, completo anche da solo, per comprendere meglio da dove parti.",
     transformation:
-      "Restituisce una prima mappa identitaria: numeri, simboli, cicli, archetipi e direzione interiore in una forma personale.",
+      "Restituisce una mappa identitaria chiara: una lettura personale da cui iniziare a orientarti.",
     audience:
-      "Per chi vuole entrare nel metodo da una lettura strutturata, spesso in forma di libro o ritratto personale.",
+      "Per chi vuole entrare nel metodo attraverso un'esperienza autonoma, ordinata e profondamente personale.",
     href: "/ritratto-dell-anima",
     image: "/images/brand/ritratto-dell-anima.png",
     imageAlt: "Copertina del Ritratto dell'Anima",
     detailLabel: "Investimento",
     detailValue: "Da 250 €",
-    ctaLabel: "Scopri il Ritratto",
-  },
-  {
-    title: "Soul Design",
-    kicker: "Il percorso",
-    summary:
-      "Il design dell'esperienza identitaria: un lavoro individuale per riallineare testa, cuore, desiderio, corpo, energia e anima.",
-    problem:
-      "Quando la mappa ha bisogno di diventare vita concreta: scelte, corpo, desiderio, passaggi e direzione personale.",
-    transformation:
-      "Trasforma ciò che appare frammentato in una forma più coerente, abitabile e orientata nel tempo.",
-    audience:
-      "Per chi desidera lavorare nel tempo sulle parti interiori e portare il metodo dentro le scelte quotidiane.",
-    href: "/soul-design",
-    image: "/images/brand/mondo.png",
-    imageAlt: "Il Mondo come simbolo di coordinamento interiore",
-    detailLabel: "Formato",
-    detailValue:
-      "Prima sessione 150 € · successive 100 €",
-    ctaLabel: "Scopri il Soul Design",
+    ctaLabel: "Apri questa porta",
   },
   {
     title: "Sessione Evolutiva",
-    kicker: "L'incontro mirato",
+    kicker: "Incontro individuale",
     summary:
-      "Una sessione individuale per leggere un tema specifico del presente: una scelta, una crisi, una relazione, un blocco o un passaggio che chiede orientamento.",
+      "Uno spazio individuale per ascoltare il momento presente, mettere ordine in ciò che stai vivendo e riconoscere una direzione praticabile.",
     problem:
-      "Quando hai bisogno di portare chiarezza su un punto preciso, senza entrare necessariamente in un percorso continuativo.",
+      "Quando senti il bisogno di portare attenzione su una scelta, una relazione, una soglia o un passaggio specifico.",
     transformation:
-      "Aiuta a leggere il presente con più lucidità e a trasformare una domanda aperta in una direzione praticabile.",
+      "Il linguaggio simbolico diventa uno strumento di ascolto: apre domande, immagini e collegamenti utili al presente.",
     audience:
-      "Per chi cerca un incontro diretto, concreto e simbolico per orientarsi su un tema specifico.",
+      "Per chi cerca un incontro diretto, concreto e simbolico per orientarsi nel punto in cui si trova.",
     href: sessionCalendlyUrl,
     image: "/images/brand/matto.png",
     imageAlt: "Carta del Matto come simbolo di orientamento del presente",
     detailLabel: "Investimento",
     detailValue: "100 €",
     ctaLabel: "Prenota una sessione",
+  },
+  {
+    title: "Soul Design",
+    kicker: "Percorso continuativo",
+    summary:
+      "Un percorso personalizzato che integra strumenti differenti per accompagnare nel tempo il dialogo tra parti interiori, simboli, corpo e scelte.",
+    problem:
+      "Quando senti che il passaggio che stai vivendo chiede continuità, integrazione e un lavoro più ampio.",
+    transformation:
+      "Può comprendere sogni, simboli, famiglia interiore, esercizi, meditazioni, tarocchi e altri strumenti, sempre al servizio del percorso.",
+    audience:
+      "Per chi desidera acquistare un percorso, non una tecnica, e trasformare la lettura in esperienza continuativa.",
+    href: "/soul-design",
+    image: "/images/brand/mondo.png",
+    imageAlt: "Il Mondo come simbolo di coordinamento interiore",
+    detailLabel: "Formato",
+    detailValue:
+      "Prima sessione 150 € · successive 100 €",
+    ctaLabel: "Esplora il percorso",
   },
 ] as const;
 
