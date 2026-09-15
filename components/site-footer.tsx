@@ -7,8 +7,8 @@ import { siteConfig } from "@/lib/site";
 
 const footerLinks = [
   {
-    label: "Manifesto",
-    href: "/#manifesto",
+    label: "Inizia da qui",
+    href: "/#inizia-da-qui",
   },
   {
     label: "Metodo",
@@ -25,11 +25,6 @@ const footerLinks = [
 ] as const;
 
 const footerContactLinks = [
-  {
-    label: "Telegram del metodo",
-    href: siteConfig.telegram,
-    icon: ArrowUpRight,
-  },
   {
     label: "Contatti",
     href: "/contatti",

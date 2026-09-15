@@ -19,8 +19,8 @@ export const homeHero = {
   softBridge: "Non sai da dove iniziare? Raccontami cosa stai vivendo.",
   whatYouFind: [
     "Ritratto dell'Anima",
-    "Soul Design",
     "Sessione Evolutiva",
+    "Soul Design",
   ],
 };
 
@@ -86,11 +86,11 @@ export const featuredPaths = [
     audience:
       "Per chi vuole entrare nel metodo attraverso un'esperienza autonoma, ordinata e profondamente personale.",
     href: "/ritratto-dell-anima",
-    image: "/images/brand/ritratto-dell-anima.png",
-    imageAlt: "Copertina del Ritratto dell'Anima",
+    image: "/images/ritratto-dell-anima/ritratto-anima-illustrazione-temporanea.png",
+    imageAlt: "Illustrazione simbolica provvisoria del Ritratto dell'Anima",
     detailLabel: "Investimento",
     detailValue: "Da 250 €",
-    ctaLabel: "Apri questa porta",
+    ctaLabel: "Scopri il Ritratto",
   },
   {
     title: "Sessione Evolutiva",
