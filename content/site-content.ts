@@ -86,8 +86,8 @@ export const featuredPaths = [
     audience:
       "Per chi vuole entrare nel metodo attraverso un'esperienza autonoma, ordinata e profondamente personale.",
     href: "/ritratto-dell-anima",
-    image: "/images/ritratto-dell-anima/ritratto-anima-illustrazione-temporanea.png",
-    imageAlt: "Illustrazione simbolica provvisoria del Ritratto dell'Anima",
+    image: "/images/brand/bagatto.webp",
+    imageAlt: "Il Mago come simbolo del Ritratto dell'Anima",
     detailLabel: "Investimento",
     detailValue: "Da 250 €",
     ctaLabel: "Scopri il Ritratto",
