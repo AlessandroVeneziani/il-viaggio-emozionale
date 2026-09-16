@@ -140,9 +140,26 @@ export const metadata = buildMetadata({
 export default function RitrattoPage() {
   return (
     <main>
-      <section className="section-shell overflow-hidden pb-20 pt-8 sm:pb-24 sm:pt-10 lg:pb-28">
+      <section className="section-shell relative isolate overflow-hidden pb-20 pt-8 sm:pb-24 sm:pt-10 lg:pb-28">
         <NumberBackdrop className="opacity-58" />
-        <Container>
+        <div className="pointer-events-none absolute right-[-18%] top-[18rem] z-0 w-[58%] max-w-[18rem] opacity-[0.16] sm:right-[-7%] sm:top-[10rem] sm:w-[38%] sm:max-w-[22rem] sm:opacity-[0.2] lg:right-[4vw] lg:top-[8.5rem] lg:w-[38vw] lg:max-w-[520px] lg:opacity-[0.24] xl:right-[7vw] xl:max-w-[560px]">
+          <Image
+            src="/images/brand/bagatto.webp"
+            alt=""
+            width={1043}
+            height={1298}
+            priority
+            sizes="(max-width: 640px) 58vw, (max-width: 1024px) 38vw, 38vw"
+            className="h-auto w-full object-contain saturate-[0.72] brightness-[0.82] contrast-[0.9]"
+            style={{
+              maskImage:
+                "linear-gradient(to left, rgba(0,0,0,0.92) 48%, rgba(0,0,0,0.54) 72%, transparent 100%)",
+              WebkitMaskImage:
+                "linear-gradient(to left, rgba(0,0,0,0.92) 48%, rgba(0,0,0,0.54) 72%, transparent 100%)",
+            }}
+          />
+        </div>
+        <Container className="relative z-10">
           <Reveal className="editorial-title-haze max-w-5xl">
             <p className="editorial-label mb-6 lg:mb-7">
               Ritratto dell&apos;Anima
