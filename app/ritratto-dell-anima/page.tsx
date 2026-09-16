@@ -8,18 +8,37 @@ import { SurfaceCard } from "@/components/ui/surface-card";
 import { WelcomeBackHome } from "@/components/ui/welcome-back-home";
 import { buildMetadata } from "@/lib/metadata";
 
-const promisePoints = [
+const passagePoints = [
   {
-    title: "Libro personale",
-    text: "Non un documento da consultare. Un libro che racconta la tua storia simbolica, costruito pagina dopo pagina per essere riletto nel tempo.",
+    title: "Quando tutto sembra sospeso",
+    text: "Ci sono momenti in cui senti che qualcosa sta cambiando, ma non riesci ancora a dargli un nome. Non è debolezza: è una soglia che chiede ascolto.",
   },
   {
-    title: "Scritto una persona alla volta",
-    text: "Ogni Ritratto nasce da un lavoro di studio, interpretazione e scrittura dedicato esclusivamente a una persona. Nessun testo viene replicato.",
+    title: "Quando una domanda ritorna",
+    text: "Forse riconosci schemi, ripetizioni o scelte che sembrano portarti sempre nello stesso punto. Il primo passo non è forzare una risposta, ma capire cosa sta cercando di emergere.",
   },
   {
-    title: "Da leggere e conservare",
-    text: "Un libro pensato per accompagnarti negli anni. Da riaprire quando qualcosa cambia, quando una domanda ritorna o quando senti il bisogno di ritrovare direzione.",
+    title: "Quando serve una mappa",
+    text: "A volte non hai bisogno di aggiungere altro alla tua vita. Hai bisogno di leggere meglio il punto in cui sei, per scegliere con più presenza il passo successivo.",
+  },
+] as const;
+
+const results = [
+  {
+    title: "Maggiore chiarezza",
+    text: "Dare parole più precise a ciò che senti, senza ridurlo a una spiegazione fredda o generica.",
+  },
+  {
+    title: "Comprensione del momento",
+    text: "Riconoscere il passaggio che stai vivendo e il senso dei movimenti interiori che lo accompagnano.",
+  },
+  {
+    title: "Risorse riconosciute",
+    text: "Ritrovare talenti, qualità e parti di te che possono sostenerti nelle scelte quotidiane.",
+  },
+  {
+    title: "Direzione",
+    text: "Uscire dalla confusione con una traccia più leggibile, concreta e fedele alla tua natura.",
   },
 ] as const;
 
@@ -47,77 +66,41 @@ const previewPages = [
   },
 ] as const;
 
-const creationSteps = [
-  "Ricevo la tua storia",
-  "Studio",
-  "Scrivo",
-  "Revisiono",
-  "Impagino",
-  "Consegno",
-] as const;
-
-const bookChapters = [
-  "Prologo",
-  "Il cielo",
-  "La matrice",
-  "Il nome",
-  "Il passato dell'Anima",
-  "Gli archetipi",
-  "Talenti e sfide",
-  "I chakra",
-  "I cicli della vita",
-  "Il nodo karmico",
-  "Le relazioni",
-  "La carta oracolare",
-  "L'animale guida",
-  "Il Patto con Te",
-  "Sintesi finale",
-] as const;
-
 const portraitEditions = [
   {
-    title: "Ritratto Digitale",
-    eyebrow: "Primo ingresso",
+    title: "Edizione Digitale",
+    eyebrow: "Ritratto in PDF",
     experience:
-      "Per chi desidera entrare nel proprio libro in modo essenziale: leggerlo con calma, tornare ai capitoli quando serve e iniziare da una mappa personale chiara.",
-    features: [
-      "manoscritto editoriale in PDF",
-      "circa 100 pagine scritte su misura",
-      "consegna digitale",
-      "accesso immediato al primo passo del viaggio",
-    ],
+      "Per iniziare con una lettura completa, raccolta in un formato digitale da ricevere e rileggere con calma.",
+    features: ["Formato PDF", "Consegna digitale"],
     price: "250 €",
     purchaseHref: "https://buy.stripe.com/aFabJ0gTT8o12Q6eIQ4F200",
     featured: false,
   },
   {
-    title: "Ritratto Premium Stampato",
-    eyebrow: "Oggetto da custodire",
+    title: "Edizione Pregiata",
+    eyebrow: "Ritratto stampato",
     experience:
-      "Per chi sente che il proprio Ritratto non debba restare solo su schermo, ma diventare un volume fisico da aprire, conservare e ritrovare nel tempo.",
+      "Per chi desidera trasformare la propria lettura in un volume fisico, elegante e pensato per essere conservato nel tempo.",
     features: [
-      "PDF editoriale incluso",
-      "stampa su carta pergamena",
-      "rilegatura artigianale",
-      "copertina personalizzata con il tuo nome",
-      "dedica iniziale firmata",
+      "Versione stampata",
+      "Rilegatura elegante",
+      "Pensata per essere conservata nel tempo",
     ],
     price: "350 €",
     purchaseHref: "https://buy.stripe.com/dRm6oGcDD0Vzaiy3084F201",
     featured: false,
   },
   {
-    title: "Libro dell'Anima — Edizione Completa",
-    eyebrow: "Immersione completa",
+    title: "Edizione Collezione",
+    eyebrow: "Ritratto come opera personale",
     experience:
-      "Per chi desidera vivere il Ritratto come esperienza più ampia: un libro personale arricchito da materiali, spazi di scrittura e tracce da attraversare dopo la consegna.",
+      "Non è semplicemente una stampa. È il tuo Ritratto trasformato in un'opera personale, da custodire come un libro personale negli anni.",
     features: [
-      "PDF editoriale incluso",
-      "copertina in seta personalizzata",
-      "contenuti ampliati",
-      "Manifesto Personale",
-      "Diario del Viaggio",
-      "spazio per annotazioni e riflessioni",
+      "Copertina in seta",
+      "Materiali editoriali più pregiati",
+      "Numerazione progressiva dell'edizione",
+      "Certificazione dell'opera",
     ],
     price: "450 €",
     purchaseHref: "https://buy.stripe.com/dRm00ieLL6fT62i0S04F202",
@@ -127,29 +110,23 @@ const portraitEditions = [
 
 const faqs = [
   {
-    question: "Quante pagine contiene il Ritratto?",
+    question: "Posso regalarlo?",
     answer:
-      "Il Ritratto nasce come libro personale di circa 100 pagine. Non inseguo una misura rigida: ogni manoscritto trova la propria estensione in base alla storia che deve custodire.",
+      "Sì. Per realizzarlo sono sufficienti nome e cognome completi e data di nascita.",
   },
   {
-    question: "È scritto davvero su misura?",
+    question: "Quando lo riceverò?",
     answer:
-      "Sì. Ogni Ritratto viene scritto una persona alla volta, dopo uno studio dedicato. La struttura sostiene il lavoro, ma le parole, i passaggi e la narrazione nascono solo per chi lo riceve.",
+      "Circa sette giorni lavorativi per la realizzazione più il tempo della spedizione. Considera mediamente circa dieci giorni dall'acquisto.",
   },
   {
-    question: "Da quali informazioni si parte?",
+    question: "È una previsione del futuro?",
     answer:
-      "Si parte dai dati necessari alla costruzione simbolica e da alcune tracce personali che aiutano a comprendere il momento che stai attraversando. Non raccolgo informazioni per compilare un modulo: le uso per dare corpo a un libro.",
+      "No. Aiuta a leggere il presente con maggiore consapevolezza.",
   },
   {
-    question: "Quanto tempo serve per riceverlo?",
-    answer:
-      "Il tempo dipende dall'edizione e dal calendario di scrittura. Preferisco non accelerare un lavoro che nasce per restare: dopo il primo contatto ti indicherò tempi, disponibilità e modalità di consegna.",
-  },
-  {
-    question: "Quale edizione dovrei scegliere?",
-    answer:
-      "Non existe un'edizione migliore in assoluto. Il digitale apre la porta. Lo stampato trasforma il Ritratto in un oggetto da custodire. Il Libro dell'Anima — Edizione Completa amplia l'esperienza e la rende più abitabile nel tempo.",
+    question: "Serve conoscere numerologia o simboli?",
+    answer: "Assolutamente no.",
   },
 ] as const;
 
@@ -170,17 +147,23 @@ export default function RitrattoPage() {
             <p className="editorial-label mb-6 lg:mb-7">
               Ritratto dell&apos;Anima
             </p>
-            <h1 className="editorial-title-depth max-w-[13ch] whitespace-pre-line text-pretty font-display text-[2.9rem] leading-[1.06] sm:text-[4rem] lg:text-[5.15rem]">
-              {"Ogni libro che scrivo\nha un solo protagonista.\n\nTu."}
+            <h1 className="editorial-title-depth max-w-[14ch] whitespace-pre-line text-pretty font-display text-[2.9rem] leading-[1.06] sm:text-[4rem] lg:text-[5.15rem]">
+              {"A volte non abbiamo bisogno di cambiare vita.\nAbbiamo bisogno di capire dove ci troviamo."}
             </h1>
-            <p className="mt-8 max-w-[35ch] font-display text-[1.75rem] leading-[1.28] text-ivory/90 sm:text-[2.28rem]">
-              Un libro personale di circa 100 pagine, scritto esclusivamente
-              per raccontare il tuo viaggio simbolico, i tuoi capitoli interiori
-              e la direzione che sta prendendo forma.
-            </p>
+            <div className="mt-8 max-w-[42ch] space-y-5 font-display text-[1.55rem] leading-[1.34] text-ivory/90 sm:text-[2.05rem]">
+              <p>
+                Quando attraversiamo un passaggio importante, spesso non ci
+                manca la forza. Ci manca la chiarezza.
+              </p>
+              <p>
+                Il Ritratto dell&apos;Anima nasce per aiutarti a leggere con
+                maggiore consapevolezza il momento che stai vivendo e ritrovare
+                una direzione più autentica.
+              </p>
+            </div>
             <div className="mt-10">
               <ButtonLink href="#edizioni" size="lg">
-                Scopri il tuo Ritratto
+                Inizia dal Ritratto dell&apos;Anima
               </ButtonLink>
             </div>
           </Reveal>
@@ -191,12 +174,18 @@ export default function RitrattoPage() {
         <Container>
           <Reveal>
             <SurfaceCard className="mx-auto max-w-5xl p-7 sm:p-9 lg:p-10">
-              <p className="editorial-label">Opera editoriale</p>
+              <p className="editorial-label">Il passaggio che stai vivendo</p>
               <h2 className="editorial-title-depth mt-5 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                Non riceverai un report.
+                Non è un problema. È un passaggio.
               </h2>
+              <p className="mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
+                Quando qualcosa dentro cambia, può sembrare di essere fermi.
+                In realtà spesso stai attraversando una zona di transizione:
+                vecchi riferimenti non bastano più, quelli nuovi non sono
+                ancora chiari.
+              </p>
               <div className="mt-8 grid gap-5 md:grid-cols-3">
-                {promisePoints.map((point) => (
+                {passagePoints.map((point) => (
                   <div
                     key={point.title}
                     className="flex h-full flex-col border-t border-gold/[0.08] pt-5"
@@ -218,7 +207,76 @@ export default function RitrattoPage() {
       <section className="section-shell py-16 sm:py-24">
         <Container>
           <div className="mb-12 max-w-3xl">
-            <p className="editorial-label">UN OGGETTO DA CUSTODIRE</p>
+            <p className="editorial-label">Cosa otterrai</p>
+            <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
+              Prima di tutto, una lettura più chiara di te.
+            </h2>
+            <p className="mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
+              Il Ritratto ti accompagna a mettere ordine dove senti confusione,
+              a riconoscere ciò che ti sostiene e a trasformare intuizioni,
+              domande e segnali interiori in una direzione più consapevole.
+            </p>
+          </div>
+          <div className="grid gap-5 lg:grid-cols-4">
+            {results.map((result) => (
+              <SurfaceCard key={result.title} className="p-6 sm:p-7">
+                <p className="font-display text-[1.85rem] leading-[1.12] text-ivory">
+                  {result.title}
+                </p>
+                <p className="mt-4 text-base leading-8 text-ivory/70">
+                  {result.text}
+                </p>
+              </SurfaceCard>
+            ))}
+          </div>
+          <Reveal className="mt-10">
+            <SurfaceCard className="mx-auto max-w-4xl p-7 sm:p-9 lg:p-10">
+              <p className="editorial-label">Il metodo al servizio della lettura</p>
+              <p className="mt-5 max-w-[68ch] text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
+                Solo dopo aver messo al centro il tuo momento, il Ritratto
+                integra numerologia simbolica, archetipi, cicli evolutivi,
+                chakra, talenti e altri strumenti. Non per etichettarti, ma per
+                offrire una mappa più ricca e comprensibile di ciò che stai
+                attraversando.
+              </p>
+            </SurfaceCard>
+          </Reveal>
+        </Container>
+      </section>
+
+      <section className="section-shell py-16 sm:py-24">
+        <Container>
+          <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr]">
+            <Reveal className="editorial-title-haze">
+              <p className="editorial-label">Come nasce il Ritratto</p>
+              <h2 className="editorial-title-depth mt-5 max-w-[11ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
+                Una mappa scritta per il tuo momento.
+              </h2>
+            </Reveal>
+            <Reveal delay={0.08}>
+              <div className="space-y-5 text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
+                <p>
+                  Il Ritratto nasce da un lavoro di ascolto, studio e scrittura.
+                  Le informazioni personali non vengono usate per produrre una
+                  formula, ma per costruire una lettura capace di parlare al
+                  passaggio che stai vivendo.
+                </p>
+                <p>
+                  Il metodo sostiene la trasformazione: raccoglie simboli,
+                  coordinate e intuizioni, poi li traduce in un linguaggio
+                  leggibile, umano e concreto. Al centro resti tu, con la tua
+                  storia e la direzione che sta cercando forma.
+                </p>
+              </div>
+            </Reveal>
+          </div>
+        </Container>
+      </section>
+
+      <section className="section-shell py-16 sm:py-24">
+        <Container>
+          <div className="mb-12 max-w-3xl">
+            <p className="editorial-label">Un oggetto da custodire</p>
             <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
               Sfoglia il Ritratto
             </h2>
@@ -252,180 +310,17 @@ export default function RitrattoPage() {
         </Container>
       </section>
 
-      <section className="section-shell py-16 sm:py-24">
-        <Container>
-          <div className="grid gap-10 lg:grid-cols-[0.84fr_1.16fr]">
-            <Reveal className="editorial-title-haze">
-              <p className="editorial-label">Processo</p>
-              <h2 className="editorial-title-depth mt-5 max-w-[11ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                Come nasce
-              </h2>
-              <p className="mt-8 max-w-[42ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
-                Il Ritratto non viene generato. Viene costruito come un
-                manoscritto personale: un passaggio dopo l&apos;altro, fino alla
-                consegna del libro.
-              </p>
-            </Reveal>
-            <Reveal delay={0.08}>
-              <div className="space-y-4">
-                {creationSteps.map((step, index) => (
-                  <div
-                    key={step}
-                    className="grid grid-cols-[3.5rem_1fr] gap-5 border-t border-gold/[0.08] pt-5"
-                  >
-                    <span className="font-display text-3xl leading-none text-gold/82">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <p className="font-display text-[1.85rem] leading-[1.16] text-ivory sm:text-[2.2rem]">
-                      {step}
-                    </p>
-                  </div>
-                ))}
-              </div>
-            </Reveal>
-          </div>
-        </Container>
-      </section>
-
-      <section className="section-shell py-16 sm:py-24">
-        <Container>
-          <Reveal>
-            <SurfaceCard className="mx-auto max-w-[820px] p-6 sm:p-8 lg:p-10">
-              <div className="flex flex-col py-2 lg:py-8">
-                <p className="editorial-label">L&apos;AUTORE</p>
-                <h2 className="editorial-title-depth mt-6 max-w-[12ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                  Chi scrive questi libri?
-                </h2>
-                <div className="mt-8 max-w-[62ch] space-y-5 text-base leading-[1.95] text-ivory/78 sm:text-[1.06rem]">
-                  <p>
-                    Non ho creato il Ritratto dell&apos;Anima per offrire una
-                    risposta immediata o una lettura standardizzata.
-                  </p>
-                  <p>
-                    L&apos;ho immaginato come un libro personale: un luogo in
-                    cui simboli, numeri, archetipi e domande possano
-                    diventare capitoli, passaggi e immagini interiori dentro
-                    una narrazione autentica.
-                  </p>
-                  <p>
-                    Ogni Ritratto nasce da un processo manuale di studio,
-                    scrittura e revisione. Prima osservo le coordinate
-                    simboliche, poi cerco il filo narrativo che può renderle
-                    leggibili dentro una storia personale.
-                  </p>
-                  <p>
-                    Questo tempo è parte del metodo: nessun libro viene
-                    composto in serie, perché nessuna storia arriva nello stesso
-                    modo.
-                  </p>
-                  <p>Per questo motivo nessun libro è uguale a un altro.</p>
-                  <p>Ogni persona porta una storia diversa.</p>
-                  <p>Ogni libro nasce per custodirla.</p>
-                </div>
-                <p className="editorial-title-depth mt-14 max-w-[14ch] whitespace-pre-line font-display text-[2rem] leading-[1.18] text-ivory sm:mt-16 sm:text-[2.55rem]">
-                  {"Ogni persona ha una storia.\nIo la trasformo in un libro."}
-                </p>
-              </div>
-            </SurfaceCard>
-          </Reveal>
-        </Container>
-      </section>
-
-      <section className="section-shell py-16 sm:py-24">
-        <Container>
-          <Reveal>
-            <div className="mx-auto max-w-5xl border-y border-gold/[0.10] py-10 sm:py-12 lg:py-16">
-              <div className="mx-auto max-w-3xl text-center">
-                <p className="editorial-label">INDICE</p>
-                <h2 className="editorial-title-depth mt-5 font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                  Un libro. Quindici capitoli. Una sola storia.
-                </h2>
-                <p className="mx-auto mt-6 max-w-[58ch] text-base leading-[1.85] text-ivory/76 sm:text-[1.06rem]">
-                  Ogni capitolo è scritto esclusivamente per te e dialoga con
-                  gli altri, come le parti di una stessa narrazione personale.
-                </p>
-              </div>
-
-              <ol className="mx-auto mt-10 grid max-w-4xl gap-x-16 gap-y-0 sm:mt-12 lg:grid-cols-2">
-                {bookChapters.map((chapter, index) => (
-                  <li
-                    key={chapter}
-                    className="grid grid-cols-[3.25rem_1fr] gap-5 border-t border-gold/[0.08] py-4 sm:grid-cols-[4rem_1fr] sm:py-5"
-                  >
-                    <span className="pt-1 text-xs font-semibold uppercase tracking-[0.28em] text-gold/72 sm:text-sm">
-                      {String(index + 1).padStart(2, "0")}
-                    </span>
-                    <span className="font-display text-[1.75rem] leading-[1.16] text-ivory sm:text-[2.15rem]">
-                      {chapter}
-                    </span>
-                  </li>
-                ))}
-              </ol>
-
-              <p className="mx-auto mt-10 max-w-[54ch] text-center text-sm leading-7 text-ivory/60 sm:mt-12">
-                Ogni capitolo viene scritto esclusivamente per la persona che lo
-                riceve. Nessun Ritratto è uguale a un altro.
-              </p>
-            </div>
-          </Reveal>
-        </Container>
-      </section>
-
-      <section className="section-shell py-16 sm:py-24">
-        <Container>
-          <Reveal>
-            <SurfaceCard className="mx-auto max-w-5xl p-8 sm:p-10 lg:p-12">
-              <p className="editorial-label">Esperienza di chi riceve il libro</p>
-              <h2 className="editorial-title-depth mt-6 max-w-[13ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
-                Non resta sullo schermo.
-              </h2>
-              <div className="mt-8 grid gap-6 text-lg leading-[1.95] text-ivory/80 lg:grid-cols-2">
-                <div className="space-y-5">
-                  <p>
-                    Chi riceve il Ritratto spesso lo attraversa una prima volta
-                    come scoperta. Poi lo riapre più avanti, quando una scelta
-                    cambia forma, una domanda ritorna o una pagina sembra
-                    aspettare proprio quel momento.
-                  </p>
-                  <p>
-                    Alla seconda lettura emergono dettagli rimasti silenziosi.
-                    Dopo settimane o mesi, alcune frasi sembrano parlare con una
-                    precisione nuova. Il testo è lo stesso, ma lo sguardo di chi
-                    legge non lo è più.
-                  </p>
-                  <p>
-                    Non cambia il libro. Cambia il lettore.
-                  </p>
-                </div>
-                <div className="space-y-5">
-                  <p>
-                    Per questo non è pensato per essere consumato in fretta. È
-                    un oggetto da tenere vicino, da lasciare sedimentare, da
-                    ritrovare quando la vita chiede un modo diverso di leggere
-                    ciò che sta accadendo.
-                  </p>
-                  <p>
-                    Alcuni libri si leggono una volta. Altri crescono insieme a
-                    chi li legge.
-                  </p>
-                </div>
-              </div>
-            </SurfaceCard>
-          </Reveal>
-        </Container>
-      </section>
-
       <section id="edizioni" className="section-shell py-16 sm:py-24">
         <Container>
           <div className="mb-12 max-w-3xl">
             <p className="editorial-label">Edizioni</p>
             <h2 className="editorial-title-depth mt-5 max-w-[13ch] font-display text-[2.85rem] leading-[1.08] text-ivory sm:text-[4rem]">
-              Tre modi di abitare lo stesso libro
+              Scegli l&apos;edizione più adatta a te
             </h2>
             <p className="mt-7 max-w-[58ch] text-base leading-[1.95] text-ivory/76 sm:text-[1.06rem]">
-              Non sono tre prodotti separati. Sono tre intensità dello stesso
-              ingresso: dal manoscritto digitale all&apos;oggetto da custodire, fino
-              all&apos;edizione più ampia del Viaggio Emozionale.
+              Ogni edizione custodisce la stessa esperienza di chiarezza. Cambia
+              il modo in cui desideri ricevere, conservare e abitare il tuo
+              Ritratto nel tempo.
             </p>
           </div>
           <div className="grid gap-5 lg:grid-cols-3">
@@ -483,7 +378,7 @@ export default function RitrattoPage() {
                       edition.featured ? "text-[#d8bf83]/88" : "text-gold/72"
                     }`}
                   >
-                    Investimento editoriale
+                    Investimento
                   </p>
                   <p
                     className={`mt-3 font-display text-[2.35rem] leading-none ${
@@ -497,29 +392,13 @@ export default function RitrattoPage() {
                       href={edition.purchaseHref}
                       className="whitespace-nowrap px-7 sm:px-8"
                     >
-                      Acquista ora
+                      Acquista
                     </ButtonLink>
                   </div>
                 </div>
               </SurfaceCard>
             ))}
           </div>
-
-          <Reveal className="mt-16">
-            <SurfaceCard className="mx-auto max-w-3xl p-8 text-center sm:p-10">
-              <h3 className="font-display text-[2.1rem] leading-[1.1] text-ivory sm:text-[2.5rem]">
-                Non sai da quale edizione iniziare?
-              </h3>
-              <p className="mx-auto mt-5 max-w-[48ch] text-base leading-[1.95] text-ivory/80 sm:text-[1.06rem]">
-                Raccontami il momento che stai attraversando. Ti aiuterò a capire quale forma del Ritratto può esserti più utile.
-              </p>
-              <div className="mt-8">
-                <ButtonLink href="/contatti" variant="secondary">
-                  Raccontami il tuo momento
-                </ButtonLink>
-              </div>
-            </SurfaceCard>
-          </Reveal>
         </Container>
       </section>
 
@@ -549,23 +428,61 @@ export default function RitrattoPage() {
         </Container>
       </section>
 
+      <section className="section-shell py-16 sm:py-24">
+        <Container>
+          <Reveal>
+            <SurfaceCard className="mx-auto max-w-5xl p-8 sm:p-10 lg:p-12">
+              <p className="editorial-label">E dopo?</p>
+              <h2 className="editorial-title-depth mt-6 max-w-[13ch] font-display text-[2.75rem] leading-[1.08] text-ivory sm:text-[4rem]">
+                Può bastare così, oppure aprire una nuova soglia.
+              </h2>
+              <div className="mt-8 grid gap-6 text-lg leading-[1.95] text-ivory/80 lg:grid-cols-2">
+                <div className="space-y-5">
+                  <p>
+                    Per alcune persone il Ritratto dell&apos;Anima è
+                    un&apos;esperienza completa: una mappa da leggere,
+                    sedimentare e ritrovare quando la vita chiede maggiore
+                    chiarezza.
+                  </p>
+                  <p>
+                    Non devi trasformarlo in altro. Può restare un luogo
+                    personale, un riferimento discreto da riaprire nel tempo.
+                  </p>
+                </div>
+                <div className="space-y-5">
+                  <p>
+                    Per altre persone diventa una porta d&apos;ingresso: dopo la
+                    lettura, può nascere il desiderio di approfondire un tema
+                    specifico in una Sessione Evolutiva o di iniziare un
+                    percorso più ampio di Soul Design.
+                  </p>
+                  <p>
+                    Il passo successivo non viene spinto. Si riconosce, se e
+                    quando diventa naturale.
+                  </p>
+                </div>
+              </div>
+            </SurfaceCard>
+          </Reveal>
+        </Container>
+      </section>
+
       <section className="section-shell pb-28 pt-16 sm:pb-36 sm:pt-24">
         <Container>
           <Reveal>
             <div className="mx-auto max-w-4xl text-center">
               <div className="gold-divider mb-10" />
               <WelcomeBackHome variant="statement" align="center" />
-              <h2 className="editorial-title-depth mx-auto mt-7 max-w-[17ch] whitespace-pre-line font-display text-[2.75rem] leading-[1.08] sm:text-[3.7rem]">
-                {"Forse non hai bisogno\ndi cambiare vita.\n\nForse hai bisogno\ndi leggerla."}
-              </h2>
+              <p className="editorial-title-depth mx-auto mt-7 max-w-[18ch] whitespace-pre-line font-display text-[2.35rem] leading-[1.12] sm:text-[3.35rem]">
+                {"Ci sono libri che raccontano delle storie.\n\nE poi ci sono libri che, a un certo punto della vita, iniziano a raccontare la nostra."}
+              </p>
               <p className="mx-auto mt-8 max-w-[58ch] text-base leading-[1.95] text-ivory/78 sm:text-[1.1rem]">
-                Il Ritratto dell&apos;Anima non nasce per dirti chi sei, ma per
-                offrirti una narrazione più chiara della tua storia, attraverso
-                simboli, numeri, archetipi e domande.
+                Se senti che questo è il momento di fare maggiore chiarezza, il
+                Ritratto dell&apos;Anima può essere il punto da cui iniziare.
               </p>
               <div className="mt-10">
-                <ButtonLink href="/contatti" size="lg">
-                  Inizia il tuo Ritratto
+                <ButtonLink href="#edizioni" size="lg">
+                  Inizia il tuo viaggio
                 </ButtonLink>
               </div>
             </div>
