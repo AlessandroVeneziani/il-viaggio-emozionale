@@ -142,7 +142,7 @@ export default function RitrattoPage() {
     <main>
       <section className="section-shell relative isolate overflow-hidden pb-20 pt-8 sm:pb-24 sm:pt-10 lg:pb-28">
         <NumberBackdrop className="z-0 opacity-58" />
-        <div className="pointer-events-none absolute right-[-18%] top-[18rem] z-30 w-[70%] max-w-[22rem] opacity-[0.9] sm:right-[-7%] sm:top-[10rem] sm:w-[46%] sm:max-w-[26.5rem] sm:opacity-[0.9] lg:right-[4vw] lg:top-[8.5rem] lg:w-[46vw] lg:max-w-[624px] lg:opacity-[0.9] xl:right-[7vw] xl:max-w-[672px]">
+        <div className="pointer-events-none absolute right-[calc(-18%+32px)] top-[42rem] z-30 w-[70%] max-w-[22rem] opacity-[0.9] sm:right-[calc(-7%+32px)] sm:top-[10rem] sm:w-[46%] sm:max-w-[26.5rem] sm:opacity-[0.9] lg:right-[calc(4vw+32px)] lg:top-[8.5rem] lg:w-[46vw] lg:max-w-[624px] lg:opacity-[0.9] xl:right-[calc(7vw+32px)] xl:max-w-[672px]">
           <Image
             src="/images/brand/bagatto.webp"
             alt=""
@@ -167,7 +167,7 @@ export default function RitrattoPage() {
             <h1 className="editorial-title-depth max-w-[14ch] whitespace-pre-line text-pretty font-display text-[2.9rem] leading-[1.06] sm:text-[4rem] lg:text-[5.15rem]">
               {"A volte non abbiamo bisogno di cambiare vita.\nAbbiamo bisogno di capire dove ci troviamo."}
             </h1>
-            <div className="mt-8 max-w-[42ch] space-y-5 font-display text-[1.55rem] leading-[1.34] text-ivory/90 sm:text-[2.05rem]">
+            <div className="mt-8 max-w-[31ch] space-y-5 font-display text-[1.55rem] leading-[1.34] text-ivory/90 sm:max-w-[42ch] sm:text-[2.05rem]">
               <p>
                 Quando attraversiamo un passaggio importante, spesso non ci
                 manca la forza. Ci manca la chiarezza.
