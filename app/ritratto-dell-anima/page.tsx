@@ -142,7 +142,7 @@ export default function RitrattoPage() {
     <main>
       <section className="section-shell relative isolate overflow-hidden pb-20 pt-8 sm:pb-24 sm:pt-10 lg:pb-28">
         <NumberBackdrop className="z-0 opacity-58" />
-        <div className="pointer-events-none absolute right-[-18%] top-[18rem] z-10 w-[70%] max-w-[22rem] opacity-[0.85] sm:right-[-7%] sm:top-[10rem] sm:w-[46%] sm:max-w-[26.5rem] sm:opacity-[0.86] lg:right-[4vw] lg:top-[8.5rem] lg:w-[46vw] lg:max-w-[624px] lg:opacity-[0.88] xl:right-[7vw] xl:max-w-[672px]">
+        <div className="pointer-events-none absolute right-[-18%] top-[18rem] z-30 w-[70%] max-w-[22rem] opacity-[0.9] sm:right-[-7%] sm:top-[10rem] sm:w-[46%] sm:max-w-[26.5rem] sm:opacity-[0.9] lg:right-[4vw] lg:top-[8.5rem] lg:w-[46vw] lg:max-w-[624px] lg:opacity-[0.9] xl:right-[7vw] xl:max-w-[672px]">
           <Image
             src="/images/brand/bagatto.webp"
             alt=""
@@ -150,16 +150,16 @@ export default function RitrattoPage() {
             height={1298}
             priority
             sizes="(max-width: 640px) 58vw, (max-width: 1024px) 38vw, 38vw"
-            className="h-auto w-full object-contain saturate-[0.72] brightness-[0.9] contrast-[0.9]"
+            className="h-auto w-full object-contain saturate-[0.86] brightness-[1.04] contrast-[0.96]"
             style={{
               maskImage:
-                "linear-gradient(to left, rgba(0,0,0,0.92) 48%, rgba(0,0,0,0.54) 72%, transparent 100%)",
+                "linear-gradient(to left, rgba(0,0,0,1) 52%, rgba(0,0,0,0.74) 76%, transparent 100%)",
               WebkitMaskImage:
-                "linear-gradient(to left, rgba(0,0,0,0.92) 48%, rgba(0,0,0,0.54) 72%, transparent 100%)",
+                "linear-gradient(to left, rgba(0,0,0,1) 52%, rgba(0,0,0,0.74) 76%, transparent 100%)",
             }}
           />
         </div>
-        <Container className="relative z-20">
+        <Container className="relative z-40">
           <Reveal className="editorial-title-haze max-w-5xl">
             <p className="editorial-label mb-6 lg:mb-7">
               Ritratto dell&apos;Anima
