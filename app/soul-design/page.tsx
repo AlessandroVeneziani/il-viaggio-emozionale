@@ -185,6 +185,16 @@ export default function SoulDesignPage() {
                   <p key={paragraph}>{paragraph}</p>
                 ))}
               </div>
+              <div className="texture-paper mt-9 rounded-[24px] border border-gold/[0.055] bg-ivory/[0.026] p-5 sm:p-7">
+                <h3 className="font-display text-[1.75rem] leading-tight text-ivory sm:text-[2rem]">
+                  {soulDesignPage.prototype.routeDiary.title}
+                </h3>
+                <div className="mt-4 space-y-5 text-base leading-[1.9] text-ivory/78">
+                  {soulDesignPage.prototype.routeDiary.paragraphs.map((paragraph) => (
+                    <p key={paragraph}>{paragraph}</p>
+                  ))}
+                </div>
+              </div>
               <div className="mt-9 grid gap-4 sm:grid-cols-2">
                 {soulDesignPage.prototype.movements.map((item) => (
                   <p

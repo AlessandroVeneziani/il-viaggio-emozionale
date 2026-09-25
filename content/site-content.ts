@@ -286,7 +286,7 @@ export const soulDesignPage = {
   },
   intro: [
     "Non serve a dirti chi sei una volta per tutte. Serve a riconoscere quale forma di te non ti rappresenta più — e quale movimento può iniziare adesso.",
-    "Soul Design è una sessione individuale concreta: si parte da un tema reale — una scelta, una crisi, una relazione, un blocco, un desiderio — e si arriva a una direzione da iniziare a testare.",
+    "Soul Design è un percorso individuale di trasformazione identitaria. Parte da una prima valutazione approfondita e prosegue attraverso tappe di lavoro, osservazione e integrazione, per trasformare ciò che emerge in una direzione da sperimentare nella vita reale.",
   ],
   manifesto: {
     title: "Non sei da correggere. Sei da ascoltare.",
@@ -297,7 +297,7 @@ export const soulDesignPage = {
     ],
   },
   whatItIs: {
-    title: "Sessioni individuali di orientamento identitario",
+    title: "Un percorso individuale di orientamento identitario",
     paragraphs: [
       "Una sessione di Soul Design è uno spazio individuale per leggere una fase concreta e tradurla in orientamento.",
       "Può essere utile davanti a un blocco personale, una crisi di identità, una ripetizione relazionale, una scelta difficile o il bisogno di ritrovare direzione.",
@@ -328,6 +328,13 @@ export const soulDesignPage = {
       "Osservare. Intuire. Provare. Sbagliare. Correggere. Riprogettare.",
       "Non cambi perché qualcuno ti definisce. Cambi quando inizi a testare modi più veri di scegliere, amare, parlare, stare nel corpo e attraversare le tue soglie.",
     ],
+    routeDiary: {
+      title: "Il tuo Diario di Rotta",
+      paragraphs: [
+        "Il percorso prende forma attraverso un Diario di Rotta personale. Dopo la prima valutazione, il lavoro procede normalmente per cicli di quattro tappe: uno spazio per osservare ciò che sta cambiando, sperimentare nuove direzioni e integrare ciò che emerge nella vita quotidiana.",
+        "Al termine di ogni ciclo ci fermiamo, facciamo il punto e decidiamo insieme se e come proseguire.",
+      ],
+    },
     movements: [
       "Un nuovo modo di scegliere.",
       "Un nuovo modo di stare in relazione.",
