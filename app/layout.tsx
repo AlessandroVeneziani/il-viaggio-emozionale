@@ -119,6 +119,29 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
+      <head>
+        <script
+          type="text/javascript"
+          dangerouslySetInnerHTML={{
+            __html: `
+              var _iub = _iub || [];
+              _iub.csConfiguration = {"siteId":4696124,"cookiePolicyId":62464150};
+              _iub.csLangConfiguration = {"it":{"cookiePolicyId":62464150}};
+            `,
+          }}
+        />
+        {/* eslint-disable-next-line @next/next/no-sync-scripts */}
+        <script
+          type="text/javascript"
+          src="https://cs.iubenda.com/autoblocking/4696124.js"
+        />
+        <script
+          type="text/javascript"
+          src="https://cdn.iubenda.com/cs/iubenda_cs.js"
+          charSet="UTF-8"
+          async
+        />
+      </head>
       <body className="font-body antialiased">
         <Script
           src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
