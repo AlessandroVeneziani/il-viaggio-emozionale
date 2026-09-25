@@ -96,6 +96,20 @@ export function SiteFooter() {
               Blog
             </Link>
             <span className="hidden text-gold/28 sm:inline-block">•</span>
+            <a
+              href="https://www.iubenda.com/privacy-policy/62464150"
+              className="transition hover:text-gold"
+            >
+              Privacy Policy
+            </a>
+            <span className="hidden text-gold/28 sm:inline-block">•</span>
+            <a
+              href="https://www.iubenda.com/privacy-policy/62464150/cookie-policy"
+              className="transition hover:text-gold"
+            >
+              Cookie Policy
+            </a>
+            <span className="hidden text-gold/28 sm:inline-block">•</span>
             <a href={`mailto:${siteConfig.email}`} className="transition hover:text-gold">
               {siteConfig.email}
             </a>
