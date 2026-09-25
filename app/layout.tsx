@@ -1,11 +1,14 @@
 import type { Metadata, Viewport } from "next";
 import { Cormorant_Garamond, Manrope } from "next/font/google";
+import Script from "next/script";
 
 import { SiteFooter } from "@/components/site-footer";
 import { SiteHeader } from "@/components/site-header";
 import { siteConfig } from "@/lib/site";
 
 import "./globals.css";
+
+const GA_MEASUREMENT_ID = "G-1EJWRJVDPH";
 
 const displayFont = Cormorant_Garamond({
   subsets: ["latin"],
@@ -117,6 +120,18 @@ export default function RootLayout({
   return (
     <html lang="it" className={`${displayFont.variable} ${bodyFont.variable}`}>
       <body className="font-body antialiased">
+        <Script
+          src={`https://www.googletagmanager.com/gtag/js?id=${GA_MEASUREMENT_ID}`}
+          strategy="afterInteractive"
+        />
+        <Script id="google-analytics" strategy="afterInteractive">
+          {`
+            window.dataLayer = window.dataLayer || [];
+            function gtag(){dataLayer.push(arguments);}
+            gtag('js', new Date());
+            gtag('config', '${GA_MEASUREMENT_ID}');
+          `}
+        </Script>
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(structuredData) }}
