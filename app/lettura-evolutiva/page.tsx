@@ -1,6 +1,6 @@
 import Image from "next/image";
 
-import { ButtonLink } from "@/components/ui/button";
+import { TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { Container } from "@/components/ui/container";
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
@@ -66,7 +66,17 @@ export default function LetturaEvolutivaPage() {
                 ))}
               </ul>
               <div className="mt-8">
-                <ButtonLink href="/contatti">Prenota una Sessione Evolutiva</ButtonLink>
+                <TrackedButtonLink
+                  href="/contatti"
+                  tracking={{
+                    name: "generate_lead",
+                    params: {
+                      lead_source: "orientation_cta",
+                    },
+                  }}
+                >
+                  Prenota una Sessione Evolutiva
+                </TrackedButtonLink>
               </div>
             </SurfaceCard>
           </div>
@@ -77,6 +87,12 @@ export default function LetturaEvolutivaPage() {
         title="La Sessione Evolutiva non ti dice cosa credere. Ti aiuta a vedere meglio il punto in cui sei."
         body="Se stai attraversando un nodo, una scelta o un passaggio emotivo importante, possiamo leggerlo insieme con più lucidità."
         primary={{ label: "Scrivimi per prenotare", href: "/contatti" }}
+        primaryTracking={{
+          name: "generate_lead",
+          params: {
+            lead_source: "orientation_cta",
+          },
+        }}
         secondary={{ label: "Scopri il Ritratto dell'Anima", href: "/ritratto-dell-anima" }}
       />
     </main>

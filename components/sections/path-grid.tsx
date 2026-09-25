@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -81,17 +82,27 @@ export function PathGrid() {
                         {path.audience}
                       </p>
                       <div className="mt-6">
-                        <ButtonLink
-                          href={path.href}
-                          variant="secondary"
-                          target={
-                            path.href.startsWith("https://calendly.com/")
-                              ? "_self"
-                              : undefined
-                          }
-                        >
-                          {path.ctaLabel}
-                        </ButtonLink>
+                        {path.title === "Sessione Evolutiva" ? (
+                          <TrackedButtonLink
+                            href={path.href}
+                            variant="secondary"
+                            target="_self"
+                            tracking={{
+                              name: "book_session_click",
+                              params: {
+                                service_name: "Sessione Evolutiva",
+                                currency: "EUR",
+                                value: 100,
+                              },
+                            }}
+                          >
+                            {path.ctaLabel}
+                          </TrackedButtonLink>
+                        ) : (
+                          <ButtonLink href={path.href} variant="secondary">
+                            {path.ctaLabel}
+                          </ButtonLink>
+                        )}
                       </div>
                     </div>
                   </div>

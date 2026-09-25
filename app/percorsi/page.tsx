@@ -1,5 +1,4 @@
-import Link from "next/link";
-
+import { TrackedAnchor, TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { GenericFinalCta } from "@/components/sections/generic-final-cta";
 import { PageHero } from "@/components/sections/page-hero";
 import { ButtonLink } from "@/components/ui/button";
@@ -58,17 +57,27 @@ export default function PercorsiPage() {
                     </p>
                   </div>
                   <div className="lg:flex lg:justify-end">
-                    <ButtonLink
-                      href={item.href}
-                      variant="secondary"
-                      target={
-                        item.href.startsWith("https://calendly.com/")
-                          ? "_self"
-                          : undefined
-                      }
-                    >
-                      {item.ctaLabel}
-                    </ButtonLink>
+                    {item.title === "Sessione Evolutiva" ? (
+                      <TrackedButtonLink
+                        href={item.href}
+                        variant="secondary"
+                        target="_self"
+                        tracking={{
+                          name: "book_session_click",
+                          params: {
+                            service_name: "Sessione Evolutiva",
+                            currency: "EUR",
+                            value: 100,
+                          },
+                        }}
+                      >
+                        {item.ctaLabel}
+                      </TrackedButtonLink>
+                    ) : (
+                      <ButtonLink href={item.href} variant="secondary">
+                        {item.ctaLabel}
+                      </ButtonLink>
+                    )}
                   </div>
                 </div>
               </article>
@@ -80,12 +89,18 @@ export default function PercorsiPage() {
               {percorsiPage.finalNote}
             </p>
             <div className="mt-6">
-              <Link
+              <TrackedAnchor
                 href="/contatti"
                 className="text-sm font-semibold text-gold underline decoration-gold/40 underline-offset-4 transition hover:text-ivory"
+                tracking={{
+                  name: "generate_lead",
+                  params: {
+                    lead_source: "orientation_cta",
+                  },
+                }}
               >
                 Non sai da dove iniziare? Scrivimi e raccontami cosa stai vivendo.
-              </Link>
+              </TrackedAnchor>
             </div>
           </div>
         </Container>
@@ -96,6 +111,12 @@ export default function PercorsiPage() {
         body="Raccontami cosa stai vivendo. Ti aiuterò a capire se partire dal Ritratto dell'Anima, da una Sessione Evolutiva o da Soul Design."
         primary={{ label: "Inizia il tuo percorso", href: "/contatti" }}
         secondary={{ label: "Scopri il metodo", href: "/il-metodo" }}
+        primaryTracking={{
+          name: "generate_lead",
+          params: {
+            lead_source: "orientation_cta",
+          },
+        }}
       />
     </main>
   );

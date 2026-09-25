@@ -1,5 +1,6 @@
 import Image from "next/image";
 
+import { TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -74,6 +75,9 @@ const portraitEditions = [
       "Per iniziare con una lettura completa, raccolta in un formato digitale da ricevere e rileggere con calma.",
     features: ["Formato PDF", "Consegna digitale"],
     price: "250 €",
+    value: 250,
+    itemId: "ritratto-anima-digitale",
+    itemName: "Ritratto dell’Anima | Digitale",
     purchaseHref: "https://buy.stripe.com/aFabJ0gTT8o12Q6eIQ4F200",
     featured: false,
   },
@@ -88,6 +92,9 @@ const portraitEditions = [
       "Pensata per essere conservata nel tempo",
     ],
     price: "350 €",
+    value: 350,
+    itemId: "ritratto-anima-pregiato",
+    itemName: "Ritratto dell’Anima | Pregiato",
     purchaseHref: "https://buy.stripe.com/dRm6oGcDD0Vzaiy3084F201",
     featured: false,
   },
@@ -103,6 +110,9 @@ const portraitEditions = [
       "Certificazione dell'opera",
     ],
     price: "450 €",
+    value: 450,
+    itemId: "ritratto-anima-collezione",
+    itemName: "Ritratto dell’Anima | Collezione",
     purchaseHref: "https://buy.stripe.com/dRm00ieLL6fT62i0S04F202",
     featured: true,
   },
@@ -405,12 +415,25 @@ export default function RitrattoPage() {
                     {edition.price}
                   </p>
                   <div className="mt-6">
-                    <ButtonLink
+                    <TrackedButtonLink
                       href={edition.purchaseHref}
                       className="whitespace-nowrap px-7 sm:px-8"
+                      tracking={{
+                        name: "begin_checkout",
+                        params: {
+                          currency: "EUR",
+                          value: edition.value,
+                          items: [
+                            {
+                              item_id: edition.itemId,
+                              item_name: edition.itemName,
+                            },
+                          ],
+                        },
+                      }}
                     >
                       Acquista
-                    </ButtonLink>
+                    </TrackedButtonLink>
                   </div>
                 </div>
               </SurfaceCard>

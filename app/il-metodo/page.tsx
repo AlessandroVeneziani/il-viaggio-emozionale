@@ -1,5 +1,6 @@
 import type { ReactNode } from "react";
 
+import { TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -687,9 +688,19 @@ export default function MethodPage() {
                 <ButtonLink href="/ritratto-dell-anima" size="lg">
                   Scopri il Ritratto dell&apos;Anima
                 </ButtonLink>
-                <ButtonLink href="/contatti" variant="secondary" size="lg">
+                <TrackedButtonLink
+                  href="/contatti"
+                  variant="secondary"
+                  size="lg"
+                  tracking={{
+                    name: "generate_lead",
+                    params: {
+                      lead_source: "orientation_cta",
+                    },
+                  }}
+                >
                   Scrivimi per orientarti
-                </ButtonLink>
+                </TrackedButtonLink>
               </div>
             </div>
           </Reveal>

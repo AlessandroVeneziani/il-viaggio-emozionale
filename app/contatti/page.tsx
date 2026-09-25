@@ -128,6 +128,18 @@ export default function ContactPage() {
           label: "Scrivimi su WhatsApp",
           href: "https://wa.me/393929124461?text=Ciao%20Alessandro,%20vorrei%20ricevere%20informazioni.",
         }}
+        primaryTracking={{
+          name: "generate_lead",
+          params: {
+            lead_source: "orientation_cta",
+          },
+        }}
+        secondaryTracking={{
+          name: "generate_lead",
+          params: {
+            lead_source: "orientation_cta",
+          },
+        }}
       />
     </main>
   );

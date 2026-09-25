@@ -1,3 +1,4 @@
+import { TrackedAnchor } from "@/components/analytics/tracked-link";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -35,12 +36,18 @@ export function FinalCtaSection() {
             <p className="mx-auto mt-8 max-w-[48ch] text-base leading-[1.95] text-ivory/72">
               Non sai da dove iniziare?
               <br className="hidden sm:block" />
-              <a
+              <TrackedAnchor
                 href={`mailto:${siteConfig.email}`}
                 className="border-b border-gold/28 text-ivory/76 transition hover:border-gold/46 hover:text-gold"
+                tracking={{
+                  name: "generate_lead",
+                  params: {
+                    lead_source: "orientation_cta",
+                  },
+                }}
               >
                 Puoi scrivermi direttamente
-              </a>{" "}
+              </TrackedAnchor>{" "}
               e raccontarmi cosa stai vivendo.
               <br className="hidden sm:block" />
               Ti aiuterò a capire quale percorso può esserti più utile.

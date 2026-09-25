@@ -1,5 +1,5 @@
+import { TrackedButtonLink } from "@/components/analytics/tracked-link";
 import { PageHero } from "@/components/sections/page-hero";
-import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 import { sessionCalendlyUrl, soulDesignPage } from "@/content/site-content";
 import { buildMetadata } from "@/lib/metadata";
@@ -52,12 +52,32 @@ export default function SoulDesignPage() {
                 ))}
               </div>
               <div className="mt-8 flex flex-col gap-4 sm:flex-row">
-                <ButtonLink href={sessionCalendlyUrl} target="_self">
+                <TrackedButtonLink
+                  href={sessionCalendlyUrl}
+                  target="_self"
+                  tracking={{
+                    name: "book_session_click",
+                    params: {
+                      service_name: "Soul Design",
+                      currency: "EUR",
+                      value: 150,
+                    },
+                  }}
+                >
                   Prenota una sessione
-                </ButtonLink>
-                <ButtonLink href="/contatti" variant="secondary">
+                </TrackedButtonLink>
+                <TrackedButtonLink
+                  href="/contatti"
+                  variant="secondary"
+                  tracking={{
+                    name: "generate_lead",
+                    params: {
+                      lead_source: "orientation_cta",
+                    },
+                  }}
+                >
                   Scrivimi per capire se fa per te
-                </ButtonLink>
+                </TrackedButtonLink>
               </div>
             </div>
 
@@ -206,13 +226,21 @@ export default function SoulDesignPage() {
                 ))}
               </div>
               <div className="mt-10">
-                <ButtonLink
+                <TrackedButtonLink
                   href={sessionCalendlyUrl}
                   variant="secondary"
                   target="_self"
+                  tracking={{
+                    name: "book_session_click",
+                    params: {
+                      service_name: "Soul Design",
+                      currency: "EUR",
+                      value: 150,
+                    },
+                  }}
                 >
                   Prenota una sessione di Soul Design
-                </ButtonLink>
+                </TrackedButtonLink>
               </div>
             </div>
           </div>
@@ -360,21 +388,35 @@ export default function SoulDesignPage() {
               </p>
             </div>
             <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-              <ButtonLink
+              <TrackedButtonLink
                 href={soulDesignPage.finalCta.primary.href}
                 size="lg"
                 target="_self"
+                tracking={{
+                  name: "book_session_click",
+                  params: {
+                    service_name: "Soul Design",
+                    currency: "EUR",
+                    value: 150,
+                  },
+                }}
               >
                 {soulDesignPage.finalCta.primary.label}
-              </ButtonLink>
+              </TrackedButtonLink>
               {soulDesignPage.finalCta.secondary ? (
-                <ButtonLink
+                <TrackedButtonLink
                   href={soulDesignPage.finalCta.secondary.href}
                   variant="secondary"
                   size="lg"
+                  tracking={{
+                    name: "generate_lead",
+                    params: {
+                      lead_source: "orientation_cta",
+                    },
+                  }}
                 >
                   {soulDesignPage.finalCta.secondary.label}
-                </ButtonLink>
+                </TrackedButtonLink>
               ) : null}
             </div>
           </div>

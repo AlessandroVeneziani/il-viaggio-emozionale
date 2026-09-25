@@ -1,6 +1,7 @@
 import Image from "next/image";
 import { ArrowRight } from "lucide-react";
 
+import { TrackedAnchor } from "@/components/analytics/tracked-link";
 import { Reveal } from "@/components/motion/reveal";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
@@ -46,12 +47,18 @@ export function HomeHero() {
             </div>
             <p className="mt-9 max-w-[34rem] text-sm leading-[1.92] text-ivory/68 lg:text-[0.95rem] lg:leading-[1.96]">
               {softLead.trim()}?{" "}
-              <a
+              <TrackedAnchor
                 href="/contatti"
                 className="text-ivory/84 underline decoration-gold/40 underline-offset-4 transition hover:text-gold"
+                tracking={{
+                  name: "generate_lead",
+                  params: {
+                    lead_source: "orientation_cta",
+                  },
+                }}
               >
                 {softAction.trim() || "Raccontami cosa stai vivendo."}
-              </a>
+              </TrackedAnchor>
             </p>
           </Reveal>
 

@@ -1,3 +1,7 @@
+import {
+  TrackedButtonLink,
+  type TrackingEvent,
+} from "@/components/analytics/tracked-link";
 import { ButtonLink } from "@/components/ui/button";
 import { Container } from "@/components/ui/container";
 
@@ -6,6 +10,8 @@ type GenericFinalCtaProps = {
   body: string;
   primary: { label: string; href: string };
   secondary?: { label: string; href: string };
+  primaryTracking?: TrackingEvent;
+  secondaryTracking?: TrackingEvent;
 };
 
 export function GenericFinalCta({
@@ -13,6 +19,8 @@ export function GenericFinalCta({
   body,
   primary,
   secondary,
+  primaryTracking,
+  secondaryTracking,
 }: GenericFinalCtaProps) {
   return (
     <section className="section-shell pb-28 pt-16 sm:pb-36 sm:pt-24">
@@ -26,13 +34,30 @@ export function GenericFinalCta({
             <p className="mx-auto mt-8 max-w-[44ch] text-lg leading-[1.98] text-ivory/78">{body}</p>
           </div>
           <div className="mt-10 flex flex-col items-center justify-center gap-4 sm:flex-row">
-            <ButtonLink href={primary.href} size="lg">
-              {primary.label}
-            </ButtonLink>
-            {secondary ? (
-              <ButtonLink href={secondary.href} variant="secondary" size="lg">
-                {secondary.label}
+            {primaryTracking ? (
+              <TrackedButtonLink href={primary.href} size="lg" tracking={primaryTracking}>
+                {primary.label}
+              </TrackedButtonLink>
+            ) : (
+              <ButtonLink href={primary.href} size="lg">
+                {primary.label}
               </ButtonLink>
+            )}
+            {secondary ? (
+              secondaryTracking ? (
+                <TrackedButtonLink
+                  href={secondary.href}
+                  variant="secondary"
+                  size="lg"
+                  tracking={secondaryTracking}
+                >
+                  {secondary.label}
+                </TrackedButtonLink>
+              ) : (
+                <ButtonLink href={secondary.href} variant="secondary" size="lg">
+                  {secondary.label}
+                </ButtonLink>
+              )
             ) : null}
           </div>
         </div>

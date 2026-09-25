@@ -41,7 +41,7 @@ export function buttonClasses({
   );
 }
 
-type ButtonLinkProps = SharedProps &
+export type ButtonLinkProps = SharedProps &
   Omit<AnchorHTMLAttributes<HTMLAnchorElement>, "className" | "children"> & {
     href: string;
   };
