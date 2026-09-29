@@ -72,7 +72,7 @@ const portraitEditions = [
     title: "Edizione Digitale",
     eyebrow: "Ritratto in PDF",
     experience:
-      "Per iniziare con una lettura completa, raccolta in un formato digitale da ricevere e rileggere con calma.",
+      "Un percorso personale articolato, in formato digitale, che esplora identità, numeri personali, nome, archetipi, talenti e sfide, cicli di vita, dinamiche relazionali e momenti di integrazione.",
     features: ["Formato PDF", "Consegna digitale"],
     price: "250 €",
     value: 250,
@@ -127,7 +127,7 @@ const faqs = [
   {
     question: "Quando lo riceverò?",
     answer:
-      "Circa sette giorni lavorativi per la realizzazione più il tempo della spedizione. Considera mediamente circa dieci giorni dall'acquisto.",
+      "Per l'Edizione Digitale considera circa 7 giorni lavorativi per la realizzazione e la consegna digitale, senza spedizione. Per le edizioni fisiche, circa 7 giorni lavorativi per la realizzazione, a cui si aggiungono preparazione e spedizione.",
   },
   {
     question: "È una previsione del futuro?",
