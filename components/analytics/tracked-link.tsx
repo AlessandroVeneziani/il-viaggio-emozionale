@@ -45,6 +45,9 @@ declare global {
       eventName: TrackingEvent["name"],
       params: Record<string, unknown>,
     ) => void;
+    ttq?: {
+      track?: (eventName: "InitiateCheckout", params?: Record<string, unknown>) => void;
+    };
   }
 }
 
@@ -65,11 +68,51 @@ function shouldOpenOutsideCurrentTab(
   return isModifiedClick(event) || (!!target && target.toLowerCase() !== "_self");
 }
 
+function sendTikTokTrackingEvent(tracking: TrackingEvent) {
+  if (
+    tracking.name !== "begin_checkout" ||
+    typeof window === "undefined" ||
+    typeof window.ttq?.track !== "function"
+  ) {
+    return false;
+  }
+
+  const [item] = tracking.params.items;
+
+  window.ttq.track("InitiateCheckout", {
+    content_id: item?.item_id,
+    content_name: item?.item_name,
+    content_type: "product",
+    contents: tracking.params.items.map((checkoutItem) => ({
+      content_id: checkoutItem.item_id,
+      content_name: checkoutItem.item_name,
+      quantity: 1,
+    })),
+    currency: tracking.params.currency,
+    value: tracking.params.value,
+  });
+
+  return true;
+}
+
 function sendTrackingEvent(
   tracking: TrackingEvent,
   onDone?: () => void,
 ) {
-  if (typeof window === "undefined" || typeof window.gtag !== "function") {
+  if (typeof window === "undefined") {
+    onDone?.();
+    return;
+  }
+
+  const hasTikTokTracking = sendTikTokTrackingEvent(tracking);
+  const hasGoogleTracking = typeof window.gtag === "function";
+
+  if (!hasGoogleTracking) {
+    if (hasTikTokTracking) {
+      window.setTimeout(() => onDone?.(), 300);
+      return;
+    }
+
     onDone?.();
     return;
   }
@@ -82,7 +125,7 @@ function sendTrackingEvent(
     onDone?.();
   };
 
-  window.gtag("event", tracking.name, {
+  window.gtag?.("event", tracking.name, {
     ...tracking.params,
     event_callback: finish,
     event_timeout: 900,
